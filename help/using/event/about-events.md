@@ -11,12 +11,17 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+source-git-commit: d0a7bbb43ae62fbdcf7ef34b0b56b1d437047ad2
 
 ---
 
 
 # Om händelser {#concept_gfj_fqt_52b}
+
+>[!CONTEXTUALHELP]
+>id=&quot;jo_events&quot;
+>title=&quot;About events&quot;
+>abstract=&quot;En händelse är länkad till en person. Det rör en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer med en person (en person har till exempel nått 10 000 poäng för lojalitet). Det är vad Journey Orchestration kommer att lyssna på på resor för att samordna de bästa nästa åtgärderna.&quot;
 
 En händelse är länkad till en person. Det rör en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer med en person (en person har till exempel nått 10 000 poäng för lojalitet). Det här är vad Journey Orchestration kommer att lyssna på på resor för att samordna de bästa nästa åtgärderna.
 
