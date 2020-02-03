@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d018072f2cbf2b8804c5c678f84cc8e25e3e86f4
+source-git-commit: fed9033310bf37535796638eda3b0846f1ed52c6
 
 ---
 
@@ -34,3 +34,5 @@ Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd klickar du på 
 Om du har Adobe Campaign Standard måste du konfigurera körklara åtgärder. Se [](../action/working-with-adobe-campaign.md).
 
 Om du använder ett tredjepartssystem för att skicka meddelanden måste du lägga till och konfigurera en anpassad åtgärd. Se [](../action/about-custom-action-configuration.md).
+
+Det här är ett test.
