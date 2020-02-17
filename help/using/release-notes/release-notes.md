@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cdede8bc301203d88b551a5cb4dcdbe4e7fe49a7
+source-git-commit: 8023d7780d43f1de4447c63568f641ce204722c7
 
 ---
 
@@ -20,6 +20,22 @@ source-git-commit: cdede8bc301203d88b551a5cb4dcdbe4e7fe49a7
 
 På den här sidan visas alla nya funktioner och förbättringar för resesamordning.
 Du kan även läsa [Dokumentationsuppdateringar](../release-notes/documentation-updates.md).
+
+## Q1 Release - februari 2019 {#q1-release---february-2019}
+
+* En sammanhangsberoende hjälpfunktion finns nu tillgänglig för olika sorteringsskärmar på resan. Det innebär att du med ett enda klick direkt kan få tillgång till dokumentationen om de funktioner som du för närvarande använder. Om du vill visa sammanhangsberoende hjälp klickar du på ikonen&quot;i&quot; i skärmens övre högra hörn. Den här funktionen är för närvarande tillgänglig på listskärmarna Hem, Datakällor, Händelser och Åtgärder.
+
+* API:er
+
+* Copy/paster
+
+* Filtrera händelser under resor.
+
+* Flerregion?
+
+* Timer i testläge
+
+* Testa multihändelse
 
 ## GA-release - december 2019 {#ga-release---december-2019}
 
