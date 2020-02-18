@@ -23,19 +23,53 @@ Du kan även läsa [Dokumentationsuppdateringar](../release-notes/documentation-
 
 ## Q1 Release - februari 2019 {#q1-release---february-2019}
 
-* En sammanhangsberoende hjälpfunktion finns nu tillgänglig för olika sorteringsskärmar på resan. Det innebär att du med ett enda klick direkt kan få tillgång till dokumentationen om de funktioner som du för närvarande använder. Om du vill visa sammanhangsberoende hjälp klickar du på ikonen&quot;i&quot; i skärmens övre högra hörn. Den här funktionen är för närvarande tillgänglig på listskärmarna Hem, Datakällor, Händelser och Åtgärder.
+**Tidszonshantering**
 
-* API:er
+Tidszoner hanteras nu på resenivå. Två parametrar har lagts till i resans egenskaper:
 
-* Kopiera/klistra in aktiviteter på resor -
+![](../assets/rn-timezone.png)
 
-* Filtrera händelser under resor
+* I listrutan **Tidszon** kan du välja en viss tidszon. Som standard används webbläsarens tidszon.
 
-* Flerregion?
+* I kryssrutan Tidszon för **profil** kan du använda tidszonen Experience Platform-profil för den person som går in på resan, om den är tillgänglig. Annars används den tidszon som definieras i listrutan. Den här funktionen är inte kompatibel med resor utan namnutrymme.
 
-* Timer i testläge
+**Sammanhangsberoende hjälp**
 
-* Testa multihändelse
+En sammanhangsberoende hjälpfunktion finns nu tillgänglig för olika sorteringsskärmar på resan. Det innebär att du med ett enda klick direkt kan få tillgång till dokumentationen om de funktioner som du för närvarande använder.
+
+Om du vill visa sammanhangsberoende hjälp klickar du på ikonen&quot;i&quot; i skärmens övre högra hörn.
+
+Den här funktionen är för närvarande tillgänglig på listskärmarna Hem, Datakällor, Händelser och Åtgärder.
+
+**Andra ändringar**
+
+* I testläge kan du med en ny parameter definiera tidsökaren.  tidsvänteaktiviteter kan hålla i sig. På så sätt kan du snabbt komma åt testresultaten.
+
+* I testläge kan du nu utlösa alla händelser på resan.
+
+
+* Med en ny parameter kan du definiera tidslinjen.  tidsvänteaktiviteter kan hålla i sig. På så sätt kan du snabbt komma åt testresultaten.
+
+* Journeys Orchestration finns nu i EMEA.
+
+* Ny ikon på paletten för att visa eller inte visa tillgängliga objekt. sans namespace. par standard.
+
+* canvas, deconnection, petite icone, qui dit disconnected node.
+
+* short cut C ttes les list
+
+* palettens användargränssnitt, ikon de search results
+
+* Pouvoir capper les anropar en des APIS externes (datakällor eller åtgärder). marque n&#39;accept que 500 call par second, elle pourra mettre un capping a 500 call seconds qui evite de surcharger system de loyalty levels
+
+* loggar du test log. Avantstatus = fel. quand on apply systemtieds. Possibility de voir code erreur phrase qu&#39;à renvoyé le systeme. -> ds un test en cas d&#39;erreur, systemlayers, error code, error response.
+
+* stoppad borttagning av resa
+
+* resa: version 1 il the met is latest
+
+1er mars.
+
 
 ## GA-release - december 2019 {#ga-release---december-2019}
 
