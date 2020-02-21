@@ -22,6 +22,10 @@ Innan du kan testa din resa måste du åtgärda eventuella fel. Se [](../about/t
 
 Du kan testa din resa innan den publiceras med testprofiler. På så sätt kan ni analysera hur individer flödar in på resan och felsöka före publicering.
 
+>[!NOTE]
+>
+>I testläge ställs alla vänteaktiviteter automatiskt in på att vara i 5 sekunder. På så sätt kan du snabbt komma åt testresultaten.
+
 Så här använder du testläget:
 
 1. Innan du testar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kommer inte att kunna starta ett test av en resa med fel. Se [](../about/troubleshooting.md#section_h3q_kqk_fhb). En varningssymbol visas om det finns fel.
@@ -29,10 +33,6 @@ Så här använder du testläget:
 1. Aktivera testläget genom att klicka på **[!UICONTROL Test]** växlingsknappen i det övre högra hörnet.
 
    ![](../assets/journeytest1.png)
-
-1. Använd parametern **Väntetid i testparametern** , i det nedre vänstra hörnet, för att definiera den tid som varje vänteaktivitet ska vara i testläge. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Den här parametern visas bara om du har släppt en eller flera vänteaktiviteter under din resa.
-
-   ![](../assets/journeytest_wait.png)
 
 1. Klicka **[!UICONTROL Trigger an event]** för att konfigurera och skicka händelser till resan. Se till att skicka händelser som rör testprofiler. Se [Bekräfta dina händelser](#firing_events).
 
@@ -60,7 +60,7 @@ Med **[!UICONTROL Trigger an event]** knappen kan du konfigurera en händelse so
 
 Som en förutsättning måste du veta vilka profiler som är flaggade som testprofiler i dataplattformen. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID.
 
-Om resan innehåller flera händelser använder du listrutan för att välja en händelse. Konfigurera sedan de fält som skickats och körningen av den händelse som skickats för varje händelse. Med gränssnittet kan du skicka rätt information i händelsens nyttolast och kontrollera att informationstypen är korrekt. Testläget sparar de senaste parametrarna som användes i en testsession för senare bruk.
+På den här skärmen kan du konfigurera fälten som skickas i händelsen och körningen av den händelse som skickas. Med gränssnittet kan du skicka rätt information i händelsens nyttolast och kontrollera att informationstypen är korrekt. Testläget sparar de senaste parametrarna som användes i en testsession för senare bruk.
 
 ![](../assets/journeytest4.png)
 
@@ -75,10 +75,6 @@ En teknisk användare kan också använda det här gränssnittet för att kompon
 Med knappen **[!UICONTROL Show log]** kan du visa testresultaten. På den här sidan visas resans aktuella information i JSON-format. Med en knapp kan du kopiera hela noder. Du måste uppdatera sidan manuellt för att kunna uppdatera resans testresultat.
 
 ![](../assets/journeytest3.png)
-
->[!NOTE]
->
->I testloggarna visas felkoden och felsvaret om ett fel uppstår vid anrop till ett tredjepartssystem (datakälla eller åtgärd).
 
 Antalet personer (tekniskt sett kallas de instanser) som för närvarande befinner sig under resan visas. Här är användbar information som visas för varje individ:
 
