@@ -37,7 +37,7 @@ Du kan definiera ett villkor om du vill begränsa väntetiden till en viss popul
 >
 >Maximal väntetid är 30 dagar.
 >
->I testläge kan du med parametern **Väntetid i test** definiera hur lång tid varje vänteaktivitet ska ta. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Se [](../building-journeys/testing-the-journey.md)
+>I testläge ställs alla vänteaktiviteter automatiskt in på att vara i 5 sekunder. På så sätt kan du snabbt komma åt testresultaten.
 
 ## Väntetid{#duration}
 
