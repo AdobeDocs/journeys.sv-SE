@@ -19,7 +19,7 @@ Börja med att lämna in ett ärende. Befintliga committers i det här projektet
 
 ## Licensavtal för deltagare
 
-Alla bidrag från tredje part till detta projekt måste åtföljas av ett undertecknat bidragslicensavtal. Detta ger Adobe tillstånd att återdistribuera dina bidrag som en del av projektet. [Underteckna vårt CLA](https://opensource.adobe.com/cla.html). Du behöver bara skicka in ett Adobe CLA en gång, så om du har skickat ett tidigare är du redo att gå!
+Alla bidrag från tredje part till detta projekt måste åtföljas av ett undertecknat bidragslicensavtal. Detta ger Adobe tillstånd att återdistribuera dina bidrag som en del av projektet. [Underteckna vårt CLA](http://opensource.adobe.com/cla.html). Du behöver bara skicka in ett Adobe CLA en gång, så om du har skickat ett tidigare är du redo att gå!
 
 ## Kodgranskningar
 
