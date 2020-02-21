@@ -22,7 +22,7 @@ På hemmenyn för resan kan du visa **listan över resor**. Skapa en ny resa ell
 
 ## Reselistan {#journey_list}
 
-Med **reselistan** kan du visa alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte stoppa eller ta bort en resa som är slutförd. Du kan också använda sökfältet för att söka efter en resa.
+Med **reselistan** kan du visa alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte stoppa en avbruten resa. Du kan också använda sökfältet för att söka efter en resa.
 
 Du **[!UICONTROL Filters]** kommer åt dem genom att klicka på filterikonen högst upp till vänster i listan. Med filtermenyn kan du filtrera de visade resorna enligt olika villkor (status, de som du skapade, de som ändrades under de senaste 30 dagarna, endast de senaste versionerna osv.). Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd. Kolumner som visas i listan kan konfigureras. Alla filter och kolumner sparas per användare.
 
@@ -45,12 +45,6 @@ Paletten **** finns till vänster på skärmen. Alla tillgängliga aktiviteter �
 >Observera att det finns regler när en resa konfigureras. Otillåten konfiguration ignoreras. Du kan till exempel inte placera åtgärder parallellt, länka en aktivitet till ett tidigare steg för att skapa en slinga, starta en resa med något annat än en händelse, osv.
 
 ![](../assets/journey38.png)
-
-Med ikonen **Visa inaktiverade objekt** i det övre vänstra hörnet kan du dölja eller visa otillgängliga element på paletten, till exempel händelser som använder ett annat namnutrymme än de som används under din resa. Som standard är otillgängliga objekt dolda. Om du väljer att visa dem visas de som nedtonade.
-
-När du använder **sökfältet** visas antalet resultat för varje aktivitetskategori på arbetsytan.
-
-![](../assets/palette-filter.png)
 
 ## Arbetsytan {#canvas}
 
@@ -85,7 +79,3 @@ När du lyssnar på en händelse rekommenderar vi att du inte väntar på hände
 Om du vill ta bort banan placerar du markören på den och klickar på **[!UICONTROL Delete arrow]** ikonen.
 
 ![](../assets/journey42ter.png)
-
-När två aktiviteter inte är kopplade till arbetsytan visas en varning. Placera markören på varningsikonen för att visa felmeddelandet. Åtgärda problemet genom att flytta den frånkopplade aktiviteten och koppla den till föregående aktivitet.
-
-![](../assets/canvas-disconnected.png)
