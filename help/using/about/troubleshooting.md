@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 1bc8d845716044671a11c200e4bab92302841994
+source-git-commit: 6274426ec04315149fb430b847498c0e20164bae
 
 ---
 
@@ -26,15 +26,19 @@ Fel visas med en varningssymbol på aktiviteterna på arbetsytan. Placera markö
 
 ![](../assets/journey63.png)
 
-Bredvid **[!UICONTROL Test]**växlingsknappen och**[!UICONTROL Publish]** knappen kan ett varningstecken visas. Den här varningssignalen visar fel som upptäckts av systemet och förhindrar aktivering av testläget eller publicering av resan. Vanligtvis är fel som upptäcks av systemet länkade till fel som visas i aktiviteterna, men ibland är de länkade till andra problem. I det här fallet kan du visa dem och försöka identifiera problemet med hjälp av felbeskrivningen. Om du inte kan identifiera problemet kan du kopiera informationen och skicka den till administratören eller till supporten. Observera att fel som blockerar testet och fel som blockerar publikationen är liknande.
+Om två aktiviteter inte är kopplade visas en varning på arbetsytan.
+
+![](../assets/canvas-disconnected.png)
+
+Bredvid **[!UICONTROL Test]** växlingsknappen och **[!UICONTROL Publish]** knappen kan ett varningstecken visas. Den här varningssignalen visar fel som upptäckts av systemet och förhindrar aktivering av testläget eller publicering av resan. Vanligtvis är fel som upptäcks av systemet länkade till fel som visas i aktiviteterna, men ibland är de länkade till andra problem. I det här fallet kan du visa dem och försöka identifiera problemet med hjälp av felbeskrivningen. Om du inte kan identifiera problemet kan du kopiera informationen och skicka den till administratören eller till supporten. Observera att fel som blockerar testet och fel som blockerar publikationen är liknande.
 
 Systemet upptäcker två typer av problem: fel och varningar. Fel vid blockpublicering och testaktivering. Varningar indikerar potentiella problem som inte blockerar testaktivering eller publicering. Du får en beskrivning av problemet och ett ID för felloggen av typen ERR_XXX_XXX. Detta hjälper teknisk support att identifiera problemet.
 
-Det går att visa två olika färger på tecknet bredvid **[!UICONTROL Test]**växlingsknappen och**[!UICONTROL Publish]** knappen. Tecknet visas i rött vid fel. Den visas med orange om det finns varningsmeddelanden.
+Det går att visa två olika färger på tecknet bredvid **[!UICONTROL Test]** växlingsknappen och **[!UICONTROL Publish]** knappen. Tecknet visas i rött vid fel. Den visas med orange om det finns varningsmeddelanden.
 
 ![](../assets/journey75.png)
 
-Fel och varningar som är globala för resan visas först i listan. Fel och varningar som rör specifika aktiviteter listas efter, efter aktivitetsordning eller utseende under resan från vänster till höger. Knappen **[!UICONTROL Copy details]**kopierar teknisk information om den resa som supportteamet kan använda för att felsöka.
+Fel och varningar som är globala för resan visas först i listan. Fel och varningar som rör specifika aktiviteter listas efter, efter aktivitetsordning eller utseende under resan från vänster till höger. Knappen **[!UICONTROL Copy details]** kopierar teknisk information om den resa som supportteamet kan använda för att felsöka.
 
 ## Kontrollera att händelser skickas korrekt{#section_rqz_11t_dgb}
 
