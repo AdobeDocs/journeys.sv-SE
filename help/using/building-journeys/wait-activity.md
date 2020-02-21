@@ -11,14 +11,14 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+source-git-commit: 6274426ec04315149fb430b847498c0e20164bae
 
 ---
 
 
 # Vänta på aktivitet{#section_rlm_nft_dgb}
 
-Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en **[!UICONTROL Wait]**aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Fyra alternativ är tillgängliga:
+Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en **[!UICONTROL Wait]** aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Fyra alternativ är tillgängliga:
 
 * [Varaktighet](#duration)
 * [Fast datum](#fixed_date)
@@ -37,7 +37,7 @@ Du kan definiera ett villkor om du vill begränsa väntetiden till en viss popul
 >
 >Maximal väntetid är 30 dagar.
 >
->I testläge ställs alla vänteaktiviteter automatiskt in på att vara i 5 sekunder. På så sätt kan du snabbt komma åt testresultaten.
+>I testläge kan du med parametern **Väntetid i test** definiera hur lång tid varje vänteaktivitet ska ta. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Se [](../building-journeys/testing-the-journey.md)
 
 ## Väntetid{#duration}
 
@@ -75,10 +75,10 @@ Den här typen av väntan använder en bakgrundsmusik som beräknas i plattforme
 >
 >Den första händelsen i din resa måste ha ett namnutrymme.
 >
->Den här funktionen är bara tillgänglig efter en **[!UICONTROL Email]**aktivitet. Ni måste ha Adobe Campaign Standard.
+>Den här funktionen är bara tillgänglig efter en **[!UICONTROL Email]** aktivitet. Ni måste ha Adobe Campaign Standard.
 
-1. I **[!UICONTROL Amount of time]**fältet anger du hur många timmar e-postutskick ska optimeras.
-1. I **[!UICONTROL Optimization type]**fältet väljer du om optimeringen ska öka antalet klick eller öppna.
+1. I **[!UICONTROL Amount of time]** fältet anger du hur många timmar e-postutskick ska optimeras.
+1. I **[!UICONTROL Optimization type]** fältet väljer du om optimeringen ska öka antalet klick eller öppna.
 1. I fältet **Standardtid** anger du den väntetid som ska vara standard om poängen för den prediktiva sändningstiden inte är tillgängliga.
 
    >[!NOTE]
