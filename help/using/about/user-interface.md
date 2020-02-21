@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: d0a7bbb43ae62fbdcf7ef34b0b56b1d437047ad2
+source-git-commit: 6274426ec04315149fb430b847498c0e20164bae
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: d0a7bbb43ae62fbdcf7ef34b0b56b1d437047ad2
 >[!CONTEXTUALHELP]
 >id=&quot;jo_home&quot;
 >title=&quot;About Journey list&quot;
->abstract=&quot;Med reselistan kan du se alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte stoppa eller ta bort en stoppad resa. Du kan också använda sökfältet för att söka efter en resa.&quot;
+>abstract=&quot;Med reselistan kan du se alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte stoppa eller ta bort en resa som är slutförd. Du kan också använda sökfältet för att söka efter en resa.&quot;
 >additional-url=&quot;https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4&quot; text=&quot;Titta på filmen&quot;
 
 
@@ -32,27 +32,31 @@ source-git-commit: d0a7bbb43ae62fbdcf7ef34b0b56b1d437047ad2
 
 ## Identifiera gränssnittet{#section_jsq_zr1_ffb}
 
-Klicka på ikonen i det övre högra hörnet om du vill öppna gränssnittet för **[!UICONTROL App Selector]**en guidad resa. Klicka sedan**[!UICONTROL Journey Orchestration]** till höger under Experience Platform.
+Klicka på ikonen i det övre högra hörnet om du vill öppna gränssnittet för **[!UICONTROL App Selector]** en guidad resa. Klicka sedan **[!UICONTROL Journey Orchestration]** till höger under Experience Platform.
 
 ![](../assets/journey1.png)
 
-Du kan även få åtkomst till Journey Orchestration från Experience Cloud-startsidan i **[!UICONTROL Quick access]**avsnittet.
+Du kan även få åtkomst till Journey Orchestration från Experience Cloud-startsidan i **[!UICONTROL Quick access]** avsnittet.
 
 ![](../assets/journey1bis.png)
 
-De översta menyerna gör att du kan navigera bland de olika funktionerna i Journey Orchestration: **[!UICONTROL Home]**(resorna),**[!UICONTROL Data Sources]**, **[!UICONTROL Events]**,**[!UICONTROL Actions]**.
+De översta menyerna gör att du kan navigera bland de olika funktionerna i Journey Orchestration: **[!UICONTROL Home]**(resorna),**[!UICONTROL Data Sources]**, **[!UICONTROL Events]**, **[!UICONTROL Actions]**.
 
 ![](../assets/journey2.png)
 
+Klicka på ![](../assets/icon-context.png) ikonen i skärmens övre högra hörn för att visa sammanhangsberoende hjälp. Den är tillgänglig på olika skärmar i listan över resan (resor, händelser, åtgärder och datakällor). På så sätt kan du visa en kort beskrivning av den aktuella funktionen och få tillgång till relaterade artiklar och videoklipp.
+
+![](../assets/journey2bis.png)
+
 ## Söka och filtrera{#section_lgm_hpz_pgb}
 
-I listorna **[!UICONTROL Home]**,**[!UICONTROL Data Sources]****[!UICONTROL Events]**och**[!UICONTROL Actions]** kan du söka efter ett objekt med hjälp av ett sökfält.
+I listorna **[!UICONTROL Home]**,**[!UICONTROL Data Sources]****[!UICONTROL Events]** och **[!UICONTROL Actions]** kan du söka efter ett objekt med hjälp av ett sökfält.
 
-Du **[!UICONTROL Filters]**kommer åt dem genom att klicka på filterikonen högst upp till vänster i listan. Med filtermenyn kan du filtrera de visade elementen enligt olika villkor. Du kan välja att endast visa element av en viss typ eller status, de element du har skapat eller de element som har ändrats under de senaste 30 dagarna.
+Du **[!UICONTROL Filters]** kommer åt dem genom att klicka på filterikonen högst upp till vänster i listan. Med filtermenyn kan du filtrera de visade elementen enligt olika villkor. Du kan välja att endast visa element av en viss typ eller status, de element du har skapat eller de element som har ändrats under de senaste 30 dagarna.
 
-I listorna **[!UICONTROL Data Sources]**,**[!UICONTROL Events]** och **[!UICONTROL Actions]**, använder du filtren****Skapa för att filtrera på skapandedatum och användare. Du kan t.ex. välja att bara visa händelser som du har skapat de senaste 30 dagarna.
+I listorna **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** , använder du filtren **** Skapa för att filtrera på skapandedatum och användare. Du kan t.ex. välja att bara visa händelser som du har skapat de senaste 30 dagarna.
 
-I reselistan (under **[!UICONTROL Home]**) kan du, utöver**[!UICONTROL Creation filters]** själva, även filtrera de visade resorna efter status och version (**[!UICONTROL Status and version filters]**). Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). Du kan**[!UICONTROL Publication filters]** välja ett publiceringsdatum eller en användare. Du kan till exempel välja att endast visa de senaste versionerna av direktresor som publicerades i går. Se [](../building-journeys/using-the-journey-designer.md).
+I reselistan (under **[!UICONTROL Home]**) kan du, utöver **[!UICONTROL Creation filters]** själva, även filtrera de visade resorna efter status och version (**[!UICONTROL Status and version filters]**). Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). Du kan **[!UICONTROL Publication filters]** välja ett publiceringsdatum eller en användare. Du kan till exempel välja att endast visa de senaste versionerna av direktresor som publicerades i går. Se [](../building-journeys/using-the-journey-designer.md).
 
 >[!NOTE]
 >
@@ -60,7 +64,7 @@ I reselistan (under **[!UICONTROL Home]**) kan du, utöver**[!UICONTROL Creation
 
 ![](../assets/journey74.png)
 
-I händelse-, datakälla- och åtgärdskonfigurationsrutor visas antalet resor som använder just den händelsen, fältgruppen eller åtgärden i **[!UICONTROL Used in]**fältet. Du kan klicka på**[!UICONTROL View journeys]** knappen för att visa en lista över motsvarande resor.
+I händelse-, datakälla- och åtgärdskonfigurationsrutor visas antalet resor som använder just den händelsen, fältgruppen eller åtgärden i **[!UICONTROL Used in]** fältet. Du kan klicka på **[!UICONTROL View journeys]** knappen för att visa en lista över motsvarande resor.
 
 ![](../assets/journey3bis.png)
 
@@ -80,19 +84,19 @@ _När du konfigurerar en aktivitet under en resa:_
 
 Arbetsytan sparas automatiskt. Längst upp till vänster på arbetsytan visas sparstatus.
 
-* Tryck på **Esc** för att stänga konfigurationsrutan och ignorera ändringarna. Det här är motsvarigheten till **[!UICONTROL Cancel]**knappen.
-* Tryck **[!UICONTROL Enter]**eller klicka utanför rutan för att stänga konfigurationsrutan. Ändringarna sparas. Det här är motsvarigheten till**[!UICONTROL Ok]** knappen.
-* Om du trycker på **[!UICONTROL Delete]**eller** backstegstangenten **kan du sedan trycka på**[!UICONTROL Enter]** för att bekräfta borttagningen.
+* Tryck på **Esc** för att stänga konfigurationsrutan och ignorera ändringarna. Det här är motsvarigheten till **[!UICONTROL Cancel]** knappen.
+* Tryck **[!UICONTROL Enter]** eller klicka utanför rutan för att stänga konfigurationsrutan. Ändringarna sparas. Det här är motsvarigheten till **[!UICONTROL Ok]** knappen.
+* Om du trycker på **[!UICONTROL Delete]** eller **backstegstangenten** kan du sedan trycka på **[!UICONTROL Enter]** för att bekräfta borttagningen.
 
 _I popup-fönster:_
 
 * Tryck på **Esc** för att stänga den (motsvarar knappen **Avbryt** ).
-* Tryck på **[!UICONTROL Enter]**för att spara eller bekräfta (motsvarar knappen**[!UICONTROL Ok]** eller **[!UICONTROL Save]**).
+* Tryck på **[!UICONTROL Enter]** för att spara eller bekräfta (motsvarar knappen **[!UICONTROL Ok]** eller **[!UICONTROL Save]** ).
 
 _I händelse-, datakälla- eller åtgärdskonfigurationsrutan:_
 
 * Tryck på **Esc** för att stänga konfigurationsfönstret utan att spara.
-* Tryck på **[!UICONTROL Enter]**för att spara ändringarna och stänga konfigurationsfönstret.
+* Tryck på **[!UICONTROL Enter]** för att spara ändringarna och stänga konfigurationsfönstret.
 * Tryck på **tabbtangenten** för att hoppa mellan de olika fälten som ska konfigureras.
 
 _I den enkla uttrycksredigeraren_
@@ -114,5 +118,5 @@ _På en skärm med ett sökfält:_
 _På resans arbetsyta:_
 
 * Använd tangentkombinationen **Ctrl/Cmd + A** för att markera alla aktiviteter.
-* När en eller flera aktiviteter är markerade trycker du på **[!UICONTROL Delete]**eller** backsteg **för att ta bort dem. Sedan kan du trycka på**[!UICONTROL Enter]** för att bekräfta i bekräftelsefönstret.
+* När en eller flera aktiviteter är markerade trycker du på **[!UICONTROL Delete]** eller **backsteg** för att ta bort dem. Sedan kan du trycka på **[!UICONTROL Enter]** för att bekräfta i bekräftelsefönstret.
 * Dubbelklicka på en aktivitet från den vänstra paletten för att lägga till den på den första tillgängliga positionen (uppifrån och ned).
