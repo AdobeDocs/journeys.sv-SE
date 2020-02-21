@@ -26,10 +26,6 @@ Fel visas med en varningssymbol på aktiviteterna på arbetsytan. Placera markö
 
 ![](../assets/journey63.png)
 
-Om två aktiviteter inte är kopplade visas en varning på arbetsytan.
-
-![](../assets/canvas-disconnected.png)
-
 Bredvid **[!UICONTROL Test]** växlingsknappen och **[!UICONTROL Publish]** knappen kan ett varningstecken visas. Den här varningssignalen visar fel som upptäckts av systemet och förhindrar aktivering av testläget eller publicering av resan. Vanligtvis är fel som upptäcks av systemet länkade till fel som visas i aktiviteterna, men ibland är de länkade till andra problem. I det här fallet kan du visa dem och försöka identifiera problemet med hjälp av felbeskrivningen. Om du inte kan identifiera problemet kan du kopiera informationen och skicka den till administratören eller till supporten. Observera att fel som blockerar testet och fel som blockerar publikationen är liknande.
 
 Systemet upptäcker två typer av problem: fel och varningar. Fel vid blockpublicering och testaktivering. Varningar indikerar potentiella problem som inte blockerar testaktivering eller publicering. Du får en beskrivning av problemet och ett ID för felloggen av typen ERR_XXX_XXX. Detta hjälper teknisk support att identifiera problemet.
