@@ -20,7 +20,7 @@ source-git-commit: 6274426ec04315149fb430b847498c0e20164bae
 >[!CONTEXTUALHELP]
 >id=&quot;jo_home&quot;
 >title=&quot;About Journey list&quot;
->abstract=&quot;Med reselistan kan du se alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte stoppa eller ta bort en resa som är slutförd. Du kan också använda sökfältet för att söka efter en resa.&quot;
+>abstract=&quot;Med reselistan kan du se alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte stoppa eller ta bort en stoppad resa. Du kan också använda sökfältet för att söka efter en resa.&quot;
 >additional-url=&quot;https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4&quot; text=&quot;Titta på filmen&quot;
 
 
@@ -43,10 +43,6 @@ Du kan även få åtkomst till Journey Orchestration från Experience Cloud-star
 De översta menyerna gör att du kan navigera bland de olika funktionerna i Journey Orchestration: **[!UICONTROL Home]**(resorna),**[!UICONTROL Data Sources]**, **[!UICONTROL Events]**, **[!UICONTROL Actions]**.
 
 ![](../assets/journey2.png)
-
-Klicka på ![](../assets/icon-context.png) ikonen i skärmens övre högra hörn för att visa sammanhangsberoende hjälp. Den är tillgänglig på olika skärmar i listan över resan (resor, händelser, åtgärder och datakällor). På så sätt kan du visa en kort beskrivning av den aktuella funktionen och få tillgång till relaterade artiklar och videoklipp.
-
-![](../assets/journey2bis.png)
 
 ## Söka och filtrera{#section_lgm_hpz_pgb}
 
