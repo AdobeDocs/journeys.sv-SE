@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6274426ec04315149fb430b847498c0e20164bae
+source-git-commit: 73f1a503ea2c8b3494460c666a05078ed914e58b
 
 ---
 
@@ -20,6 +20,21 @@ source-git-commit: 6274426ec04315149fb430b847498c0e20164bae
 
 På den här sidan visas alla dokumentationsuppdateringar för resesamordning.
 Du kan även läsa [versionsinformationen](../release-notes/release-notes.md)om resesamordning.
+
+## Mars 2020 {#march-2020}
+
+* Utlösandet av flera händelser har lagts till i testlägesavsnittet [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
+* Avsnittet Testläge har uppdaterats med avseende på den nya **väntetiden i testparametern** . [Läs mer](../building-journeys/testing-the-journey.md)
+* Avsnittet Testlogg har uppdaterats med externa anropsfelkoder och svar. [Läs mer](../building-journeys/testing-the-journey.md#viewing_logs)
+* Tidszonshanteringen är nu centraliserad i panelen för reseegenskaper. Läs mer [här](../building-journeys/changing-properties.md#timezone) och [här](../building-journeys/timezone-management.md)
+* Avsnittet Resedesignern har uppdaterats för att återspegla de senaste förbättringarna. [Läs mer](../building-journeys/using-the-journey-designer.md)
+* Gränssnittsbeskrivningen har uppdaterats med information om sammanhangsberoende hjälp. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
+* När du bläddrar bland **XDM-fält** visas det egna namnet. Relaterade avsnitt har uppdaterats. [Läs mer](../about/user-interface.md#friendly-names-display)
+
+
+## Februari 2020 {#february-2020}
+
+* Genvägsavsnittet har uppdaterats. Med **C** -kortkommandot kan du skapa ett nytt objekt i alla listskärmar. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
 
 ## Januari 2020 {#january-2020}
 
