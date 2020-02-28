@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f57cc43d8f2a223c04cc4ccccb3b3c3e0bcadfc1
+source-git-commit: f4f41428b19f611da15b20a1788b240fadfd49fa
 
 ---
 
@@ -19,22 +19,41 @@ source-git-commit: f57cc43d8f2a223c04cc4ccccb3b3c3e0bcadfc1
 
 # Tidszonshantering {#timezone_management}
 
-Tidszonsdefinitionen är tillgänglig i följande aktiviteter:
+Du kan definiera en tidszon i [egenskaperna](../building-journeys/changing-properties.md) för din resa.
+
+Du öppnar Egenskaper genom att klicka på pennikonen i skärmens övre högra hörn.
+
+Den här tidszonen kommer att användas för varje aktivitet i resan som innehåller ett tidselement som:
 
 * [](../building-journeys/condition-activity.md#time_condition)
 * [](../building-journeys/condition-activity.md#date_condition)
 * [](../building-journeys/wait-activity.md#custom)
 * [](../building-journeys/wait-activity.md#fixed_date)
 
-Om resans inmatningshändelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid för dataplattformen, är tidszonen fördefinierad med den som anges i profilen för den person som löper på resan. Om individens profil inte innehåller någon tidszon används instansens tidszon. Du kan kontakta administratören för att få information om instansens tidszon.
+Du kan välja en tidszon eller välja att använda den tidszon som är definierad i användarprofilen.
 
-![](../assets/journey73.png)
+## Definiera en fast tidszon {#fixed-timezone}
 
 Tidszonen kan också korrigeras. Rensa den fördefinierade tidszonen och välj en i listrutan. Om du använder en fast tidszon är den densamma för alla personer som deltar i resan.
 
+I **[!UICONTROL Properties]** väljer du en tidszon.
+
+![](../assets/journey73.png)
+
+## Använda profiler för att definiera resetidszonen {#timezone-from-profiles}
+
+Om resans inmatningshändelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid för dataplattformen, är tidszonen fördefinierad med den som anges i profilen för den person som löper på resan.
+
+Om en tidszon definieras i Experience Platform-profilen kan den hämtas under resan.
+
+Om den enskilda personens profil inte innehåller någon tidszon är den tidszon som hämtas den som definieras i tidszonsfältet.
+
+Om du vill göra det **[!UICONTROL Properties]** går du till **[!UICONTROL Use Profile timezone in timers and conditions]**.
+
 ![](../assets/journey72.png)
 
-Slutligen kan tidszonen vara dynamisk för varje person som går in i steget. I det här fallet använder du uttrycksredigeraren för att välja var du vill att systemet ska hämta informationen (det kan vara från en händelse eller en datakälla). Se [](../expression/expressionadvanced.md).
+## Använda tidszoner i uttryck {#timezone-in-expressions}
 
+Tidszoner används för att skapa uttryck med den avancerade uttrycksredigeraren. I det här fallet använder du uttrycksredigeraren för att välja var du vill att informationen ska hämtas. Se [](../expression/expressionadvanced.md).
 
 Start- och slutdatum för en resa kan inte länkas till en viss tidszon. De kopplas automatiskt till instansens tidszon.
