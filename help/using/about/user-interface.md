@@ -9,20 +9,19 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 6274426ec04315149fb430b847498c0e20164bae
+source-git-commit: 3efe73dbfee331e2cc42ec737f0258f482171998
 
 ---
 
 
-# Användargränssnitt {#concept_rcq_lqt_52b}
+# Användargränssnitt{#concept_rcq_lqt_52b}
 
 
 >[!CONTEXTUALHELP]
 >id=&quot;jo_home&quot;
 >title=&quot;About Journey list&quot;
->abstract=&quot;Med reselistan kan du se alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte stoppa eller ta bort en stoppad resa. Du kan också använda sökfältet för att söka efter en resa.&quot;
+>abstract=&quot;Med reselistan kan du se alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte stoppa eller ta bort en resa som är slutförd. Du kan också använda sökfältet för att söka efter en resa.&quot;
 >additional-url=&quot;https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4&quot; text=&quot;Titta på filmen&quot;
-
 
 >[!NOTE]
 >
@@ -44,6 +43,10 @@ De översta menyerna gör att du kan navigera bland de olika funktionerna i Jour
 
 ![](../assets/journey2.png)
 
+Klicka på ![](../assets/icon-context.png) ikonen i skärmens övre högra hörn för att visa sammanhangsberoende hjälp. Den är tillgänglig på olika skärmar i listan över resan (resor, händelser, åtgärder och datakällor). På så sätt kan du visa en kort beskrivning av den aktuella funktionen och få tillgång till relaterade artiklar och videoklipp.
+
+![](../assets/journey2bis.png)
+
 ## Söka och filtrera{#section_lgm_hpz_pgb}
 
 I listorna **[!UICONTROL Home]**,**[!UICONTROL Data Sources]****[!UICONTROL Events]** och **[!UICONTROL Actions]** kan du söka efter ett objekt med hjälp av ett sökfält.
@@ -52,11 +55,13 @@ Du **[!UICONTROL Filters]** kommer åt dem genom att klicka på filterikonen hö
 
 I listorna **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** , använder du filtren **** Skapa för att filtrera på skapandedatum och användare. Du kan t.ex. välja att bara visa händelser som du har skapat de senaste 30 dagarna.
 
-I reselistan (under **[!UICONTROL Home]**) kan du, utöver **[!UICONTROL Creation filters]** själva, även filtrera de visade resorna efter status och version (**[!UICONTROL Status and version filters]**). Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). Du kan **[!UICONTROL Publication filters]** välja ett publiceringsdatum eller en användare. Du kan till exempel välja att endast visa de senaste versionerna av direktresor som publicerades i går. Se [](../building-journeys/using-the-journey-designer.md).
+I reselistan (under **[!UICONTROL Home]**) kan du, utöver **[!UICONTROL Creation filters]** själva, även filtrera de visade resorna efter status och version (**[!UICONTROL Status and version filters]**). Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). **[!UICONTROL Publication filters]** Du kan välja ett publiceringsdatum eller en viss användare. Du kan till exempel välja att endast visa de senaste versionerna av direktresor som publicerades i går. Se [](../building-journeys/using-the-journey-designer.md).
 
 >[!NOTE]
 >
 >Observera att kolumner som visas kan anpassas med hjälp av konfigurationsknappen högst upp till höger i listorna. Personalisering sparas för varje användare.
+
+Med kolumnerna **[!UICONTROL Last update]** och **[!UICONTROL Last update by]** kan du visa när den senaste uppdateringen av dina resor har gjorts och vilken användare som använde den.
 
 ![](../assets/journey74.png)
 
@@ -67,6 +72,23 @@ I händelse-, datakälla- och åtgärdskonfigurationsrutor visas antalet resor s
 I de olika listorna kan du utföra grundläggande åtgärder för varje element. Du kan till exempel duplicera eller ta bort ett objekt.
 
 ![](../assets/journey4.png)
+
+## XDM-fältnamn visas{#friendly-names-display}
+
+XDM-fältnamn definieras i scheman under fältnamn och visningsnamn när du definierar [händelsenyttolast](../event/defining-the-payload-fields.md), [fältgruppnyttolast](../datasource/field-groups.md) och väljer fält i [uttrycksredigeraren](../expression/expressionadvanced.md).
+När du markerar ett fält visas deras tekniska namn samt ett mer användarvänligt fältnamn.
+
+Du kan ange beskrivningar som &quot;xdm:alternateDisplayInfo&quot; när du ställer in scheman för att definiera egna namn som ska ersätta visningsnamn. Du kan också ändra värdena för &quot;title&quot; och &quot;description&quot; i schemafälten.
+
+Om det finns ett eget namn visas fältet som `<friendly-name>(<name>)`. Om det inte finns något eget namn visas till exempel visningsnamnet `<display-name>(<name>)`. Om ingen av dem är definierad visas bara fältets tekniska namn `<name>`.
+
+Du kan konfigurera egna namnbeskrivningar via ett API-anrop. Mer information finns i Utvecklarhandbok [för](https://www.adobe.io/apis/experienceplatform/home/xdm/xdmservices.html#!api-specification/markdown/narrative/technical_overview/schema_registry/schema_registry_developer_guide.md)schemaregister.
+
+![](../assets/xdm-from-descriptors.png)
+
+>[!NOTE]
+>
+>Eget namn hämtas inte när du väljer fält från en förening av scheman.
 
 ## Använda olika kortkommandon{#section_ksq_zr1_ffb}
 
