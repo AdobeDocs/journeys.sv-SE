@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4871550d1608f4ffdee3b56d38b08f808eb2281c
+source-git-commit: 538b350165365479caef499a74346381643033d5
 
 ---
 
@@ -29,7 +29,7 @@ Det finns fyra typer av villkor:
 
 ## Om villkorsaktiviteten {#about_condition}
 
-Klicka **[!UICONTROL Add a path]**om du vill definiera flera villkor. För varje villkor läggs en ny bana till på arbetsytan efter aktiviteten.
+Klicka **[!UICONTROL Add a path]** om du vill definiera flera villkor. För varje villkor läggs en ny bana till på arbetsytan efter aktiviteten.
 
 ![](../assets/journey47.png)
 
@@ -37,7 +37,7 @@ Observera att utformningen av resorna har funktionell inverkan. När flera sökv
 
 ![](../assets/journey48.png)
 
-Du kan skapa en annan sökväg för målgrupper som inte uppfyller de definierade villkoren genom att markera **[!UICONTROL Show path for other cases than the one(s) above]**. Observera att det här alternativet inte är tillgängligt vid delning. Se[Procentuell delning](#percentage_split).
+Du kan skapa en annan sökväg för målgrupper som inte uppfyller de definierade villkoren genom att markera **[!UICONTROL Show path for other cases than the one(s) above]**. Observera att det här alternativet inte är tillgängligt vid delning. Se [Procentuell delning](#percentage_split).
 
 I det enkla läget kan du utföra enkla frågor baserat på en kombination av fält. Alla tillgängliga fält visas till vänster på skärmen. Dra och släpp fält till huvudzonen. Om du vill kombinera de olika elementen, låser du ihop dem till varandra för att skapa olika grupper och/eller gruppnivåer. Du kan sedan välja en logisk operator för att kombinera element på samma nivå:
 
@@ -58,7 +58,11 @@ På så sätt kan du definiera ett villkor baserat på fält från datakällorna
 
 ## Tidsvillkor{#time_condition}
 
-På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/eller veckodagen. Du kan till exempel bestämma dig för att skicka SMS-meddelanden under dagtid och e-postmeddelanden på natten under vardagar. Du kan definiera en specifik tidszon för det här villkoret. Se [](../building-journeys/timezone-management.md).
+På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/eller veckodagen. Du kan till exempel bestämma dig för att skicka SMS-meddelanden under dagtid och e-postmeddelanden på natten under vardagar.
+
+>[!NOTE]
+>
+>Tidszonen är inte längre specifik för ett villkor och har nu definierats på färdsnivå i färdegenskaperna. Se [](../building-journeys/timezone-management.md).
 
 ![](../assets/journey51.png)
 
@@ -75,6 +79,10 @@ Med det här alternativet kan du slumpmässigt dela målgruppen för att definie
 
 ## Datumvillkor {#date_condition}
 
-På så sätt kan du definiera ett annat flöde baserat på datumet. Om personen till exempel går in i steget under&quot;försäljningsperioden&quot; skickar du ett specifikt meddelande till honom. Resten av året skickar du ett nytt meddelande. När du definierar ett datumvillkor måste du ange en tidszon. Se [](../building-journeys/timezone-management.md).
+På så sätt kan du definiera ett annat flöde baserat på datumet. Om personen till exempel går in i steget under&quot;försäljningsperioden&quot; skickar du ett specifikt meddelande till honom. Resten av året skickar du ett nytt meddelande.
+
+>[!NOTE]
+>
+>Tidszonen är inte längre specifik för ett villkor och har nu definierats på färdsnivå i färdegenskaperna. Se [](../building-journeys/timezone-management.md).
 
 ![](../assets/journey53.png)
