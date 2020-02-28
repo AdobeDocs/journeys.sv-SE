@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3efe73dbfee331e2cc42ec737f0258f482171998
+source-git-commit: 891216a489b79fe4b168ecdb6120f5d9f3e107d0
 
 ---
 
@@ -73,18 +73,15 @@ I de olika listorna kan du utföra grundläggande åtgärder för varje element.
 
 ![](../assets/journey4.png)
 
-## XDM-fältnamn visas{#friendly-names-display}
+## Bläddra bland fälten för dataplattformen {#friendly-names-display}
 
-XDM-fältnamn definieras i scheman under fältnamn och visningsnamn när du definierar [händelsenyttolast](../event/defining-the-payload-fields.md), [fältgruppnyttolast](../datasource/field-groups.md) och väljer fält i [uttrycksredigeraren](../expression/expressionadvanced.md).
-När du markerar ett fält visas deras tekniska namn samt ett mer användarvänligt fältnamn.
+När du definierar [händelsenyttolast](../event/defining-the-payload-fields.md), [fältgruppnyttolast](../datasource/field-groups.md) och väljer fält i [uttrycksredigeraren](../expression/expressionadvanced.md)visas visningsnamnet förutom fältnamnet. Den här informationen hämtas från schemadefinitionen i Experience Data Model.
 
-Du kan ange beskrivningar som &quot;xdm:alternateDisplayInfo&quot; när du ställer in scheman för att definiera egna namn som ska ersätta visningsnamn. Du kan också ändra värdena för &quot;title&quot; och &quot;description&quot; i schemafälten.
-
-Om det finns ett eget namn visas fältet som `<friendly-name>(<name>)`. Om det inte finns något eget namn visas till exempel visningsnamnet `<display-name>(<name>)`. Om ingen av dem är definierad visas bara fältets tekniska namn `<name>`.
-
-Du kan konfigurera egna namnbeskrivningar via ett API-anrop. Mer information finns i Utvecklarhandbok [för](https://www.adobe.io/apis/experienceplatform/home/xdm/xdmservices.html#!api-specification/markdown/narrative/technical_overview/schema_registry/schema_registry_developer_guide.md)schemaregister.
+Om beskrivningar som &quot;xdm:alternateDisplayInfo&quot; anges när du ställer in scheman, kommer de användarvänliga namnen att ersätta visningsnamnen. Det är särskilt användbart när du arbetar med&quot;eVars&quot; och generiska fält. Du kan konfigurera egna namnbeskrivningar via ett API-anrop. Mer information finns i Utvecklarhandbok [för](https://www.adobe.io/apis/experienceplatform/home/xdm/xdmservices.html#!api-specification/markdown/narrative/technical_overview/schema_registry/schema_registry_developer_guide.md)schemaregister.
 
 ![](../assets/xdm-from-descriptors.png)
+
+Om det finns ett eget namn visas fältet som `<friendly-name>(<name>)`. Om det inte finns något eget namn visas till exempel visningsnamnet `<display-name>(<name>)`. Om ingen av dem är definierad visas bara fältets tekniska namn `<name>`.
 
 >[!NOTE]
 >
