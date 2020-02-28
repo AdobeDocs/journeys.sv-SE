@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6274426ec04315149fb430b847498c0e20164bae
+source-git-commit: 3f8f7eb34a11f0ff87ed3c55e7294b5bdbfb9383
 
 ---
 
@@ -37,7 +37,7 @@ Du kan definiera ett villkor om du vill begränsa väntetiden till en viss popul
 >
 >Maximal väntetid är 30 dagar.
 >
->I testläge ställs alla vänteaktiviteter automatiskt in på att vara i 5 sekunder. På så sätt kan du snabbt komma åt testresultaten.
+>I testläge kan du med parametern **Väntetid i test** definiera hur lång tid varje vänteaktivitet ska ta. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Se [](../building-journeys/testing-the-journey.md)
 
 ## Väntetid{#duration}
 
@@ -47,19 +47,19 @@ Ange väntetiden innan nästa aktivitet körs.
 
 ## Vänta fast{#fixed_date}
 
-Välj datumet för körningen av nästa aktivitet. När du definierar ett fast datum måste du ange en tidszon. Se [](../building-journeys/timezone-management.md).
+Välj datumet för körningen av nästa aktivitet.
 
 ![](../assets/journey56.png)
 
 ## Anpassad väntetid{#custom}
 
-Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 juli 2020 klockan 17.00, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller en datakälla. Du kan inte definiera en anpassad längd, till exempel 7 dagar. Uttrycket i uttrycksredigeraren ska ha formatet dateTimeOnly. Se [](../expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns i [](../expression/data-types.md)
+Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 juli 2020 klockan 17.00, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller en datakälla. Du kan inte definiera en anpassad längd, till exempel 7 dagar. Uttrycket i uttrycksredigeraren ska ha formatet dateTimeOnly. Se [](../expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns i [](../expression/data-types.md).
 
 >[!NOTE]
 >
 >Du kan återanvända ett dateTimeOnly-uttryck eller använda en funktion för att konvertera till dateTimeOnly. Till exempel: toDateTimeOnly(@{Event.offerOpened.activity.endTime}), fältet i händelsen har formatet 2016-08-12T09:46:06.
 >
->Tidszonen **** förväntas på en annan plats i det anpassade väntekonfigurationsfönstret. Därför är det inte möjligt i dag från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2016-08-12T09:46:06.982-05. Se [](../building-journeys/timezone-management.md).
+>Tidszonen **** förväntas i egenskaperna för din resa. Därför är det inte möjligt i dag från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2016-08-12T09:46:06.982-05. Se [](../building-journeys/timezone-management.md).
 
 ![](../assets/journey57.png)
 
