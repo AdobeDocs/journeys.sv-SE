@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 6274426ec04315149fb430b847498c0e20164bae
+source-git-commit: 25715e66b5495347e0c5ee2b1d75d44aa9cd3125
 
 ---
 
@@ -25,6 +25,10 @@ Kontrollera att alla aktiviteter är korrekt konfigurerade innan du testar och p
 Fel visas med en varningssymbol på aktiviteterna på arbetsytan. Placera markören på utropstecknet för att visa felmeddelandet. Om du klickar på aktiviteten visas raden med en varning. Om ett obligatoriskt fält till exempel är tomt visas ett fel.
 
 ![](../assets/journey63.png)
+
+Om två aktiviteter inte är kopplade visas en varning på arbetsytan.
+
+![](../assets/canvas-disconnected.png)
 
 Bredvid **[!UICONTROL Test]** växlingsknappen och **[!UICONTROL Publish]** knappen kan ett varningstecken visas. Den här varningssignalen visar fel som upptäckts av systemet och förhindrar aktivering av testläget eller publicering av resan. Vanligtvis är fel som upptäcks av systemet länkade till fel som visas i aktiviteterna, men ibland är de länkade till andra problem. I det här fallet kan du visa dem och försöka identifiera problemet med hjälp av felbeskrivningen. Om du inte kan identifiera problemet kan du kopiera informationen och skicka den till administratören eller till supporten. Observera att fel som blockerar testet och fel som blockerar publikationen är liknande.
 
