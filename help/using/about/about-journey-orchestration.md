@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: fed6fd8d8ee497ec47727f7297dc72f319fabe27
+source-git-commit: 891216a489b79fe4b168ecdb6120f5d9f3e107d0
 
 ---
 
@@ -48,4 +48,3 @@ Eftersom resan är flerstegs kan du skapa avancerade scenarier. Efter en första
 >[!NOTE]
 >
 >Dokumentationen uppdateras ofta för att återspegla de senaste ändringarna i produkten. Vissa skärmbilder kan dock skilja sig något från produktens gränssnitt.
-
