@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 73f1a503ea2c8b3494460c666a05078ed914e58b
+source-git-commit: d331454b0ad351a1967ec57d0b3f24a675f10f2a
 
 ---
 
@@ -79,7 +79,7 @@ Du kan även läsa [Dokumentationsuppdateringar](../release-notes/documentation-
 <td>
 <p>Färdpaletten <strong>till vänster</strong>har förbättrats:</p>
 <ul>
-<li>Med en ny ikon bredvid **Search**-fältet kan du dölja eller visa otillgängliga element på paletten, till exempel händelser som använder ett annat namnutrymme än de som används under resan. Som standard är otillgängliga objekt dolda.</li>
+<li>Med en ny ikon bredvid <strong>sökfältet</strong> kan du dölja eller visa otillgängliga element på paletten, till exempel händelser som använder ett annat namnutrymme än de som används under din resa. Som standard är otillgängliga objekt dolda.</li>
 <li>När du använder <strong>sökfältet</strong> visas nu antalet resultat för varje aktivitetskategori på arbetsytan.</li>
 <li>Navigeringen mellan de olika aktivitetskategorierna har förbättrats.</li>
 </ul>
