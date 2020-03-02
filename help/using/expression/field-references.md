@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8be9cd1803ab2f7093934424c36fcd7407a4a20a
+source-git-commit: 61e269bc319407f48006486b96333385ef8b9c58
 
 ---
 
@@ -47,7 +47,6 @@ En syntaxfärg används för att visuellt skilja händelsefält (grönt) från f
 
 Ett standardvärde kan kopplas till ett fältnamn. Syntaxen är följande:
 
-
 ```
 // event field
 @{<event name>.<XDM path to the field>, defaultValue: <default value expression>}
@@ -71,7 +70,9 @@ Exempel:
 @{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all()
 ```
 
-**Referens för ett fält som definieras i en karta** För att hämta ett element i en karta använder vi postfunktionen med en given nyckel. Det används till exempel när du definierar nyckeln för en händelse enligt det valda namnutrymmet. Se Välja namnutrymme. Mer information finns i [](../event/selecting-the-namespace.md).
+**Referens för ett fält som definieras i en karta**
+
+För att kunna hämta ett element i en karta använder vi inmatningsfunktionen med en given nyckel. Det används till exempel när du definierar nyckeln för en händelse enligt det valda namnutrymmet. Se Välja namnutrymme. Mer information finns i [](../event/selecting-the-namespace.md).
 
 ```
 @{MyEvent.identityMap.entry('Email').first().id}
