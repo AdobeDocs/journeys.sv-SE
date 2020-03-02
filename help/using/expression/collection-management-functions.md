@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+source-git-commit: 61e269bc319407f48006486b96333385ef8b9c58
 
 ---
 
@@ -64,7 +64,7 @@ Dessa funktioner förklaras nedan. I följande exempel använder vi händelsenyt
 
 **Funktionen &quot;all(`<condition>`)&quot;**
 
-Funktionen **[!UICONTROL all]**aktiverar definitionen av ett filter i en given samling genom att använda ett booleskt uttryck.
+Funktionen **[!UICONTROL all]** aktiverar definitionen av ett filter i en given samling genom att använda ett booleskt uttryck.
 
 ```
 <listExpression>.all(<condition>)
@@ -72,7 +72,7 @@ Funktionen **[!UICONTROL all]**aktiverar definitionen av ett filter i en given s
 
 Bland alla appanvändare kan du till exempel hämta de som använder IOS 13 (booleskt uttryck &quot;app used == IOS 13&quot;). Resultatet av den här funktionen är den filtrerade lista som innehåller objekt som matchar det booleska uttrycket (exempel: appanvändare 1, appanvändare 34, appanvändare 432).
 
-I en aktivitet i Datakällans villkor kan du kontrollera om resultatet av **[!UICONTROL all]**funktionen är null eller inte. Du kan också kombinera den här**[!UICONTROL all]** funktionen med andra funktioner som **[!UICONTROL count]**. Mer information finns i Villkor för[datakälla](../building-journeys/condition-activity.md#data_source_condition).
+I en aktivitet i Datakällans villkor kan du kontrollera om resultatet av **[!UICONTROL all]** funktionen är null eller inte. Du kan också kombinera den här **[!UICONTROL all]** funktionen med andra funktioner som **[!UICONTROL count]**. Mer information finns i Villkor för [datakälla](../building-journeys/condition-activity.md#data_source_condition).
 
 **Exempel 1:**
 
@@ -86,7 +86,7 @@ Resultatet är sant.
 
 **Exempel 2:**
 
-Här använder vi **[!UICONTROL count]**funktionen för att kontrollera om det finns push-meddelandetoken i samlingen.
+Här använder vi **[!UICONTROL count]** funktionen för att kontrollera om det finns push-meddelandetoken i samlingen.
 
 ```
 count(@{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().token}) > 0
@@ -130,7 +130,7 @@ Resultatet av uttrycket är **3**.
 
 **Exempel 3:**
 
-Här kontrollerar vi om en individ inte har fått någon information inom de senaste 24 timmarna. Vi filtrerar samlingen av upplevelsehändelser som hämtats från ExperiencePlatform-datakällan med två uttryck som baseras på två element i samlingen. I synnerhet jämförs tidsstämpeln för händelsen med dateTime som returneras av **[!UICONTROL nowWithDelta]**funktionen.
+Här kontrollerar vi om en individ inte har fått någon information inom de senaste 24 timmarna. Vi filtrerar samlingen av upplevelsehändelser som hämtats från ExperiencePlatform-datakällan med två uttryck som baseras på två element i samlingen. I synnerhet jämförs tidsstämpeln för händelsen med dateTime som returneras av **[!UICONTROL nowWithDelta]** funktionen.
 
 ```
 count(#{ExperiencePlatform.MarltonExperience.experienceevent.all(
@@ -152,7 +152,6 @@ count(
 )._id}) > 0
 ```
 
-
 <!--**"All + Count" example 4:** here we use the count function in a boolean expression to see if there is push notification tokens in the collection.
 
 `count(@{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().application.name}) > 0`
@@ -171,12 +170,14 @@ The result will be:
 
 >[!NOTE]
 >
->**[!UICONTROL currentEventField]**är bara tillgängligt när händelsesamlingar och** currentDataPackField ändras **>när du hanterar datakällsamlingar. När vi bearbetar samlingar med**[!UICONTROL all]**, **[!UICONTROL first]**och**[!UICONTROL last]**,
->slinga för varje element i samlingen ett i taget. **[!UICONTROL currentEventField]**och** currentDataPackField **>motsvarar elementet som repeteras.
+>**[!UICONTROL currentEventField]** är bara tillgängligt när händelsesamlingar och **currentDataPackField ändras**
+>när du hanterar datakällsamlingar. När vi bearbetar samlingar med **[!UICONTROL all]**, **[!UICONTROL first]** och **[!UICONTROL last]**,
+>slinga för varje element i samlingen ett i taget. **[!UICONTROL currentEventField]** och **currentDataPackField**
+>motsvarar elementet som repeteras.
 
 **Funktionerna &quot;first(`<condition>`)&quot; och &quot;last(`<condition>`)&quot;**
 
-Funktionerna **[!UICONTROL first]**och**[!UICONTROL last]** aktiverar även definitionen av ett filter i samlingen samtidigt som det första/sista elementet i listan som uppfyller filtret returneras.
+Funktionerna **[!UICONTROL first]** och **[!UICONTROL last]** aktiverar även definitionen av ett filter i samlingen samtidigt som det första/sista elementet i listan som uppfyller filtret returneras.
 
 _`<listExpression>.first(<condition>)`_
 
@@ -205,8 +206,8 @@ Resultatet är &quot;token_2&quot;.
 >[!NOTE]
 >
 >Erfarenhetshändelserna hämtas från Experience Platform som en samling i omvänd kronologisk ordning, vilket innebär att
->* **[!UICONTROL first]**funktionen returnerar den senaste händelsen
->* **[!UICONTROL last]**returnerar den äldsta.
+>* **[!UICONTROL first]** funktionen returnerar den senaste händelsen
+>* **[!UICONTROL last]** returnerar den äldsta.
 
 
 **Exempel 3:**
@@ -220,7 +221,8 @@ currentDataPackField.placeContext.geo.dmaID > 0).placeContext.geo.dmaID} == 602
 
 **Funktionen &quot;at(`<index>`)&quot;**
 
-Med funktionen kan du referera till ett visst element i en samling enligt ett index. **[!UICONTROL at]**Index 0 är samlingens första index.
+Med funktionen kan du referera till ett visst element i en samling enligt ett index. **[!UICONTROL at]** 
+Index 0 är samlingens första index.
 
 _`<listExpression>`.at(`<index>`)_
 
