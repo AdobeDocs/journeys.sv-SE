@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+source-git-commit: a0db4d65218861b71d35f83ccf2d15e25a1597e8
 
 ---
 
@@ -34,7 +34,7 @@ Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två p
 
 Här följer de viktigaste stegen för att skapa och konfigurera en ny extern datakälla:
 
-1. I listan med datakällor klickar du på **[!UICONTROL Add]**för att skapa en ny extern datakälla.
+1. I listan med datakällor klickar du på **[!UICONTROL Add]** för att skapa en ny extern datakälla.
 
    ![](../assets/journey25.png)
 
@@ -57,7 +57,7 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
    ![](../assets/journey27.png)
 
-1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**,**[!UICONTROL Basic]**, **[!UICONTROL Custom]**eller**[!UICONTROL API key]**. Mer information om det anpassade autentiseringsläget finns i [](../datasource/external-data-sources.md#section_wjp_nl5_nhb). I vårt exempel väljer vi:
+1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**. Mer information om det anpassade autentiseringsläget finns i [](../datasource/external-data-sources.md#section_wjp_nl5_nhb). I vårt exempel väljer vi:
 
 
    * **[!UICONTROL Type]**: &quot;API-nyckel&quot;
@@ -70,20 +70,20 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
 För parameteruppsättningen&quot;long/lat&quot; skapar vi en fältgrupp med följande information:
 
-* **[!UICONTROL Used in]**: visar antalet resor som använder en fältgrupp. Du kan klicka på**[!UICONTROL View journeys]** ikonen om du vill visa en lista över resor som använder den här fältgruppen.
+* **[!UICONTROL Used in]**: visar antalet resor som använder en fältgrupp. Du kan klicka på **[!UICONTROL View journeys]** ikonen om du vill visa en lista över resor som använder den här fältgruppen.
 * **[!UICONTROL Method]**: välj metoden POST eller GET. I vårt fall väljer vi metoden GET.
 * **[!UICONTROL Cache duration]**: Vi vill att vädret ska cachas i tio minuter.
-* **[!UICONTROL Response Payload]**: klicka inuti**[!UICONTROL Payload]** fältet och klistra in ett exempel på nyttolasten som returneras av anropet. Vi använde till exempel en nyttolast som finns på en API-webbplats för väder. Kontrollera att fälttyperna är korrekta. Varje gång API anropas hämtas alla fält som ingår i nyttolastexemplet. Observera att du kan klicka på **[!UICONTROL Paste a new payload]**om du vill ändra den nyttolast som har skickats.
-* **[!UICONTROL Dynamic Values]**: Ange de olika parametrarna avgränsade med kommatecken &quot;long,lat&quot; i vårt exempel. Eftersom parametervärdena är beroende av körningskontexten, kommer de att definieras i resorna. Se[](../expression/expressionadvanced.md).
+* **[!UICONTROL Response Payload]**: klicka inuti **[!UICONTROL Payload]** fältet och klistra in ett exempel på nyttolasten som returneras av anropet. Vi använde till exempel en nyttolast som finns på en API-webbplats för väder. Kontrollera att fälttyperna är korrekta. Varje gång API anropas hämtas alla fält som ingår i nyttolastexemplet. Observera att du kan klicka på **[!UICONTROL Paste a new payload]** om du vill ändra den nyttolast som har skickats.
+* **[!UICONTROL Dynamic Values]**: Ange de olika parametrarna avgränsade med kommatecken &quot;long,lat&quot; i vårt exempel. Eftersom parametervärdena är beroende av körningskontexten, kommer de att definieras i resorna. Se [](../expression/expressionadvanced.md).
 * **[!UICONTROL Sent Payload]**: det här fältet visas inte i vårt exempel. Det är bara tillgängligt om du väljer metoden POST. Klistra in nyttolasten som ska skickas till tredjepartssystemet.
 
-Om det gäller ett GET-anrop som kräver parametrar anger du parametern/parametrarna i **[!UICONTROL Parameters]**fältet och de läggs automatiskt till i slutet av anropet. Om du har ett POST-samtal måste du:
+Om det gäller ett GET-anrop som kräver parametrar anger du parametern/parametrarna i **[!UICONTROL Parameters]** fältet och de läggs automatiskt till i slutet av anropet. Om du har ett POST-samtal måste du:
 
-* Ange de parametrar som ska skickas vid anrop i **[!UICONTROL Parameter]**fältet (i exemplet nedan: &quot;identifier&quot;).
+* Ange de parametrar som ska skickas vid anrop i **[!UICONTROL Parameter]** fältet (i exemplet nedan: &quot;identifier&quot;).
 * ange dem också med exakt samma syntax i texten för den skickade nyttolasten. Om du vill göra det måste du lägga till: &quot;param&quot;: &quot;namn på parametern&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
 
    ```
-   {“id”:{“param”:“identifier”}}
+   {"id":{"param":"identifier"}}
    ```
 
 ![](../assets/journey29.png)
@@ -141,7 +141,7 @@ Autentiseringsformatet är:
     (optional, mandatory if authorizationType is 'header' or 'queryParam') "tokenTarget": "<name of the header or queryParam if the authorizationType is 'header' or 'queryParam'>",
     "endpoint": "<URL of the authentication endpoint>",
     "method": "<HTTP method to call the authentication endpoint, in 'GET' or 'POST'>",
-    (optional) "headers: {
+    (optional) "headers": {
         "<header name>": "<header value>",
         ...
     },
