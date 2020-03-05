@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d6360d616199d597255610959432c7b93fd4e25c
+source-git-commit: a0db4d65218861b71d35f83ccf2d15e25a1597e8
 
 ---
 
@@ -43,7 +43,7 @@ Returnerar ett heltal.
 
 ## Exempel
 
-`indexOf("Hello, "l"))`
+`indexOf("Hello", "l")`
 
 Returnerar 2.
 
