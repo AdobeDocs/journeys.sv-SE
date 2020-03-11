@@ -4,7 +4,7 @@ solution: Journeys
 title: Produktdokumentation för resesamordning
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 39e3ad1fe9f846b63cc210c809d4cdc9594fe3f2
+source-git-commit: 94826cde0d8de196f9f8dfcece417df8d593b40e
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 39e3ad1fe9f846b63cc210c809d4cdc9594fe3f2
 
 ## Kom igång
 
-* **[Vad är Journey Orchestration?](using/action/working-with-adobe-campaign.md)**<br/>Läs mer om Journey Orchestration.
+* **[Vad är Journey Orchestration?](using/about/about-journey-orchestration.md)**<br/>Läs mer om Journey Orchestration.
 
 * **[Bygg din första resa](using/about/get-started.md)**<br/>Upptäck de viktigaste stegen för att konfigurera resesamordning och bygga din första resa.
 
@@ -34,7 +34,7 @@ source-git-commit: 39e3ad1fe9f846b63cc210c809d4cdc9594fe3f2
     <div>
     <a href="using/about/troubleshooting.md"><strong>Felsökning</strong></a>
     </div>
-    <em></em>Ta reda på vilka verktyg du kan använda för att felsöka dina resor.
+    <em>Ta reda på vilka verktyg du kan använda för att felsöka dina resor.</em>
     <br>
   </td>
   <td valign="top">
@@ -44,7 +44,7 @@ source-git-commit: 39e3ad1fe9f846b63cc210c809d4cdc9594fe3f2
     <div>
     <a href="using/usecase/building-the-journey.md"><strong>Använd skiftläge</strong></a>
     </div>
-    <em></em>Lär dig skapa en avancerad resa steg för steg.
+    <em>Lär dig skapa en avancerad resa steg för steg.</em>
     <br>
   </td>
   <td valign="top">
