@@ -9,19 +9,12 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 891216a489b79fe4b168ecdb6120f5d9f3e107d0
+source-git-commit: bc5b29eefa4d787cd448352252823a616489d8c8
 
 ---
 
 
 # Användargränssnitt{#concept_rcq_lqt_52b}
-
-
->[!CONTEXTUALHELP]
->id=&quot;jo_home&quot;
->title=&quot;About Journey list&quot;
->abstract=&quot;Med reselistan kan du se alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte stoppa eller ta bort en resa som är slutförd. Du kan också använda sökfältet för att söka efter en resa.&quot;
->additional-url=&quot;https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4&quot; text=&quot;Titta på filmen&quot;
 
 >[!NOTE]
 >
@@ -29,15 +22,23 @@ source-git-commit: 891216a489b79fe4b168ecdb6120f5d9f3e107d0
 >
 >Dokumentationen uppdateras ofta för att återspegla de senaste ändringarna i produkten. Vissa skärmbilder kan dock skilja sig något från produktens gränssnitt.
 
-## Identifiera gränssnittet{#section_jsq_zr1_ffb}
+## Åtkomst till resesamordning{#accessing_journey_orchestration}
 
-Klicka på ikonen i det övre högra hörnet om du vill öppna gränssnittet för **[!UICONTROL App Selector]** en guidad resa. Klicka sedan **[!UICONTROL Journey Orchestration]** till höger under Experience Platform.
+Klicka på ikonen i det övre högra hörnet för att komma åt gränssnittet för **[!UICONTROL App Selector]** en guidad resa. Klicka sedan **[!UICONTROL Journey Orchestration]** till höger under Experience Platform.
 
 ![](../assets/journey1.png)
 
 Du kan även få åtkomst till Journey Orchestration från Experience Cloud-startsidan i **[!UICONTROL Quick access]** avsnittet.
 
 ![](../assets/journey1bis.png)
+
+## Identifiera gränssnittet{#section_jsq_zr1_ffb}
+
+>[!CONTEXTUALHELP]
+>id=&quot;jo_home&quot;
+>title=&quot;About Journey list&quot;
+>abstract=&quot;Med reselistan kan du se alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte ta bort eller starta om en resa som är slutförd. Du kan skapa en ny version av den eller duplicera den. Du kan också använda sökfältet för att söka efter en resa.&quot;
+>additional-url=&quot;https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4&quot; text=&quot;Titta på filmen&quot;
 
 De översta menyerna gör att du kan navigera bland de olika funktionerna i Journey Orchestration: **[!UICONTROL Home]**(resorna),**[!UICONTROL Data Sources]**, **[!UICONTROL Events]**, **[!UICONTROL Actions]**.
 
@@ -55,7 +56,7 @@ Du **[!UICONTROL Filters]** kommer åt dem genom att klicka på filterikonen hö
 
 I listorna **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** , använder du filtren **** Skapa för att filtrera på skapandedatum och användare. Du kan t.ex. välja att bara visa händelser som du har skapat de senaste 30 dagarna.
 
-I reselistan (under **[!UICONTROL Home]**) kan du, utöver **[!UICONTROL Creation filters]** själva, även filtrera de visade resorna efter status och version (**[!UICONTROL Status and version filters]**). Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). **[!UICONTROL Publication filters]** Du kan välja ett publiceringsdatum eller en viss användare. Du kan till exempel välja att endast visa de senaste versionerna av direktresor som publicerades i går. Se [](../building-journeys/using-the-journey-designer.md).
+I reselistan (under **[!UICONTROL Home]**) kan du utöver **[!UICONTROL Creation filters]** själva filtrera de visade resorna efter status och version (**[!UICONTROL Status and version filters]**). Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). **[!UICONTROL Publication filters]** Du kan välja ett publiceringsdatum eller en viss användare. Du kan till exempel välja att endast visa de senaste versionerna av direktresor som publicerades i går. Se [](../building-journeys/using-the-journey-designer.md).
 
 >[!NOTE]
 >
