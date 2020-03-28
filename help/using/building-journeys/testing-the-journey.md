@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25715e66b5495347e0c5ee2b1d75d44aa9cd3125
+source-git-commit: e53ecd96bbb308fe109843de6f64cde4cba5e246
 
 ---
 
@@ -24,7 +24,7 @@ Du kan testa din resa innan den publiceras med testprofiler. På så sätt kan n
 
 Så här använder du testläget:
 
-1. Innan du testar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kommer inte att kunna starta ett test av en resa med fel. Se [](../about/troubleshooting.md#section_h3q_kqk_fhb). En varningssymbol visas om det finns fel.
+1. Kontrollera att resan är giltig och att det inte finns något fel innan du testar den. Du kommer inte att kunna starta ett test av en resa med fel. Se [](../about/troubleshooting.md#section_h3q_kqk_fhb). En varningssymbol visas om det finns fel.
 
 1. Aktivera testläget genom att klicka på **[!UICONTROL Test]** växlingsknappen i det övre högra hörnet.
 
@@ -86,7 +86,9 @@ Antalet personer (tekniskt sett kallas de instanser) som för närvarande befinn
 * _aktuellt steg_: det steg där personen befinner sig på resan. Vi rekommenderar att du lägger till etiketter till dina aktiviteter för att lättare kunna identifiera dem.
 * _currentstep_ > phase: Status för den enskilda personens resa (körning, slutförd, fel eller timeout). Mer information finns nedan.
 * _currentStep_ > _extraInfo_: beskrivning av felet och annan sammanhangsbaserad information.
+* _currentStep_ > _fetchErrors_: information om hämtning av datafel som inträffade under det här steget.
 * _externalKeys_: värdet för den nyckelformel som definieras i händelsen.
 * _enrichedData_: de data som resan har hämtat om resan använder datakällor.
 * _transitionHistory_: en lista med steg som personen följde. För händelser visas nyttolasten.
+* _actionExecutionErrors_ : information om de fel som uppstått.
 
