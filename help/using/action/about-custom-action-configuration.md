@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0c34ce9723168db3a35e3c5de122eae3462b83c0
+source-git-commit: e53ecd96bbb308fe109843de6f64cde4cba5e246
 
 ---
 
@@ -44,4 +44,4 @@ Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
    >[!NOTE]
    >
-   >När en anpassad åtgärd används i en reseversion är de flesta parametrar skrivskyddade. Du kan bara ändra **[!UICONTROL Name]**, **[!UICONTROL Description]**, **[!UICONTROL URL]** fält och **[!UICONTROL Authentication]** avsnitt.
+   >När en anpassad åtgärd används i en resa är de flesta parametrar skrivskyddade. Du kan bara ändra **[!UICONTROL Name]**, **[!UICONTROL Description]**, **[!UICONTROL URL]** fält och **[!UICONTROL Authentication]** avsnitt.
