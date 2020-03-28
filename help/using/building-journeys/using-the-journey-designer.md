@@ -22,7 +22,7 @@ På hemmenyn för resan kan du visa **listan över resor**. Skapa en ny resa ell
 
 ## Reselistan {#journey_list}
 
-Med **reselistan** kan du visa alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte ta bort eller starta om en resa som är slutförd. Du kan skapa en ny version av den eller duplicera den. Du kan också använda sökfältet för att söka efter en resa.
+Med **reselistan** kan du visa alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte ta bort eller starta om en resa som är slutförd. Du kan skapa en ny version från den, duplicera den eller stoppa den. Du kan också använda sökfältet för att söka efter en resa.
 
 Du **[!UICONTROL Filters]** kommer åt dem genom att klicka på filterikonen högst upp till vänster i listan. Med filtermenyn kan du filtrera de visade resorna enligt olika villkor (status, de som du skapade, de som ändrades under de senaste 30 dagarna, endast de senaste versionerna osv.). Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd. Kolumner som visas i listan kan konfigureras. Alla filter och kolumner sparas per användare.
 
