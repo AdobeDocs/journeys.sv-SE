@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a0db4d65218861b71d35f83ccf2d15e25a1597e8
+source-git-commit: a1c4eed8360efcbfcaa5e54c8831e1a4b2ecc02e
 
 ---
 
@@ -88,11 +88,16 @@ Om det gäller ett GET-anrop som kräver parametrar anger du parametern/parametr
 
 ![](../assets/journey29.png)
 
-Klicka **[!UICONTROL Save]**.
+Klicka på **[!UICONTROL Save]**.
 
 Datakällan är nu konfigurerad och klar att användas i dina resor, till exempel under dina förhållanden eller för att anpassa ett e-postmeddelande. Om temperaturen är över 30°C kan du välja att skicka ett visst meddelande.
 
 ## Anpassat autentiseringsläge{#section_wjp_nl5_nhb}
+
+>[!CONTEXTUALHELP]
+>id=&quot;jo_authentication_payload&quot;
+>title=&quot;Om anpassad autentisering&quot;
+>abstract=&quot;Det anpassade autentiseringsläget används för komplex autentisering för att anropa API-omslutningsprotokoll som OAuth2. Körningen av funktionsmakrot är en tvåstegsprocess. Först görs ett anrop till slutpunkten för att generera åtkomsttoken. Åtkomsttoken matas sedan in i åtgärdens HTTP-begäran.&quot;
 
 Det här autentiseringsläget används för komplex autentisering, som ofta används för att anropa API-omslutningsprotokoll som OAuth2, för att hämta en åtkomsttoken som ska injiceras i den faktiska HTTP-begäran för åtgärden.
 
