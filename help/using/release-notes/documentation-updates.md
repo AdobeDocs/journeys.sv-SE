@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 18f5d56e77958fc33c8e5e7e9d450943207a6017
+source-git-commit: 6f196f22d4f5b03973bead78d3fe5454f109734d
 
 ---
 
@@ -24,7 +24,7 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md)om 
 ## Mars 2020 {#march-2020}
 
 * Begränsningarna för anpassade åtgärder som används under en resa har uppdaterats. Du kan också ändra **URL** -fältet och **autentiseringsparametrarna** . [Läs mer](../action/about-custom-action-configuration.md)
-* Nya sammanhangsberoende hjälpposter har lagts till. Nyttolastrutan för anpassad autentisering (i åtgärder och datakällor) innehåller nu en hjälpikon som länkar till det här [avsnittet](../datasource/external-data-sources.md#section_wjp_nl5_nhb). Hjälpikonen för listan Resor länkar nu även till det här [avsnittet](../building-journeys/using-the-journey-designer.md#journey_list).
+* Nya sammanhangsberoende hjälpposter har lagts till. Nyttolastrutan för anpassad autentisering (i åtgärder och datakällor) innehåller nu en hjälpikon som länkar till det här [avsnittet](../datasource/external-data-sources.md#section_wjp_nl5_nhb).
 * Färdiga resor kan nu stoppas. [Läs mer](../building-journeys/using-the-journey-designer.md)
 * Gränssnittsbeskrivningsavsnittet har omstrukturerats. [Läs mer](../about/user-interface.md)
 * Utlösandet av flera händelser har lagts till i testlägesavsnittet [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
