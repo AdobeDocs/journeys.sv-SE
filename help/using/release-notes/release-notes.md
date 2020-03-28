@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d331454b0ad351a1967ec57d0b3f24a675f10f2a
+source-git-commit: 66e4acb339e9190cf2877c0ab1824ca5f41c8a6d
 
 ---
 
@@ -59,7 +59,7 @@ Du kan även läsa [Dokumentationsuppdateringar](../release-notes/documentation-
 <p>Tidszonshanteringen är nu centraliserad i panelen för reseegenskaper. Två parametrar har lagts till i resans egenskaper:</p>
 <img src="../assets/rn-timezone.png"/>
 <ul>
-<li>I listrutan <strong>Tidszon</strong> kan du välja en viss tidszon. Som standard används webbläsarens tidszon.</li>
+<li>I listrutan <strong>Tidszon</strong> kan du välja en viss tidszon. Som standard används webbläsarens tidszon. </li>
 <li>I kryssrutan Tidszon för <strong>profil</strong> kan du använda tidszonen Experience Platform-profil för den person som går in på resan, om den är tillgänglig. Annars används den tidszon som definieras i listrutan. Den här funktionen är inte kompatibel med resor som använder händelser som inte har något namnutrymme.</li>
 </ul>
 <p>Mer information finns i avsnitten <a href="../building-journeys/changing-properties.md#timezone">Ändra egenskaper</a> och <a href="../building-journeys/timezone-management.md">Tidszonshantering</a> .</p>
