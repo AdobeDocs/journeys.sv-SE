@@ -23,6 +23,7 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md)om 
 
 ## Mars 2020 {#march-2020}
 
+* Lagt till parameterbeskrivningar för _actionExecutionErrors_ och _fetchErrors_ i testloggsavsnittet. [Läs mer](../action/testing-the-journey.md#viewing_logs)
 * Begränsningarna för anpassade åtgärder som används under en resa har uppdaterats. Du kan också ändra **URL** -fältet och **autentiseringsparametrarna** . [Läs mer](../action/about-custom-action-configuration.md)
 * Nya sammanhangsberoende hjälpposter har lagts till. Nyttolastrutan för anpassad autentisering (i åtgärder och datakällor) innehåller nu en hjälpikon som länkar till det här [avsnittet](../datasource/external-data-sources.md#section_wjp_nl5_nhb).
 * Färdiga resor kan nu stoppas. [Läs mer](../building-journeys/using-the-journey-designer.md)
