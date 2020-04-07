@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 25715e66b5495347e0c5ee2b1d75d44aa9cd3125
+source-git-commit: e579936cfe5eb43caf72627004f98a5746c7abb1
 
 ---
 
@@ -46,7 +46,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som du skickar via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel betyder det att ditt samtal har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt organisations-ID) och mål-URL:en. Du kan fråga administratören vilken URL som ska användas.
 
-Händelser skickas inte direkt från källan till resesamordning. Journey Orchestration bygger på Experience Platforms API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför gå till den här [sidan](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/streaming_ingest/streaming_ingestion_FAQ.md) för felsökning av API:er för direktuppspelning.
+Händelser skickas inte direkt från källan till resesamordning. Journey Orchestration bygger på Experience Platforms API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför gå till den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/troubleshooting.html) för felsökning av API:er för direktuppspelning.
 
 ## Kontrollerar om någon kommer in på resan{#section_x4v_zzs_dgb}
 
@@ -75,7 +75,7 @@ Rapportering om resesamordning mäter enskilda personers framsteg inom en resa. 
 Här är några saker att kontrollera:
 
 * Är det på grund av ett tillstånd som utesluter personen? Villkoret är till exempel&quot;kön = man&quot; och personen är en kvinna. Den här kontrollen kan utföras av en affärsanvändare om villkoret inte är för komplext.
-* Orsaken är att ett anrop till en datakälla inte svarar? När resan är i testläge kan denna information visas i testlägesloggar. När resan är live kan en administratör testa direktanrop till datakällan och kontrollera svaret som tas emot. En administratör kan också duplicera resan och testa den.
+* Orsaken är att ett anrop till en datakälla inte svarar? När resan är i testläge kan denna information visas i testlägesloggar. När resan är live kan en administratör testa direktanrop till datakällan och kontrollera svaret som tas emot. En administratör kan även duplicera resan och testa den.
 
 ## Kontrollera att meddelanden har skickats{#section_qb1_yzs_dgb}
 
