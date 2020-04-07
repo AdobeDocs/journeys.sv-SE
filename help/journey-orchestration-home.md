@@ -4,7 +4,7 @@ solution: Journeys
 title: Produktdokumentation för resesamordning
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 94826cde0d8de196f9f8dfcece417df8d593b40e
+source-git-commit: 504d19f151863378ea8d0a84978d7df4304d6614
 
 ---
 
@@ -22,6 +22,8 @@ source-git-commit: 94826cde0d8de196f9f8dfcece417df8d593b40e
 * **[Konfigurera en händelse](using/event/about-events.md#section_tbk_5qt_pgb)**<br/>Lär dig hur du konfigurerar händelser som dina resor ska lyssna på.
 
 * **[Ge åtkomst till Journey Orchestration](using/about/access-management.md)**<br/>Ta reda på hur du hanterar användarnas åtkomst till produktprofiler och rättigheter.
+
+* **[Upptäck nyheterna](using/release-notes/release-notes.md)**<br/>Läs mer om de senaste releaserna.
 
 ## De vanligaste sidorna
 
@@ -62,9 +64,9 @@ source-git-commit: 94826cde0d8de196f9f8dfcece417df8d593b40e
 
 ## Ytterligare resurser
 
-* [Experience Platform](https://www.adobe.com/experience-platform/documentation-and-developer-resources.html)
-* [Kundprofil i realtid](https://www.adobe.io/apis/cloudplatform/dataservices/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/unified_profile_architectural_overview/unified_profile_architectural_overview.md)
-* [Fältdefinition för Experience Cloud XDM](https://www.adobe.io/apis/cloudplatform/dataservices/xdm.html)
-* [Identitetsnamnutrymme](https://www.adobe.io/apis/cloudplatform/dataservices/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/identity_namespace_overview/identity_namespace_overview.md)
-* [API:er för direktuppspelande inmatning](https://www.adobe.io/apis/cloudplatform/dataservices/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/streaming_ingest/getting_started_with_platform_streaming_ingestion.md)
-* [Transactional messaging i Adobe Campaign Standard](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html)
+* [Experience Platform-dokumentation](https://www.adobe.com/experience-platform/documentation-and-developer-resources.html)
+* [Kundprofildokumentation i realtid](https://docs.adobe.com/content/help/en/experience-platform/profile/home.html)
+* [Fältdefinition för Experience Cloud XDM](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html)
+* [Dokumentation för namnområde för identitet](https://docs.adobe.com/content/help/en/experience-platform/identity/home.html)
+* [API:er för direktuppspelande inmatning](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/overview.html)
+* [Transactional Messaging-dokumentation för Campaign Standard](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html)
