@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: bc5b29eefa4d787cd448352252823a616489d8c8
+source-git-commit: e579936cfe5eb43caf72627004f98a5746c7abb1
 
 ---
 
@@ -35,10 +35,10 @@ Du kan även få åtkomst till Journey Orchestration från Experience Cloud-star
 ## Identifiera gränssnittet{#section_jsq_zr1_ffb}
 
 >[!CONTEXTUALHELP]
->id=&quot;jo_home&quot;
->title=&quot;About Journey list&quot;
->abstract=&quot;Med reselistan kan du se alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte ta bort eller starta om en resa som är slutförd. Du kan skapa en ny version av den eller duplicera den. Du kan också använda sökfältet för att söka efter en resa.&quot;
->additional-url=&quot;https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4&quot; text=&quot;Titta på filmen&quot;
+>id="jo_home"
+>title="Om Reselista"
+>abstract="Med reselistan kan du visa alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte ta bort eller starta om en resa som är slutförd. Du kan skapa en ny version av den eller duplicera den. Du kan också använda sökfältet för att söka efter en resa."
+>additional-url="https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4" text="Se filmen"
 
 De översta menyerna gör att du kan navigera bland de olika funktionerna i Journey Orchestration: **[!UICONTROL Home]**(resorna),**[!UICONTROL Data Sources]**, **[!UICONTROL Events]**, **[!UICONTROL Actions]**.
 
@@ -78,7 +78,7 @@ I de olika listorna kan du utföra grundläggande åtgärder för varje element.
 
 När du definierar [händelsenyttolast](../event/defining-the-payload-fields.md), [fältgruppnyttolast](../datasource/field-groups.md) och väljer fält i [uttrycksredigeraren](../expression/expressionadvanced.md)visas visningsnamnet förutom fältnamnet. Den här informationen hämtas från schemadefinitionen i Experience Data Model.
 
-Om beskrivningar som &quot;xdm:alternateDisplayInfo&quot; anges när du ställer in scheman, kommer de användarvänliga namnen att ersätta visningsnamnen. Det är särskilt användbart när du arbetar med&quot;eVars&quot; och generiska fält. Du kan konfigurera egna namnbeskrivningar via ett API-anrop. Mer information finns i Utvecklarhandbok [för](https://www.adobe.io/apis/experienceplatform/home/xdm/xdmservices.html#!api-specification/markdown/narrative/technical_overview/schema_registry/schema_registry_developer_guide.md)schemaregister.
+Om beskrivningar som &quot;xdm:alternateDisplayInfo&quot; anges när du ställer in scheman, kommer de användarvänliga namnen att ersätta visningsnamnen. Det är särskilt användbart när du arbetar med&quot;eVars&quot; och generiska fält. Du kan konfigurera egna namnbeskrivningar via ett API-anrop. Mer information finns i Utvecklarhandbok [för](https://docs.adobe.com/content/help/en/experience-platform/xdm/api/getting-started.html)schemaregister.
 
 ![](../assets/xdm-from-descriptors.png)
 
