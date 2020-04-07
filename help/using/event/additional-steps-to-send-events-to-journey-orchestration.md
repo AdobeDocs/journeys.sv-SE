@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+source-git-commit: e579936cfe5eb43caf72627004f98a5746c7abb1
 
 ---
 
@@ -23,10 +23,10 @@ source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
 >
 >När du skapar en händelse genereras automatiskt ett ID för den här händelsen av en resvägsOrchestration. Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. Se [](../event/previewing-the-payload.md).
 
-Om du vill konfigurera händelser som ska skickas till **[!UICONTROL Streaming Ingestion APIs]**och användas i en guidad redigering måste du följa dessa steg:
+Om du vill konfigurera händelser som ska skickas till **[!UICONTROL Streaming Ingestion APIs]** och användas i en guidad redigering måste du följa dessa steg:
 
-1. Hämta URL:en för inmatning från API:erna för dataplattformen (se API:er för [direktuppspelning](https://www.adobe.io/apis/cloudplatform/dataservices/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/streaming_ingest/getting_started_with_platform_streaming_ingestion.md)).
-1. Kopiera nyttolasten från nyttolastförhandsvisningen på **[!UICONTROL Event]**menyn. Se[](../event/defining-the-payload-fields.md).
+1. Hämta URL:en för inmatning från API:erna för dataplattformen (se API:er för [direktuppspelning](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/overview.html)).
+1. Kopiera nyttolasten från nyttolastförhandsvisningen på **[!UICONTROL Event]** menyn. Se [](../event/defining-the-payload-fields.md).
 
 Sedan måste du konfigurera det datasystem som överför händelser till API:er för direktuppspelning av inmatning med den nyttolast som du kopierade:
 
@@ -95,4 +95,4 @@ Här är ett exempel på en API-händelse för direktuppspelning:
 
 För att underlätta identifieringen av den plats där delen&quot;data&quot; ska klistras in kan du använda ett JSON-visualiseringsverktyg som [https://jsonformatter.curiousconcept.com](https://jsonformatter.curiousconcept.com)
 
-Information om hur du felsöker API:er för direktuppspelning finns på den här [sidan](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/streaming_ingest/streaming_ingestion_FAQ.md).
+Information om hur du felsöker API:er för direktuppspelning finns på den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/troubleshooting.html).
