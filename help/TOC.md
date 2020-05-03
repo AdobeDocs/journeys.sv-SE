@@ -1,10 +1,10 @@
 ---
 product: Journeys
 audience: end-user
-user-guide-title: Journey Orchestration Help
+user-guide-title: Hjälp om resesamordning
 index: true
 translation-type: tm+mt
-source-git-commit: 22569d66acb1637efc346f77864302b9e2cb6070
+source-git-commit: ea891b40633378843a00a3ac56c6703f792d39e1
 
 ---
 
@@ -23,6 +23,7 @@ source-git-commit: 22569d66acb1637efc346f77864302b9e2cb6070
    + [Felsökning](using/about/troubleshooting.md)
 + Konfigurera en händelse {#events-journeys}
    + [Om händelser](using/event/about-events.md)
+   + [Om ExperienceEvent-scheman](using/event/experience-event-schema.md)
    + [Definiera nyttolastfält](using/event/defining-the-payload-fields.md)
    + [Markera namnutrymmet](using/event/selecting-the-namespace.md)
    + [Definiera händelsenyckeln](using/event/defining-the-event-key.md)
@@ -72,6 +73,7 @@ source-git-commit: 22569d66acb1637efc346f77864302b9e2cb6070
       + [Fältreferenser](using/expression/field-references.md)
       + [Hanteringsfunktioner för samlingar](using/expression/collection-management-functions.md)
       + [Operatorer](using/expression/operators.md)
+      + [Exempel](using/expression/advanced-editor-use-cases.md)
    + Funktioner {#main-functions-journey}
       + [Huvudfunktioner](using/expression/functions.md)
       + Adobe Experience Platform {#adobe-experience-platform}
