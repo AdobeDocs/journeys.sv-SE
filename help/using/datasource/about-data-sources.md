@@ -12,6 +12,9 @@ internal: n
 snippet: y
 translation-type: tm+mt
 source-git-commit: 690f8c1732c7d54c234e9ba633a2cf014492f423
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 690f8c1732c7d54c234e9ba633a2cf014492f423
 # Om datakällor {#concept_s1s_dqt_52b}
 
 >[!CONTEXTUALHELP]
->id=&quot;jo_datasources&quot;
->title=&quot;Om datakällor&quot;
->abstract=&quot;Datakällans konfiguration utförs alltid av en teknisk användare. Med datakällkonfigurationen kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel: villkorsdefinition, parameter- och personaliseringsdata i funktionsmakron, anpassad väntedefinition, anpassad tidszonsdefinition.&quot;
+>id="jo_datasources"
+>title="Om datakällor"
+>abstract="Datakällans konfiguration utförs alltid av en teknisk användare. Med datakällkonfigurationen kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel: villkorsdefinition, parameter- och personaliseringsdata i åtgärder, anpassad väntedefinition, anpassad tidszonsdefinition."
 
 Med datakällkonfigurationen kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel:
 
@@ -57,6 +60,6 @@ Här följer de huvudsakliga konfigurationsstegen för datakällor:
 
    ![](../assets/journey23.png)
 
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 
    Datakällan är nu konfigurerad och klar att användas på dina resor.
