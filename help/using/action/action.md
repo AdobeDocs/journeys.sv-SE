@@ -12,6 +12,9 @@ internal: n
 snippet: y
 translation-type: tm+mt
 source-git-commit: 87910a9f3dbf2c34776a8d2ab1f00426e8b0704c
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 87910a9f3dbf2c34776a8d2ab1f00426e8b0704c
 # Om funktionsmakron {#about_actions}
 
 >[!CONTEXTUALHELP]
->id=&quot;jo_actions&quot;
->title=&quot;Om åtgärder&quot;
->abstract=&quot;Här definierar du anslutningen till systemet som ska skicka meddelanden. De åtgärder som definieras här kommer sedan att finnas tillgängliga på den vänstra paletten under din resa i kategorin Åtgärd. &quot;
+>id="jo_actions"
+>title="Om funktionsmakron"
+>abstract="Här definierar du anslutningen till systemet som ska skicka meddelanden. De åtgärder som definieras här kommer sedan att finnas tillgängliga på den vänstra paletten under din resa i kategorin Åtgärd. "
 
 Åtgärder är kopplingar genom vilka ni levererar personaliserade upplevelser i realtid till kunder, till exempel push-meddelanden, e-post, SMS eller andra sätt för digitalt engagemang som ni använder i ert företag.
 
