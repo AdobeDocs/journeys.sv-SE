@@ -12,6 +12,9 @@ internal: n
 snippet: y
 translation-type: tm+mt
 source-git-commit: a1c4eed8360efcbfcaa5e54c8831e1a4b2ecc02e
+workflow-type: tm+mt
+source-wordcount: '1214'
+ht-degree: 0%
 
 ---
 
@@ -95,9 +98,9 @@ Datakällan är nu konfigurerad och klar att användas i dina resor, till exempe
 ## Anpassat autentiseringsläge{#section_wjp_nl5_nhb}
 
 >[!CONTEXTUALHELP]
->id=&quot;jo_authentication_payload&quot;
->title=&quot;Om anpassad autentisering&quot;
->abstract=&quot;Det anpassade autentiseringsläget används för komplex autentisering för att anropa API-omslutningsprotokoll som OAuth2. Körningen av funktionsmakrot är en tvåstegsprocess. Först görs ett anrop till slutpunkten för att generera åtkomsttoken. Åtkomsttoken matas sedan in i åtgärdens HTTP-begäran.&quot;
+>id="jo_authentication_payload"
+>title="Om anpassad autentisering"
+>abstract="Det anpassade autentiseringsläget används för komplex autentisering för att anropa API-omslutningsprotokoll som OAuth2. Körningen av funktionsmakrot är en tvåstegsprocess. Först görs ett anrop till slutpunkten för att generera åtkomsttoken. Åtkomsttoken matas sedan in i åtgärdens HTTP-begäran."
 
 Det här autentiseringsläget används för komplex autentisering, som ofta används för att anropa API-omslutningsprotokoll som OAuth2, för att hämta en åtkomsttoken som ska injiceras i den faktiska HTTP-begäran för åtgärden.
 
