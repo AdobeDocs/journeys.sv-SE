@@ -4,7 +4,10 @@ audience: end-user
 user-guide-title: Hjälp om resesamordning
 index: true
 translation-type: tm+mt
-source-git-commit: ea891b40633378843a00a3ac56c6703f792d39e1
+source-git-commit: b199c8c2d0940b5ba3b0093cf8a654739249263d
+workflow-type: tm+mt
+source-wordcount: '354'
+ht-degree: 0%
 
 ---
 
@@ -43,6 +46,10 @@ source-git-commit: ea891b40633378843a00a3ac56c6703f792d39e1
       + [Begränsningar för anpassade åtgärder](using/action/custom-action-limitations.md)
       + [URL-konfiguration](using/action/url-configuration.md)
       + [Definiera meddelandeparametrar](using/action/defining-the-message-parameters.md)
++ Använda segment {#configuring-segment}
+   + [Om segment](using/segment/about-segments.md)
+   + [Skapa ett segment](using/segment/creating-a-segment.md)
+   + [Använda segment i villkor](using/segment/using-a-segment.md)
 + Bygga en resa {#building-journeys}
    + Om resebyggnad {#about-journey-building}
       + [Skapa en resa](using/building-journeys/journey.md)
@@ -64,6 +71,13 @@ source-git-commit: ea891b40633378843a00a3ac56c6703f792d39e1
          + [Använda anpassade åtgärder](using/building-journeys/using-custom-actions.md)
    + [Testa resan](using/building-journeys/testing-the-journey.md)
    + [Publicera resan](using/building-journeys/publishing-the-journey.md)
+   + Dela resesteg med Platform {#sharing-journey-steps}
+      + [Översikt över delning av resesteg](using/building-journeys/sharing-overview.md)
+      + [resaSteg-händelser, vanliga fält](using/building-journeys/sharing-common-fields.md)
+      + [roadStep-händelser, körningsfält för åtgärd](using/building-journeys/sharing-execution-fields.md)
+      + [progressStep-händelsedatafält för hämtning](using/building-journeys/sharing-fetch-fields.md)
+      + [travelStep, händelseidentitetsfält](using/building-journeys/sharing-identity-fields.md)
+      + [resefält](using/building-journeys/sharing-journey-fields.md)
 + Använda den avancerade uttrycksredigeraren {#building-advanced-conditions-journeys}
    + [Om den avancerade uttrycksredigeraren](using/expression/expressionadvanced.md)
    + Syntax {#syntax}
@@ -160,4 +174,6 @@ source-git-commit: ea891b40633378843a00a3ac56c6703f792d39e1
       + [Konfigurera datakällor](using/usecase/configuring-the-data-sources.md)
       + [Bygga resan](using/usecase/building-the-journey.md)
    + [Utnyttja utmattningspoäng](using/usecase/leveraging-fatigue-scores.md)
++ Arbeta med API:er{#working-with-apis}
+   + [Fånga API:er](using/api/capping.md)
 
