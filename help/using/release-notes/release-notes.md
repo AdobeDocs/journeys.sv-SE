@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 66e4acb339e9190cf2877c0ab1824ca5f41c8a6d
+source-git-commit: 796eff7751941720fc069dd8c7bed5c1f0e4a8fe
+workflow-type: tm+mt
+source-wordcount: '1080'
+ht-degree: 0%
 
 ---
 
@@ -20,6 +23,72 @@ source-git-commit: 66e4acb339e9190cf2877c0ab1824ca5f41c8a6d
 
 På den här sidan visas alla nya funktioner och förbättringar för resesamordning.
 Du kan även läsa [Dokumentationsuppdateringar](../release-notes/documentation-updates.md).
+
+## Q2-utgåvan - juni 2020 {#q2-release---june-2020}
+
+<table>
+<thead>
+<tr>
+<th><strong>Förbättringar av integrationen med Adobe Experience Platform</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Följande plattformsintegreringsförbättringar har gjorts:</p>
+<ul>
+<li><p>Med en ny aktivitet kan man lyssna på Platform-segmentets ingångar/utgångar för att få människor att komma in på eller gå framåt under en resa. <a href="../building-journeys/event-activities.md#segment-qualification">Läs mer</a></p>
+<img src="../assets/rn-segment7.png"/>
+</li>
+<li><p>Tack vare den nya fliken <strong>Segment</strong> kan du nu skapa och redigera plattformssegment utan att lämna gränssnittet för guidad redigering. Effektiv tillgänglighet: 15 juni 2020. <a href="../segment/about-segments.md">Läs mer</a></p>
+<img src="../assets/rn-segment1.png"/>
+</li>
+<li><p>I den enkla uttrycksredigeraren visas nu plattformssegment direkt i navigeringsträdet så att du enkelt kan konfigurera villkor som"tillhör den här personen segment A?". <a href="../segment/using-a-segment.md">Läs mer</a></p>
+<img src="../assets/rn-segment4.png"/>
+</li>
+<li><p>Resesamordning skickas nu automatiskt till Adobe Data Platform och de steg som enskilda personer följer på resor. Detta inkluderar potentiella fel som påträffats. Denna information kan användas för analys eller segmentering. <a href="../building-journeys/sharing-overview.md">Läs mer</a></p>
+<img src="../assets/rn-sharing.png"/>
+</li>
+<li><p>Resesamordning kan nu kopplas till produktionsplattform och icke-produktionssandlåda. Effektiv tillgänglighet: 15 juni 2020. <a href="../about/access-management.md#sandboxes">Läs mer</a></p>
+</li>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Förbättringar av resedesignern och testläget</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Följande förbättringar har gjorts för resedesignern och testläget:</p>
+<ul>
+<li><p>Nu kan du kopiera inklistringsaktiviteter från en resa till en annan, och välja 1 eller N reseaktiviteter. <a href="../building-journeys/using-the-journey-designer.md#copy-paste">Läs mer</a></p>
+<img src="../assets/rn-copy-paste1.png"/>
+</li>
+<li><p>När du har startat en händelse för att få en testprofil att ta sig in på en resa kan du nu se hur den fortskrider under resan tack vare ett färgat visuellt flöde. Om det uppstår fel under resan visas även information om fel. <a href="../building-journeys/testing-the-journey.md#firing_events">Läs mer</a></p>
+<img src="../assets/rn-journeytest6.png"/>
+</li>
+<li>Det <strong>färdiga</strong> resetillståndet har bytt namn till <strong>Stängd (ingen entré)</strong> för att bättre återspegla vad det här läget innebär.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Andra förbättringar**
+
+För att undvika att skicka för många API-anrop till tredjepartssystem introducerar vi ett nytt offentligt API för att konfigurera &quot;appningsregler&quot;. Begränsningsregler tillåter definition av ett maximalt antal anrop till en API-slutpunkt per millisekunder. [Läs mer](../api/capping.md)
+
+Åtkomstkontroll ger nu större detaljrikedom i hanteringen av användaråtkomst. Effektiv tillgänglighet: 15 juni 2020. [Läs mer](../about/access-management.md#create-product-profile)
+
+Resesamordning är nu tillgängligt i APAC (Australiens datacenter). Effektiv tillgänglighet: 15 juni 2020
+
+Gränssnittet för guidad redigering är tillgängligt på japanska.
 
 ## Q1-utgåvan - mars 2020 {#q1-release---march-2020}
 
