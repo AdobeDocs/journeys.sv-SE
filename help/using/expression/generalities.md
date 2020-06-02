@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 239efa9592b011c70e2fc331df8f33820301253d
+source-git-commit: 1ccf020a882c1d6d9bd00f2e9f5d6b2aee6f7829
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 239efa9592b011c70e2fc331df8f33820301253d
 
 Parenteser kan användas för att göra ett komplext uttryck mer läsbart. _(&lt;expression>)_ motsvarar _&lt;expression>_. Parenteser kan också användas för att definiera utvärderingsordningen och associativiteten.
 
-Uttrycken utvärderas från vänster till höger. Associativiteten för aritmetiska operatorer måste tillämpas: multiplikationer och indelningar prioriteras framför tillägg och subtraktioner. För att införa en viss ordning måste parenteser läggas till för att avgränsa operationerna. Till exempel:
+Uttrycken utvärderas från vänster till höger. Associativiteten för aritmetiska operatorer måste tillämpas: multiplikationer och indelningar prioriteras framför tillägg och subtraktioner. För att införa en viss ordning måste parenteser läggas till för att avgränsa operationerna. Exempel:
 
 <!--```5 + 2 * 10 = 25, and (5 + 2) * 10 = 70```-->
 
@@ -47,5 +50,4 @@ Beroende på användningssammanhanget kan uttrycksredigeraren returnera olika v�
 |--- |--- |
 | Villkor (datakällans villkor, datumvillkor) | boolesk |
 | Anpassad timer | dateTimeOnly |
-| Anpassad tidszon | timeZone eller sträng (t.ex. Europa/Paris) |
 | Mappning av åtgärdsparametrar | Alla |
