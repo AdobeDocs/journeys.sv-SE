@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 690f8c1732c7d54c234e9ba633a2cf014492f423
+source-git-commit: 1ccf020a882c1d6d9bd00f2e9f5d6b2aee6f7829
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -24,14 +24,14 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="jo_datasources"
 >title="Om datakällor"
->abstract="Datakällans konfiguration utförs alltid av en teknisk användare. Med datakällkonfigurationen kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel: villkorsdefinition, parameter- och personaliseringsdata i åtgärder, anpassad väntedefinition, anpassad tidszonsdefinition."
+>abstract="Datakällans konfiguration utförs alltid av en teknisk användare. Med datakällkonfigurationen kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel: villkorsdefinition, parameter- och personaliseringsdata i åtgärder, anpassad väntedefinition, tidszonsdefinition."
 
 Med datakällkonfigurationen kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel:
 
 * [villkorsdefinition](../building-journeys/condition-activity.md)
 * parameter- och personaliseringsdata i [funktionsmakron](../action/action.md)
 * [egen väntedefinition](../building-journeys/wait-activity.md#custom)
-* [anpassad tidszonsdefinition](../building-journeys/timezone-management.md)
+* [tidszonsdefinition](../building-journeys/timezone-management.md)
 
 Den här konfigurationen krävs inte om dina resor endast utnyttjar lokala data som kommer från en händelsenyttolast. Om din resa till exempel består av en händelse som följs av en e-postaktivitet som bara använder data från händelsen behöver du inte konfigurera någon datakälla.
 
