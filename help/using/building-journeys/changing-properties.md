@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 76369cd714c513e0038278ad058bf1ba43fcd240
+source-git-commit: 20ffc07586ba34d94b2b2369b23be867d8488363
+workflow-type: tm+mt
+source-wordcount: '474'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträ
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går in i en affär. I så fall vill ni inte att kunden ska kunna registrera sig på nytt och få erbjudandet igen.
 
-När en resa&quot;slutar&quot; får den statusen **[!UICONTROL Finished]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt.
+När en resa&quot;slutar&quot; får den statusen **[!UICONTROL Closed (no entrance)]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt.
 
 ## Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
 
