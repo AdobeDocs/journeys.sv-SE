@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1bc8d845716044671a11c200e4bab92302841994
+source-git-commit: ffcb0bd7c6b94a412878bae16ac9ffd1742d34d2
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 0%
 
 ---
 
@@ -25,15 +28,8 @@ Om du behöver göra ändringar i en publicerad resa måste du skapa en ny versi
 Om du avbryter en resa stoppas den permanent. Alla personer som flyter på resan kommer att stoppas permanent och resan kommer att upphöra så att nya deltagare tillåts. Om du behöver använda resan igen måste du duplicera den och publicera den.
 
 1. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kan inte publicera en resa med fel. Se [](../about/troubleshooting.md#section_h3q_kqk_fhb). Vi rekommenderar även att du testar din resa innan du publicerar den. Se [](../building-journeys/testing-the-journey.md).
-1. Om du vill publicera resan klickar du på **[!UICONTROL Publish]**alternativet i den övre högra listrutan.
+1. Om du vill publicera resan klickar du på **[!UICONTROL Publish]** alternativet i den övre högra listrutan.
 
    ![](../assets/journeyuc1_18.png)
 
 När resan publiceras är den i skrivskyddat läge.
-
-Här är en persons olika status:
-
-* _Körs_: personen för närvarande befinner sig på resan.
-* _Slutförd_: personen befinner sig i slutet av resan.
-* _Fel_: Personen stoppas på resan på grund av ett fel.
-* _Timeout_: Personen stoppas på resan på grund av ett steg som tog för mycket tid.
