@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 538b350165365479caef499a74346381643033d5
+source-git-commit: 11c266b035bc1bb83cccf4e3958e54e1eb00e9f4
+workflow-type: tm+mt
+source-wordcount: '677'
+ht-degree: 0%
 
 ---
 
@@ -45,6 +48,9 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 * ELLER: en förening av två kriterier. Element som matchar minst ett av de två villkoren beaktas.
 
 ![](../assets/journey64.png)
+
+Om du använder [plattformssegmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) för att skapa dina segment kan du utnyttja dem under dina reseförhållanden. Mer information finns i [Använda segment under villkor](../segment/using-a-segment.md).
+
 
 >[!NOTE]
 >
