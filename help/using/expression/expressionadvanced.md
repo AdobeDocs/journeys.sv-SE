@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+source-git-commit: 1ccf020a882c1d6d9bd00f2e9f5d6b2aee6f7829
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 
@@ -30,11 +33,10 @@ _Det avancerade gränssnittet för uttrycksredigeraren_
 Den avancerade uttrycksredigeraren kan användas för att:
 
 * skapa [avancerade villkor](../building-journeys/condition-activity.md#about_condition) för datakällor och händelseinformation
-* definiera anpassade [tidszoner](../building-journeys/timezone-management.md) i datumförhållanden, fasta datumvänteaktiviteter, anpassade vänteaktiviteter
 * definiera anpassade [vänteaktiviteter](../building-journeys/wait-activity.md#custom)
 * definiera åtgärdsparametermappning
 
-När det är möjligt kan du växla mellan de två lägena med hjälp av **[!UICONTROL Advanced mode]**/**[!UICONTROL Simple mode]** . Det enkla läget beskrivs [här](../building-journeys/condition-activity.md#about_condition).
+När det är möjligt kan du växla mellan de två lägena med hjälp av **[!UICONTROL Advanced mode]** / **[!UICONTROL Simple mode]** . Det enkla läget beskrivs [här](../building-journeys/condition-activity.md#about_condition).
 
 >[!NOTE]
 >
@@ -50,7 +52,7 @@ Du kan komma åt den avancerade uttrycksredigeraren på olika sätt:
 
    ![](../assets/journeyuc2_33.png)
 
-* När du skapar en anpassad tidszon eller en anpassad tidtagare visas den avancerade redigeraren direkt.
+* När du skapar en anpassad timer visas den avancerade redigeraren direkt.
 * När du mappar åtgärdsparameter klickar du på **[!UICONTROL Advanced mode]**.
 
 ## Identifiera gränssnittet{#section_otq_tnj_cjb}
