@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a1c4eed8360efcbfcaa5e54c8831e1a4b2ecc02e
+source-git-commit: 5e2e95090df708d72ade6366a62ea42eff3ac7f2
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1270'
 ht-degree: 0%
 
 ---
@@ -163,4 +163,30 @@ Autentiseringsformatet är:
     },
     "tokenInResponse": "<'response' or json selector in format 'json://<field path to access token>'"
 }
+```
+
+Du kan ändra cachevaraktigheten för token för en anpassad autentiseringsdatakälla. Nedan visas ett exempel på en anpassad autentiseringsnyttolast. Cachevaraktigheten definieras i parametern &quot;cacheDuration&quot;. Den anger kvarhållningstiden för den genererade token i cachen. Enheten kan vara millisekunder, sekunder, minuter, timmar, dagar, månader, år.
+
+```
+"authentication": {
+    "type":"customAuthorization",
+    "authorizationType":"Bearer",
+    "endpoint":"http://localhost:${port}/epsilon/oauth2/access_token",
+    "method":"POST",
+    "headers": {
+        "Authorization":"Basic EncodeBase64(${epsilonClientId}:${epsilonClientSecret})"
+        },
+    "body": {
+        "bodyType":"form",
+        "bodyParams": {
+             "scope":"cn mail givenname uid employeeNumber",
+             "grant_type":"password",
+             "username":"${epsilonUserName}",
+             "password":"${epsilonUserPassword}"
+             }
+        },
+    "tokenInResponse":"json://access_token",
+    "cacheDuration":
+             { "duration":5, "timeUnit":"seconds" }
+    }
 ```
