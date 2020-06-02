@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0bf8ce5974b7be684a156d5c5445dca122213237
+source-git-commit: 3b19e771b6fa3a679a36398c12417b190ee7ff18
+workflow-type: tm+mt
+source-wordcount: '500'
+ht-degree: 0%
 
 ---
 
@@ -21,12 +24,24 @@ source-git-commit: 0bf8ce5974b7be684a156d5c5445dca122213237
 På den här sidan visas alla dokumentationsuppdateringar för resesamordning.
 Du kan även läsa [versionsinformationen](../release-notes/release-notes.md)om resesamordning.
 
+## Juni 2020 {#june-2020}
+
+* Lagt till information om hur du ändrar cachevaraktigheten för token för en anpassad autentiseringsdatakälla. [Läs mer](../datasource/external-data-sources.md#section_wjp_nl5_nhb)
+* Skärmbilder och text har uppdaterats för att återspegla namnbytet för det **färdiga** resetillståndet som har ändrats till **Stängd (ingen entré)**.
+* Lagt till information om hur språket definieras för gränssnittet. [Läs mer](../about/user-interface.md)
+* Listan över status för en persons resa har flyttats till loggavsnittet för [testläge](../building-journeys/testing-the-journey.md#viewing_logs) .
+
+## April 2020 {#april-2020}
+
+* Ett nytt avsnitt om händelseschemadefinition för upplevelse har lagts till för att hjälpa användare att konfigurera sin första händelse. [Läs mer](../event/experience-event-schema.md)
+* Hemsidan för Journey Orchestration-dokumentationen har uppdaterats med ytterligare användbara länkar. [Läs mer](../../journey-orchestration-home.md)
+
 ## Mars 2020 {#march-2020}
 
 * Lagt till parameterbeskrivningar för _actionExecutionErrors_ och _fetchErrors_ i testloggsavsnittet. [Läs mer](../building-journeys/testing-the-journey.md#viewing_logs)
 * Begränsningarna för anpassade åtgärder som används under en resa har uppdaterats. Du kan också ändra **URL** -fältet och **autentiseringsparametrarna** . [Läs mer](../action/about-custom-action-configuration.md)
 * Nya sammanhangsberoende hjälpposter har lagts till. Nyttolastrutan för anpassad autentisering (i åtgärder och datakällor) innehåller nu en hjälpikon som länkar till det här [avsnittet](../datasource/external-data-sources.md#section_wjp_nl5_nhb).
-* Färdiga resor kan nu stoppas. [Läs mer](../building-journeys/using-the-journey-designer.md)
+* Avslutade resor kan nu stoppas. [Läs mer](../building-journeys/using-the-journey-designer.md)
 * Gränssnittsbeskrivningsavsnittet har omstrukturerats. [Läs mer](../about/user-interface.md)
 * Utlösandet av flera händelser har lagts till i testlägesavsnittet [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
 * Avsnittet Testläge har uppdaterats med avseende på den nya **väntetiden i testparametern** . [Läs mer](../building-journeys/testing-the-journey.md)
@@ -36,10 +51,10 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md)om 
 * Gränssnittsbeskrivningen har uppdaterats med information om sammanhangsberoende hjälp. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
 * När du bläddrar bland **XDM-fält** visas det egna namnet. Relaterade avsnitt har uppdaterats. [Läs mer](../about/user-interface.md#friendly-names-display)
 
-
 ## Februari 2020 {#february-2020}
 
 * Genvägsavsnittet har uppdaterats. Med **C** -kortkommandot kan du skapa ett nytt objekt i alla listskärmar. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
+* Översiktssidorna för [datakälla](../datasource/about-data-sources.md) och [åtgärd](../action/action.md) har förbättrats.
 
 ## Januari 2020 {#january-2020}
 
