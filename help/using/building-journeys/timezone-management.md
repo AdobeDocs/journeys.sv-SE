@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4f41428b19f611da15b20a1788b240fadfd49fa
+source-git-commit: 1ccf020a882c1d6d9bd00f2e9f5d6b2aee6f7829
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +56,5 @@ Om du vill göra det **[!UICONTROL Properties]** går du till **[!UICONTROL Use 
 ![](../assets/journey72.png)
 
 ## Använda tidszoner i uttryck {#timezone-in-expressions}
-
-Tidszoner används för att skapa uttryck med den avancerade uttrycksredigeraren. I det här fallet använder du uttrycksredigeraren för att välja var du vill att informationen ska hämtas. Se [](../expression/expressionadvanced.md).
 
 Start- och slutdatum för en resa kan inte länkas till en viss tidszon. De kopplas automatiskt till instansens tidszon.
