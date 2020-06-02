@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e53ecd96bbb308fe109843de6f64cde4cba5e246
+source-git-commit: 83e0476b8efd779256549788ff73f32531e08934
+workflow-type: tm+mt
+source-wordcount: '1108'
+ht-degree: 0%
 
 ---
 
@@ -70,6 +73,16 @@ Med gränssnittet kan du skicka enkla händelseparametrar. Om du vill skicka sam
 
 En teknisk användare kan också använda det här gränssnittet för att komponera händelsenyttolaster och utlösa händelser utan att behöva använda något tredjepartsverktyg.
 
+När du klickar på knappen **Skicka** börjar testet. Personens förlopp under resan representeras av ett visuellt flöde. Vägen blir progressivt grön allt eftersom personen rör sig över resan. Om ett fel inträffar visas en varningssymbol i motsvarande steg. Du kan placera markören på den för att visa mer information om felet och få tillgång till fullständig information (när den är tillgänglig).
+
+![](../assets/journeytest6.png)
+
+När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör testet igen rensas det visuella flödet och den nya personens sökväg visas.
+
+När du öppnar en resa i ett test motsvarar den visade sökvägen det senaste testet som utfördes.
+
+Det visuella flödet visas bara när händelsen som skickas till resan definieras i händelsekonfigurationsfönstret. Om händelsen definieras externt, till exempel med Postman, visas inte det visuella flödet.
+
 ## Visa loggarna {#viewing_logs}
 
 Med knappen **[!UICONTROL Show log]** kan du visa testresultaten. På den här sidan visas resans aktuella information i JSON-format. Med en knapp kan du kopiera hela noder. Du måste uppdatera sidan manuellt för att kunna uppdatera resans testresultat.
@@ -92,3 +105,9 @@ Antalet personer (tekniskt sett kallas de instanser) som för närvarande befinn
 * _transitionHistory_: en lista med steg som personen följde. För händelser visas nyttolasten.
 * _actionExecutionErrors_ : information om de fel som uppstått.
 
+Här är en persons olika status:
+
+* _Körs_: personen för närvarande befinner sig på resan.
+* _Slutförd_: personen befinner sig i slutet av resan.
+* _Fel_: Personen stoppas på resan på grund av ett fel.
+* _Timeout_: Personen stoppas på resan på grund av ett steg som tog för mycket tid.
