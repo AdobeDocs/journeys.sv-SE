@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7bdba1be0b5fe95417038c0d6788e76b155104aa
+source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Arbetsytan **är** den centrala zonen i resedesignern. Det är i den här zonen 
 
 Aktivitetskonfigurationsrutan **** visas när du klickar på en aktivitet på paletten. Fyll i de obligatoriska fälten. Klicka på **[!UICONTROL Delete]** ikonen för att ta bort aktiviteten. Klicka på **[!UICONTROL Cancel]** för att avbryta ändringarna eller **[!UICONTROL Ok]** för att bekräfta. Om du vill ta bort aktiviteter kan du även markera en aktivitet (eller flera) och trycka på backstegstangenten. Om du trycker på Esc stängs aktivitetskonfigurationsrutan.
 
-På arbetsytan representeras dina åtgärder och händelseaktiviteter av en ikon med namnet på händelsen eller åtgärden som visas under. I aktivitetskonfigurationsrutan kan du använda **[!UICONTROL Label]** fältet för att lägga till ett suffix till aktivitetsnamnet. Dessa etiketter hjälper dig att kontextualisera användningen av händelser och åtgärder, särskilt när du använder samma händelse eller åtgärd flera gånger under resan. Du kan också se etiketterna som du har lagt till i rapporten för resesamordning.
+På arbetsytan representeras dina åtgärder och händelseaktiviteter av en ikon med namnet på händelsen eller åtgärden som visas under. I aktivitetskonfigurationsrutan kan du använda **[!UICONTROL Label]** fältet för att lägga till ett suffix till aktivitetsnamnet. Dessa etiketter hjälper dig att kontextualisera användningen av händelser och åtgärder, särskilt när du använder samma händelse eller åtgärd flera gånger under resan. Du kan också se de etiketter som du har lagt till i [!DNL Journey Orchestration] rapporten.
 
 ![](../assets/journey59bis.png)
 
