@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b238c1851ae640b3146b8457931e1c416387c76a
+source-git-commit: 2f0d235ce1808f632b731fc2077b10a31a178e4b
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,6 @@ ht-degree: 0%
 
 
 # Använda segment i villkor {#using-a-segment}
-
->Segmentfliken och skapandet/ändringen av segment i resesamordning blir tillgängliga den 15 juni.
 
 I det här avsnittet beskrivs hur du använder ett segment i ett resevillkor.
 Mer information om hur du använder en **Segmentkvalificeringshändelse** under din resa finns i [Händelseaktiviteter](../building-journeys/event-activities.md#segment-qualification).
