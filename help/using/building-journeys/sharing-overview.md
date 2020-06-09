@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a6a98eca551bf5fc46ebd3a6d0d11486e3fbe06b
+source-git-commit: 4e850db61aa55c9bff448a0280f79810928cb6ec
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Översikt över delning av resesteg{#sharing-overview}
 
-Joursamordning skickar automatiskt data om reseprestanda till Adobe Experience Platform så att den kan kombineras med andra data för analysändamål.
+[!DNL Journey Orchestration] skickar automatiskt data om reseprestanda till Adobe Experience Platform så att den kan kombineras med andra data i analyssyfte.
 
-Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Med den här funktionen kan ni kombinera data från resesamordning med händelsedata längre fram i kedjan, som hur många konverteringar som har gjorts, hur mycket engagemang som har förekommit på webbplatsen eller hur många transaktioner som har gjorts i butiken. Reseinformationen kan kombineras med data på plattformen, antingen från andra digitala resurser eller från offlineanläggningar, för att ge en mer heltäckande bild av resultatet.
+Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Med den här funktionen kan ni kombinera [!DNL Journey Orchestration] data med händelsedata längre fram i kedjan, som hur många konverteringar som har gjorts, hur mycket engagemang som har gjorts på webbplatsen eller hur många transaktioner som har gjorts i butiken. Reseinformationen kan kombineras med data på plattformen, antingen från andra digitala resurser eller från offlineanläggningar, för att ge en mer heltäckande bild av resultatet.
 
-Resesamordning skapar automatiskt nödvändiga scheman och strömmar in i datauppsättningar till plattformen för varje steg en individ tar på en resa. En steghändelse motsvarar en person som flyttar från en nod till en annan under en resa. Exempel: i en resa som innehåller en händelse, ett villkor och en åtgärd skickas tre steghändelser till plattformen.
+[!DNL Journey Orchestration] skapar automatiskt nödvändiga scheman och strömmar till datauppsättningar för plattformen för varje steg en individ tar på sig under en resa. En steghändelse motsvarar en person som flyttar från en nod till en annan under en resa. Exempel: i en resa som innehåller en händelse, ett villkor och en åtgärd skickas tre steghändelser till plattformen.
 
 Listan över XDM-fält som skickas är omfattande. Vissa innehåller systemgenererade koder och andra har användarvänliga namn som kan läsas. Exempel är etiketten för reseaktiviteten eller stegstatusen: hur många gånger en åtgärd orsakade timeout eller fel.
 
@@ -45,9 +45,9 @@ Journeys skickar data när de förekommer, på ett strömmande sätt. Du kan sö
 
 Följande scheman skapas:
 
-* Profilhändelseschema för resestege för resesamordning - Upplev händelser för steg som tagits på en resa tillsammans med en identitetskarta som ska användas för mappning till en enskild resedeltagare.
-* Resestegshändelseschema för resesamordning - Resestegshändelse som är knuten till en resemetadata.
-* Reseschema med resefält för resesamordning - Resemetadata för att beskriva resor.
+* Profilhändelseschema för resesegment för [!DNL Journey Orchestration] - Upplev händelser för steg som tagits i en resa tillsammans med en identitetskarta som ska användas för mappning till en enskild resespart.
+* Händelseschema för resesegment för [!DNL Journey Orchestration] - Händelse för resesteg som är knuten till en resemetadata.
+* Reseschema med resefält för [!DNL Journey Orchestration] - Resemetadata för att beskriva resor.
 
 ![](../assets/sharing1.png)
 
@@ -55,7 +55,7 @@ Följande scheman skapas:
 
 Följande datauppsättningar har skickats:
 
-* Schema för resesegmentprofilhändelse för resesorkestrering
+* Profilhändelseschema för resesteg för [!DNL Journey Orchestration]
 * Resestegshändelser
 * Resor
 
