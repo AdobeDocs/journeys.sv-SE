@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
 
 # Förhandsgranska nyttolasten {#concept_jgf_4yk_4fb}
 
-Med nyttolastens förhandsgranskning kan du validera nyttolastdefinitionen.
+Med nyttolastförhandsvisningen kan du validera nyttolastdefinitionen.
 
 >[!NOTE]
 >
 >När du skapar en händelse sparar du händelsen och öppnar den igen innan du visar nyttolastförhandsvisningen. Det här steget behövs för att generera ett händelse-ID i nyttolasten.
 
-1. Klicka på **[!UICONTROL View Payload]**ikonen om du vill förhandsgranska den nyttolast som systemet förväntar sig.
+1. Klicka på **[!UICONTROL View Payload]** ikonen om du vill förhandsgranska den nyttolast som systemet förväntar sig.
 
    ![](../assets/journey13.png)
 
@@ -35,4 +38,4 @@ Med nyttolastens förhandsgranskning kan du validera nyttolastdefinitionen.
 
 1. Kontrollera förhandsgranskningen för att validera nyttolastdefinitionen.
 
-1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Den här nyttolasten kan hjälpa honom att utforma konfigurationen av en händelse som ska skjutas upp till Journey Orchestration. Se [](../event/additional-steps-to-send-events-to-journey-orchestration.md).
+1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Den här nyttolasten kan hjälpa honom att utforma konfigurationen av en händelse som ska skjutas upp till [!DNL Journey Orchestration]. Se [](../event/additional-steps-to-send-events-to-journey-orchestration.md).
