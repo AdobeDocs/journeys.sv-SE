@@ -4,22 +4,22 @@ audience: end-user
 user-guide-title: Hjälp om resesamordning
 index: true
 translation-type: tm+mt
-source-git-commit: b199c8c2d0940b5ba3b0093cf8a654739249263d
+source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
 
 
-# Hjälp om resesamordning {#using}
+# [!DNL Journey Orchestration] Hjälp {#using}
 
 + [Produktdokumentation](journey-orchestration-home.md)
 + Nyheter {#release-notes}
    + [Versionsinformation](using/release-notes/release-notes.md)
    + [Dokumentationsuppdateringar](using/release-notes/documentation-updates.md)
-+ Från och med resesamordning {#starting-with-journeys}
-   + [Om resesamordning](using/about/about-journey-orchestration.md)
++ Börja med [!DNL Journey Orchestration] {#starting-with-journeys}
+   + [Om [!DNL Journey Orchestration]](using/about/about-journey-orchestration.md)
    + [Kom igång](using/about/get-started.md)
    + [Användargränssnitt](using/about/user-interface.md)
    + [Åtkomsthantering](using/about/access-management.md)
