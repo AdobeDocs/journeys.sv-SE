@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3b19e771b6fa3a679a36398c12417b190ee7ff18
+source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,8 @@ ht-degree: 0%
 
 # Dokumentationsuppdateringar
 
-På den här sidan visas alla dokumentationsuppdateringar för resesamordning.
-Du kan även läsa [versionsinformationen](../release-notes/release-notes.md)om resesamordning.
+På den här sidan visas alla dokumentationsuppdateringar för [!DNL Journey Orchestration].
+Du kan även läsa [!DNL Journey Orchestration] versionsinformationen [](../release-notes/release-notes.md).
 
 ## Juni 2020 {#june-2020}
 
@@ -34,7 +34,7 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md)om 
 ## April 2020 {#april-2020}
 
 * Ett nytt avsnitt om händelseschemadefinition för upplevelse har lagts till för att hjälpa användare att konfigurera sin första händelse. [Läs mer](../event/experience-event-schema.md)
-* Hemsidan för Journey Orchestration-dokumentationen har uppdaterats med ytterligare användbara länkar. [Läs mer](../../journey-orchestration-home.md)
+* Hemsidan för [!DNL Journey Orchestration] dokumentation har uppdaterats med ytterligare användbara länkar. [Läs mer](../../journey-orchestration-home.md)
 
 ## Mars 2020 {#march-2020}
 
