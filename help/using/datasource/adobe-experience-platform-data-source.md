@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e579936cfe5eb43caf72627004f98a5746c7abb1
+source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ Här är de viktigaste stegen för att lägga till fältgrupper i den inbyggda d
 
    ![](../assets/journey24.png)
 
-1. Välj ett schema i **[!UICONTROL Schema]** listrutan. I det här fältet visas profilscheman och Experience Events-scheman som är tillgängliga i plattformen. Scheman skapas inte i Resesamordning. Den utförs i dataplattformen.
+1. Välj ett schema i **[!UICONTROL Schema]** listrutan. I det här fältet visas profilscheman och Experience Events-scheman som är tillgängliga i plattformen. Schemat skapas inte i [!DNL Journey Orchestration]. Den utförs i dataplattformen.
 1. Markera de fält som du vill använda.
 1. Definiera cachens varaktighet.
 1. Klicka på **[!UICONTROL Save]**.
