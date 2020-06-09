@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 817df02d78c4b9d213895cd7201ab1c2c883b188
+source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->För att få ut så mycket som möjligt av Journey Orchestration rekommenderar vi att du använder Chrome som webbläsare. Gränssnittet visas på det språk som definieras i IMS. Om IMS-språket inte stöds av Journey Orchestration visas gränssnittet på engelska.
+>För att få ut så mycket som möjligt av [!DNL Journey Orchestration]programmet rekommenderar vi att du använder Chrome som webbläsare. Gränssnittet visas på det språk som definieras i IMS. Om IMS-språket inte stöds av [!DNL Journey Orchestration]visas gränssnittet på engelska.
 >
 >Dokumentationen uppdateras ofta för att återspegla de senaste ändringarna i produkten. Vissa skärmbilder kan dock skilja sig något från produktens gränssnitt.
 
-## Åtkomst till resesamordning{#accessing_journey_orchestration}
+## Åtkomst [!DNL Journey Orchestration]{#accessing_journey_orchestration}
 
-Klicka på ikonen i det övre högra hörnet om du vill öppna gränssnittet för **[!UICONTROL App Selector]** en guidad resa. Klicka sedan **[!UICONTROL Journey Orchestration]** till höger under Experience Platform.
+Klicka på [!DNL Journey Orchestration]ikonen längst upp till höger för att öppna **[!UICONTROL App Selector]** gränssnittet. Klicka sedan **[!UICONTROL Journey Orchestration]** till höger under Experience Platform.
 
 ![](../assets/journey1.png)
 
-Du kan även få åtkomst till Journey Orchestration från Experience Cloud-startsidan i **[!UICONTROL Quick access]** avsnittet.
+Du kan även komma åt [!DNL Journey Orchestration] från Experience Clouds hemsida, i **[!UICONTROL Quick access]** avsnittet.
 
 ![](../assets/journey1bis.png)
 
@@ -43,11 +43,11 @@ Du kan även få åtkomst till Journey Orchestration från Experience Cloud-star
 >abstract="Med reselistan kan du visa alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte ta bort eller starta om en sluten resa. Du kan skapa en ny version av den eller duplicera den. Du kan också använda sökfältet för att söka efter en resa."
 >additional-url="https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4" text="Se filmen"
 
-De översta menyerna gör att du kan navigera bland de olika funktionerna i Journey Orchestration: **[!UICONTROL Home]**(resorna),**[!UICONTROL Data Sources]**, **[!UICONTROL Events]**, **[!UICONTROL Actions]**.
+Med de översta menyerna kan du navigera bland de olika funktionerna i [!DNL Journey Orchestration]: **[!UICONTROL Home]**(resorna),**[!UICONTROL Data Sources]**, **[!UICONTROL Events]**, **[!UICONTROL Actions]**.
 
 ![](../assets/journey2.png)
 
-Klicka på ![](../assets/icon-context.png) ikonen i skärmens övre högra hörn för att visa sammanhangsberoende hjälp. Den är tillgänglig på olika skärmar i listan över resan (resor, händelser, åtgärder och datakällor). På så sätt kan du visa en kort beskrivning av den aktuella funktionen och få tillgång till relaterade artiklar och videoklipp.
+Klicka på ![](../assets/icon-context.png) ikonen i skärmens övre högra hörn för att visa sammanhangsberoende hjälp. Det är tillgängligt för alla olika [!DNL Journey Orchestration] listskärmar (resor, händelser, åtgärder och datakällor). På så sätt kan du visa en kort beskrivning av den aktuella funktionen och få tillgång till relaterade artiklar och videoklipp.
 
 ![](../assets/journey2bis.png)
 
@@ -59,7 +59,7 @@ Du **[!UICONTROL Filters]** kommer åt dem genom att klicka på filterikonen hö
 
 I listorna **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** , använder du filtren **** Skapa för att filtrera på skapandedatum och användare. Du kan t.ex. välja att bara visa händelser som du har skapat de senaste 30 dagarna.
 
-I reselistan (under **[!UICONTROL Home]**) kan du, utöver **[!UICONTROL Creation filters]** själva, även filtrera de visade resorna efter status och version (**[!UICONTROL Status and version filters]**). Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). **[!UICONTROL Publication filters]** Du kan välja ett publiceringsdatum eller en viss användare. Du kan till exempel välja att endast visa de senaste versionerna av direktresor som publicerades i går. Se [](../building-journeys/using-the-journey-designer.md).
+I reselistan (under **[!UICONTROL Home]**) kan du utöver **[!UICONTROL Creation filters]** själva filtrera de visade resorna efter status och version (**[!UICONTROL Status and version filters]**). Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). **[!UICONTROL Publication filters]** Du kan välja ett publiceringsdatum eller en viss användare. Du kan till exempel välja att endast visa de senaste versionerna av direktresor som publicerades i går. Se [](../building-journeys/using-the-journey-designer.md).
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ Om det finns ett eget namn visas fältet som `<friendly-name>(<name>)`. Om det i
 
 ## Använda olika kortkommandon{#section_ksq_zr1_ffb}
 
-Här är de olika kortkommandona som är tillgängliga i gränssnittet för Journey Orchestration.
+Här är de olika kortkommandona som finns i [!DNL Journey Orchestration]gränssnittet.
 
 _I förteckningen över resor, åtgärder, datakällor eller händelser:_
 
