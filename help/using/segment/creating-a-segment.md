@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b238c1851ae640b3146b8457931e1c416387c76a
+source-git-commit: 2f0d235ce1808f632b731fc2077b10a31a178e4b
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,7 @@ ht-degree: 0%
 
 # Skapa ett segment {#creating-a-segment}
 
->Segmentfliken och skapandet/ändringen av segment i resesamordning blir tillgängliga den 15 juni.
-
-Du kan antingen skapa ett segment med hjälp av [plattformssegmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) eller så kan du komma åt och skapa dem direkt i Resurssamordning.
+Du kan antingen skapa ett segment med hjälp av [plattformssegmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) eller så kan du komma åt och skapa dem direkt i [!DNL Journey Orchestration].
 
 1. Klicka på fliken på den översta menyn **[!UICONTROL Segments]** . Listan över plattformssegment visas. Du kan söka efter ett visst segment i listan.
 
