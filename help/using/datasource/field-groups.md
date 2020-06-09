@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 690f8c1732c7d54c234e9ba633a2cf014492f423
+source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ För varje datakälla kan du definiera flera fältgrupper, där var och en har e
 
 Du kan till exempel skapa en fältgrupp med telefonnummer, e-post, förnamn och adress för profilen. Sedan kan ni använda dessa data under resan för att skapa villkor. Du kan till exempel välja att bara skicka ett SMS om profilens telefonnummer inte är tomt. Om den är tom kan du skicka ett e-postmeddelande.
 
-Även om ett standardnamn läggs till automatiskt rekommenderar vi att du ger fältgruppen ett namn. Fältgruppnamnet är synligt för andra användare i Resesamordning. Att ge fältgrupper ett relevant namn är en god vana.
+Även om ett standardnamn läggs till automatiskt rekommenderar vi att du ger fältgruppen ett namn. Fältgruppnamnet visas för andra användare i [!DNL Journey Orchestration]. Att ge fältgrupper ett relevant namn är en god vana.
 
 När ett datakällfält används i en resa hämtas alla fält som är definierade för den fältgruppen. Därför är det bäst att bara välja de fält som du behöver för dina resor. Detta minskar svarstiden för förfrågningar i dina resor och därmed ökar prestandan. Observera att du enkelt kan lägga till fler fält i fältgrupper senare.
 
