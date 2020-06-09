@@ -9,7 +9,10 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: e579936cfe5eb43caf72627004f98a5746c7abb1
+source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+workflow-type: tm+mt
+source-wordcount: '1004'
+ht-degree: 0%
 
 ---
 
@@ -46,11 +49,11 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som du skickar via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel betyder det att ditt samtal har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt organisations-ID) och mål-URL:en. Du kan fråga administratören vilken URL som ska användas.
 
-Händelser skickas inte direkt från källan till resesamordning. Journey Orchestration bygger på Experience Platforms API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför gå till den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/troubleshooting.html) för felsökning av API:er för direktuppspelning.
+Händelser skickas inte direkt från källan till [!DNL Journey Orchestration]. Experience Platforms API:er för direktuppspelning är till [!DNL Journey Orchestration] och med beroende av Experience Platforms API:er. Om det gäller händelserelaterade problem kan du därför gå till den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/troubleshooting.html) för felsökning av API:er för direktuppspelning.
 
 ## Kontrollerar om någon kommer in på resan{#section_x4v_zzs_dgb}
 
-Resesamordning rapporterar människors inträde på en resa i realtid.
+[!DNL Journey Orchestration] rapportering mäter människors inträde på en resa i realtid.
 
 Om du lyckas skicka evenemanget men inte ser något inträde på resan betyder det att något går fel mellan det skickade evenemanget och det mottagande evenemanget under resan.
 
@@ -70,7 +73,7 @@ Här är några saker som administratören bör kontrollera:
 
 ## Kontrollera hur människor navigerar genom resan{#section_l5y_yzs_dgb}
 
-Rapportering om resesamordning mäter enskilda personers framsteg inom en resa. Det är enkelt att identifiera var och varför en person stoppades.
+[!DNL Journey Orchestration] rapportering mäter enskilda personers framsteg inom en resa. Det är enkelt att identifiera var och varför en person stoppades.
 
 Här är några saker att kontrollera:
 
