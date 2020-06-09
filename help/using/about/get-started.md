@@ -9,16 +9,19 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: fed6fd8d8ee497ec47727f7297dc72f319fabe27
+source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 0%
 
 ---
 
 
 # Kom igång{#concept_y4b_4qt_52b}
 
-I Resesamordning finns det två typer av användare, som var och en utför specifika uppgifter: den **tekniska användaren** och **affärsanvändaren**. Användaråtkomst hanteras via produktprofiler och rättigheter. Mer information [](../about/access-management.md) om hur du konfigurerar användaråtkomst finns i.
+I [!DNL Journey Orchestration]finns det två typer av användare som utför olika uppgifter: den **tekniska användaren** och **affärsanvändaren**. Användaråtkomst hanteras via produktprofiler och rättigheter. Mer information [](../about/access-management.md) om hur du konfigurerar användaråtkomst finns i.
 
-Här är de viktigaste stegen för att konfigurera och använda Journey Orchestration:
+Här följer de viktigaste stegen för att konfigurera och använda [!DNL Journey Orchestration]:
 
 1. **Konfigurera en händelse**
 
@@ -38,7 +41,7 @@ Här är de viktigaste stegen för att konfigurera och använda Journey Orchestr
 
 1. **Konfigurera en åtgärd**
 
-   Om du använder ett tredjepartssystem för att skicka meddelanden måste du konfigurera dess anslutning till resan. Se [](../action/about-custom-action-configuration.md).
+   Om du använder ett tredjepartssystem för att skicka meddelanden måste du konfigurera anslutningen till det [!DNL Journey Orchestration]. Se [](../action/about-custom-action-configuration.md).
 
    Om du använder Adobe Campaign Standard för att skicka meddelanden måste du konfigurera den inbyggda åtgärden. Se [](../action/working-with-adobe-campaign.md).
 
