@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a4e2e5737e5d22775e45038f296be2131ac9f54f
+source-git-commit: 4e850db61aa55c9bff448a0280f79810928cb6ec
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1098'
 ht-degree: 0%
 
 ---
@@ -40,16 +40,17 @@ Du kan även läsa [Dokumentationsuppdateringar](../release-notes/documentation-
 <li><p>Med en ny aktivitet kan man lyssna på Platform-segmentets ingångar/utgångar för att få människor att komma in på eller gå framåt under en resa. <a href="../building-journeys/event-activities.md#segment-qualification">Läs mer</a></p>
 <img src="../assets/rn-segment7.png"/>
 </li>
-<li><p>Tack vare den nya fliken <strong>Segment</strong> kan du nu skapa och redigera plattformssegment utan att lämna gränssnittet för guidad redigering. Effektiv tillgänglighet: 15 juni 2020. <a href="../segment/about-segments.md">Läs mer</a></p>
+<li><p>Tack vare den nya fliken <strong>Segment</strong> kan du nu skapa och redigera plattformssegment utan att lämna gränssnittet för guidad redigering.<a href="../segment/about-segments.md">Läs mer</a></p>
 <img src="../assets/rn-segment1.png"/>
 </li>
-<li><p>I den enkla uttrycksredigeraren visas nu plattformssegment direkt i navigeringsträdet så att du enkelt kan konfigurera villkor som"tillhör den här personen segment A?". <a href="../segment/using-a-segment.md">Läs mer</a></p>
+<li><p>I den enkla uttrycksredigeraren visas nu plattformssegment direkt i navigeringsträdet så att du enkelt kan konfigurera villkor som"tillhör den här personen segment A?".<a href="../segment/using-a-segment.md">Läs mer</a></p>
 <img src="../assets/rn-segment4.png"/>
 </li>
 <li><p>Resesamordning skickas nu automatiskt de steg som utförs under resor till Adobe Data Platform. Detta inkluderar potentiella fel som påträffats. Den här informationen kan användas för att utföra rapportering och felsökning genom att köra frågor om steg-händelser för en viss resa eller för alla resor. <a href="../building-journeys/sharing-overview.md">Läs mer</a></p>
 <img src="../assets/rn-journeystepevent.png"/>
 </li>
-<li><p>Resesamordning kan nu kopplas till produktionsplattform och icke-produktionssandlåda. Effektiv tillgänglighet: 15 juni 2020. <a href="../about/access-management.md#sandboxes">Läs mer</a></p>
+</li>
+<li><p>Resesamordning kan nu kopplas till sandlådor för produktionsplattform och icke-produktionsplattform. Observera att sandlådor är en betafunktion. Effektiv tillgänglighet: 30 juni 2020. <a href="../about/access-management.md#sandboxes">Läs mer</a></p>
 </li>
 </td>
 </tr>
@@ -84,9 +85,9 @@ Du kan även läsa [Dokumentationsuppdateringar](../release-notes/documentation-
 
 För att undvika att skicka för många API-anrop till tredjepartssystem introducerar vi ett nytt offentligt API för att konfigurera &quot;appningsregler&quot;. Begränsningsregler tillåter definition av ett maximalt antal anrop till en API-slutpunkt per millisekunder. [Läs mer](../api/capping.md)
 
-Åtkomstkontroll ger nu större detaljrikedom i hanteringen av användaråtkomst. Effektiv tillgänglighet: 15 juni 2020. [Läs mer](../about/access-management.md#create-product-profile)
+Åtkomstkontroll ger nu större detaljrikedom i hanteringen av användaråtkomst. Effektiv tillgänglighet: 30 juni 2020. [Läs mer](../about/access-management.md#create-product-profile)
 
-Resesamordning är nu tillgängligt i APAC (Australiens datacenter). Effektiv tillgänglighet: 15 juni 2020
+Resesamordning är nu tillgängligt i APAC (Australiens datacenter). Effektiv tillgänglighet: 30 juni 2020
 
 Gränssnittet för guidad redigering är tillgängligt på japanska.
 
