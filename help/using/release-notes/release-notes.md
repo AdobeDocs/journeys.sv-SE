@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 796eff7751941720fc069dd8c7bed5c1f0e4a8fe
+source-git-commit: a4e2e5737e5d22775e45038f296be2131ac9f54f
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1094'
 ht-degree: 0%
 
 ---
@@ -46,8 +46,8 @@ Du kan även läsa [Dokumentationsuppdateringar](../release-notes/documentation-
 <li><p>I den enkla uttrycksredigeraren visas nu plattformssegment direkt i navigeringsträdet så att du enkelt kan konfigurera villkor som"tillhör den här personen segment A?". <a href="../segment/using-a-segment.md">Läs mer</a></p>
 <img src="../assets/rn-segment4.png"/>
 </li>
-<li><p>Resesamordning skickas nu automatiskt till Adobe Data Platform och de steg som enskilda personer följer på resor. Detta inkluderar potentiella fel som påträffats. Denna information kan användas för analys eller segmentering. <a href="../building-journeys/sharing-overview.md">Läs mer</a></p>
-<img src="../assets/rn-sharing.png"/>
+<li><p>Resesamordning skickas nu automatiskt de steg som utförs under resor till Adobe Data Platform. Detta inkluderar potentiella fel som påträffats. Den här informationen kan användas för att utföra rapportering och felsökning genom att köra frågor om steg-händelser för en viss resa eller för alla resor. <a href="../building-journeys/sharing-overview.md">Läs mer</a></p>
+<img src="../assets/rn-journeystepevent.png"/>
 </li>
 <li><p>Resesamordning kan nu kopplas till produktionsplattform och icke-produktionssandlåda. Effektiv tillgänglighet: 15 juni 2020. <a href="../about/access-management.md#sandboxes">Läs mer</a></p>
 </li>
