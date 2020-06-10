@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 96c84047952eed8835879b1375bce6326c55fd35
+source-git-commit: c4335cf1f94172fabed1099d3772bc539adb02ef
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
@@ -31,15 +31,7 @@ Listan över XDM-fält som skickas är omfattande. Vissa innehåller systemgener
 
 >[!CAUTION]
 >
->Datamängder är som standard inte aktiverade för realtidsprofiltjänst. Om du vill ha en datauppsättning i en profiltjänst måste du aktivera den (växla **profil** ). Tänk på att ett stort antal händelser kommer att ta upp lagringsutrymme i din kvot. Fortsätt noggrant innan du aktiverar en datauppsättning för profiler
->
->![](../assets/sharing4.png)
-
->[!NOTE]
->
->Resor kan också skicka om de vill skicka en profilhändelse för resan till plattformen eller inte. Journeys har en teknikväxel för att avgöra detta.
->
->![](../assets/techtoggle.png)
+>Datauppsättningar kan inte aktiveras för realtidsprofiltjänst. Kontrollera att **profilväxlingen** är inaktiverad
 
 Journeys skickar data när de förekommer, på ett strömmande sätt. Du kan söka efter dessa data med hjälp av frågetjänsten. Du kan ansluta till kundreseanalys eller andra BI-verktyg för att visa data som hör till dessa steg.
 
