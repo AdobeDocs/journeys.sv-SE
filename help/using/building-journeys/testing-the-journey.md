@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 83e0476b8efd779256549788ff73f32531e08934
+source-git-commit: be21573973600758cbf13bd25bc3b44ab4cd08ca
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör
 
 När du öppnar en resa i ett test motsvarar den visade sökvägen det senaste testet som utfördes.
 
-Det visuella flödet visas bara när händelsen som skickas till resan definieras i händelsekonfigurationsfönstret. Om händelsen definieras externt, till exempel med Postman, visas inte det visuella flödet.
+Det visuella flödet fungerar oavsett om händelsen aktiveras via gränssnittet eller externt (med till exempel Postman).
 
 ## Visa loggarna {#viewing_logs}
 
