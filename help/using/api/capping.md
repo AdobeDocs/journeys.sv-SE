@@ -9,9 +9,9 @@ topic-tags: journeys
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: 58495028d41d1d18739a8ea9c7f0622a0cf6ca4d
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,13 @@ Mer information om åtgärder och konfiguration av datakälla finns i [Om åtgä
 
 ## Resurser
 
-API:t för att [!DNL Journey Orchestration] hämta innehåll beskrivs i en Swagger-fil som finns [här](https://adobedocs.github.io/JourneyAPI/docs/).
+>[!NOTE]
+>
+>API:t för att [!DNL Journey Orchestration] hämta innehåll beskrivs i en Swagger-fil som finns [här](https://adobedocs.github.io/JourneyAPI/docs/).
 
 Om du vill använda detta API med din [!DNL Journey Orchestration] instans måste du använda AdobeIO-konsolen. Du kan börja med att följa detta [Komma igång med Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/getting-started.md) och sedan använda avsnitten på den här sidan.
 
-För att testa och förbereda integreringen finns en Postman-samling [här](https://github.com/AdobeDocs/JourneyAPI/postman-collections/Journey-Orchestration_Capping-API_postman-collection.json).
+För att testa och förbereda integreringen finns en Postman-samling [här](https://raw.githubusercontent.com/AdobeDocs/JourneyAPI/master/postman-collections/Journey-Orchestration_Capping-API_postman-collection.json).
 
 ## Behörighet
 
@@ -44,7 +46,7 @@ För att testa och förbereda integreringen finns en Postman-samling [här](http
 
 >[!CAUTION]
 >
->Om du vill hantera certifikat i Adobe IO måste du ha <b>systemadministratörsbehörighet</b> för organisationen eller ett <a href="https://helpx.adobe.com/enterprise/using/manage-developers.html">utvecklarkonto</a> i Admin Console.
+>Om du vill hantera certifikat i Adobe IO måste du ha <b>systemadministratörsbehörighet</b> för organisationen eller ett [utvecklarkonto](https://helpx.adobe.com/enterprise/using/manage-developers.html) i Admin Console.
 
 1. **Kontrollera att du har ett digitalt certifikat** eller skapa ett om det behövs. De offentliga och privata nycklarna som tillhandahålls med certifikatet behövs i följande steg.
 1. **Skapa en ny integrering för[!DNL Journey Orchestration]Service** i Adobe IO och konfigurera den. Tillgång till produktprofiler krävs för [!DNL Journey Orchestration] och Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet...).
@@ -166,7 +168,7 @@ Den potentiella varningen är:
 
 I det här avsnittet hittar du de fem huvudsakliga användningsfall som du kan använda för att hantera din appkonfiguration i [!DNL Journey Orchestration].
 
-För att du ska få hjälp med testning och konfiguration finns en Postman-samling [här](https://github.com/AdobeDocs/JourneyAPI/postman-collections/Journey-Orchestration_Capping-API_postman-collection.json).
+För att du ska få hjälp med testning och konfiguration finns en Postman-samling [här](https://raw.githubusercontent.com/AdobeDocs/JourneyAPI/master/postman-collections/Journey-Orchestration_Capping-API_postman-collection.json).
 
 Denna Postman Collection har konfigurerats för att dela den Postman Variable-samling som genereras via __[Adobe I/O Console’s Integrations](https://console.adobe.io/integrations)> Testa > Ladda ned för Postman__, som genererar en Postman Environment-fil med de valda integreringsvärdena.
 
@@ -174,7 +176,7 @@ När du har hämtat och överfört till Postman måste du lägga till två varia
 * `{JO_HOST}` : [!DNL Journey Orchestration] Gateway-URL
 * `{BASE_PATH}` : startpunkt för API. Värdet är /authoring
 
-
+I följande avsnitt hittar du listan med Rest API-anrop ordnade för att utföra fallstudien.
 
 Användningsfall n°1: **Skapa och distribuera en ny takkonfiguration**
 
