@@ -1,6 +1,6 @@
 ---
-title: Använda Adobe Campaign-åtgärder
-description: Läs om Adobe Campaign-åtgärder
+title: Använda Adobe Campaign åtgärder
+description: Läs om Adobe Campaign åtgärder
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -11,23 +11,23 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: c6e7c27865eb34961f8901c9bde2c09527f67f15
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
 
 
-# Använda Adobe Campaign-åtgärder {#using_campaign_action}
+# Använda Adobe Campaign åtgärder {#using_campaign_action}
 
-Om du har Adobe Campaign Standard finns följande färdiga åtgärdsaktiviteter: **[!UICONTROL Email]**, **[!UICONTROL Push]** och **[!UICONTROL SMS]**.
+Om du har Adobe Campaign Standard kan du utföra följande åtgärder direkt: **[!UICONTROL Email]**, **[!UICONTROL Push]** och **[!UICONTROL SMS]**.
 
 >[!NOTE]
 >
 >Därför måste du konfigurera den inbyggda åtgärden. Se [](../action/working-with-adobe-campaign.md).
 
-För var och en av dessa kanaler väljer du en **mall** för transaktionsmeddelanden i Adobe Campaign Standard. Det [!DNL Journey Orchestration] är inte en lösning för att skicka meddelanden. För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i Adobe Campaign Standard. Läs den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html) om du vill veta hur du använder den här funktionen.
+För var och en av dessa kanaler väljer du en **mall** för transaktionsmeddelanden för Adobe Campaign Standard. Det [!DNL Journey Orchestration] är inte en lösning för att skicka meddelanden. För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i Adobe Campaign Standard. Läs den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html) om du vill veta hur du använder den här funktionen.
 
 ![](../assets/journey59.png)
 
@@ -35,7 +35,7 @@ Du kan använda en händelsemall (kallas även realtid) eller en transaktionsmal
 
 >[!NOTE]
 >
->När vi skickar transaktionsmeddelanden i realtid (rtEvent) eller när vi dirigerar meddelanden med ett tredjepartssystem tack vare en anpassad åtgärd krävs en specifik konfiguration för trötthet, svartlistning eller prenumerationshantering. Om till exempel attributet &quot;svartlist&quot; eller &quot;unsubscribe&quot; lagras i plattformen eller i ett tredjepartssystem måste ett villkor läggas till innan meddelandet skickas för att kontrollera det här villkoret.
+>När vi skickar transaktionsmeddelanden i realtid (rtEvent) eller när vi dirigerar meddelanden med ett tredjepartssystem tack vare en anpassad åtgärd krävs en specifik konfiguration för trötthet, blocklista eller hantering av prenumerationer. Om till exempel attributet &quot;unsubscribe&quot; lagras i Platform eller i ett tredjepartssystem måste ett villkor läggas till innan meddelandet skickas för att det här villkoret ska kunna kontrolleras.
 
 När du väljer en mall visas alla fält som förväntas i meddelandenyttolasten i aktivitetskonfigurationsrutan under **[!UICONTROL Address]** och **[!UICONTROL Personalization Data]**. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Du kan också använda den avancerade uttrycksredigeraren för att skicka ett värde manuellt, utföra databearbetning på hämtad information (t.ex. konvertera en sträng till versaler) eller använda funktioner som &quot;if, then, else&quot;. Se [](../expression/expressionadvanced.md).
 
@@ -47,7 +47,7 @@ För **[!UICONTROL Email]** och **[!UICONTROL SMS]**&#x200B;är parametrarna ide
 
 >[!NOTE]
 >
->Om du använder en transaktionsmall för profiler i e-postmeddelanden hanteras avprenumerationsfunktionen som standard av Campaign Standard. Du lägger bara till ett **[!UICONTROL Unsubscription link]** innehållsblock i mallen ([läs mer](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html)). Om du använder en händelsebaserad mall (rtEvent) måste du i meddelandet lägga till en länk som skickar personens e-post i URL-parametern och pekar på en startsida som inte är en prenumeration. Du måste skapa den här landningssidan och se till att personens beslut att avbryta prenumerationen skickas till Adobe.
+>Om du använder en transaktionsmall för profiler för e-post hanteras avprenumerationsfunktionen som Campaign Standard. Du lägger bara till ett **[!UICONTROL Unsubscription link]** innehållsblock i mallen ([läs mer](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html)). Om du använder en händelsebaserad mall (rtEvent) måste du i meddelandet lägga till en länk som skickar personens e-post i URL-parametern och pekar på en startsida som inte är en prenumeration. Du måste skapa den här landningssidan och se till att personens beslut att avbryta prenumerationen skickas till Adobe.
 
 Först måste du välja en transaktionsmall. Se [](../building-journeys/about-action-activities.md).
 
@@ -59,7 +59,7 @@ Du kan enkelt definiera var du vill hämta **[!UICONTROL Address]** eller **[!UI
 
 >[!NOTE]
 >
->Den här kategorin är bara synlig om du väljer ett transaktionsmeddelande av typen &quot;event&quot;. För profilmeddelanden hämtas **[!UICONTROL Address]** fältet automatiskt från Adobe Campaign Standard av systemet.
+>Den här kategorin är bara synlig om du väljer ett transaktionsmeddelande av typen &quot;event&quot;. För profilmeddelanden hämtas **[!UICONTROL Address]** fältet automatiskt från Adobe Campaign Standarden av systemet.
 
 Det här är de fält som systemet behöver för att kunna skicka meddelandet. För en e-postmall är det e-postadressen. För ett SMS är det mobiltelefonnumret.
 
@@ -71,7 +71,7 @@ Det här är de fält som systemet behöver för att kunna skicka meddelandet. F
 >
 >Du kan inte skicka en samling med personaliseringsdata. Om transaktionsmeddelandet eller SMS förväntar sig samlingar fungerar det inte. Observera också att personaliseringsdata har ett förväntat format (exempel: sträng, decimal osv.). Du måste vara försiktig med att ta hänsyn till dessa förväntade format.
 
-Det här är de fält som förväntas av Adobe Campaign Standard-meddelandet. Dessa fält kan användas för att anpassa meddelandet, använda villkorsstyrd formatering eller välja en viss meddelandevariant.
+Detta är de fält som Adobe Campaign Standarden förväntar sig. Dessa fält kan användas för att anpassa meddelandet, använda villkorsstyrd formatering eller välja en viss meddelandevariant.
 
 ![](../assets/journey62.png)
 
@@ -89,7 +89,7 @@ Det finns två kategorier: **[!UICONTROL Target]** och **[!UICONTROL Personaliza
 
 >[!NOTE]
 >
->Den här kategorin visas bara om du väljer ett händelsemeddelande. För profilmeddelanden hämtas fälten automatiskt av systemet med den avstämning som utförs av Adobe Campaign Standard. **[!UICONTROL Target]**
+>Den här kategorin visas bara om du väljer ett händelsemeddelande. För profilmeddelanden hämtas fälten automatiskt av systemet med hjälp av den avstämning som utförs av Adobe Campaign Standarden. **[!UICONTROL Target]**
 
 I det här avsnittet måste du definiera **[!UICONTROL Push platform]**. I listrutan kan du välja **[!UICONTROL Apple Push Notification Server]** (iOS) eller **[!UICONTROL Firebase Cloud Messaging]** (Android). Du kan också välja ett specifikt fält från en händelse eller datakälla eller definiera ett avancerat uttryck.
 
@@ -105,4 +105,4 @@ Du måste också definiera **[!UICONTROL Registration Token]**. Uttrycket beror 
 >
 >Du kan inte skicka en samling med personaliseringsdata. Om transaktionspush förväntar sig samlingar fungerar den inte. Observera också att personaliseringsdata har ett förväntat format (exempel: sträng, decimal osv.). Du måste vara försiktig med att ta hänsyn till dessa förväntade format.
 
-Detta är de fält som förväntas av transaktionsmallen som används i ditt Adobe Campaign Standard-meddelande. Dessa fält kan användas för att anpassa ditt meddelande, använda villkorsstyrd formatering eller välja en viss meddelandevariant.
+Detta är de fält som förväntas av transaktionsmallen som används i Adobe Campaign Standarden. Dessa fält kan användas för att anpassa ditt meddelande, använda villkorsstyrd formatering eller välja en viss meddelandevariant.
