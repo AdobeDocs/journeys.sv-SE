@@ -1,6 +1,6 @@
 ---
 title: Mätvärden och dimensioner
-description: Läs mer om mått och mätvärden som finns för Journey Orchestration
+description: Läs om mått och mätvärden för Journey Orchestration
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+source-git-commit: c6e7c27865eb34961f8901c9bde2c09527f67f15
+workflow-type: tm+mt
+source-wordcount: '1034'
+ht-degree: 0%
 
 ---
 
@@ -53,8 +56,8 @@ Tabellen nedan visar en lista över de leveransdimensioner som används i resera
 | **Enhet** | Enhet från vilken e-post/SMS/push-meddelandet öppnades/visades/klickades. |
 | **Meddelandetyp** | Kanal som används för leverans, till exempel e-post, SMS, push-meddelanden eller In-App. |
 | **Namn på mobilapp** | Mobilprogrammets namn |
-| **Plattform** | Plattform för den enhet som meddelandet öppnades/visades/klickades på från. |
-| **[!UICONTROL Push platform]** | Plattform för enheten som push-meddelandet öppnades från, till exempel iOS eller Android. |
+| **Platform** | Platform för den enhet som meddelandet öppnades/visades/klickades på. |
+| **[!UICONTROL Push platform]** | Platform för den enhet som push-meddelandet öppnades från, till exempel iOS eller Android. |
 | **Mottagardomän** | Domän som används för att öppna e-postmeddelandet. |
 | **Spårnings-URL** | URL som användaren klickade på i meddelandet. |
 | **Kategori för spårnings-URL** | Kategori som tilldelats spårnings-URL:en. |
@@ -91,11 +94,11 @@ Tabellen nedan visar en lista över mätvärden som används i journalrapporter,
 
 | Mått | Definition |
 |--- |--- |
-| **Svartlistad** | Antal mottagare som har deklarerat ett e-postmeddelande som skräppost eller skräppost. |
-| **Svartlistefrekvens** | Totalt antal meddelanden som markerats som svartlistade jämfört med skickade meddelanden. |
+| **På blocklista** | Antal mottagare som har deklarerat ett e-postmeddelande som skräppost eller skräppost. |
+| **Blocklistefrekvens** | Totalt antal meddelanden i blocklist jämfört med skickade meddelanden. |
 | **studsar + fel** | Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden. |
 | **Studsa + felfrekvens** | Totalt antal meddelanden som studsade jämfört med skickade meddelanden. |
-| **Klicka** | Antal gånger ett innehåll klickades i en leverans. |
+| **Klicka på** | Antal gånger ett innehåll klickades i en leverans. |
 | **Klicka igenom hastigheten** | Totalt antal klick i en leverans jämfört med antalet levererade meddelanden. |
 | **Levererat** | Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden. |
 | **Levererad ränta** | Totalt antal meddelanden som har levererats jämfört med skickade meddelanden. |
