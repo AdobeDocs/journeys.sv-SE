@@ -9,9 +9,9 @@ topic-tags: journeys
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 58495028d41d1d18739a8ea9c7f0622a0cf6ca4d
+source-git-commit: ca4dc447d8ae4ee18e50d7e9a18faf3fa47ae223
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Mer information om åtgärder och konfiguration av datakälla finns i [Om åtgä
 >
 >API:t för att [!DNL Journey Orchestration] hämta innehåll beskrivs i en Swagger-fil som finns [här](https://adobedocs.github.io/JourneyAPI/docs/).
 
-Om du vill använda detta API med din [!DNL Journey Orchestration] instans måste du använda AdobeIO-konsolen. Du kan börja med att följa detta [Komma igång med Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/getting-started.md) och sedan använda avsnitten på den här sidan.
+Om du vill använda det här API:t med din [!DNL Journey Orchestration] instans måste du använda AdobeI/O-konsolen. Du kan börja med att följa detta [Komma igång med Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/getting-started.md) och sedan använda avsnitten på den här sidan.
 
 För att testa och förbereda integreringen finns en Postman-samling [här](https://raw.githubusercontent.com/AdobeDocs/JourneyAPI/master/postman-collections/Journey-Orchestration_Capping-API_postman-collection.json).
 
@@ -42,14 +42,14 @@ För att testa och förbereda integreringen finns en Postman-samling [här](http
 
 ### Konfigurera API-åtkomst
 
-[!DNL Journey Orchestration] API-åtkomst konfigureras genom stegen nedan. Vart och ett av dessa steg beskrivs i [Adobe IO-dokumentationen](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
+[!DNL Journey Orchestration] API-åtkomst konfigureras genom stegen nedan. Vart och ett av dessa steg beskrivs i [Adobe I/O-dokumentationen](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
 
 >[!CAUTION]
 >
->Om du vill hantera certifikat i Adobe IO måste du ha <b>systemadministratörsbehörighet</b> för organisationen eller ett [utvecklarkonto](https://helpx.adobe.com/enterprise/using/manage-developers.html) i Admin Console.
+>Om du vill hantera certifikat i Adobe I/O måste du ha <b>systemadministratörsbehörighet</b> för organisationen eller ett [utvecklarkonto](https://helpx.adobe.com/enterprise/using/manage-developers.html) i Admin Console.
 
 1. **Kontrollera att du har ett digitalt certifikat** eller skapa ett om det behövs. De offentliga och privata nycklarna som tillhandahålls med certifikatet behövs i följande steg.
-1. **Skapa en ny integrering för[!DNL Journey Orchestration]Service** i Adobe IO och konfigurera den. Tillgång till produktprofiler krävs för [!DNL Journey Orchestration] och Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet...).
+1. **Skapa en ny integrering för[!DNL Journey Orchestration]tjänsten** i Adobe I/O och konfigurera den. Produktprofilåtkomst krävs för [!DNL Journey Orchestration] och Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet...).
 1. **Skapa en JSON Web Token (JWT)** utifrån de inloggningsuppgifter som tidigare genererats och signera den med din privata nyckel. JWT kodar all identitets- och säkerhetsinformation som Adobe behöver för att verifiera din identitet och ge dig åtkomst till API:t. Det här steget beskrivs i det här [avsnittet](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
 1. **Byt ut din JWT-fil mot en åtkomsttoken** via en POST-begäran eller via gränssnittet för Developer Console. Denna Access Token måste användas i varje rubrik för dina API-begäranden.
 
@@ -65,7 +65,7 @@ curl -X GET https://journey.adobe.io/authoring/XXX \
 * **&lt;ORGANISATION>**: Detta är ditt personliga organisations-ID, och Adobe tillhandahåller ett organisations-ID för varje instans:
 
    * &lt;ORGANISATION>: din produktionsinstans
-   Kontakta administratören eller den tekniska kontaktpersonen på Adobe om du vill få ditt organisations-ID-värde. Du kan även hämta den till Adobe I/O när du skapar en ny integrering i licenslistan (se <a href="https://www.adobe.io/authentication.html">Adobe IO-dokumentationen</a>).
+   Kontakta administratören eller den tekniska kontaktpersonen på Adobe om du vill få ditt organisations-ID-värde. Du kan även hämta den till Adobe I/O när du skapar en ny integrering i licenslistan (se <a href="https://www.adobe.io/authentication.html">Adobe I/O-dokumentationen</a>).
 
 * **&lt;ACCESS_TOKEN>**: Din personliga åtkomsttoken, som hämtades när du bytte din JWT via en POST-begäran.
 
@@ -79,14 +79,14 @@ Med API:t för att hämta innehåll kan du skapa, konfigurera och övervaka dina
 
 | Metod | Bana | Beskrivning |
 |---|---|---|
-| POST | list/endpointConfigs | Hämta en lista med konfigurationer för slutpunktsbegränsning |
-| POST | /endpointConfigs | Skapa en konfiguration för begränsning av slutpunkter |
-| POST | /endpointConfigs/{uid}/deploy | Distribuera en slutpunktskonfiguration |
-| POST | /endpointConfigs/{uid}/undeploy | Avdistribuera en slutpunktskonfiguration |
-| POST | /endpointConfigs/{uid}/canDeploy | Kontrollera om en slutpunktskonfiguration kan distribueras eller inte |
-| PUT | /endpointConfigs/{uid} | Uppdatera en konfiguration för begränsning av slutpunkter |
-| GET | /endpointConfigs/{uid} | Hämta en konfiguration för slutpunktsbegränsning |
-| TA BORT | /endpointConfigs/{uid} | Ta bort en ändpunktskonfiguration |
+| [!DNL POST] | list/endpointConfigs | Hämta en lista med konfigurationer för slutpunktsbegränsning |
+| [!DNL POST] | /endpointConfigs | Skapa en konfiguration för begränsning av slutpunkter |
+| [!DNL POST] | /endpointConfigs/{uid}/deploy | Distribuera en slutpunktskonfiguration |
+| [!DNL POST] | /endpointConfigs/{uid}/undeploy | Avdistribuera en slutpunktskonfiguration |
+| [!DNL POST] | /endpointConfigs/{uid}/canDeploy | Kontrollera om en slutpunktskonfiguration kan distribueras eller inte |
+| [!DNL PUT] | /endpointConfigs/{uid} | Uppdatera en konfiguration för begränsning av slutpunkter |
+| [!DNL GET] | /endpointConfigs/{uid} | Hämta en konfiguration för slutpunktsbegränsning |
+| [!DNL DELETE] | /endpointConfigs/{uid} | Ta bort en ändpunktskonfiguration |
 
 När en konfiguration skapas eller uppdateras utförs en kontroll automatiskt för att garantera nyttolastens syntax och integritet.
 Om det uppstår problem returneras en varning eller felmeddelanden som hjälper dig att korrigera konfigurationen.
@@ -172,9 +172,10 @@ För att du ska få hjälp med testning och konfiguration finns en Postman-samli
 
 Denna Postman Collection har konfigurerats för att dela den Postman Variable-samling som genereras via __[Adobe I/O Console’s Integrations](https://console.adobe.io/integrations)> Testa > Ladda ned för Postman__, som genererar en Postman Environment-fil med de valda integreringsvärdena.
 
-När du har hämtat och överfört till Postman måste du lägga till två variabler: `{JO_HOST}` och `{Base_Path}`.
+När du har laddat ned och överfört till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{Base_Path}` och `{SANDBOX_NAME}`.
 * `{JO_HOST}` : [!DNL Journey Orchestration] Gateway-URL
 * `{BASE_PATH}` : startpunkt för API. Värdet är /authoring
+* `{SANDBOX_NAME}` : rubriken **x-sandbox-name** (till exempel &quot;prod&quot;) som motsvarar sandlådenamnet där API-åtgärderna ska utföras. Mer information finns i översikten över [](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) sandlådor.
 
 I följande avsnitt hittar du listan med Rest API-anrop ordnade för att utföra fallstudien.
 
