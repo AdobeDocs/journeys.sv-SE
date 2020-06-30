@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 556dbe88d2717a387e5f0ce8795c9fa02a45ac6f
+source-git-commit: eed82450d3fab279add87d0bee7e0efa824d1e8e
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Versionsinformation {#release-notes}
 
-På den här sidan visas alla nya funktioner och förbättringar för resesamordning.
+På den här sidan visas alla nya funktioner och förbättringar för Journey Orchestration.
 Du kan även läsa [Dokumentationsuppdateringar](../release-notes/documentation-updates.md).
 
 ## Q2-utgåvan - juni 2020 {#q2-release---june-2020}
@@ -29,28 +29,28 @@ Du kan även läsa [Dokumentationsuppdateringar](../release-notes/documentation-
 <table>
 <thead>
 <tr>
-<th><strong>Förbättringar av integrationen med Adobe Experience Platform</strong><br/></th>
+<th><strong>Förbättrad integrering med Adobe Experience Platform</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Följande plattformsintegreringsförbättringar har gjorts:</p>
+<p>Följande Platform-integreringsförbättringar har gjorts:</p>
 <ul>
-<li><p>Med en ny aktivitet kan man lyssna på Platform-segmentets ingångar/utgångar för att få människor att komma in på eller gå framåt under en resa. <a href="../building-journeys/event-activities.md#segment-qualification">Läs mer</a></p>
+<li><p>Med en ny aktivitet kan man lyssna på Platform segment vid ingångar/utgångar för att få folk att komma in på eller gå framåt under en resa. <a href="../building-journeys/event-activities.md#segment-qualification">Läs mer</a></p>
 <img src="../assets/rn-segment7.png"/>
 </li>
-<li><p>Tack vare den nya fliken <strong>Segment</strong> kan du nu skapa och redigera plattformssegment utan att lämna gränssnittet för guidad redigering.<a href="../segment/about-segments.md">Läs mer</a></p>
+<li><p>Platform segment kan nu skapas och redigeras utan att lämna Journey Orchestration, tack vare en ny flik <strong>för segment</strong> .<a href="../segment/about-segments.md">Läs mer</a></p>
 <img src="../assets/rn-segment1.png"/>
 </li>
-<li><p>I den enkla uttrycksredigeraren visas nu plattformssegment direkt i navigeringsträdet så att du enkelt kan konfigurera villkor som"tillhör den här personen segment A?".<a href="../segment/using-a-segment.md">Läs mer</a></p>
+<li><p>I den enkla uttrycksredigeraren visas nu Platform-segment direkt i navigeringsträdet för att göra det möjligt att enkelt konfigurera villkor som"tillhör den här personen segment A?".<a href="../segment/using-a-segment.md">Läs mer</a></p>
 <img src="../assets/rn-segment4.png"/>
 </li>
-<li><p>Resesamordning skickas nu automatiskt de steg som utförs under resor till Adobe Data Platform. Detta inkluderar potentiella fel som påträffats. Den här informationen kan användas för att utföra rapportering och felsökning genom att köra frågor om steg-händelser för en viss resa eller för alla resor. <a href="../building-journeys/sharing-overview.md">Läs mer</a></p>
+<li><p>Journey Orchestration skickas nu automatiskt de steg som körts på resorna till Adobe Data Platform. Detta inkluderar potentiella fel som påträffats. Den här informationen kan användas för att utföra rapportering och felsökning genom att köra frågor om steg-händelser för en viss resa eller för alla resor. <a href="../building-journeys/sharing-overview.md">Läs mer</a></p>
 <img src="../assets/rn-journeystepevent.png"/>
 </li>
 </li>
-<li><p>Resesamordning kan nu kopplas till sandlådor för produktionsplattform och icke-produktionsplattform. Observera att sandlådor är en betafunktion. Effektiv tillgänglighet: 30 juni 2020. <a href="../about/access-management.md#sandboxes">Läs mer</a></p>
+<li><p>Journey Orchestration kan nu anslutas till Platform-sandlådor för produktion och icke-produktion. Observera att sandlådor är en betafunktion. <a href="../about/access-management.md#sandboxes">Läs mer</a></p>
 </li>
 </td>
 </tr>
@@ -87,9 +87,9 @@ För att undvika att skicka för många API-anrop till tredjepartssystem introdu
 
 Åtkomstkontroll ger nu större detaljrikedom i hanteringen av användaråtkomst. Effektiv tillgänglighet: 30 juni 2020. [Läs mer](../about/access-management.md#create-product-profile)
 
-Resesamordning är nu tillgängligt i APAC (Australiens datacenter). Effektiv tillgänglighet: 30 juni 2020
+Journey Orchestration är nu tillgängligt i APAC (Australiens datacenter). Effektiv tillgänglighet: 30 juni 2020
 
-Gränssnittet för guidad redigering är tillgängligt på japanska.
+Gränssnittet Journey Orchestration finns på japanska.
 
 ## Q1-utgåvan - mars 2020 {#q1-release---march-2020}
 
@@ -171,7 +171,7 @@ Gränssnittet för guidad redigering är tillgängligt på japanska.
 <tbody>
 <tr>
 <td>
-<p>Det finns nu sammanhangsbaserad hjälp för de olika listskärmarna för resesamordning (resor, händelser, åtgärder och datakällor). På så sätt kan du visa en kort beskrivning av den aktuella funktionen och få tillgång till relaterade artiklar och videoklipp.</p>
+<p>Nu finns det sammanhangsbaserad hjälp för olika Journey Orchestration-listskärmar (resor, händelser, åtgärder och datakällor). På så sätt kan du visa en kort beskrivning av den aktuella funktionen och få tillgång till relaterade artiklar och videoklipp.</p>
 <p>Om du vill visa sammanhangsberoende hjälp klickar du på <img src="../assets/icon-context.png"/> ikonen i skärmens övre högra hörn. </p>
 <img src="../assets/rn-context.png"/>
 </td>
@@ -183,13 +183,13 @@ Gränssnittet för guidad redigering är tillgängligt på japanska.
 
 * Förutom i USA finns nu även Journeys Orchestration i **EMEA**. Ansökan och dokumentationen finns på franska och tyska.
 
-* Experience League är nu integrerat i produkten. Detta förenklar åtkomsten till relaterat innehåll och hjälper er att få ut mesta möjliga av Experience Cloud. Direktåtkomst till dokumentationen för resesamordning finns längst ned på fliken Hjälp. Klicka dessutom på Hjälp > Feedback för att rapportera problem eller dela med dig av dina idéer till Adobe.
+* Experience League är nu integrerat i produkten. Detta förenklar åtkomsten till relaterat innehåll och hjälper er att få ut mesta möjliga av Experience Cloud. Direktåtkomst till dokumentationen för Journey Orchestration finns längst ned på hjälpfliken. Klicka dessutom på Hjälp > Feedback för att rapportera problem eller dela med dig av dina idéer till Adobe.
 
 * Kortkommandot **C** , som gör att du kan skapa ett nytt objekt, är nu tillgängligt på alla listskärmar: resor, datakällor, åtgärder och händelser. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
 
 * Du kan nu **ta bort** avbrutna resor. Rapporter som är kopplade till dessa raderade resor är inte tillgängliga.
 
-* När du bläddrar bland **dataplattfält** (XDM-format) visas visningsnamnet förutom fältnamnet. Den här informationen hämtas från schemadefinitionen i Experience Data Model. Om det är tillgängligt visas det alternativa visningsnamnet. Den här användarvänliga beskrivningen, som är särskilt användbar för eVar-fält, gör det enklare att identifiera fälten. [Läs mer](../about/user-interface.md#friendly-names-display)
+* När du bläddrar bland **Data Platform-fält** (XDM-format) visas nu även visningsnamnet tillsammans med fältnamnet. Den här informationen hämtas från schemadefinitionen i Experience Data Model. Om det är tillgängligt visas det alternativa visningsnamnet. Den här användarvänliga beskrivningen, som är särskilt användbar för eVar-fält, gör det enklare att identifiera fälten. [Läs mer](../about/user-interface.md#friendly-names-display)
 
 ## GA-release - december 2019 {#ga-release---december-2019}
 
@@ -197,7 +197,7 @@ Journey Orchestration är nu GA.
 
 Bygg realtidssamordning med hjälp av kontextuella data lagrade i händelser eller datakällor.
 
-Journey Orchestration möjliggör realtidssamordning som bygger på kontextuella data från händelser, information från Adobe Experience Platform eller data från API-tjänster från tredje part. I flerstegsflöden som kallas resor bestämmer programmet vilka av de bästa åtgärder som är specifika för konsumenten utifrån deras profil och beteende. Detta omfattar både den optimala tidpunkten och typen av åtgärd, till exempel att skicka ett push-meddelande till konsumenten via transaktionsmeddelandefunktionerna i Adobe Campaign Standard (kräver Adobe Campaign Standard) eller ett meddelande om ett tredjepartssystem. Dessa beslut fattas utifrån regler och Sensei-poäng.
+Journey Orchestration tillåter realtidssamordning som bygger på kontextuella data från händelser, information från Adobe Experience Platform eller data från API-tjänster från tredje part. I flerstegsflöden som kallas resor bestämmer programmet vilka av de bästa åtgärder som är specifika för konsumenten utifrån deras profil och beteende. Detta omfattar både den optimala tidpunkten och typen av åtgärd, t.ex. att skicka ett push-meddelande till konsumenten via Adobe Campaign Standardens transaktionsmeddelandefunktioner (kräver Adobe Campaign Standard) eller ett meddelande från en tredje part. Dessa beslut fattas utifrån regler och Sensei-poäng.
 
 [Läs mer](../action/working-with-adobe-campaign.md) om Journey Orchestration.
 
