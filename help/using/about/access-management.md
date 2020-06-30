@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: eed82450d3fab279add87d0bee7e0efa824d1e8e
+source-git-commit: c99ff0755a75c9262bf6ebe73172fe76d3f78f48
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Så här skapar du en produktprofil och tilldelar en uppsättning rättigheter o
 
 1. När du är klar klickar du på **[!UICONTROL Done]**. Din nya produktprofil har skapats.
 
-   ![](../assets/user_management_6.png)
+   ![](../assets/user_management_1.png)
 
 1. Välj din nya produktprofil för att börja hantera behörigheter. Lägg till användare i produktprofilen på **[!UICONTROL Users]** fliken. Mer information finns på den här [sidan](../about/access-management.md#assigning-product-profile).
 
@@ -88,7 +88,7 @@ Så här skapar du en produktprofil och tilldelar en uppsättning rättigheter o
 
    ![](../assets/user_management_7.png)
 
-1. I behörighetskategorin väljer du vilken eller vilka sandlådor som ska tilldelas till din produktprofil. **[!UICONTROL Sandbox]** Under **[!UICONTROL Available Permissions Items]** klickar du på plusikonen (+) för att tilldela sandlådor till din profil. Mer information om sandlådor finns i det här [avsnittet](../about/access-management.md#sandboxes).
+1. I behörighetskategorin väljer du vilken eller vilka sandlådor som ska tilldelas till din produktprofil. **[!UICONTROL Sandboxes]** Under **[!UICONTROL Available Permissions Items]** klickar du på plusikonen (+) för att tilldela sandlådor till din profil. Mer information om sandlådor finns i det här [avsnittet](../about/access-management.md#sandboxes).
 
    ![](../assets/user_management_8.png)
 
