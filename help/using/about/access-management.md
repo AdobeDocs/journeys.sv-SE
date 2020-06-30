@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: a3114ffe7c087645e97caf3a77e7649d922945eb
+source-git-commit: eed82450d3fab279add87d0bee7e0efa824d1e8e
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ På Admin Console kan du tilldela användarna en av följande färdiga produktpr
    * Hantera rapporter
    >[!NOTE]
    >
-   >**[!UICONTROL Administrators]** är den enda produktprofil som gör det möjligt att skapa, publicera och publicera transaktionsmeddelanden (eller meddelandemallar) i Adobe Campaign Standard. Den här produktprofilen behövs om du använder Adobe Campaign Standard för att skicka meddelanden under dina resor.
+   >**[!UICONTROL Administrators]** är den enda produktprofil som gör det möjligt att skapa, publicera och publicera transaktionsmeddelanden (eller meddelandemallar) i Adobe Campaign Standard. Den här produktprofilen behövs om du använder Adobe Campaign Standard för att skicka meddelanden på dina resor.
 
 * **[!UICONTROL Standard User]**: användare med grundläggande åtkomst, t.ex. resehantering. Den här produktprofilen innehåller följande rättigheter:
    * Hantera resor
@@ -64,11 +64,13 @@ Du hittar kompatibiliteten mellan rättigheter och [!DNL Journey Orchestration]o
 
 [!DNL Journey Orchestration] I kan du skapa egna produktprofiler och tilldela en uppsättning rättigheter och sandlådor till dina användare. Med produktprofiler kan du auktorisera eller neka åtkomst till vissa funktioner eller objekt i gränssnittet.
 
-Mer information om hur du skapar och hanterar sandlådor finns i dokumentationen för [Adobe Experience Platform](https://docs.adobe.com/content/help/en/experience-platform/sandbox/ui/user-guide.html).
+Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experience Platform-dokumentationen](https://docs.adobe.com/content/help/en/experience-platform/sandbox/ui/user-guide.html).
 
 Så här skapar du en produktprofil och tilldelar en uppsättning rättigheter och sandlådor:
 
-1. Välj i Admin Console **[!UICONTROL Journey Orchestration]**. Klicka på **[!UICONTROL New Profile]** på fliken **[!UICONTROL Product profile]**.
+1. I Admin Console väljer du **[!UICONTROL Journey Orchestration]**. Klicka på **[!UICONTROL New Profile]** på fliken **[!UICONTROL Product profile]**.
+
+   ![](../assets/user_management_5.png)
 
 1. Lägg till en **[!UICONTROL Profile Name]** och **[!UICONTROL Description]** en ny produktprofil. Om du vill att din profil **[!UICONTROL Display name]** ska vara annorlunda avmarkerar du **[!UICONTROL Same as Profile Name]** och skriver in **[!UICONTROL Display name]**.
 
@@ -76,23 +78,28 @@ Så här skapar du en produktprofil och tilldelar en uppsättning rättigheter o
 
 1. När du är klar klickar du på **[!UICONTROL Done]**. Din nya produktprofil har skapats.
 
+   ![](../assets/user_management_6.png)
+
 1. Välj din nya produktprofil för att börja hantera behörigheter. Lägg till användare i produktprofilen på **[!UICONTROL Users]** fliken. Mer information finns på den här [sidan](../about/access-management.md#assigning-product-profile).
 
 1. Utför samma steg som beskrivs ovan för att lägga **[!UICONTROL Admin]** till i din produktprofil.
 
 1. På **[!UICONTROL Permissions]** fliken väljer du en av de två kategorierna **[!UICONTROL Sandbox]** eller **[!UICONTROL Authoring]** för att öppna **[!UICONTROL Edit Permissions]** sidan och lägga till eller ta bort behörigheter för produktprofilen.
 
-1. I behörighetskategorin väljer du vilken eller vilka sandlådor som ska tilldelas till din produktprofil. **[!UICONTROL Sandbox]** Under **[!UICONTROL Available Permissions Items]** klickar du på plusikonen (+) för att tilldela sandlådor till din profil.
+   ![](../assets/user_management_7.png)
 
-   >[!NOTE]
-   >
-   >Platform Sandbox är en betafunktion.
-   <br>Mer information om sandlådor finns i det här [avsnittet](../about/access-management.md#sandboxes).
+1. I behörighetskategorin väljer du vilken eller vilka sandlådor som ska tilldelas till din produktprofil. **[!UICONTROL Sandbox]** Under **[!UICONTROL Available Permissions Items]** klickar du på plusikonen (+) för att tilldela sandlådor till din profil. Mer information om sandlådor finns i det här [avsnittet](../about/access-management.md#sandboxes).
+
+   ![](../assets/user_management_8.png)
 
 1. Om det behövs klickar du under **[!UICONTROL Included Permission Items]** X-ikonen bredvid Ta bort behörigheter till din produktprofil.
 
+   ![](../assets/user_management_9.png)
+
 1. Gå till behörighetskategorin och utför samma steg som ovan för att lägga till rättigheter till din produktprofil. **[!UICONTROL Authoring]**
    <br>Mer information om rättigheter och kompatibilitet mellan rättigheter och [!DNL Journey Orchestration]olika funktioner finns i det här [avsnittet](../about/access-management.md#about-access-management).
+
+   ![](../assets/user_management_10.png)
 
 1. När du är klar klickar du på **[!UICONTROL Save]**.
 
@@ -105,7 +112,7 @@ I det här avsnittet finns en lista med alla produktprofiler som inte är instal
 
 Så här tilldelar du en produktprofil åt en användare [!DNL Journey Orchestration]:
 
-1. Välj i Admin Console **[!UICONTROL Journey Orchestration]**.
+1. I Admin Console väljer du **[!UICONTROL Journey Orchestration]**.
 
    ![](../assets/user_management.png)
 
@@ -127,14 +134,10 @@ Användaren bör sedan få ett e-postmeddelande som omdirigeras till din [!DNL J
 
 ## Använda sandlådor {#sandboxes}
 
->[!NOTE]
->
->Platform Sandbox är en betafunktion.
-
 [!DNL Journey Orchestration] I kan du partitionera instansen i separerade virtuella miljöer, så kallade sandlådor.
 Sandlådor tilldelas via produktprofiler i Admin Console. Mer information om hur du tilldelar sandlådor finns i det här [avsnittet](../about/access-management.md#create-product-profile).
 
-[!DNL Journey Orchestration] speglar de plattformssandlådor som har skapats för en viss organisation.
-Plattformssandlådor kan skapas eller återställas från din instans av Adobe Experience Platform. Detaljerade anvisningar finns i användarhandboken [för](https://docs.adobe.com/content/help/en/experience-platform/sandbox/ui/user-guide.html) Sandbox.
+[!DNL Journey Orchestration] speglar de Platform-sandlådor som har skapats för en viss organisation.
+Platform-sandlådor kan skapas eller återställas från din Adobe Experience Platform-instans. Detaljerade anvisningar finns i användarhandboken [för](https://docs.adobe.com/content/help/en/experience-platform/sandbox/ui/user-guide.html) Sandbox.
 
 Du hittar kontrollen för sandlådeväljaren längst upp till vänster på skärmen. Om du vill växla från en sandlåda till en annan klickar du på den för närvarande aktiva sandlådan i växlaren och väljer en annan sandlåda i listrutan.
