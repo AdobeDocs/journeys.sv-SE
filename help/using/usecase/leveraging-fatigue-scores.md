@@ -11,18 +11,21 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+source-git-commit: 0bede8675f72c7b63da59dc8e0a3ca0fb95de87c
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
 
-# Utnyttja utmattningspoäng {#concept_dsh_1ry_wfb}
+# Utnyttjar Journey AI {#concept_dsh_1ry_wfb}
 
 Det här användningsexemplet visar hur du kan utnyttja trötthetspoäng för att undvika att överdriva kundresan.
 
->[!CAUTION]
+>[!NOTE]
 >
->Funktionen för prediktiv trötthet är bara tillgänglig för kunder som använder datatjänsten Adobe Campaign Standard.
+>Funktionen för prediktiv trötthet är bara tillgänglig för kunder som använder funktionen Adobe Campaign Standard Data Service.
 
 ## Konfigurera händelsen {#section_ptb_ws1_ffb}
 
@@ -32,22 +35,22 @@ Följ stegen som beskrivs i [](../event/about-events.md).
 
 Utför följande steg för att välja utmattningspoängfält i den inbyggda datakällan:
 
-1. Klicka på fliken på den övre menyn och välj den inbyggda Experience Platform-datakällan **[!UICONTROL Data Sources]**.
+1. Klicka på fliken på den översta menyn och välj den inbyggda Experience Platform-datakällan. **[!UICONTROL Data Sources]**
 
    ![](../assets/journey23.png)
 
 1. Kontrollera att fälten som krävs för ditt användningsfall är markerade.
-1. Klicka **[!UICONTROL Add a New Field Group]**och markera**[!UICONTROL Profiles]** modellen och lägg till fälten **[!UICONTROL fatigueLevel]**och**[!UICONTROL fatigueScore]** (under _resanAI > emailScore > utmattning_).
+1. Klicka **[!UICONTROL Add a New Field Group]** och markera **[!UICONTROL Profiles]** modellen och lägg till fälten **[!UICONTROL fatigueLevel]** och **[!UICONTROL fatigueScore]** (under _resanAI > emailScore > utmattning_).
 
    ![](../assets/journeyuc3_1.png)
 
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 
 ## Bygga resan {#section_uzm_pyy_wfb}
 
 Följ stegen som beskrivs i [](../building-journeys/journey.md)för att skapa, validera och publicera resan.
 
-Vi utnyttjar **[!UICONTROL fatigueLevel]**fältet. Du kan också använda**[!UICONTROL fatigueScore]** fältet.
+Vi utnyttjar **[!UICONTROL fatigueLevel]** fältet. Du kan också använda **[!UICONTROL fatigueScore]** fältet.
 
 Utför följande steg för att utnyttja trötthetsnivån under din resa:
 
@@ -55,11 +58,11 @@ Utför följande steg för att utnyttja trötthetsnivån under din resa:
 
    ![](../assets/journeyuc2_14.png)
 
-1. Välj **[!UICONTROL Data Source Condition]**typ och klicka i**[!UICONTROL Expression]** fältet.
+1. Välj **[!UICONTROL Data Source Condition]** typ och klicka i **[!UICONTROL Expression]** fältet.
 
    ![](../assets/journeyuc3_2.png)
 
-1. Använd den enkla uttrycksredigeraren och leta efter **[!UICONTROL fatigueLevel]**fältet (_ExperiencePlatformDataSource > JourneyAIScores > Profile > travelAI > emailScore > fatigue_), släpp det till höger och skapa följande villkor: &quot;fatigueLevel är lika med &quot;Low&quot;. Klicka**[!UICONTROL Ok]**.
+1. Använd den enkla uttrycksredigeraren och leta efter **[!UICONTROL fatigueLevel]** fältet (_ExperiencePlatformDataSource > JourneyAIScores > Profile > travelAI > emailScore > fatigue_), släpp det till höger och skapa följande villkor: &quot;fatigueLevel är lika med &quot;Low&quot;. Klicka på **[!UICONTROL Ok]**.
 
    ![](../assets/journeyuc3_3.png)
 
