@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c6e7c27865eb34961f8901c9bde2c09527f67f15
+source-git-commit: d0630be5b82d681a94eebe2e9a7196081717ec9d
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -29,13 +29,17 @@ Om du har Adobe Campaign Standard kan du utföra följande åtgärder direkt: **
 
 För var och en av dessa kanaler väljer du en **mall** för transaktionsmeddelanden för Adobe Campaign Standard. Det [!DNL Journey Orchestration] är inte en lösning för att skicka meddelanden. För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i Adobe Campaign Standard. Läs den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html) om du vill veta hur du använder den här funktionen.
 
+>[!NOTE]
+>
+>Campaign Standardens transaktionsmeddelande och tillhörande händelse måste publiceras för att kunna användas i Journey Orchestration. Om händelsen publiceras men meddelandet inte visas visas den inte i Journey Orchestration-gränssnittet. Om meddelandet publiceras men dess associerade händelse inte är det visas det i Journey Orchestration-gränssnittet, men det går inte att använda det.
+
 ![](../assets/journey59.png)
 
 Du kan använda en händelsemall (kallas även realtid) eller en transaktionsmall för profiler.
 
 >[!NOTE]
 >
->När vi skickar transaktionsmeddelanden i realtid (rtEvent) eller när vi dirigerar meddelanden med ett tredjepartssystem tack vare en anpassad åtgärd krävs en specifik konfiguration för trötthet, blocklista eller hantering av prenumerationer. Om till exempel attributet &quot;unsubscribe&quot; lagras i Platform eller i ett tredjepartssystem måste ett villkor läggas till innan meddelandet skickas för att det här villkoret ska kunna kontrolleras.
+>När vi skickar transaktionsmeddelanden i realtid (rtEvent) eller när vi dirigerar meddelanden med ett tredjepartssystem tack vare en anpassad åtgärd krävs en särskild konfiguration för hantering av trötthet, blockeringslista eller prenumerationer. Om till exempel attributet &quot;unsubscribe&quot; lagras i Platform eller i ett tredjepartssystem måste ett villkor läggas till innan meddelandet skickas för att det här villkoret ska kunna kontrolleras.
 
 När du väljer en mall visas alla fält som förväntas i meddelandenyttolasten i aktivitetskonfigurationsrutan under **[!UICONTROL Address]** och **[!UICONTROL Personalization Data]**. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Du kan också använda den avancerade uttrycksredigeraren för att skicka ett värde manuellt, utföra databearbetning på hämtad information (t.ex. konvertera en sträng till versaler) eller använda funktioner som &quot;if, then, else&quot;. Se [](../expression/expressionadvanced.md).
 
