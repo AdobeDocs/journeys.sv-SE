@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: be21573973600758cbf13bd25bc3b44ab4cd08ca
+source-git-commit: 0c7a9d679e2bf20c58aaea81e134c41b401e11ac
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
@@ -50,18 +50,76 @@ Så här använder du testläget:
 ## Viktiga anteckningar {#important_notes}
 
 * Det finns ett gränssnitt för att utlösa händelser till den testade resan, men händelser kan också skickas av tredjepartssystem som Postman.
-* Endast personer som markerats som&quot;testprofiler&quot; i kundprofiltjänsten i realtid får delta i den testade resan. Processen för att skapa en testprofil är densamma som processen att skapa en profil i dataplattformen. Du behöver bara kontrollera att testprofilflaggan är sann. Du kan använda segmentavsnittet i gränssnittet för dataplattformen för att skapa ett segment med testprofiler i din dataplattform och se en icke-uttömmande lista. Det går inte att visa den uttömmande listan just nu.
-* Testläget är bara tillgängligt i utkastresor som använder ett namnutrymme. Testläget måste kontrollera om en person som deltar i resan är en testprofil eller inte och därmed måste kunna nå dataplattformen.
+* Endast personer som markerats som&quot;testprofiler&quot; i kundprofiltjänsten i realtid får delta i den testade resan. Se [](../building-journeys/testing-the-journey.md#create-test-profile).
+* Testläget är bara tillgängligt i utkastresor som använder ett namnutrymme. Testläget måste kontrollera om en person som deltar i resan är en testprofil eller inte och därför måste kunna nå Data Platform.
 * Det högsta antalet testprofiler som kan gå in på en resa under en testsession är 100.
 * När du inaktiverar testläget töms resorna från alla som har gått in i det tidigare eller som befinner sig i det.
 * Du kan aktivera/inaktivera testläget så många gånger som behövs.
 * Du kan inte ändra din resa när testläget är aktiverat. När du är i testläge kan du publicera resan direkt, du behöver inte inaktivera testläget tidigare.
 
+## Skapa en testprofil{#create-test-profile}
+
+Processen för att skapa en testprofil är densamma som när du skapar en profil i Experience Platform. Den utförs via API-anrop. Se den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/profile/home.html)
+
+Du måste använda ett profilschema som innehåller blandningen &quot;information om profiltester&quot;. Flaggan testProfile ingår i den här mixinen.
+
+När du skapar en profil måste du skicka värdet: testprofile = true.
+
+Observera att du även kan uppdatera en befintlig profil för att ändra dess testProfile-flagga till &quot;true&quot;.
+
+Här är ett exempel på ett API-anrop för att skapa en testprofil:
+
+```
+curl -X POST \
+'https://example.adobe.com/collection/xxxxxxxxxxxxxx' \
+-H 'Cache-Control: no-cache' \
+-H 'Content-Type: application/json' \
+-H 'Postman-Token: xxxxx' \
+-H 'cache-control: no-cache' \
+-H 'x-api-key: xxxxx' \
+-H 'x-gw-ims-org-id: xxxxx' \
+-d '{
+"header": {
+"msgType": "xdmEntityCreate",
+"msgId": "xxxxx",
+"msgVersion": "xxxxx",
+"xactionid":"xxxxx",
+"datasetId": "xxxxx",
+"imsOrgId": "xxxxx",
+"source": {
+"name": "Postman"
+},
+"schemaRef": {
+"id": "https://example.adobe.com/mobile/schemas/xxxxx",
+"contentType": "application/vnd.adobe.xed-full+json;version=1"
+}
+},
+"body": {
+"xdmMeta": {
+"schemaRef": {
+"contentType": "application/vnd.adobe.xed-full+json;version=1"
+}
+},
+"xdmEntity": {
+"_id": "xxxxx",
+"_mobile":{
+"ECID": "xxxxx"
+},
+"testProfile":true
+}
+}
+}'
+```
+
 ## Aktivera händelser {#firing_events}
 
 Med **[!UICONTROL Trigger an event]** knappen kan du konfigurera en händelse som får en person att komma in på resan.
 
-Som en förutsättning måste du veta vilka profiler som är flaggade som testprofiler i dataplattformen. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID.
+>[!NOTE]
+>
+>När du utlöser en händelse i testläge genereras en verklig händelse, vilket innebär att den även kommer att drabba andra resor som lyssnar på den här händelsen.
+
+Som en förutsättning måste du veta vilka profiler som är flaggade som testprofiler i Data Platform. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID.
 
 Om resan innehåller flera händelser använder du listrutan för att välja en händelse. Konfigurera sedan de fält som skickats och körningen av den händelse som skickats för varje händelse. Med gränssnittet kan du skicka rätt information i händelsens nyttolast och kontrollera att informationstypen är korrekt. Testläget sparar de senaste parametrarna som användes i en testsession för senare bruk.
 
