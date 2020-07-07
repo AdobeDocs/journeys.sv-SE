@@ -1,12 +1,12 @@
 ---
 product: Journeys
 audience: end-user
-user-guide-title: Hjälp om resesamordning
+user-guide-title: Hjälp om Journey Orchestration
 index: true
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: 18cc34f4c2f8f75ec42c70ec9a92784aed4358d9
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 + Konfigurera en datakälla {#data-source-journeys}
    + [Om datakällor](using/datasource/about-data-sources.md)
    + [Fältgrupper](using/datasource/field-groups.md)
-   + [Datakälla för Adobe Experience Platform](using/datasource/adobe-experience-platform-data-source.md)
+   + [Adobe Experience Platform datakälla](using/datasource/adobe-experience-platform-data-source.md)
    + [Externa datakällor](using/datasource/external-data-sources.md)
 + Konfigurera en åtgärd {#action-journeys}
    + [Om funktionsmakron](using/action/action.md)
@@ -67,7 +67,7 @@ ht-degree: 0%
          + [Vänta på aktivitet](using/building-journeys/wait-activity.md)
       + Verksamheter {#action-activities}
          + [Om funktionsmakron](using/building-journeys/about-action-activities.md)
-         + [Använda Adobe Campaign-åtgärder](using/building-journeys/using-adobe-campaign-actions.md)
+         + [Använda Adobe Campaign åtgärder](using/building-journeys/using-adobe-campaign-actions.md)
          + [Använda anpassade åtgärder](using/building-journeys/using-custom-actions.md)
    + [Testa resan](using/building-journeys/testing-the-journey.md)
    + [Publicera resan](using/building-journeys/publishing-the-journey.md)
@@ -162,6 +162,10 @@ ht-degree: 0%
    + [Om reserapporter](using/reporting/about-journey-reports.md)
    + [Skapa reserapporter](using/reporting/creating-your-journey-reports.md)
    + [Mätvärden och dimensioner](using/reporting/metrics-and-dimensions.md)
++ Integrering med intelligenta tjänster{#use-case-advanced}
+   + [Om AI-integrering](using/ai-services/ai-services-overview.md)
+   + [Utnyttjar Journey AI](using/ai-services/leveraging-fatigue-scores.md)
+   + [Utnyttja kundernas AI](using/ai-services/leveraging-customer-ai.md)
 + Användningsexempel{#use-cases-journeys}
    + Enkelt användningsfall{#use-case-simple}
       + [Om det enkla användningssättet](using/usecase/about-the-simple-use-case.md)
@@ -173,7 +177,11 @@ ht-degree: 0%
       + [Konfigurera händelserna](using/usecase/configuring-the-events.md)
       + [Konfigurera datakällor](using/usecase/configuring-the-data-sources.md)
       + [Bygga resan](using/usecase/building-the-journey.md)
-   + [Utnyttja utmattningspoäng](using/usecase/leveraging-fatigue-scores.md)
 + Arbeta med API:er{#working-with-apis}
    + [Fånga API:er](using/api/capping.md)
++ Alfavärden {#alpha}
+   + [Översikt över alfavärden](using/alpha/alpha-overview.md)
+   + [Användargränssnitt](using/alpha/alpha-interface.md)
+   + [Aktivitet för utlösare av segment](using/alpha/alpha-segment-trigger.md)
+   + [Regelbaserade händelser](using/alpha/alpha-events.md)
 
