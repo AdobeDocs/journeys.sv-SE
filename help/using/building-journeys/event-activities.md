@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 957e72de7feccb33684523e26b2bdccb2074e4ca
+source-git-commit: 3937f92035651fca5ddd7f54c9b650d050f2587f
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
@@ -39,13 +39,13 @@ För den här händelsetypen kan du bara lägga till en etikett och en beskrivni
 
 ## Reaktionshändelser {#section_dhx_gss_dgb}
 
-En av de olika händelseaktiviteterna som finns på paletten är den inbyggda **reaktionshändelsen** . Med den här aktiviteten kan du reagera på spårningsdata för ett meddelande som skickas med e-post, SMS eller push-aktiviteter inom samma resa. Den här informationen kommer från transaktionsmeddelanden i Adobe Campaign Standard. Vi samlar in den här informationen i realtid när den delas med dataplattformen. För push-meddelanden kan du reagera på klickade, skickade eller misslyckade meddelanden. För SMS-meddelanden kan du reagera på skickade eller misslyckade meddelanden. För e-postmeddelanden kan du reagera på klickade, skickade, öppnade eller misslyckade meddelanden.
+En av de olika händelseaktiviteterna som finns på paletten är den inbyggda **reaktionshändelsen** . Med den här aktiviteten kan du reagera på spårningsdata för ett meddelande som skickas med e-post, SMS eller push-aktiviteter inom samma resa. Den här informationen kommer från transaktionsmeddelanden inom Adobe Campaign Standard. Vi samlar in den här informationen i realtid när den delas med Data Platform. För push-meddelanden kan du reagera på klickade, skickade eller misslyckade meddelanden. För SMS-meddelanden kan du reagera på skickade eller misslyckade meddelanden. För e-postmeddelanden kan du reagera på klickade, skickade, öppnade eller misslyckade meddelanden.
 
 Du kan också använda den här funktionen för att utföra en åtgärd när det inte finns någon reaktion på dina meddelanden. Det gör du genom att skapa en andra sökväg parallellt med reaktionsaktiviteten och lägga till en vänteaktivitet. Om ingen reaktion inträffar under den period som anges i vänteaktiviteten väljs den andra banan. Du kan välja att skicka t.ex. ett uppföljningsmeddelande.
 
 Observera att du bara kan använda en reaktionsaktivitet på arbetsytan om det finns en tidigare e-post-, push- eller SMS-aktivitet.
 
-Se [](../building-journeys/about-action-activities.md).
+Se [Om funktionsmakron](../building-journeys/about-action-activities.md).
 
 ![](../assets/journey45.png)
 
@@ -58,17 +58,19 @@ Här följer de olika stegen för att konfigurera reaktionshändelser:
 
 >[!NOTE]
 >
+>Reaktionshändelser fungerar med Adobe Campaign Standard, oavsett om den distribueras på AWS- eller Azure-servrar.
+>
 >Reaktionshändelser kan inte spåra e-post, SMS eller push-åtgärder som utförs under en annan resa.
 >
 >Reaktionshändelser spårar klick på länkar av typen &quot;spårade&quot; (se den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/designing-content/links.html#about-tracked-urls)). Ta inte hänsyn till länkar för att ta bort prenumerationer och spegla sidor.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >E-postklienter som Gmail tillåter bildblockering. E-postmeddelanden som öppnas spåras med en bild på 0 pixlar som ingår i e-postmeddelandet. Om bilder blockeras kommer e-postöppningar inte att beaktas.
 
 ## Segmentkvalificeringshändelser {#segment-qualification}
 
-Med den här aktiviteten kan din resa lyssna på ingångar och utgångar för profiler i plattformssegment för att få individer att komma in på eller gå framåt under en resa. Mer information om hur du skapar segment finns i det här [avsnittet](../segment/about-segments.md).
+Med den här aktiviteten kan din resa lyssna på ingångar och utgångar för profiler i Platform-segment för att få individer att komma in på eller gå framåt under en resa. Mer information om hur du skapar segment finns i det här [avsnittet](../segment/about-segments.md).
 
 Säg att du har ett &quot;silverkundssegment&quot;. Med den här aktiviteten kan ni få alla nya silverkunder att ta sig in på en resa och skicka en serie personaliserade meddelanden till dem.
 
@@ -97,6 +99,12 @@ Nyttolasten innehåller följande kontextinformation som du kan använda i villk
 * beteendet (entré, exit)
 * tidsstämpel för kvalificeringen
 * segment-ID
+
+När du använder uttrycksredigeraren i ett villkor eller en åtgärd som följer på en **segmentkvalificeringsaktivitet** , har du tillgång till noden **SegmentQualification** . Du kan välja mellan **senaste kvalificeringstid** och **status** (ange eller avsluta).
+
+Se [Villkorsaktivitet](../building-journeys/condition-activity.md#about_condition).
+
+![](../assets/segment8.png)
 
 ## Avancerad användning: parallella händelser{#section_vxv_h25_pgb}
 
