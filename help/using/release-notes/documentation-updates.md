@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: 5d92b9d70a70700026a4715c6cb6a6c4ba565ba5
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,18 @@ ht-degree: 0%
 
 På den här sidan visas alla dokumentationsuppdateringar för [!DNL Journey Orchestration].
 Du kan även läsa [!DNL Journey Orchestration] versionsinformationen [](../release-notes/release-notes.md).
+
+## Juli 2020 {#july-2020}
+
+* Ett nytt avsnitt har lagts till om de alfafunktioner som testas bland ett begränsat antal kunder. [Läs mer](../alpha/alpha-overview.md)
+* Ett nytt avsnitt om integrationen med intelligenta tjänster har lagts till. [Läs mer](../ai-services/ai-services-overview.md)
+* Ett nytt avsnitt lades till när testprofilen skapades. [Läs mer](../building-journeys/testing-the-journey.md#create-test-profile).
+* Lagt till information om hur du använder noden **SegmentQualification** i ett resevillkor eller en åtgärd. [Läs mer](../building-journeys/event-activities.md#segment-qualification).
+* En anteckning har lagts till i transaktionsmeddelandet för Campaign och i händelsepubliceringen. Se [](../action/working-with-adobe-campaign.md) och [](../building-journeys/using-adobe-campaign-actions.md).
+* Information har lagts till om de kontroller som utförs när Campaign Standardens instans-URL testas. [Läs mer](../action/working-with-adobe-campaign.md)
+* Information har lagts till om reaktionshändelsekompatibilitet med Campaign Standarder som lagras på AWS- eller Azure-servrar. [Läs mer](../building-journeys/event-activities.md#section_dhx_gss_dgb)
+* En anteckning har lagts till om behovet av att ställa in en spärrregel när du arbetar med transaktionsmeddelanden för Campaign Standarder. [Läs mer](../action/working-with-adobe-campaign.md)
+* En anteckning har lagts till om generering av verkliga händelser när händelser utlöses i testläge. [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
 
 ## Juni 2020 {#june-2020}
 
@@ -65,7 +77,7 @@ Du kan även läsa [!DNL Journey Orchestration] versionsinformationen [](../rele
 
 * Alla skärmbilder har uppdaterats för att återspegla gränssnittsändringar.
 * Testlägesavsnittet har uppdaterats. [Läs mer](../building-journeys/testing-the-journey.md)
-* En varning har lagts till i avsnitten [Tidsoptimering](../building-journeys/wait-activity.md) för e-postsändning och [prediktiv trötthet](../usecase/leveraging-fatigue-scores.md) . Funktionerna är bara tillgängliga för kunder som använder Adobe Campaign Standard Data Service.
+* En varning har lagts till i avsnitten [Tidsoptimering](../building-journeys/wait-activity.md) för e-postsändning och [prediktiv trötthet](../ai-services/leveraging-fatigue-scores.md) . Dessa funktioner är bara tillgängliga för kunder som använder Adobe Campaign Standard Data Service.
 * Stoppade resor kan nu tas bort. Relaterade dokumentationssidor har uppdaterats.
 * Två färger visas nu när fel upptäcks under en resa. Röd för fel och orange för varningar. [Läs mer](../about/troubleshooting.md)
 * Avsnittet för avancerad uttrycksredigerare har uppdaterats. [Läs mer](../expression/expressionadvanced.md).
