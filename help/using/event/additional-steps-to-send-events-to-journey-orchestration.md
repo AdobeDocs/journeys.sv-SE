@@ -1,6 +1,6 @@
 ---
 title: Ytterligare steg för att skicka händelser till Journey Orchestration
-description: Läs mer om ytterligare steg för att skicka händelser till Journey Orchestration
+description: Läs mer om hur du skickar händelser till Journey Orchestration
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: a71378264e6cd8a13c616bb867723f827d6dca69
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 Om du vill konfigurera händelser som ska skickas till **[!UICONTROL Streaming Ingestion APIs]** och användas i [!DNL Journey Orchestration]måste du göra följande:
 
-1. Hämta URL:en för inmatning från API:erna för dataplattformen (se API:er för [direktuppspelning av inmatning](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/overview.html)).
+1. Hämta inlopps-URL:en från API:erna för Data Platform (se API:er för [direktuppspelning](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/overview.html)).
 1. Kopiera nyttolasten från nyttolastförhandsvisningen på **[!UICONTROL Event]** menyn. Se [](../event/defining-the-payload-fields.md).
 
 Sedan måste du konfigurera det datasystem som överför händelser till API:er för direktuppspelning av inmatning med den nyttolast som du kopierade:
@@ -37,7 +37,7 @@ Sedan måste du konfigurera det datasystem som överför händelser till API:er 
 1. Använd den nyttolast du kopierade från [!DNL Journey Orchestration] i brödtexten (&quot;dataavsnittet&quot;) för API-anropet till API:er för Streaming Ingput. Se nedan för ett exempel
 1. Bestäm var alla variabler som finns i nyttolasten ska hämtas. Exempel: om händelsen ska förmedla adressen, kommer nyttolasten som klistras in att visa&quot;adress&quot;: &quot;string&quot;. &quot;string&quot; ska ersättas med variabeln som automatiskt fyller i rätt värde, e-postadressen till den person som meddelandet ska skickas till. Observera att vi i förhandsvisningen av nyttolasten, i avsnittet, automatiskt fyller i många värden som förväntas underlätta ditt arbete. **[!UICONTROL Header]**
 1. Välj &quot;application/json&quot; som en texttyp.
-1. Skicka ditt IMS ORG ID i huvudet med tangenten &quot;x-gw-ims-org-id&quot;. Använd ditt IMS ORG ID (&quot;XXX@AdobeOrg&quot;) för värdet.
+1. Skicka ditt IMS-organisations-ID i huvudet med tangenten &quot;x-gw-ims-org-id&quot;. Använd ditt IMS-organisations-ID (&quot;XXX@AdobeOrg&quot;) för värdet.
 
 Här är ett exempel på en API-händelse för direktuppspelning:
 
