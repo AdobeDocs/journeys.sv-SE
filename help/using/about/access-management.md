@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c99ff0755a75c9262bf6ebe73172fe76d3f78f48
+source-git-commit: 94ef4e30d16b7d23dc029863fcd2d9f34173c433
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -25,28 +25,34 @@ ht-degree: 0%
 
 De kan hanteras av administratörer som har åtkomst till Admin Console. Mer information om Admin Console finns i den här [dokumentationen](https://helpx.adobe.com/enterprise/managing/user-guide.html).
 
+Användaren måste vara: [!DNL Journey Orchestration]
+
+* del av en [!DNL Journey Orchestration] behörighet **[!UICONTROL product profile]** som är kopplad till [!DNL Journey Orchestration] behörigheter.
+* del av en [!DNL Adobe Experience Platform]**[!UICONTROL product profile]**. Det finns inget obligatoriskt tillstånd att ha. Användaren bör ha **[!UICONTROL profile management]** behörighet att skapa och redigera plattformssegment från [!DNL Journey Orchestration] gränssnittet. For more on this, refer to this [page](https://docs.adobe.com/content/help/en/experience-platform/access-control/home.html#adobe-admin-console).
+
 På Admin Console kan du tilldela användarna en av följande färdiga produktprofiler:
 
-* **[!UICONTROL Limited Access User]**: användare med skrivskyddad åtkomst till resor och rapporter. Den här produktprofilen innehåller följande rättigheter:
+* **[!UICONTROL Limited Access User]**: användare med skrivskyddad åtkomst till resor och rapporter. Den här produktprofilen innehåller följande behörigheter:
    * Läsa resor
    * Läs rapporter
 
-* **[!UICONTROL Administrators]**: användare med tillgång till administrationsmenyerna med möjlighet att hantera resor, evenemang och rapporter. Den här produktprofilen innehåller följande rättigheter:
+* **[!UICONTROL Administrators]**: användare med tillgång till administrationsmenyerna med möjlighet att hantera resor, evenemang och rapporter. Den här produktprofilen innehåller följande behörigheter:
    * Hantera resor
    * Publicera resor
    * Hantera händelser, datakällor och åtgärder
    * Hantera rapporter
+
    >[!NOTE]
    >
    >**[!UICONTROL Administrators]** är den enda produktprofil som gör det möjligt att skapa, publicera och publicera transaktionsmeddelanden (eller meddelandemallar) i Adobe Campaign Standard. Den här produktprofilen behövs om du använder Adobe Campaign Standard för att skicka meddelanden på dina resor.
 
-* **[!UICONTROL Standard User]**: användare med grundläggande åtkomst, t.ex. resehantering. Den här produktprofilen innehåller följande rättigheter:
+* **[!UICONTROL Standard User]**: användare med grundläggande åtkomst, t.ex. resehantering. Den här produktprofilen innehåller följande behörigheter:
    * Hantera resor
    * Publicera resor
    * Hantera rapporter
 
 Du kan också skapa egna produktprofiler om de färdiga profilerna inte räcker till för att hantera användarna.
-Användare måste alltid vara länkade till en produktprofil som gör att du kan tilldela dem specifika inbyggda rättigheter som:
+Användarna måste alltid vara länkade till en produktprofil så att du kan tilldela dem specifika inbyggda behörigheter som:
 
 * **[!UICONTROL Read journeys]**
 * **[!UICONTROL Read reports]**
@@ -56,17 +62,17 @@ Användare måste alltid vara länkade till en produktprofil som gör att du kan
 * **[!UICONTROL Publish journeys]**
 * **[!UICONTROL Manage reports]**
 
-Du hittar kompatibiliteten mellan rättigheter och [!DNL Journey Orchestration]olika funktioner nedan.
+Du hittar kompatibiliteten mellan behörigheter och [!DNL Journey Orchestration]de olika funktionerna nedan.
 
 ![](../assets/journey_permission.png)
 
 ## Skapa en produktprofil {#create-product-profile}
 
-[!DNL Journey Orchestration] I kan du skapa egna produktprofiler och tilldela en uppsättning rättigheter och sandlådor till dina användare. Med produktprofiler kan du auktorisera eller neka åtkomst till vissa funktioner eller objekt i gränssnittet.
+[!DNL Journey Orchestration] I kan du skapa egna produktprofiler och tilldela en uppsättning behörigheter och sandlådor till dina användare. Med produktprofiler kan du auktorisera eller neka åtkomst till vissa funktioner eller objekt i gränssnittet.
 
 Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experience Platform-dokumentationen](https://docs.adobe.com/content/help/en/experience-platform/sandbox/ui/user-guide.html).
 
-Så här skapar du en produktprofil och tilldelar en uppsättning rättigheter och sandlådor:
+Så här skapar du en produktprofil och tilldelar en uppsättning behörigheter och sandlådor:
 
 1. I Admin Console väljer du **[!UICONTROL Journey Orchestration]**. Klicka på **[!UICONTROL New Profile]** på fliken **[!UICONTROL Product profile]**.
 
@@ -80,7 +86,7 @@ Så här skapar du en produktprofil och tilldelar en uppsättning rättigheter o
 
    ![](../assets/user_management_1.png)
 
-1. Välj din nya produktprofil för att börja hantera behörigheter. Lägg till användare i produktprofilen på **[!UICONTROL Users]** fliken. Mer information finns på den här [sidan](../about/access-management.md#assigning-product-profile).
+1. Välj din nya produktprofil för att börja hantera behörigheter. Lägg till användare i produktprofilen på **[!UICONTROL Users]** fliken. For more on this, refer to this [page](../about/access-management.md#assigning-product-profile).
 
 1. Utför samma steg som beskrivs ovan för att lägga **[!UICONTROL Admin]** till i din produktprofil.
 
@@ -96,8 +102,8 @@ Så här skapar du en produktprofil och tilldelar en uppsättning rättigheter o
 
    ![](../assets/user_management_9.png)
 
-1. Gå till behörighetskategorin och utför samma steg som ovan för att lägga till rättigheter till din produktprofil. **[!UICONTROL Authoring]**
-   <br>Mer information om rättigheter och kompatibilitet mellan rättigheter och [!DNL Journey Orchestration]olika funktioner finns i det här [avsnittet](../about/access-management.md#about-access-management).
+1. Gå till behörighetskategorin och utför samma steg som ovan för att lägga till behörigheter i din produktprofil. **[!UICONTROL Authoring]**
+   <br>Mer information om behörigheter och kompatibilitet mellan behörigheter och [!DNL Journey Orchestration]deras olika funktioner finns i det här [avsnittet](../about/access-management.md#about-access-management).
 
    ![](../assets/user_management_10.png)
 
@@ -107,8 +113,8 @@ Din produktprofil har nu skapats och konfigurerats. Användare som är länkade 
 
 ## Tilldela en produktprofil {#assigning-product-profile}
 
-Produktprofiler tilldelas till en uppsättning användare som delar samma rättigheter inom organisationen.
-I det här avsnittet finns en lista med alla produktprofiler som inte är installerade på datorn och som har tilldelats rättigheter.
+Produktprofiler tilldelas till en uppsättning användare som delar samma behörigheter inom organisationen.
+I det här avsnittet finns en lista med alla färdiga produktprofiler med tilldelade behörigheter.
 
 Så här tilldelar du en produktprofil åt en användare [!DNL Journey Orchestration]:
 
@@ -122,7 +128,7 @@ Så här tilldelar du en produktprofil åt en användare [!DNL Journey Orchestra
 
 1. Klicka på **[!UICONTROL Add user]**.
 
-   Du kan också lägga till din nya användare i en användargrupp för att finjustera den delade behörighetsgruppen. Mer information finns på den här [sidan](https://helpx.adobe.com/enterprise/using/user-groups.html).
+   Du kan också lägga till din nya användare i en användargrupp för att finjustera den delade behörighetsgruppen. For more on this, refer to this [page](https://helpx.adobe.com/enterprise/using/user-groups.html).
 
    ![](../assets/user_management_3.png)
 
