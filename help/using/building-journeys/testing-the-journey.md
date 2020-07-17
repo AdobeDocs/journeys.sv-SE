@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0c7a9d679e2bf20c58aaea81e134c41b401e11ac
+source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Så här använder du testläget:
 
    ![](../assets/journeytest1.png)
 
-1. Använd parametern **Väntetid i testparametern** , i det nedre vänstra hörnet, för att definiera den tid som varje vänteaktivitet ska vara i testläge. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Den här parametern visas bara om du har släppt en eller flera vänteaktiviteter under din resa.
+1. Använd **[!UICONTROL Wait time in test]** parametern längst ned i det vänstra hörnet för att definiera hur lång tid varje vänteaktivitet ska vara i testläge. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Den här parametern visas bara om du har släppt en eller flera vänteaktiviteter under din resa.
 
    ![](../assets/journeytest_wait.png)
 
@@ -51,15 +51,15 @@ Så här använder du testläget:
 
 * Det finns ett gränssnitt för att utlösa händelser till den testade resan, men händelser kan också skickas av tredjepartssystem som Postman.
 * Endast personer som markerats som&quot;testprofiler&quot; i kundprofiltjänsten i realtid får delta i den testade resan. Se [](../building-journeys/testing-the-journey.md#create-test-profile).
-* Testläget är bara tillgängligt i utkastresor som använder ett namnutrymme. Testläget måste kontrollera om en person som deltar i resan är en testprofil eller inte och därför måste kunna nå Data Platform.
+* Testläget är bara tillgängligt i utkastresor som använder ett namnutrymme. Testläget måste kontrollera om en person som deltar i resan är en testprofil eller inte och därför måste kunna nå Adobe Experience Platform.
 * Det högsta antalet testprofiler som kan gå in på en resa under en testsession är 100.
-* När du inaktiverar testläget töms resorna från alla som har gått in i det tidigare eller som befinner sig i det.
+* När du inaktiverar testläget töms resorna från alla som har gått in i det tidigare eller som befinner sig i det. Rapporten blir också tydligare.
 * Du kan aktivera/inaktivera testläget så många gånger som behövs.
 * Du kan inte ändra din resa när testläget är aktiverat. När du är i testläge kan du publicera resan direkt, du behöver inte inaktivera testläget tidigare.
 
 ## Skapa en testprofil{#create-test-profile}
 
-Processen för att skapa en testprofil är densamma som när du skapar en profil i Experience Platform. Den utförs via API-anrop. Se den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/profile/home.html)
+Processen för att skapa en testprofil är densamma som när du skapar en profil i Adobe Experience Platform. Den utförs via API-anrop. Se den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/profile/home.html)
 
 Du måste använda ett profilschema som innehåller blandningen &quot;information om profiltester&quot;. Flaggan testProfile ingår i den här mixinen.
 
@@ -71,7 +71,7 @@ Här är ett exempel på ett API-anrop för att skapa en testprofil:
 
 ```
 curl -X POST \
-'https://example.adobe.com/collection/xxxxxxxxxxxxxx' \
+'https://dcs.adobedc.net/collection/xxxxxxxxxxxxxx' \
 -H 'Cache-Control: no-cache' \
 -H 'Content-Type: application/json' \
 -H 'Postman-Token: xxxxx' \
@@ -119,7 +119,7 @@ Med **[!UICONTROL Trigger an event]** knappen kan du konfigurera en händelse so
 >
 >När du utlöser en händelse i testläge genereras en verklig händelse, vilket innebär att den även kommer att drabba andra resor som lyssnar på den här händelsen.
 
-Som en förutsättning måste du veta vilka profiler som är flaggade som testprofiler i Data Platform. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID.
+Som en förutsättning måste du veta vilka profiler som är flaggade som testprofiler i Adobe Experience Platform. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID.
 
 Om resan innehåller flera händelser använder du listrutan för att välja en händelse. Konfigurera sedan de fält som skickats och körningen av den händelse som skickats för varje händelse. Med gränssnittet kan du skicka rätt information i händelsens nyttolast och kontrollera att informationstypen är korrekt. Testläget sparar de senaste parametrarna som användes i en testsession för senare bruk.
 
@@ -131,7 +131,7 @@ Med gränssnittet kan du skicka enkla händelseparametrar. Om du vill skicka sam
 
 En teknisk användare kan också använda det här gränssnittet för att komponera händelsenyttolaster och utlösa händelser utan att behöva använda något tredjepartsverktyg.
 
-När du klickar på knappen **Skicka** börjar testet. Personens förlopp under resan representeras av ett visuellt flöde. Vägen blir progressivt grön allt eftersom personen rör sig över resan. Om ett fel inträffar visas en varningssymbol i motsvarande steg. Du kan placera markören på den för att visa mer information om felet och få tillgång till fullständig information (när den är tillgänglig).
+När du klickar på **[!UICONTROL Send]** knappen startar testet. Personens förlopp under resan representeras av ett visuellt flöde. Vägen blir progressivt grön allt eftersom personen rör sig över resan. Om ett fel inträffar visas en varningssymbol i motsvarande steg. Du kan placera markören på den för att visa mer information om felet och få tillgång till fullständig information (när den är tillgänglig).
 
 ![](../assets/journeytest6.png)
 
