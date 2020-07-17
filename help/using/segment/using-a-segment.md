@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c2dbcdae1284ef5932a8313d7ef169bc7073741f
+source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,18 @@ ht-degree: 0%
 
 # Använda segment i villkor {#using-a-segment}
 
-I det här avsnittet beskrivs hur du använder ett segment i ett resevillkor. Mer information om hur du använder en **Segmentkvalificeringshändelse** under din resa finns i [Händelseaktiviteter](../building-journeys/event-activities.md#segment-qualification).
+I det här avsnittet beskrivs hur du använder ett segment i ett resevillkor. Mer information om hur du använder ett **[!UICONTROL Segment qualification]** evenemang under din resa finns i [Händelseaktiviteter](../building-journeys/segment-qualification-events.md).
 
 Följ de här stegen om du vill använda ett segment i ett resevillkor:
 
-1. Öppna en resa, släpp en **villkorsaktivitet** och välj **Datakällvillkor**.
+1. Öppna en resa, släpp en **[!UICONTROL Condition]** aktivitet och välj **Datakällvillkor**.
    ![](../assets/journey47.png)
 
-1. Klicka på **Lägg till en bana** för varje extra bana som behövs. Klicka på fältet **Uttryck** för varje sökväg.
+1. Klicka **[!UICONTROL Add a path]** för varje extra bana som behövs. Klicka på **[!UICONTROL Expression]** fältet för varje sökväg.
 
    ![](../assets/segment3.png)
 
-1. Till vänster kan du skapa en ny **segmentnod** . Dra och släpp det segment som du vill använda för villkoret. Som standard är villkoret i segmentet sant.
+1. På vänster sida, unfold **[!UICONTROL Segments]** node. Dra och släpp det segment som du vill använda för villkoret. Som standard är villkoret i segmentet sant.
 
    ![](../assets/segment4.png)
 
