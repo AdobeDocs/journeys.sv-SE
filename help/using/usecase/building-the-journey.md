@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+workflow-type: tm+mt
+source-wordcount: '839'
+ht-degree: 0%
 
 ---
 
@@ -20,21 +23,21 @@ source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
 
 Nu kan **affärsanvändaren** skapa resan. Vår resa kommer att omfatta följande aktiviteter:
 
-* två **[!UICONTROL Event]**verksamheter: &quot;LobbyBeacon&quot; och &quot;RestaurantBeacon&quot;
-* två **[!UICONTROL Condition]**verksamheter
-* tre **[!UICONTROL Push]**aktiviteter och en**[!UICONTROL Email]** aktivitet (med Adobe Campaign Standard)
-* en **[!UICONTROL Wait]**aktivitet
-* fyra **[!UICONTROL End]**verksamheter
+* två **[!UICONTROL Event]** verksamheter: &quot;LobbyBeacon&quot; och &quot;RestaurantBeacon&quot;
+* två **[!UICONTROL Condition]** verksamheter
+* tre **[!UICONTROL Push]** verksamheter och en **[!UICONTROL Email]** verksamhet (med Adobe Campaign Standard)
+* en **[!UICONTROL Wait]** aktivitet
+* fyra **[!UICONTROL End]** verksamheter
 
 >[!NOTE]
 >
->Aktiviteter **[!UICONTROL Push]**och**[!UICONTROL Email]** aktiviteter är bara tillgängliga på paletten om du har Adobe Campaign Standard.
+>Aktiviteter **[!UICONTROL Push]** och **[!UICONTROL Email]** aktiviteter är bara tillgängliga på paletten om du har Adobe Campaign Standard.
 
 Mer information om hur du bygger en resa finns i [](../building-journeys/journey.md).
 
 ## Första steget{#section_ntb_ws1_ffb}
 
-1. Klicka på **[!UICONTROL Home]**fliken i den övre menyn och**[!UICONTROL Create]** skapa en ny resa.
+1. Klicka på **[!UICONTROL Home]** fliken i den övre menyn och **[!UICONTROL Create]** skapa en ny resa.
 
    ![](../assets/journey31.png)
 
@@ -50,11 +53,11 @@ Mer information om hur du bygger en resa finns i [](../building-journeys/journey
 
    ![](../assets/journeyuc2_14.png)
 
-1. Välj **[!UICONTROL Data Source Condition]**typ och klicka i**[!UICONTROL Expression]** fältet. Du kan också definiera en villkorsetikett som ska visas på pilen på arbetsytan. I vårt exempel ersätter vi&quot;Villkor 1&quot; med&quot;Lojalitetsmedlem&quot;.
+1. Välj **[!UICONTROL Data Source Condition]** typ och klicka i **[!UICONTROL Expression]** fältet. Du kan också definiera en villkorsetikett som ska visas på pilen på arbetsytan. I vårt exempel ersätter vi&quot;Villkor 1&quot; med&quot;Lojalitetsmedlem&quot;.
 
    ![](../assets/journeyuc2_15.png)
 
-1. Klicka på **[!UICONTROL Advanced mode]**och definiera följande villkor baserat på fälten&quot;timestamp&quot; och&quot;directMarketing.sending.value&quot; som kommer från Experience Platforms datakälla. Uttryckets syntax är:
+1. Klicka på **[!UICONTROL Advanced mode]** och definiera följande villkor baserat på fälten &quot;timestamp&quot; och &quot;directMarketing.sending.value&quot; som kommer från datakällan för Adobe Experience Platform. Uttryckets syntax är:
 
    ```
    count(#{ExperiencePlatformDataSource.MarltonExperience.experienceevent.all(
@@ -66,7 +69,7 @@ Mer information om hur du bygger en resa finns i [](../building-journeys/journey
 
    ![](../assets/journeyuc2_30.png)
 
-1. Klicka på **[!UICONTROL Add a path]**knappen och skapa en andra kundväg för kunder som inte har kontaktats de senaste 24 timmarna och inte är lojalitetsmedlem. Namnge sökvägen&quot;Inte lojalitetsmedlem&quot;. Uttryckets syntax är:
+1. Klicka på **[!UICONTROL Add a path]** knappen och skapa en andra kundväg för kunder som inte har kontaktats de senaste 24 timmarna och inte är lojalitetsmedlem. Namnge sökvägen&quot;Inte lojalitetsmedlem&quot;. Uttryckets syntax är:
 
    ```
    count(#{ExperiencePlatformDataSource.MarltonExperience.experienceevent.all(
@@ -97,7 +100,7 @@ Två banor skapas efter ditt villkor:
 
    ![](../assets/journeyuc2_17.png)
 
-1. Välj **[!UICONTROL Data Source Condition]**typ och definiera villkoret baserat på den reservationsstatusinformation som hämtas från reservationssystemet:
+1. Välj **[!UICONTROL Data Source Condition]** typ och definiera villkoret baserat på den reservationsstatusinformation som hämtas från reservationssystemet:
 
    ```
    #{MarltonReservation.MarltonFieldGroup.reservation} == true
@@ -105,7 +108,7 @@ Två banor skapas efter ditt villkor:
 
    ![](../assets/journeyuc2_18.png)
 
-1. När du väljer ett fält från en extern datakälla visar den högra delen av skärmen listan med parametrar som definierades när den externa datakällan konfigurerades (se [](../usecase/configuring-the-data-sources.md)). Klicka på parameternamnet och definiera värdet för reservationssystemnyckeln, Experience Cloud ID, i vårt exempel:
+1. När du väljer ett fält från en extern datakälla visar den högra delen av skärmen listan med parametrar som definierades när den externa datakällan konfigurerades (se [](../usecase/configuring-the-data-sources.md)). Klicka på parameternamnet och definiera värdet för reservationssystemnyckeln, Experience Cloud-ID, i följande exempel:
 
    ```
    @{LobbyBeacon.endUserIDs._experience.mcid.id}
@@ -121,15 +124,16 @@ Två banor skapas efter ditt villkor:
 
    * _Kunder som har bokat ett rum_
    * _Kunder som inte har bokat ett rum._
+
    ![](../assets/journeyuc2_21.png)
 
-1. I den första sökvägen (rumsbokad) släpper du en **[!UICONTROL Push]**aktivitet, väljer din mobilapp och din välkomstmall.
+1. I den första sökvägen (rumsbokad) släpper du en **[!UICONTROL Push]** aktivitet, väljer din mobilapp och din välkomstmall.
 
    ![](../assets/journeyuc2_22.png)
 
-1. Definiera de **[!UICONTROL Target]**fält som krävs för att skicka push-meddelandet.
+1. Definiera de **[!UICONTROL Target]** fält som krävs för att skicka push-meddelandet.
 
-   * **[!UICONTROL Push platform]**: välj plattform:**[!UICONTROL Apple Push Notification Server]** (Apple) eller **[!UICONTROL Firebase Cloud Messaging]**(Android).
+   * **[!UICONTROL Push platform]**: välj plattform: **[!UICONTROL Apple Push Notification Server]** (Apple) eller **[!UICONTROL Firebase Cloud Messaging]** (Android).
    * **[!UICONTROL Registration token]**: lägg till följande uttryck (baserat på den konfigurerade händelsen) med det avancerade läget:
 
       ```
@@ -142,25 +146,25 @@ Två banor skapas efter ditt villkor:
 
    ![](../assets/journeyuc2_23.png)
 
-1. Lägg till en ny **[!UICONTROL Push]**aktivitet, välj mallen&quot;Måltidsrabatt&quot; och definiera**[!UICONTROL Address]** - och **[!UICONTROL Personalization]**-fälten. Lägg till en**[!UICONTROL End]** aktivitet.
+1. Lägg till en ny **[!UICONTROL Push]** aktivitet, välj mallen&quot;Måltidsrabatt&quot; och definiera **[!UICONTROL Address]** - och **[!UICONTROL Personalization]** -fälten. Lägg till en **[!UICONTROL End]** aktivitet.
 
    ![](../assets/journeyuc2_24.png)
 
-1. Vi vill bara skicka ett push-meddelande om måltidsrabatt om personen kommer in på restaurangen inom 6 timmar efter välkomstpushet. För att göra detta måste vi använda en vänteaktivitet. Placera markören på välkomstpush-aktiviteten och klicka på plustecknet (+). Lägg till en vänteaktivitet i den nya sökvägen och definiera en varaktighet på 6 timmar. Den första stödberättigande aktiviteten kommer att väljas. Om restauranghändelsen tas emot mindre än 6 timmar efter välkomstsändningen skickas push-aktiviteten. Om ingen restauranghändelse tas emot inom de kommande 6 timmarna väljs väntetiden. Placera en **[!UICONTROL End]**aktivitet efter vänteaktiviteten.
+1. Vi vill bara skicka ett push-meddelande om måltidsrabatt om personen kommer in på restaurangen inom 6 timmar efter välkomstpushet. För att göra detta måste vi använda en vänteaktivitet. Placera markören på välkomstpush-aktiviteten och klicka på plustecknet (+). Lägg till en vänteaktivitet i den nya sökvägen och definiera en varaktighet på 6 timmar. Den första stödberättigande aktiviteten kommer att väljas. Om restauranghändelsen tas emot mindre än 6 timmar efter välkomstsändningen skickas push-aktiviteten. Om ingen restauranghändelse tas emot inom de kommande 6 timmarna väljs väntetiden. Placera en **[!UICONTROL End]** aktivitet efter vänteaktiviteten.
 
    ![](../assets/journeyuc2_31.png)
 
-1. I den andra sökvägen som följer reservationsvillkoret (ingen rumsbokning) lägger du till en **[!UICONTROL Push]**aktivitet och väljer mallen&quot;Rumstariffer&quot;. Lägg till en**[!UICONTROL End]** aktivitet.
+1. I den andra sökvägen som följer reservationsvillkoret (ingen rumsbokning) lägger du till en **[!UICONTROL Push]** aktivitet och väljer mallen&quot;Rumstariffer&quot;. Lägg till en **[!UICONTROL End]** aktivitet.
 
    ![](../assets/journeyuc2_25.png)
 
 ## Andra sökväg: kunden inte är en lojalitetsmedlem{#section_ptb_ws1_ffb}
 
-1. I den andra sökvägen som följer det första villkoret (kunden är inte en lojalitetsmedlem) lägger du till en **[!UICONTROL Email]**aktivitet och väljer mallen&quot;Lojalitetsmedlemskap&quot;.
+1. I den andra sökvägen som följer det första villkoret (kunden är inte en lojalitetsmedlem) lägger du till en **[!UICONTROL Email]** aktivitet och väljer mallen&quot;Lojalitetsmedlemskap&quot;.
 
    ![](../assets/journeyuc2_26.png)
 
-1. I **[!UICONTROL Address]**fältet väljer du e-postadressen från datakällan.
+1. I **[!UICONTROL Address]** fältet väljer du e-postadressen från datakällan.
 
    ![](../assets/journeyuc2_27.png)
 
@@ -168,9 +172,9 @@ Två banor skapas efter ditt villkor:
 
    ![](../assets/journeyuc2_28.png)
 
-1. Lägg till en **[!UICONTROL End]**aktivitet.
+1. Lägg till en **[!UICONTROL End]** aktivitet.
 
-Klicka på **[!UICONTROL Test]**växlingsknappen och testa din resa. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa det igen. Mer information om testläget finns i[](../building-journeys/testing-the-journey.md).
+Klicka på **[!UICONTROL Test]** växlingsknappen och testa din resa. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa det igen. Mer information om testläget finns i [](../building-journeys/testing-the-journey.md).
 
 ![](../assets/journeyuc2_32bis.png)
 
