@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1ccf020a882c1d6d9bd00f2e9f5d6b2aee6f7829
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ I **[!UICONTROL Properties]** väljer du en tidszon.
 
 ## Använda profiler för att definiera resetidszonen {#timezone-from-profiles}
 
-Om resans inmatningshändelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid för dataplattformen, är tidszonen fördefinierad med den som anges i profilen för den person som löper på resan.
+Om resans inträde-händelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid på Adobe Experience Platform, är tidszonen fördefinierad med den som anges i profilen för den person som löper på resan.
 
-Om en tidszon definieras i Experience Platform-profilen kan den hämtas under resan.
+Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas under resan.
 
 Om den enskilda personens profil inte innehåller någon tidszon är den tidszon som hämtas den som definieras i tidszonsfältet.
 
