@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,6 @@ På grund av den 30-dagars tidsgränsen för resan kan vi inte säkerställa att
 
 Tidszonen definieras på resenivå.
 
-Du kan ange en fast tidszon eller använda Experience Platform-profiler för att definiera resetidszonen.
+Du kan ange en fast tidszon eller använda Adobe Experience Platform-profiler för att definiera resetidszonen.
 
 Mer information om hantering av tidszoner finns i [](../building-journeys/timezone-management.md).
