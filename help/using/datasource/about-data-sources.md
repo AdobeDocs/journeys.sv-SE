@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1ccf020a882c1d6d9bd00f2e9f5d6b2aee6f7829
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -37,12 +37,12 @@ Den här konfigurationen krävs inte om dina resor endast utnyttjar lokala data 
 
 Det finns två typer av datakällor:
 
-* Den förkonfigurerade Experience Platform-datakälla som definierar anslutningen till kundprofiltjänsten i realtid. Detta är en inbyggd datakälla. Se [](../datasource/adobe-experience-platform-data-source.md).
+* Den förkonfigurerade Adobe Experience Platform-datakällan som definierar anslutningen till kundprofiltjänsten i realtid. Detta är en inbyggd datakälla. Se [](../datasource/adobe-experience-platform-data-source.md).
 * De externa datakällor som gör att du kan definiera en anslutning till externa system. Det här är de du kan skapa. Se [](../datasource/external-data-sources.md).
 
 För varje datakälla definierar du den information som ska hämtas med fältgrupper. Fältgrupper är uppsättningar med fält som kan hämtas från en datakälla. Se [](../datasource/field-groups.md).
 
-Titta på den här [videon](https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/configure-data-sources.html)om du vill ha mer information om hur du konfigurerar en Experience Platform-datakälla och en extern datakälla samt hur du hittar och använder data under en resa.
+Titta på den här [videon](https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/configure-data-sources.html)om du vill ha mer information om hur du konfigurerar en datakälla i Adobe Experience Platform och en extern datakälla samt hur du hittar och använder data under en resa.
 
 Här följer de huvudsakliga konfigurationsstegen för datakällor:
 
