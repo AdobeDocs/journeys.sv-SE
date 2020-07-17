@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 18364d6e93b48e065b21bbaddee33e7ba4d9274d
+source-git-commit: 71b5b1ecd20056d0103ae1a8b83a31478449e844
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 0%
+source-wordcount: '714'
+ht-degree: 8%
 
 ---
 
@@ -26,20 +26,24 @@ Du kan även läsa [!DNL Journey Orchestration] versionsinformationen [](../rele
 
 ## Juli 2020 {#july-2020}
 
+* Lade till en länk till en ny självstudievideo om steghändelser som rapporterar till Adobe Experience Platform. [Läs mer](../building-journeys/sharing-overview.md)
+* Avsnittet med händelseaktiviteter har omorganiserats i dedikerade underavsnitt för varje typ av händelser. [Läs mer](../building-journeys/event-activities.md)
+* Lagt till metodtips för att undvika överbelastning med segmentkvalificering. [Läs mer](../building-journeys/segment-qualification-events.md#speed-segment-qualification)
+* En anteckning har lagts till som förklarar hur en resa fortsätter efter ett fel i en åtgärd eller ett villkor. [Läs mer](../about/troubleshooting.md#section_h3q_kqk_fhb)
 * Ett nytt avsnitt har lagts till om de alfafunktioner som testas bland ett begränsat antal kunder. [Läs mer](../alpha/alpha-overview.md)
 * Ett nytt avsnitt om integrationen med intelligenta tjänster har lagts till. [Läs mer](../ai-services/ai-services-overview.md)
 * Ett nytt avsnitt lades till när testprofilen skapades. [Läs mer](../building-journeys/testing-the-journey.md#create-test-profile)
-* Lagt till information om hur du använder noden **SegmentQualification** i ett resevillkor eller en åtgärd. [Läs mer](../building-journeys/event-activities.md#segment-qualification)
+* Lagt till information om hur du använder noden **[!UICONTROL SegmentQualification]** i ett resevillkor eller en åtgärd. [Läs mer](../building-journeys/segment-qualification-events.md)
 * En anteckning har lagts till i transaktionsmeddelandet för Campaign och i händelsepubliceringen. Se [Arbeta med Adobe Campaign](../action/working-with-adobe-campaign.md) och [Använda Adobe Campaign](../building-journeys/using-adobe-campaign-actions.md).
 * Information har lagts till om de kontroller som utförs när Campaign Standardens instans-URL testas. [Läs mer](../action/working-with-adobe-campaign.md)
-* Information har lagts till om reaktionshändelsekompatibilitet med Campaign Standarder som lagras på AWS- eller Azure-servrar. [Läs mer](../building-journeys/event-activities.md#section_dhx_gss_dgb)
+* Information har lagts till om reaktionshändelsekompatibilitet med Campaign Standarder som lagras på AWS- eller Azure-servrar. [Läs mer](../building-journeys/reaction-events.md)
 * En anteckning har lagts till om behovet av att ställa in en spärrregel när du arbetar med transaktionsmeddelanden för Campaign Standarder. [Läs mer](../action/working-with-adobe-campaign.md)
 * En anteckning har lagts till om generering av verkliga händelser när händelser utlöses i testläge. [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
 
 ## Juni 2020 {#june-2020}
 
 * Lagt till information om hur du ändrar cachevaraktigheten för token för en anpassad autentiseringsdatakälla. [Läs mer](../datasource/external-data-sources.md#section_wjp_nl5_nhb)
-* Skärmbilder och text har uppdaterats för att återspegla namnbytet för det **färdiga** resetillståndet som har ändrats till **Stängd (ingen entré)**.
+* Uppdaterade skärmbilder och text för att återspegla namnbytet för det **[!UICONTROL Finished]** resetillstånd som har ändrats till **[!UICONTROL Closed (no entrance)]**.
 * Lagt till information om hur språket definieras för gränssnittet. [Läs mer](../about/user-interface.md)
 * Listan över status för en persons resa har flyttats till loggavsnittet för [testläge](../building-journeys/testing-the-journey.md#viewing_logs) .
 
@@ -51,12 +55,12 @@ Du kan även läsa [!DNL Journey Orchestration] versionsinformationen [](../rele
 ## Mars 2020 {#march-2020}
 
 * Lagt till parameterbeskrivningar för _actionExecutionErrors_ och _fetchErrors_ i testloggsavsnittet. [Läs mer](../building-journeys/testing-the-journey.md#viewing_logs)
-* Begränsningarna för anpassade åtgärder som används under en resa har uppdaterats. Du kan också ändra **URL** -fältet och **autentiseringsparametrarna** . [Läs mer](../action/about-custom-action-configuration.md)
+* Begränsningarna för anpassade åtgärder som används under en resa har uppdaterats. Du kan också ändra **[!UICONTROL URL]** fältet och **[!UICONTROL Authentication]** parametrarna. [Läs mer](../action/about-custom-action-configuration.md)
 * Nya sammanhangsberoende hjälpposter har lagts till. Nyttolastrutan för anpassad autentisering (i åtgärder och datakällor) innehåller nu en hjälpikon som länkar till det här [avsnittet](../datasource/external-data-sources.md#section_wjp_nl5_nhb).
 * Avslutade resor kan nu stoppas. [Läs mer](../building-journeys/using-the-journey-designer.md)
 * Gränssnittsbeskrivningsavsnittet har omstrukturerats. [Läs mer](../about/user-interface.md)
 * Utlösandet av flera händelser har lagts till i testlägesavsnittet [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
-* Avsnittet Testläge har uppdaterats med avseende på den nya **väntetiden i testparametern** . [Läs mer](../building-journeys/testing-the-journey.md)
+* Avsnittet Testläge har uppdaterats med avseende på den nya **[!UICONTROL Wait time in test]** parametern. [Läs mer](../building-journeys/testing-the-journey.md)
 * Avsnittet Testlogg har uppdaterats med externa anropsfelkoder och svar. [Läs mer](../building-journeys/testing-the-journey.md#viewing_logs)
 * Tidszonshanteringen är nu centraliserad i panelen för reseegenskaper. Läs mer [här](../building-journeys/changing-properties.md#timezone) och [här](../building-journeys/timezone-management.md)
 * Avsnittet Resedesignern har uppdaterats för att återspegla de senaste förbättringarna. [Läs mer](../building-journeys/using-the-journey-designer.md)
