@@ -11,15 +11,15 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eed82450d3fab279add87d0bee7e0efa824d1e8e
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1107'
+ht-degree: 3%
 
 ---
 
 
-# Versionsinformation {#release-notes}
+# Release Notes {#release-notes}
 
 På den här sidan visas alla nya funktioner och förbättringar för Journey Orchestration.
 Du kan även läsa [Dokumentationsuppdateringar](../release-notes/documentation-updates.md).
@@ -35,22 +35,22 @@ Du kan även läsa [Dokumentationsuppdateringar](../release-notes/documentation-
 <tbody>
 <tr>
 <td>
-<p>Följande Platform-integreringsförbättringar har gjorts:</p>
+<p>Följande integrationsförbättringar för Adobe Experience Platform har gjorts:</p>
 <ul>
-<li><p>Med en ny aktivitet kan man lyssna på Platform segment vid ingångar/utgångar för att få folk att komma in på eller gå framåt under en resa. <a href="../building-journeys/event-activities.md#segment-qualification">Läs mer</a></p>
+<li><p>Med en ny aktivitet kan man lyssna på Adobe Experience Platform segment vid in-/utträden för att få människor att komma in på eller gå framåt under en resa. <a href="../building-journeys/segment-qualification-events.md">Läs mer</a></p>
 <img src="../assets/rn-segment7.png"/>
 </li>
-<li><p>Platform segment kan nu skapas och redigeras utan att lämna Journey Orchestration, tack vare en ny flik <strong>för segment</strong> .<a href="../segment/about-segments.md">Läs mer</a></p>
+<li><p>Adobe Experience Platform segment kan nu skapas och redigeras utan att lämna gränssnittet Journey Orchestration, tack vare en ny flik <strong>för segment</strong> .<a href="../segment/about-segments.md">Läs mer</a></p>
 <img src="../assets/rn-segment1.png"/>
 </li>
-<li><p>I den enkla uttrycksredigeraren visas nu Platform-segment direkt i navigeringsträdet för att göra det möjligt att enkelt konfigurera villkor som"tillhör den här personen segment A?".<a href="../segment/using-a-segment.md">Läs mer</a></p>
+<li><p>I den enkla uttrycksredigeraren visas Adobe Experience Platform-segment nu direkt i navigeringsträdet för att göra det enkelt att ställa in villkor som"tillhör den här personen segment A?".<a href="../segment/using-a-segment.md">Läs mer</a></p>
 <img src="../assets/rn-segment4.png"/>
 </li>
-<li><p>Journey Orchestration skickas nu automatiskt de steg som körts på resorna till Adobe Data Platform. Detta inkluderar potentiella fel som påträffats. Den här informationen kan användas för att utföra rapportering och felsökning genom att köra frågor om steg-händelser för en viss resa eller för alla resor. <a href="../building-journeys/sharing-overview.md">Läs mer</a></p>
+<li><p>Journey Orchestration övergår nu automatiskt de steg som utförs på resorna till Adobe Experience Platform. Detta inkluderar potentiella fel som påträffats. Den här informationen kan användas för att utföra rapportering och felsökning genom att köra frågor om steg-händelser för en viss resa eller för alla resor. <a href="../building-journeys/sharing-overview.md">Läs mer</a></p>
 <img src="../assets/rn-journeystepevent.png"/>
 </li>
 </li>
-<li><p>Journey Orchestration kan nu anslutas till Platform-sandlådor för produktion och icke-produktion. Observera att sandlådor är en betafunktion. <a href="../about/access-management.md#sandboxes">Läs mer</a></p>
+<li><p>Journey Orchestration kan nu anslutas till Adobe Experience Platform sandlådor för produktion och icke-produktion. Observera att sandlådor är en betafunktion. <a href="../about/access-management.md#sandboxes">Läs mer</a></p>
 </li>
 </td>
 </tr>
@@ -93,7 +93,7 @@ Gränssnittet Journey Orchestration finns på japanska.
 
 ## Q1-utgåvan - mars 2020 {#q1-release---march-2020}
 
-**Vad är nytt?**
+**Nyheter?**
 
 <table>
 <thead>
@@ -130,7 +130,7 @@ Gränssnittet Journey Orchestration finns på japanska.
 <img src="../assets/rn-timezone.png"/>
 <ul>
 <li>I listrutan <strong>Tidszon</strong> kan du välja en viss tidszon. Som standard används webbläsarens tidszon. </li>
-<li>I kryssrutan Tidszon för <strong>profil</strong> kan du använda tidszonen Experience Platform-profil för den person som går in på resan, om den är tillgänglig. Annars används den tidszon som definieras i listrutan. Den här funktionen är inte kompatibel med resor som använder händelser som inte har något namnutrymme.</li>
+<li>I kryssrutan Tidszon för <strong>profil</strong> kan du använda tidszonen Adobe Experience Platform-profil för den person som går in på resan, om den är tillgänglig. Annars används den tidszon som definieras i listrutan. Den här funktionen är inte kompatibel med resor som använder händelser som inte har något namnutrymme.</li>
 </ul>
 <p>Mer information finns i avsnitten <a href="../building-journeys/changing-properties.md#timezone">Ändra egenskaper</a> och <a href="../building-journeys/timezone-management.md">Tidszonshantering</a> .</p>
 </td>
@@ -156,7 +156,7 @@ Gränssnittet Journey Orchestration finns på japanska.
 <p>I resedesignern kan du nu kontrollera att du har tillgång till den senaste versionen av resan. Den här informationen visas bredvid versionsnumret.</p>
 <p>När två aktiviteter inte är kopplade till <strong>arbetsytan</strong>på resan visas ett varningsmeddelande.</p>
 <img src="../assets/rn-canvas.png"/>
-<p>Mer information finns i den <a href="../building-journeys/using-the-journey-designer.md">detaljerade dokumentationen</a>.</p>
+<p>Se den <a href="../building-journeys/using-the-journey-designer.md">detaljerade dokumentationen</a> för mer information.</p>
 </td>
 </tr>
 </tbody>
@@ -189,7 +189,7 @@ Gränssnittet Journey Orchestration finns på japanska.
 
 * Du kan nu **ta bort** avbrutna resor. Rapporter som är kopplade till dessa raderade resor är inte tillgängliga.
 
-* När du bläddrar bland **Data Platform-fält** (XDM-format) visas nu även visningsnamnet tillsammans med fältnamnet. Den här informationen hämtas från schemadefinitionen i Experience Data Model. Om det är tillgängligt visas det alternativa visningsnamnet. Den här användarvänliga beskrivningen, som är särskilt användbar för eVar-fält, gör det enklare att identifiera fälten. [Läs mer](../about/user-interface.md#friendly-names-display)
+* När du bläddrar bland **Adobe Experience Platform-fält** (XDM-format) visas nu även visningsnamnet tillsammans med fältnamnet. Den här informationen hämtas från schemadefinitionen i Experience Data Model. Om det är tillgängligt visas det alternativa visningsnamnet. Den här användarvänliga beskrivningen, som är särskilt användbar för eVar-fält, gör det enklare att identifiera fälten. [Läs mer](../about/user-interface.md#friendly-names-display)
 
 ## GA-release - december 2019 {#ga-release---december-2019}
 
