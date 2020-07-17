@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3f8f7eb34a11f0ff87ed3c55e7294b5bdbfb9383
+source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ Du kan definiera ett villkor om du vill begränsa väntetiden till en viss popul
 >
 >Maximal väntetid är 30 dagar.
 >
->I testläge kan du med parametern **Väntetid i test** definiera hur lång tid varje vänteaktivitet ska ta. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Se [](../building-journeys/testing-the-journey.md)
+>I testläge kan du med parametern **[!UICONTROL Wait time in test]** definiera hur lång tid varje vänteaktivitet ska ta. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Se [](../building-journeys/testing-the-journey.md)
 
 ## Väntetid{#duration}
 
@@ -67,19 +70,19 @@ Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 j
 
 >[!CAUTION]
 >
->Funktionen för tidsoptimering för e-postutskick är bara tillgänglig för kunder som använder datatjänsten Adobe Campaign Standard.
+>Funktionen för tidsoptimering för e-postutskick är bara tillgänglig för kunder som använder funktionen Adobe Campaign Standard Data Service.
 
-Den här typen av väntan använder en bakgrundsmusik som beräknas i plattformen. Poängen beräknar sannolikheten för att klicka eller öppna ett e-postmeddelande i framtiden baserat på tidigare beteenden. Observera att algoritmen som beräknar poängen behöver en viss mängd data för att fungera. Om det inte finns tillräckligt med data används därför standardväntetiden. Vid publiceringen får du ett meddelande om att standardtiden gäller.
+Den här typen av väntan använder en poäng som beräknas i Adobe Experience Platform. Poängen beräknar sannolikheten för att klicka eller öppna ett e-postmeddelande i framtiden baserat på tidigare beteenden. Observera att algoritmen som beräknar poängen behöver en viss mängd data för att fungera. Om det inte finns tillräckligt med data används därför standardväntetiden. Vid publiceringen får du ett meddelande om att standardtiden gäller.
 
 >[!NOTE]
 >
 >Den första händelsen i din resa måste ha ett namnutrymme.
 >
->Den här funktionen är bara tillgänglig efter en **[!UICONTROL Email]** aktivitet. Ni måste ha Adobe Campaign Standard.
+>Den här funktionen är bara tillgänglig efter en **[!UICONTROL Email]** aktivitet. Du måste ha Adobe Campaign Standarder.
 
 1. I **[!UICONTROL Amount of time]** fältet anger du hur många timmar e-postutskick ska optimeras.
 1. I **[!UICONTROL Optimization type]** fältet väljer du om optimeringen ska öka antalet klick eller öppna.
-1. I fältet **Standardtid** anger du den väntetid som ska vara standard om poängen för den prediktiva sändningstiden inte är tillgängliga.
+1. I **[!UICONTROL Default time]** fältet anger du standardväntetiden om det prediktiva sändningstidsresultatet inte är tillgängligt.
 
    >[!NOTE]
    >
