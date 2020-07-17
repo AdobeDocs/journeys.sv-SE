@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f146a22cec5ffbbc61b51f8fc3c875078b2ee6bf
+source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Den här nya händelsetypen genererar inget eventID. Med den enkla uttrycksredig
 
 Den här nya metoden är för det mesta genomskinlig för användarna. Den enda ändringen är ett nytt fält på skärmen för händelsdefinition.
 
-1. Klicka på ikonen **Admin** i den vänstra menyn och sedan på **Händelser**. Listan med händelser visas.
+1. Klicka på **[!UICONTROL Admin]** ikonen i den vänstra menyn och klicka sedan på **[!UICONTROL Events]**. Listan med händelser visas.
 
    ![](../assets/alpha-event1.png)
 
-1. Klicka på **Lägg till** för att skapa en ny händelse. Händelsekonfigurationsfönstret öppnas till höger på skärmen.
+1. Klicka **[!UICONTROL Add]** för att skapa en ny händelse. Händelsekonfigurationsfönstret öppnas till höger på skärmen.
 
    ![](../assets/alpha-event2.png)
 
@@ -39,29 +39,29 @@ Den här nya metoden är för det mesta genomskinlig för användarna. Den enda 
 
    ![](../assets/alpha-event3.png)
 
-1. Välj **Regelbaserad** i det nya fältet **** Händelse-ID.
+1. I det nya **[!UICONTROL Event ID type]** fältet väljer du **[!UICONTROL Rule Based]**.
 
    ![](../assets/alpha-event4.png)
 
    >[!NOTE]
    >
-   >Typen **System Generated** är den befintliga metoden som kräver ett eventID. Se [det här avsnittet](../event/about-events.md).
+   >Typen är den befintliga metoden som kräver ett eventID. **[!UICONTROL System Generated]** Se [det här avsnittet](../event/about-events.md).
 
-1. Definiera **schemafält** och **nyttolastfält**. Se [det här avsnittet](../event/defining-the-payload-fields.md).
+1. Definiera **[!UICONTROL Schema]** och nyttolast **[!UICONTROL Fields]**. Se [det här avsnittet](../event/defining-the-payload-fields.md).
 
    ![](../assets/alpha-event5.png)
 
    >[!NOTE]
    >
-   >När du väljer typen **** System Generated är endast scheman som har typen eventID mixin tillgängliga. När du väljer **Regelbaserad** typ är alla Experience Event-scheman tillgängliga.
+   >När du väljer **[!UICONTROL System Generated type]** det här alternativet är endast scheman med typen eventID tillgängliga. När du väljer **[!UICONTROL Rule Based]** typ är alla Experience Event-scheman tillgängliga.
 
-1. Klicka i villkorsfältet för **händelse-ID** . Använd den enkla uttrycksredigeraren för att definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa.
+1. Klicka inuti **[!UICONTROL Event ID condition]** fältet. Använd den enkla uttrycksredigeraren för att definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa.
 
    ![](../assets/alpha-event6.png)
 
-   I vårt exempel skrev vi ett villkor baserat på profilens stad. Det innebär att när systemet tar emot en händelse som matchar det här villkoret (fältet **City** och värdet **Paris** ) skickas den till Journey Orchestration.
+   I vårt exempel skrev vi ett villkor baserat på profilens stad. Det innebär att när systemet tar emot en händelse som matchar det här villkoret (**[!UICONTROL City]** fält och **[!UICONTROL Paris]** värde) skickas den till Journey Orchestration.
 
-1. Definiera **namnutrymmet** och **nyckeln**. Se [Markera namnutrymmet](../event/selecting-the-namespace.md) och [definiera händelsenyckeln](../event/defining-the-event-key.md).
+1. Definiera **[!UICONTROL Namespace]** och **[!UICONTROL Key]**. Se [Markera namnutrymmet](../event/selecting-the-namespace.md) och [definiera händelsenyckeln](../event/defining-the-event-key.md).
 
    ![](../assets/alpha-event7.png)
 
