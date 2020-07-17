@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,15 @@ Här följer de viktigaste stegen för att konfigurera och använda [!DNL Journe
 
    Du måste definiera den förväntade informationen och hur den ska behandlas. Den här konfigurationen är obligatorisk. Det här steget utförs av en **teknisk användare**.
 
-   Mer information finns i [](../event/about-events.md).
+   For more on this, refer to [](../event/about-events.md).
 
    ![](../assets/journey7.png)
 
 1. **Konfigurera datakällan**
 
-   Du måste definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel under dina förhållanden. En inbyggd Experience Platform-datakälla konfigureras också vid etableringstidpunkten. Det här steget är inte nödvändigt om du bara utnyttjar data från händelserna under din resa. Det här steget utförs av en **teknisk användare**.
+   Du måste definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel under dina förhållanden. En inbyggd Adobe Experience Platform-datakälla konfigureras också vid etablering. Det här steget är inte nödvändigt om du bara utnyttjar data från händelserna under din resa. Det här steget utförs av en **teknisk användare**.
 
-   Mer information finns i [](../datasource/about-data-sources.md).
+   For more on this, refer to [](../datasource/about-data-sources.md).
 
    ![](../assets/journey22.png)
 
