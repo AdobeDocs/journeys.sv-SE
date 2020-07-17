@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,11 @@ Om du redigerar en händelse som används i ett utkast eller en direktresa kan d
 
 ## Allmän princip {#section_r1f_xqt_pgb}
 
-Händelser är POST API-anrop. Händelser skickas till Adobe Experience Cloud-dataplattformen via API:er för direktuppspelning. URL-destinationen för händelser som skickas via API:er för transaktionsmeddelanden kallas för ett &quot;inlet&quot;. Nyttolasten för händelser följer XDM-formatering.
+Händelser är POST API-anrop. Händelser skickas till Adobe Experience Platform via API:er för direktuppspelning av inmatning. URL-destinationen för händelser som skickas via API:er för transaktionsmeddelanden kallas för ett &quot;inlet&quot;. Nyttolasten för händelser följer XDM-formatering.
 
 Nyttolasten innehåller information som krävs för att API:erna för direktuppspelning av inmatning ska fungera (i huvudet) och den information som krävs för [!DNL Journey Orchestration] att arbeta (händelse-ID:t, en del av nyttolastbrödtexten) och information som ska användas på resor (i brödtexten, till exempel mängden en övergiven vagn). Det finns två lägen för direktuppspelningsinmatning, autentiserad och oautentiserad. Mer information om API:er för direktuppspelning av inmatning finns på [den här länken](https://docs.adobe.com/content/help/en/experience-platform/xdm/api/getting-started.html).
 
-Efter att ha anlänt via API:er för direktuppspelning av inmatning flödar händelserna till en intern tjänst som kallas Pipeline och sedan i Data Platform. Om händelseschemat har flaggan Kundprofiltjänst i realtid aktiverad och ett datauppsättnings-ID som även har flaggan Kundprofil i realtid, flödar det in i kundprofiltjänsten i realtid.
+Efter att ha anlänt via API:er för direktuppspelning av inmatning flödar händelserna till en intern tjänst som kallas Pipeline och sedan i Adobe Experience Platform. Om händelseschemat har flaggan Kundprofiltjänst i realtid aktiverad och ett datauppsättnings-ID som även har flaggan Kundprofil i realtid, flödar det in i kundprofiltjänsten i realtid.
 
 Pipelinen filtrerar händelser som har en nyttolast som innehåller händelse-ID:n (se processen för att skapa händelser nedan) som tillhandahålls av [!DNL Journey Orchestration] [!DNL Journey Orchestration] och finns i händelsenyttolasten. Dessa händelser avlyssnas [!DNL Journey Orchestration] och motsvarande resa utlöses.
 
