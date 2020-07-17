@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2f0d235ce1808f632b731fc2077b10a31a178e4b
+source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '141'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 # Skapa ett segment {#creating-a-segment}
 
-Du kan antingen skapa ett segment med hjälp av [plattformssegmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) eller så kan du komma åt och skapa dem direkt i [!DNL Journey Orchestration].
+Du kan antingen skapa ett segment med [Adobe Experience Platform segmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) eller så kan du komma åt och skapa dem direkt i [!DNL Journey Orchestration].
 
-1. Klicka på fliken på den översta menyn **[!UICONTROL Segments]** . Listan över plattformssegment visas. Du kan söka efter ett visst segment i listan.
+1. Klicka på fliken på den översta menyn **[!UICONTROL Segments]** . Listan över segment i Adobe Experience Platform visas. Du kan söka efter ett visst segment i listan.
 
 ![](../assets/segment1.png)
 
@@ -32,4 +32,4 @@ Du kan antingen skapa ett segment med hjälp av [plattformssegmenteringstjänste
 
 ![](../assets/segment2.png)
 
-Ditt segment kan nu användas i dina resor för att skapa villkor eller lägga till en **segmentkvalificeringshändelse** . Se [Använda segment i villkor](../segment/using-a-segment.md) och [händelseaktiviteter](../building-journeys/event-activities.md#segment-qualification).
+Ditt segment kan nu användas i dina resor för att skapa villkor eller lägga till en **[!UICONTROL Segment qualification]** händelse. Se [Använda segment i villkor](../segment/using-a-segment.md) och [händelseaktiviteter](../building-journeys/segment-qualification-events.md).
