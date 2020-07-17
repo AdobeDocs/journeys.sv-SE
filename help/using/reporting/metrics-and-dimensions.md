@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c6e7c27865eb34961f8901c9bde2c09527f67f15
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Tabellen nedan visar en lista över de dimensioner som används i reserapporter,
 | Dimensioner | Definition |
 |--- |--- |
 | **Åtgärd** | Lista över alla åtgärder (**åtgärdsnamn - åtgärdsetikett**) som används i resor, t.ex. Push - Check out confirmation, Email - Rewards fidelity. |
-| **Datakälla** | Förteckning över datakällor (**datakällans namn**) som används för att berika data under en resa, t.ex. Experience Platform, Reservation System. |
+| **Datakälla** | Lista över datakällor (**datakällans namn**) som används för att berika data under en resa, t.ex. Adobe Experience-plattformen, Reservation-systemet. |
 | **[!UICONTROL Event]** | Lista över alla händelser (**händelsenamn - händelseetikett**) som används i resor, t.ex. Geometrixx-händelse - utcheckning av geometrixx. |
 | **Fältgrupp** | Lista över fältgrupper (**fältgruppsnamn**) som används för att berika data i resor, t.ex. profilfältgrupp, Geometrixx-reservationssystem. |
 | **Resa** | Lista över varje resa (**resenamn**) i testläge och i realtid, t.ex. när kunden överger en kundvagn, meddelanden om hotellreservationer. |
@@ -94,8 +94,8 @@ Tabellen nedan visar en lista över mätvärden som används i journalrapporter,
 
 | Mått | Definition |
 |--- |--- |
-| **På blocklista** | Antal mottagare som har deklarerat ett e-postmeddelande som skräppost eller skräppost. |
-| **Blocklistefrekvens** | Totalt antal meddelanden i blocklist jämfört med skickade meddelanden. |
+| **På blockeringslista** | Antal mottagare som har deklarerat ett e-postmeddelande som skräppost eller skräppost. |
+| **Blockeringslista ränta** | Totalt antal meddelanden på blockeringslista jämfört med skickade meddelanden. |
 | **studsar + fel** | Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden. |
 | **Studsa + felfrekvens** | Totalt antal meddelanden som studsade jämfört med skickade meddelanden. |
 | **Klicka på** | Antal gånger ett innehåll klickades i en leverans. |
