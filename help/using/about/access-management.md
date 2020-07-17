@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 94ef4e30d16b7d23dc029863fcd2d9f34173c433
+source-git-commit: 829f6cdb11aa9b1529607f409e53616a2b809f84
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Användaren bör sedan få ett e-postmeddelande som omdirigeras till din [!DNL J
 [!DNL Journey Orchestration] I kan du partitionera instansen i separerade virtuella miljöer, så kallade sandlådor.
 Sandlådor tilldelas via produktprofiler i Admin Console. Mer information om hur du tilldelar sandlådor finns i det här [avsnittet](../about/access-management.md#create-product-profile).
 
-[!DNL Journey Orchestration] speglar de Platform-sandlådor som har skapats för en viss organisation.
-Platform-sandlådor kan skapas eller återställas från din Adobe Experience Platform-instans. Detaljerade anvisningar finns i användarhandboken [för](https://docs.adobe.com/content/help/en/experience-platform/sandbox/ui/user-guide.html) Sandbox.
+[!DNL Journey Orchestration] speglar de sandlådor i Adobe Experience Platform som har skapats för en viss organisation.
+Du kan skapa eller återställa sandlådor med Adobe Experience Platform från Adobe Experience Platform-instansen. Detaljerade anvisningar finns i användarhandboken [för](https://docs.adobe.com/content/help/en/experience-platform/sandbox/ui/user-guide.html) Sandbox.
 
 Du hittar kontrollen för sandlådeväljaren längst upp till vänster på skärmen. Om du vill växla från en sandlåda till en annan klickar du på den för närvarande aktiva sandlådan i växlaren och väljer en annan sandlåda i listrutan.
