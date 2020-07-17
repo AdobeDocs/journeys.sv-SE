@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -43,13 +43,15 @@ Det går att visa två olika färger på tecknet bredvid **[!UICONTROL Test]** v
 
 Fel och varningar som är globala för resan visas först i listan. Fel och varningar som rör specifika aktiviteter listas efter, efter aktivitetsordning eller utseende under resan från vänster till höger. Knappen **[!UICONTROL Copy details]** kopierar teknisk information om den resa som supportteamet kan använda för att felsöka.
 
+När ett fel inträffar i en åtgärd eller ett villkor upphör kundens resa. Det enda sättet att få det att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [](../building-journeys/using-the-journey-designer.md#paths).
+
 ## Kontrollera att händelser skickas korrekt{#section_rqz_11t_dgb}
 
 Startpunkten för en resa är alltid en händelse. Du kan utföra tester med verktyg som Postman.
 
 Du kan kontrollera om API-anropet som du skickar via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel betyder det att ditt samtal har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt organisations-ID) och mål-URL:en. Du kan fråga administratören vilken URL som ska användas.
 
-Händelser skickas inte direkt från källan till [!DNL Journey Orchestration]. Experience Platforms API:er för direktuppspelning är till [!DNL Journey Orchestration] och med beroende av Experience Platforms API:er. Om det gäller händelserelaterade problem kan du därför gå till den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/troubleshooting.html) för felsökning av API:er för direktuppspelning.
+Händelser skickas inte direkt från källan till [!DNL Journey Orchestration]. Adobe Experience Platform förlitar sig faktiskt [!DNL Journey Orchestration] på API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför gå till den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/troubleshooting.html) för felsökning av API:er för direktuppspelning.
 
 ## Kontrollerar om någon kommer in på resan{#section_x4v_zzs_dgb}
 
