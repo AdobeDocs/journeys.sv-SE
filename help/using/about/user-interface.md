@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: 3c6c20feb2d461a5780dde5539811beee2eb78b7
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1010'
 ht-degree: 0%
 
 ---
@@ -27,21 +27,21 @@ ht-degree: 0%
 
 ## Åtkomst [!DNL Journey Orchestration]{#accessing_journey_orchestration}
 
-Klicka på [!DNL Journey Orchestration]ikonen längst upp till höger för att öppna **[!UICONTROL App Selector]** gränssnittet. Klicka sedan **[!UICONTROL Journey Orchestration]** till höger under Experience Platform.
+Klicka på [!DNL Journey Orchestration]ikonen längst upp till höger för att öppna **[!UICONTROL App Selector]** gränssnittet. Klicka sedan **[!UICONTROL Journey Orchestration]**, till höger, nedan **[!UICONTROL Experience Platform]**.
 
 ![](../assets/journey1.png)
 
-Du kan även komma åt [!DNL Journey Orchestration] från Experience Clouds hemsida, i **[!UICONTROL Quick access]** avsnittet.
+Du kan även komma åt [!DNL Journey Orchestration] från Experience Cloud hemsida i **[!UICONTROL Quick access]** avsnittet.
 
 ![](../assets/journey1bis.png)
 
-## Identifiera gränssnittet{#section_jsq_zr1_ffb}
+## Lära känna gränssnittet{#section_jsq_zr1_ffb}
 
 >[!CONTEXTUALHELP]
 >id="jo_home"
 >title="Om Reselista"
 >abstract="Med reselistan kan du visa alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan duplicera, stoppa eller ta bort dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte ta bort eller starta om en sluten resa. Du kan skapa en ny version av den eller duplicera den. Du kan också använda sökfältet för att söka efter en resa."
->additional-url="https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4" text="Se filmen"
+>additional-url="https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4" text="Se demovideon"
 
 Med de översta menyerna kan du navigera bland de olika funktionerna i [!DNL Journey Orchestration]: **[!UICONTROL Home]**(resorna),**[!UICONTROL Data Sources]**, **[!UICONTROL Events]**, **[!UICONTROL Actions]**.
 
@@ -57,7 +57,7 @@ I listorna **[!UICONTROL Home]**,**[!UICONTROL Data Sources]****[!UICONTROL Even
 
 Du **[!UICONTROL Filters]** kommer åt dem genom att klicka på filterikonen högst upp till vänster i listan. Med filtermenyn kan du filtrera de visade elementen enligt olika villkor. Du kan välja att endast visa element av en viss typ eller status, de element du har skapat eller de element som har ändrats under de senaste 30 dagarna.
 
-I listorna **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** , använder du filtren **** Skapa för att filtrera på skapandedatum och användare. Du kan t.ex. välja att bara visa händelser som du har skapat de senaste 30 dagarna.
+I listorna **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** , använder du **[!UICONTROL Creation filters]** för att filtrera efter skapandedatum och användare. Du kan t.ex. välja att bara visa händelser som du har skapat de senaste 30 dagarna.
 
 I reselistan (under **[!UICONTROL Home]**) kan du utöver **[!UICONTROL Creation filters]** själva filtrera de visade resorna efter status och version (**[!UICONTROL Status and version filters]**). Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). **[!UICONTROL Publication filters]** Du kan välja ett publiceringsdatum eller en viss användare. Du kan till exempel välja att endast visa de senaste versionerna av direktresor som publicerades i går. Se [](../building-journeys/using-the-journey-designer.md).
 
@@ -77,7 +77,7 @@ I de olika listorna kan du utföra grundläggande åtgärder för varje element.
 
 ![](../assets/journey4.png)
 
-## Bläddra bland fälten för dataplattformen {#friendly-names-display}
+## Bläddra bland Adobe Experience Platform-fält {#friendly-names-display}
 
 När du definierar [händelsenyttolast](../event/defining-the-payload-fields.md), [fältgruppnyttolast](../datasource/field-groups.md) och väljer fält i [uttrycksredigeraren](../expression/expressionadvanced.md)visas visningsnamnet förutom fältnamnet. Den här informationen hämtas från schemadefinitionen i Experience Data Model.
 
@@ -104,18 +104,18 @@ _När du konfigurerar en aktivitet under en resa:_
 Arbetsytan sparas automatiskt. Längst upp till vänster på arbetsytan visas sparstatus.
 
 * Tryck på **Esc** för att stänga konfigurationsrutan och ignorera ändringarna. Det här är motsvarigheten till **[!UICONTROL Cancel]** knappen.
-* Tryck **[!UICONTROL Enter]** eller klicka utanför rutan för att stänga konfigurationsrutan. Ändringarna sparas. Det här är motsvarigheten till **[!UICONTROL Ok]** knappen.
-* Om du trycker på **[!UICONTROL Delete]** eller **backstegstangenten** kan du sedan trycka på **[!UICONTROL Enter]** för att bekräfta borttagningen.
+* Tryck på **Enter** eller klicka utanför rutan för att stänga konfigurationsrutan. Ändringarna sparas. Det här är motsvarigheten till **[!UICONTROL Ok]** knappen.
+* Om du trycker på **Delete** eller **backsteg** kan du sedan trycka på **Retur** för att bekräfta borttagningen.
 
 _I popup-fönster:_
 
-* Tryck på **Esc** för att stänga den (motsvarar knappen **Avbryt** ).
-* Tryck på **[!UICONTROL Enter]** för att spara eller bekräfta (motsvarar knappen **[!UICONTROL Ok]** eller **[!UICONTROL Save]** ).
+* Tryck på **Esc** för att stänga den (motsvarar **[!UICONTROL Cancel]** knappen).
+* Tryck på **Retur** för att spara eller bekräfta (motsvarar **[!UICONTROL Ok]** knappen eller **[!UICONTROL Save]** knappen).
 
 _I händelse-, datakälla- eller åtgärdskonfigurationsrutan:_
 
 * Tryck på **Esc** för att stänga konfigurationsfönstret utan att spara.
-* Tryck på **[!UICONTROL Enter]** för att spara ändringarna och stänga konfigurationsfönstret.
+* Tryck på **Enter** för att spara ändringarna och stänga konfigurationsfönstret.
 * Tryck på **tabbtangenten** för att hoppa mellan de olika fälten som ska konfigureras.
 
 _I den enkla uttrycksredigeraren_
@@ -137,5 +137,5 @@ _På en skärm med ett sökfält:_
 _På resans arbetsyta:_
 
 * Använd tangentkombinationen **Ctrl/Cmd + A** för att markera alla aktiviteter.
-* När en eller flera aktiviteter är markerade trycker du på **[!UICONTROL Delete]** eller **backsteg** för att ta bort dem. Sedan kan du trycka på **[!UICONTROL Enter]** för att bekräfta i bekräftelsefönstret.
+* När en eller flera aktiviteter är markerade trycker du på **Delete** eller **backsteg** för att ta bort dem. Tryck sedan på **Retur** för att bekräfta i bekräftelserutan.
 * Dubbelklicka på en aktivitet från den vänstra paletten för att lägga till den på den första tillgängliga positionen (uppifrån och ned).
