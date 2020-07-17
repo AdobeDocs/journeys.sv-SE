@@ -1,5 +1,5 @@
 ---
-title: 'Datakälla för Adobe Experience Platform '
+title: 'Adobe Experience Platform datakälla '
 description: 'Lär dig hur du konfigurerar datakällan för Adobe Experience Platform '
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -11,17 +11,17 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
 
 
-# Datakälla för Adobe Experience Platform {#concept_zrb_nqt_52b}
+# Adobe Experience Platform datakälla {#concept_zrb_nqt_52b}
 
-Experience Platform-datakällan definierar anslutningen till kundprofiltjänsten i realtid. Den här datakällan är inbyggd och förkonfigurerad. Den kan inte tas bort. Den här datakällan är utformad för att hämta och använda data från kundprofiltjänsten i realtid (kontrollera t.ex. om personen som gjorde en resa är kvinna). Ni kan använda profildata och Experience Events-data. Mer information om kundprofiltjänsten i realtid finns på den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/profile/home.html).
+Datakällan Adobe Experience Platform definierar anslutningen till kundprofiltjänsten i realtid. Den här datakällan är inbyggd och förkonfigurerad. Den kan inte tas bort. Den här datakällan är utformad för att hämta och använda data från kundprofiltjänsten i realtid (kontrollera t.ex. om personen som gjorde en resa är kvinna). Ni kan använda profildata och Experience Events-data. Mer information om kundprofiltjänsten i realtid finns på den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/profile/home.html).
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Du kan redigera den förkonfigurerade fältgruppen med namnet &quot;ProfileField
 
 Här är de viktigaste stegen för att lägga till fältgrupper i den inbyggda datakällan.
 
-1. Välj den inbyggda Experience Platform-datakällan i listan över datakällor.
+1. I listan med datakällor väljer du den inbyggda Adobe Experience Platform-datakällan.
 
    Då öppnas konfigurationsfönstret för datakällan till höger på skärmen.
 
@@ -43,7 +43,7 @@ Här är de viktigaste stegen för att lägga till fältgrupper i den inbyggda d
 
    ![](../assets/journey24.png)
 
-1. Välj ett schema i **[!UICONTROL Schema]** listrutan. I det här fältet visas profilscheman och Experience Events-scheman som är tillgängliga i plattformen. Schemat skapas inte i [!DNL Journey Orchestration]. Den utförs i dataplattformen.
+1. Välj ett schema i **[!UICONTROL Schema]** listrutan. I det här fältet visas profilscheman och Experience Events-scheman som är tillgängliga i Adobe Experience Platform. Schemat skapas inte i [!DNL Journey Orchestration]. Det är gjort i Adobe Experience Platform.
 1. Markera de fält som du vill använda.
 1. Definiera cachens varaktighet.
 1. Klicka på **[!UICONTROL Save]**.
