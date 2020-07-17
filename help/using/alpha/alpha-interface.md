@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 69809da5cb96099baa20ea130a3cf7650b26c094
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Navigeringen på [!DNL Journey Orchestration] menyer har förbättrats för att 
 * Menyer som har flyttats från den övre till den vänstra sidan av gränssnittet,
 * Gruppering av administratörsfunktioner i en enda kontrollpanel.
 
-Globala koncept för hur du använder och navigerar i gränssnittet (sökning och filtrering, bläddring via Data Platform-fält, genvägar) beskrivs i [det här avsnittet](../about/user-interface.md).
+Globala koncept för hur du använder och navigerar i gränssnittet (sökning och filtrering, bläddring i Adobe Experience Platform-fält, genvägar) beskrivs i [det här avsnittet](../about/user-interface.md).
 
 ## Åtkomst till [!DNL Journey Orchestration] funktioner {#accessing-journey-orchestration-functionalities}
 
@@ -36,7 +36,7 @@ När du öppnar [!DNL Journey Orchestration]visas **[!UICONTROL Journeys]** meny
 
 ![](../assets/interface-journeys.png)
 
-På **[!UICONTROL Segments]** menyn kan du komma åt och skapa segment i Experience Platform. Se [Om Platform-segment](../segment/about-segments.md).
+På **[!UICONTROL Segments]** menyn kan du komma åt och skapa segment i Adobe Experience Platform. Se [Om Adobe Experience Platform-segment](../segment/about-segments.md).
 
 ![](../assets/interface-segments.png)
 
