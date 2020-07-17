@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6685565797a6cdc43b9c8fc39c9354ae6d213f1f
+source-git-commit: 2a55139697347ade80959f60bf52bfde39e43eb9
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Så här konfigurerar du den:
    >* ORG som är associerad med den här Adobe Campaign Standardens instans är samma som Journey Orchestration ORG.
 
 
-När du utformar din resa kommer tre åtgärder att vara tillgängliga i **[!UICONTROL Action]** kategorin: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]** (se [Använda funktionsmakron](../building-journeys/using-adobe-campaign-actions.md)i Adobe Campaign). **Reaktionshändelsen** gör även att du kan reagera på meddelandeklickningar, öppningar osv. (se [Reaktioner, händelser](../building-journeys/event-activities.md#section_dhx_gss_dgb)).
+När du utformar din resa kommer tre åtgärder att vara tillgängliga i **[!UICONTROL Action]** kategorin: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]** (se [Använda funktionsmakron](../building-journeys/using-adobe-campaign-actions.md)i Adobe Campaign). **Reaktionshändelsen** gör även att du kan reagera på meddelandeklickningar, öppningar osv. (se [Reaktioner, händelser](../building-journeys/reaction-events.md)).
 
 ![](../assets/journey58.png)
 
