@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 11c266b035bc1bb83cccf4e3958e54e1eb00e9f4
+source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -49,12 +49,15 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 
 ![](../assets/journey64.png)
 
-Om du använder [plattformssegmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) för att skapa dina segment kan du utnyttja dem under dina reseförhållanden. Mer information finns i [Använda segment under villkor](../segment/using-a-segment.md).
+Om ni använder [Adobe Experience Platform Segmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) för att skapa era segment kan ni utnyttja dem i era resevillkor. Mer information finns i [Använda segment under villkor](../segment/using-a-segment.md).
 
 
 >[!NOTE]
 >
 >Du kan inte utföra frågor på tidsserier (till exempel en lista över inköp, tidigare klick på meddelanden) med den enkla redigeraren. För detta behöver du den avancerade redigeraren. Se [](../expression/expressionadvanced.md).
+
+
+När ett fel inträffar i en åtgärd eller ett villkor upphör kundens resa. Det enda sättet att få det att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [](../building-journeys/using-the-journey-designer.md#paths).
 
 ## Datakällans villkor {#data_source_condition}
 
