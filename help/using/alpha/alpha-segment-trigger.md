@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c8d28b51f14ba511a860874e45d341a6977c58fa
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 ## Om aktiviteten Utlösare för segment {#about-segment-trigger-actvitiy}
 
-Med aktiviteten Segmentutlösare kan du göra så att alla personer som tillhör ett Experience Platform-segment kan ta sig in på en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
+Med aktiviteten Segmentutlösare kan du göra så att alla personer som tillhör ett Adobe Experience Platform-segment kan ta sig in på en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
 
-Säg att du har ett Guldkundssegment på Experience Platform. Med aktiviteten Segment Trigger kan ni få alla personer som tillhör kundsegmentet Gold att komma in på en resa och få dem att flöda in i personaliserade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
+Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktiviteten Segment Trigger kan ni få alla personer som tillhör kundsegmentet Gold att komma in på en resa och få dem att flöda in i personaliserade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Säg att du har ett Guldkundssegment på Experience Platform. Med aktiviteten Se
 
    ![](../assets/segment-trigger-schedule.png)
 
-1. I **[!UICONTROL Segment]** fältet väljer du det Experience Platform-segment som ska användas för resan och klickar sedan på **[!UICONTROL Save]**.
+1. I **[!UICONTROL Segment]** fältet väljer du det Adobe Experience Platform-segment som ska användas för resan och klickar sedan på **[!UICONTROL Save]**.
 
    ![](../assets/segment-trigger-segment-selection.png)
 
@@ -69,6 +69,6 @@ Säg att du har ett Guldkundssegment på Experience Platform. Med aktiviteten Se
 
    >[!IMPORTANT]
    >
-   >Tänk på att segment i Experience Platform beräknas antingen en gång om dagen (**gruppsegment** ) eller i realtid (**direktuppspelade** segment).
+   >Tänk på att segment i Adobe Experience Platform beräknas antingen en gång om dagen (**gruppsegment** ) eller i realtid (**direktuppspelade** segment).
    >
-   >Om det valda segmentet direktuppspelas kan de personer som tillhör det segmentet komma in på resan i realtid. Om segmentet är en batch kan personer som nyligen är kvalificerade för det här segmentet komma in på resan när segmentberäkningen görs på Experience Platform.
+   >Om det valda segmentet direktuppspelas kan de personer som tillhör det segmentet komma in på resan i realtid. Om segmentet är en batch kan personer som nyligen är kvalificerade för det här segmentet komma in på resan när segmentberäkningen görs på Adobe Experience Platform.
