@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d6360d616199d597255610959432c7b93fd4e25c
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: d6360d616199d597255610959432c7b93fd4e25c
 
 Tillhandahåller en prediktiv tid för den bästa tidpunkten för att leverera ett e-postmeddelande till en individ.
 
-Den här funktionen använder en poäng som beräknas i plattformen. Poängen beräknar sannolikheten för att klicka eller öppna ett e-postmeddelande i framtiden baserat på tidigare beteenden. Observera att algoritmen som beräknar poängen behöver en viss mängd data för att fungera. Därför gäller standardtiden när det inte finns tillräckligt med data. Mer information finns i [](../building-journeys/wait-activity.md).
+Den här funktionen använder en poäng som beräknas i Adobe Experience Platform. Poängen beräknar sannolikheten för att klicka eller öppna ett e-postmeddelande i framtiden baserat på tidigare beteenden. Observera att algoritmen som beräknar poängen behöver en viss mängd data för att fungera. Därför gäller standardtiden när det inte finns tillräckligt med data. Mer information finns i [](../building-journeys/wait-activity.md).
 
 För att den här funktionen ska kunna användas krävs ett [namnutrymme](../event/selecting-the-namespace.md) .
 
