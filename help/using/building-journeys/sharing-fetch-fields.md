@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Typ: long
 
 ## fetchTypeInError
 
-Definierar om den felaktiga hämtningen finns på plattformen eller i en anpassad datakälla.
+Definierar om den felaktiga hämtningen finns på Adobe Experience Platform eller i en anpassad datakälla.
 
 Typ: string
 
@@ -93,13 +93,13 @@ Typ: long
 
 ## fetchPlatformTotalTime
 
-Den totala tiden det tar att hämta data från dataplattformen i millisekunder. Anmärkning: denna tid beräknas från den tidpunkt då motorn skickar anrikningshändelsen till anrikningstjänsten och får svaret.
+Den totala tiden det tar att hämta data från Adobe Experience Platform i millisekunder. Anmärkning: denna tid beräknas från den tidpunkt då motorn skickar anrikningshändelsen till anrikningstjänsten och får svaret.
 
 Typ: long
 
 ## fetchPlatformCount
 
-Hur många gånger data hämtas från Platform.
+Hur många gånger data hämtas från Adobe Experience Platform.
 
 Typ: long
 
