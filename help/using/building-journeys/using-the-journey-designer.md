@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ Paletten **** finns till vänster på skärmen. Alla tillgängliga aktiviteter �
 
 ![](../assets/journey38.png)
 
-Med ikonen **Visa inaktiverade objekt** i det övre vänstra hörnet kan du dölja eller visa otillgängliga element på paletten, till exempel händelser som använder ett annat namnutrymme än de som används under din resa. Som standard är otillgängliga objekt dolda. Om du väljer att visa dem visas de som nedtonade.
+Med ikonen i det övre vänstra hörnet kan du dölja eller visa otillgängliga element på paletten, till exempel händelser som använder ett annat namnutrymme än de som används under din resa. **[!UICONTROL Show disabled items]** Som standard är otillgängliga objekt dolda. Om du väljer att visa dem visas de som nedtonade.
 
-När du använder fältet **Sök** visas antalet resultat för varje aktivitetskategori på arbetsytan.
+När du använder **[!UICONTROL Search]** fältet visas antalet resultat för varje aktivitetskategori på arbetsytan.
 
 ![](../assets/palette-filter.png)
 
