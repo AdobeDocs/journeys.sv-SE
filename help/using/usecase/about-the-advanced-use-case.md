@@ -11,7 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 54b54a64ad2822eec96008ac4a2e16c208a4a3ab
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 0%
 
 ---
 
@@ -46,14 +49,14 @@ I det här fallet måste vi skapa två händelser (se [](../usecase/configuring-
 
 Vi måste konfigurera en anslutning till två datakällor (se [](../usecase/configuring-the-data-sources.md)):
 
-* Den inbyggda Experience Platform-datakällan som hämtar informationen för våra två villkor (lojalitetsmedlemskap och senaste kontaktdatum) samt information om meddelandepersonalisering.
+* Inbyggd Adobe Experience Platform-datakälla för att hämta information om våra två villkor (lojalitetsmedlemskap och senaste kontaktdatum) samt information om meddelandepersonalisering.
 * Hotellbokssystemet för att hämta information om bokningsstatus.
 
 ## Krav {#prerequisites}
 
-Vi har utformat tre transaktionsmeddelandemallar för Adobe Campaign Standard. Vi använder mallar för händelsetransaktioner. Se den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
+Vi har utformat tre Adobe Campaign Standarder för transaktionsmeddelandemallar. Vi använder mallar för händelsetransaktioner. Se den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
 
-Adobe Campaign Standard är konfigurerat för att skicka e-postmeddelanden och push-meddelanden.
+Adobe Campaign Standarden är konfigurerad för att skicka e-post och push-meddelanden.
 
 Experience Cloud ID används som nyckel för att identifiera kunden i hotellbokningssystemet.
 
