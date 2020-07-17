@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0bede8675f72c7b63da59dc8e0a3ca0fb95de87c
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Följ stegen som beskrivs i [](../event/about-events.md).
 
 Utför följande steg för att välja utmattningspoängfält i den inbyggda datakällan:
 
-1. Klicka på fliken på den översta menyn och välj den inbyggda Experience Platform-datakällan. **[!UICONTROL Data Sources]**
+1. Klicka på fliken på den översta menyn och välj den inbyggda Adobe Experience Platform-datakällan. **[!UICONTROL Data Sources]**
 
    ![](../assets/journey23.png)
 
