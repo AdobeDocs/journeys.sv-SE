@@ -11,18 +11,21 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 0%
 
 ---
 
 
 # Konfigurera datakällan{#concept_ax3_bcy_w2b}
 
-I vårt fall vill vi använda personaliseringsdata för våra meddelanden. Vi måste också kontrollera att personen är en kvinna. Den här informationen lagras i kundprofildatabasen i realtid. Den **tekniska användaren** måste kontrollera att dessa fält är definierade i den inbyggda Experience Platform-datakällan.
+I vårt fall vill vi använda personaliseringsdata för våra meddelanden. Vi måste också kontrollera att personen är en kvinna. Den här informationen lagras i kundprofildatabasen i realtid. Den **tekniska användaren** måste kontrollera att dessa fält är definierade i den inbyggda Adobe Experience Platform-datakällan.
 
 Mer information om konfiguration av datakälla finns i [](../datasource/about-data-sources.md).
 
-1. Klicka på fliken på den övre menyn och välj den inbyggda Experience Platform-datakällan **[!UICONTROL Data Sources]**.
+1. Klicka på fliken på den översta menyn och välj den inbyggda Adobe Experience Platform-datakällan. **[!UICONTROL Data Sources]**
 
    ![](../assets/journey23.png)
 
@@ -33,6 +36,6 @@ Mer information om konfiguration av datakälla finns i [](../datasource/about-da
    * _person > kön_
    * _personalEmail > address_
 
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 
 Datakällan är nu konfigurerad och klar att användas under din resa.
