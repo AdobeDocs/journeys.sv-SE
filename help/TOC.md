@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Hjälp om Journey Orchestration
 index: true
 translation-type: tm+mt
-source-git-commit: 18cc34f4c2f8f75ec42c70ec9a92784aed4358d9
+source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 0%
+source-wordcount: '382'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,11 @@ ht-degree: 0%
       + [Avbryta en resa](using/building-journeys/terminating-a-journey.md)
       + [Tidszonshantering](using/building-journeys/timezone-management.md)
    + Verksamhet {#about-journey-building}
-      + [Evenemangsaktiviteter](using/building-journeys/event-activities.md)
+      + Evenemangsaktiviteter {#events-activities}
+         + [Om händelseaktiviteter](using/building-journeys/event-activities.md)
+         + [Allmänna händelser](using/building-journeys/general-events.md)
+         + [Reaktionshändelser](using/building-journeys/reaction-events.md)
+         + [Segmentkvalificeringshändelser](using/building-journeys/segment-qualification-events.md)
       + Orchestration-verksamhet {#orchestration-activities}
          + [Om orkestreringsaktiviteter](using/building-journeys/about-orchestration-activities.md)
          + [Villkorsaktivitet](using/building-journeys/condition-activity.md)
@@ -71,7 +75,7 @@ ht-degree: 0%
          + [Använda anpassade åtgärder](using/building-journeys/using-custom-actions.md)
    + [Testa resan](using/building-journeys/testing-the-journey.md)
    + [Publicera resan](using/building-journeys/publishing-the-journey.md)
-   + Dela resesteg med Platform {#sharing-journey-steps}
+   + Dela resesteg med Adobe Experience Platform {#sharing-journey-steps}
       + [Översikt över delning av resesteg](using/building-journeys/sharing-overview.md)
       + [resaSteg-händelser, vanliga fält](using/building-journeys/sharing-common-fields.md)
       + [roadStep-händelser, körningsfält för åtgärd](using/building-journeys/sharing-execution-fields.md)
