@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 829f6cdb11aa9b1529607f409e53616a2b809f84
+source-git-commit: 5a480ba736b642485f2078a6e6c40c28a11f38a3
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Användarna måste alltid vara länkade till en produktprofil så att du kan til
 
 Du hittar kompatibiliteten mellan behörigheter och [!DNL Journey Orchestration]de olika funktionerna nedan.
 
-![](../assets/journey_permission.png)
+![](../assets/do-not-localize/journey_permission.png)
 
 ## Skapa en produktprofil {#create-product-profile}
 
@@ -76,7 +76,7 @@ Så här skapar du en produktprofil och tilldelar en uppsättning behörigheter 
 
 1. I Admin Console väljer du **[!UICONTROL Journey Orchestration]**. Klicka på **[!UICONTROL New Profile]** på fliken **[!UICONTROL Product profile]**.
 
-   ![](../assets/user_management_5.png)
+   ![](../assets/do-not-localize/user_management_5.png)
 
 1. Lägg till en **[!UICONTROL Profile Name]** och **[!UICONTROL Description]** en ny produktprofil. Om du vill att din profil **[!UICONTROL Display name]** ska vara annorlunda avmarkerar du **[!UICONTROL Same as Profile Name]** och skriver in **[!UICONTROL Display name]**.
 
@@ -84,7 +84,7 @@ Så här skapar du en produktprofil och tilldelar en uppsättning behörigheter 
 
 1. När du är klar klickar du på **[!UICONTROL Done]**. Din nya produktprofil har skapats.
 
-   ![](../assets/user_management_1.png)
+   ![](../assets/do-not-localize/user_management_1.png)
 
 1. Välj din nya produktprofil för att börja hantera behörigheter. Lägg till användare i produktprofilen på **[!UICONTROL Users]** fliken. For more on this, refer to this [page](../about/access-management.md#assigning-product-profile).
 
@@ -92,20 +92,20 @@ Så här skapar du en produktprofil och tilldelar en uppsättning behörigheter 
 
 1. På **[!UICONTROL Permissions]** fliken väljer du en av de två kategorierna **[!UICONTROL Sandbox]** eller **[!UICONTROL Authoring]** för att öppna **[!UICONTROL Edit Permissions]** sidan och lägga till eller ta bort behörigheter för produktprofilen.
 
-   ![](../assets/user_management_7.png)
+   ![](../assets/do-not-localize/user_management_7.png)
 
 1. I behörighetskategorin väljer du vilken eller vilka sandlådor som ska tilldelas till din produktprofil. **[!UICONTROL Sandboxes]** Under **[!UICONTROL Available Permissions Items]** klickar du på plusikonen (+) för att tilldela sandlådor till din profil. Mer information om sandlådor finns i det här [avsnittet](../about/access-management.md#sandboxes).
 
-   ![](../assets/user_management_8.png)
+   ![](../assets/do-not-localize/user_management_8.png)
 
 1. Om det behövs klickar du under **[!UICONTROL Included Permission Items]** X-ikonen bredvid Ta bort behörigheter till din produktprofil.
 
-   ![](../assets/user_management_9.png)
+   ![](../assets/do-not-localize/user_management_9.png)
 
 1. Gå till behörighetskategorin och utför samma steg som ovan för att lägga till behörigheter i din produktprofil. **[!UICONTROL Authoring]**
    <br>Mer information om behörigheter och kompatibilitet mellan behörigheter och [!DNL Journey Orchestration]deras olika funktioner finns i det här [avsnittet](../about/access-management.md#about-access-management).
 
-   ![](../assets/user_management_10.png)
+   ![](../assets/do-not-localize/user_management_10.png)
 
 1. När du är klar klickar du på **[!UICONTROL Save]**.
 
@@ -120,21 +120,21 @@ Så här tilldelar du en produktprofil åt en användare [!DNL Journey Orchestra
 
 1. I Admin Console väljer du **[!UICONTROL Journey Orchestration]**.
 
-   ![](../assets/user_management.png)
+   ![](../assets/do-not-localize/user_management.png)
 
 1. Välj den produktprofil som den nya användaren ska länkas till.
 
-   ![](../assets/user_management_2.png)
+   ![](../assets/do-not-localize/user_management_2.png)
 
 1. Klicka på **[!UICONTROL Add user]**.
 
    Du kan också lägga till din nya användare i en användargrupp för att finjustera den delade behörighetsgruppen. For more on this, refer to this [page](https://helpx.adobe.com/enterprise/using/user-groups.html).
 
-   ![](../assets/user_management_3.png)
+   ![](../assets/do-not-localize/user_management_3.png)
 
 1. Skriv den nya användarens e-postadress och klicka sedan på **[!UICONTROL Save]**.
 
-   ![](../assets/user_management_4.png)
+   ![](../assets/do-not-localize/user_management_4.png)
 
 Användaren bör sedan få ett e-postmeddelande som omdirigeras till din [!DNL Journey Orchestration] instans.
 
