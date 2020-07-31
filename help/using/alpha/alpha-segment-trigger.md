@@ -1,6 +1,6 @@
 ---
 title: Aktivitet för utlösare av segment
-description: Lär dig xxxx
+description: Läs mer om segmentutlösare
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+source-git-commit: b66cdb31b62b4627ff7378e48879ffadfedda5cb
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -23,15 +23,19 @@ ht-degree: 0%
 
 ## Om aktiviteten Utlösare för segment {#about-segment-trigger-actvitiy}
 
+>[!NOTE]
+>
+>Om det finns en Adobe Campaign Standard färdig aktivitet på arbetsytan vid publiceringstid eller aktiveringstid i testläge kommer resan att strypas vid 13 ingångar per sekund. <br>Om det inte finns någon Adobe Campaign Standard i körklart läge på arbetsytan vid publiceringstid eller aktiveringstid i testläge kommer resan att strypas med 1 000 händelser per sekund.
+
 Med aktiviteten Segmentutlösare kan du göra så att alla personer som tillhör ett Adobe Experience Platform-segment kan ta sig in på en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
 
 Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktiviteten Segment Trigger kan ni få alla personer som tillhör kundsegmentet Gold att komma in på en resa och få dem att flöda in i personaliserade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
 
+## Konfigurera aktiviteten {#configuring-segment-trigger-activity}
+
 >[!NOTE]
 >
 >På grund av fördröjningar för segmentexport går det inte att utlösa en segmentbaserad resa inom en kortare tidsram än en timme.
-
-## Konfigurera aktiviteten {#configuring-segment-trigger-activity}
 
 1. Ge kategorin en ny **[!UICONTROL Orchestration]** dimension och släpp en **[!UICONTROL Segment Trigger]** aktivitet på arbetsytan.
 
