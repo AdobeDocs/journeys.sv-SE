@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+source-git-commit: 771b2b35e0aba412e4eb9e12a5d57de3d4c7068c
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%
@@ -138,8 +138,8 @@ Två banor skapas efter ditt villkor:
 
       ```
       @{LobbyBeacon._experience.campaign.message.profileSnapshot.pushNotificationTokens.first().token}
-      ``
-      
+      ```
+
 1. Definiera personaliseringsfält för push-meddelanden. I vårt exempel: förnamn och efternamn.
 
 1. Lägg till en RestaurantBeacon-händelse.
