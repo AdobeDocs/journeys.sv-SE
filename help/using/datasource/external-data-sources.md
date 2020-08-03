@@ -52,7 +52,7 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
    >Använd inte blanksteg eller specialtecken. Använd inte fler än 30 tecken.
 
 1. Lägg till en beskrivning till datakällan. Det här steget är valfritt.
-1. Lägg till den externa tjänstens URL. In our example: _https://api.adobeweather.org/weather_.
+1. Lägg till den externa tjänstens URL. I vårt exempel: _https://api.adobeweather.org/weather_.
 
    >[!CAUTION]
    >
@@ -74,14 +74,14 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
 För parameteruppsättningen&quot;long/lat&quot; skapar vi en fältgrupp med följande information:
 
-* **[!UICONTROL Used in]**: visar antalet resor som använder en fältgrupp. You can click the **[!UICONTROL View journeys]** icon to display the list of journeys using this field group.
-* **[!UICONTROL Method]**: välj metoden POST eller GET. I vårt fall väljer vi metoden GET.
+* **[!UICONTROL Used in]**: visar antalet resor som använder en fältgrupp. Du kan klicka på **[!UICONTROL View journeys]** ikonen om du vill visa en lista över resor som använder den här fältgruppen.
+* **[!UICONTROL Method]**: Markera POST- eller GET-metoden. I vårt fall väljer vi GET-metoden.
 * **[!UICONTROL Cache duration]**: Vi vill att vädret ska cachas i tio minuter.
-* **[!UICONTROL Response Payload]**: click inside the **[!UICONTROL Payload]** field and paste an example of the payload returned by the call. For our example, we used a payload found on a weather API website. Kontrollera att fälttyperna är korrekta. Varje gång API anropas hämtas alla fält som ingår i nyttolastexemplet. Observera att du kan klicka på **[!UICONTROL Paste a new payload]** om du vill ändra den nyttolast som har skickats.
+* **[!UICONTROL Response Payload]**: klicka inuti **[!UICONTROL Payload]** fältet och klistra in ett exempel på nyttolasten som returneras av anropet. Vi använde till exempel en nyttolast som finns på en API-webbplats för väder. Kontrollera att fälttyperna är korrekta. Varje gång API anropas hämtas alla fält som ingår i nyttolastexemplet. Observera att du kan klicka på **[!UICONTROL Paste a new payload]** om du vill ändra den nyttolast som har skickats.
 * **[!UICONTROL Dynamic Values]**: Ange de olika parametrarna avgränsade med kommatecken &quot;long,lat&quot; i vårt exempel. Eftersom parametervärdena är beroende av körningskontexten, kommer de att definieras i resorna. Se [](../expression/expressionadvanced.md).
-* **[!UICONTROL Sent Payload]**: det här fältet visas inte i vårt exempel. Det är bara tillgängligt om du väljer metoden POST. Klistra in nyttolasten som ska skickas till tredjepartssystemet.
+* **[!UICONTROL Sent Payload]**: det här fältet visas inte i vårt exempel. Det är bara tillgängligt om du har valt metoden POST. Klistra in nyttolasten som ska skickas till tredjepartssystemet.
 
-Om det gäller ett GET-anrop som kräver parametrar anger du parametern/parametrarna i **[!UICONTROL Parameters]** fältet och de läggs automatiskt till i slutet av anropet. Om du har ett POST-samtal måste du:
+Om ett GET-anrop kräver parametrar anger du de i **[!UICONTROL Parameters]** fältet och de läggs till automatiskt i slutet av anropet. Vid ett POST-samtal måste du:
 
 * Ange de parametrar som ska skickas vid anrop i **[!UICONTROL Parameter]** fältet (i exemplet nedan: &quot;identifier&quot;).
 * ange dem också med exakt samma syntax i texten för den skickade nyttolasten. Om du vill göra det måste du lägga till: &quot;param&quot;: &quot;namn på parametern&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
@@ -101,9 +101,9 @@ Datakällan är nu konfigurerad och klar att användas i dina resor, till exempe
 >[!CONTEXTUALHELP]
 >id="jo_authentication_payload"
 >title="Om anpassad autentisering"
->abstract="Det anpassade autentiseringsläget används för komplex autentisering för att anropa API-omslutningsprotokoll som OAuth2. Körningen av funktionsmakrot är en tvåstegsprocess. Först görs ett anrop till slutpunkten för att generera åtkomsttoken. Then, the access token is injected in the the HTTP request of the action."
+>abstract="Det anpassade autentiseringsläget används för komplex autentisering för att anropa API-omslutningsprotokoll som OAuth2. Körningen av funktionsmakrot är en tvåstegsprocess. Först görs ett anrop till slutpunkten för att generera åtkomsttoken. Åtkomsttoken matas sedan in i åtgärdens HTTP-begäran."
 
-This authentication mode is used for complex authentication, frequently used to call API wrapping protocols such as OAuth2, to retrieve an access token to be injected in the real HTTP request for the action.
+Det här autentiseringsläget används för komplex autentisering, som ofta används för att anropa API-omslutningsprotokoll som OAuth2, för att hämta en åtkomsttoken som ska injiceras i den faktiska HTTP-begäran för åtgärden.
 
 När du konfigurerar den anpassade autentiseringen kan du klicka på knappen nedan för att kontrollera om den anpassade autentiseringsnyttolasten är korrekt konfigurerad.
 
@@ -118,14 +118,14 @@ Med den här autentiseringen är körningen av åtgärden en tvåstegsprocess:
 1. Anropa slutpunkten för att generera åtkomsttoken.
 1. Anropa REST API genom att mata in åtkomsttoken på rätt sätt.
 
-This authentication has two parts.
+Autentiseringen består av två delar.
 
-The definition of the endpoint to be called to generate the access token:
+Definitionen av den slutpunkt som ska anropas för att generera åtkomsttoken:
 
-* endpoint: URL to use to generate the endpoint
-* method of the HTTP request on the endpoint (GET or POST)
-* headers: key/value pairs to be injected as headers in this call if required
-* brödtext: beskriver anropets brödtext om metoden är POST. Vi stöder en begränsad brödstruktur, som definieras i bodyParams (nyckel/värde-par). The bodyType describes the format and encoding of the body in the call:
+* slutpunkt: URL som ska användas för att generera slutpunkten
+* HTTP-begäran på slutpunkten (GET eller POST)
+* sidhuvuden: nyckel-/värdepar som vid behov ska matas in som rubriker i detta samtal
+* brödtext: beskriver brödtexten i anropet om metoden är POST. Vi stöder en begränsad brödstruktur, som definieras i bodyParams (nyckel/värde-par). bodyType beskriver format och kodning för brödtexten i anropet:
    * &#39;form&#39;: vilket innebär att innehållstypen kommer att vara application/x-www-form-urlencoded (charset UTF-8) och nyckel/värde-paren kommer att serialiseras som: key1=value1&amp;key2=value2&amp;...
    * &#39;json&#39;: vilket innebär att innehållstypen blir application/json (charset UTF-8) och nyckelvärdepar kommer att serialiseras som ett json-objekt som är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
 
