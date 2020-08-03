@@ -36,7 +36,7 @@ Här följer de olika stegen för att konfigurera reaktionshändelser:
 1. Lägg till en **[!UICONTROL Label]** reaktion i reaktionen. Det här steget är valfritt.
 1. Välj den åtgärd som du vill reagera på i listrutan. Du kan välja vilken åtgärdsaktivitet som helst som placerats i banans tidigare steg.
 1. Beroende på vilken åtgärd du har valt (ett e-postmeddelande, SMS eller ett push-meddelande) väljer du vad du vill reagera på.
-1. Du kan definiera ett villkor som ett valfritt steg. Efter en e-poståtgärd kan du till exempel bestämma dig för att skapa två banor, en med en reaktionshändelse som spårar endast klickningar för VIP-kunder och en med en reaktionshändelse som spårar klickningar som utförs av kvinnor.
+1. Du kan definiera ett villkor som ett valfritt steg. Efter en e-poståtgärd kan du till exempel bestämma att du ska skapa två banor, en med en reaktionshändelse som bara spårar klickningar för VIP och en med en reaktionshändelse som spårar klickningar som utförs av kvinnor.
 
 >[!NOTE]
 >
