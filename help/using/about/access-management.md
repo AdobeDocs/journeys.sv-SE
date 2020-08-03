@@ -74,7 +74,7 @@ Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experien
 
 Så här skapar du en produktprofil och tilldelar en uppsättning behörigheter och sandlådor:
 
-1. I Admin Console väljer du **[!UICONTROL Journey Orchestration]**. Klicka på **[!UICONTROL New Profile]** på fliken **[!UICONTROL Product profile]**.
+1. Markera i Admin Console **[!UICONTROL Journey Orchestration]**. Klicka på **[!UICONTROL New Profile]** på fliken **[!UICONTROL Product profile]**.
 
    ![](../assets/do-not-localize/user_management_5.png)
 
@@ -118,7 +118,7 @@ I det här avsnittet finns en lista med alla färdiga produktprofiler med tillde
 
 Så här tilldelar du en produktprofil åt en användare [!DNL Journey Orchestration]:
 
-1. I Admin Console väljer du **[!UICONTROL Journey Orchestration]**.
+1. Markera i Admin Console **[!UICONTROL Journey Orchestration]**.
 
    ![](../assets/do-not-localize/user_management.png)
 
