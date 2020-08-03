@@ -12,6 +12,9 @@ internal: n
 snippet: y
 translation-type: tm+mt
 source-git-commit: 4871550d1608f4ffdee3b56d38b08f808eb2281c
+workflow-type: tm+mt
+source-wordcount: '675'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Så här representeras datatypsuttryck:
     <tbody>
     <tr>
         <td>string</td>
-        <td><p>Vanlig teckensekvens.</p><p>Den har ingen specifik storlek förutom den som kommer från miljön, till exempel mängden tillgängligt minne.</p><p>JSON-format:Sträng</p><p>Serialiseringsformat: UTF-8</p></td>
+        <td><p>Vanlig teckensekvens.</p><p>Den har ingen specifik storlek förutom den som kommer från miljön, till exempel mängden tillgängligt minne.</p><p>JSON-format: Sträng</p><p>Serialiseringsformat: UTF-8</p></td>
         <td><p>"&lt;värde&gt;"</p><p>&lt;value&gt;</p></td>
         <td><p><pre>"hello world"</pre></p><p><pre>"hello world"</pre></p></td>
     </tr>
@@ -55,7 +58,7 @@ Så här representeras datatypsuttryck:
     </tr>
     <tr>
         <td>boolesk</td>
-        <td><p>Bokfört booleskt värde med gemener: true eller false</p><p>JSON-format:Boolean</p></td>
+        <td><p>Bokfört booleskt värde med gemener: true eller false</p><p>JSON-format: Boolean</p></td>
         <td><p>true</p><p>false</p></td>
         <td><p><pre>true</pre></p></td>
     </tr>
