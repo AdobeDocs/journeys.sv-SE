@@ -12,6 +12,9 @@ internal: n
 snippet: y
 translation-type: tm+mt
 source-git-commit: 1bc8d845716044671a11c200e4bab92302841994
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ I reselistan visas alla reseversioner med versionsnumret. Se [](../building-jour
 
 Om du behöver ändra till en direktresa måste du skapa en ny version av din resa.
 
-1. Öppna den senaste versionen av din liveresa, klicka **[!UICONTROL Create a new version]**och bekräfta.
+1. Öppna den senaste versionen av din liveresa, klicka **[!UICONTROL Create a new version]** och bekräfta.
 
    ![](../assets/journeyversions2.png)
 
@@ -32,7 +35,7 @@ Om du behöver ändra till en direktresa måste du skapa en ny version av din re
    >
    >Du kan bara skapa en ny version av den senaste versionen av en resa.
 
-1. Gör ändringarna genom att klicka **[!UICONTROL Publish]**och bekräfta.
+1. Gör ändringarna genom att klicka **[!UICONTROL Publish]** och bekräfta.
 
    ![](../assets/journeyversions3.png)
 
