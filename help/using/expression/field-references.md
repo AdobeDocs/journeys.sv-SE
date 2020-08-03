@@ -12,6 +12,9 @@ internal: n
 snippet: y
 translation-type: tm+mt
 source-git-commit: 61e269bc319407f48006486b96333385ef8b9c58
+workflow-type: tm+mt
+source-wordcount: '424'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Om du använder specialtecken i ett fält måste du använda dubbla citattecken 
 
 * fältet börjar med numeriska tecken
 * fältet börjar med tecknet &quot;-&quot;
-* fältet innehåller något annat än _a_-_z_, _A_-_Z_, _0____-9¥, _ ,¥-_
+* fältet innehåller något annat än _a_-_z_, _A_-_Z_, _0_-___9, _ ,¥-_
 
 Om fältet till exempel är _3h_: _#{OpenWeather.westData.rain.&#39;3h&#39;} > 0_
 
