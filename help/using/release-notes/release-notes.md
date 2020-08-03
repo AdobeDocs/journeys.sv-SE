@@ -189,7 +189,7 @@ Gränssnittet Journey Orchestration finns på japanska.
 
 * Du kan nu **ta bort** avbrutna resor. Rapporter som är kopplade till dessa raderade resor är inte tillgängliga.
 
-* När du bläddrar bland **Adobe Experience Platform-fält** (XDM-format) visas nu även visningsnamnet tillsammans med fältnamnet. Den här informationen hämtas från schemadefinitionen i Experience Data Model. Om det är tillgängligt visas det alternativa visningsnamnet. Den här användarvänliga beskrivningen, som är särskilt användbar för eVar-fält, gör det enklare att identifiera fälten. [Läs mer](../about/user-interface.md#friendly-names-display)
+* När du bläddrar bland **Adobe Experience Platform-fält** (XDM-format) visas nu även visningsnamnet tillsammans med fältnamnet. Den här informationen hämtas från schemadefinitionen i Experience Data Model. Om det är tillgängligt visas det alternativa visningsnamnet. Den här användarvänliga beskrivningen, som är särskilt användbar när det gäller fält i eVar, gör det enklare att identifiera fälten. [Läs mer](../about/user-interface.md#friendly-names-display)
 
 ## GA-release - december 2019 {#ga-release---december-2019}
 
@@ -203,5 +203,5 @@ Journey Orchestration tillåter realtidssamordning som bygger på kontextuella d
 
 Ytterligare resurser:
 
-* [Självstudiekurser](https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/introduction.html)
+* [Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/introduction.html)
 * [Community](https://www.adobe.com/go/journeyorchestrationcommunity)
