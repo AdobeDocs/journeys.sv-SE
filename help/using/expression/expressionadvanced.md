@@ -55,7 +55,7 @@ Du kan komma åt den avancerade uttrycksredigeraren på olika sätt:
 * När du skapar en anpassad timer visas den avancerade redigeraren direkt.
 * När du mappar åtgärdsparameter klickar du på **[!UICONTROL Advanced mode]**.
 
-## Identifiera gränssnittet{#section_otq_tnj_cjb}
+## Lära känna gränssnittet{#section_otq_tnj_cjb}
 
 På den här skärmen kan du skriva ditt uttryck manuellt.
 
