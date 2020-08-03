@@ -12,6 +12,9 @@ internal: n
 snippet: y
 translation-type: tm+mt
 source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 0%
 
 ---
 
@@ -20,18 +23,18 @@ source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
 
 Nu kan **affärsanvändaren** skapa resan. Vår resa omfattar endast en väg med följande aktiviteter:
 
-* &quot;SpaBeacon&quot; **[!UICONTROL Event]**: När en person går nära spaltmarkören får systemet ett evenemang och resan börjar för den personen.
-* en **[!UICONTROL Condition]**aktivitet för att kontrollera att personen är en kvinna
-* en **[!UICONTROL Email]**aktivitet (med Adobe Campaign Standard)
-* en **[!UICONTROL End]**aktivitet
+* &quot;SpaBeacon&quot; **[!UICONTROL Event]**: När en person går nära spaltmarkören får systemet en händelse och resan börjar för den personen.
+* en **[!UICONTROL Condition]** aktivitet för att kontrollera att personen är en kvinna
+* en **[!UICONTROL Email]** aktivitet (med Adobe Campaign Standard)
+* en **[!UICONTROL End]** aktivitet
 
 >[!NOTE]
 >
->Aktiviteter **[!UICONTROL Push]**och**[!UICONTROL Email]** aktiviteter är bara tillgängliga på paletten om du har Adobe Campaign Standard.
+>Aktiviteter **[!UICONTROL Push]** och **[!UICONTROL Email]** aktiviteter är bara tillgängliga på paletten om du har Adobe Campaign Standard.
 
 Mer information om hur du bygger en resa finns i [](../building-journeys/journey.md).
 
-1. Klicka på **[!UICONTROL Home]**fliken i den övre menyn och**[!UICONTROL Create]** skapa en ny resa.
+1. Klicka på **[!UICONTROL Home]** fliken i den övre menyn och **[!UICONTROL Create]** skapa en ny resa.
 
    ![](../assets/journey31.png)
 
@@ -47,7 +50,7 @@ Mer information om hur du bygger en resa finns i [](../building-journeys/journey
 
    ![](../assets/journeyuc1_10.png)
 
-1. Välj **[!UICONTROL Data Source Condition]**typ och klicka i**[!UICONTROL Expression]** fältet. Du kan också definiera en villkorsetikett som ska visas på pilen på arbetsytan.
+1. Välj **[!UICONTROL Data Source Condition]** typ och klicka i **[!UICONTROL Expression]** fältet. Du kan också definiera en villkorsetikett som ska visas på pilen på arbetsytan.
 
    ![](../assets/journeyuc1_11.png)
 
@@ -55,11 +58,11 @@ Mer information om hur du bygger en resa finns i [](../building-journeys/journey
 
    ![](../assets/journeyuc1_12.png)
 
-1. Släpp en **[!UICONTROL Email]**aktivitet och välj en mall för transaktionsmeddelanden om&quot;Spa-rabatt&quot;. Den här mallen har utformats med Adobe Campaign. Se den här[sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
+1. Släpp en **[!UICONTROL Email]** aktivitet och välj en mall för transaktionsmeddelanden om&quot;Spa-rabatt&quot;. Den här mallen har utformats med Adobe Campaign. Se den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
 
    ![](../assets/journeyuc1_13.png)
 
-1. Klicka i **[!UICONTROL Email]**fältet och välj e-postadressen från datakällan.
+1. Klicka i **[!UICONTROL Email]** fältet och välj e-postadressen från datakällan.
 
    ![](../assets/journeyuc1_14.png)
 
@@ -67,11 +70,11 @@ Mer information om hur du bygger en resa finns i [](../building-journeys/journey
 
    ![](../assets/journeyuc1_15.png)
 
-1. Släpp en **[!UICONTROL End]**aktivitet.
+1. Släpp en **[!UICONTROL End]** aktivitet.
 
    ![](../assets/journeyuc1_17.png)
 
-1. Klicka på **[!UICONTROL Test]**växla och testa din resa med testprofiler. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa det igen. Mer information om testläget finns i[](../building-journeys/testing-the-journey.md).
+1. Klicka på **[!UICONTROL Test]** växla och testa din resa med testprofiler. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa det igen. Mer information om testläget finns i [](../building-journeys/testing-the-journey.md).
 
    ![](../assets/journeyuc1_18bis.png)
 
