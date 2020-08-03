@@ -63,7 +63,7 @@ Vi måste också kontrollera om personen har en bokning i hotellbokningen. Den *
 
 1. Klicka **[!UICONTROL Add a New Field Group]** för att definiera informationen som ska hämtas och API-parametrarna. Det finns till exempel bara en parameter (id), så vi måste skapa en fältgrupp med följande information:
 
-   * **[!UICONTROL Method]**: välj metoden POST eller GET. I vårt fall väljer vi metoden GET.
+   * **[!UICONTROL Method]**: Markera POST- eller GET-metoden. I vårt fall väljer vi GET-metoden.
    * **[!UICONTROL Cache duration]**: detta varierar beroende på hur ofta API-anrop görs. I vårt fall uppdateras reservationssystemet var 10:e minut.
    * **[!UICONTROL Response Payload]**: klicka inuti **[!UICONTROL Payload]** fältet och klistra in ett exempel på nyttolasten. Kontrollera att fälttyperna är korrekta. Varje gång API anropas hämtas alla fält som ingår i nyttolastexemplet. I vårt exempel innehåller nyttolasten bara reservationsstatusen:
 
