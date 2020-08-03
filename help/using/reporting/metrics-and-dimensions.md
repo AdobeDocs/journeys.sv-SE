@@ -39,8 +39,8 @@ Tabellen nedan visar en lista över de dimensioner som används i reserapporter,
 |--- |--- |
 | **Åtgärd** | Lista över alla åtgärder (**åtgärdsnamn - åtgärdsetikett**) som används i resor, t.ex. Push - Check out confirmation, Email - Rewards fidelity. |
 | **Datakälla** | Lista över datakällor (**datakällans namn**) som används för att berika data under en resa, t.ex. Adobe Experience-plattformen, Reservation-systemet. |
-| **[!UICONTROL Event]** | Lista över alla händelser (**händelsenamn - händelseetikett**) som används i resor, t.ex. Geometrixx-händelse - utcheckning av geometrixx. |
-| **Fältgrupp** | Lista över fältgrupper (**fältgruppsnamn**) som används för att berika data i resor, t.ex. profilfältgrupp, Geometrixx-reservationssystem. |
+| **[!UICONTROL Event]** | Lista över alla händelser (**händelsenamn - händelsetikett**) som används i resor, t.ex. Geometrixx-händelse - utcheckning av Geometrixx. |
+| **Fältgrupp** | Lista över fältgrupper (**fältgruppsnamn**) som används för att berika data i resor, t.ex. profilfältgrupp, reservationssystem för Geometrixx. |
 | **Resa** | Lista över varje resa (**resenamn**) i testläge och i realtid, t.ex. när kunden överger en kundvagn, meddelanden om hotellreservationer. |
 | **Reseversion** | Lista över alla publicerade versioner av en resa (**resenamn + versionsnummer**), t.ex. avbruten kundvagn v1, meddelande om hotellreservation v2. |
 | **Orchestration** | Lista över alla koordinationsaktiviteter (**villkor, slut, vänta**) som definierats och används i resor. |
@@ -98,7 +98,7 @@ Tabellen nedan visar en lista över mätvärden som används i journalrapporter,
 | **Blockeringslista ränta** | Totalt antal meddelanden på blockeringslista jämfört med skickade meddelanden. |
 | **studsar + fel** | Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden. |
 | **Studsa + felfrekvens** | Totalt antal meddelanden som studsade jämfört med skickade meddelanden. |
-| **Klicka på** | Antal gånger ett innehåll klickades i en leverans. |
+| **Klicka på** | Antal gånger som ett innehåll klickades i en leverans. |
 | **Klicka igenom hastigheten** | Totalt antal klick i en leverans jämfört med antalet levererade meddelanden. |
 | **Levererat** | Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden. |
 | **Levererad ränta** | Totalt antal meddelanden som har levererats jämfört med skickade meddelanden. |
