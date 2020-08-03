@@ -33,7 +33,7 @@ Om du vill konfigurera händelser som ska skickas till **[!UICONTROL Streaming I
 
 Sedan måste du konfigurera det datasystem som överför händelser till API:er för direktuppspelning av inmatning med den nyttolast som du kopierade:
 
-1. Konfigurera ett POST API-anrop till API:n för direktuppspelning (kallas för inlopp).
+1. Konfigurera ett POST-API-anrop till API:n för direktuppspelning (kallas för ett inlopp).
 1. Använd den nyttolast du kopierade från [!DNL Journey Orchestration] i brödtexten (&quot;dataavsnittet&quot;) för API-anropet till API:er för Streaming Ingput. Se nedan för ett exempel
 1. Bestäm var alla variabler som finns i nyttolasten ska hämtas. Exempel: om händelsen ska förmedla adressen, kommer nyttolasten som klistras in att visa&quot;adress&quot;: &quot;string&quot;. &quot;string&quot; ska ersättas med variabeln som automatiskt fyller i rätt värde, e-postadressen till den person som meddelandet ska skickas till. Observera att vi i förhandsvisningen av nyttolasten, i avsnittet, automatiskt fyller i många värden som förväntas underlätta ditt arbete. **[!UICONTROL Header]**
 1. Välj &quot;application/json&quot; som en texttyp.
