@@ -42,7 +42,7 @@ Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd klickar du på 
 
 ![](../assets/custom1.png)
 
-Om du har Adobe Campaign Standard måste du konfigurera den körklara åtgärden för att skicka e-post, push-meddelanden och SMS med hjälp av Transactional Messaging-funktionerna i Adobe Campaign Standard. Se [](../action/working-with-adobe-campaign.md).
+Om du har Adobe Campaign Standard måste du konfigurera den körklara åtgärden för att skicka e-postmeddelanden, push-meddelanden och SMS med Adobe Campaign Standardens Transactional Messaging-funktioner. Se [](../action/working-with-adobe-campaign.md).
 
 Om du använder ett tredjepartssystem för att skicka meddelanden som Epsilon, Facebook, Adobe.io, Firebase osv. måste du lägga till och konfigurera en anpassad åtgärd. Se [](../action/about-custom-action-configuration.md).
 
