@@ -36,7 +36,7 @@ Om du redigerar en händelse som används i ett utkast eller en direktresa kan d
 
 ## Allmän princip {#section_r1f_xqt_pgb}
 
-Händelser är POST API-anrop. Händelser skickas till Adobe Experience Platform via API:er för direktuppspelning av inmatning. URL-destinationen för händelser som skickas via API:er för transaktionsmeddelanden kallas för ett &quot;inlet&quot;. Nyttolasten för händelser följer XDM-formatering.
+Händelser är POST-API-anrop. Händelser skickas till Adobe Experience Platform via API:er för direktuppspelning av inmatning. URL-destinationen för händelser som skickas via API:er för transaktionsmeddelanden kallas för ett &quot;inlet&quot;. Nyttolasten för händelser följer XDM-formatering.
 
 Nyttolasten innehåller information som krävs för att API:erna för direktuppspelning av inmatning ska fungera (i huvudet) och den information som krävs för [!DNL Journey Orchestration] att arbeta (händelse-ID:t, en del av nyttolastbrödtexten) och information som ska användas på resor (i brödtexten, till exempel mängden en övergiven vagn). Det finns två lägen för direktuppspelningsinmatning, autentiserad och oautentiserad. Mer information om API:er för direktuppspelning av inmatning finns på [den här länken](https://docs.adobe.com/content/help/en/experience-platform/xdm/api/getting-started.html).
 
