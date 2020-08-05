@@ -36,7 +36,7 @@ Om du redigerar en händelse som används i ett utkast eller en direktresa kan d
 
 ## Allmän princip {#section_r1f_xqt_pgb}
 
-Händelser är POST-API-anrop. Händelser skickas till Adobe Experience Platform via API:er för direktuppspelning av inmatning. URL-destinationen för händelser som skickas via API:er för transaktionsmeddelanden kallas för ett &quot;inlet&quot;. Nyttolasten för händelser följer XDM-formatering.
+Händelser är POST-API-anrop. Händelser skickas till Adobe Experience Platform via API:er för direktuppspelning. URL-destinationen för händelser som skickas via API:er för transaktionsmeddelanden kallas för ett &quot;inlet&quot;. Nyttolasten för händelser följer XDM-formatering.
 
 Nyttolasten innehåller information som krävs för att API:erna för direktuppspelning av inmatning ska fungera (i huvudet) och den information som krävs för [!DNL Journey Orchestration] att arbeta (händelse-ID:t, en del av nyttolastbrödtexten) och information som ska användas på resor (i brödtexten, till exempel mängden en övergiven vagn). Det finns två lägen för direktuppspelningsinmatning, autentiserad och oautentiserad. Mer information om API:er för direktuppspelning av inmatning finns på [den här länken](https://docs.adobe.com/content/help/en/experience-platform/xdm/api/getting-started.html).
 
@@ -44,11 +44,11 @@ Efter att ha anlänt via API:er för direktuppspelning av inmatning flödar hän
 
 Pipelinen filtrerar händelser som har en nyttolast som innehåller händelse-ID:n (se processen för att skapa händelser nedan) som tillhandahålls av [!DNL Journey Orchestration] [!DNL Journey Orchestration] och finns i händelsenyttolasten. Dessa händelser avlyssnas [!DNL Journey Orchestration] och motsvarande resa utlöses.
 
-## Skapa en ny händelse {#section_tbk_5qt_pgb}
+## Creating a new event {#section_tbk_5qt_pgb}
 
 Här följer de viktigaste stegen för att konfigurera en ny händelse:
 
-1. Klicka på fliken på den översta menyn **[!UICONTROL Events]** . Listan med händelser visas. Mer information om gränssnittet finns [](../about/user-interface.md) i.
+1. In the top menu, click on the **[!UICONTROL Events]** tab. Listan med händelser visas. Mer information om gränssnittet finns [](../about/user-interface.md) i.
 
    ![](../assets/journey5.png)
 
