@@ -28,7 +28,7 @@ Navigeringen på [!DNL Journey Orchestration] menyer har förbättrats för att 
 * Menyer som har flyttats från den övre till den vänstra sidan av gränssnittet,
 * Gruppering av administratörsfunktioner i en enda kontrollpanel.
 
-Globala koncept för hur du använder och navigerar i gränssnittet (sökning och filtrering, bläddring i Adobe Experience Platform-fält, genvägar) beskrivs i [det här avsnittet](../about/user-interface.md).
+I [det här avsnittet](../about/user-interface.md)beskrivs globala koncept för hur du använder och navigerar i gränssnittet (sökning och filtrering, bläddring i Adobe Experience Platform-fält, genvägar).
 
 ## Åtkomst till [!DNL Journey Orchestration] funktioner {#accessing-journey-orchestration-functionalities}
 
@@ -36,7 +36,7 @@ När du öppnar [!DNL Journey Orchestration]visas **[!UICONTROL Journeys]** meny
 
 ![](../assets/interface-journeys.png)
 
-På **[!UICONTROL Segments]** menyn kan du komma åt och skapa segment i Adobe Experience Platform. Se [Om Adobe Experience Platform-segment](../segment/about-segments.md).
+På **[!UICONTROL Segments]** menyn kan du komma åt och skapa Adobe Experience Platform-segment. Se [Om Adobe Experience Platform-segment](../segment/about-segments.md).
 
 ![](../assets/interface-segments.png)
 
