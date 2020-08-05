@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 239efa9592b011c70e2fc331df8f33820301253d
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -45,7 +45,7 @@ Här är en lista över operatorer som stöds:
 
 <table>
 <thead>
-<tr ><th  >Operator</th><th  >Literalt uttryck</th><th  >Exempel</th></tr>
+<tr ><th  >Operatör</th><th  >Literalt uttryck</th><th  >Exempel</th></tr>
 </thead>
 <tbody>
 <tr >&gt;<td>och</td><td><p><pre>&lt;expression1&gt; och &lt;expression2&gt;</pre></p>Både &lt;expression1&gt; och &lt;expression2&gt; måste vara booleska. Resultatet är booleskt.</td><td><pre>3.14 &gt; 2 och 3.15 &lt; 1</pre></td></tr>
@@ -58,7 +58,7 @@ Här är en lista över operatorer som stöds:
 
 <table>
 <thead>
-<tr ><th  >Operator</th><th  >Literalt uttryck </th><th  >Exempel</th></tr>
+<tr ><th  >Operatör</th><th  >Literalt uttryck </th><th  >Exempel</th></tr>
 </thead>
 <tbody><tr ><td>är null</td><td><p><pre>&lt;expression&gt; är null</pre></p><p>Resultatet är booleskt.</p><p>Observera att null betyder att uttrycket inte har något utvärderat värde.</p></td><td><pre>@{BarBeacon.location} är null</pre></td></tr>
 <tr ><td>är inte null</td><td><p><pre>&lt;expression&gt; är inte null</pre></p><p>Resultatet är booleskt.</p><p>Observera att null betyder att uttrycket inte har något utvärderat värde.</p></td><td><pre>@ är inte null</pre></td></tr>
@@ -76,7 +76,7 @@ Här är en lista över operatorer som stöds:
 
 <table>
 <thead>
-<tr ><th  >Operator</th><th>Literalt uttryck </th><th  >Exempel</th></tr>
+<tr ><th  >Operatör</th><th>Literalt uttryck </th><th  >Exempel</th></tr>
 </thead>
 <tbody><tr ><td>+</td><td><p><pre>&lt;expression1&gt; + &lt;expression2&gt;</pre></p><p>Båda uttrycken måste vara numeriska (heltal eller decimal). </p><p>Resultatet är också numeriskt.</p></td><td><p><p><pre>1 + 2</pre></p></p><br /><p>Returnerar 3</p></td></tr>
 <tr ><td>-</td><td><p><pre>&lt;expression1&gt; - &lt;expression2&gt;</pre></p><p> Båda uttrycken måste vara numeriska (heltal eller decimal).</p><p> Resultatet är också numeriskt.</p></td><td><p><pre>2 - 1</pre></p>Returnerar 1</td></tr>
@@ -90,7 +90,7 @@ Här är en lista över operatorer som stöds:
 
 <table>
 <thead>
-<tr ><th  >Operator</th><th  >Literalt uttryck </th><th  >Exempel</th></tr>
+<tr ><th  >Operatör</th><th  >Literalt uttryck </th><th  >Exempel</th></tr>
 </thead>
 <tbody><tr ><td>är numerisk</td><td><p><pre>&lt;expression&gt; är numeriskt</pre></p><p>Uttryckstypen är heltal eller decimal.</p></td><td><pre>@ är numeriskt</pre></td></tr>
 <tr ><td>är heltal</td><td><p><pre>&lt;expression&gt; är heltal</pre></p><p>Uttryckstypen är ett heltal.</p></td><td><pre>@ är heltal</pre></td></tr>
@@ -100,7 +100,7 @@ Här är en lista över operatorer som stöds:
 
 <table>
 <thead>
-<tr ><th  >Operator</th><th  >Literalt uttryck </th><th  >Exempel</th></tr>
+<tr ><th  >Operatör</th><th  >Literalt uttryck </th><th  >Exempel</th></tr>
 </thead>
 <tbody><tr ><td>+</td><td><p><pre>&lt;sträng&gt; + &lt;uttryck&gt;</pre></p><p><pre>&lt;expression&gt; + &lt;string&gt;</pre></p><p>Det sammanfogar två uttryck. </p><p>Ett uttryck måste vara en kedjad sträng.</p></td><td><p><pre>"den aktuella tiden är " + (now())</pre></p> Returnerar"den aktuella tiden är 2019-09-23T09:30:06.693Z"<p><pre>(now()) + " är aktuell tid"</pre></p>Returnerar "2019-09-23T09:30:06.693Z är den aktuella tiden"<p><pre>"a" + "b" + "c" + 1234</pre></p> Returnerar "abc1234".</td></tr>
 </tbody>
@@ -110,7 +110,7 @@ Här är en lista över operatorer som stöds:
 
 <table>
 <thead>
-<tr ><th  >Operator</th><th  >Literalt uttryck </th><th  >Exempel</th></tr>
+<tr ><th  >Operatör</th><th  >Literalt uttryck </th><th  >Exempel</th></tr>
 </thead>
 <tbody>
 <tr ><td>+</td><td><p><pre>&lt;expression + &lt;duration&gt;</pre></p><p>Lägg till en varaktighet för ett dateTime, ett dateTimeOnly eller en varaktighet.</p></td><td><p><pre>toDateTime("2011-12-03T15:15:30Z")</pre></p><p><pre> + toDuration("PT15M")</pre></p><p>Returnerar 2011-12-03T15:30:30Z</p><p><pre>toDateTimeOnly("2011-12-03T15:15:30")</pre></p><p><pre> + toDuration("PT15M")</pre></p>Returnerar 2011-12-03T15:30:30<p><pre>now() + toDuration("PT1H")</pre></p><p>Returnerar en dateTime (med UTC-tidszon) en timme senare från aktuell tid</p><p><pre>toDuration("PT1H") + toDuration("PT1H")</pre></p><p>Returnerar PT2H</p></td></tr>
