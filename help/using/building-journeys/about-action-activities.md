@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ På paletten, till vänster på skärmen, under **[!UICONTROL Events]** och **[!
 
 Dessa aktiviteter representerar olika tillgängliga kommunikationskanaler. Du kan kombinera dem för att skapa ett flerkanalsscenario.
 
-Om du har Adobe Campaign Standard kan du utföra följande åtgärder direkt: **[!UICONTROL Email]**, **[!UICONTROL Push]** och **[!UICONTROL SMS]**. Se [](../building-journeys/using-adobe-campaign-actions.md).
+Om du har Adobe Campaign Standard finns följande färdiga åtgärdsaktiviteter: **[!UICONTROL Email]**, **[!UICONTROL Push]** och **[!UICONTROL SMS]**. Se [](../building-journeys/using-adobe-campaign-actions.md).
 
 Om du har konfigurerat anpassade åtgärder visas de också här (se [](../building-journeys/using-custom-actions.md)).
 
