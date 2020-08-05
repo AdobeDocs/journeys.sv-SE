@@ -22,9 +22,9 @@ ht-degree: 0%
 
 # Skapa ett segment {#creating-a-segment}
 
-Du kan antingen skapa ett segment med [Adobe Experience Platform segmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) eller så kan du komma åt och skapa dem direkt i [!DNL Journey Orchestration].
+Du kan antingen skapa ett segment med [Adobe Experience Platform segmenteringstjänst](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) eller så kan du komma åt och skapa dem direkt i [!DNL Journey Orchestration].
 
-1. Klicka på fliken på den översta menyn **[!UICONTROL Segments]** . Listan över segment i Adobe Experience Platform visas. Du kan söka efter ett visst segment i listan.
+1. In the top menu, click on the **[!UICONTROL Segments]** tab. Listan över Adobe Experience Platform-segment visas. Du kan söka efter ett visst segment i listan.
 
 ![](../assets/segment1.png)
 
