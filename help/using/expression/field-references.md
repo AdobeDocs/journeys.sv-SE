@@ -67,7 +67,7 @@ Ett standardvärde kan kopplas till ett fältnamn. Syntaxen är följande:
 
 De element som definieras i samlingar refereras med de specifika funktionerna all, first och last. Mer information finns i [](../expression/collection-management-functions.md).
 
-Exempel:
+Exempel :
 
 ```
 @{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all()
