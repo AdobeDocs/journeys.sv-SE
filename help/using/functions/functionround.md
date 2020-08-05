@@ -14,12 +14,12 @@ translation-type: tm+mt
 source-git-commit: 654888ee62a7b9b6e3d34fc3963fb83cac719003
 workflow-type: tm+mt
 source-wordcount: '40'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# rund {#round}
+# round {#round}
 
 Returnerar det närmaste heltalsvärdet till argumentet med banden avrundade till positiv oändlighet.
 
