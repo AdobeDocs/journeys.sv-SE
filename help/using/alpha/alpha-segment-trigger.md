@@ -25,9 +25,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Om det finns en Adobe Campaign Standard färdig aktivitet på arbetsytan vid publiceringstid eller aktiveringstid i testläge kommer resan att strypas vid 13 ingångar per sekund. <br>Om det inte finns någon Adobe Campaign Standard i körklart läge på arbetsytan vid publiceringstid eller aktiveringstid i testläge kommer resan att strypas med 1 000 händelser per sekund.
+>Om det finns en färdig Adobe Campaign Standard-åtgärd på arbetsytan vid publiceringstid eller aktiveringstid i testläge kommer resan att strypas vid 13 ingångar per sekund. <br>Om Adobe Campaign Standard inte har någon färdig åtgärd i arbetsytan vid publiceringstid eller aktiveringstid i testläge kommer resan att strypas med 1 000 händelser per sekund.
 
-Med aktiviteten Segmentutlösare kan du göra så att alla personer som tillhör ett Adobe Experience Platform-segment kan ta sig in på en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
+Med aktiviteten Segmentutlösare kan du göra så att alla personer som tillhör ett Adobe Experience Platform-segment går in på en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
 
 Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktiviteten Segment Trigger kan ni få alla personer som tillhör kundsegmentet Gold att komma in på en resa och få dem att flöda in i personaliserade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
 
@@ -73,6 +73,6 @@ Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktivite
 
    >[!IMPORTANT]
    >
-   >Tänk på att segment i Adobe Experience Platform beräknas antingen en gång om dagen (**gruppsegment** ) eller i realtid (**direktuppspelade** segment).
+   >Tänk på att Adobe Experience Platform-segment beräknas antingen en gång om dagen (**gruppsegment** ) eller i realtid (**direktuppspelade** segment).
    >
-   >Om det valda segmentet direktuppspelas kan de personer som tillhör det segmentet komma in på resan i realtid. Om segmentet är en batch kan personer som nyligen är kvalificerade för det här segmentet komma in på resan när segmentberäkningen görs på Adobe Experience Platform.
+   >Om det valda segmentet direktuppspelas kan de personer som tillhör det segmentet komma in på resan i realtid. Om segmentet är en batch kan personer som nyligen är kvalificerade för det här segmentet komma in på resan när segmentberäkningen körs på Adobe Experience Platform.
