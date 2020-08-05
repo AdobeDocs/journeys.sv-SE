@@ -38,7 +38,7 @@ Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
 1. Lägg till en beskrivning av åtgärden. Det här steget är valfritt.
 1. Antalet resor som använder den här åtgärden visas i **[!UICONTROL Used in]** fältet. Du kan klicka på **[!UICONTROL View journeys]** knappen om du vill visa en lista över resor med den här åtgärden.
-1. Definiera de olika **[!UICONTROL URL Configuration]** parametrarna. Se [](../action/url-configuration.md).
+1. Define the different **[!UICONTROL URL Configuration]** parameters. Se [](../action/url-configuration.md).
 1. Konfigurera **[!UICONTROL Authentication]** avsnittet. Den här konfigurationen är densamma som för datakällor.  Se [](../datasource/external-data-sources.md#section_wjp_nl5_nhb).
 1. Definiera **[!UICONTROL Message parameters]**. Se [](../action/defining-the-message-parameters.md).
 1. Klicka på **[!UICONTROL Save]**.
