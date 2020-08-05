@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Den här mixinen delas av travelStepEvent och travelStepProfileEvent.
 
-Det här är de vanliga XDM-fälten som skickas till Adobe Experience Platform. [!DNL Journey Orchestration] Vanliga fält skickas för varje steg som bearbetas under en resa. Mer specifika fält används för anpassade åtgärder och berikning.
+Detta är de vanligaste XDM-fälten som skickas till [!DNL Journey Orchestration] Adobe Experience Platform. Vanliga fält skickas för varje steg som bearbetas under en resa. Mer specifika fält används för anpassade åtgärder och berikning.
 
 Vissa av dessa fält är bara tillgängliga i specifika bearbetningsmönster (åtgärdskörning, datahämtning osv.) för att begränsa storleken på händelser.
 
