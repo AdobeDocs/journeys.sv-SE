@@ -35,6 +35,6 @@ Vi vill bara skicka ett meddelande om personen är en kvinna. Meddelandet måste
 
 Vi har utformat en e-postmall för transaktionsmeddelanden i Adobe Campaign Standard. Vi använder en transaktionsmall för händelsetjänster. Se den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
 
-Adobe Campaign Standarden är konfigurerad för att skicka e-post.
+Adobe Campaign Standard har konfigurerats för att skicka e-post.
 
 Händelser skickas från kundens mobiltelefon när de upptäcks nära en fyr. Du måste utforma ett mobilprogram för att kunna skicka händelser från kundens mobiltelefon till Mobile SDK.
