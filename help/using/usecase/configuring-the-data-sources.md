@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Konfigurera datakällor {#concept_vml_hdy_w2b}
 
-I vårt fall vill vi använda personaliseringsdata för våra meddelanden. Vi måste också kontrollera om personen är en lojalitetsmedlem och inte har kontaktats under de senaste 24 timmarna. Den här informationen lagras i kundprofildatabasen i realtid. Den **tekniska användaren** måste konfigurera Adobe Experience Platform-datakällan för att hämta fälten.
+I vårt fall vill vi använda personaliseringsdata för våra meddelanden. Vi måste också kontrollera om personen är en lojalitetsmedlem och inte har kontaktats under de senaste 24 timmarna. Den här informationen lagras i kundprofildatabasen i realtid. Den **tekniska användaren** måste konfigurera Adobe Experience Platform datakälla för att hämta fälten.
 
 Mer information om konfiguration av datakälla finns i [](../datasource/about-data-sources.md).
 
-1. Klicka på fliken på den översta menyn och välj den inbyggda Adobe Experience Platform-datakällan. **[!UICONTROL Data Sources]**
+1. Klicka på fliken på den övre menyn och välj den inbyggda Adobe Experience Platform-datakällan **[!UICONTROL Data Sources]** .
 
    ![](../assets/journey23.png)
 
