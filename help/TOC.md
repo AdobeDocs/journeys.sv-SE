@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 # [!DNL Journey Orchestration] Hjälp {#using}
 
 + [Produktdokumentation](journey-orchestration-home.md)
-+ Nyheter {#release-notes}
++ Vad är nytt {#release-notes}
    + [Versionsinformation](using/release-notes/release-notes.md)
    + [Dokumentationsuppdateringar](using/release-notes/documentation-updates.md)
 + Börja med [!DNL Journey Orchestration] {#starting-with-journeys}
@@ -71,7 +71,7 @@ ht-degree: 1%
          + [Vänta på aktivitet](using/building-journeys/wait-activity.md)
       + Verksamheter {#action-activities}
          + [Om funktionsmakron](using/building-journeys/about-action-activities.md)
-         + [Använda Adobe Campaign åtgärder](using/building-journeys/using-adobe-campaign-actions.md)
+         + [Använda Adobe Campaign-åtgärder](using/building-journeys/using-adobe-campaign-actions.md)
          + [Använda anpassade åtgärder](using/building-journeys/using-custom-actions.md)
    + [Testa resan](using/building-journeys/testing-the-journey.md)
    + [Publicera resan](using/building-journeys/publishing-the-journey.md)
@@ -115,7 +115,7 @@ ht-degree: 1%
          + [toDuration](using/functions/functiontoduration.md)
          + [toInteger](using/functions/functiontointeger.md)
          + [toString](using/functions/functiontostring.md)
-      + Datum {#date}
+      + Date {#date}
          + [currentTime &#x200B; InMillis](using/functions/functioncurrenttimeinmillis.md)
          + [inLastDays](using/functions/functioninlastdays.md)
          + [inLastHours](using/functions/functioninlasthours.md)
