@@ -26,7 +26,7 @@ Nu kan **affärsanvändaren** skapa resan. Vår resa omfattar endast en väg med
 * &quot;SpaBeacon&quot; **[!UICONTROL Event]**: När en person går nära spaltmarkören får systemet en händelse och resan börjar för den personen.
 * en **[!UICONTROL Condition]** aktivitet för att kontrollera att personen är en kvinna
 * en **[!UICONTROL Email]** aktivitet (med Adobe Campaign Standard)
-* en **[!UICONTROL End]** aktivitet
+* an **[!UICONTROL End]** activity
 
 >[!NOTE]
 >
