@@ -49,14 +49,14 @@ I det här fallet måste vi skapa två händelser (se [](../usecase/configuring-
 
 Vi måste konfigurera en anslutning till två datakällor (se [](../usecase/configuring-the-data-sources.md)):
 
-* Inbyggd Adobe Experience Platform-datakälla för att hämta information om våra två villkor (lojalitetsmedlemskap och senaste kontaktdatum) samt information om meddelandepersonalisering.
+* Den inbyggda Adobe Experience Platform-datakällan för att hämta information om våra två villkor (lojalitetsmedlemskap och senaste kontaktdatum) samt information om meddelandepersonalisering.
 * Hotellbokssystemet för att hämta information om bokningsstatus.
 
 ## Krav {#prerequisites}
 
-Vi har utformat tre Adobe Campaign Standarder för transaktionsmeddelandemallar. Vi använder mallar för händelsetransaktioner. Se den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
+Vi har utformat tre mallar för transaktionsmeddelanden från Adobe Campaign Standard. Vi använder mallar för händelsetransaktioner. Se den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
 
-Adobe Campaign Standarden är konfigurerad för att skicka e-post och push-meddelanden.
+Adobe Campaign Standard är konfigurerat att skicka e-post och push-meddelanden.
 
 Experience Cloud ID används som nyckel för att identifiera kunden i hotellbokningssystemet.
 
