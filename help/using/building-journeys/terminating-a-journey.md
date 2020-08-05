@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 72a3fd98b7911a1b8f23ccfeb55b884926f795ce
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ Du kan stänga en resa genom att klicka **[!UICONTROL Close to new entrances]** 
 
 ![](../assets/do-not-localize/journey-finish-quick-action.png)
 
-Du kan också:
+Du kan även:
 
 1. Klicka **[!UICONTROL Home]** på den resa du vill stänga.
 1. Klicka på nedpilen i det övre högra hörnet.
@@ -57,7 +57,7 @@ Du kan stoppa en resa (till exempel om en marknadsförare upptäcker att resan r
 
 ![](../assets/do-not-localize/journey-stop-quick-action.png)
 
-Du kan också:
+Du kan även:
 
 1. In **[!UICONTROL Home]**, klicka på den resa du vill stoppa.
 1. Klicka på nedpilen i det övre högra hörnet.
