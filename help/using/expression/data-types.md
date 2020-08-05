@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 4871550d1608f4ffdee3b56d38b08f808eb2281c
 workflow-type: tm+mt
 source-wordcount: '675'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -64,14 +64,14 @@ Så här representeras datatypsuttryck:
     </tr>
     <tr>
         <td>dateTimeOnly</td>
-        <td><p>Representerar en datumtid utan tidszon, som visas som en millisekund för år-månad-timme-minut-sekund-millisekund.</p><p>Den lagrar inte eller representerar en tidszon.</p><p>I stället är det en beskrivning av datumet, som används för födelsedagar, kombinerat med lokal tid enligt en väggklocka.</p><p>Det kan inte representera en instans på tidslinjen utan ytterligare information som en förskjutning eller tidszon.</p><p>Serialiseringsformat: ISO-8601 extended offset date-time format.</p><p>Det använder DateTimeFormatter.</p><p>ISO_LOCAL_DATE_TIME för att deserialisera och serialisera värdet.</p> <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME">Läs mer</a>.</td>
+        <td><p>Representerar en datumtid utan tidszon, som visas som en millisekund för år-månad-timme-minut-sekund-millisekund.</p><p>Den lagrar inte eller representerar en tidszon.</p><p>I stället är det en beskrivning av datumet, som används för födelsedagar, kombinerat med lokal tid enligt en väggklocka.</p><p>Det kan inte representera en instans på tidslinjen utan ytterligare information som en förskjutning eller tidszon.</p><p>Serialiseringsformat: ISO-8601 extended offset date-time format.</p><p>Det använder DateTimeFormatter.</p><p>ISO_LOCAL_DATE_TIME för att deserialisera och serialisera värdet.</p> <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME">Lär dig mer</a>.</td>
         <td><p>toDateTimeOnly("&lt;dateTimeOnly i ISO-8601-format&gt;")</p></td>
         <td></td>
     </tr>
     <tr>
         <td>dateTime</td>
         <td><p>Datumtidskonstant som även beaktar tidszon.</p><p>Den representerar ett datum/tid med en förskjutning från UTC. Den kan visas som ett ögonblick i tid med ytterligare information om förskjutningen. </p><p>Det är ett sätt att representera ett specifikt "ögonblick" på en viss plats i världen.</p><p>JSON-format: Sträng.</p><p> Den måste kapslas in i en toDateTime-funktion.</p><p>
-        Serialiseringsformat: ISO-8601 extended offset date-time format.</p><p> Det använder DateTimeFormatter.ISO_OFFSET_DATE_TIME för att avserialisera och serialisera värdet.</p> <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE_TIME">Läs mer</a>. 
+        Serialiseringsformat: ISO-8601 extended offset date-time format.</p><p> Det använder DateTimeFormatter.ISO_OFFSET_DATE_TIME för att avserialisera och serialisera värdet.</p> <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE_TIME">Lär dig mer</a>. 
         <p>Du kan också skicka ett heltal som skickar ett epokvärde.</p> <a href="https://www.epochconverter.com/">Läs mer</a>.</p>
         <p>Tidszonen kan anges med en förskjutningskod eller en tidszonskod (exempel: Europa/Paris, Z - betyder UTC).</p></td>
         <td><p>toDateTime("&lt;datumTid i ISO-8601-format&gt;")</p>
@@ -81,7 +81,7 @@ Så här representeras datatypsuttryck:
     </tr>
     <tr>
         <td>varaktighet</td>
-        <td><p>Den representerar en tidsbaserad tidsmängd, till exempel "34,5 sekunder".</p><p> Den modellerar en kvantitet eller tid i millisekunder.</p><p>De tidsenheter som stöds är: millisekunder, sekunder, minuter, timmar, dagar där en dag är lika med 24 timmar.</p><p> År och månader stöds inte eftersom de inte är en fast tidsmängd.</p><p>JSON-format: Sträng. Den måste kapslas in i en toDuration-funktion.</p><p>Serialiseringsformat: För att avserialisera ett tidszon-ID används Java-funktionen java.time.</p><p>Duration.parse: De format som godkänns baseras på varaktighetsformatet PnDTnHnMn.nS enligt ISO-8601 med dagar som anses vara exakt 24 timmar.</p><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html#parse-java.lang.CharSequence-">Läs mer</a>.</td>
+        <td><p>Den representerar en tidsbaserad tidsmängd, till exempel "34,5 sekunder".</p><p> Den modellerar en kvantitet eller tid i millisekunder.</p><p>De tidsenheter som stöds är: millisekunder, sekunder, minuter, timmar, dagar där en dag är lika med 24 timmar.</p><p> År och månader stöds inte eftersom de inte är en fast tidsmängd.</p><p>JSON-format: Sträng. Den måste kapslas in i en toDuration-funktion.</p><p>Serialiseringsformat: För att avserialisera ett tidszon-ID används Java-funktionen java.time.</p><p>Duration.parse: De format som godkänns baseras på varaktighetsformatet PnDTnHnMn.nS enligt ISO-8601 med dagar som anses vara exakt 24 timmar.</p><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html#parse-java.lang.CharSequence-">Lär dig mer</a>.</td>
         <td><p>toDuration("&lt;duration in ISO-8601 format&gt;")</p><p>toDuration(&lt;varaktighet i millisekunder&gt;)</p></td>
         <td><p><pre>toDuration("PT5S") // 5 sekunder</pre></p>
         <p><pre>toDuration(500) // </pre></p>
