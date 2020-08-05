@@ -14,12 +14,12 @@ translation-type: tm+mt
 source-git-commit: d6360d616199d597255610959432c7b93fd4e25c
 workflow-type: tm+mt
 source-wordcount: '76'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# ersätt {#replace}
+# replace {#replace}
 
 Ersätter den första förekomsten som matchar målsträngen med ersättningssträngen i bassträngen.
 
