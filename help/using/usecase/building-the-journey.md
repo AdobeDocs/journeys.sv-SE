@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 771b2b35e0aba412e4eb9e12a5d57de3d4c7068c
 workflow-type: tm+mt
 source-wordcount: '839'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Nu kan **affärsanvändaren** skapa resan. Vår resa kommer att omfatta följand
 * två **[!UICONTROL Event]** verksamheter: &quot;LobbyBeacon&quot; och &quot;RestaurantBeacon&quot;
 * två **[!UICONTROL Condition]** verksamheter
 * tre **[!UICONTROL Push]** verksamheter och en **[!UICONTROL Email]** verksamhet (med Adobe Campaign Standard)
-* en **[!UICONTROL Wait]** aktivitet
+* a **[!UICONTROL Wait]** activity
 * fyra **[!UICONTROL End]** verksamheter
 
 >[!NOTE]
@@ -57,7 +57,7 @@ Mer information om hur du bygger en resa finns i [](../building-journeys/journey
 
    ![](../assets/journeyuc2_15.png)
 
-1. Klicka på **[!UICONTROL Advanced mode]** och definiera följande villkor baserat på fälten &quot;timestamp&quot; och &quot;directMarketing.sending.value&quot; som kommer från datakällan för Adobe Experience Platform. Uttryckets syntax är:
+1. Klicka **[!UICONTROL Advanced mode]** och definiera följande villkor baserat på fälten &quot;timestamp&quot; och &quot;directMarketing.sending.value&quot; som kommer från Adobe Experience Platform datakälla. Uttryckets syntax är:
 
    ```
    count(#{ExperiencePlatformDataSource.MarltonExperience.experienceevent.all(
@@ -146,7 +146,7 @@ Två banor skapas efter ditt villkor:
 
    ![](../assets/journeyuc2_23.png)
 
-1. Lägg till en ny **[!UICONTROL Push]** aktivitet, välj mallen&quot;Måltidsrabatt&quot; och definiera **[!UICONTROL Address]** - och **[!UICONTROL Personalization]** -fälten. Lägg till en **[!UICONTROL End]** aktivitet.
+1. Lägg till en ny **[!UICONTROL Push]** aktivitet, välj mallen&quot;Måltidsrabatt&quot; och definiera **[!UICONTROL Address]** - och **[!UICONTROL Personalization]** -fälten. Lägg till en **[!UICONTROL End]**-aktivitet.  
 
    ![](../assets/journeyuc2_24.png)
 
@@ -154,7 +154,7 @@ Två banor skapas efter ditt villkor:
 
    ![](../assets/journeyuc2_31.png)
 
-1. I den andra sökvägen som följer reservationsvillkoret (ingen rumsbokning) lägger du till en **[!UICONTROL Push]** aktivitet och väljer mallen&quot;Rumstariffer&quot;. Lägg till en **[!UICONTROL End]** aktivitet.
+1. I den andra sökvägen som följer reservationsvillkoret (ingen rumsbokning) lägger du till en **[!UICONTROL Push]** aktivitet och väljer mallen&quot;Rumstariffer&quot;. Lägg till en **[!UICONTROL End]**-aktivitet.  
 
    ![](../assets/journeyuc2_25.png)
 
@@ -172,7 +172,7 @@ Två banor skapas efter ditt villkor:
 
    ![](../assets/journeyuc2_28.png)
 
-1. Lägg till en **[!UICONTROL End]** aktivitet.
+1. Lägg till en **[!UICONTROL End]**-aktivitet.  
 
 Klicka på **[!UICONTROL Test]** växlingsknappen och testa din resa. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa det igen. Mer information om testläget finns i [](../building-journeys/testing-the-journey.md).
 
