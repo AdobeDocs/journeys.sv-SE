@@ -21,17 +21,17 @@ ht-degree: 0%
 
 # Arbeta med Adobe Campaign {#using_adobe_campaign_standard}
 
-Du kan skicka e-postmeddelanden, push-meddelanden och SMS med Adobe Campaign Standardens Transactional Messaging-funktioner.
+Du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Standard Transactional Messaging-funktioner.
 
-[!DNL Journey Orchestration] levereras med en körklar åtgärd som tillåter anslutning till Adobe Campaign Standard.
+[!DNL Journey Orchestration] levereras med en körklar åtgärd som möjliggör anslutning till Adobe Campaign Standard.
 
 Campaign Standardens transaktionsmeddelande och tillhörande händelse måste publiceras för att kunna användas i Journey Orchestration. Om händelsen publiceras men meddelandet inte visas visas den inte i Journey Orchestration-gränssnittet. Om meddelandet publiceras men dess associerade händelse inte är det visas det i Journey Orchestration-gränssnittet, men det går inte att använda det.
 
 >[!NOTE]
 >
->För att undvika överbelastning av Adobe Campaign Standarden Transactional Messaging rekommenderar vi att du ställer in en **begränsningsregel** för Campaign Standarden.
+>För att undvika att överbelasta Adobe Campaign Standard Transactional Messaging rekommenderar vi att du ställer in en **begränsningsregel** för integrering av Campaign Standarder.
 >
->Läs mer om SLA för transaktionsmeddelanden i [Adobe Campaign Standardens produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/campaign-standard.html).
+>Läs mer om SLA för transaktionsmeddelanden i [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/campaign-standard.html).
 
 Så här konfigurerar du den:
 
@@ -39,7 +39,7 @@ Så här konfigurerar du den:
 
    ![](../assets/actioncampaign.png)
 
-1. Kopiera webbadressen för din Adobe Campaign Standard-instans och klistra in den i **[!UICONTROL URL]** fältet.
+1. Kopiera din Adobe Campaign Standard-instans-URL och klistra in den i **[!UICONTROL URL]** fältet.
 
 1. Klicka på **[!UICONTROL Test the instance URL]** för att testa instansens giltighet.
 
@@ -49,10 +49,10 @@ Så här konfigurerar du den:
    >
    >* Värden är &quot;.campaign.adobe.com&quot; eller &quot;.campaign-sandbox.adobe.com&quot;,
    >* URL:en börjar med https,
-   >* ORG som är associerad med den här Adobe Campaign Standardens instans är samma som Journey Orchestration ORG.
+   >* Den ORG som är associerad med den här Adobe Campaign Standard-instansen är samma som Journey Orchestration ORG.
 
 
-När du utformar din resa kommer tre åtgärder att vara tillgängliga i **[!UICONTROL Action]** kategorin: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]** (se [Använda funktionsmakron](../building-journeys/using-adobe-campaign-actions.md)i Adobe Campaign). **Reaktionshändelsen** gör även att du kan reagera på meddelandeklickningar, öppningar osv. (se [Reaktioner, händelser](../building-journeys/reaction-events.md)).
+När du utformar din resa kommer tre åtgärder att vara tillgängliga i **[!UICONTROL Action]** kategorin: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]** (se [Använda Adobe Campaign-åtgärder](../building-journeys/using-adobe-campaign-actions.md)). **Reaktionshändelsen** gör även att du kan reagera på meddelandeklickningar, öppningar osv. (se [Reaktioner, händelser](../building-journeys/reaction-events.md)).
 
 ![](../assets/journey58.png)
 
