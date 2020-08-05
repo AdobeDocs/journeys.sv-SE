@@ -25,7 +25,7 @@ Det här användningsexemplet visar hur du kan utnyttja trötthetspoäng för at
 
 >[!CAUTION]
 >
->Funktionen för prediktiv trötthet är bara tillgänglig för kunder som använder funktionen Adobe Campaign Standard Data Service.
+>Funktionen för prediktiv trötthet är bara tillgänglig för kunder som använder Adobe Campaign Standard Data Service.
 
 ## Konfigurera händelsen {#section_ptb_ws1_ffb}
 
@@ -35,7 +35,7 @@ Följ stegen som beskrivs i [](../event/about-events.md).
 
 Utför följande steg för att välja utmattningspoängfält i den inbyggda datakällan:
 
-1. Klicka på fliken på den översta menyn och välj den inbyggda Adobe Experience Platform-datakällan. **[!UICONTROL Data Sources]**
+1. Klicka på fliken på den övre menyn och välj den inbyggda Adobe Experience Platform-datakällan **[!UICONTROL Data Sources]** .
 
    ![](../assets/journey23.png)
 
