@@ -72,13 +72,13 @@ Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 j
 >
 >Funktionen för tidsoptimering för e-postutskick är bara tillgänglig för kunder som använder funktionen Adobe Campaign Standard Data Service.
 
-Den här typen av väntan använder en poäng som beräknas i Adobe Experience Platform. Poängen beräknar sannolikheten för att klicka eller öppna ett e-postmeddelande i framtiden baserat på tidigare beteenden. Observera att algoritmen som beräknar poängen behöver en viss mängd data för att fungera. Om det inte finns tillräckligt med data används därför standardväntetiden. Vid publiceringen får du ett meddelande om att standardtiden gäller.
+Den här typen av väntan använder en bakgrundsmusik som beräknas i Adobe Experience Platform. Poängen beräknar sannolikheten för att klicka eller öppna ett e-postmeddelande i framtiden baserat på tidigare beteenden. Observera att algoritmen som beräknar poängen behöver en viss mängd data för att fungera. Om det inte finns tillräckligt med data används därför standardväntetiden. Vid publiceringen får du ett meddelande om att standardtiden gäller.
 
 >[!NOTE]
 >
 >Den första händelsen i din resa måste ha ett namnutrymme.
 >
->Den här funktionen är bara tillgänglig efter en **[!UICONTROL Email]** aktivitet. Du måste ha Adobe Campaign Standarder.
+>Den här funktionen är bara tillgänglig efter en **[!UICONTROL Email]** aktivitet. Du måste ha Adobe Campaign Standard.
 
 1. I **[!UICONTROL Amount of time]** fältet anger du hur många timmar e-postutskick ska optimeras.
 1. I **[!UICONTROL Optimization type]** fältet väljer du om optimeringen ska öka antalet klick eller öppna.
