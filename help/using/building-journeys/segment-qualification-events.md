@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Om segmentkvalificeringshändelser{#about-segment-qualification}
 
-Med den här aktiviteten kan din resa lyssna på ingångar och utgångar för profiler i Adobe Experience Platform-segment för att få individer att komma in på eller gå framåt under en resa. Mer information om hur du skapar segment finns i det här [avsnittet](../segment/about-segments.md).
+Med den här aktiviteten kan din resa lyssna på ingångar och utgångar för profiler i Adobe Experience Platform-segment för att få individer att komma in på eller gå framåt under en resa. For more information on segment creation, refer to this [section](../segment/about-segments.md).
 
 Säg att du har ett &quot;silverkundssegment&quot;. Med den här aktiviteten kan ni få alla nya silverkunder att ta sig in på en resa och skicka en serie personaliserade meddelanden till dem.
 
@@ -61,7 +61,7 @@ Se [Villkorsaktivitet](../building-journeys/condition-activity.md#about_conditio
 
 ## Bästa tillvägagångssätt för segment {#best-practices-segments}
 
-Denna **[!UICONTROL Segment Qualification]** verksamhet gör det möjligt att omedelbart ta sig in på resor för personer som är kvalificerade eller diskvalificerade från ett Adobe Experience Platform-segment.
+Denna **[!UICONTROL Segment Qualification]** verksamhet gör det möjligt att omedelbart ta sig in på resor för personer som kvalificerats eller diskvalificerats från ett Adobe Experience Platform-segment.
 
 Mottagningshastigheten för den här informationen är hög. Mätningarna visar en hastighet på 10 000 mottagna händelser per sekund. Därför bör du se till att du förstår hur höga ingångstoppar kan bli, hur du undviker dem och hur du gör din resa redo för dem.
 
@@ -77,7 +77,7 @@ Vid användning av segmentkvalificering för direktuppspelade segment är risken
 
 ### Så här undviker du överbelastningar{#overloads-speed-segment-qualification}
 
-Här följer några tips som hjälper dig att undvika överbelastade system som används i resor (datakällor, anpassade åtgärder, åtgärder för Adobe Campaign Standard).
+Här följer några tips som hjälper dig att undvika att överbelasta system som används på resor (datakällor, anpassade åtgärder, Adobe Campaign Standard-åtgärder).
 
 Använd inte ett batchsegment i en **[!UICONTROL Segment Qualification]** aktivitet omedelbart efter att det har skapats. Den första beräkningstopp undviks. Observera att det blir en gul varning på arbetsytan om du ska använda ett segment som aldrig har beräknats.
 
