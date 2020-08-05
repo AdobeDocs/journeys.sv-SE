@@ -35,7 +35,7 @@ Du kan även komma åt [!DNL Journey Orchestration] från Experience Cloud hemsi
 
 ![](../assets/journey1bis.png)
 
-## Lära känna gränssnittet{#section_jsq_zr1_ffb}
+## Upptäcka gränssnittet{#section_jsq_zr1_ffb}
 
 >[!CONTEXTUALHELP]
 >id="jo_home"
