@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 504d19f151863378ea8d0a84978d7df4304d6614
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 * **[Upptäck nyheterna](using/release-notes/release-notes.md)**<br/>Läs mer om de senaste releaserna.
 
-## De vanligaste sidorna
+## Översta sidor
 
 <table>
 <tr>
