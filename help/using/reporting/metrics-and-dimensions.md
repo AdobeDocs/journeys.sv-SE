@@ -56,8 +56,8 @@ Tabellen nedan visar en lista över de leveransdimensioner som används i resera
 | **Enhet** | Enhet från vilken e-post/SMS/push-meddelandet öppnades/visades/klickades. |
 | **Meddelandetyp** | Kanal som används för leverans, till exempel e-post, SMS, push-meddelanden eller In-App. |
 | **Namn på mobilapp** | Mobilprogrammets namn |
-| **Platform** | Platform för den enhet som meddelandet öppnades/visades/klickades på. |
-| **[!UICONTROL Push platform]** | Platform för den enhet som push-meddelandet öppnades från, till exempel iOS eller Android. |
+| **Plattform** | Plattform för den enhet som meddelandet öppnades/visades/klickades på från. |
+| **[!UICONTROL Push platform]** | Plattform för enheten som push-meddelandet öppnades från, till exempel iOS eller Android. |
 | **Mottagardomän** | Domän som används för att öppna e-postmeddelandet. |
 | **Spårnings-URL** | URL som användaren klickade på i meddelandet. |
 | **Kategori för spårnings-URL** | Kategori som tilldelats spårnings-URL:en. |
