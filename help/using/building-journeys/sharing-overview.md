@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Översikt över delning av resesteg{#sharing-overview}
 
-[!DNL Journey Orchestration] skickar automatiskt data om reseprestanda till Adobe Experience Platform så att de kan kombineras med andra data för analysändamål.
+[!DNL Journey Orchestration] skickar automatiskt data om reseprestanda till Adobe Experience Platform så att de kan kombineras med andra data i analyssyfte.
 
-Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Med den här funktionen kan ni kombinera [!DNL Journey Orchestration] data med händelsedata längre fram i kedjan, som hur många konverteringar som har gjorts, hur mycket engagemang som har gjorts på webbplatsen eller hur många transaktioner som har gjorts i butiken. Reseinformationen kan kombineras med data på Adobe Experience Platform, antingen från andra digitala resurser eller från offlineanläggningar, för att ge en mer heltäckande bild av resultatet.
+Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Med den här funktionen kan ni kombinera [!DNL Journey Orchestration] data med händelsedata längre fram i kedjan, som hur många konverteringar som har gjorts, hur mycket engagemang som har gjorts på webbplatsen eller hur många transaktioner som har gjorts i butiken. Reseinformationen kan kombineras med data om Adobe Experience Platform, antingen från andra digitala resurser eller från offlineanläggningar, för att ge en mer heltäckande bild av resultatet.
 
-[!DNL Journey Orchestration] skapar automatiskt de scheman och strömmar som behövs till datauppsättningar för varje steg som en individ tar på en resa. En steghändelse motsvarar en person som flyttar från en nod till en annan under en resa. I en resa som har en händelse, ett villkor och en åtgärd skickas till exempel tre steghändelser till Adobe Experience Platform.
+[!DNL Journey Orchestration] skapar automatiskt nödvändiga scheman och strömmar till datauppsättningar till Adobe Experience Platform för varje steg en individ tar på en resa. En steghändelse motsvarar en person som flyttar från en nod till en annan under en resa. Om en resa till exempel innehåller en händelse, ett villkor och en åtgärd skickas tre steghändelser till Adobe Experience Platform.
 
 Listan över XDM-fält som skickas är omfattande. Vissa innehåller systemgenererade koder och andra har användarvänliga namn som kan läsas. Exempel är etiketten för reseaktiviteten eller stegstatusen: hur många gånger en åtgärd orsakade timeout eller fel.
 
@@ -61,4 +61,4 @@ Listorna med XDM-fält som skickas till Adobe Experience Platform finns här:
 * [travelStep, händelseidentitetsfält](../building-journeys/sharing-identity-fields.md)
 * [resefält](../building-journeys/sharing-journey-fields.md)
 
-Titta på den här [självstudievideon](https://docs.adobe.com/content/help/en/journey-orchestration-learn/tutorials/reporting-step-events-to-adobe-experience-platform.html)om du vill ha mer information om steghändelser som rapporterar till Adobe Experience Platform.
+Titta på den här [självstudievideon](https://docs.adobe.com/content/help/en/journey-orchestration-learn/tutorials/reporting-step-events-to-adobe-experience-platform.html)om du vill ha mer information om hur du rapporterar steghändelser till Adobe Experience Platform.
