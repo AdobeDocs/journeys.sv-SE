@@ -45,7 +45,7 @@ I **[!UICONTROL Properties]** väljer du en tidszon.
 
 ## Använda profiler för att definiera resetidszonen {#timezone-from-profiles}
 
-Om resans inträde-händelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid på Adobe Experience Platform, är tidszonen fördefinierad med den som anges i profilen för den person som löper på resan.
+Om resans inträde har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid i Adobe Experience Platform, är tidszonen fördefinierad med den som anges i profilen för den person som passerar resan.
 
 Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas under resan.
 
