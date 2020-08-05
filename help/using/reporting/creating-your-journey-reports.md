@@ -51,15 +51,15 @@ Så här får du tillgång till reserapporter och kan börja följa upp hur bra 
 
    ![](../assets/dynamic_report_journey_3.png)
 
-1. Dra och släpp så många paneler eller frihandstabeller som behövs från **[!UICONTROL Panels]** fliken. Mer information finns i det här [avsnittet](#adding-panels).
+1. Dra och släpp så många paneler eller frihandstabeller som behövs från **[!UICONTROL Panels]** fliken. For more information, refer to this [section](#adding-panels).
 
    ![](../assets/dynamic_report_journey_4.png)
 
-1. Du kan sedan börja filtrera data genom att dra och släppa mått och mätvärden från **[!UICONTROL Components]** fliken till frihandstabellen. Mer information finns i det här [avsnittet](#adding-components).
+1. Du kan sedan börja filtrera data genom att dra och släppa mått och mätvärden från **[!UICONTROL Components]** fliken till frihandstabellen. For more information, refer to this [section](#adding-components).
 
    ![](../assets/dynamic_report_journey_5.png)
 
-1. Om du vill få en tydligare bild av dina data kan du lägga till visualiseringar från **[!UICONTROL Visualizations]** fliken. Mer information finns i det här [avsnittet](#adding-visualizations).
+1. Om du vill få en tydligare bild av dina data kan du lägga till visualiseringar från **[!UICONTROL Visualizations]** fliken. For more information, refer to this [section](#adding-visualizations).
 
 ## Lägga till paneler{#adding-panels}
 
