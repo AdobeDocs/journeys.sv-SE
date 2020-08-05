@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -42,14 +42,14 @@ Observera att utformningen av resorna har funktionell inverkan. När flera sökv
 
 Du kan skapa en annan sökväg för målgrupper som inte uppfyller de definierade villkoren genom att markera **[!UICONTROL Show path for other cases than the one(s) above]**. Observera att det här alternativet inte är tillgängligt vid delning. Se [Procentuell delning](#percentage_split).
 
-I det enkla läget kan du utföra enkla frågor baserat på en kombination av fält. Alla tillgängliga fält visas till vänster på skärmen. Dra och släpp fält till huvudzonen. Om du vill kombinera de olika elementen, låser du ihop dem till varandra för att skapa olika grupper och/eller gruppnivåer. Du kan sedan välja en logisk operator för att kombinera element på samma nivå:
+I det enkla läget kan du utföra enkla frågor baserat på en kombination av fält. Alla tillgängliga fält visas till vänster på skärmen. Dra och släpp fält till huvudzonen. Om du vill kombinera de olika elementen, låser du ihop dem till varandra för att skapa olika grupper och/eller gruppnivåer. Du kan sedan välja en logisk operatör för att kombinera element på samma nivå:
 
 * OCH: en korsning av två kriterier. Endast de element som uppfyller alla villkor beaktas.
 * ELLER: en förening av två kriterier. Element som matchar minst ett av de två villkoren beaktas.
 
 ![](../assets/journey64.png)
 
-Om ni använder [Adobe Experience Platform Segmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) för att skapa era segment kan ni utnyttja dem i era resevillkor. Mer information finns i [Använda segment under villkor](../segment/using-a-segment.md).
+Om ni använder [Adobe Experience Platform segmenteringstjänst](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) för att skapa era segment kan ni utnyttja dem i era resevillkor. Mer information finns i [Använda segment under villkor](../segment/using-a-segment.md).
 
 
 >[!NOTE]
