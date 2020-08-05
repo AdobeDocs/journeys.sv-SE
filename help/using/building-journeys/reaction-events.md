@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Reaktionshändelser {#section_dhx_gss_dgb}
 
-En av de olika händelseaktiviteterna på paletten är den inbyggda **[!UICONTROL Reactions]** händelsen. Med den här aktiviteten kan du reagera på spårningsdata för ett meddelande som skickas med e-post, SMS eller push-aktiviteter inom samma resa. Den här informationen kommer från transaktionsmeddelanden inom Adobe Campaign Standard. Vi samlar in den här informationen i realtid när den delas med Adobe Experience Platform. För push-meddelanden kan du reagera på klickade, skickade eller misslyckade meddelanden. För SMS-meddelanden kan du reagera på skickade eller misslyckade meddelanden. För e-postmeddelanden kan du reagera på klickade, skickade, öppnade eller misslyckade meddelanden.
+En av de olika händelseaktiviteterna på paletten är den inbyggda **[!UICONTROL Reactions]** händelsen. Med den här aktiviteten kan du reagera på spårningsdata för ett meddelande som skickas med e-post, SMS eller push-aktiviteter inom samma resa. Den här informationen kommer från transaktionsmeddelanden i Adobe Campaign Standard. Vi sparar denna information i realtid när den delas med Adobe Experience Platform. För push-meddelanden kan du reagera på klickade, skickade eller misslyckade meddelanden. För SMS-meddelanden kan du reagera på skickade eller misslyckade meddelanden. För e-postmeddelanden kan du reagera på klickade, skickade, öppnade eller misslyckade meddelanden.
 
 Du kan också använda den här funktionen för att utföra en åtgärd när det inte finns någon reaktion på dina meddelanden. Det gör du genom att skapa en andra sökväg parallellt med reaktionsaktiviteten och lägga till en vänteaktivitet. Om ingen reaktion inträffar under den period som anges i vänteaktiviteten väljs den andra banan. Du kan välja att skicka t.ex. ett uppföljningsmeddelande.
 
@@ -40,7 +40,7 @@ Här följer de olika stegen för att konfigurera reaktionshändelser:
 
 >[!NOTE]
 >
->Reaktionshändelser fungerar med Adobe Campaign Standard, oavsett om den distribueras på AWS- eller Azure-servrar.
+>Reaktionshändelser fungerar med Adobe Campaign Standard, oavsett om de distribueras på AWS- eller Azure-servrar.
 >
 >Reaktionshändelser kan inte spåra e-post, SMS eller push-åtgärder som utförs under en annan resa.
 >
