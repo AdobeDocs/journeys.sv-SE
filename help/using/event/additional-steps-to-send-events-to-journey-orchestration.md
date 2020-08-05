@@ -28,7 +28,7 @@ ht-degree: 0%
 
 Om du vill konfigurera händelser som ska skickas till **[!UICONTROL Streaming Ingestion APIs]** och användas i [!DNL Journey Orchestration]måste du göra följande:
 
-1. Hämta URL:en för inlopp från API:erna för Adobe Experience Platform (se API:er för [direktuppspelning](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/overview.html)).
+1. Hämta URL:en för inlopp från Adobe Experience Platform API:er (se API:er för [direktuppspelning](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/overview.html)).
 1. Kopiera nyttolasten från nyttolastförhandsvisningen på **[!UICONTROL Event]** menyn. Se [](../event/defining-the-payload-fields.md).
 
 Sedan måste du konfigurera det datasystem som överför händelser till API:er för direktuppspelning av inmatning med den nyttolast som du kopierade:
