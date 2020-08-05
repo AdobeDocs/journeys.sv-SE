@@ -23,12 +23,12 @@ ht-degree: 0%
 
 Kundens AI ingår i Intelligent Services. Det hjälper till att förutsäga vad en kund sannolikt kommer att göra. Se [dokumentationen](https://docs.adobe.com/content/help/en/experience-platform/intelligent-services/customer-ai/overview.html).
 
-Med Customer AI kan varumärken skapa maskininlärningsbaserade poäng för bortfall eller konvertering som blir tillgängliga som profilattribut i Adobe Experience Platform-profilerna (kundprofil i realtid).
+Med kundens AI kan varumärken skapa maskininlärningsbaserade poäng som är tillgängliga som profilattribut i Adobe Experience Platform-profilerna (kundprofil i realtid).
 
 De kan därför användas som andra profilattribut i Journey Orchestration-villkor (för att fatta de bästa besluten), åtgärder eller segmentbyggen.
 
 ![](../assets/customer-ai.png)
 
-Observera att kunds-AI är en betalfunktion i Adobe Experience Platform.
+Observera att AI är en betalfunktion i Adobe Experience Platform.
 
 
