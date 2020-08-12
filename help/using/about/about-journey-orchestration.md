@@ -12,41 +12,41 @@ translation-type: tm+mt
 source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 0%
+ht-degree: 97%
 
 ---
 
 
 # Om [!DNL Journey Orchestration]{#concept_nd3_mqt_52b}
 
-Bygg realtidssamordning med hjälp av kontextuella data lagrade i händelser eller datakällor.
+Bygg en orkestrering i realtid med hjälp av kontextuella data lagrade i händelser eller datakällor.
 
 [!DNL Journey Orchestration] är en programtjänst som är integrerad med Adobe Experience Platform.
 
 ![](../assets/journeydiagram.png)
 
-[!DNL Journey Orchestration] möjliggör realtidssamordning som bygger på kontextuella data från händelser, information från Adobe Experience Platform eller data från API-tjänster från tredje part. Du kan konfigurera en anpassad åtgärd om du använder ett tredjepartssystem för att skicka meddelanden. Om du har Adobe Campaign Standard kan du skicka e-post, push-meddelanden och SMS med Adobe Campaign Standard [Transactional Messaging-funktioner](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
+[!DNL Journey Orchestration] möjliggör orkestrering i realtid som bygger på kontextuella data från händelser, information från Adobe Experience Platform eller data från API-tjänster från tredje part. Du kan konfigurera en anpassad åtgärd om du använder ett tredjepartssystem för att skicka meddelanden. Om du har Adobe Campaign Standard kan du skicka e-postmeddelanden, push-meddelanden och SMS med funktionen [Transaktionsmeddelanden](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html) i Adobe Campaign Standard.
 
-På fliken Händelsekonfiguration konfigurerar en **teknisk användare** händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobe Experience Data Model (XDM). Händelser kommer från API:er för direktuppspelning av inmatning för autentiserade och oautentiserade händelser (som Adobe Mobile SDK-händelser).
+På fliken Händelsekonfiguration kan en **teknisk användare** konfigurera händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobes upplevelsedatamodell (XDM). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK).
 
-På fliken för konfiguration av datakälla konfigurerar en **teknisk användare** :
+På fliken för konfiguration av datakälla kan en **teknisk användare** konfigurera:
 
-* De olika fält som visas i Adobe Experience Platform i kunddesignern för villkorsbyggnad och personalisering.
-* De ytterligare anpassade datakällor som ni använder i kundresedesignern. Anpassade datakällor är anslutningar mellan [!DNL Journey Orchestration] och tredjepartssystem eller -tjänster via API. Du kan ansluta ett tredjepartssystem, till exempel ett lojalitetssystem. Tredjepartstjänster kan till exempel vara ett väder-API.
+* De olika fält som ses från Adobe Experience Platform i resedesignern för villkorsbyggnad och personalisering.
+* De ytterligare anpassade datakällor som du kan använda i resedesignern. Anpassade datakällor är anslutningar mellan [!DNL Journey Orchestration] och tredjepartssystem eller -tjänster via API. Du kan ansluta ett tredjepartssystem, till exempel ett lojalitetssystem. Tredjepartstjänster kan till exempel vara ett väder-API.
 
-Med resedesignern kan en **affärsanvändare** enkelt dra och släppa ett tävlingsbidrag, lägga till villkor och specificera vilken åtgärd som ska utföras.
+Med resedesignern kan en **företagsanvändare** enkelt dra och släppa en starthändelse, lägga till villkor och specificera vilken åtgärd som ska utföras.
 
-Sedan skapar du villkor baserade på:
+Du kan sedan skapa villkor baserade på:
 
 * tid
-* data som kommer från händelsenyttolasten
-* information från datakällor: Datakälla för kundprofil i realtid eller anpassade datakällor
+* data som kommer från händelsens nyttolast
+* information från datakällor: datakälla i en realtidskundprofil eller anpassade datakällor
 
-Du kan använda det delade villkoret för att skicka personer på resan till olika riktningar.
+Du kan använda det delade villkoret för att skicka personer, som befinner sig i resan, i olika riktningar.
 
-Med åtgärdsaktiviteter kan du sedan skicka ett meddelande via ett tredjepartssystem. Om du har Adobe Campaign Standard kan du skicka personaliserade SMS-meddelanden, push-meddelanden eller e-postmeddelanden i realtid.
+Med åtgärdsaktiviteter kan du sedan skicka ett meddelande via ett tredjepartssystem. Med Adobe Campaign Standard kan du skicka personaliserade SMS-meddelanden, push-meddelanden eller e-postmeddelanden i realtid.
 
-I likhet med [!DNL Journey Orchestration] flerstegsläge kan du skapa avancerade scenarier. Efter en första händelse och åtgärd kan du till exempel dra andra händelser. Sedan kan du lägga till en andra åtgärd, placera en vänteaktivitet för att vänta en stund, lägga till ett delat villkor för att skicka personer till två olika sökvägar och sedan skicka olika meddelanden.
+Eftersom [!DNL Journey Orchestration] använder sig av flera olika steg kan du skapa avancerade scenarier. Efter en första händelse och åtgärd kan du till exempel dra till andra händelser. Sedan kan du lägga till en andra åtgärd, placera en vänteaktivitet, lägga till ett delat villkor för att skicka personer på två olika vägar och sedan skicka olika meddelanden.
 
 >[!NOTE]
 >
