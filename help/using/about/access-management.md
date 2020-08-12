@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 5a480ba736b642485f2078a6e6c40c28a11f38a3
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 5%
+ht-degree: 96%
 
 ---
 
@@ -21,22 +21,22 @@ ht-degree: 5%
 
 ## Om åtkomsthantering {#about-access-management}
 
-[!DNL Journey Orchestration] I kan du tilldela en uppsättning behörigheter till dina användare för att definiera vilken del av gränssnittet de kan komma åt.
+Med [!DNL Journey Orchestration] kan du tilldela en uppsättning behörigheter till dina användare för att definiera vilken del av gränssnittet de ska kunna komma åt.
 
-De kan hanteras av administratörer som har åtkomst till Admin Console. Mer information om Admin Console finns i denna [dokumentationen](https://helpx.adobe.com/se/enterprise/managing/user-guide.html).
+De kan hanteras av administratörer som har åtkomst till Admin Console. Se den här [dokumentationen](https://helpx.adobe.com/se/enterprise/managing/user-guide.html) för mer information om Admin Console.
 
-Användaren måste vara: [!DNL Journey Orchestration]
+För att få åtkomst till [!DNL Journey Orchestration] måste användaren vara:
 
-* del av en [!DNL Journey Orchestration] behörighet **[!UICONTROL product profile]** som är kopplad till [!DNL Journey Orchestration] behörigheter.
-* del av en [!DNL Adobe Experience Platform]**[!UICONTROL product profile]**. Det finns inget obligatoriskt tillstånd att ha. Användaren bör ha **[!UICONTROL profile management]** behörighet att skapa och redigera plattformssegment från [!DNL Journey Orchestration] gränssnittet. Mer information om detta hittar du på den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/access-control/home.html#adobe-admin-console).
+* En del av en **[!UICONTROL product profile]** i [!DNL Journey Orchestration] som är kopplad till [!DNL Journey Orchestration]-behörigheter.
+* En del av en **[!UICONTROL product profile]** i [!DNL Adobe Experience Platform]. Det finns inget obligatoriskt tillstånd att inneha. Användaren ska ha **[!UICONTROL profile management]**-behörighet för att skapa och redigera plattformssegment från gränssnittet i [!DNL Journey Orchestration]. Se denna [sida](https://docs.adobe.com/content/help/sv-SE/experience-platform/access-control/home.html#adobe-admin-console) för mer information om detta.
 
-På Admin Console kan du tilldela användarna en av följande färdiga produktprofiler:
+I Admin Console kan du tilldela användarna en av följande färdiga produktprofiler:
 
 * **[!UICONTROL Limited Access User]**: användare med skrivskyddad åtkomst till resor och rapporter. Den här produktprofilen innehåller följande behörigheter:
    * Läsa resor
-   * Läs rapporter
+   * Läsa rapporter
 
-* **[!UICONTROL Administrators]**: användare med tillgång till administrationsmenyerna med möjlighet att hantera resor, evenemang och rapporter. Den här produktprofilen innehåller följande behörigheter:
+* **[!UICONTROL Administrators]**: användare med tillgång till administrationsmenyerna med möjlighet att hantera resor, händelser och rapporter. Den här produktprofilen innehåller följande behörigheter:
    * Hantera resor
    * Publicera resor
    * Hantera händelser, datakällor och åtgärder
@@ -44,15 +44,15 @@ På Admin Console kan du tilldela användarna en av följande färdiga produktpr
 
    >[!NOTE]
    >
-   >**[!UICONTROL Administrators]** är den enda produktprofil som gör det möjligt att skapa, publicera och publicera transaktionsmeddelanden (eller meddelandemallar) i Adobe Campaign Standard. Den här produktprofilen behövs om du använder Adobe Campaign Standard för att skicka meddelanden på dina resor.
+   >**[!UICONTROL Administrators]** är den enda produktprofil som har åtkomst till att skapa, redigera och publicera transaktionsmeddelanden (eller meddelandemallar) i Adobe Campaign Standard. Den här produktprofilen behövs om du använder Adobe Campaign Standard för att skicka meddelanden i dina resor.
 
-* **[!UICONTROL Standard User]**: användare med grundläggande åtkomst, t.ex. resehantering. Den här produktprofilen innehåller följande behörigheter:
+* **[!UICONTROL Standard User]**: användare med grundläggande åtkomst, till exempel resehantering. Den här produktprofilen innehåller följande behörigheter:
    * Hantera resor
    * Publicera resor
    * Hantera rapporter
 
-Du kan också skapa egna produktprofiler om de färdiga profilerna inte räcker till för att hantera användarna.
-Användarna måste alltid vara länkade till en produktprofil så att du kan tilldela dem specifika inbyggda behörigheter som:
+Du kan också skapa egna produktprofiler om de färdiga profilerna inte räcker för att hantera användarna.
+Användare måste alltid vara länkade till en produktprofil för att du ska kunna tilldela dem specifika inbyggda behörigheter såsom:
 
 * **[!UICONTROL Read journeys]**
 * **[!UICONTROL Read reports]**
@@ -62,63 +62,63 @@ Användarna måste alltid vara länkade till en produktprofil så att du kan til
 * **[!UICONTROL Publish journeys]**
 * **[!UICONTROL Manage reports]**
 
-Du hittar kompatibiliteten mellan behörigheter och [!DNL Journey Orchestration]de olika funktionerna nedan.
+Du hittar kompatibiliteten mellan behörigheter och de olika funktionerna i [!DNL Journey Orchestration] nedan.
 
 ![](../assets/do-not-localize/journey_permission.png)
 
 ## Skapa en produktprofil {#create-product-profile}
 
-[!DNL Journey Orchestration] I kan du skapa egna produktprofiler och tilldela en uppsättning behörigheter och sandlådor till dina användare. Med produktprofiler kan du auktorisera eller neka åtkomst till vissa funktioner eller objekt i gränssnittet.
+Med [!DNL Journey Orchestration] kan du skapa anpassade produktprofiler och tilldela en uppsättning behörigheter och sandlådor till dina användare. Med produktprofiler kan du auktorisera eller neka åtkomst till vissa funktioner eller objekt i gränssnittet.
 
-Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experience Platform-dokumentationen](https://docs.adobe.com/content/help/en/experience-platform/sandbox/ui/user-guide.html).
+Se [dokumentationen om Adobe Experience Platform](https://docs.adobe.com/content/help/sv-SE/experience-platform/sandbox/ui/user-guide.html) för mer information om hur du skapar och hanterar sandlådor.
 
 Så här skapar du en produktprofil och tilldelar en uppsättning behörigheter och sandlådor:
 
-1. Markera i Admin Console **[!UICONTROL Journey Orchestration]**. Klicka på **[!UICONTROL New Profile]** på fliken **[!UICONTROL Product profile]**.
+1. Välj **[!UICONTROL Journey Orchestration]** i Admin Console. Klicka på **[!UICONTROL New Profile]** på fliken **[!UICONTROL Product profile]**.
 
    ![](../assets/do-not-localize/user_management_5.png)
 
-1. Lägg till en **[!UICONTROL Profile Name]** och **[!UICONTROL Description]** en ny produktprofil. Om du vill att din profil **[!UICONTROL Display name]** ska vara annorlunda avmarkerar du **[!UICONTROL Same as Profile Name]** och skriver in **[!UICONTROL Display name]**.
+1. Lägg till ett **[!UICONTROL Profile Name]** och en **[!UICONTROL Description]** för din nya produktprofil. Avmarkera **[!UICONTROL Same as Profile Name]** och ange ett **[!UICONTROL Display name]** om du vill att din profils **[!UICONTROL Display name]** ska vara annorlunda.
 
-1. I **[!UICONTROL User Notifications]** kategorin väljer du om användare ska meddelas via e-post när de läggs till eller tas bort från den här produktprofilen.
+1. I kategorin **[!UICONTROL User Notifications]** väljer du om användare ska meddelas via e-post när de läggs till i eller tas bort från den här produktprofilen.
 
-1. När du är klar klickar du på **[!UICONTROL Done]**. Din nya produktprofil har skapats.
+1. Klicka på **[!UICONTROL Done]** när du är klar. Den nya produktprofilen har skapats.
 
    ![](../assets/do-not-localize/user_management_1.png)
 
-1. Välj din nya produktprofil för att börja hantera behörigheter. Lägg till användare i produktprofilen på **[!UICONTROL Users]** fliken. Mer information om detta hittar du på den här [sidan](../about/access-management.md#assigning-product-profile).
+1. Välj den nya produktprofilen för att börja hantera behörigheter. Lägg till användare i produktprofilen på fliken **[!UICONTROL Users]**. Se denna [sida](../about/access-management.md#assigning-product-profile) för mer information om detta.
 
-1. Utför samma steg som beskrivs ovan för att lägga **[!UICONTROL Admin]** till i din produktprofil.
+1. Utför samma steg som beskrivs ovan för att lägga till **[!UICONTROL Admin]** i din produktprofil.
 
-1. På **[!UICONTROL Permissions]** fliken väljer du en av de två kategorierna **[!UICONTROL Sandbox]** eller **[!UICONTROL Authoring]** för att öppna **[!UICONTROL Edit Permissions]** sidan och lägga till eller ta bort behörigheter för produktprofilen.
+1. På fliken **[!UICONTROL Permissions]** väljer du en av de två kategorierna **[!UICONTROL Sandbox]** eller **[!UICONTROL Authoring]** för att öppna sidan **[!UICONTROL Edit Permissions]** och lägga till eller ta bort behörigheter för produktprofilen.
 
    ![](../assets/do-not-localize/user_management_7.png)
 
-1. I behörighetskategorin väljer du vilken eller vilka sandlådor som ska tilldelas till din produktprofil. **[!UICONTROL Sandboxes]** Under **[!UICONTROL Available Permissions Items]** klickar du på plusikonen (+) för att tilldela sandlådor till din profil. For more information on sandboxes, refer to this [section](../about/access-management.md#sandboxes).
+1. I behörighetskategorin **[!UICONTROL Sandboxes]** kan du välja vilka sandlådor som ska tilldelas produktprofilen. Klicka på plusikonen (+) i **[!UICONTROL Available Permissions Items]** för att tilldela sandlådor till profilen. Se det här [avsnittet](../about/access-management.md#sandboxes) för mer information om sandlådor.
 
    ![](../assets/do-not-localize/user_management_8.png)
 
-1. Om det behövs klickar du under **[!UICONTROL Included Permission Items]** X-ikonen bredvid Ta bort behörigheter till din produktprofil.
+1. Klicka vid behov på X-ikonen under **[!UICONTROL Included Permission Items]** bredvid respektive behörighet till din produktprofil.
 
    ![](../assets/do-not-localize/user_management_9.png)
 
-1. Gå till behörighetskategorin och utför samma steg som ovan för att lägga till behörigheter i din produktprofil. **[!UICONTROL Authoring]**
-   <br>Mer information om behörigheter och kompatibilitet mellan behörigheter och [!DNL Journey Orchestration]deras olika funktioner finns i det här [avsnittet](../about/access-management.md#about-access-management).
+1. Gå till behörighetskategorin **[!UICONTROL Authoring]** och utför samma steg som ovan för att lägga till behörigheter i din produktprofil.
+   <br>Se det här [avsnittet](../about/access-management.md#about-access-management) för mer information om behörigheter och kompatibilitet mellan behörigheter och olika funktionaliteter i [!DNL Journey Orchestration].
 
    ![](../assets/do-not-localize/user_management_10.png)
 
-1. När du är klar klickar du på **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]** när du är klar.
 
 Din produktprofil har nu skapats och konfigurerats. Användare som är länkade till den här profilen kan nu ansluta till [!DNL Journey Orchestration].
 
 ## Tilldela en produktprofil {#assigning-product-profile}
 
 Produktprofiler tilldelas till en uppsättning användare som delar samma behörigheter inom organisationen.
-I det här avsnittet finns en lista med alla färdiga produktprofiler med tilldelade behörigheter.
+I det här avsnittet finns en lista med alla färdiga produkt profiler med respektive tilldelade behörigheter.
 
-Så här tilldelar du en produktprofil åt en användare [!DNL Journey Orchestration]:
+Så här tilldelar du en produktprofil så att en användare får åtkomst till [!DNL Journey Orchestration]:
 
-1. Markera i Admin Console **[!UICONTROL Journey Orchestration]**.
+1. Välj **[!UICONTROL Journey Orchestration]** i Admin Console.
 
    ![](../assets/do-not-localize/user_management.png)
 
@@ -128,22 +128,22 @@ Så här tilldelar du en produktprofil åt en användare [!DNL Journey Orchestra
 
 1. Klicka på **[!UICONTROL Add user]**.
 
-   Du kan också lägga till din nya användare i en användargrupp för att finjustera den delade behörighetsgruppen. Mer information om detta hittar du på den här [sidan](https://helpx.adobe.com/enterprise/using/user-groups.html).
+   Du kan också lägga till den nya användaren i en användargrupp för att finjustera den delade uppsättningen behörigheter. Se denna [sida](https://helpx.adobe.com/se/enterprise/using/user-groups.html) för mer information om detta.
 
    ![](../assets/do-not-localize/user_management_3.png)
 
-1. Skriv den nya användarens e-postadress och klicka sedan på **[!UICONTROL Save]**.
+1. Ange den nya användarens e-postadress och klicka sedan på **[!UICONTROL Save]**.
 
    ![](../assets/do-not-localize/user_management_4.png)
 
-Användaren bör sedan få ett e-postmeddelande som omdirigeras till din [!DNL Journey Orchestration] instans.
+Användaren får sedan ett e-postmeddelande som omdirigerar denne till din instans i [!DNL Journey Orchestration].
 
 ## Använda sandlådor {#sandboxes}
 
-[!DNL Journey Orchestration] I kan du partitionera instansen i separerade virtuella miljöer, så kallade sandlådor.
-Sandlådor tilldelas via produktprofiler i Admin Console. For more information on how to assign sandboxes, refer to this [section](../about/access-management.md#create-product-profile).
+Med [!DNL Journey Orchestration] kan du partitionera instansen i separerade virtuella miljöer som kallas för sandlådor.
+Sandlådor tilldelas via produktprofiler i Admin Console. Se det här [avsnittet](../about/access-management.md#create-product-profile) för mer information om hur du tilldelar sandlådor.
 
 [!DNL Journey Orchestration] speglar de Adobe Experience Platform-sandlådor som har skapats för en viss organisation.
-Adobe Experience Platform-sandlådor kan skapas eller återställas från din Adobe Experience Platform-instans. Detaljerade anvisningar finns i användarhandboken [för](https://docs.adobe.com/content/help/en/experience-platform/sandbox/ui/user-guide.html) Sandbox.
+Adobe Experience Platform-sandlådor kan skapas eller återställas från din Adobe Experience Platform-instans. Se [användarhandboken om sandlådor](https://docs.adobe.com/content/help/sv-SE/experience-platform/sandbox/ui/user-guide.html) för detaljerade anvisningar.
 
-Du hittar kontrollen för sandlådeväljaren längst upp till vänster på skärmen. Om du vill växla från en sandlåda till en annan klickar du på den för närvarande aktiva sandlådan i växlaren och väljer en annan sandlåda i listrutan.
+Du hittar kontrollen för att välja sandlåda längst upp till vänster på skärmen. Klicka på den för närvarande aktiva sandlådan i väljaren för att växla från en sandlåda till en annan och välj sedan en annan sandlåda på rullgardinsmenyn.
