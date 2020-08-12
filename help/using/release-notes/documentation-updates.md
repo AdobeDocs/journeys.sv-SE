@@ -14,15 +14,15 @@ translation-type: tm+mt
 source-git-commit: 71b5b1ecd20056d0103ae1a8b83a31478449e844
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 9%
+ht-degree: 86%
 
 ---
 
 
 # Dokumentationsuppdateringar
 
-På den här sidan visas alla dokumentationsuppdateringar för [!DNL Journey Orchestration].
-Du kan även läsa [!DNL Journey Orchestration] versionsinformationen [](../release-notes/release-notes.md).
+På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Orchestration].
+Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om [!DNL Journey Orchestration].
 
 ## Juli 2020 {#july-2020}
 
@@ -31,60 +31,60 @@ Du kan även läsa [!DNL Journey Orchestration] versionsinformationen [](../rele
 * Lagt till metodtips för att undvika överbelastning med segmentkvalificering. [Läs mer](../building-journeys/segment-qualification-events.md#speed-segment-qualification)
 * En anteckning har lagts till som förklarar hur en resa fortsätter efter ett fel i en åtgärd eller ett villkor. [Läs mer](../about/troubleshooting.md#section_h3q_kqk_fhb)
 * Ett nytt avsnitt har lagts till om de alfafunktioner som testas bland ett begränsat antal kunder. [Läs mer](../alpha/alpha-overview.md)
-* Ett nytt avsnitt om integrationen med intelligenta tjänster har lagts till. [Läs mer](../ai-services/ai-services-overview.md)
-* Ett nytt avsnitt lades till när testprofilen skapades. [Läs mer](../building-journeys/testing-the-journey.md#create-test-profile)
-* Lagt till information om hur du använder noden **[!UICONTROL SegmentQualification]** i ett resevillkor eller en åtgärd. [Läs mer](../building-journeys/segment-qualification-events.md)
-* En anteckning har lagts till i transaktionsmeddelandet för Campaign och i händelsepubliceringen. Se [Arbeta med Adobe Campaign](../action/working-with-adobe-campaign.md) och [Använda Adobe Campaign-åtgärder](../building-journeys/using-adobe-campaign-actions.md).
-* Information har lagts till om de kontroller som utförs när Campaign Standardens instans-URL testas. [Läs mer](../action/working-with-adobe-campaign.md)
-* Information har lagts till om reaktionshändelsekompatibilitet med Campaign Standarder som lagras på AWS- eller Azure-servrar. [Läs mer](../building-journeys/reaction-events.md)
-* En anteckning har lagts till om behovet av att ställa in en spärrregel när du arbetar med transaktionsmeddelanden för Campaign Standarder. [Läs mer](../action/working-with-adobe-campaign.md)
-* En anteckning har lagts till om generering av verkliga händelser när händelser utlöses i testläge. [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
+* Ett nytt avsnitt har lagts till om integrationen med intelligenta tjänster. [Läs mer](../ai-services/ai-services-overview.md)
+* Ett nytt avsnitt har lagts till om att skapa testprofiler. [Läs mer](../building-journeys/testing-the-journey.md#create-test-profile)
+* Information har lagts till om hur du använder noden **[!UICONTROL SegmentQualification]** i ett resevillkor eller en åtgärd. [Läs mer](../building-journeys/segment-qualification-events.md)
+* En anteckning har lagts till om transaktionsmeddelanden och händelsepublicering i Campaign. Se [Arbeta med Adobe Campaign](../action/working-with-adobe-campaign.md) och [Använda Adobe Campaign](../building-journeys/using-adobe-campaign-actions.md).
+* Information har lagts till om de kontroller som utförs när instansens URL i Campaign Standard testas. [Läs mer](../action/working-with-adobe-campaign.md)
+* Information har lagts till om kompatibilitet mellan reaktionshändelser och instanser i Campaign Standard som är värdbaserade på AWS- eller Azure-servrar. [Läs mer](../building-journeys/reaction-events.md)
+* En anteckning har lagts till om behovet av att ställa in en begränsningsregel när man arbetar med transaktionsmeddelanden i Campaign Standard. [Läs mer](../action/working-with-adobe-campaign.md)
+* En anteckning har lagts till om generering av verkliga händelser när händelser utlöses i testläget. [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
 
 ## Juni 2020 {#june-2020}
 
-* Lagt till information om hur du ändrar cachevaraktigheten för token för en anpassad autentiseringsdatakälla. [Läs mer](../datasource/external-data-sources.md#section_wjp_nl5_nhb)
-* Uppdaterade skärmbilder och text för att återspegla namnbytet för det **[!UICONTROL Finished]** resetillstånd som har ändrats till **[!UICONTROL Closed (no entrance)]**.
-* Lagt till information om hur språket definieras för gränssnittet. [Läs mer](../about/user-interface.md)
-* Listan över status för en persons resa har flyttats till loggavsnittet för [testläge](../building-journeys/testing-the-journey.md#viewing_logs) .
+* Information har lagts till om hur du ändrar cachevaraktigheten för en token för en anpassad autentiseringsdatakälla. [Läs mer](../datasource/external-data-sources.md#section_wjp_nl5_nhb)
+* Updated screenshots and text to reflect the renaming of the **[!UICONTROL Finished]** journey state which has been changed to **[!UICONTROL Closed (no entrance)]**.
+* Information har lagts till om hur språket definieras i gränssnittet. [Läs mer](../about/user-interface.md)
+* Listan över status gällande en individs resa har flyttats till avsnittet [Testlägets loggar](../building-journeys/testing-the-journey.md#viewing_logs).
 
 ## April 2020 {#april-2020}
 
-* Ett nytt avsnitt om händelseschemadefinition för upplevelse har lagts till för att hjälpa användare att konfigurera sin första händelse. [Läs mer](../event/experience-event-schema.md)
-* Hemsidan för [!DNL Journey Orchestration] dokumentation har uppdaterats med ytterligare användbara länkar. [Läs mer](../../journey-orchestration-home.md)
+* Ett nytt avsnitt har lagts till om schemadefinitionen för en upplevelsehändelse för att hjälpa användare att konfigurera sin första händelse. [Läs mer](../event/experience-event-schema.md)
+* Hemsidan för dokumentation om [!DNL Journey Orchestration] har uppdaterats med ytterligare användbara länkar. [Läs mer](../../journey-orchestration-home.md)
 
 ## Mars 2020 {#march-2020}
 
-* Lagt till parameterbeskrivningar för _actionExecutionErrors_ och _fetchErrors_ i testloggsavsnittet. [Läs mer](../building-journeys/testing-the-journey.md#viewing_logs)
-* Begränsningarna för anpassade åtgärder som används under en resa har uppdaterats. Du kan också ändra **[!UICONTROL URL]** fältet och **[!UICONTROL Authentication]** parametrarna. [Läs mer](../action/about-custom-action-configuration.md)
-* Nya sammanhangsberoende hjälpposter har lagts till. Nyttolastrutan för anpassad autentisering (i åtgärder och datakällor) innehåller nu en hjälpikon som länkar till det här [avsnittet](../datasource/external-data-sources.md#section_wjp_nl5_nhb).
-* Avslutade resor kan nu stoppas. [Läs mer](../building-journeys/using-the-journey-designer.md)
-* Gränssnittsbeskrivningsavsnittet har omstrukturerats. [Läs mer](../about/user-interface.md)
-* Utlösandet av flera händelser har lagts till i testlägesavsnittet [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
+* Parameterbeskrivningar har lagts till för _actionExecutionErrors_ och _fetchErrors_ i avsnittet Testloggar. [Läs mer](../building-journeys/testing-the-journey.md#viewing_logs)
+* Begränsningarna på anpassade åtgärder som används under en resa har uppdaterats. You can also modify the **[!UICONTROL URL]** field and the **[!UICONTROL Authentication]** parameters. [Läs mer](../action/about-custom-action-configuration.md)
+* Nya sammanhangsberoende hjälpposter har lagts till. Fönstret för anpassad autentisering av nyttolaster (i åtgärder och datakällor) innehåller nu en hjälpikon som länkar till det här [avsnittet](../datasource/external-data-sources.md#section_wjp_nl5_nhb).
+* Stängda resor kan nu stoppas. [Läs mer](../building-journeys/using-the-journey-designer.md)
+* Avsnittet Beskrivning av gränssnitt har omstrukturerats. [Läs mer](../about/user-interface.md)
+* Att aktivera flera händelser har lagts till i avsnittet Testläge. [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
 * Avsnittet Testläge har uppdaterats med avseende på den nya **[!UICONTROL Wait time in test]** parametern. [Läs mer](../building-journeys/testing-the-journey.md)
-* Avsnittet Testlogg har uppdaterats med externa anropsfelkoder och svar. [Läs mer](../building-journeys/testing-the-journey.md#viewing_logs)
-* Tidszonshanteringen är nu centraliserad i panelen för reseegenskaper. Läs mer [här](../building-journeys/changing-properties.md#timezone) och [här](../building-journeys/timezone-management.md)
+* Avsnittet Testlogg har uppdaterats med externa felkoder för anrop och svar. [Läs mer](../building-journeys/testing-the-journey.md#viewing_logs)
+* Hantering av tidszoner är nu centraliserad på panelen för reseegenskaper. Läs mer [här](../building-journeys/changing-properties.md#timezone) och [här](../building-journeys/timezone-management.md)
 * Avsnittet Resedesignern har uppdaterats för att återspegla de senaste förbättringarna. [Läs mer](../building-journeys/using-the-journey-designer.md)
-* Gränssnittsbeskrivningen har uppdaterats med information om sammanhangsberoende hjälp. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
-* När du bläddrar bland **XDM-fält** visas det egna namnet. Relaterade avsnitt har uppdaterats. [Läs mer](../about/user-interface.md#friendly-names-display)
+* Beskrivningen av gränssnitt har uppdaterats med information om sammanhangsberoende hjälp. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
+* När du bläddrar bland **XDM-fält** visas det användarvänliga namnet. Relaterade avsnitt har uppdaterats. [Läs mer](../about/user-interface.md#friendly-names-display)
 
 ## Februari 2020 {#february-2020}
 
-* Genvägsavsnittet har uppdaterats. Med **C** -kortkommandot kan du skapa ett nytt objekt i alla listskärmar. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
-* Översiktssidorna för [datakälla](../datasource/about-data-sources.md) och [åtgärd](../action/action.md) har förbättrats.
+* Avsnittet för genvägar har uppdaterats. Med tangentbordsgenvägen **C** kan du skapa en ny post på alla listskärmar. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
+* Översiktssidorna över [datakälla](../datasource/about-data-sources.md) och [åtgärd](../action/action.md) har förbättrats.
 
 ## Januari 2020 {#january-2020}
 
 * Hämtningsbegränsningar har lagts till för [upplevelsehändelser](../datasource/adobe-experience-platform-data-source.md) och [segment](../functions/functioninsegment.md).
-* Dokumentationen [för](../functions/functiongetbestsendtime.md) getBestSendTime har uppdaterats.
+* Dokumentationen om [getBestSendTime](../functions/functiongetbestsendtime.md) har uppdaterats.
 
 ## December 2019 {#december-2019}
 
-* Alla skärmbilder har uppdaterats för att återspegla gränssnittsändringar.
-* Testlägesavsnittet har uppdaterats. [Läs mer](../building-journeys/testing-the-journey.md)
-* En varning har lagts till i avsnitten [Tidsoptimering](../building-journeys/wait-activity.md) för e-postsändning och [prediktiv trötthet](../ai-services/leveraging-fatigue-scores.md) . Dessa funktioner är bara tillgängliga för kunder som använder Adobe Campaign Standard datatjänst.
-* Stoppade resor kan nu tas bort. Relaterade dokumentationssidor har uppdaterats.
-* Två färger visas nu när fel upptäcks under en resa. Röd för fel och orange för varningar. [Läs mer](../about/troubleshooting.md)
-* Avsnittet för avancerad uttrycksredigerare har uppdaterats. [Läs mer](../expression/expressionadvanced.md).
-* [Villkorliga instruktioner](../expression/conditional-instruction.md) och [samlingshanteringsavsnitt](../expression/collection-management-functions.md) har flyttats och uppdaterats.
+* Alla skärmbilder har uppdaterats för att återspegla ändringar i gränssnitten.
+* Avsnittet Testläge har uppdaterats. [Läs mer](../building-journeys/testing-the-journey.md)
+* En varning har lagts till i avsnitten [Tidsoptimering för e-postsändning](../building-journeys/wait-activity.md) och [Förutsägande trötthet](../ai-services/leveraging-fatigue-scores.md) . Dessa funktioner är bara tillgängliga för kunder som använder funktionen Adobe Campaign Standard Data Service.
+* Stoppade resor kan nu raderas. Relaterade sidor i dokumentationen har uppdaterats.
+* Två färger visas nu när fel upptäcks i en resa. Röd för fel och orange för varningar. [Läs mer](../about/troubleshooting.md)
+* Avsnittet Avancerad uttrycksredigerare har uppdaterats. [Läs mer](../expression/expressionadvanced.md).
+* Avsnitten [Villkorliga instruktioner](../expression/conditional-instruction.md) och [Hantera samlingar](../expression/collection-management-functions.md) har flyttats och uppdaterats.
 * Avsnittet [Funktioner](../expression/functions.md) har uppdaterats med nya exempel.
-* Dokumentationen [för funktionen](../functions/functiontodatetime.md) toDateTime har uppdaterats för att återspegla ändringar i tidszonssyntaxen.
+* Dokumentationen om [funktionen toDateTime](../functions/functiontodatetime.md) har uppdaterats för att återspegla ändringar i syntaxen för tidszoner.
