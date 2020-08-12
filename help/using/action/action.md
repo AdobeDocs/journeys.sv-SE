@@ -1,6 +1,6 @@
 ---
-title: Om funktionsmakron
-description: Lär dig hur du konfigurerar en åtgärd
+title: Om åtgärder
+description: Läs om hur du konfigurerar en åtgärd
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -14,36 +14,36 @@ translation-type: tm+mt
 source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Om funktionsmakron {#about_actions}
+# Om åtgärder {#about_actions}
 
 >[!CONTEXTUALHELP]
 >id="jo_actions"
->title="Om funktionsmakron"
->abstract="Här definierar du anslutningen till systemet som ska skicka meddelanden. De åtgärder som definieras här kommer sedan att finnas tillgängliga på den vänstra paletten under din resa i kategorin Åtgärd. "
+>title="Om åtgärder"
+>abstract="Här definierar du anslutningen till systemet som ska skicka meddelanden. De åtgärder som definieras här finns sedan tillgängliga på den vänstra paletten under din resa i kategorin Instruktioner. "
 
-Åtgärder är kopplingar genom vilka ni levererar personaliserade upplevelser i realtid till kunder, till exempel push-meddelanden, e-post, SMS eller andra sätt för digitalt engagemang som ni använder i ert företag.
+Åtgärder är anslutningar genom vilka du levererar personaliserade upplevelser till kunder i realtid såsom push-meddelanden, e-post, SMS eller andra sätt för digitalt engagemang som du använder i företaget.
 
-Med anpassade åtgärder kan du konfigurera anslutning av ett tredjepartssystem för att skicka meddelanden eller API-anrop. En åtgärd kan konfigureras med alla tjänster från alla leverantörer som kan anropas via ett REST API med en JSON-formaterad nyttolast.
+Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssystem för att skicka meddelanden eller API-anrop. En åtgärd kan konfigureras med alla tjänster från alla leverantörer som kan anropas via ett REST API med en JSON-formaterad nyttolast.
 
-Åtgärderna är tillgängliga i den vänstra paletten på din resa, i **[!UICONTROL Action]** kategorin (se [](../building-journeys/about-action-activities.md) ).
+Åtgärderna är tillgängliga i den vänstra paletten på din resa i kategorin **[!UICONTROL Action]** (se [](../building-journeys/about-action-activities.md)).
 
 >[!NOTE]
 >
 >Konfigurationen av anpassade åtgärder utförs alltid av en **teknisk användare**.
 
-I listan över **åtgärder** kan du trycka på c för att skapa en ny resa, åtgärd, datakälla eller händelse. Mer information om kortkommandon i [!DNL Journey Orchestration]finns i [](../about/user-interface.md#section_ksq_zr1_ffb).
+I listan över **åtgärder** kan du trycka på c för att skapa en ny resa, åtgärd, datakälla eller händelse. Se [](../about/user-interface.md#section_ksq_zr1_ffb) för mer information om kortkommandon i [!DNL Journey Orchestration].
 
-Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd klickar du på **[!UICONTROL Actions]** de översta menyerna. Listan med åtgärder visas. Mer information om gränssnittet finns [](../about/user-interface.md) i.
+Klicka på **[!UICONTROL Actions]** på de övre menyerna för att se åtgärdslistan eller konfigurera en ny åtgärd. Listan med åtgärder visas. Se [](../about/user-interface.md) för mer information om gränssnittet.
 
 ![](../assets/custom1.png)
 
-Om du har Adobe Campaign Standard måste du konfigurera den körklara åtgärden för att skicka e-post, push-meddelanden och SMS med Adobe Campaign Standard Transactional Messaging-funktioner. Se [](../action/working-with-adobe-campaign.md).
+Om du har Adobe Campaign Standard måste du konfigurera den redan skapade åtgärden för att skicka e-postmeddelanden, push-meddelanden och SMS med funktionen Transaktionsmeddelanden i Adobe Campaign Standard. Se [](../action/working-with-adobe-campaign.md).
 
-Om du använder ett tredjepartssystem för att skicka meddelanden som Epsilon, Facebook, Adobe.io, Firebase osv. måste du lägga till och konfigurera en anpassad åtgärd. Se [](../action/about-custom-action-configuration.md).
+Om du använder ett tredjepartssystem för att skicka meddelanden såsom Epsilon, Facebook, Adobe.io, Firebase osv. måste du lägga till och konfigurera en anpassad åtgärd. Se [](../action/about-custom-action-configuration.md).
 
-Titta på den här [!DNL Journey Orchestration] videosjälvstudien [om du vill ha mer information om hur du konfigurerar ett funktionsmakro för](https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/configure-actions.html)och hur du använder det under en resa.
+Titta på den här [videosjälvstudiekursen](https://docs.adobe.com/content/help/sv-SE/journey-orchestration-learn/tutorials/configure-actions.html) för att få mer information om hur du konfigurerar en åtgärd för [!DNL Journey Orchestration] och hur den används under en resa.
