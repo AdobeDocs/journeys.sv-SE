@@ -12,36 +12,36 @@ translation-type: tm+mt
 source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 0%
+ht-degree: 96%
 
 ---
 
 
 # Felsökning{#concept_nlv_bcv_2fb}
 
-I det här avsnittet hittar du hur du felsöker resor innan du testar eller publicerar. Alla kontroller som anges nedan kan utföras när resan är i testläge eller när resan är live. Rekommendationen är att göra alla kontroller nedan i testläge och sedan gå vidare till publiceringen. Se [](../building-journeys/testing-the-journey.md).
+I det här avsnittet lär du dig att felsöka resor innan de testas eller publiceras. Alla kontroller som anges nedan kan utföras medan resan är i testläge eller när den är live. Rekommendationen är att göra alla kontroller nedan i testläget och sedan gå vidare till publiceringen. Se [](../building-journeys/testing-the-journey.md).
 
-## Söker efter fel före testning{#section_h3q_kqk_fhb}
+## Söker efter fel före tester{#section_h3q_kqk_fhb}
 
-Kontrollera att alla aktiviteter är korrekt konfigurerade innan du testar och publicerar din resa. Du kan inte utföra tester eller publikationer om fel fortfarande upptäcks av systemet.
+Kontrollera att alla aktiviteter är konfigurerade korrekt innan du testar och publicerar din resa. Du kan inte utföra tester eller publikationer om fel fortfarande upptäcks av systemet.
 
-Fel visas med en varningssymbol på aktiviteterna på arbetsytan. Placera markören på utropstecknet för att visa felmeddelandet. Om du klickar på aktiviteten visas raden med en varning. Om ett obligatoriskt fält till exempel är tomt visas ett fel.
+Fel visas med en varningssymbol på själva aktiviteterna på arbetsytan. Placera markören på utropstecknet för att visa felmeddelandet. Klicka på aktiviteten för att se raden i felet med en varning. Om till exempel ett obligatoriskt fält är tomt visas ett fel.
 
 ![](../assets/journey63.png)
 
-Om två aktiviteter inte är kopplade visas en varning på arbetsytan.
+Om till exempel två aktiviteter inte är kopplade visas en varning på arbetsytan.
 
 ![](../assets/canvas-disconnected.png)
 
-Bredvid **[!UICONTROL Test]** växlingsknappen och **[!UICONTROL Publish]** knappen kan ett varningstecken visas. Den här varningssignalen visar fel som upptäckts av systemet och förhindrar aktivering av testläget eller publicering av resan. Vanligtvis är fel som upptäcks av systemet länkade till fel som visas i aktiviteterna, men ibland är de länkade till andra problem. I det här fallet kan du visa dem och försöka identifiera problemet med hjälp av felbeskrivningen. Om du inte kan identifiera problemet kan du kopiera informationen och skicka den till administratören eller till supporten. Observera att fel som blockerar testet och fel som blockerar publikationen är liknande.
+Bredvid växlingsknappen **[!UICONTROL Test]** och knappen **[!UICONTROL Publish]** kan ett varningstecken visas. Det här varningstecknet visar fel som upptäckts av systemet och förhindrar aktivering av testläget eller publicering av resan. Vanligtvis är fel som upptäcks av systemet länkade till fel som visas i aktiviteterna. Ibland är de dock länkade till andra problem. I det här fallet kan du visa dem och försöka identifiera problemet med hjälp av felbeskrivningen. Om du inte kan identifiera problemet kan du kopiera informationen och skicka den till administratören eller till supporten. Observera att fel som blockerar testet och publikationen är snarlika.
 
-Systemet upptäcker två typer av problem: fel och varningar. Fel vid blockpublicering och testaktivering. Varningar indikerar potentiella problem som inte blockerar testaktivering eller publicering. Du får en beskrivning av problemet och ett ID för felloggen av typen ERR_XXX_XXX. Detta hjälper teknisk support att identifiera problemet.
+Systemet upptäcker två typer av problem – fel och varningar. Fel blockerar publicering och testaktivering. Varningar indikerar potentiella problem som inte blockerar testaktivering eller publicering. En beskrivning av problemet och ett ID från felloggen med typen ERR_XXX_XXX visas. Detta hjälper teknisk support att identifiera problemet.
 
-Det går att visa två olika färger på tecknet bredvid **[!UICONTROL Test]** växlingsknappen och **[!UICONTROL Publish]** knappen. Tecknet visas i rött vid fel. Den visas med orange om det finns varningsmeddelanden.
+Två olika färger kan visas på tecknet bredvid växlingsknappen **[!UICONTROL Test]** och knappen **[!UICONTROL Publish]**. Vid fel visas tecknet i rött. Vid varningar visas tecknet i orange.
 
 ![](../assets/journey75.png)
 
-Fel och varningar som är globala för resan visas först i listan. Fel och varningar som rör specifika aktiviteter listas efter, efter aktivitetsordning eller utseende under resan från vänster till höger. Knappen **[!UICONTROL Copy details]** kopierar teknisk information om den resa som supportteamet kan använda för att felsöka.
+Fel och varningar som är globala för resan visas först i listan. Fel och varningar som rör specifika aktiviteter listas därefter per aktivitetsordning eller när de dyker upp i resan från vänster till höger. Med knappen **[!UICONTROL Copy details]** kopieras teknisk information om resan som supportteamet kan använda för att felsöka.
 
 När ett fel inträffar i en åtgärd eller ett villkor upphör kundens resa. Det enda sättet att få det att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [](../building-journeys/using-the-journey-designer.md#paths).
 
@@ -49,24 +49,24 @@ När ett fel inträffar i en åtgärd eller ett villkor upphör kundens resa. De
 
 Startpunkten för en resa är alltid en händelse. Du kan utföra tester med verktyg som Postman.
 
-Du kan kontrollera om API-anropet som du skickar via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel betyder det att ditt samtal har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt organisations-ID) och mål-URL:en. Du kan fråga administratören vilken URL som ska användas.
+Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skickas inte direkt från källan till [!DNL Journey Orchestration]. Adobe Experience Platform API:er för direktuppspelning är faktiskt [!DNL Journey Orchestration] beroende av. Om det gäller händelserelaterade problem kan du därför gå till den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/troubleshooting.html) för felsökning av API:er för direktuppspelning.
+Händelser skickas inte direkt från källan till [!DNL Journey Orchestration]. Indeed, [!DNL Journey Orchestration] relies on Adobe Experience Platform’s streaming ingestion APIs. Om det gäller händelserelaterade problem kan du därför läsa den här [sidan](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/troubleshooting.html) om felsökning av API:er för strömningsinmatning.
 
-## Kontrollerar om någon kommer in på resan{#section_x4v_zzs_dgb}
+## Kontrollera om någon kommer in i resan{#section_x4v_zzs_dgb}
 
-[!DNL Journey Orchestration] rapportering mäter människors inträde på en resa i realtid.
+Rapportering från [!DNL Journey Orchestration] mäter människors inträde i en resa i realtid.
 
-Om du lyckas skicka evenemanget men inte ser något inträde på resan betyder det att något går fel mellan det skickade evenemanget och det mottagande evenemanget under resan.
+Om händelsen skickas men inte har inträde i resan betyder det att något gått fel mellan den skickade händelsen och den mottagna händelsen i resan.
 
-Här är några saker som administratören bör kontrollera:
+Här följer några saker som administratören bör kontrollera:
 
-* Är du säker på att resan där du förväntar dig att den inkommande händelsen ska vara i testläge eller live?
-* Sparade du händelsen innan du kopierade nyttolasten från nyttolastförhandsvisningen?
+* Är du säker på att resan, där du förväntar dig att den inkommande händelsen ska vara, är i testläge eller live?
+* Sparade du händelsen innan du kopierade nyttolasten från dess förhandsvisning?
 * Innehåller händelsens nyttolast ett händelse-ID?
-* Slog du rätt URL?
-* Följde du nyttolaststrukturen för API:erna för direktuppspelning av inmatning med hjälp av förhandsgranskningen av nyttolaststrukturen i händelsekonfigurationsfönstret? Se [](../event/previewing-the-payload.md).
-* Använde du rätt nyckel/värde-par i huvudet på din händelse?
+* Angav du rätt URL?
+* Har du följt nyttolastens struktur gällande API:er för strömningsinmatning med hjälp av förhandsgranskningen av nyttolastens struktur i händelsens konfigurationsfönster? Se [](../event/previewing-the-payload.md).
+* Har du använt rätt nyckel/värde-par i rubriken på händelsen?
 
    ```
    X-gw-ims-org-id - your ORGID
@@ -75,19 +75,19 @@ Här är några saker som administratören bör kontrollera:
 
 ## Kontrollera hur människor navigerar genom resan{#section_l5y_yzs_dgb}
 
-[!DNL Journey Orchestration] rapportering mäter enskilda personers framsteg inom en resa. Det är enkelt att identifiera var och varför en person stoppades.
+Rapportering från [!DNL Journey Orchestration] mäter individers framsteg inom en resa. Det är enkelt att identifiera var och varför en person stoppats.
 
-Här är några saker att kontrollera:
+Här följer några saker att kontrollera:
 
-* Är det på grund av ett tillstånd som utesluter personen? Villkoret är till exempel&quot;kön = man&quot; och personen är en kvinna. Den här kontrollen kan utföras av en affärsanvändare om villkoret inte är för komplext.
-* Orsaken är att ett anrop till en datakälla inte svarar? När resan är i testläge kan denna information visas i testlägesloggar. När resan är live kan en administratör testa direktanrop till datakällan och kontrollera svaret som tas emot. En administratör kan även duplicera resan och testa den.
+* Är det på grund av ett tillstånd som utesluter personen i fråga? Villkoret kan till exempel vara &quot;kön = man&quot; och personen är en kvinna. Den här kontrollen kan utföras av en företagsanvändare om villkoret inte är för komplext.
+* Är orsaken att ett anrop till en datakälla inte svarar? När resan är i testläge kan denna information visas i testlägets loggar. När resan är live kan en administratör testa direktanrop till datakällan och kontrollera svaret som tas emot. En administratör kan även göra dubbletter av resan och testa den.
 
 ## Kontrollera att meddelanden har skickats{#section_qb1_yzs_dgb}
 
-Om enskilda personer flödar rätt väg på resan men inte får meddelanden som de ska ta emot, kan du kontrollera om:
+Om enskilda personer flödar rätt väg i resan, men inte får meddelanden som de bör få, kan du kontrollera om:
 
-* Transactional Messaging har tagit korrekt hänsyn till begäran om att skicka meddelandet. En företagsanvändare kan komma åt det transaktionsmeddelande som ska skickas och kontrollera om tidpunkten för den senaste körningen motsvarar körningstiden för din resa. Han kan även kontrollera de senaste API-anropen/händelserna som tagits emot av transaktionsmeddelanden.
-* Meddelandet har skickats via transaktionsmeddelanden. I de sändande loggarna för transaktionsmeddelandet kan du se status för varje körning. Du kan se om det är grönt, rött och vad det var frågan om. En företagsanvändare kan komma åt den här skärmen och skicka loggarna till en administratör för ytterligare undersökningar.
+* Transaktionsmeddelanden har tagit korrekt hänsyn till begäran om att skicka meddelandet. En företagsanvändare kan komma åt det transaktionsmeddelande som ska skickas och kontrollera om tidpunkten för den senaste körningen motsvarar tidpunkten för körningen i din resa. Denne kan även kontrollera de senaste API-anropen/-händelserna som har tagits emot av transaktionsmeddelanden.
+* Transaktionsmeddelanden har skickat meddelandet. I loggarna om skickade transaktionsmeddelanden kan du se status för varje körning. Du kan se om den är grön eller röd och vad som var problemet. En företagsanvändare kan komma åt den här skärmen och skicka loggarna till en administratör för ytterligare undersökningar.
 
-Om ett meddelande skickas via en anpassad åtgärd är det enda som kan kontrolleras under resan att anropet till den anpassade åtgärdens system leder till ett fel eller inte. Om anropet till det externa system som är kopplat till den anpassade åtgärden inte leder till ett fel, men inte leder till att ett meddelande skickas, bör vissa undersökningar utföras på den externa datorns sida.
+Om ett meddelande skickas via en anpassad åtgärd är det enda som kan kontrolleras i resan det faktum att anropet till den anpassade åtgärdens system leder till ett fel eller inte. Det kan hända att anropet till det externa system som är kopplat till den anpassade åtgärden inte leder till ett fel men inte heller leder till att ett meddelande skickas. I dessa fall bör undersökningar utföras på det externa systemet.
 
