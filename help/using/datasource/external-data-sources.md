@@ -1,6 +1,6 @@
 ---
 title: 'Externa datakällor '
-description: 'Lär dig konfigurera externa datakällor '
+description: 'Läs om hur du konfigurerar externa datakällor '
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
 workflow-type: tm+mt
 source-wordcount: '1271'
-ht-degree: 0%
+ht-degree: 98%
 
 ---
 
@@ -22,26 +22,26 @@ ht-degree: 0%
 
 # Externa datakällor {#concept_t2s_kqt_52b}
 
-Med externa datakällor kan du definiera en anslutning till tredjepartssystem, till exempel om du använder ett bokningssystem för hotell för att kontrollera om personen har registrerat ett rum. I motsats till den inbyggda Adobe Experience Platform-datakällan kan du skapa så många externa datakällor du behöver.
+Med externa datakällor kan du definiera en anslutning till tredjepartssystem om du till exempel använder ett bokningssystem för hotell som kontrollerar om personen har registrerat ett rum. I motsats till den inbyggda Adobe Experience Platform-datakällan kan du skapa så många externa datakällor du behöver.
 
-REST API:er som använder POST eller GET och returnerar JSON stöds. API-nyckel, grundläggande och anpassade autentiseringslägen stöds.
+Stöd finns för REST API:er som använder POST eller GET och returnerar JSON. API-nyckel samt grundläggande och anpassade autentiseringslägen stöds.
 
-Låt oss ta ett exempel på en API-tjänst för väder som jag vill använda för att anpassa kundens beteenden efter väderdata i realtid.
+Låt oss använda en API-tjänst för väder som exempel. Jag vill använda den för att anpassa resans beteenden beroende på väderdata i realtid.
 
 Här är två exempel på API-anropet:
 
 * _https://api.adobeweather.org/weather?city=London,uk&amp;appid=1234_
 * _https://api.adobeweather.org/weather?lat=35&amp;lon=139&amp;appid=1234_
 
-Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två parameteruppsättningar (&quot;city&quot; för staden och&quot;lat/long&quot; för latitud och longitud) och API-nyckeln (appid).
+Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två parameteruppsättningar (&quot;city&quot; för staden och &quot;lat/long&quot; för latitud och longitud) och API-nyckeln (appid).
 
 Här följer de viktigaste stegen för att skapa och konfigurera en ny extern datakälla:
 
-1. I listan med datakällor klickar du på **[!UICONTROL Add]** för att skapa en ny extern datakälla.
+1. Klicka på **[!UICONTROL Add]** i listan med datakällor för att skapa en ny extern datakälla.
 
    ![](../assets/journey25.png)
 
-   Då öppnas konfigurationsfönstret för datakällan till höger på skärmen.
+   Detta öppnar konfigurationsfönstret för datakällan till höger på skärmen.
 
    ![](../assets/journey26.png)
 
@@ -49,42 +49,42 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
    >[!NOTE]
    >
-   >Använd inte blanksteg eller specialtecken. Använd inte fler än 30 tecken.
+   >Använd inte blanksteg eller specialtecken. Använd maximalt 30 tecken.
 
-1. Lägg till en beskrivning till datakällan. Det här steget är valfritt.
+1. Lägg till en beskrivning om datakällan. Det här steget är valfritt.
 1. Lägg till den externa tjänstens URL. I vårt exempel: _https://api.adobeweather.org/weather_.
 
    >[!CAUTION]
    >
-   >Vi rekommenderar starkt att du använder HTTPS av säkerhetsskäl. Observera också att vi inte tillåter användning av Adobe-adresser som inte är allmänt tillgängliga och användning av IP-adresser.
+   >Vi rekommenderar starkt att HTTPS används av säkerhetsskäl. Observera också att vi endast tillåter att Adobe-adresser som är allmänt tillgängliga samt IP-adresser används.
 
    ![](../assets/journey27.png)
 
-1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**. Mer information om det anpassade autentiseringsläget finns i [](../datasource/external-data-sources.md#section_wjp_nl5_nhb). I vårt exempel väljer vi:
+1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**. Se [](../datasource/external-data-sources.md#section_wjp_nl5_nhb) för mer information om det anpassade autentiseringsläget. I vårt exempel väljer vi:
 
 
    * **[!UICONTROL Type]**: &quot;API-nyckel&quot;
    * **[!UICONTROL Value]**: &quot;1234&quot; (det här är värdet på vår API-nyckel)
-   * **[!UICONTROL Name]**: &quot;appid&quot; (det här är API-nyckelparameternamnet)
-   * **[!UICONTROL Location]**: &quot;Frågeparameter&quot; (API-nyckeln finns i URL:en)
+   * **[!UICONTROL Name]**: &quot;appid&quot; (det här är API-nyckelns parameternamn)
+   * **[!UICONTROL Location]**: &quot;Frågeparameter&quot; (API-nyckeln finns i webbadressen)
 
    ![](../assets/journey28.png)
 
-1. Lägg till en ny fältgrupp för varje API-parameteruppsättning genom att klicka **[!UICONTROL Add a New Field Group]**. Använd inte blanksteg eller specialtecken i fältgruppsnamnet. I vårt exempel måste vi skapa två fältgrupper, en för varje parameteruppsättning (city och long/lat).
+1. Klicka på **[!UICONTROL Add a New Field Group]** för att lägga till en ny fältgrupp för varje API-parameteruppsättning. Använd inte blanksteg eller specialtecken i fältgruppens namn. I vårt exempel behöver vi skapa två fältgrupper. En för varje parameteruppsättning (&quot;city&quot; och &quot;long/lat&quot;).
 
-För parameteruppsättningen&quot;long/lat&quot; skapar vi en fältgrupp med följande information:
+För parameteruppsättningen &quot;long/lat&quot; skapar vi en fältgrupp med följande information:
 
-* **[!UICONTROL Used in]**: visar antalet resor som använder en fältgrupp. Du kan klicka på **[!UICONTROL View journeys]** ikonen om du vill visa en lista över resor som använder den här fältgruppen.
-* **[!UICONTROL Method]**: Markera POST- eller GET-metoden. I vårt fall väljer vi GET-metoden.
-* **[!UICONTROL Cache duration]**: Vi vill att vädret ska cachas i tio minuter.
-* **[!UICONTROL Response Payload]**: klicka inuti **[!UICONTROL Payload]** fältet och klistra in ett exempel på nyttolasten som returneras av anropet. Vi använde till exempel en nyttolast som finns på en API-webbplats för väder. Kontrollera att fälttyperna är korrekta. Varje gång API anropas hämtas alla fält som ingår i nyttolastexemplet. Observera att du kan klicka på **[!UICONTROL Paste a new payload]** om du vill ändra den nyttolast som har skickats.
-* **[!UICONTROL Dynamic Values]**: Ange de olika parametrarna avgränsade med kommatecken &quot;long,lat&quot; i vårt exempel. Eftersom parametervärdena är beroende av körningskontexten, kommer de att definieras i resorna. Se [](../expression/expressionadvanced.md).
-* **[!UICONTROL Sent Payload]**: det här fältet visas inte i vårt exempel. Det är bara tillgängligt om du har valt metoden POST. Klistra in nyttolasten som ska skickas till tredjepartssystemet.
+* **[!UICONTROL Used in]**: visar antalet resor som använder en fältgrupp. Du kan klicka på ikonen **[!UICONTROL View journeys]** för att visa en lista över resor som använder den här fältgruppen.
+* **[!UICONTROL Method]**: välj metoden POST eller GET. I vårt fall väljer vi metoden GET.
+* **[!UICONTROL Cache duration]**: vi vill att vädret ska sparas i cacheminnet under tio minuter.
+* **[!UICONTROL Response Payload]**: klicka inuti fältet **[!UICONTROL Payload]** och klistra in ett exempel på nyttolasten som returneras av anropet. Vi har till exempel använt en nyttolast som finns på en API-webbplats för väder. Kontrollera att fälttyperna är korrekta. Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast. Observera att du kan klicka på **[!UICONTROL Paste a new payload]** för att ändra den nyttolast som för närvarande används.
+* **[!UICONTROL Dynamic Values]**: ange de olika parametrarna avgränsade med kommatecken – &quot;long,lat&quot; i vårt exempel. Eftersom parameterns värden är beroende av körningens sammanhang definieras de i resorna. Se [](../expression/expressionadvanced.md).
+* **[!UICONTROL Sent Payload]**: det här fältet visas inte i vårt exempel. Det är endast tillgängligt om du väljer metoden POST. Klistra in nyttolasten som ska skickas till tredjepartssystemet.
 
-Om ett GET-anrop kräver parametrar anger du de i **[!UICONTROL Parameters]** fältet och de läggs till automatiskt i slutet av anropet. Vid ett POST-samtal måste du:
+Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fältet **[!UICONTROL Parameters]** och de läggs sedan till automatiskt i slutet av anropet. Om ett POST-anrop används måste du:
 
-* Ange de parametrar som ska skickas vid anrop i **[!UICONTROL Parameter]** fältet (i exemplet nedan: &quot;identifier&quot;).
-* ange dem också med exakt samma syntax i texten för den skickade nyttolasten. Om du vill göra det måste du lägga till: &quot;param&quot;: &quot;namn på parametern&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
+* lista de parametrar som ska skickas vid anrop i fältet **[!UICONTROL Parameter]** (i exemplet nedan: &quot;identifier&quot;).
+* även ange dem med exakt samma syntax i brödtexten i den skickade nyttolasten. För att göra detta måste du lägga till: &quot;param&quot; – &quot;namn på parametern&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
 
    ```
    {"id":{"param":"identifier"}}
@@ -94,52 +94,52 @@ Om ett GET-anrop kräver parametrar anger du de i **[!UICONTROL Parameters]** f�
 
 Klicka på **[!UICONTROL Save]**.
 
-Datakällan är nu konfigurerad och klar att användas i dina resor, till exempel under dina förhållanden eller för att anpassa ett e-postmeddelande. Om temperaturen är över 30°C kan du välja att skicka ett visst meddelande.
+Datakällan är nu konfigurerad och redo att användas i dina resor. Du kan till exempel använda den i dina villkor eller för att personalisera ett e-postmeddelande. Om temperaturen är över 30 °C kan du välja att skicka ett visst meddelande.
 
 ## Anpassat autentiseringsläge{#section_wjp_nl5_nhb}
 
 >[!CONTEXTUALHELP]
 >id="jo_authentication_payload"
 >title="Om anpassad autentisering"
->abstract="Det anpassade autentiseringsläget används för komplex autentisering för att anropa API-omslutningsprotokoll som OAuth2. Körningen av funktionsmakrot är en tvåstegsprocess. Först görs ett anrop till slutpunkten för att generera åtkomsttoken. Åtkomsttoken matas sedan in i åtgärdens HTTP-begäran."
+>abstract="Det anpassade autentiseringsläget används vid komplex autentisering för att anropa API-omslutningsprotokoll som OAuth2. Körningen av åtgärden är en process i två steg. Först görs ett anrop till slutpunkten för att generera en åtkomsttoken. Denna åtkomsttoken injiceras sedan i åtgärdens HTTP-begäran."
 
-Det här autentiseringsläget används för komplex autentisering, som ofta används för att anropa API-omslutningsprotokoll som OAuth2, för att hämta en åtkomsttoken som ska injiceras i den faktiska HTTP-begäran för åtgärden.
+Det här autentiseringsläget används vid komplex autentisering som ofta används för att anropa API-omslutningsprotokoll som OAuth2 och för att hämta en åtkomsttoken som ska injiceras i den faktiska HTTP-begäran för åtgärden.
 
-När du konfigurerar den anpassade autentiseringen kan du klicka på knappen nedan för att kontrollera om den anpassade autentiseringsnyttolasten är korrekt konfigurerad.
+När du konfigurerar den anpassade autentiseringen kan du klicka på knappen nedan för att kontrollera om den anpassade autentiserade nyttolasten är korrekt konfigurerad.
 
 ![](../assets/journey29-bis.png)
 
-Om testet lyckas blir knappen grön.
+Om testet godkänns blir knappen grön.
 
 ![](../assets/journey29-ter.png)
 
-Med den här autentiseringen är körningen av åtgärden en tvåstegsprocess:
+Med den här autentiseringen blir åtgärdskörningen en process med två steg:
 
-1. Anropa slutpunkten för att generera åtkomsttoken.
-1. Anropa REST API genom att mata in åtkomsttoken på rätt sätt.
+1. Anropa slutpunkten för att generera en åtkomsttoken.
+1. Anropa REST API:et genom att injicera åtkomsttoken på rätt sätt.
 
-Autentiseringen består av två delar.
+Denna autentisering består av två delar.
 
-Definitionen av den slutpunkt som ska anropas för att generera åtkomsttoken:
+Definitionen av slutpunkten som ska anropas för att generera en åtkomsttoken:
 
 * slutpunkt: URL som ska användas för att generera slutpunkten
-* HTTP-begäran på slutpunkten (GET eller POST)
-* sidhuvuden: nyckel-/värdepar som vid behov ska matas in som rubriker i detta samtal
-* brödtext: beskriver brödtexten i anropet om metoden är POST. Vi stöder en begränsad brödstruktur, som definieras i bodyParams (nyckel/värde-par). bodyType beskriver format och kodning för brödtexten i anropet:
-   * &#39;form&#39;: vilket innebär att innehållstypen kommer att vara application/x-www-form-urlencoded (charset UTF-8) och nyckel/värde-paren kommer att serialiseras som: key1=value1&amp;key2=value2&amp;...
-   * &#39;json&#39;: vilket innebär att innehållstypen blir application/json (charset UTF-8) och nyckelvärdepar kommer att serialiseras som ett json-objekt som är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
+* metoden för HTTP-begäran på slutpunkten (GET eller POST)
+* rubriker: nyckel-/värdepar som vid behov ska injiceras som rubriker i detta anrop
+* brödtext: beskriver anropets brödtext om metoden är POST. Vi har stöd för en begränsad struktur i brödtexten som definieras i bodyParams (nyckel/värde-par). Brödtextens typ beskriver formatet och kodningen för brödtexten i anropet:
+   * &quot;form&quot;: innebär att innehållstypen är application/x-www-form-urlencoded (charset UTF-8) och nyckel/värde-paren serialiseras som de är: key1=value1&amp;key2=value2&amp; ...
+   * &quot;json&quot;: innebär att innehållstypen är application/json (charset UTF-8) och nyckel-/värdeparen serialiseras som ett json-objekt som det är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
 
-Definitionen av hur åtkomsttoken måste matas in i åtgärdens HTTP-begäran:
+Definitionen av hur en åtkomsttoken måste injiceras i åtgärdens HTTP-begäran:
 
-* authenticationType: definierar hur den genererade åtkomsttoken måste matas in i HTTP-anropet för åtgärden. Möjliga värden är:
+* authorizationType: definierar hur den genererade åtkomsttoken måste injiceras i HTTP-anropet för åtgärden. Möjliga värden är:
 
-   * innehavare: anger att åtkomsttoken måste matas in i auktoriseringshuvudet, som: _Behörighet: Bearer &lt;åtkomsttoken>_
-   * header: anger att åtkomsttoken måste matas in som ett huvud, det rubriknamn som definieras av egenskapen tokenTarget. Om till exempel tokenTarget är myHeader, kommer åtkomsttoken att matas in som ett huvud som: _myHeader: &lt;åtkomsttoken>_
-   * queryParam: anger att åtkomsttoken måste matas in som queryParam, frågeparameternamnet som definieras av egenskapen tokenTarget. Om till exempel tokenTarget är myQueryParam blir URL:en för åtgärdsanropet: _&lt;url>?myQueryParam=&lt;åtkomsttoken>_
+   * innehavare: anger att en åtkomsttoken måste injiceras i auktoriseringsrubriken såsom: _behörighet: innehavare &lt;åtkomsttoken>_
+   * rubrik: anger att en åtkomsttoken måste injiceras som en rubrik där dess namn definieras av egenskapen tokenTarget. Om till exempel tokenTarget är myHeader injiceras åtkomsttoken som en rubrik som: _myHeader: &lt;åtkomsttoken>_
+   * queryParam: anger att en åtkomsttoken måste injiceras som en queryParam där dess namn definieras av egenskapen tokenTarget. Om till exempel tokenTarget är myQueryParam blir webbadressen för åtgärdsanropet: _&lt;url>?myQueryParam=&lt;åtkomsttoken>_
 
-* tokenInResponse: visar hur du extraherar åtkomsttoken från autentiseringsanropet. Den här egenskapen kan vara:
-   * &#39;response&#39;: anger att HTTP-svaret är åtkomsttoken
-   * en väljare i en json (förutsatt att svaret är en json, stöder vi inte andra format som XML). Den här väljarens format är _json://&lt;path to the access token property>_. Om svaret på anropet till exempel är: _{ &quot;access_token&quot;: &quot;theToken&quot;, &quot;timestamp&quot;: 12323445656 }_, kommer tokenInResponse att vara: _json: //access_token_
+* tokenInResponse: anger hur du extraherar åtkomsttoken från autentiseringsanropet. Den här egenskapen kan vara:
+   * &quot;response&quot;: anger att HTTP-svaret är åtkomsttoken
+   * en väljare i en json (förutsatt att svaret är en json. Vi har inte stöd för andra format som XML). Den här väljarens format är _json://&lt;sökväg till åtkomsttokens egenskap>_. Om svaret på anropet till exempel är: _{ &quot;access_token&quot;: &quot;theToken&quot;, &quot;timestamp&quot;: 12323445656 }_, kommer tokenInResponse att vara: _json: //access_token_
 
 Autentiseringsformatet är:
 
@@ -166,7 +166,7 @@ Autentiseringsformatet är:
 }
 ```
 
-Du kan ändra cachevaraktigheten för token för en anpassad autentiseringsdatakälla. Nedan visas ett exempel på en anpassad autentiseringsnyttolast. Cachevaraktigheten definieras i parametern &quot;cacheDuration&quot;. Den anger kvarhållningstiden för den genererade token i cachen. Enheten kan vara millisekunder, sekunder, minuter, timmar, dagar, månader, år.
+Du kan ändra cachevaraktigheten på en token för en anpassad autentiseringsdatakälla. Nedan visas ett exempel på en anpassad autentiseringsnyttolast. Cachevaraktigheten definieras i parametern &quot;cacheDuration&quot;. Den anger varaktigheten för den genererade token i cachen. Enheten kan vara millisekunder, sekunder, minuter, timmar, dagar, månader och år.
 
 ```
 "authentication": {
