@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
+source-git-commit: 92bd110c4c91c459c8074184bdb486733ab5f3d7
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 0%
+source-wordcount: '1154'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ Så här använder du testläget:
 
    ![](../assets/journeytest1.png)
 
-1. Använd **[!UICONTROL Wait time in test]** parametern längst ned i det vänstra hörnet för att definiera hur lång tid varje vänteaktivitet ska vara i testläge. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Den här parametern visas bara om du har släppt en eller flera vänteaktiviteter under din resa.
+1. Använd **[!UICONTROL Wait time in test]** parametern längst ned i det vänstra hörnet för att definiera hur lång tid varje vänteaktivitet ska vara i testläge. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Den här parametern visas bara om du har släppt en eller flera vänteaktiviteter under din resa.
 
    ![](../assets/journeytest_wait.png)
 
@@ -59,7 +59,7 @@ Så här använder du testläget:
 
 ## Creating a test profile{#create-test-profile}
 
-Processen för att skapa en testprofil är densamma som när du skapar en profil i Adobe Experience Platform. Den utförs via API-anrop. Se den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/profile/home.html)
+Processen för att skapa en testprofil är densamma som när du skapar en profil i Adobe Experience Platform. Den utförs via API-anrop. See this [page](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html)
 
 Du måste använda ett profilschema som innehåller blandningen &quot;information om profiltester&quot;. Flaggan testProfile ingår i den här mixinen.
 
@@ -122,6 +122,10 @@ Med **[!UICONTROL Trigger an event]** knappen kan du konfigurera en händelse so
 Du måste veta vilka profiler som är flaggade som testprofiler i Adobe Experience Platform. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID.
 
 Om resan innehåller flera händelser använder du listrutan för att välja en händelse. Konfigurera sedan de fält som skickats och körningen av den händelse som skickats för varje händelse. Med gränssnittet kan du skicka rätt information i händelsens nyttolast och kontrollera att informationstypen är korrekt. Testläget sparar de senaste parametrarna som användes i en testsession för senare bruk.
+
+>[!NOTE]
+>
+>Observera att **[!UICONTROL TIMESTAMP]**
 
 ![](../assets/journeytest4.png)
 
