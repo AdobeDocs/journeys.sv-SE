@@ -11,21 +11,21 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+source-git-commit: 92bd110c4c91c459c8074184bdb486733ab5f3d7
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 0%
+source-wordcount: '245'
+ht-degree: 6%
 
 ---
 
 
-# Utnyttjar Journey AI {#concept_dsh_1ry_wfb}
+# Utnyttja rese-AI {#concept_dsh_1ry_wfb}
 
 Det här användningsexemplet visar hur du kan utnyttja trötthetspoäng för att undvika att överdriva kundresan.
 
 >[!NOTE]
 >
->Funktionen för prediktiv trötthet är bara tillgänglig för kunder som använder Adobe Campaign Standard Data Service.
+>Funktionen för prediktiv trötthet är bara tillgänglig för kunder som använder [Adobe Experience Platform Data Connector](https://docs.adobe.com/content/help/en/campaign-standard/using/developing/mapping-campaign-and-aep-data/aep-about-data-connector.html).
 
 ## Konfigurera händelsen {#section_ptb_ws1_ffb}
 
