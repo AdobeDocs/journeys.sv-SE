@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 78c486c3e43b0bbda666afba9cf36ba34b362a03
+source-git-commit: 2ef3ce546a816f1d7d0398acc418a20803886a20
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,17 @@ Om segmentet direktuppspelas med alternativet High Frequency Audiences i Adobe E
 
 1. Klicka i **[!UICONTROL Segment]** fältet och markera de segment som du vill använda.
 
+   >[!NOTE]
+   >
+   >Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
+
    ![](../assets/segment6.png)
+
+   När du har lagt till segmentet kan du med knappen kopiera dess namn och ID: **[!UICONTROL Copy]**
+
+   `{"name":"Loyalty membership“,”id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
+
+   ![](../assets/segment-copy.png)
 
 1. I **[!UICONTROL Behavior]** fältet väljer du om du vill lyssna på segmentingångar, utgångar eller både och.
 
@@ -59,7 +69,7 @@ Se [Villkorsaktivitet](../building-journeys/condition-activity.md#about_conditio
 
 ![](../assets/segment8.png)
 
-## Bästa tillvägagångssätt för segment {#best-practices-segments}
+## God praxis {#best-practices-segments}
 
 Denna **[!UICONTROL Segment Qualification]** verksamhet gör det möjligt att omedelbart ta sig in på resor för personer som kvalificerats eller diskvalificerats från ett Adobe Experience Platform-segment.
 
