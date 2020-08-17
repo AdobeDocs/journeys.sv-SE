@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+source-git-commit: 10c6406adb1473dcd150b43b5b5c8b178376f3ed
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,11 @@ I [det här avsnittet](../about/user-interface.md)beskrivs globala koncept för 
 
 ## Åtkomst till [!DNL Journey Orchestration] funktioner {#accessing-journey-orchestration-functionalities}
 
-När du öppnar [!DNL Journey Orchestration]visas **[!UICONTROL Journeys]** menyn så att du kan komma åt befintliga resor eller skapa nya. Se [Använda resedesignern](../building-journeys/using-the-journey-designer.md).
+Menyraden till vänster ger dig tillgång till de olika funktionerna. Klicka på en ikon för att öppna motsvarande meny. Du kan klicka på pilen längst ned till vänster om du vill expandera eller komprimera menyraden.
+
+![](../assets/interface-journeys2.png)
+
+När du öppnar [!DNL Journey Orchestration]visas **[!UICONTROL Journeys]** menyn så att du kan komma åt befintliga resor eller skapa nya. See [Using the journey designer](../building-journeys/using-the-journey-designer.md).
 
 ![](../assets/interface-journeys.png)
 
@@ -43,3 +47,4 @@ På **[!UICONTROL Segments]** menyn kan du komma åt och skapa Adobe Experience 
 Menyn **[!UICONTROL Admin]** är tillgänglig för alla användare med administratörsbehörighet (se [Åtkomsthantering](../about/access-management.md)). Här finns en kontrollpanel där du kan konfigurera [datakällor](../datasource/about-data-sources.md), [händelser](../event/about-events.md) och [åtgärder](../action/action.md).
 
 ![](../assets/interface-admin-dashboard.png)
+
