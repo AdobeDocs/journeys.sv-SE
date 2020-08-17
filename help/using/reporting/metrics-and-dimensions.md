@@ -1,5 +1,5 @@
 ---
-title: Mätvärden och dimensioner
+title: Mätvärden och mått
 description: Läs om mått och mätvärden för Journey Orchestration
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -11,7 +11,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+source-git-commit: 8641b577e91492c86e6fc8e201acd6a208e5e38b
 workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Mätvärden och dimensioner {#concept_rfj_wpt_52b}
+# Mätvärden och mått {#concept_rfj_wpt_52b}
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Tabellen nedan visar en lista över de dimensioner som används i reserapporter,
 | Dimensioner | Definition |
 |--- |--- |
 | **Åtgärd** | Lista över alla åtgärder (**åtgärdsnamn - åtgärdsetikett**) som används i resor, t.ex. Push - Check out confirmation, Email - Rewards fidelity. |
-| **Datakälla** | Lista över datakällor (**datakällans namn**) som används för att berika data under en resa, t.ex. Adobe Experience-plattformen, Reservation-systemet. |
+| **Datakälla** | Förteckning över datakällor (**datakällans namn**) som används för att berika data under en resa, t.ex. Adobe Experience Platform, reservationssystem. |
 | **[!UICONTROL Event]** | Lista över alla händelser (**händelsenamn - händelsetikett**) som används i resor, t.ex. Geometrixx-händelse - utcheckning av Geometrixx. |
 | **Fältgrupp** | Lista över fältgrupper (**fältgruppsnamn**) som används för att berika data i resor, t.ex. profilfältgrupp, reservationssystem för Geometrixx. |
 | **Resa** | Lista över varje resa (**resenamn**) i testläge och i realtid, t.ex. när kunden överger en kundvagn, meddelanden om hotellreservationer. |
@@ -98,7 +98,7 @@ Tabellen nedan visar en lista över mätvärden som används i journalrapporter,
 | **Blockeringslista ränta** | Totalt antal meddelanden på blockeringslista jämfört med skickade meddelanden. |
 | **studsar + fel** | Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden. |
 | **Studsa + felfrekvens** | Totalt antal meddelanden som studsade jämfört med skickade meddelanden. |
-| **Klicka på** | Antal gånger som ett innehåll klickades i en leverans. |
+| **Klicka på** | Antal gånger ett innehåll klickades i en leverans. |
 | **Klicka igenom hastigheten** | Totalt antal klick i en leverans jämfört med antalet levererade meddelanden. |
 | **Levererat** | Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden. |
 | **Levererad ränta** | Totalt antal meddelanden som har levererats jämfört med skickade meddelanden. |
