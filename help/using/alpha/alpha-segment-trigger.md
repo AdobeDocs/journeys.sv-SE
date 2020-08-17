@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b66cdb31b62b4627ff7378e48879ffadfedda5cb
+source-git-commit: 76c2f4c1f459bb7bb21101708340137ae5f89ae0
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 0%
+source-wordcount: '559'
+ht-degree: 1%
 
 ---
 
@@ -41,6 +41,8 @@ Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktivite
 
    Aktiviteten måste placeras som det första steget i en resa.
 
+1. Lägg till en **[!UICONTROL Label]** aktivitet. Det här steget är valfritt.
+
 1. Konfigurera aktiviteten **[!UICONTROL Scheduler type]**.
 
    Som standard kommer segmentet att gå in i resan, **[!UICONTROL As soon as possible]** vilket innebär en timme efter det att resan har publicerats. Om du vill att segmentet ska anges på en viss dag/tid eller på en återkommande basis, väljer du önskat alternativ i listan.
@@ -51,7 +53,17 @@ Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktivite
 
 1. I **[!UICONTROL Segment]** fältet väljer du det Adobe Experience Platform-segment som ska användas för resan och klickar sedan på **[!UICONTROL Save]**.
 
+   >[!NOTE]
+   >
+   >Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
+
    ![](../assets/segment-trigger-segment-selection.png)
+
+   När du har lagt till segmentet kan du med knappen kopiera dess namn och ID: **[!UICONTROL Copy]**
+
+   `{"name":"Gold customers,”id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
+
+   ![](../assets/segment-trigger-copy.png)
 
 1. I **[!UICONTROL Namespace]** fältet väljer du det namnutrymme som ska användas för att identifiera personerna. For more on namespaces, refer to [this section](../event/selecting-the-namespace.md).
 
