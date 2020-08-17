@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 71b5b1ecd20056d0103ae1a8b83a31478449e844
+source-git-commit: 2155bfc1c9f253be19b93a3d77e0e6d5a108f689
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 86%
+source-wordcount: '771'
+ht-degree: 78%
 
 ---
 
@@ -23,6 +23,12 @@ ht-degree: 86%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Orchestration].
 Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om [!DNL Journey Orchestration].
+
+## Augusti 2020 {#august-2020}
+
+* Lagt till information om hur du sorterar och väljer vilka kolumner som ska visas i segmentlistan. [Läs mer](../building-journeys/segment-qualification-events.md)
+* Lagt till information om hur du kopierar ett segments namn och ID när det har markerats. [Läs mer](../building-journeys/segment-qualification-events.md)
+* Förekomsten av Experience Platform har harmoniserats på de olika sidorna.
 
 ## Juli 2020 {#july-2020}
 
@@ -81,7 +87,7 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 
 * Alla skärmbilder har uppdaterats för att återspegla ändringar i gränssnitten.
 * Avsnittet Testläge har uppdaterats. [Läs mer](../building-journeys/testing-the-journey.md)
-* En varning har lagts till i avsnitten [Tidsoptimering för e-postsändning](../building-journeys/wait-activity.md) och [Förutsägande trötthet](../ai-services/leveraging-fatigue-scores.md) . Dessa funktioner är bara tillgängliga för kunder som använder funktionen Adobe Campaign Standard Data Service.
+* En varning har lagts till i avsnitten [Tidsoptimering för e-postsändning](../building-journeys/wait-activity.md) och [Förutsägande trötthet](../ai-services/leveraging-fatigue-scores.md) . Dessa funktioner är endast tillgängliga för kunder som använder [Adobe Experience Platform Data Connector](https://docs.adobe.com/content/help/en/campaign-standard/using/developing/mapping-campaign-and-aep-data/aep-about-data-connector.html).
 * Stoppade resor kan nu raderas. Relaterade sidor i dokumentationen har uppdaterats.
 * Två färger visas nu när fel upptäcks i en resa. Röd för fel och orange för varningar. [Läs mer](../about/troubleshooting.md)
 * Avsnittet Avancerad uttrycksredigerare har uppdaterats. [Läs mer](../expression/expressionadvanced.md).
