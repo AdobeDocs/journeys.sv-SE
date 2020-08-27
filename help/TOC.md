@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Hjälp med Journey Orchestration
 index: true
 translation-type: tm+mt
-source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+source-git-commit: 10d4fd57e9a801dab2310b2b511bf99cf1d9170a
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '378'
 ht-degree: 95%
 
 ---
@@ -95,7 +95,6 @@ ht-degree: 95%
    + Funktioner {#main-functions-journey}
       + [Huvudfunktioner](using/expression/functions.md)
       + Adobe Experience Platform {#adobe-experience-platform}
-         + [getBestSendTime](using/functions/functiongetbestsendtime.md)
          + [inSegment](using/functions/functioninsegment.md)
       + Aggregera {#aggregation}
          + [medel](using/functions/functionavg.md)
@@ -168,7 +167,6 @@ ht-degree: 95%
    + [Mätvärden och mått](using/reporting/metrics-and-dimensions.md)
 + Integrering med intelligenta tjänster{#use-case-advanced}
    + [Om AI-integrering](using/ai-services/ai-services-overview.md)
-   + [Utnyttja rese-AI](using/ai-services/leveraging-fatigue-scores.md)
    + [Utnyttja kund-AI](using/ai-services/leveraging-customer-ai.md)
 + Användningsfall{#use-cases-journeys}
    + Enkelt användningsfall{#use-case-simple}
