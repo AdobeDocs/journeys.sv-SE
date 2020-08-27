@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 92bd110c4c91c459c8074184bdb486733ab5f3d7
+source-git-commit: 9e264f0794bff859d1e1db0b8fc2c66ab19fdec7
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 2%
+source-wordcount: '377'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,8 @@ Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en
 * [Varaktighet](#duration)
 * [Fast datum](#fixed_date)
 * [Egen](#custom)
-* [Tidsoptimering för e-postsändning](#email_send_time_optimization)
+
+<!--* [Email send time optimization](#email_send_time_optimization)-->
 
 ## Om aktiviteten Vänta{#about_wait}
 
@@ -66,26 +67,26 @@ Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 j
 
 ![](../assets/journey57.png)
 
-## Tidsoptimering för e-postsändning{#email_send_time_optimization}
+<!--## Email send time optimization{#email_send_time_optimization}
 
 >[!CAUTION]
 >
->Tidsoptimeringsfunktionen för e-postutskick är bara tillgänglig för kunder som använder [Adobe Experience Platform Data Connector](https://docs.adobe.com/content/help/en/campaign-standard/using/developing/mapping-campaign-and-aep-data/aep-about-data-connector.html).
+>The email send time optimization capability is only available to customers who use the [Adobe Experience Platform Data Connector](https://docs.adobe.com/content/help/en/campaign-standard/using/developing/mapping-campaign-and-aep-data/aep-about-data-connector.html).
 
-Den här typen av väntan använder en bakgrundsmusik som beräknas i Adobe Experience Platform. Poängen beräknar sannolikheten för att klicka eller öppna ett e-postmeddelande i framtiden baserat på tidigare beteenden. Observera att algoritmen som beräknar poängen behöver en viss mängd data för att fungera. Om det inte finns tillräckligt med data används därför standardväntetiden. Vid publiceringen får du ett meddelande om att standardtiden gäller.
+This type of wait uses a score calculated in the Adobe Experience Platform. The score calculates the propensity to click or open an email in the future based on past behavior. Note that the algorithm calculating the score needs a certain amount of data to work. As a result, when it does not have enough data, the default wait time will apply. At publication time, you’ll be notified that the default time applies.
 
 >[!NOTE]
 >
->Den första händelsen i din resa måste ha ett namnutrymme.
+>The first event of your journey must have a namespace.
 >
->Den här funktionen är bara tillgänglig efter en **[!UICONTROL Email]** aktivitet. Du måste ha Adobe Campaign Standard.
+>This capability is only available after an **[!UICONTROL Email]** activity. You need to have Adobe Campaign Standard.
 
-1. I **[!UICONTROL Amount of time]** fältet anger du hur många timmar e-postutskick ska optimeras.
-1. I **[!UICONTROL Optimization type]** fältet väljer du om optimeringen ska öka antalet klick eller öppna.
-1. I **[!UICONTROL Default time]** fältet anger du standardväntetiden om det prediktiva sändningstidsresultatet inte är tillgängligt.
+1. In the **[!UICONTROL Amount of time]** field, define the number of hours to consider to optimize email sending.
+1. In the **[!UICONTROL Optimization type]** field, choose if the optimization should increase clicks or opens.
+1. In the **[!UICONTROL Default time]** field, define the default time to wait if the predictive send time score is not available.
 
-   >[!NOTE]
-   >
-   >Observera att poängen för sändningstid inte är tillgängliga eftersom det inte finns tillräckligt med data för att utföra beräkningen. I så fall kommer du att informeras om att standardtiden gäller vid publiceringen.
+    >[!NOTE]
+    >
+    >Note that the send time score can be unavailable because there is not enough data to perform the calculation. In this case, you will be informed, at publication time, that the default time applies.
 
-![](../assets/journey57bis.png)
+![](../assets/journey57bis.png)-->
