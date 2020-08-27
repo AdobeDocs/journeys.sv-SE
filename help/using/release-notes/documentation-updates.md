@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2155bfc1c9f253be19b93a3d77e0e6d5a108f689
+source-git-commit: 10d4fd57e9a801dab2310b2b511bf99cf1d9170a
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 78%
+source-wordcount: '724'
+ht-degree: 80%
 
 ---
 
@@ -81,13 +81,14 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 ## Januari 2020 {#january-2020}
 
 * Hämtningsbegränsningar har lagts till för [upplevelsehändelser](../datasource/adobe-experience-platform-data-source.md) och [segment](../functions/functioninsegment.md).
-* Dokumentationen om [getBestSendTime](../functions/functiongetbestsendtime.md) har uppdaterats.
+
+<!--* The [getBestSendTime documentation](../functions/functiongetbestsendtime.md) has been updated.-->
 
 ## December 2019 {#december-2019}
 
 * Alla skärmbilder har uppdaterats för att återspegla ändringar i gränssnitten.
 * Avsnittet Testläge har uppdaterats. [Läs mer](../building-journeys/testing-the-journey.md)
-* En varning har lagts till i avsnitten [Tidsoptimering för e-postsändning](../building-journeys/wait-activity.md) och [Förutsägande trötthet](../ai-services/leveraging-fatigue-scores.md) . Dessa funktioner är endast tillgängliga för kunder som använder [Adobe Experience Platform Data Connector](https://docs.adobe.com/content/help/en/campaign-standard/using/developing/mapping-campaign-and-aep-data/aep-about-data-connector.html).
+<!--* A warning has been added in the [email send time optimization](../building-journeys/wait-activity.md) and [predictive fatigue scores](../ai-services/leveraging-fatigue-scores.md) sections. These capabilities are only available to customers who use the [Adobe Experience Platform Data Connector](https://docs.adobe.com/content/help/en/campaign-standard/using/developing/mapping-campaign-and-aep-data/aep-about-data-connector.html).-->
 * Stoppade resor kan nu raderas. Relaterade sidor i dokumentationen har uppdaterats.
 * Två färger visas nu när fel upptäcks i en resa. Röd för fel och orange för varningar. [Läs mer](../about/troubleshooting.md)
 * Avsnittet Avancerad uttrycksredigerare har uppdaterats. [Läs mer](../expression/expressionadvanced.md).
