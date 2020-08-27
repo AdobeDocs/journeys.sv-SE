@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1ccf020a882c1d6d9bd00f2e9f5d6b2aee6f7829
+source-git-commit: 10d4fd57e9a801dab2310b2b511bf99cf1d9170a
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -38,8 +38,8 @@ Uttrycken utvärderas från vänster till höger. Associativiteten för aritmeti
 
 Här är de olika reglerna för skiftlägeskänslighet:
 
-* Alla operatorer (och, eller, osv.) ska skrivas med gemener. Till exempel _`<expression1>`och`<expression2>`_är ett giltigt uttryck medan uttrycket_`<expression1>` AND inte `<expression2>`_ är det.
-* Alla funktionsnamn är skiftlägeskänsliga. Till exempel är _getBestSendTime()_ giltigt medan funktionen _GETBESTSENDTIME()_ inte är giltig.
+* Alla operatorer (och, eller, osv.) ska skrivas med gemener. Till exempel _`<expression1>`och`<expression2>`_ är ett giltigt uttryck medan uttrycket _`<expression1>`AND inte`<expression2>`_ är det.
+* Alla funktionsnamn är skiftlägeskänsliga. Till exempel är _inSegment()_ giltigt medan funktionen _INSEGMENT()_ inte är giltig.
 * Fältreferenser och konstanta värden är skiftlägeskänsliga: de inte är inbyggda element i språket (till skillnad från operatorer och funktioner), de författas av slutanvändaren.
 
 ## Returnerad uttryckstyp{#section_gyc_435_53b}
