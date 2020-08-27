@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a3df443dcb05018d1f8cac885631dba9c8c20d2b
+source-git-commit: 10d4fd57e9a801dab2310b2b511bf99cf1d9170a
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 20%
+source-wordcount: '107'
+ht-degree: 60%
 
 ---
 
@@ -33,17 +33,16 @@ Här är en lista över funktioner som stöds.
 
 | Kategori |  -funktion |
 |-------------|-----------------------|
-| Adobe Experience Platform | [](../functions/functiongetbestsendtime.md) |
 | Adobe Experience Platform | [](../functions/functioninsegment.md) |
-| Aggregering | [](../functions/functionavg.md) |
-| Aggregering | [](../functions/functioncount.md) |
-| Aggregering | [](../functions/functioncountonlynull.md) |
-| Aggregering | [](../functions/functioncountwithnull.md) |
-| Aggregering | [](../functions/functiondistinctcount.md) |
-| Aggregering | [](../functions/functiondistinctcountwithnull.md) |
-| Aggregering | [](../functions/functionmax.md) |
-| Aggregering | [](../functions/functionmin.md) |
-| Aggregering | [](../functions/functionsum.md) |
+| Aggregera | [](../functions/functionavg.md) |
+| Aggregera | [](../functions/functioncount.md) |
+| Aggregera | [](../functions/functioncountonlynull.md) |
+| Aggregera | [](../functions/functioncountwithnull.md) |
+| Aggregera | [](../functions/functiondistinctcount.md) |
+| Aggregera | [](../functions/functiondistinctcountwithnull.md) |
+| Aggregera | [](../functions/functionmax.md) |
+| Aggregera | [](../functions/functionmin.md) |
+| Aggregera | [](../functions/functionsum.md) |
 | Konvertering | [](../functions/functiontobool.md) |
 | Konvertering | [](../functions/functiontodatetime.md) |
 | Konvertering | [](../functions/functiontodatetimeonly.md) |
