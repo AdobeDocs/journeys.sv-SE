@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3c5f1dcf66df31b12237788633704eeb348ddfa2
+source-git-commit: 9e264f0794bff859d1e1db0b8fc2c66ab19fdec7
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 0%
+source-wordcount: '85'
+ht-degree: 3%
 
 ---
 
@@ -25,10 +25,6 @@ Integrationen med Intelligent Services gör att ni kan utnyttja kraften i artifi
 
 Mer information om intelligenta tjänster finns i [dokumentationen](https://docs.adobe.com/content/help/en/experience-platform/intelligent-services/home.html).
 
-Tack vare den här integreringen kan du utnyttja:
+Tack vare den här integreringen kan ni utnyttja kundernas prognoser, se [Leverera kundens AI](../ai-services/leveraging-customer-ai.md)
 
-* kundprognoser, se [Leverera kundens AI](../ai-services/leveraging-customer-ai.md)
-* Utmattningspoäng, se [Leveraging Journey AI](../ai-services/leveraging-fatigue-scores.md)
-
-
-
+<!--* fatigue scores, see [Leveraging Journey AI](../ai-services/leveraging-fatigue-scores.md)-->
