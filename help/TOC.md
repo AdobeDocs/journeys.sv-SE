@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Hjälp med Journey Orchestration
 index: true
 translation-type: tm+mt
-source-git-commit: 10d4fd57e9a801dab2310b2b511bf99cf1d9170a
+source-git-commit: 8a9c6e4f70ff88e60a85caff5e18a05070cf3f93
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 95%
@@ -63,7 +63,7 @@ ht-degree: 95%
          + [Om händelseaktiviteter](using/building-journeys/event-activities.md)
          + [Allmänna händelser](using/building-journeys/general-events.md)
          + [Reaktionshändelser](using/building-journeys/reaction-events.md)
-         + [Segmentkvalificeringshändelser](using/building-journeys/segment-qualification-events.md)
+         + [Segment med kvalificeringshändelser](using/building-journeys/segment-qualification-events.md)
       + Orkestreringsaktiviteter {#orchestration-activities}
          + [Om orkestreringsaktiviteter](using/building-journeys/about-orchestration-activities.md)
          + [Villkorsaktivitet](using/building-journeys/condition-activity.md)
@@ -184,6 +184,6 @@ ht-degree: 95%
 + Alfavärden {#alpha}
    + [Översikt över alfavärden](using/alpha/alpha-overview.md)
    + [Användargränssnitt](using/alpha/alpha-interface.md)
-   + [Aktivitet för utlösare av segment](using/alpha/alpha-segment-trigger.md)
+   + [Läs segmentaktivitet](using/alpha/alpha-segment-trigger.md)
    + [Regelbaserade händelser](using/alpha/alpha-events.md)
 
