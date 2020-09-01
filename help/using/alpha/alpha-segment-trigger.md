@@ -1,6 +1,6 @@
 ---
-title: Aktivitet för utlösare av segment
-description: Läs mer om segmentutlösare
+title: Läs segmentaktivitet
+description: Läs mer om Läs segment-aktiviteten.
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -11,25 +11,25 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 76c2f4c1f459bb7bb21101708340137ae5f89ae0
+source-git-commit: 967f453145dcf9af0e3efc5d52854d0c5c68c54f
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 1%
+source-wordcount: '564'
+ht-degree: 0%
 
 ---
 
 
-# Aktivitet för utlösare av segment {#segment-trigger-activity}
+# Läs segmentaktivitet {#segment-trigger-activity}
 
-## Om aktiviteten Utlösare för segment {#about-segment-trigger-actvitiy}
+## Om aktiviteten Läs segment {#about-segment-trigger-actvitiy}
 
 >[!NOTE]
 >
->Om det finns en färdig Adobe Campaign Standard-åtgärd på arbetsytan vid publiceringstid eller aktiveringstid i testläge kommer resan att strypas vid 13 ingångar per sekund. <br>Om Adobe Campaign Standard inte har någon färdig åtgärd i arbetsytan vid publiceringstid eller aktiveringstid i testläge kommer resan att strypas med 1 000 händelser per sekund.
+>Om det finns en färdig Adobe Campaign Standard-åtgärd på arbetsytan vid publiceringstid eller aktiveringstid i testläge kommer resan att strypas vid 13 ingångar per sekund. Annars begränsas resan till 1 000 händelser per sekund.
 
-Med aktiviteten Segmentutlösare kan du göra så att alla personer som tillhör ett Adobe Experience Platform-segment går in på en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
+Med Läs segment-aktiviteten kan alla personer som tillhör ett Adobe Experience Platform-segment delta i en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
 
-Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktiviteten Segment Trigger kan ni få alla personer som tillhör kundsegmentet Gold att komma in på en resa och få dem att flöda in i personaliserade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
+Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktiviteten Läs segment kan alla personer som tillhör kundsegmentet Gold ta sig in på en resa och få dem att flöda in i personaliserade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
 
 ## Konfigurera aktiviteten {#configuring-segment-trigger-activity}
 
@@ -37,19 +37,11 @@ Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktivite
 >
 >På grund av fördröjningar för segmentexport går det inte att utlösa en segmentbaserad resa inom en kortare tidsram än en timme.
 
-1. Ge kategorin en ny **[!UICONTROL Orchestration]** dimension och släpp en **[!UICONTROL Segment Trigger]** aktivitet på arbetsytan.
+1. Ge kategorin en ny **[!UICONTROL Orchestration]** dimension och släpp en **[!UICONTROL Read Segment]** aktivitet på arbetsytan.
 
    Aktiviteten måste placeras som det första steget i en resa.
 
-1. Lägg till en **[!UICONTROL Label]** aktivitet. Det här steget är valfritt.
-
-1. Konfigurera aktiviteten **[!UICONTROL Scheduler type]**.
-
-   Som standard kommer segmentet att gå in i resan, **[!UICONTROL As soon as possible]** vilket innebär en timme efter det att resan har publicerats. Om du vill att segmentet ska anges på en viss dag/tid eller på en återkommande basis, väljer du önskat alternativ i listan.
-
-   Vid återkommande resor kan du också definiera resans början och slut.
-
-   ![](../assets/segment-trigger-schedule.png)
+1. Lägg till en aktivitet **[!UICONTROL Label]** (valfritt).
 
 1. I **[!UICONTROL Segment]** fältet väljer du det Adobe Experience Platform-segment som ska användas för resan och klickar sedan på **[!UICONTROL Save]**.
 
@@ -71,20 +63,34 @@ Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktivite
    >
    >Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kan inte ta sig in på resan.
 
-1. Bekräfta genom **[!UICONTROL Ok]** att klicka. Sedan kan ni utnyttja tillgängliga aktiviteter för att skapa er resa.
+1. Med hjälp av den här **[!UICONTROL Read Segment]** aktiviteten kan du ange vid vilken tidpunkt segmentet ska börja färden. Det gör du genom att klicka på **[!UICONTROL Edit journey schedule]** länken för att komma åt resans egenskaper och sedan konfigurera **[!UICONTROL Scheduler type]** fältet.
 
-1. När resan är klar kan du testa den (se [Testa resan](../building-journeys/testing-the-journey.md)).
+   ![](../assets/segment-trigger-schedule.png)
 
-   När testläget aktiveras på en resa som börjar med en **[!UICONTROL Segment Trigger]** aktivitet väljs 100 testprofiler slumpmässigt bland de profiler som är kvalificerade för det valda segmentet. Testloggarna gör att du kan se sökvägen till personer på resan och eventuella fel som uppstått (se [Visa loggarna](../building-journeys/testing-the-journey.md#viewing_logs)).
+   Som standard färdas segmenten in på resan, **[!UICONTROL As soon as possible]** vilket innebär en timme efter det att resan har publicerats. Om du vill att segmentet ska anges på en viss dag/tid eller på en återkommande basis, väljer du önskat värde i listan.
 
    >[!NOTE]
    >
-   >Observera att du inte kommer att kunna se de 100 personer som följer resan med hjälp av funktionen för visuellt flöde som finns på enhetsresor.
+   >Observera att **[!UICONTROL Schedule]** avsnittet endast är tillgängligt när en **[!UICONTROL Read Segment]** aktivitet har släppts på arbetsytan.
 
-1. Du kan sedan publicera din resa (se [Publicera resan](../building-journeys/publishing-the-journey.md)). Individer som tillhör segmentet kommer att gå in i resan det datum/den tid som anges i aktivitetsplaneraren för utlösare för segment.
+   ![](../assets/segment-trigger-properties.png)
 
-   >[!IMPORTANT]
-   >
-   >Tänk på att Adobe Experience Platform-segment beräknas antingen en gång om dagen (**gruppsegment** ) eller i realtid (**direktuppspelade** segment).
-   >
-   >Om det valda segmentet direktuppspelas kan de personer som tillhör det segmentet komma in på resan i realtid. Om segmentet är en batch kan personer som nyligen är kvalificerade för det här segmentet komma in på resan när segmentberäkningen körs på Adobe Experience Platform.
+## Testa och publicera resan {#testing-publishing}
+
+Med den här **[!UICONTROL Read Segment]** aktiviteten kan du testa resan antingen med en enhetlig profil eller med 100 slumpmässiga testprofiler som valts bland de profiler som är kvalificerade för segmentet.
+
+Aktivera testläget och välj sedan önskat alternativ i den vänstra rutan.
+
+![](../assets/segment-trigger-test-modes.png)
+
+Du kan sedan konfigurera testläget som vanligt. Detaljerade anvisningar om hur du testar en resa finns i [detta avsnitt](../building-journeys/testing-the-journey.md).
+
+Observera att det inte går att följa förloppet för de personer som befinner sig på resan med hjälp av det visuella flödet om du testar resan med upp till 100 profiler samtidigt.
+
+När testerna är slutförda kan du publicera din resa (se [Publicera resan](../building-journeys/publishing-the-journey.md)). Enskilda personer som tillhör segmentet kommer in i resan på det datum/den tidpunkt som anges i **[!UICONTROL Scheduler]** avsnittet om färdens egenskaper.
+
+>[!IMPORTANT]
+>
+>Tänk på att Adobe Experience Platform-segment beräknas antingen en gång om dagen (**gruppsegment** ) eller i realtid (**direktuppspelade** segment).
+>
+>Om det valda segmentet direktuppspelas kan de personer som tillhör det segmentet komma in på resan i realtid. Om segmentet är en batch kan personer som nyligen är kvalificerade för det här segmentet komma in på resan när segmentberäkningen körs på Adobe Experience Platform.
