@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 92bd110c4c91c459c8074184bdb486733ab5f3d7
+source-git-commit: ed0934f141ade1e558131e9fad609844800dd46a
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1151'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Du kan testa din resa innan den publiceras med testprofiler. På så sätt kan n
 
 Så här använder du testläget:
 
-1. Kontrollera att resan är giltig och att det inte finns något fel innan du testar den. Du kommer inte att kunna starta ett test av en resa med fel. Se [](../about/troubleshooting.md#section_h3q_kqk_fhb). En varningssymbol visas om det finns fel.
+1. Innan du testar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kommer inte att kunna starta ett test av en resa med fel. Se [](../about/troubleshooting.md#section_h3q_kqk_fhb). En varningssymbol visas om det finns fel.
 
 1. Aktivera testläget genom att klicka på **[!UICONTROL Test]** växlingsknappen i det övre högra hörnet.
 
@@ -122,10 +122,6 @@ Med **[!UICONTROL Trigger an event]** knappen kan du konfigurera en händelse so
 Du måste veta vilka profiler som är flaggade som testprofiler i Adobe Experience Platform. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID.
 
 Om resan innehåller flera händelser använder du listrutan för att välja en händelse. Konfigurera sedan de fält som skickats och körningen av den händelse som skickats för varje händelse. Med gränssnittet kan du skicka rätt information i händelsens nyttolast och kontrollera att informationstypen är korrekt. Testläget sparar de senaste parametrarna som användes i en testsession för senare bruk.
-
->[!NOTE]
->
->Observera att **[!UICONTROL TIMESTAMP]**
 
 ![](../assets/journeytest4.png)
 
