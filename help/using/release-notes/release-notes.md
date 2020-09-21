@@ -10,11 +10,11 @@ topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 619f05137bfad573a5de23ceda5448180dad2d6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1527'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -24,15 +24,15 @@ ht-degree: 63%
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
 
-## Augustiversionen 2020 {#august-release}
+## Versionen från augusti 2020 {#august-release}
 
 ### GA-uppdateringar{#august-ga-update}
 
-Nyttolasten för seg kvalificeringshändelser innehåller nu följande kontextinformation som du kan använda i villkor och åtgärder: Beteendet (entré, exit), tidsstämpeln för kvalificeringen och segment-id:t. [Läs mer](../building-journeys/segment-qualification-events.md)
+Nyttolasten för segments kvalificeringshändelser innehåller nu följande sammanhangsinformation som du kan använda i villkor och åtgärder: beteendet (ingång, utgång), tidsstämpeln för kvalificeringen och segment-ID. [Läs mer](../building-journeys/segment-qualification-events.md)
 
-### Uppdateringar om alfa{#august-alpha-update}
+### Alfa-uppdateringar{#august-alpha-update}
 
-Se det här [avsnittet](../alpha/alpha-overview.md)om du vill veta mer om alfavärdet.
+Läs det här [avsnittet](../alpha/alpha-overview.md) för att upptäcka omfattningen om alfaversionen.
 
 <table>
 <thead>
@@ -43,14 +43,14 @@ Se det här [avsnittet](../alpha/alpha-overview.md)om du vill veta mer om alfav�
 <tbody>
 <tr>
 <td>
-<p>Följande förbättringar har gjorts i aktiviteten Utlösare för segment:
+<p>Följande förbättringar har gjorts i aktiviteten för utlösare av segment:
 </p>
 <ul>
-<li><p>Aktivitetens namn har ändrats till"Läsa segment". </p>
+<li><p>Aktivitetens namn har ändrats till ”Läsa segment”. </p>
 </li>
-<li><p>Konfigurationen av transportschemaläggaren har tagits bort från aktivitetens egenskaper. Den är nu tillgänglig direkt från reseegenskaperna i ett dedikerat avsnitt som visas om en Läs segment-aktivitet har släppts på arbetsytan. </p>
+<li><p>Konfigurationen av resans schemaläggare har tagits bort från aktivitetens egenskaper. Den är nu tillgänglig direkt från resans egenskaper i ett dedikerat avsnitt som visas om aktiviteten Läsa segment har placerats på arbetsytan. </p>
 </li>
-<li><p>Nu kan du testa resan med en enhetlig profil och följa förloppet i resan med hjälp av det visuella flödet.</p>
+<li><p>Du kan nu testa resan med en enhetlig profil och följa förloppet i den med hjälp av det visuella flödet.</p>
 </li>
 </ul>
 <p>Mer information finns i den <a href="../alpha/alpha-segment-trigger.md">detaljerade dokumentationen</a>.</p>
@@ -71,11 +71,11 @@ Se det här [avsnittet](../alpha/alpha-overview.md)om du vill veta mer om alfav�
 <p>Följande förbättringar har gjorts i regelbaserade händelser:
 </p>
 <ul>
-<li><p>Nu kan ni utnyttja alla Adobe Analytics beteendehändelsedata som ni redan samlar in och strömmar till plattformen för att utlösa resor och automatisera kundernas upplevelser. <a href="../alpha/alpha-events.md#analytics-data">Läs mer</a></p>
+<li><p>Du kan nu utnyttja alla händelsedata från beteenden i Adobe Analytics som du redan samlar in och strömmar till plattformen för att utlösa resor och automatisera kundernas upplevelser. <a href="../alpha/alpha-events.md#analytics-data">Läs mer</a></p>
 </li>
-<li><p>När du utlöser en regelbaserad händelse i testläge kan du nu direkt visa händelse-ID-villkoret. Dessutom har ett verktygstips lagts till bredvid varje fält som är en del av regelutvärderingen. <a href="../alpha/alpha-events.md#configuring-rule-based">Läs mer</a></p>
+<li><p>När du utlöser en regelbaserad händelse i testläget kan du nu direkt se villkorets händelse-ID. Dessutom har ett verktygstips lagts till bredvid varje fält som en del av regelutvärderingen. <a href="../alpha/alpha-events.md#configuring-rule-based">Läs mer</a></p>
 </li>
-<li><p>Den regelbaserade skärmen för händelsedefinition har omorganiserats för att ge en bättre upplevelse. <a href="../alpha/alpha-events.md#test-rule-based">Läs mer</a></p>
+<li><p>Den regelbaserade skärmen för händelsedefinition har omorganiserats för att leverera en bättre upplevelse. <a href="../alpha/alpha-events.md#test-rule-based">Läs mer</a></p>
 </li>
 </ul>
 </td>
@@ -83,11 +83,11 @@ Se det här [avsnittet](../alpha/alpha-overview.md)om du vill veta mer om alfav�
 </tbody>
 </table>
 
-## Alpha Release - juli 2020 {#alpha-release---july-2020}
+## Alfaaversion – juli 2020 {#alpha-release---july-2020}
 
-Alpha-programmet har funktioner som för närvarande är testade bland ett begränsat antal kunder. På så sätt kan vi förbättra vår produkt baserat på den feedback vi fått. De här funktionerna är inte tillgängliga för alla Journey Orchestration-kunder.
+Programmets alfaversion har funktioner som för närvarande testas bland ett begränsat antal kunder. På så sätt kan vi förbättra vår produkt baserat på den feedback vi får. De här funktionerna är inte tillgängliga för alla kunder som använder Journey Orchestration.
 
-Dessa funktioner beskrivs i ett dedikerat [avsnitt](../alpha/alpha-overview.md).
+De här funktionerna beskrivs i ett dedikerat [avsnitt](../alpha/alpha-overview.md).
 
 <table>
 <thead>
@@ -98,10 +98,10 @@ Dessa funktioner beskrivs i ett dedikerat [avsnitt](../alpha/alpha-overview.md).
 <tbody>
 <tr>
 <td>
-<p>Navigeringen på Journey Orchestration-menyer har förbättrats så att gränssnittet med Adobe Experience Platform blir konsekvent:
+<p>Navigeringen bland menyerna i Journey Orchestration har förbättrats så att gränssnittet med Adobe Experience Platform blir konsekvent:
 </p>
 <ul>
-<li><p>Menyer har flyttats från den övre till den vänstra sidan av gränssnittet. </p>
+<li><p>Menyer har flyttats från den övre delen till den vänstra sidan av gränssnittet. </p>
 </li>
 <li><p>Gruppering av administratörsfunktioner i en enda kontrollpanel.</p>
 </li>
@@ -121,7 +121,7 @@ Dessa funktioner beskrivs i ett dedikerat [avsnitt](../alpha/alpha-overview.md).
 <tbody>
 <tr>
 <td>
-<p>Med aktiviteten Segmentutlösare kan du göra så att alla personer som tillhör ett Adobe Experience Platform-segment går in på en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet. <a href="../alpha/alpha-segment-trigger.md">Läs mer</a>
+<p>Med aktiviteten för utlösare av segment kan du placera alla personer, som tillhör ett segment i Adobe Experience Platform, i en resa. Inträde i en resa kan genomföras antingen en gång eller regelbundet. <a href="../alpha/alpha-segment-trigger.md">Läs mer</a>
 </p>
 </td>
 </tr>
@@ -137,7 +137,7 @@ Dessa funktioner beskrivs i ett dedikerat [avsnitt](../alpha/alpha-overview.md).
 <tbody>
 <tr>
 <td>
-<p>Vi har förenklat hur ni konfigurerar Experience Events. Vi introducerar en ny metod som inte kräver att ett eventID används. När du konfigurerar en händelse i Journey Orchestration kan du nu definiera en regelbaserad händelse. <a href="../alpha/alpha-events.md">Läs mer</a>
+<p>Vi har förenklat hur du konfigurerar upplevelsehändelser. Vi introducerar en ny metod som inte kräver att ett händelse-ID används. När du konfigurerar en händelse i Journey Orchestration kan du nu definiera en regelbaserad händelse. <a href="../alpha/alpha-events.md">Läs mer</a>
 </p>
 </td>
 </tr>
@@ -156,21 +156,21 @@ Dessa funktioner beskrivs i ett dedikerat [avsnitt](../alpha/alpha-overview.md).
 <tbody>
 <tr>
 <td>
-<p>Följande Adobe Experience Platform-integreringsförbättringar har gjorts:</p>
+<p>Följande förbättringar gällande integreringen i Adobe Experience Platform har gjorts:</p>
 <ul>
-<li><p>Med en ny aktivitet kan man lyssna på Adobe Experience Platform segmentingångar/utgångar så att man kan ta sig in på eller gå vidare på en resa. <a href="../building-journeys/segment-qualification-events.md">Läs mer</a></p>
+<li><p>En ny aktivitet tillåter avläsning av ett segments ingångar/utgångar i Adobe Experience Platform för att få människor att komma in i eller gå framåt i en resa. <a href="../building-journeys/segment-qualification-events.md">Läs mer</a></p>
 <img src="../assets/rn-segment7.png"/>
 </li>
-<li><p>Adobe Experience Platform segments can now be created and edited without leaving the Journey Orchestration interface, thanks to a new <strong>Segments</strong> tab.<a href="../segment/about-segments.md">Läs mer</a></p>
+<li><p>Segment i Adobe Experience Platform kan nu skapas och redigeras utan att man lämnar gränssnittet i Journey Orchestration tack vare en ny flik för <strong>segment</strong> .<a href="../segment/about-segments.md">Läs mer</a></p>
 <img src="../assets/rn-segment1.png"/>
 </li>
-<li><p>I den enkla uttrycksredigeraren visas nu Adobe Experience Platform-segment direkt i navigeringsträdet för att göra det möjligt att enkelt konfigurera villkor som"tillhör den här personen segment A?".<a href="../segment/using-a-segment.md">Läs mer</a></p>
+<li><p>I den enkla uttrycksredigeraren visas nu segment i Adobe Experience Platform direkt i navigeringsträdet så att man enkelt kan konfigurera villkor såsom ”tillhör den här personen segment A?”.<a href="../segment/using-a-segment.md">Läs mer</a></p>
 <img src="../assets/rn-segment4.png"/>
 </li>
-<li><p>Journey Orchestration övergår nu automatiskt de steg som utförs på resorna till Adobe Experience Platform. Detta inkluderar potentiella fel som påträffas. Den här informationen kan användas när man vill utföra rapportering och felsökning genom att köra frågor om steg i resehändelser för en viss resa eller för alla resor. <a href="../building-journeys/sharing-overview.md">Läs mer</a></p>
+<li><p>Journey Orchestration skickar nu automatiskt de steg som har körts i resorna till Adobe Experience Platform. Detta inkluderar potentiella fel som påträffas. Den här informationen kan användas när man vill utföra rapportering och felsökning genom att köra frågor om steg i resehändelser för en viss resa eller för alla resor. <a href="../building-journeys/sharing-overview.md">Läs mer</a></p>
 <img src="../assets/rn-journeystepevent.png"/>
 </li>
-<li><p>Journey Orchestration kan nu anslutas till Adobe Experience Platform-sandlådor för produktion och icke-produktion. Observera att sandlådor är en betafunktion. <a href="../about/access-management.md#sandboxes">Läs mer</a></p>
+<li><p>Journey Orchestration kan nu anslutas till sandlådor i Adobe Experience Platform för produktion och icke-produktion. Observera att sandlådor är en betafunktion. <a href="../about/access-management.md#sandboxes">Läs mer</a></p>
 </li>
 </ul>
 </td>
@@ -251,7 +251,7 @@ Gränssnittet i Journey Orchestration finns tillgängligt på japanska.
 <img src="../assets/rn-timezone.png"/>
 <ul>
 <li>På rullgardinsmenyn <strong>Tidszon</strong> kan du välja en specifik tidszon. Som standard används webbläsarens tidszon. </li>
-<li>The <strong>Profile Timezone</strong> checkbox allows you to use the Adobe Experience Platform Profile timezone of the person entering the journey, if available. Annars används den tidszon som definieras på rullgardinsmenyn. Den här funktionen är inte kompatibel med resor som använder händelser som saknar namnrymd.</li>
+<li>I kryssrutan <strong>Tidszonsprofil</strong> kan du använda tidszonen från profilen i Adobe Experience Platform (om den är tillgänglig) för den person som påbörjar resan. Annars används den tidszon som definieras på rullgardinsmenyn. Den här funktionen är inte kompatibel med resor som använder händelser som saknar namnrymd.</li>
 </ul>
 <p>Se avsnitten <a href="../building-journeys/changing-properties.md#timezone">Ändra egenskaper</a> och <a href="../building-journeys/timezone-management.md">Hantera tidszoner</a> för mer information.</p>
 </td>
@@ -302,7 +302,7 @@ Gränssnittet i Journey Orchestration finns tillgängligt på japanska.
 
 **Andra förbättringar**
 
-* In addition to US, Journey Orchestration is now available in **EMEA**. Ansökan och dokumentationen finns tillgänglig på franska och tyska.
+* Förutom i USA finns nu även Journey Orchestration tillgänglig i **EMEA**. Ansökan och dokumentationen finns tillgänglig på franska och tyska.
 
 * Experience League är nu integrerad i produkten. Detta förenklar åtkomsten till relaterat innehåll och hjälper dig att få ut mesta möjliga av Experience Cloud. Direktåtkomst till dokumentationen om Journey Orchestration finns tillgänglig längst ned på hjälpfliken. Du kan dessutom klicka på Hjälp > Feedback för att rapportera problem eller dela med dig av dina idéer till Adobe.
 
@@ -310,7 +310,7 @@ Gränssnittet i Journey Orchestration finns tillgängligt på japanska.
 
 * Du kan nu **radera** avbrutna resor. Rapporter som är kopplade till dessa raderade resor är inte tillgängliga.
 
-* When browsing through **Adobe Experience Platform fields** (XDM format), you will now see the display name in addition to the field name. Den här informationen hämtas från schemadefinitionen i upplevelsedatamodellen. Det alternativa visningsnamnet visas när det är tillgängligt. Med den här användarvänliga beskrivningen, som är särskilt användbar för eVar-fält, blir det enklare att identifiera fälten. [Läs mer](../about/user-interface.md#friendly-names-display)
+* När du bläddrar bland **datafälten i Adobe Experience Platform** (XDM-format) visas nu även visningsnamnet tillsammans med fältnamnet. Den här informationen hämtas från schemadefinitionen i upplevelsedatamodellen. Det alternativa visningsnamnet visas när det är tillgängligt. Med den här användarvänliga beskrivningen, som är särskilt användbar för eVar-fält, blir det enklare att identifiera fälten. [Läs mer](../about/user-interface.md#friendly-names-display)
 
 ## GA-utgåva – december 2019 {#ga-release---december-2019}
 
