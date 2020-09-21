@@ -8,11 +8,11 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3c6c20feb2d461a5780dde5539811beee2eb78b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1010'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 89%
 
 ## Komma åt [!DNL Journey Orchestration]{#accessing_journey_orchestration}
 
-Klicka på **[!UICONTROL App Selector]**-ikonen längst upp till höger för att öppna gränssnittet i [!DNL Journey Orchestration]. Then click **[!UICONTROL Journey Orchestration]**, on the right side, below **[!UICONTROL Experience Platform]**.
+Klicka på **[!UICONTROL App Selector]**-ikonen längst upp till höger för att öppna gränssnittet i [!DNL Journey Orchestration]. Klicka sedan på **[!UICONTROL Journey Orchestration]** till höger under **[!UICONTROL Experience Platform]**.
 
 ![](../assets/journey1.png)
 
@@ -57,7 +57,7 @@ I listorna **[!UICONTROL Home]**, **[!UICONTROL Data Sources]**, **[!UICONTROL E
 
 Du kommer åt **[!UICONTROL Filters]** genom att klicka på filterikonen högst upp till vänster i listan. Med filtermenyn kan du filtrera de element som visas enligt olika villkor. Du kan välja att endast visa element av en viss typ eller status, de som du har skapat eller de som har ändrats under de senaste 30 dagarna.
 
-In the **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** and **[!UICONTROL Actions]** lists, use the **[!UICONTROL Creation filters]** to filter on the creation date and user. Du kan till exempel välja att bara visa händelser som du har skapat under de senaste 30 dagarna.
+I listorna **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** kan du använda **[!UICONTROL Creation filters]** för att filtrera per datum för skapande och per användare. Du kan till exempel välja att bara visa händelser som du har skapat under de senaste 30 dagarna.
 
 I reselistan (under **[!UICONTROL Home]**) kan du utöver **[!UICONTROL Creation filters]** filtrera de visade resorna per status och version (**[!UICONTROL Status and version filters]**). Du kan även välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). Med **[!UICONTROL Publication filters]** kan du välja ett publiceringsdatum eller en viss användare. Du kan till exempel välja att endast visa de senaste versionerna av resor i realtid som publicerades i går. Se [](../building-journeys/using-the-journey-designer.md).
 
@@ -77,7 +77,7 @@ I de olika listorna kan du utföra grundläggande åtgärder för varje element.
 
 ![](../assets/journey4.png)
 
-## Bläddra bland Adobe Experience Platform-fält {#friendly-names-display}
+## Bläddra bland datafälten i Adobe Experience Platform {#friendly-names-display}
 
 När du definierar [händelsers nyttolast](../event/defining-the-payload-fields.md), [fältgruppers nyttolast](../datasource/field-groups.md) och väljer fält i [uttrycksredigeraren](../expression/expressionadvanced.md) visas visningsnamnet förutom fältnamnet. Den här informationen hämtas från schemadefinitionen i upplevelsedatamodellen.
 
@@ -104,18 +104,18 @@ _När du konfigurerar en aktivitet i en resa:_
 Arbetsytan sparas automatiskt. Sparstatus visas längst upp till vänster på arbetsytan.
 
 * Tryck på **Esc** för att stänga konfigurationsfönstret och ignorera ändringarna. Det här är motsvarigheten till knappen **[!UICONTROL Cancel]**.
-* Press **Enter** or click outside the pane to close the configuration pane. Ändringarna sparas. Det här är motsvarigheten till knappen **[!UICONTROL Ok]**.
-* If you press **Delete** or **backspace**, you can then press **Enter** to confirm the deletion.
+* Tryck på **Enter** eller klicka utanför fönstret för att stänga konfigurationsfönstret. Ändringarna sparas. Det här är motsvarigheten till knappen **[!UICONTROL Ok]**.
+* Om du trycker på **Delete** eller på **Backsteg** kan du sedan trycka på **Enter** för att bekräfta borttagningen.
 
 _I popup-fönster:_
 
-* Press **escape** to close it (equivalent of the **[!UICONTROL Cancel]** button).
-* Press **Enter** to save or confirm (equivalent of the **[!UICONTROL Ok]** or **[!UICONTROL Save]** button).
+* Tryck på **Esc** för att stänga fönstret (motsvarar knappen **[!UICONTROL Cancel]**).
+* Tryck på **Enter** för att spara eller bekräfta (motsvarar knappen **[!UICONTROL Ok]** eller **[!UICONTROL Save]**).
 
 _I konfigurationsfönstret för händelser, datakällor eller åtgärder:_
 
 * Tryck på **Esc** för att stänga konfigurationsfönstret utan att spara.
-* Press **Enter** to save modifications and close the configuration pane.
+* Tryck på **Enter** för att spara ändringarna och stänga konfigurationsfönstret.
 * Tryck på **Tabb** för att hoppa mellan de olika fälten som ska konfigureras.
 
 _I den enkla uttrycksredigeraren:_
@@ -137,5 +137,5 @@ _På en skärm med ett sökfält:_
 _På resans arbetsyta:_
 
 * Markera alla aktiviteter med tangentkombinationen **Ctrl/Kommando+A**.
-* When one or several activities are selected, press **Delete** or **backspace** to delete them. Then you can press **Enter** to confirm in the confirmation pop-up.
+* Tryck på **Delete** eller på **Backsteg** för att radera en eller flera aktiviteter som är markerade. Därefter kan du trycka på **Enter** för att bekräfta i popup-fönstret.
 * Dubbelklicka på en aktivitet från den vänstra paletten för att lägga till den på den första tillgängliga positionen (uppifrån och ned).
