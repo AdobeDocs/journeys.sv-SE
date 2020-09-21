@@ -1,13 +1,13 @@
 ---
 product: Journeys
 audience: end-user
-user-guide-title: Journey Orchestration Guide
+user-guide-title: Guide till Journey Orchestration
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ad892948c866c8c5cda16c17a33cb225ee7edb33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -184,6 +184,6 @@ ht-degree: 94%
 + Alfavärden {#alpha}
    + [Översikt över alfavärden](using/alpha/alpha-overview.md)
    + [Användargränssnitt](using/alpha/alpha-interface.md)
-   + [Läs segmentaktivitet](using/alpha/alpha-segment-trigger.md)
+   + [Läsa segmentaktivitet](using/alpha/alpha-segment-trigger.md)
    + [Regelbaserade händelser](using/alpha/alpha-events.md)
 
