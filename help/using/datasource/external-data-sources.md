@@ -10,11 +10,11 @@ topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1271'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 
 # Externa datakällor {#concept_t2s_kqt_52b}
 
-Med externa datakällor kan du definiera en anslutning till tredjepartssystem om du till exempel använder ett bokningssystem för hotell som kontrollerar om personen har registrerat ett rum. I motsats till den inbyggda Adobe Experience Platform-datakällan kan du skapa så många externa datakällor du behöver.
+Med externa datakällor kan du definiera en anslutning till tredjepartssystem om du till exempel använder ett bokningssystem för hotell som kontrollerar om personen har registrerat ett rum. I motsats till den inbyggda datakällan i Adobe Experience Platform kan du skapa så många externa datakällor som behövs.
 
 Stöd finns för REST API:er som använder POST eller GET och returnerar JSON. API-nyckel samt grundläggande och anpassade autentiseringslägen stöds.
 
