@@ -9,9 +9,9 @@ topic-tags: journeys
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ca4dc447d8ae4ee18e50d7e9a18faf3fa47ae223
+source-git-commit: 6656c3a9b62f13d0cbffa3ac97c0a5314cb050a4
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1108'
 ht-degree: 1%
 
 ---
@@ -82,12 +82,12 @@ Med API:t för att hämta innehåll kan du skapa, konfigurera och övervaka dina
 |---|---|---|
 | [!DNL POST] | list/endpointConfigs | Hämta en lista med konfigurationer för slutpunktsbegränsning |
 | [!DNL POST] | /endpointConfigs | Skapa en konfiguration för begränsning av slutpunkter |
-| [!DNL POST] | /endpointConfigs/{uid}/deploy | Distribuera en slutpunktskonfiguration |
-| [!DNL POST] | /endpointConfigs/{uid}/undeploy | Avdistribuera en slutpunktskonfiguration |
-| [!DNL POST] | /endpointConfigs/{uid}/canDeploy | Kontrollera om en slutpunktskonfiguration kan distribueras eller inte |
-| [!DNL PUT] | /endpointConfigs/{uid} | Uppdatera en konfiguration för begränsning av slutpunkter |
-| [!DNL GET] | /endpointConfigs/{uid} | Hämta en konfiguration för slutpunktsbegränsning |
-| [!DNL DELETE] | /endpointConfigs/{uid} | Ta bort en ändpunktskonfiguration |
+| [!DNL POST] | /endpointConfigs/`{uid}`/deploy | Distribuera en slutpunktskonfiguration |
+| [!DNL POST] | /endpointConfigs/`{uid}`/undeploy | Avdistribuera en slutpunktskonfiguration |
+| [!DNL POST] | /endpointConfigs/`{uid}`/canDeploy | Kontrollera om en slutpunktskonfiguration kan distribueras eller inte |
+| [!DNL PUT] | /endpointConfigs/`{uid}` | Uppdatera en konfiguration för begränsning av slutpunkter |
+| [!DNL GET] | /endpointConfigs/`{uid}` | Hämta en konfiguration för slutpunktsbegränsning |
+| [!DNL DELETE] | /endpointConfigs/`{uid}` | Ta bort en ändpunktskonfiguration |
 
 När en konfiguration skapas eller uppdateras utförs en kontroll automatiskt för att garantera nyttolastens syntax och integritet.
 Om det uppstår problem returneras en varning eller felmeddelanden som hjälper dig att korrigera konfigurationen.
@@ -156,7 +156,7 @@ Möjliga fel är:
 * **ERR_ENDPOINTCONFIG_108**: capping config: ogiltigt max antal anrop (periodInms)
 * **ERR_ENDPOINTCONFIG_11**: capping config: det går inte att skapa slutpunktskonfiguration: ogiltig nyttolast
 * **ERR_ENDPOINTCONFIG_112**: capping config: det går inte att skapa slutpunktskonfiguration: en JSON-nyttolast förväntas
-* **ERR_AUTHORING_ENDPOINTCONFIG_1**: ogiltigt tjänstnamn <!--<given value>-->: måste vara &#39;dataSource&#39; eller &#39;action&#39;
+* **ERR_AUTHORING_ENDPOINTCONFIG_1**: ogiltigt tjänstnamn `<!--<given value>-->`: måste vara &#39;dataSource&#39; eller &#39;action&#39;
 
 
 Den potentiella varningen är:
@@ -201,7 +201,7 @@ Användningsfall nr 3: **Avdistribuera och ta bort en distribuerad capping-konfi
 1. avdistribuera
 1. delete
 
-Användningsfall nr 4: **Ta bort en distribuerad capping-konfiguration.**
+Use-Case n°4: **Ta bort en distribuerad capping-konfiguration.**
 
 I endast ett API-anrop kan du avdistribuera och ta bort konfigurationen med hjälp av parametern forceDelete.
 1. list
