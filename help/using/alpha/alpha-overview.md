@@ -11,17 +11,17 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0bede8675f72c7b63da59dc8e0a3ca0fb95de87c
+source-git-commit: e5644e28d66652b013d9873275d1d564ad75b97d
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 0%
+source-wordcount: '108'
+ht-degree: 28%
 
 ---
 
 
 # Översikt över alfavärden
 
-Alpha-programmet har funktioner som för närvarande är testade bland ett begränsat antal kunder. På så sätt kan vi förbättra vår produkt baserat på den feedback vi fått. De här funktionerna är inte tillgängliga för alla Journey Orchestration-kunder.
+Programmets alfaversion har funktioner som för närvarande testas bland ett begränsat antal kunder. De här funktionerna är inte tillgängliga för alla kunder som använder Journey Orchestration.
 
 I det här avsnittet fokuseras bara alfafunktionerna. Om du inte är en del av Alfa-programmet och vill veta mer om de andra Journey Orchestration-funktionerna kan du läsa de andra avsnitten i den här [dokumentationen](../../journey-orchestration-home.md).
 
