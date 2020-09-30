@@ -3,11 +3,11 @@ product: Journeys
 audience: end-user
 user-guide-title: Guide till Journey Orchestration
 index: true
-translation-type: ht
-source-git-commit: ad892948c866c8c5cda16c17a33cb225ee7edb33
-workflow-type: ht
-source-wordcount: '378'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fe53855bed7d437232280a9f0e38a0d2e085c10e
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 97%
 
 ---
 
@@ -169,12 +169,12 @@ ht-degree: 100%
    + [Om AI-integrering](using/ai-services/ai-services-overview.md)
    + [Utnyttja kund-AI](using/ai-services/leveraging-customer-ai.md)
 + Användningsfall{#use-cases-journeys}
-   + Enkelt användningsfall{#use-case-simple}
+   + Skicka ett personligt e-postmeddelande{#use-case-simple}
       + [Om det enkla användningsfallet](using/usecase/about-the-simple-use-case.md)
       + [Konfigurera händelsen](using/usecase/configuring-the-event.md)
       + [Konfigurera datakällan](using/usecase/configuring-the-data-source.md)
       + [Bygga resan](using/usecase/simple-uc-building-the-journey.md)
-   + Avancerat användningsfall{#use-case-advanced}
+   + Building a cross-channel journey{#use-case-advanced}
       + [Om det avancerade användningsfallet](using/usecase/about-the-advanced-use-case.md)
       + [Konfigurera händelserna](using/usecase/configuring-the-events.md)
       + [Konfigurera datakällorna](using/usecase/configuring-the-data-sources.md)
