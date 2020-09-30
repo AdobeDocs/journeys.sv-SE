@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a55139697347ade80959f60bf52bfde39e43eb9
+source-git-commit: 4f7cc4da51a93019b5a296003c51d4bee6724498
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -47,13 +47,14 @@ Så här konfigurerar du den:
    >
    >Detta test verifierar att
    >
-   >* Värden är &quot;.campaign.adobe.com&quot; eller &quot;.campaign-sandbox.adobe.com&quot;,
-   >* URL:en börjar med https,
-   >* Den ORG som är associerad med den här Adobe Campaign Standard-instansen är samma som Journey Orchestration ORG.
-
+   >Värden är &quot;.campaign.adobe.com&quot; eller &quot;.campaign-sandbox.adobe.com&quot;,
+   >
+   >URL:en börjar med https,
+   >
+   >Den ORG som är associerad med den här Adobe Campaign Standard-instansen är samma som Journey Orchestration ORG.
 
 När du utformar din resa kommer tre åtgärder att vara tillgängliga i **[!UICONTROL Action]** kategorin: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]** (se [Använda Adobe Campaign-åtgärder](../building-journeys/using-adobe-campaign-actions.md)). **Reaktionshändelsen** gör även att du kan reagera på meddelandeklickningar, öppningar osv. (se [Reaktioner, händelser](../building-journeys/reaction-events.md)).
 
 ![](../assets/journey58.png)
 
-Om du använder ett tredjepartssystem för att skicka meddelanden måste du lägga till och konfigurera en anpassad åtgärd. Se [Om konfiguration](../action/about-custom-action-configuration.md)av anpassad åtgärd.
+Om du använder ett tredjepartssystem för att skicka meddelanden måste du lägga till och konfigurera en anpassad åtgärd. See [About custom action configuration](../action/about-custom-action-configuration.md).
