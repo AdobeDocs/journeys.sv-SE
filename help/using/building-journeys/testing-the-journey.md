@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ed0934f141ade1e558131e9fad609844800dd46a
+source-git-commit: 7cac949f2428f29bef1d01122e152429a93d0b1b
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 2%
+source-wordcount: '1339'
+ht-degree: 3%
 
 ---
 
@@ -45,7 +45,7 @@ Så här använder du testläget:
 
    ![](../assets/journeyuctest2.png)
 
-1. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa det igen. När testet är klart kan du publicera din resa. Se [](../building-journeys/publishing-the-journey.md).
+1. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. När testet är klart kan du publicera din resa. Se [](../building-journeys/publishing-the-journey.md).
 
 ## Viktiga anteckningar {#important_notes}
 
@@ -169,3 +169,18 @@ Här är en persons olika status:
 * _Slutförd_: personen befinner sig i slutet av resan.
 * _Fel_: Personen stoppas på resan på grund av ett fel.
 * _Timeout_: Personen stoppas på resan på grund av ett steg som tog för mycket tid.
+
+När en händelse aktiveras i testläget genereras en datauppsättning automatiskt med källans namn.
+
+När en händelse aktiveras i testläget genereras en datauppsättning automatiskt med källans namn.
+
+Testläget skapar automatiskt en Experience Event och skickar den till Adobe Experience Platform. Källan för upplevelsehändelsen heter&quot;Journey Orchestration Test Events&quot;.
+
+Vid flera händelser som triggas av flera resor
+
+Det finns ett scenario när flera händelser skickas från flera resor som kommer att ha olika scheman. Kan ett schema mappas till en datauppsättning? Annars behöver vi flera datauppsättningar.
+
+Dessa datauppsättningar skapas och namnges automatiskt om en måldatauppsättning inte ingår i upplevelsehändelsen. Därför ser vi dagens&quot;Automatiskt skapade datauppsättningar för resenärer&quot;.
+
+Namngivningen av vår källa skapar automatiskt. Om vi har flera händelser bör vi sammanfoga och låta det vara &quot;Journey Orchestration Test Event - NAME OF SCHEMA&quot;. Detta blir automatiskt&quot;Automatiskt genererad datauppsättning för testhändelsen Journey Orchestration - SCHEMAS NAMN&quot;.
+
