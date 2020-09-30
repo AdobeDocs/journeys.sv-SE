@@ -10,11 +10,11 @@ topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 619f05137bfad573a5de23ceda5448180dad2d6a
-workflow-type: ht
-source-wordcount: '1527'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fe53855bed7d437232280a9f0e38a0d2e085c10e
+workflow-type: tm+mt
+source-wordcount: '1653'
+ht-degree: 93%
 
 ---
 
@@ -23,6 +23,54 @@ ht-degree: 100%
 
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
+
+## September 2020-utgåvan {#september-release}
+
+### GA-uppdateringar{#september-ga-update}
+
+<table>
+<thead>
+<tr>
+<th><strong>Förbättringar av villkorsaktivitet</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>När du lägger till villkor till din resa kan du nu definiera en etikett. Om du använder flera villkor under en resa kan du lättare identifiera dem.
+</p>
+<p>Mer information finns i den <a href="../building-journeys/condition-activity.md#about_condition">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Alfa-uppdateringar{#september-alpha-update}
+
+Läs det här [avsnittet](../alpha/alpha-overview.md) för att upptäcka omfattningen om alfaversionen.
+
+<table>
+<thead>
+<tr>
+<th><strong>Förbättrad läsningssegmentaktivitet</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The following improvements have been made to the <strong>Read segment</strong> activity:
+</p>
+<ul>
+<li><p>Segmentbaserade resor visar nu, ovanför arbetsytan, en påminnelse om resans schematyp. Du kan klicka på den här påminnelsen för att komma åt schemakonfigurationsmenyn.</p>
+</li>
+<li><p>Detaljrikedomen i testlägesloggarna har förbättrats för att visa segmentets exportförloppsstatus.</p>
+</li>
+</ul>
+<p>Mer information om <strong>Läs-segmentsaktiviteten</strong> finns i den <a href="../alpha/alpha-segment-trigger.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Versionen från augusti 2020 {#august-release}
 
