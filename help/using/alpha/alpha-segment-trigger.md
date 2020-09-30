@@ -1,5 +1,5 @@
 ---
-title: Läs segmentaktivitet
+title: Läsa segmentaktivitet
 description: Läs mer om Läs segment-aktiviteten.
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -11,15 +11,15 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 967f453145dcf9af0e3efc5d52854d0c5c68c54f
+source-git-commit: b068429a0eb72c585de27faefe51ea2889be28f1
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 0%
+source-wordcount: '624'
+ht-degree: 4%
 
 ---
 
 
-# Läs segmentaktivitet {#segment-trigger-activity}
+# Läsa segmentaktivitet {#segment-trigger-activity}
 
 ## Om aktiviteten Läs segment {#about-segment-trigger-actvitiy}
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 >
 >Om det finns en färdig Adobe Campaign Standard-åtgärd på arbetsytan vid publiceringstid eller aktiveringstid i testläge kommer resan att strypas vid 13 ingångar per sekund. Annars begränsas resan till 1 000 händelser per sekund.
 
-Med Läs segment-aktiviteten kan alla personer som tillhör ett Adobe Experience Platform-segment delta i en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
+Med Läs segment-aktiviteten kan alla personer som tillhör ett Adobe Experience Platform-segment delta i en resa. Inträde i en resa kan genomföras antingen en gång eller regelbundet.
 
 Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktiviteten Läs segment kan alla personer som tillhör kundsegmentet Gold ta sig in på en resa och få dem att flöda in i personaliserade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
 
@@ -83,14 +83,20 @@ Aktivera testläget och välj sedan önskat alternativ i den vänstra rutan.
 
 ![](../assets/segment-trigger-test-modes.png)
 
-Du kan sedan konfigurera testläget som vanligt. Detaljerade anvisningar om hur du testar en resa finns i [detta avsnitt](../building-journeys/testing-the-journey.md).
+Sedan kan du konfigurera och köra testläget som vanligt. Detaljerade anvisningar om hur du testar en resa finns i [detta avsnitt](../building-journeys/testing-the-journey.md).
 
-Observera att det inte går att följa förloppet för de personer som befinner sig på resan med hjälp av det visuella flödet om du testar resan med upp till 100 profiler samtidigt.
+När testet är igång kan du med knappen **[!UICONTROL Show logs]** se testresultaten enligt det valda testalternativet:
+
+* **[!UICONTROL Single profile at a time]**: testloggarna visar samma information som när det enhetstestläget används. Mer information om detta finns i [det här avsnittet](../building-journeys/testing-the-journey.md#viewing_logs)
+
+* **[!UICONTROL Up to 100 profiles at once]**: Med testloggarna kan du följa hur segmentexporten från Adobe Experience Platform fortskrider samt hur alla personer som passerat resan fortskrider.
+
+   Observera att det inte går att följa förloppet för de personer som befinner sig på resan med hjälp av det visuella flödet om du testar resan med upp till 100 profiler samtidigt.
+
+   ![](../assets/read-segment-log.png)
 
 När testerna är slutförda kan du publicera din resa (se [Publicera resan](../building-journeys/publishing-the-journey.md)). Enskilda personer som tillhör segmentet kommer in i resan på det datum/den tidpunkt som anges i **[!UICONTROL Scheduler]** avsnittet om färdens egenskaper.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Tänk på att Adobe Experience Platform-segment beräknas antingen en gång om dagen (**gruppsegment** ) eller i realtid (**direktuppspelade** segment).
->
->Om det valda segmentet direktuppspelas kan de personer som tillhör det segmentet komma in på resan i realtid. Om segmentet är en batch kan personer som nyligen är kvalificerade för det här segmentet komma in på resan när segmentberäkningen körs på Adobe Experience Platform.
+>När du gör en ny version av en segmentbaserad resa som inte är återkommande (med början så snart som möjligt eller &quot;en gång&quot;) kommer alla personer som tidigare passerat resan inte att ange sin nya version igen när du kommer att publicera den. Om du vill att de ska kunna resa igen bör du duplicera resan.
