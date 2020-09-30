@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
+source-git-commit: 25d3c3062bca2151faf10d11e9636799c1331f24
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 3%
+source-wordcount: '730'
+ht-degree: 8%
 
 ---
 
@@ -32,11 +32,15 @@ Det finns fyra typer av villkor:
 
 ## Om villkorsaktiviteten {#about_condition}
 
+När du använder flera villkor under en resa kan du definiera etiketter för var och en av dem för att lättare kunna identifiera dem.
+
 Klicka **[!UICONTROL Add a path]** om du vill definiera flera villkor. För varje villkor läggs en ny bana till på arbetsytan efter aktiviteten.
 
 ![](../assets/journey47.png)
 
-Observera att utformningen av resorna har funktionell inverkan. När flera sökvägar definieras efter ett villkor kommer endast den första giltiga sökvägen att köras. Det innebär att du kan ändra prioriteringen av banor genom att placera dem över eller under varandra. Om t.ex. den första sökvägens villkor är&quot;Personen är en VIP&quot; och den andra sökvägens villkor är&quot;Personen är en man&quot;. Om en person som uppfyller båda villkoren (en man som är en VIP) klarar det här steget väljs den första banan även om han även är berättigad till den andra, eftersom den första sökvägen är &quot;ovan&quot;. Om du vill ändra den här prioriteten flyttar du dina aktiviteter i en annan lodrät ordning.
+Observera att utformningen av resorna har funktionell inverkan. När flera sökvägar definieras efter ett villkor kommer endast den första giltiga sökvägen att köras. Det innebär att du kan ändra prioriteringen av banor genom att placera dem över eller under varandra.
+
+Låt oss till exempel ta exemplet med den första sökvägens villkor&quot;Personen är en VIP&quot; och en andra sökvägs villkor&quot;Personen är en man&quot;. Om en person som uppfyller båda villkoren (en man som är en VIP) klarar det här steget väljs den första banan även om han även är berättigad till den andra, eftersom den första sökvägen är &quot;ovan&quot;. Om du vill ändra den här prioriteten flyttar du dina aktiviteter i en annan lodrät ordning.
 
 ![](../assets/journey48.png)
 
@@ -57,7 +61,7 @@ Om ni använder [Adobe Experience Platform segmenteringstjänst](https://docs.ad
 >Du kan inte utföra frågor på tidsserier (till exempel en lista över inköp, tidigare klick på meddelanden) med den enkla redigeraren. För detta behöver du den avancerade redigeraren. Se [](../expression/expressionadvanced.md).
 
 
-När ett fel inträffar i en åtgärd eller ett villkor upphör kundens resa. Det enda sättet att få det att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [](../building-journeys/using-the-journey-designer.md#paths).
+När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [](../building-journeys/using-the-journey-designer.md#paths).
 
 ## Datakällans villkor {#data_source_condition}
 
