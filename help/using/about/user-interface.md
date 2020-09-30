@@ -8,11 +8,11 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-translation-type: ht
-source-git-commit: 3c6c20feb2d461a5780dde5539811beee2eb78b7
-workflow-type: ht
-source-wordcount: '1010'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 900b956799194e13ee01ca9aef3c786e9c5b04db
+workflow-type: tm+mt
+source-wordcount: '1005'
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 ## Komma åt [!DNL Journey Orchestration]{#accessing_journey_orchestration}
 
-Klicka på **[!UICONTROL App Selector]**-ikonen längst upp till höger för att öppna gränssnittet i [!DNL Journey Orchestration]. Klicka sedan på **[!UICONTROL Journey Orchestration]** till höger under **[!UICONTROL Experience Platform]**.
+To access the [!DNL Journey Orchestration]&#39;s interface, click the **[!UICONTROL App Selector]** icon, in the top right, then click **[!UICONTROL Journey Orchestration]**.
 
 ![](../assets/journey1.png)
 
