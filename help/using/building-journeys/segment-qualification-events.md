@@ -1,5 +1,5 @@
 ---
-title: Segmentkvalificeringshändelser
+title: Segment med kvalificeringshändelser
 description: Läs mer om kvalificeringshändelser för segment
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -11,15 +11,15 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ef3ce546a816f1d7d0398acc418a20803886a20
+source-git-commit: 69427556476b5a51e4557307227433cff25f4856
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 0%
+source-wordcount: '691'
+ht-degree: 1%
 
 ---
 
 
-# Segmentkvalificeringshändelser {#segment-qualification}
+# Segment med kvalificeringshändelser {#segment-qualification}
 
 ## Om segmentkvalificeringshändelser{#about-segment-qualification}
 
@@ -29,7 +29,12 @@ Säg att du har ett &quot;silverkundssegment&quot;. Med den här aktiviteten kan
 
 Den här typen av händelse kan placeras som det första steget eller senare under resan.
 
-Om segmentet direktuppspelas med alternativet High Frequency Audiences i Adobe Experience Platform avlyssnas ingångs- och utgångar i realtid. Om segmentet inte direktuppspelas beaktas ingångar och utgångar vid segmentberäkningstillfället.
+>[!IMPORTANT]
+>
+>Tänk på att Adobe Experience Platform-segment beräknas antingen en gång om dagen (**gruppsegment** ) eller i realtid (**direktuppspelade** segment, med alternativet High Frequency Audiences i Adobe Experience Platform).
+>
+>Om det valda segmentet direktuppspelas kan de personer som tillhör det segmentet komma in på resan i realtid. Om segmentet är en batch kan personer som nyligen är kvalificerade för det här segmentet komma in på resan när segmentberäkningen körs på Adobe Experience Platform.
+
 
 1. Ge kategorin en ny **[!UICONTROL Events]** dimension och släpp en **[!UICONTROL Segment qualification]** aktivitet på arbetsytan.
 
