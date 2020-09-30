@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 939cde1f30a946ba4c20984dd72dcd1526d6e608
+source-git-commit: 70bc6653a8cdd552a0441f4b661341d3f095b112
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 2%
+source-wordcount: '47'
+ht-degree: 8%
 
 ---
 
@@ -35,8 +35,8 @@ Konvertering
 
 | Parameter | Typ |
 |-----------|------------------|
-| datum tid utan tidszon i ISO-8601-format | string |
-| dateTime | dateTime |
+| datum och tid i ISO-8601-format | string |
+| tid | dateTime |
 
 ## Underskrifter och returnerade typer
 
@@ -50,7 +50,7 @@ Returnera en datetime utan att överväga tidszon.
 
 ## Exempel
 
-`toDateTimeOnly ("2016-08-18T23:17:59.123")`
+`toDateTimeOnly ("2016-08-18T23:17:59.123Z")`
 
 Returnerar 2016-08-18T23:17:59.123.
 
