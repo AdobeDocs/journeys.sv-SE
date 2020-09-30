@@ -11,21 +11,25 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9c3b8f2d88646372e69ae4f24a5dbb5d45721c55
+source-git-commit: 9cdaa673dbe9247aa1e9c9aef58cfa003d014786
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 5%
+source-wordcount: '656'
+ht-degree: 11%
 
 ---
 
 
 # Regelbaserade händelser{#simplified-events}
 
-Vi har förenklat hur ni konfigurerar Experience Events. Vi introducerar en ny metod som inte kräver att ett eventID används. När du konfigurerar en händelse i Journey Orchestration kan du nu definiera en regelbaserad händelse.
+Vi har förenklat hur du konfigurerar upplevelsehändelser. Vi introducerar en ny metod som inte kräver att ett händelse-ID används. När du konfigurerar en händelse i Journey Orchestration kan du nu definiera en regelbaserad händelse.
 
 Den här nya händelsetypen genererar inget eventID. Med den enkla uttrycksredigeraren definierar du nu helt enkelt en regel som ska användas av systemet för att identifiera de relevanta händelser som utlöser dina resor. Den här regeln kan baseras på alla fält som är tillgängliga i händelsenyttolasten, till exempel profilens plats eller antalet objekt som läggs till i profilens kundvagn.
 
 Den här nya metoden är för det mesta genomskinlig för användarna. Den enda ändringen är ett nytt fält på skärmen för händelsdefinition.
+
+>[!CAUTION]
+>
+>En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan behandla till 400 kB per minut. Kontakta Adobe för mer information.
 
 ## Utnyttja Adobe Analytics data{#analytics-data}
 
@@ -101,5 +105,5 @@ När du utlöser en händelse kan du på skärmen för **händelsekonfiguration*
 
 ![](../assets/alpha-event8.png)
 
-Mer information om hur du använder testläget finns i [](../building-journeys/testing-the-journey.md).
+For more information on how to use the test mode, refer to [](../building-journeys/testing-the-journey.md).
 
