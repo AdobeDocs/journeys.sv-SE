@@ -11,9 +11,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9e264f0794bff859d1e1db0b8fc2c66ab19fdec7
+source-git-commit: 70bc6653a8cdd552a0441f4b661341d3f095b112
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '376'
 ht-degree: 3%
 
 ---
@@ -61,7 +61,7 @@ Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 j
 
 >[!NOTE]
 >
->Du kan återanvända ett dateTimeOnly-uttryck eller använda en funktion för att konvertera till dateTimeOnly. Till exempel: toDateTimeOnly(@{Event.offerOpened.activity.endTime}), fältet i händelsen har formatet 2016-08-12T09:46:06.
+>Du kan återanvända ett dateTimeOnly-uttryck eller använda en funktion för att konvertera till dateTimeOnly. Till exempel: ```toDateTimeOnly(@{Event.offerOpened.activity.endTime})```, fältet i händelsen har formatet 2016-08-12T09:46:06Z.
 >
 >Tidszonen **** förväntas i egenskaperna för din resa. Därför är det inte möjligt i dag från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2016-08-12T09:46:06.982-05. Se [](../building-journeys/timezone-management.md).
 
