@@ -1,6 +1,6 @@
 ---
-title: Om resebyggnad
-description: Lär dig hur du bygger en resa
+title: Om att bygga en resa
+description: Som affärsanvändare kan du lära dig att kombinera händelser, samordning och åtgärder för att skapa en resa.
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -11,10 +11,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+source-git-commit: 38b555e19b9c3a0757962cbedbf3587e64f69add
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 0%
+source-wordcount: '376'
+ht-degree: 13%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Skapa en resa {#concept_gq5_sqt_52b}
 
-Det här steget utförs av **affärsanvändaren**. Här skapar du dina resor. Kombinera de olika händelserna, samordningen och åtgärderna för att skapa flerstegsscenarier för olika kanaler.
+This step is performed by the **business user**. Här skapar du dina resor. Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
 
 Med resegränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan. Du kan också dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa steg som är tillgängligt. Varje aktivitet har en särskild roll och plats i processen. Aktiviteterna är sekventierade. När en aktivitet är klar fortsätter flödet och bearbetar nästa aktivitet och så vidare.
 
@@ -32,13 +32,13 @@ Endast ett namnutrymme tillåts per resa. När du släpper den första händelse
 
 Här är de viktigaste stegen för att skapa och publicera en resa.
 
-1. Klicka på **[!UICONTROL Home]** fliken i den övre menyn.
+1. Klicka på fliken **[!UICONTROL Home]** på den övre menyn.
 
-   Listan över resor visas. Mer information om gränssnittet finns [](../building-journeys/using-the-journey-designer.md) i.
+   Listan över resor visas. Se [](../building-journeys/using-the-journey-designer.md) för mer information om gränssnittet.
 
    ![](../assets/journey30.png)
 
-1. Klicka **[!UICONTROL Create]** för att skapa en ny resa.
+1. Click **[!UICONTROL Create]** to create a new journey.
 
    ![](../assets/journey31.png)
 
