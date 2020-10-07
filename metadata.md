@@ -10,9 +10,9 @@ tutorials-url: https://docs.adobe.com/content/help/sv-SE/journey-orchestration-l
 git-repo: https://git.corp.adobe.com/AdobeDocs/journeys.sv-SE
 index: true
 solution: Journey Orchestration
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 13cc1fe1b35b570f893b4fc137d002ccf4a1b40c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '31'
 ht-degree: 100%
 
