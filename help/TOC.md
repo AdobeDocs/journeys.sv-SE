@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 38b555e19b9c3a0757962cbedbf3587e64f69add
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -175,7 +175,7 @@ ht-degree: 97%
       + [Konfigurera händelsen](using/usecase/configuring-the-event.md)
       + [Konfigurera datakällan](using/usecase/configuring-the-data-source.md)
       + [Bygga resan](using/usecase/simple-uc-building-the-journey.md)
-   + Building a cross-channel journey{#use-case-advanced}
+   + Bygga en resa över flera kanaler{#use-case-advanced}
       + [Om det avancerade användningsfallet](using/usecase/about-the-advanced-use-case.md)
       + [Konfigurera händelserna](using/usecase/configuring-the-events.md)
       + [Konfigurera datakällorna](using/usecase/configuring-the-data-sources.md)
