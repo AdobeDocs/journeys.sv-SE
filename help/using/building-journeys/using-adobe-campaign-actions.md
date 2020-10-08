@@ -1,5 +1,5 @@
 ---
-title: Använda Adobe Campaign-åtgärder
+title: Använda åtgärder i Adobe Campaign
 description: Läs om Adobe Campaign åtgärder
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -8,18 +8,16 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '888'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Använda Adobe Campaign-åtgärder {#using_campaign_action}
+# Använda åtgärder i Adobe Campaign {#using_campaign_action}
 
 Om du har Adobe Campaign Standard finns följande färdiga åtgärdsaktiviteter: **[!UICONTROL Email]**, **[!UICONTROL Push]** och **[!UICONTROL SMS]**.
 
@@ -27,7 +25,7 @@ Om du har Adobe Campaign Standard finns följande färdiga åtgärdsaktiviteter:
 >
 >Därför måste du konfigurera den inbyggda åtgärden. Se [](../action/working-with-adobe-campaign.md).
 
-För var och en av dessa kanaler väljer du en Adobe Campaign Standard Transactional Messaging- **mall**. Det [!DNL Journey Orchestration] är inte en lösning för att skicka meddelanden. För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i Adobe Campaign Standard. Läs den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html) om du vill veta hur du använder den här funktionen.
+För var och en av dessa kanaler väljer du en Adobe Campaign Standard Transactional Messaging- **mall**. Det [!DNL Journey Orchestration] är inte en lösning för att skicka meddelanden. För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i Adobe Campaign Standard. Läs den här [sidan](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html) om du vill veta hur du använder den här funktionen.
 
 >[!NOTE]
 >
@@ -51,7 +49,7 @@ För **[!UICONTROL Email]** och **[!UICONTROL SMS]**&#x200B;är parametrarna ide
 
 >[!NOTE]
 >
->Om du använder en transaktionsmall för profiler för e-post hanteras avprenumerationsfunktionen som Campaign Standard. Du lägger bara till ett **[!UICONTROL Unsubscription link]** innehållsblock i mallen ([läs mer](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html)). Om du använder en händelsebaserad mall (rtEvent) måste du i meddelandet lägga till en länk som skickar personens e-post i URL-parametern och pekar på en startsida som inte är en prenumeration. Du måste skapa den här landningssidan och se till att personens beslut att avbryta prenumerationen skickas till Adobe.
+>Om du använder en transaktionsmall för profiler för e-post hanteras avprenumerationsfunktionen som Campaign Standard. Du lägger bara till ett **[!UICONTROL Unsubscription link]** innehållsblock i mallen ([läs mer](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html)). Om du använder en händelsebaserad mall (rtEvent) måste du i meddelandet lägga till en länk som skickar personens e-post i URL-parametern och pekar på en startsida som inte är en prenumeration. Du måste skapa den här landningssidan och se till att personens beslut att avbryta prenumerationen skickas till Adobe.
 
 Först måste du välja en transaktionsmall. Se [](../building-journeys/about-action-activities.md).
 
