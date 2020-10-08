@@ -8,10 +8,8 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -36,7 +34,7 @@ När ett datakällfält används i en resa hämtas alla fält som är definierad
 
 **[!UICONTROL Cache duration]** är också viktigt eftersom det hjälper dig att optimera prestandan. Cachevaraktighet innebär att om data från en fältgrupp hämtas en gång, cachelagras den tillfälligt i en resa. Om samma data krävs senare under samma resa kommer systemet inte att göra någon ny begäran till datakällan. Konfigurationen av cachevaraktigheten bör anpassas för varje användningsfall. Om du behöver hämta realtidsdata, t.ex. hotellbokningsstatus, väderinformation eller antalet förmånspoäng, associerar du fältgruppen som innehåller dessa fält med en kort cachevaraktighet (t.ex. en sekund). För fält som uppdateras mindre ofta (namn, kön) skapar du en andra fältgrupp med längre cachevaraktighet (till exempel 5 dagar).
 
-Antalet resor som använder en fältgrupp visas i **[!UICONTROL Used in]** fältet. Du kan klicka på **[!UICONTROL View journeys]** knappen om du vill visa en lista över resor med den här fältgruppen.
+The number of journeys that use a field group is displayed in the **[!UICONTROL Used in]** field. You can click the **[!UICONTROL View journeys]** button to display the list of journeys using this field group.
 
 >[!NOTE]
 >
