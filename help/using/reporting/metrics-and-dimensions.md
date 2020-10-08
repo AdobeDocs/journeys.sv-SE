@@ -8,10 +8,8 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8641b577e91492c86e6fc8e201acd6a208e5e38b
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 0%
@@ -98,7 +96,7 @@ Tabellen nedan visar en lista över mätvärden som används i journalrapporter,
 | **Blockeringslista ränta** | Totalt antal meddelanden på blockeringslista jämfört med skickade meddelanden. |
 | **studsar + fel** | Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden. |
 | **Studsa + felfrekvens** | Totalt antal meddelanden som studsade jämfört med skickade meddelanden. |
-| **Klicka på** | Antal gånger ett innehåll klickades i en leverans. |
+| **Klicka på** | Antal gånger som ett innehåll klickades i en leverans. |
 | **Klicka igenom hastigheten** | Totalt antal klick i en leverans jämfört med antalet levererade meddelanden. |
 | **Levererat** | Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden. |
 | **Levererad ränta** | Totalt antal meddelanden som har levererats jämfört med skickade meddelanden. |
