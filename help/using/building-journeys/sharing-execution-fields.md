@@ -1,6 +1,6 @@
 ---
-title: roadStep-händelser, körningsfält för åtgärd
-description: roadStep-händelser, körningsfält för åtgärd
+title: journeyStep, händelser, körningsfält för åtgärder
+description: journeyStep, händelser, körningsfält för åtgärder
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -8,18 +8,16 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 10402a774bda66629f30869102d5e6ceca267535
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# roadStep-händelser, körningsfält för åtgärd {#sharing-execution-fields}
+# journeyStep, händelser, körningsfält för åtgärder {#sharing-execution-fields}
 
 Den här mixinen delas av travelStepEvent och travelStepProfileEvent.
 
