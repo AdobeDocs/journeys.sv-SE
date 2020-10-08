@@ -8,13 +8,11 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 92bd110c4c91c459c8074184bdb486733ab5f3d7
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -58,7 +56,7 @@ Utför följande steg för att utnyttja trötthetsnivån under din resa:
 
    ![](../assets/journeyuc2_14.png)
 
-1. Välj **[!UICONTROL Data Source Condition]** typ och klicka i **[!UICONTROL Expression]** fältet.
+1. Välj typen **[!UICONTROL Data Source Condition]** och klicka i fältet **[!UICONTROL Expression]**. 
 
    ![](../assets/journeyuc3_2.png)
 
