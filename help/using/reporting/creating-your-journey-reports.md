@@ -8,13 +8,11 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b87de729f48c4624554eb19b6d418cb3cf70b805
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -31,7 +29,7 @@ I det här avsnittet beskrivs hur du skapar eller använder färdiga rapporter. 
 
 Så här får du tillgång till reserapporter och kan börja följa upp hur bra dina leveranser är:
 
-1. Klicka på **[!UICONTROL Home]** fliken i den övre menyn.
+1. Klicka på fliken **[!UICONTROL Home]** på den övre menyn.
 
 1. Välj den resa du vill rapportera om.
 
