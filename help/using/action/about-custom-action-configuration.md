@@ -8,13 +8,11 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7765352ec91be50b51633927ab038d3492b71a
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
@@ -34,10 +32,10 @@ Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
    >[!NOTE]
    >
-   >Använd inte blanksteg eller specialtecken. Använd inte fler än 30 tecken.
+   >Använd inte blanksteg eller specialtecken. Använd maximalt 30 tecken.
 
 1. Lägg till en beskrivning av åtgärden. Det här steget är valfritt.
-1. Antalet resor som använder den här åtgärden visas i **[!UICONTROL Used in]** fältet. Du kan klicka på **[!UICONTROL View journeys]** knappen om du vill visa en lista över resor med den här åtgärden.
+1. The number of journeys that use this action is displayed in the **[!UICONTROL Used in]** field. You can click the **[!UICONTROL View journeys]** button to display the list of  journeys using this action.
 1. Define the different **[!UICONTROL URL Configuration]** parameters. Se [](../action/url-configuration.md).
 1. Konfigurera **[!UICONTROL Authentication]** avsnittet. Den här konfigurationen är densamma som för datakällor.  Se [](../datasource/external-data-sources.md#section_wjp_nl5_nhb).
 1. Definiera **[!UICONTROL Message parameters]**. Se [](../action/defining-the-message-parameters.md).
