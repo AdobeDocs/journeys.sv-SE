@@ -8,10 +8,8 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -19,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# historikstegshändelser, vanliga fält {#sharing-common-fields}
+# journeysteps events common fields {#sharing-common-fields}
 
 Den här mixinen delas av travelStepEvent och travelStepProfileEvent.
 
@@ -29,7 +27,7 @@ Vissa av dessa fält är bara tillgängliga i specifika bearbetningsmönster (å
 
 ## entré
 
-Anger om användaren har gått in i resan. Om det inte finns antar vi att värdet är falskt.
+Anger om användaren har gått in på resan. Om det inte finns antar vi att värdet är falskt.
 
 Typ: boolesk
 
