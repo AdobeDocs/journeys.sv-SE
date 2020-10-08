@@ -8,13 +8,11 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 10c6406adb1473dcd150b43b5b5c8b178376f3ed
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -23,9 +21,9 @@ ht-degree: 0%
 
 ## Om alfaversionsgränssnittet {#about-alpha-interface}
 
-Navigeringen på [!DNL Journey Orchestration] menyer har förbättrats för att ge ett konsekvent gränssnitt med Adobe Experience Platform. Ändringarna omfattar:
+Navigation within [!DNL Journey Orchestration] menus has been enhanced, in order to provide a consistant interface with Adobe Experience Platform. Ändringarna omfattar:
 
-* Menyer som har flyttats från den övre till den vänstra sidan av gränssnittet,
+* Menyer har flyttats från den övre delen till den vänstra sidan av gränssnittet,
 * Gruppering av administratörsfunktioner i en enda kontrollpanel.
 
 I [det här avsnittet](../about/user-interface.md)beskrivs globala koncept för hur du använder och navigerar i gränssnittet (sökning och filtrering, bläddring i Adobe Experience Platform-fält, genvägar).
