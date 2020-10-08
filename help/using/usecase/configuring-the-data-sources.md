@@ -1,5 +1,5 @@
 ---
-title: Konfigurera datakällor
+title: Konfigurera datakällorna
 description: Lär dig hur du konfigurerar datakällan för resan med avancerad användning
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -8,18 +8,16 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
 
-# Konfigurera datakällor {#concept_vml_hdy_w2b}
+# Konfigurera datakällorna {#concept_vml_hdy_w2b}
 
 I vårt fall vill vi använda personaliseringsdata för våra meddelanden. Vi måste också kontrollera om personen är en lojalitetsmedlem och inte har kontaktats under de senaste 24 timmarna. Den här informationen lagras i kundprofildatabasen i realtid. Den **tekniska användaren** måste konfigurera Adobe Experience Platform datakälla för att hämta fälten.
 
@@ -55,7 +53,7 @@ Vi måste också kontrollera om personen har en bokning i hotellbokningen. Den *
 
    >[!CAUTION]
    >
-   >Vi rekommenderar starkt att du använder HTTPS av säkerhetsskäl.
+   >Vi rekommenderar starkt att HTTPS används av säkerhetsskäl.
 
 1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**. I vårt exempel väljer vi&quot;Grundläggande&quot; som typ och anger användarnamn och lösenord för API-anropet.
 
@@ -63,9 +61,9 @@ Vi måste också kontrollera om personen har en bokning i hotellbokningen. Den *
 
 1. Klicka **[!UICONTROL Add a New Field Group]** för att definiera informationen som ska hämtas och API-parametrarna. Det finns till exempel bara en parameter (id), så vi måste skapa en fältgrupp med följande information:
 
-   * **[!UICONTROL Method]**: Markera POST- eller GET-metoden. I vårt fall väljer vi GET-metoden.
+   * **[!UICONTROL Method]**: välj metoden POST eller GET. I vårt fall väljer vi metoden GET.
    * **[!UICONTROL Cache duration]**: detta varierar beroende på hur ofta API-anrop görs. I vårt fall uppdateras reservationssystemet var 10:e minut.
-   * **[!UICONTROL Response Payload]**: klicka inuti **[!UICONTROL Payload]** fältet och klistra in ett exempel på nyttolasten. Kontrollera att fälttyperna är korrekta. Varje gång API anropas hämtas alla fält som ingår i nyttolastexemplet. I vårt exempel innehåller nyttolasten bara reservationsstatusen:
+   * **[!UICONTROL Response Payload]**: klicka inuti **[!UICONTROL Payload]** fältet och klistra in ett exempel på nyttolasten. Kontrollera att fälttyperna är korrekta. Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast. I vårt exempel innehåller nyttolasten bara reservationsstatusen:
 
    ```
    {
