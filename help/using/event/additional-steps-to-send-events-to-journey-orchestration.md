@@ -8,19 +8,17 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 
 
-# Ytterligare steg för att skicka händelser till [!DNL Journey Orchestration] {#concept_xrz_n1q_y2b}
+# Additional steps to send events to [!DNL Journey Orchestration] {#concept_xrz_n1q_y2b}
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 0%
 
 Om du vill konfigurera händelser som ska skickas till **[!UICONTROL Streaming Ingestion APIs]** och användas i [!DNL Journey Orchestration]måste du göra följande:
 
-1. Hämta URL:en för inlopp från Adobe Experience Platform API:er (se API:er för [direktuppspelning](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/overview.html)).
+1. Hämta URL:en för inlopp från Adobe Experience Platform API:er (se API:er för [direktuppspelning](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/overview.html)).
 1. Kopiera nyttolasten från nyttolastförhandsvisningen på **[!UICONTROL Event]** menyn. Se [](../event/defining-the-payload-fields.md).
 
 Sedan måste du konfigurera det datasystem som överför händelser till API:er för direktuppspelning av inmatning med den nyttolast som du kopierade:
@@ -98,4 +96,4 @@ Här är ett exempel på en API-händelse för direktuppspelning:
 
 För att underlätta identifieringen av den plats där delen&quot;data&quot; ska klistras in kan du använda ett JSON-visualiseringsverktyg som [https://jsonformatter.curiousconcept.com](https://jsonformatter.curiousconcept.com)
 
-Information om hur du felsöker API:er för direktuppspelning finns på den här [sidan](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/troubleshooting.html).
+Information om hur du felsöker API:er för direktuppspelning finns på den här [sidan](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/troubleshooting.html).
