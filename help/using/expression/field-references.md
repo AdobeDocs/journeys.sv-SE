@@ -8,13 +8,11 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 61e269bc319407f48006486b96333385ef8b9c58
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -87,7 +85,7 @@ I det här uttrycket hämtar vi posten för nyckeln&quot;Email&quot; i fältet&q
 
 Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas, visas en ny flik till höger där du kan ange den här parametern. Se [](../expression/expressionadvanced.md).
 
-Om du vill ta med parametrarna för datakällan i huvuduttrycket kan du definiera deras värden med nyckelordsparametrarna __ för mer komplexa användningsområden. En parameter kan vara vilket giltigt uttryck som helst, även från en annan datakälla som även innehåller en annan parameter.
+For more complex use cases, if you want to include the parameters of the data source in the main expression, you can define their values using the keyword _params_. En parameter kan vara vilket giltigt uttryck som helst, även från en annan datakälla som även innehåller en annan parameter.
 
 >[!NOTE]
 >
