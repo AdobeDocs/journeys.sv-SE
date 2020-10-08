@@ -1,5 +1,5 @@
 ---
-title: Om funktionsmakron
+title: Om instruktionsaktiviteter
 description: Läs mer om åtgärdsaktiviteter
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -8,18 +8,16 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 4%
+ht-degree: 26%
 
 ---
 
 
-# Om funktionsmakron {#concept_hbj_hrt_52b}
+# Om instruktionsaktiviteter {#concept_hbj_hrt_52b}
 
 På paletten, till vänster på skärmen, under **[!UICONTROL Events]** och **[!UICONTROL Orchestration]** hittar du **[!UICONTROL Actions]** kategorin.
 
@@ -35,4 +33,4 @@ När du släpper en funktionsmakroaktivitet på arbetsytan kan du definiera en *
 
 ![](../assets/journey59bis.png)
 
-När ett fel inträffar i en åtgärd eller ett villkor upphör kundens resa. Det enda sättet att få det att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [](../building-journeys/using-the-journey-designer.md#paths).
+När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [](../building-journeys/using-the-journey-designer.md#paths).
