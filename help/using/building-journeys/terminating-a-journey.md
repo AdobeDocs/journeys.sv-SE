@@ -1,5 +1,5 @@
 ---
-title: Avbryta en resa
+title: Avsluta en resa
 description: Lär dig hur du avslutar en resa
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -8,18 +8,16 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 72a3fd98b7911a1b8f23ccfeb55b884926f795ce
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
 
-# Avbryta en resa
+# Avsluta en resa
 
 Med alternativen **[!UICONTROL Stop]** och **[!UICONTROL Close to new entrances]** kan du avsluta **direktresor** . Att avsluta en resa innebär **att nya kunder inte kan ta sig** in på resan och att de kunder som redan har tagit sig in på resan kan uppleva den till slutet. Det här är det mest rekommenderade sättet att få ett slut på en resa eftersom den erbjuder den bästa upplevelsen för kunderna. Att stoppa en resa innebär att alla som redan har tagit sig in på en resa stoppas i processen. Resan är i stort sett avstängd.
 
