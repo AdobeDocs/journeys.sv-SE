@@ -8,13 +8,11 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -24,11 +22,11 @@ ht-degree: 0%
 
 Du kan antingen skapa ett segment med [Adobe Experience Platform segmenteringstjänst](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) eller så kan du komma åt och skapa dem direkt i [!DNL Journey Orchestration].
 
-1. In the top menu, click on the **[!UICONTROL Segments]** tab. Listan över Adobe Experience Platform-segment visas. Du kan söka efter ett visst segment i listan.
+1. Klicka på fliken **[!UICONTROL Segments]** på den övre menyn. Listan över Adobe Experience Platform-segment visas. Du kan söka efter ett visst segment i listan.
 
 ![](../assets/segment1.png)
 
-1. Klicka **[!UICONTROL Add]** för att skapa ett nytt segment. På segmentdefinitionsskärmen kan du konfigurera alla obligatoriska fält för att definiera ditt segment. Konfigurationen är densamma som i segmenteringstjänsten. Se användarhandboken för [Segment Builder](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html).
+1. Click **[!UICONTROL Add]** to create a new segment. På segmentdefinitionsskärmen kan du konfigurera alla obligatoriska fält för att definiera ditt segment. Konfigurationen är densamma som i segmenteringstjänsten. Se användarhandboken för [Segment Builder](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html).
 
 ![](../assets/segment2.png)
 
