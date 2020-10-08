@@ -1,5 +1,5 @@
 ---
-title: Hanteringsfunktioner för samlingar
+title: Funktioner för att hantera samlingar
 description: Läs mer om datatyper i samlingshanteringsfunktioner
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -8,18 +8,16 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eb4474313d3c0470448f9959ed757902ef0ecd2a
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Hanteringsfunktioner för samlingar {#collection-management-functions}
+# Funktioner för att hantera samlingar {#collection-management-functions}
 
 Uttrycksspråket innehåller även en uppsättning funktioner för att fråga efter samlingar.
 
@@ -129,7 +127,7 @@ earlier timestamp) in order to only consider prior events.-->
 count(@{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.token})
 ```
 
-Resultatet av uttrycket är **3**.
+The result of the expression is **3**.
 
 **Exempel 3:**
 
