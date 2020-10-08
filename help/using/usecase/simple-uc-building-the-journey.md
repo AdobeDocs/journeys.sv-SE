@@ -8,33 +8,31 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 017d502e21605b3e0b8c61e5fea0b4f6a65d4470
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 0%
+ht-degree: 42%
 
 ---
 
 
 # Bygga resan{#concept_eyw_mcy_w2b}
 
-Nu kan **affärsanvändaren** skapa resan. Vår resa omfattar endast en väg med följande aktiviteter:
+Nu kan **företagsanvändaren** bygga resan. Vår resa omfattar endast en väg med följande aktiviteter:
 
-* &quot;SpaBeacon&quot; **[!UICONTROL Event]**: När en person går nära spaltmarkören får systemet en händelse och resan börjar för den personen.
+* &quot;SpaBeacon&quot; **[!UICONTROL Event]**: När en person går nära spaltmarkören får systemet ett evenemang och resan börjar för den personen.
 * en **[!UICONTROL Condition]** aktivitet för att kontrollera att personen är en kvinna
 * en **[!UICONTROL Email]** aktivitet (med Adobe Campaign Standard)
 * an **[!UICONTROL End]** activity
 
 >[!NOTE]
 >
->Aktiviteter **[!UICONTROL Push]** och **[!UICONTROL Email]** aktiviteter är bara tillgängliga på paletten om du har Adobe Campaign Standard.
+>Aktiviteterna **[!UICONTROL Push]** och **[!UICONTROL Email]** är bara tillgängliga på paletten om du har Adobe Campaign Standard.
 
-Mer information om hur du bygger en resa finns i [](../building-journeys/journey.md).
+Mer information om hur du bygger en resa finns under [](../building-journeys/journey.md).
 
-1. Klicka på **[!UICONTROL Home]** fliken i den övre menyn och **[!UICONTROL Create]** skapa en ny resa.
+1. Klicka på fliken **[!UICONTROL Home]** och **[!UICONTROL Create]** på den övre menyn för att skapa en ny resa.
 
    ![](../assets/journey31.png)
 
@@ -42,15 +40,15 @@ Mer information om hur du bygger en resa finns i [](../building-journeys/journey
 
    ![](../assets/journeyuc1_8.png)
 
-1. Börja designa din resa genom att dra och släppa SpaBeacon-händelsen från paletten till arbetsytan. Du kan också dubbelklicka på händelsen på paletten för att lägga till den på arbetsytan.
+1. Börja designa din resa genom att dra och släppa SpaBeacon-händelsen från paletten till arbetsytan. Du kan också dubbelklicka på händelsen på paletten och lägga till den på arbetsytan.
 
    ![](../assets/journeyuc1_9.png)
 
-1. Nu ska vi lägga till ett villkor för att kontrollera att personen är en kvinna. Dra och släpp en villkorsaktivitet på resan.
+1. Nu ska vi lägga till ett villkor för att kontrollera att personen är en kvinna. Dra och släpp en villkorlig aktivitet i resan.
 
    ![](../assets/journeyuc1_10.png)
 
-1. Välj **[!UICONTROL Data Source Condition]** typ och klicka i **[!UICONTROL Expression]** fältet. Du kan också definiera en villkorsetikett som ska visas på pilen på arbetsytan.
+1. Välj typen **[!UICONTROL Data Source Condition]** och klicka i fältet **[!UICONTROL Expression]**. Du kan även definiera en villkorsetikett som visas på pilen på arbetsytan.
 
    ![](../assets/journeyuc1_11.png)
 
@@ -58,11 +56,11 @@ Mer information om hur du bygger en resa finns i [](../building-journeys/journey
 
    ![](../assets/journeyuc1_12.png)
 
-1. Släpp en **[!UICONTROL Email]** aktivitet och välj en mall för transaktionsmeddelanden om&quot;Spa-rabatt&quot;. Den här mallen har utformats med Adobe Campaign. Se den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
+1. Släpp en **[!UICONTROL Email]** aktivitet och välj en mall för transaktionsmeddelanden om&quot;Spa-rabatt&quot;. Den här mallen har utformats med Adobe Campaign. Refer to this [page](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
 
    ![](../assets/journeyuc1_13.png)
 
-1. Klicka i **[!UICONTROL Email]** fältet och välj e-postadressen från datakällan.
+1. Click inside the **[!UICONTROL Email]** field and select the email address from the data source.
 
    ![](../assets/journeyuc1_14.png)
 
@@ -74,11 +72,11 @@ Mer information om hur du bygger en resa finns i [](../building-journeys/journey
 
    ![](../assets/journeyuc1_17.png)
 
-1. Klicka på **[!UICONTROL Test]** växla och testa din resa med testprofiler. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa det igen. Mer information om testläget finns i [](../building-journeys/testing-the-journey.md).
+1. Klicka på **[!UICONTROL Test]** växla och testa din resa med testprofiler. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. Mer information om testläget finns under [](../building-journeys/testing-the-journey.md).
 
    ![](../assets/journeyuc1_18bis.png)
 
-1. När testet är klart kan du publicera din resa från den övre högra menyn.
+1. När testet är klart kan du publicera din resa från den övre högra rullgardinsmenyn.
 
    ![](../assets/journeyuc1_18.png)
 
