@@ -8,13 +8,11 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2b44cd9db7732c5e272b69e2583a5f81b4580d11
+source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,7 +25,7 @@ Du kan också använda den här funktionen för att utföra en åtgärd när det
 
 Observera att du bara kan använda en reaktionsaktivitet på arbetsytan om det finns en tidigare e-post-, push- eller SMS-aktivitet.
 
-Se [Om funktionsmakron](../building-journeys/about-action-activities.md).
+See [About action activities](../building-journeys/about-action-activities.md).
 
 ![](../assets/journey45.png)
 
