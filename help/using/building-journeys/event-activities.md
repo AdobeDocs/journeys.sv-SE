@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: 65ff1003fdfec087e4e2030dd81df8dab6229495
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '444'
 ht-degree: 1%
 
 ---
@@ -31,12 +31,29 @@ När du klickar på händelseaktiviteten på arbetsytan visas aktivitetskonfigur
 
 ![](../assets/journey33.png)
 
-## Avancerad användning: parallella händelser{#section_vxv_h25_pgb}
+## Lyssna på händelser under en viss tid
 
-**Hur kan du lyssna på en händelse endast under en viss tid?**
+En händelseaktivitet som placeras på resan lyssnar på händelser i oändlighet. Om du bara vill lyssna på en händelse under en viss tid måste du konfigurera en timeout för händelsen.
 
-En händelseaktivitet som placeras på resan lyssnar på händelser i oändlighet. Om du bara vill lyssna på en händelse under en viss tid måste du lägga till en vänteaktivitet parallellt med händelsens sökväg. Resan lyssnar sedan på händelsen under den tid som anges i vänteaktiviteten. Om en händelse tas emot under den perioden kommer personen att flöda in i händelsens sökväg. Annars kommer kunden att flyta in i väntetiden.
+Resan lyssnar sedan på händelsen under den tid som anges i tidsgränsen. Om en händelse tas emot under den perioden kommer personen att flöda in i händelsens sökväg. Annars kommer kunden antingen att flöda in i en tidsgräns eller avsluta sin resa.
 
-Du har t.ex. skickat en välkommen första push till en kund och vill bara skicka en push för måltidsrabatt om kunden kommer in på restaurangen inom 6 timmar. För att göra detta skapar du en andra väg (parallellt med restaurangeventet) med en 6-timmars vänteaktivitet. Om restauranghändelsen tas emot mindre än 6 timmar efter välkomstpushen skickas push-aktiviteten för måltidsrabatt. Om ingen restauranghändelse tas emot inom de närmaste 6 timmarna flödar personen genom väntebanan.
+Så här konfigurerar du en timeout för en händelse:
 
-![](../assets/journeyuc2_31.png)
+1. Aktivera **[!UICONTROL Enable the event timeout]** alternativet från händelseegenskaperna.
+
+1. Ange hur lång tid resan ska vänta på händelsen.
+
+1. Om du vill skicka personerna till en timeout-sökväg när ingen händelse tas emot inom den angivna tidsgränsen aktiverar du **[!UICONTROL Set the timeout path]** alternativet. Om det här alternativet inte är aktiverat avslutas kundresan för personen när tidsgränsen nås.
+
+   ![](../assets/event-timeout.png)
+
+I det här exemplet skickar resan en första välkomstknuff till en kund. Sedan skickas en reklamfilm för måltidsrabatt endast om kunden kommer in på restaurangen nästa dag. Därför har vi konfigurerat restaurangevenemanget med en 1-dagars timeout:
+
+* Om restauranghändelsen tas emot mindre än 1 dygn efter välkomstsändningen skickas push-aktiviteten för måltidsrabatt.
+* Om ingen restauranghändelse tas emot under nästa dag flödar personen genom timeoutvägen.
+
+Observera att om du vill konfigurera en timeout för flera händelser som placeras efter en **[!UICONTROL Wait]** aktivitet, måste du bara konfigurera timeout för en av dessa händelser.
+
+Tidsgränsen gäller för alla händelser som placeras efter **[!UICONTROL Wait]** aktiviteten. Om ingen händelse tas emot efter den angivna tidsgränsen kommer individerna att flyta in i en enda tidsgräns eller avsluta sin resa.
+
+![](../assets/event-timeout-group.png)
