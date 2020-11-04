@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: 09bebf62cda32e357f5f8b795e6702a69edb83a7
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '231'
 ht-degree: 2%
 
 ---
@@ -43,4 +43,4 @@ Reseversioner kan stoppas individuellt. Alla versioner av resor har samma namn.
 
 >[!NOTE]
 >
->Om du har flera liveversioner och du stoppar den senaste, kommer folk inte att återgå till en tidigare liveversion. Ingen entré på resan kommer att ske.
+>När du publicerar en ny version av en resa avslutas den tidigare versionen automatiskt och växlar till statusen **Stängd** . Ingen entré på resan kommer att ske. Även om du stoppar den senaste versionen förblir den tidigare versionen stängd.
