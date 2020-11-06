@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 44b2da66d6621b18b13ff99e46af02eddcaac6b1
+source-git-commit: 93da470ae878ec3dcf4fcb435dab86c8bf0419d4
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -38,10 +38,8 @@ Tabellen nedan visar en lista över de dimensioner som används i reserapporter,
 | **Åtgärd** | Lista över alla åtgärder (**åtgärdsnamn - åtgärdsetikett**) som används i resor, t.ex. Push - Check out confirmation, Email - Rewards fidelity. |
 | **Datakälla** | Förteckning över datakällor (**datakällans namn**) som används för att berika data under en resa, t.ex. Adobe Experience Platform, reservationssystem. |
 | **[!UICONTROL Event]** | Lista över alla händelser (**händelsenamn - händelsetikett**) som används i resor, t.ex. Geometrixx-händelse - utcheckning av Geometrixx. |
-| **[!UICONTROL Event origin]** | Indelningshändelser per kategori: **[!UICONTROL Internal event]** och **[!UICONTROL External event]**. For more information, refer to this [page](../building-journeys/jump.md). |
 | **Fältgrupp** | Lista över fältgrupper (**fältgruppsnamn**) som används för att berika data i resor, t.ex. profilfältgrupp, reservationssystem för Geometrixx. |
 | **Resa** | Lista över varje resa (**resenamn**) i testläge och i realtid, t.ex. när kunden överger en kundvagn, meddelanden om hotellreservationer. |
-| **[!UICONTROL Journey origin]** | Uppdelning **[!UICONTROL Internal event]** efter resor. |
 | **Reseversion** | Lista över alla publicerade versioner av en resa (**resenamn + versionsnummer**), t.ex. avbruten kundvagn v1, meddelande om hotellreservation v2. |
 | **Orchestration** | Lista över alla koordinationsaktiviteter (**villkor, slut, vänta**) som definierats och används i resor. |
 
