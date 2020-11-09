@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: e353d593ab2710f50a88a3715378c86c2e37b4f6
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 100%
+source-wordcount: '370'
+ht-degree: 88%
 
 ---
 
@@ -35,10 +35,10 @@ Den här konfigurationen krävs inte om dina resor endast utnyttjar lokala data 
 
 Det finns två typer av datakällor:
 
-* Den förkonfigurerade datakällan i Adobe Experience Platform som definierar anslutningen till kundprofilen i realtid. Detta är en inbyggd datakälla. Se [](../datasource/adobe-experience-platform-data-source.md).
-* De externa datakällor som du använder för att definiera en anslutning till externa system. Dessa är de du kan skapa. Se [](../datasource/external-data-sources.md).
+* Den förkonfigurerade datakällan i Adobe Experience Platform som definierar anslutningen till kundprofilen i realtid. Detta är en inbyggd datakälla. Läs [den här sidan](../datasource/adobe-experience-platform-data-source.md).
+* De externa datakällor som du använder för att definiera en anslutning till externa system. Dessa är de du kan skapa. Läs [den här sidan](../datasource/external-data-sources.md).
 
-För varje datakälla definierar du den information som ska hämtas med fältgrupper. Fältgrupper är uppsättningar med fält som kan hämtas från en datakälla. Se [](../datasource/field-groups.md).
+För varje datakälla definierar du den information som ska hämtas med fältgrupper. Fältgrupper är uppsättningar med fält som kan hämtas från en datakälla. Läs [den här sidan](../datasource/field-groups.md).
 
 Titta på den här [självstudievideon](https://docs.adobe.com/content/help/sv-SE/journey-orchestration-learn/tutorials/configure-data-sources.html) för att få mer information om hur du konfigurerar en datakälla i Adobe Experience Platform och en extern datakälla samt hur du hittar och använder data i en resa.
 
@@ -50,11 +50,11 @@ Här följer de huvudsakliga konfigurationsstegen för datakällor:
 
 1. Klicka på fliken **[!UICONTROL Data Sources]** på den övre menyn.
 
-   Listan med datakällor visas. Se [](../about/user-interface.md) för mer information om gränssnittet.
+   Listan med datakällor visas. See [this page](../about/user-interface.md) for more information on the interface.
 
    ![](../assets/journey18.png)
 
-1. Därefter kan du antingen lägga till fältgrupper i den inbyggda datakällan (se [](../datasource/adobe-experience-platform-data-source.md)) eller skapa en ny extern datakälla (se [](../datasource/external-data-sources.md)) och associerade fältgrupper (se [](../datasource/field-groups.md)).
+1. Then you can either add field groups to the built-in data source (see [this page](../datasource/adobe-experience-platform-data-source.md)) or create a new external data source (see [this page](../datasource/external-data-sources.md)) and associated field groups (see [this page](../datasource/field-groups.md)).
 
    ![](../assets/journey23.png)
 
