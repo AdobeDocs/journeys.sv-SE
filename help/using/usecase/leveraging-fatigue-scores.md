@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: bcb8a71a27e2b9e37af7d0260cec04ed0fda24ee
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '249'
 ht-degree: 9%
 
 ---
@@ -27,7 +27,7 @@ Det här användningsexemplet visar hur du kan utnyttja trötthetspoäng för at
 
 ## Konfigurera händelsen {#section_ptb_ws1_ffb}
 
-Följ stegen som beskrivs i [](../event/about-events.md).
+Följ stegen som beskrivs på [den här sidan](../event/about-events.md).
 
 ## Konfigurera datakällan {#section_o3n_4yy_wfb}
 
@@ -46,7 +46,7 @@ Utför följande steg för att välja utmattningspoängfält i den inbyggda data
 
 ## Bygga resan {#section_uzm_pyy_wfb}
 
-Följ stegen som beskrivs i [](../building-journeys/journey.md)för att skapa, validera och publicera resan.
+Följ stegen som beskrivs på [den här sidan](../building-journeys/journey.md)för att skapa, validera och publicera resan.
 
 Vi utnyttjar **[!UICONTROL fatigueLevel]** fältet. Du kan också använda **[!UICONTROL fatigueScore]** fältet.
 
