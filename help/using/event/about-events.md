@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: e353d593ab2710f50a88a3715378c86c2e37b4f6
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 100%
+source-wordcount: '727'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ En pipeline filtrerar händelser som har en nyttolast som innehåller händelse-
 
 Här följer de viktigaste stegen för att konfigurera en ny händelse:
 
-1. Klicka på fliken **[!UICONTROL Events]** på den övre menyn. Listan med händelser visas. Se [](../about/user-interface.md) för mer information om gränssnittet.
+1. Klicka på fliken **[!UICONTROL Events]** på den övre menyn. Listan med händelser visas. Mer information om gränssnittet finns på [den här sidan](../about/user-interface.md) .
 
    ![](../assets/journey5.png)
 
@@ -61,13 +61,13 @@ Här följer de viktigaste stegen för att konfigurera en ny händelse:
    >Använd inte blanksteg eller specialtecken. Använd maximalt 30 tecken.
 
 1. Lägg till en beskrivning för händelsen. Det här steget är valfritt.
-1. Definiera fälten för schemat och nyttolasten. Här väljer du den händelseinformation (kallas vanligtvis nyttolast) som [!DNL Journey Orchestration] förväntas ta emot. Du kan sedan använda den här informationen i din resa. Se [](../event/defining-the-payload-fields.md).
+1. Definiera fälten för schemat och nyttolasten. Här väljer du den händelseinformation (kallas vanligtvis nyttolast) som [!DNL Journey Orchestration] förväntas ta emot. Du kan sedan använda den här informationen i din resa. Läs [den här sidan](../event/defining-the-payload-fields.md).
 1. Antalet resor som använder den här händelsen visas i fältet **[!UICONTROL Used in]**. Du kan klicka på ikonen **[!UICONTROL View journeys]** för att visa en lista över resor som använder den här händelsen.
-1. Lägg till en namnrymd. Det här steget är valfritt men rekommenderas eftersom du kan lägga till en namnrymd vilket innebär att du kan utnyttja information som lagras i realtidskundprofilen. Denna definierar vilken typ av nyckel händelsen har. Se [](../event/selecting-the-namespace.md).
-1. Definiera nyckeln. Välj ett fält från dina fält med nyttolaster eller definiera en formel som identifierar den person som är associerad med händelsen. Den här nyckeln konfigureras automatiskt (men kan fortfarande redigeras) om du väljer en namnrymd. [!DNL Journey Orchestration] väljer den nyckel som ska motsvara namnrymden (om du till exempel väljer en e-postnamnrymd väljs e-postnyckeln). Se [](../event/defining-the-event-key.md).
-1. Lägga till ett villkor. Det här steget är valfritt. Med detta kan systemet endast bearbeta händelser som uppfyller villkoret. Villkoret kan endast baseras på information som finns i händelsen. Se [](../event/adding-a-condition.md).
+1. Lägg till en namnrymd. Det här steget är valfritt men rekommenderas eftersom du kan lägga till en namnrymd vilket innebär att du kan utnyttja information som lagras i realtidskundprofilen. Denna definierar vilken typ av nyckel händelsen har. Läs [den här sidan](../event/selecting-the-namespace.md).
+1. Definiera nyckeln. Välj ett fält från dina fält med nyttolaster eller definiera en formel som identifierar den person som är associerad med händelsen. Den här nyckeln konfigureras automatiskt (men kan fortfarande redigeras) om du väljer en namnrymd. [!DNL Journey Orchestration] väljer den nyckel som ska motsvara namnrymden (om du till exempel väljer en e-postnamnrymd väljs e-postnyckeln). Läs [den här sidan](../event/defining-the-event-key.md).
+1. Lägga till ett villkor. Det här steget är valfritt. Med detta kan systemet endast bearbeta händelser som uppfyller villkoret. Villkoret kan endast baseras på information som finns i händelsen. Läs [den här sidan](../event/adding-a-condition.md).
 1. Klicka på **[!UICONTROL Save]**.
 
    ![](../assets/journey7.png)
 
-   Händelsen är nu konfigurerad och klar att injiceras i en resa. Ytterligare konfigurationssteg krävs för att ta emot händelser. Se [](../event/additional-steps-to-send-events-to-journey-orchestration.md).
+   Händelsen är nu konfigurerad och klar att injiceras i en resa. Ytterligare konfigurationssteg krävs för att ta emot händelser. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey-orchestration.md).
