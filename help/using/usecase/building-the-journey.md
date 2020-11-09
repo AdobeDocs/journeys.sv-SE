@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: bcb8a71a27e2b9e37af7d0260cec04ed0fda24ee
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 100%
+source-wordcount: '847'
+ht-degree: 92%
 
 ---
 
@@ -31,7 +31,7 @@ Nu kan **företagsanvändaren** bygga resan. Vår resa omfattar följande aktivi
 >
 >Aktiviteterna **[!UICONTROL Push]** och **[!UICONTROL Email]** är bara tillgängliga på paletten om du har Adobe Campaign Standard.
 
-Mer information om hur du bygger en resa finns under [](../building-journeys/journey.md).
+For additional information on how to build a journey, refer to [this page](../building-journeys/journey.md).
 
 ## Första stegen{#section_ntb_ws1_ffb}
 
@@ -81,7 +81,7 @@ Mer information om hur du bygger en resa finns under [](../building-journeys/jou
    >
    >I den andra delen av uttrycket är ”Profil” valfri.
 
-1. Vi måste välja en namnrymd. En namnrymd är förvald baserat på schemats egenskaper. Du kan behålla den som är förmarkerad. Mer information om namnrymder finns under [](../event/selecting-the-namespace.md).
+1. Vi måste välja en namnrymd. En namnrymd är förvald baserat på schemats egenskaper. Du kan behålla den som är förmarkerad. For more information on namespaces, see [this page](../event/selecting-the-namespace.md).
 
 I vårt fall vill vi bara reagera på dessa två villkor vilket innebär att vi inte markerar rutan **[!UICONTROL Show path for other cases than the one(s) above]**.
 
@@ -106,7 +106,7 @@ Två vägar skapas efter ditt villkor:
 
    ![](../assets/journeyuc2_18.png)
 
-1. När du väljer ett fält från en extern datakälla visar den högra delen av skärmen listan med parametrar som definierades när den externa datakällan konfigurerades (se [](../usecase/configuring-the-data-sources.md)). Klicka på parameterns namn och definiera värdet för reservationens systemnyckel vilken är Experience Cloud-ID i följande exempel:
+1. When you select a field from an external data source, the right part of the screen displays the list of parameters that were defined when configuring the external data source (see [this page](../usecase/configuring-the-data-sources.md)). Klicka på parameterns namn och definiera värdet för reservationens systemnyckel vilken är Experience Cloud-ID i följande exempel:
 
    ```
    @{LobbyBeacon.endUserIDs._experience.mcid.id}
@@ -172,7 +172,7 @@ Två vägar skapas efter ditt villkor:
 
 1. Lägg till en **[!UICONTROL End]**-aktivitet.  
 
-Klicka på växlingsknappen **[!UICONTROL Test]** och testa din resa. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. Mer information om testläget finns under [](../building-journeys/testing-the-journey.md).
+Klicka på växlingsknappen **[!UICONTROL Test]** och testa din resa. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. For more information on the test mode, refer to [this page](../building-journeys/testing-the-journey.md).
 
 ![](../assets/journeyuc2_32bis.png)
 
