@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: bcb8a71a27e2b9e37af7d0260cec04ed0fda24ee
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 42%
+source-wordcount: '395'
+ht-degree: 36%
 
 ---
 
@@ -30,7 +30,7 @@ Nu kan **företagsanvändaren** bygga resan. Vår resa omfattar endast en väg m
 >
 >Aktiviteterna **[!UICONTROL Push]** och **[!UICONTROL Email]** är bara tillgängliga på paletten om du har Adobe Campaign Standard.
 
-Mer information om hur du bygger en resa finns under [](../building-journeys/journey.md).
+For additional information on how to build a journey, refer to [this page](../building-journeys/journey.md).
 
 1. Klicka på fliken **[!UICONTROL Home]** och **[!UICONTROL Create]** på den övre menyn för att skapa en ny resa.
 
@@ -72,7 +72,7 @@ Mer information om hur du bygger en resa finns under [](../building-journeys/jou
 
    ![](../assets/journeyuc1_17.png)
 
-1. Klicka på **[!UICONTROL Test]** växla och testa din resa med testprofiler. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. Mer information om testläget finns under [](../building-journeys/testing-the-journey.md).
+1. Klicka på **[!UICONTROL Test]** växla och testa din resa med testprofiler. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. For more information on the test mode, refer to [this page](../building-journeys/testing-the-journey.md).
 
    ![](../assets/journeyuc1_18bis.png)
 
