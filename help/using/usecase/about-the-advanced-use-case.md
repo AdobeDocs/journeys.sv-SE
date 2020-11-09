@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: bcb8a71a27e2b9e37af7d0260cec04ed0fda24ee
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '418'
 ht-degree: 5%
 
 ---
@@ -40,12 +40,12 @@ Sedan kontrollerar vi två villkor:
 
 ![](../assets/journeyuc2_29.png)
 
-I det här fallet måste vi skapa två händelser (se [](../usecase/configuring-the-events.md)):
+I det här fallet måste vi skapa två händelser (se [den här sidan](../usecase/configuring-the-events.md)):
 
 * Den lobby-beacon-händelse som kommer att skjutas upp till systemet när en kund kommer in på hotellet.
 * Restauranghändelsen som kommer att skjutas upp när en kund kommer in på restaurangen.
 
-Vi måste konfigurera en anslutning till två datakällor (se [](../usecase/configuring-the-data-sources.md)):
+Vi måste konfigurera en anslutning till två datakällor (se [den här sidan](../usecase/configuring-the-data-sources.md)):
 
 * Den inbyggda Adobe Experience Platform-datakällan för att hämta information om våra två villkor (lojalitetsmedlemskap och senaste kontaktdatum) samt information om meddelandepersonalisering.
 * Hotellbokssystemet för att hämta information om bokningsstatus.
