@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: e353d593ab2710f50a88a3715378c86c2e37b4f6
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -58,4 +58,4 @@ Tidszonen definieras på resenivå.
 
 Du kan ange en fast tidszon eller använda Adobe Experience Platform-profiler för att definiera resetidszonen.
 
-Mer information om hantering av tidszoner finns i [](../building-journeys/timezone-management.md).
+Mer information om hantering av tidszoner finns på [den här sidan](../building-journeys/timezone-management.md).
