@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 900b956799194e13ee01ca9aef3c786e9c5b04db
+source-git-commit: e353d593ab2710f50a88a3715378c86c2e37b4f6
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1007'
 ht-degree: 98%
 
 ---
@@ -59,7 +59,7 @@ Du kommer åt **[!UICONTROL Filters]** genom att klicka på filterikonen högst 
 
 I listorna **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** kan du använda **[!UICONTROL Creation filters]** för att filtrera per datum för skapande och per användare. Du kan till exempel välja att bara visa händelser som du har skapat under de senaste 30 dagarna.
 
-I reselistan (under **[!UICONTROL Home]**) kan du utöver **[!UICONTROL Creation filters]** filtrera de visade resorna per status och version (**[!UICONTROL Status and version filters]**). Du kan även välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). Med **[!UICONTROL Publication filters]** kan du välja ett publiceringsdatum eller en viss användare. Du kan till exempel välja att endast visa de senaste versionerna av resor i realtid som publicerades i går. Se [](../building-journeys/using-the-journey-designer.md).
+I reselistan (under **[!UICONTROL Home]**) kan du utöver **[!UICONTROL Creation filters]** filtrera de visade resorna per status och version (**[!UICONTROL Status and version filters]**). Du kan även välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). Med **[!UICONTROL Publication filters]** kan du välja ett publiceringsdatum eller en viss användare. Du kan till exempel välja att endast visa de senaste versionerna av resor i realtid som publicerades i går. Läs [den här sidan](../building-journeys/using-the-journey-designer.md).
 
 >[!NOTE]
 >
