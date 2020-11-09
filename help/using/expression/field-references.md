@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: e353d593ab2710f50a88a3715378c86c2e37b4f6
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 1%
+source-wordcount: '433'
+ht-degree: 3%
 
 ---
 
@@ -63,7 +63,7 @@ Ett standardvärde kan kopplas till ett fältnamn. Syntaxen är följande:
 
 **Referens för ett fält i samlingar**
 
-De element som definieras i samlingar refereras med de specifika funktionerna all, first och last. Mer information finns i [](../expression/collection-management-functions.md).
+De element som definieras i samlingar refereras med de specifika funktionerna all, first och last. För mer information om detta hittar du i [det här avsnittet](../expression/collection-management-functions.md).
 
 Exempel :
 
@@ -73,17 +73,17 @@ Exempel :
 
 **Referens för ett fält som definieras i en karta**
 
-För att kunna hämta ett element i en karta använder vi inmatningsfunktionen med en given nyckel. Det används till exempel när du definierar nyckeln för en händelse enligt det valda namnutrymmet. Se Välja namnutrymme. Mer information finns i [](../event/selecting-the-namespace.md).
+För att kunna hämta ett element i en karta använder vi inmatningsfunktionen med en given nyckel. Det används till exempel när du definierar nyckeln för en händelse enligt det valda namnutrymmet. Se Välja namnutrymme. Mer information finns på [den här sidan](../event/selecting-the-namespace.md).
 
 ```
 @{MyEvent.identityMap.entry('Email').first().id}
 ```
 
-I det här uttrycket hämtar vi posten för nyckeln&quot;Email&quot; i fältet&quot;IdentityMap&quot; för en händelse. Posten&quot;E-post&quot; är en samling från vilken vi tar&quot;id&quot; i det första elementet med&quot;first()&quot;. Mer information finns i [](../expression/collection-management-functions.md).
+I det här uttrycket hämtar vi posten för nyckeln&quot;Email&quot; i fältet&quot;IdentityMap&quot; för en händelse. Posten&quot;E-post&quot; är en samling från vilken vi tar&quot;id&quot; i det första elementet med&quot;first()&quot;. Mer information finns på [den här sidan](../expression/collection-management-functions.md).
 
 **Parametervärden för en datakälla (dynamiska värden för datakälla)**
 
-Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas, visas en ny flik till höger där du kan ange den här parametern. Se [](../expression/expressionadvanced.md).
+Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas, visas en ny flik till höger där du kan ange den här parametern. Läs [den här sidan](../expression/expressionadvanced.md).
 
 For more complex use cases, if you want to include the parameters of the data source in the main expression, you can define their values using the keyword _params_. En parameter kan vara vilket giltigt uttryck som helst, även från en annan datakälla som även innehåller en annan parameter.
 
