@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: e353d593ab2710f50a88a3715378c86c2e37b4f6
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1354'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ Du kommer åt **[!UICONTROL Filters]** genom att klicka på filterikonen högst 
 
 ![](../assets/journey74.png)
 
-Alla versioner av dina resor visas i listan med versionsnumret. Se [](../building-journeys/journey-versions.md).
+Alla versioner av dina resor visas i listan med versionsnumret. Läs [den här sidan](../building-journeys/journey-versions.md).
 
 ![](../assets/journey37.png)
 
@@ -55,7 +55,7 @@ När du använder **[!UICONTROL Search]** fältet visas antalet resultat för va
 
 ## Arbetsytan {#canvas}
 
-Arbetsytan **är** den centrala zonen i resedesignern. Det är i den här zonen som du kan släppa dina aktiviteter och konfigurera dem. Klicka på en aktivitet på arbetsytan för att konfigurera den. Aktivitetskonfigurationsrutan öppnas till höger. Du kan zooma in och ut genom att använda knapparna &quot;+&quot; och &quot;-&quot; högst upp till höger. På arbetsytan kan du lägga till ett steg efter dem, förutom **[!UICONTROL End]** aktiviteter (se [](../building-journeys/end-activity.md)).
+Arbetsytan **är** den centrala zonen i resedesignern. Det är i den här zonen som du kan släppa dina aktiviteter och konfigurera dem. Klicka på en aktivitet på arbetsytan för att konfigurera den. Aktivitetskonfigurationsrutan öppnas till höger. Du kan zooma in och ut genom att använda knapparna &quot;+&quot; och &quot;-&quot; högst upp till höger. På arbetsytan kan du lägga till ett steg efter dem, förutom **[!UICONTROL End]** aktiviteter (se [den här sidan](../building-journeys/end-activity.md)).
 
 ![](../assets/journey39.png)
 
@@ -69,19 +69,19 @@ På arbetsytan representeras dina åtgärder och händelseaktiviteter av en ikon
 
 ## Åtgärder i det övre fältet {#top_actions}
 
-Beroende på resans status kan du utföra olika åtgärder under resan med hjälp av knapparna i det övre högra hörnet: **[!UICONTROL Publish]**, **[!UICONTROL Duplicate]**, **[!UICONTROL Delete]**, **[!UICONTROL Journey properties]**, **[!UICONTROL Test]**. De här knapparna visas när ingen aktivitet är markerad. Vissa knappar visas i sitt sammanhang. Loggknappen för testläget visas när testläget aktiveras (se [](../building-journeys/testing-the-journey.md)). Rapporteringsknappen visas när resan är live, stoppad eller stängd.
+Beroende på resans status kan du utföra olika åtgärder under resan med hjälp av knapparna i det övre högra hörnet: **[!UICONTROL Publish]**, **[!UICONTROL Duplicate]**, **[!UICONTROL Delete]**, **[!UICONTROL Journey properties]**, **[!UICONTROL Test]**. De här knapparna visas när ingen aktivitet är markerad. Vissa knappar visas i sitt sammanhang. Loggknappen för testläge visas när testläget aktiveras (se [den här sidan](../building-journeys/testing-the-journey.md)). Rapporteringsknappen visas när resan är live, stoppad eller stängd.
 
 ![](../assets/journey41.png)
 
 ## Användning av banor på arbetsytan {#paths}
 
-Flera aktiviteter (**[!UICONTROL Condition]**, **[!UICONTROL Action]** aktiviteter) gör att du kan definiera en reservåtgärd om ett fel eller en timeout inträffar. Markera kryssrutan i aktivitetskonfigurationsrutan: **[!UICONTROL Add an alternative path in case of a timeout or an error]**. En annan sökväg läggs till efter aktiviteten. Tidsgränsen definieras i resans egenskaper (se [](../building-journeys/changing-properties.md) av en administratörsanvändare). Om det t.ex. tar för lång tid att skicka ett e-postmeddelande eller om det är fel, kan du bestämma dig för att skicka ett SMS.
+Flera aktiviteter (**[!UICONTROL Condition]**, **[!UICONTROL Action]** aktiviteter) gör att du kan definiera en reservåtgärd om ett fel eller en timeout inträffar. Markera kryssrutan i aktivitetskonfigurationsrutan: **[!UICONTROL Add an alternative path in case of a timeout or an error]**. En annan sökväg läggs till efter aktiviteten. Tidsgränsen anges i resans egenskaper (se [den här sidan](../building-journeys/changing-properties.md) av en adminanvändare). Om det t.ex. tar för lång tid att skicka ett e-postmeddelande eller om det är fel, kan du bestämma dig för att skicka ett SMS.
 
 ![](../assets/journey42.png)
 
 Med olika aktiviteter (händelse, åtgärd, vänta) kan du lägga till flera sökvägar efter dem. Placera markören på aktiviteten och klicka på plustecknet (+). Endast händelse- och vänteaktiviteter kan anges parallellt. Om flera händelser anges parallellt är den valda sökvägen den första händelsen som inträffar.
 
-När du lyssnar på en händelse rekommenderar vi att du inte väntar på händelsen i oändlighet. Det är inte obligatoriskt, bara en god praxis. Om du bara vill lyssna på en eller flera händelser under en viss tid, placerar du en eller flera händelser och en vänteaktivitet parallellt. Se [](../building-journeys/event-activities.md#section_vxv_h25_pgb).
+När du lyssnar på en händelse rekommenderar vi att du inte väntar på händelsen i oändlighet. Det är inte obligatoriskt, bara en god praxis. Om du bara vill lyssna på en eller flera händelser under en viss tid, placerar du en eller flera händelser och en vänteaktivitet parallellt. Se [det här avsnittet](../building-journeys/event-activities.md#section_vxv_h25_pgb).
 
 Om du vill ta bort banan placerar du markören på den och klickar på **[!UICONTROL Delete arrow]** ikonen.
 
