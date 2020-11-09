@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: e353d593ab2710f50a88a3715378c86c2e37b4f6
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 4%
+source-wordcount: '899'
+ht-degree: 5%
 
 ---
 
@@ -23,9 +23,9 @@ Om du har Adobe Campaign Standard finns följande färdiga åtgärdsaktiviteter:
 
 >[!NOTE]
 >
->Därför måste du konfigurera den inbyggda åtgärden. Se [](../action/working-with-adobe-campaign.md).
+>Därför måste du konfigurera den inbyggda åtgärden. Se [den här sidan](../action/working-with-adobe-campaign.md).
 
-För var och en av dessa kanaler väljer du en Adobe Campaign Standard Transactional Messaging- **mall**. Det [!DNL Journey Orchestration] är inte en lösning för att skicka meddelanden. För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i Adobe Campaign Standard. Läs den här [sidan](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html) om du vill veta hur du använder den här funktionen.
+För var och en av dessa kanaler väljer du en Adobe Campaign Standard Transactional Messaging- **mall**. Det [!DNL Journey Orchestration] är inte en lösning för att skicka meddelanden. För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i Adobe Campaign Standard. Läs mer på [den här sidan](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html) om du vill veta hur du använder den här funktionen.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Du kan använda en händelsemall (kallas även realtid) eller en transaktionsmal
 >
 >När vi skickar transaktionsmeddelanden i realtid (rtEvent) eller när vi dirigerar meddelanden med ett tredjepartssystem tack vare en anpassad åtgärd krävs en särskild konfiguration för hantering av trötthet, blockeringslista eller prenumerationer. Om till exempel attributet &quot;unsubscribe&quot; lagras i Adobe Experience Platform eller i ett tredjepartssystem måste ett villkor läggas till innan meddelandet skickas för att det här villkoret ska kunna kontrolleras.
 
-När du väljer en mall visas alla fält som förväntas i meddelandenyttolasten i aktivitetskonfigurationsrutan under **[!UICONTROL Address]** och **[!UICONTROL Personalization Data]**. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Du kan också använda den avancerade uttrycksredigeraren för att skicka ett värde manuellt, utföra databearbetning på hämtad information (t.ex. konvertera en sträng till versaler) eller använda funktioner som &quot;if, then, else&quot;. Se [](../expression/expressionadvanced.md).
+När du väljer en mall visas alla fält som förväntas i meddelandenyttolasten i aktivitetskonfigurationsrutan under **[!UICONTROL Address]** och **[!UICONTROL Personalization Data]**. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Du kan också använda den avancerade uttrycksredigeraren för att skicka ett värde manuellt, utföra databearbetning på hämtad information (t.ex. konvertera en sträng till versaler) eller använda funktioner som &quot;if, then, else&quot;. Läs [den här sidan](../expression/expressionadvanced.md).
 
 ![](../assets/journey60.png)
 
@@ -51,11 +51,11 @@ För **[!UICONTROL Email]** och **[!UICONTROL SMS]**&#x200B;är parametrarna ide
 >
 >Om du använder en transaktionsmall för profiler för e-post hanteras avprenumerationsfunktionen som Campaign Standard. Du lägger bara till ett **[!UICONTROL Unsubscription link]** innehållsblock i mallen ([läs mer](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html)). Om du använder en händelsebaserad mall (rtEvent) måste du i meddelandet lägga till en länk som skickar personens e-post i URL-parametern och pekar på en startsida som inte är en prenumeration. Du måste skapa den här landningssidan och se till att personens beslut att avbryta prenumerationen skickas till Adobe.
 
-Först måste du välja en transaktionsmall. Se [](../building-journeys/about-action-activities.md).
+Först måste du välja en transaktionsmall. Se [den här sidan](../building-journeys/about-action-activities.md).
 
 Det finns två kategorier: **[!UICONTROL Address]** och **[!UICONTROL Personalization Data]**.
 
-Du kan enkelt definiera var du vill hämta **[!UICONTROL Address]** eller **[!UICONTROL Personalization Data]** visa dokumentet med hjälp av gränssnittet. Du kan bläddra bland händelser och den tillgängliga datakällans fält. Du kan också använda den avancerade uttrycksredigeraren för mer avancerade användningsområden, som att använda en datakälla som kräver att parametrar skickas eller att manipulationer utförs. Se [](../expression/expressionadvanced.md).
+Du kan enkelt definiera var du vill hämta **[!UICONTROL Address]** eller **[!UICONTROL Personalization Data]** visa dokumentet med hjälp av gränssnittet. Du kan bläddra bland händelser och den tillgängliga datakällans fält. Du kan också använda den avancerade uttrycksredigeraren för mer avancerade användningsområden, som att använda en datakälla som kräver att parametrar skickas eller att manipulationer utförs. Läs [den här sidan](../expression/expressionadvanced.md).
 
 **[!UICONTROL Address]**
 
@@ -81,7 +81,7 @@ Detta är de fält som förväntas av Adobe Campaign Standard-meddelandet. Dessa
 
 Innan du använder push-aktiviteten måste din mobilapp konfigureras tillsammans med Campaign Standard för att skicka push-meddelanden. Använd den här [artikeln](https://helpx.adobe.com/se/campaign/kb/integrate-mobile-sdk.html) för att utföra de implementeringssteg som krävs för mobilen.
 
-Först måste du välja en mobilapp i listrutan och ett transaktionsmeddelande. Se [](../building-journeys/about-action-activities.md).
+Först måste du välja en mobilapp i listrutan och ett transaktionsmeddelande. Läs [den här sidan](../building-journeys/about-action-activities.md).
 
 ![](../assets/journey62bis.png)
 
