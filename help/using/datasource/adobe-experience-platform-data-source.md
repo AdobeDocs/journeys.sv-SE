@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: e353d593ab2710f50a88a3715378c86c2e37b4f6
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 10%
+source-wordcount: '356'
+ht-degree: 11%
 
 ---
 
@@ -25,9 +25,9 @@ Adobe Experience Platform datakälla definierar anslutningen till kundprofiltjä
 >
 >Du kan hämta de 1 000 senaste upplevelsehändelserna som skapades för mindre än ett år sedan.
 
-För att tillåta anslutningen till kundprofiltjänsten i realtid måste vi använda en nyckel för att identifiera en person och ett namnutrymme som kontextualiserar nyckeln. Därför kan du bara använda den här datakällan om dina resor börjar med en händelse som innehåller en nyckel och ett namnutrymme. Se [](../building-journeys/journey.md).
+För att tillåta anslutningen till kundprofiltjänsten i realtid måste vi använda en nyckel för att identifiera en person och ett namnutrymme som kontextualiserar nyckeln. Därför kan du bara använda den här datakällan om dina resor börjar med en händelse som innehåller en nyckel och ett namnutrymme. Läs [den här sidan](../building-journeys/journey.md).
 
-Du kan redigera den förkonfigurerade fältgruppen med namnet &quot;ProfileFieldGroup&quot;, lägga till nya och ta bort de som inte används i utkast- eller direktresor. Se [](../datasource/field-groups.md).
+Du kan redigera den förkonfigurerade fältgruppen med namnet &quot;ProfileFieldGroup&quot;, lägga till nya och ta bort de som inte används i utkast- eller direktresor. Läs [den här sidan](../datasource/field-groups.md).
 
 Här är de viktigaste stegen för att lägga till fältgrupper i den inbyggda datakällan.
 
@@ -37,7 +37,7 @@ Här är de viktigaste stegen för att lägga till fältgrupper i den inbyggda d
 
    ![](../assets/journey23.png)
 
-1. Klicka **[!UICONTROL Add a New Field Group]** för att definiera en ny serie fält som ska hämtas. Se [](../datasource/field-groups.md).
+1. Klicka **[!UICONTROL Add a New Field Group]** för att definiera en ny serie fält som ska hämtas. Läs [den här sidan](../datasource/field-groups.md).
 
    ![](../assets/journey24.png)
 
