@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: ac2ca77e2ba7c56217199dbd487f57cfe207f7d7
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 60%
+source-wordcount: '167'
+ht-degree: 73%
 
 ---
 
@@ -31,63 +31,63 @@ Här är en lista över funktioner som stöds.
 
 | Kategori |  -funktion |
 |-------------|-----------------------|
-| Adobe Experience Platform | [](../functions/functioninsegment.md) |
-| Aggregera | [](../functions/functionavg.md) |
-| Aggregera | [](../functions/functioncount.md) |
-| Aggregera | [](../functions/functioncountonlynull.md) |
-| Aggregera | [](../functions/functioncountwithnull.md) |
-| Aggregera | [](../functions/functiondistinctcount.md) |
-| Aggregera | [](../functions/functiondistinctcountwithnull.md) |
-| Aggregera | [](../functions/functionmax.md) |
-| Aggregera | [](../functions/functionmin.md) |
-| Aggregera | [](../functions/functionsum.md) |
-| Konvertering | [](../functions/functiontobool.md) |
-| Konvertering | [](../functions/functiontodatetime.md) |
-| Konvertering | [](../functions/functiontodatetimeonly.md) |
-| Konvertering | [](../functions/functiontodecimal.md) |
-| Konvertering | [](../functions/functiontoduration.md) |
-| Konvertering | [](../functions/functiontointeger.md) |
-| Konvertering | [](../functions/functiontostring.md) |
-| Datum | [](../functions/functioncurrenttimeinmillis.md) |
-| Datum | [](../functions/functioninlastdays.md) |
-| Datum | [](../functions/functioninlasthours.md) |
-| Datum | [](../functions/functioninlastmonths.md) |
-| Datum | [](../functions/functioninlastyears.md) |
-| Datum | [](../functions/functioninnextdays.md) |
-| Datum | [](../functions/functioninnexthours.md) |
-| Datum | [](../functions/functioninnextmonths.md) |
-| Datum | [](../functions/functioninnextyears.md) |
-| Datum | [](../functions/functionnow.md) |
-| Datum | [](../functions/functionnowwithdelta.md) |
-| Datum | [](../functions/functionsethours.md) |
-| Datum | [](../functions/functionsetdays.md) |
-| Lista | [](../functions/functiondistinct.md) |
-| Lista | [](../functions/functiondistinctcount.md) |
-| Lista | [](../functions/functionin.md) |
-| Lista | [](../functions/functionlistsize.md) |
-| Lista | [](../functions/functionserializelist.md) |
-| Lista | [](../functions/functionsort.md) |
-| Matematik | [](../functions/functionrandom.md) |
-| Matematik | [](../functions/functionround.md) |
-| Sträng | [](../functions/functionconcat.md) |
-| Sträng | [](../functions/functioncontain.md) |
-| Sträng | [](../functions/functioncontainwithignorecase.md) |
-| Sträng | [](../functions/functionendwith.md) |
-| Sträng | [](../functions/functionendwithignorecase.md) |
-| Sträng | [](../functions/functionequalignorecase.md) |
-| Sträng | [](../functions/functionindexof.md) |
-| Sträng | [](../functions/functionisempty.md) |
-| Sträng | [](../functions/functionisnotempty.md) |
-| Sträng | [](../functions/functionlastindexof.md) |
-| Sträng | [](../functions/functionlength.md) |
-| Sträng | [](../functions/functionlower.md) |
-| Sträng | [](../functions/functionmatchregexp.md) |
-| Sträng | [](../functions/functionnotequalignorecase.md) |
-| Sträng | [](../functions/functionreplace.md) |
-| Sträng | [](../functions/functionreplaceall.md) |
-| Sträng | [](../functions/functionstartwith.md) |
-| Sträng | [](../functions/functionstartwithignorecase.md) |
-| Sträng | [](../functions/functionsubstr.md) |
-| Sträng | [](../functions/functiontrim.md) |
-| Sträng | [](../functions/functionupper.md) |
-| Sträng | [](../functions/functionuuid.md) |
+| Adobe Experience Platform | [inSegment](../functions/functioninsegment.md) |
+| Aggregera | [medel](../functions/functionavg.md) |
+| Aggregera | [antal](../functions/functioncount.md) |
+| Aggregera | [countOnlyNull](../functions/functioncountonlynull.md) |
+| Aggregera | [countWithNull](../functions/functioncountwithnull.md) |
+| Aggregera | [distinctCount](../functions/functiondistinctcount.md) |
+| Aggregera | [distinctCountWithNull](../functions/functiondistinctcountwithnull.md) |
+| Aggregera | [max](../functions/functionmax.md) |
+| Aggregera | [min](../functions/functionmin.md) |
+| Aggregera | [summa](../functions/functionsum.md) |
+| Konvertering | [toBool](../functions/functiontobool.md) |
+| Konvertering | [toDateTime](../functions/functiontodatetime.md) |
+| Konvertering | [toDateTimeOnly](../functions/functiontodatetimeonly.md) |
+| Konvertering | [toDecimal](../functions/functiontodecimal.md) |
+| Konvertering | [toDuration](../functions/functiontoduration.md) |
+| Konvertering | [toInteger](../functions/functiontointeger.md) |
+| Konvertering | [toString](../functions/functiontostring.md) |
+| Datum | [currentTimeInMillis](../functions/functioncurrenttimeinmillis.md) |
+| Datum | [inLastDays](../functions/functioninlastdays.md) |
+| Datum | [inLastHours](../functions/functioninlasthours.md) |
+| Datum | [inLastMonths](../functions/functioninlastmonths.md) |
+| Datum | [inLastYears](../functions/functioninlastyears.md) |
+| Datum | [inNextDays](../functions/functioninnextdays.md) |
+| Datum | [inNextHours](../functions/functioninnexthours.md) |
+| Datum | [inNextMonths](../functions/functioninnextmonths.md) |
+| Datum | [inNextYears](../functions/functioninnextyears.md) |
+| Datum | [nu](../functions/functionnow.md) |
+| Datum | [nowWithDelta](../functions/functionnowwithdelta.md) |
+| Datum | [setHours](../functions/functionsethours.md) |
+| Datum | [setDays](../functions/functionsetdays.md) |
+| Lista | [distinkt](../functions/functiondistinct.md) |
+| Lista | [distinctCount](../functions/functiondistinctcount.md) |
+| Lista | [i](../functions/functionin.md) |
+| Lista | [listSize](../functions/functionlistsize.md) |
+| Lista | [serializeList](../functions/functionserializelist.md) |
+| Lista | [sortera](../functions/functionsort.md) |
+| Matematik | [slumpmässig](../functions/functionrandom.md) |
+| Matematik | [rund](../functions/functionround.md) |
+| Sträng | [concat](../functions/functionconcat.md) |
+| Sträng | [innehåller](../functions/functioncontain.md) |
+| Sträng | [containWithIgnoreCase](../functions/functioncontainwithignorecase.md) |
+| Sträng | [endWith](../functions/functionendwith.md) |
+| Sträng | [endWithIgnoreCase](../functions/functionendwithignorecase.md) |
+| Sträng | [equalWithIgnoreCase](../functions/functionequalignorecase.md) |
+| Sträng | [indexOf](../functions/functionindexof.md) |
+| Sträng | [isEmpty](../functions/functionisempty.md) |
+| Sträng | [isNotEmpty](../functions/functionisnotempty.md) |
+| Sträng | [lastIndexOf](../functions/functionlastindexof.md) |
+| Sträng | [length](../functions/functionlength.md) |
+| Sträng | [nedre](../functions/functionlower.md) |
+| Sträng | [matchRegExp](../functions/functionmatchregexp.md) |
+| Sträng | [notEqualWithIgnoreCase](../functions/functionnotequalignorecase.md) |
+| Sträng | [ersätt](../functions/functionreplace.md) |
+| Sträng | [replaceAll](../functions/functionreplaceall.md) |
+| Sträng | [startWith](../functions/functionstartwith.md) |
+| Sträng | [startWithIgnoreCase](../functions/functionstartwithignorecase.md) |
+| Sträng | [substr](../functions/functionsubstr.md) |
+| Sträng | [trimma](../functions/functiontrim.md) |
+| Sträng | [upper](../functions/functionupper.md) |
+| Sträng | [uuid](../functions/functionuuid.md) |
