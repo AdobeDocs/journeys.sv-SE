@@ -8,18 +8,18 @@ audience: rns
 content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-translation-type: ht
-source-git-commit: a65a5db5b35291cbc2635f9ae67fd8c8c5284575
-workflow-type: ht
-source-wordcount: '1034'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: e353d593ab2710f50a88a3715378c86c2e37b4f6
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 98%
 
 ---
 
 
 # Felsökning{#concept_nlv_bcv_2fb}
 
-I det här avsnittet lär du dig att felsöka resor innan de testas eller publiceras. Alla kontroller som anges nedan kan utföras medan resan är i testläge eller när den är live. Rekommendationen är att göra alla kontroller nedan i testläget och sedan gå vidare till publiceringen. Se [](../building-journeys/testing-the-journey.md).
+I det här avsnittet lär du dig att felsöka resor innan de testas eller publiceras. Alla kontroller som anges nedan kan utföras medan resan är i testläge eller när den är live. Rekommendationen är att göra alla kontroller nedan i testläget och sedan gå vidare till publiceringen. Läs [den här sidan](../building-journeys/testing-the-journey.md).
 
 ## Söker efter fel före tester{#section_h3q_kqk_fhb}
 
@@ -43,7 +43,7 @@ Två olika färger kan visas på tecknet bredvid växlingsknappen **[!UICONTROL 
 
 Fel och varningar som är globala för resan visas först i listan. Fel och varningar som rör specifika aktiviteter listas därefter per aktivitetsordning eller när de dyker upp i resan från vänster till höger. Med knappen **[!UICONTROL Copy details]** kopieras teknisk information om resan som supportteamet kan använda för att felsöka.
 
-När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [](../building-journeys/using-the-journey-designer.md#paths).
+När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
 
 ## Kontrollera att händelser skickas korrekt{#section_rqz_11t_dgb}
 
@@ -51,7 +51,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skickas inte direkt från källan till [!DNL Journey Orchestration]. [!DNL Journey Orchestration] förlitar sig faktiskt på API:er för strömningsinmatning i Adobe Experience Platform. Om det gäller händelserelaterade problem kan du därför läsa den här [sidan](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/troubleshooting.html) om felsökning av API:er för strömningsinmatning.
+Händelser skickas inte direkt från källan till [!DNL Journey Orchestration]. [!DNL Journey Orchestration] förlitar sig faktiskt på API:er för strömningsinmatning i Adobe Experience Platform. As a result, in case of event related issues, you can refer to [this page](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/troubleshooting.html) for Streaming ingestion APIs troubleshooting.
 
 ## Kontrollera om någon kommer in i resan{#section_x4v_zzs_dgb}
 
@@ -65,7 +65,7 @@ Här följer några saker som administratören bör kontrollera:
 * Sparade du händelsen innan du kopierade nyttolasten från dess förhandsvisning?
 * Innehåller händelsens nyttolast ett händelse-ID?
 * Angav du rätt URL?
-* Har du följt nyttolastens struktur gällande API:er för strömningsinmatning med hjälp av förhandsgranskningen av nyttolastens struktur i händelsens konfigurationsfönster? Se [](../event/previewing-the-payload.md).
+* Har du följt nyttolastens struktur gällande API:er för strömningsinmatning med hjälp av förhandsgranskningen av nyttolastens struktur i händelsens konfigurationsfönster? Läs [den här sidan](../event/previewing-the-payload.md).
 * Har du använt rätt nyckel/värde-par i rubriken på händelsen?
 
    ```
