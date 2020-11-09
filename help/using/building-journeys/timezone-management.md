@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: e353d593ab2710f50a88a3715378c86c2e37b4f6
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '261'
 ht-degree: 2%
 
 ---
@@ -26,10 +26,10 @@ Du öppnar Egenskaper genom att klicka på pennikonen i skärmens övre högra h
 
 Den här tidszonen kommer att användas för varje aktivitet i resan som innehåller ett tidselement som:
 
-* [](../building-journeys/condition-activity.md#time_condition)
-* [](../building-journeys/condition-activity.md#date_condition)
-* [](../building-journeys/wait-activity.md#custom)
-* [](../building-journeys/wait-activity.md#fixed_date)
+* [Tidsvillkor](../building-journeys/condition-activity.md#time_condition)
+* [Datumvillkor](../building-journeys/condition-activity.md#date_condition)
+* [Anpassad väntetid](../building-journeys/wait-activity.md#custom)
+* [Vänta fast](../building-journeys/wait-activity.md#fixed_date)
 
 Du kan välja en tidszon eller välja att använda den tidszon som är definierad i användarprofilen.
 
