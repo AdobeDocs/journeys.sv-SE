@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: bcb8a71a27e2b9e37af7d0260cec04ed0fda24ee
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '109'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 # nowWithDelta {#nowWithDelta}
 
-Returnerar aktuell datetime inklusive en förskjutning. Om ett tidszon-ID anges används tidszonsförskjutningen. Mer information om datatyper finns i [](../expression/data-types.md).
+Returnerar aktuell datetime inklusive en förskjutning. Om ett tidszon-ID anges används tidszonsförskjutningen. For more information on data types, refer to [this page](../expression/data-types.md).
 
 ## Kategori
 
@@ -35,7 +35,7 @@ Datum
 |--- |--- |
 | delta | positivt eller negativt heltalsvärde |
 | datumdel | år, månader, dagar, timmar, minuter eller sekunder som en sträng |
-| tidszon-id | strängbeteckning för tidszonsvärdet. Mer information finns [](../expression/data-types.md). Tidszons-ID måste vara en strängkonstant. Det kan inte vara en fältreferens eller ett uttryck. |
+| tidszon-id | strängbeteckning för tidszonsvärdet. Mer information finns i [Datatyper](../expression/data-types.md). Tidszons-ID måste vara en strängkonstant. Det kan inte vara en fältreferens eller ett uttryck. |
 
 ## Underskrifter och returtyp
 
