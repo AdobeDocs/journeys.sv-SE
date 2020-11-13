@@ -5,9 +5,9 @@ user-guide-title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 translation-type: tm+mt
-source-git-commit: 38b555e19b9c3a0757962cbedbf3587e64f69add
+source-git-commit: 59b726388ee1c2c4b51ada9e7e5f7ca4eb6554b3
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '386'
 ht-degree: 97%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 97%
    + [Dokumentationsuppdateringar](using/release-notes/documentation-updates.md)
 + Börja med [!DNL Journey Orchestration] {#starting-with-journeys}
    + [Om [!DNL Journey Orchestration]](using/about/about-journey-orchestration.md)
+   + [Begränsningar](using/about/limitations.md)
    + [Komma igång](using/about/get-started.md)
    + [Användargränssnitt](using/about/user-interface.md)
    + [Åtkomsthantering](using/about/access-management.md)
@@ -44,7 +45,6 @@ ht-degree: 97%
    + [Arbeta med Adobe Campaign](using/action/working-with-adobe-campaign.md)
    + Använda ett tredjepartssystem {#action-third-party}
       + [Om anpassad åtgärdskonfiguration](using/action/about-custom-action-configuration.md)
-      + [Begränsningar för anpassade åtgärder](using/action/custom-action-limitations.md)
       + [URL-konfiguration](using/action/url-configuration.md)
       + [Definiera meddelandeparametrar](using/action/defining-the-message-parameters.md)
 + Använda plattformssegment {#configuring-segment}
