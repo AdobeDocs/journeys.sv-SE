@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: 59b726388ee1c2c4b51ada9e7e5f7ca4eb6554b3
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '299'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ Campaign Standardens transaktionsmeddelande och tillhörande händelse måste pu
 
 >[!NOTE]
 >
->För att undvika att överbelasta Adobe Campaign Standard Transactional Messaging rekommenderar vi att du ställer in en **begränsningsregel** för integrering av Campaign Standarder.
+>Adobe Campaign Standard Transactional Messaging har en skala på högst 50 000 meddelanden per timme över alla kanaler för en viss instans. För att minska risken för överbelastning rekommenderar vi att du ställer in en **begränsningsregel** för integrering av Campaign Standarder.
 >
 >Läs mer om SLA för transaktionsmeddelanden i [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html).
 
