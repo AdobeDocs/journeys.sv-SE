@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: e353d593ab2710f50a88a3715378c86c2e37b4f6
+source-git-commit: 9999546d08d0279f013ead3a1e71bb7f9305bebc
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 98%
+source-wordcount: '1063'
+ht-degree: 93%
 
 ---
 
@@ -139,3 +139,11 @@ _På resans arbetsyta:_
 * Markera alla aktiviteter med tangentkombinationen **Ctrl/Kommando+A**.
 * Tryck på **Delete** eller på **Backsteg** för att radera en eller flera aktiviteter som är markerade. Därefter kan du trycka på **Enter** för att bekräfta i popup-fönstret.
 * Dubbelklicka på en aktivitet från den vänstra paletten för att lägga till den på den första tillgängliga positionen (uppifrån och ned).
+
+_Under en resa:_
+
+* Tryck på **T** för att aktivera/inaktivera testläget.
+* Vid en händelsebaserad resa i testläge trycker du på **E** för att aktivera en händelse.
+* När alternativet **Enstaka profil i taget** väljs i testläge i en segmentbaserad resa trycker du på **P** för att aktivera en händelse.
+* I testläge trycker du på **L** för att visa loggarna.
+
