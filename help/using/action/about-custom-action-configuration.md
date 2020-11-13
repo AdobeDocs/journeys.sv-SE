@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: e353d593ab2710f50a88a3715378c86c2e37b4f6
+source-git-commit: 9fc7f0664afa19e3debe2ad4f37d6b794da0ed1f
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 15%
@@ -20,7 +20,7 @@ ht-degree: 15%
 # Om anpassad åtgärdskonfiguration {#concept_sxy_bzs_dgb}
 
 Om du använder ett system från en annan leverantör för att skicka meddelanden eller om du vill [!DNL Journey Orchestration] skicka API-anrop till ett system från en annan leverantör, är det här du konfigurerar anslutningen till [!DNL Journey Orchestration]. Den anpassade åtgärden som definieras av tekniska användare är sedan tillgänglig i den vänstra paletten på resan, i **[!UICONTROL Action]** kategorin (se [den här sidan](../building-journeys/about-action-activities.md)). Här är några exempel på system som du kan ansluta till med anpassade åtgärder: Epsilon, Facebook, Adobe.io, Firebase osv.
-Begränsningar visas på [den här sidan](../action/custom-action-limitations.md).
+Begränsningar visas på [den här sidan](../about/limitations.md).
 
 Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
