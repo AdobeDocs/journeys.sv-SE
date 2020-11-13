@@ -9,15 +9,15 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: 2af6e632461a8c01451f96c121469c9a32ae7f32
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '494'
 ht-degree: 2%
 
 ---
 
 
-# Använda den avancerade uttrycksredigeraren
+# Exempel på avancerade uttryck
 
 Den avancerade uttrycksredigeraren kan användas för att skapa villkor som gör att du kan filtrera användare på dina resor. Dessa villkor gör att ni kan inrikta er på användare i tid, på datum, plats, varaktighet eller åtgärder som att köpa eller avstå från kundvagnar så att de kan återställas under resan.
 
@@ -54,24 +54,23 @@ Sedan markeras alla tilläggshändelser som inte omvandlades till completePurcha
 
 Den angivna tidsstämpeln fungerar som datum-/tidsvärde, den andra är antalet dagar.
 
-    &quot;
-    In( &quot;addToCart&quot;, #{ExperiencePlatformDataSource
-    .ExperienceEventFieldGroup
-    .experienceevent
-    .all(
-    inLastDays(currentDataPackField.timestamp, 7 ))
-    .productData
-    .productInteraction})
-    
-    AndNot(In( &quot;completePurchase&quot;, #{Experience} PlatformDataSource
-    .ExperienceEventFieldGroup
-    
-    
-    
-    
-    
-    
-    .experienceevent.all(inLastDays(currentDataPackField.timestamp, 7 )).productData¥.productInteraction})¥&quot;
+```
+        In( “addToCart”, #{ExperiencePlatformDataSource
+                        .ExperienceEventFieldGroup
+                        .experienceevent
+                        .all(
+                        inLastDays(currentDataPackField.timestamp, 7 ))
+                        .productData
+                        .productInteraction})
+        And
+        Not(In( “completePurchase”, #{ExperiencePlatformDataSource
+                        .ExperienceEventFieldGroup
+                        .experienceevent
+                        .all(
+                        inLastDays(currentDataPackField.timestamp, 7 ))
+                        .productData
+                        .productInteraction})
+```
 
 Det här uttrycket returnerar ett booleskt värde.
 
@@ -107,44 +106,42 @@ Därifrån kan ni lägga till ytterligare en väg på resan när produkten inte 
 
 Detta villkor hämtar endast geofence-händelser som utlöses i&quot;Arlington&quot;:
 
-    &quot;
-    @{GeofenceEntry
-    .placeContext
-    .POIinteraction
-    .POIDetail
-    .name} == &quot;Arlington&quot;
-    &quot;
+```
+        @{GeofenceEntry
+                    .placeContext
+                    .POIinteraction
+                    .POIDetail
+                    .name} == "Arlington"
+```
 
 Förklaring: Det här är en strikt strängjämförelse (skiftlägeskänslig), som motsvarar en fråga i enkelt läge som använder `equal to` med `Is sensitive` checked.
 
 Samma fråga med `Is sensitive` omarkerad genererar följande uttryck i avancerat läge:
 
-    &quot;
-    equalIgnoreCase(@{GeofenceEntry
-    .placeContext
-    .POIinteraction
-    .POIDetail
-    .name}, &quot;Arlington&quot;)
-    
-    &quot;
+```
+        equalIgnoreCase(@{GeofenceEntry
+                        .placeContext
+                        .POIinteraction
+                        .POIDetail
+                        .name}, "Arlington")
+```
 
 **I funktionsmakron**
 
 Följande uttryck gör att du kan definiera CRM-ID:t i ett åtgärdspersonaliseringsfält:
 
-    &quot;
+```
     substr(@{MobileAppLaunch
-    ._myorganization
-    .Identification
-    .crmid}, 1,
-    lastIndexOf(@{MobileAppLaunch
-    ._mittorganisation
-    .identifiering
-    .crmid}
-    }
-    ))
-    
-    &quot;
+            ._myorganization
+            .identification
+            .crmid}, 1, 
+            lastIndexOf(@{MobileAppLaunch
+                        ._myorganization
+                        .identification
+                        .crmid}
+                         }
+                         ))
+```
 
 Förklaring: I det här exemplet används `substr` och `lastIndexOf` funktioner för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för en mobilapp.
 
