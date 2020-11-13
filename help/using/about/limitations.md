@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 59b726388ee1c2c4b51ada9e7e5f7ca4eb6554b3
+source-git-commit: f45069225b284fe47e2acaccb4aa5d34fe171f35
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 2%
@@ -47,6 +47,6 @@ Här är begränsningar för användning av Journey Orchestration.
 * Direktuppspelningsdata som används för att initiera en kundresa måste konfigureras inom Journey Orchestration först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform.
  
 
-## Begränsningar för datakällor:
+## Begränsningar för datakällor
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
