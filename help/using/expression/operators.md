@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: journeys
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 2af6e632461a8c01451f96c121469c9a32ae7f32
+source-git-commit: eec6203f63fa6d7ea706595ea866d2b330d284a8
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 4%
@@ -46,11 +46,11 @@ Här är en lista över operatorer som stöds:
 <tr><th>Operatör</th><th>Literalt uttryck</th><th>Exempel</th></tr>
 </thead>
 <tbody>
-<tr>&gt;<td>och</td><td><p><pre>&lt;expression1&gt; och &lt;expression2&gt;</pre></p>Både &lt;expression1&gt; och &lt;expression2&gt; måste vara booleska. Resultatet är booleskt.</td><td><pre>3.14 &gt; 2 och 3.15 &lt; 1</pre></td></tr>
+<tr><td>och</td><td><p><pre>&lt;expression1&gt; och &lt;expression2&gt;</pre></p>Både &lt;expression1&gt; och &lt;expression2&gt; måste vara booleska. Resultatet är booleskt.</td><td><pre>3.14 &gt; 2 och 3.15 &lt; 1</pre></td></tr>
 <tr><td>eller</td><td><p><pre>&lt;expression1&gt; eller &lt;expression2&gt;</pre></p><p>Både &lt;expression1&gt; och &lt;expression2&gt; måste vara booleska.</p><p> Resultatet är booleskt.</p></td><td><p><pre>3.14 &gt; 2 eller 3.15 &lt; 1</pre></p></td></tr>
 <tr><td>not</td><td><p><pre>inte &lt;expression&gt;</pre></p><p>&lt;expression&gt; måste vara booleskt.</p><p> Resultatet är booleskt.</p></td><td><pre>inte 3,15 &lt; 1</pre></td></tr>
 </tbody>
-  </table>
+</table>
 
 ## Jämförelse
 
@@ -88,11 +88,13 @@ Här är en lista över operatorer som stöds:
 
 <table>
 <thead>
-<tr><th>Operatör</th><th>Literalt uttryck </th><th>Exempel</th></tr>
+<tr><th>Operatör</th><th>Literalt uttryck</th><th>Exempel</th></tr>
 </thead>
 <tbody><tr><td>är numerisk</td><td><p><pre>&lt;expression&gt; är numeriskt</pre></p><p>Uttryckstypen är heltal eller decimal.</p></td><td><pre>@ är numeriskt</pre></td></tr>
 <tr><td>är heltal</td><td><p><pre>&lt;expression&gt; är heltal</pre></p><p>Uttryckstypen är ett heltal.</p></td><td><pre>@ är heltal</pre></td></tr>
 <tr><td>är decimal</td><td><p><pre>&lt;expression&gt; är decimal</pre></p><p>Uttryckstypen är decimal.</p></td><td><pre>@ är decimalt</pre></td></tr>
+</tbody>
+</table>
 
 ## Sträng
 
