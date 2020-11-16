@@ -11,11 +11,11 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/journeys.sv-SE
 index: true
 solution: Journey Orchestration
 type: Documentation
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 96bf81cb8ea493befff332cb00e45f5c00c5245e
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '31'
+ht-degree: 100%
 
 ---
 
