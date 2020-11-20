@@ -1,13 +1,11 @@
 ---
+product: adobe campaign
+solution: Journey Orchestration
 title: Importera beskrivning av export-API
 description: Läs mer om import-API:t för export.
-contentOwner: sauviat
 products: journeys
-audience: audiences
-content-type: reference
-topic-tags: journeys
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 2%
@@ -57,7 +55,7 @@ API-åtkomst för Journey Orchestration konfigureras genom stegen nedan. Var och
 >Om du vill hantera certifikat i Adobe I/O måste du ha <b>systemadministratörsbehörighet</b> för organisationen eller ett [utvecklarkonto](https://helpx.adobe.com/enterprise/using/manage-developers.html) i Admin Console.
 
 1. **Kontrollera att du har ett digitalt certifikat** eller skapa ett om det behövs. De offentliga och privata nycklarna som tillhandahålls med certifikatet behövs i följande steg.
-1. **Skapa en ny integrering för[!DNL Journey Orchestration]Service** i Adobe I/O och konfigurera den. Åtkomst till produktprofilen krävs för Journey Orchestration och Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet...).
+1. **Skapa en ny integrering för [!DNL Journey Orchestration] Service** i Adobe I/O och konfigurera den. Åtkomst till produktprofilen krävs för Journey Orchestration och Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet...).
 1. **Skapa en JSON Web Token (JWT)** utifrån de inloggningsuppgifter som tidigare genererats och signera den med din privata nyckel. JWT kodar all identitets- och säkerhetsinformation som Adobe behöver för att verifiera din identitet och ge dig åtkomst till API:t. Det här steget beskrivs i det här [avsnittet](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
 1. **Byt ut din JWT-fil mot en åtkomsttoken** via en POST-förfrågan eller via gränssnittet för Developer Console. Denna Access Token måste användas i varje rubrik för dina API-begäranden.
 
