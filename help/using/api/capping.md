@@ -1,13 +1,11 @@
 ---
+product: adobe campaign
+solution: Journey Orchestration
 title: Beskrivning av API för begränsning
 description: Läs mer om API:t för tak.
-contentOwner: sauviat
 products: journeys
-audience: audiences
-content-type: reference
-topic-tags: journeys
 translation-type: tm+mt
-source-git-commit: b852c08a488a1bec02b8b31a1fccf1a8773b99af
+source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 1%
@@ -47,7 +45,7 @@ För att testa och förbereda integreringen finns en Postman-samling [här](http
 >Om du vill hantera certifikat i Adobe I/O måste du ha <b>systemadministratörsbehörighet</b> för organisationen eller ett [utvecklarkonto](https://helpx.adobe.com/enterprise/using/manage-developers.html) i Admin Console.
 
 1. **Kontrollera att du har ett digitalt certifikat** eller skapa ett om det behövs. De offentliga och privata nycklarna som tillhandahålls med certifikatet behövs i följande steg.
-1. **Skapa en ny integrering för[!DNL Journey Orchestration]Service** i Adobe I/O och konfigurera den. Åtkomst till produktprofilen krävs för [!DNL Journey Orchestration] och Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet...).
+1. **Skapa en ny integrering för [!DNL Journey Orchestration] Service** i Adobe I/O och konfigurera den. Åtkomst till produktprofilen krävs för [!DNL Journey Orchestration] och Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet...).
 1. **Skapa en JSON Web Token (JWT)** utifrån de inloggningsuppgifter som tidigare genererats och signera den med din privata nyckel. JWT kodar all identitets- och säkerhetsinformation som Adobe behöver för att verifiera din identitet och ge dig åtkomst till API:t. Det här steget beskrivs i det här [avsnittet](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
 1. **Byt ut din JWT-fil mot en åtkomsttoken** via en POST-förfrågan eller via gränssnittet för Developer Console. Denna Access Token måste användas i varje rubrik för dina API-begäranden.
 
@@ -169,7 +167,7 @@ I det här avsnittet hittar du de fem huvudsakliga användningsfall som du kan a
 
 För att du ska få hjälp med testning och konfiguration finns en Postman-samling [här](https://raw.githubusercontent.com/AdobeDocs/JourneyAPI/master/postman-collections/Journey-Orchestration_Capping-API_postman-collection.json).
 
-Denna Postman Collection har konfigurerats för att dela den Postman Variable-samling som genereras via __[Adobe I/O Console’s Integrations](https://console.adobe.io/integrations)> Testa > Ladda ned för Postman__, som genererar en Postman Environment-fil med de valda integreringsvärdena.
+Denna Postman Collection har konfigurerats för att dela den Postman Variable-samling som genereras via __[Adobe I/O Console’s Integrations](https://console.adobe.io/integrations) > Testa > Ladda ned för Postman__, som genererar en Postman Environment-fil med de valda integreringsvärdena.
 
 När du har laddat ned och överfört till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{Base_Path}` och `{SANDBOX_NAME}`.
 * `{JO_HOST}` : [!DNL Journey Orchestration] Gateway-URL
