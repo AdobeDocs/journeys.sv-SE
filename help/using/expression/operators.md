@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Operatorer
 description: Lär dig mer om operatorer i avancerade uttryck
 translation-type: tm+mt
-source-git-commit: 20498e89eb9c95dd19a11e42150a0bbf67024f67
+source-git-commit: 062b4648e2eb3a4270f9c09e4478d541209e1247
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 5%
+source-wordcount: '435'
+ht-degree: 6%
 
 ---
 
@@ -38,119 +38,157 @@ Här är en lista över operatorer som stöds:
 
 ### och
 
-**Litteralt uttryck**
-
-```<expression1> and <expression2>```
+```
+<expression1> and <expression2>
+```
 
 Både &lt;expression1> och &lt;expression2> måste vara booleska. Resultatet är booleskt.
 
-**Exempel**
+Exempel:
 
-```3.14 > 2 and 3.15 < 1```
+```
+3.14 > 2 and 3.15 < 1
+```
 
 ### eller
 
-**Litteralt uttryck**
 
-```<expression1> or <expression2>```
+
+```
+<expression1> or <expression2>
+```
 
 Både &lt;expression1> och &lt;expression2> måste vara booleska. Resultatet är booleskt.
 
-**Exempel**
+Exempel:
 
-```3.14 > 2 or 3.15 < 1```
+```
+3.14 > 2 or 3.15 < 1
+```
 
 ### not
 
-**Litteralt uttryck**
 
-```not <expression>```
+
+```
+not <expression>
+```
 
 &lt;expression> måste vara booleskt. Resultatet är booleskt.
 
-**Exempel**
+Exempel:
 
-```not 3.15 < 1```
+```
+not 3.15 < 1
+```
 
 ## Jämförelse {#comparison}
 
 ### är null
 
-**Litteralt uttryck**
 
-```<expression> is null```
+
+```
+<expression> is null
+```
 
 Resultatet är booleskt.
 
 Observera att null betyder att uttrycket inte har något utvärderat värde.
 
-**Exempel**
+Exempel:
 
-```@{BarBeacon.location} is null```
+```
+@{BarBeacon.location} is null
+```
 
 ### är inte null
 
-**Litteralt uttryck**
 
-```<expression> is not null```
+
+```
+<expression> is not null
+```
 
 Resultatet är booleskt.
 
 Observera att null betyder att uttrycket inte har något utvärderat värde.
 
-**Exempel**
+Exempel:
 
-```@ is not null```
+```
+@ is not null
+```
 
 ### har null
 
-**Litteralt uttryck**
 
-```<expression> has null```
+
+```
+<expression> has null
+```
 
 &lt;expression> måste vara en lista. Resultatet är booleskt.
 
 Användbart för att identifiera att en lista innehåller minst ett null-värde.
 
-**Exempel**
+Exempel:
 
-```["foo", "bar", null] has null``` returnerar true.
+```
+["foo", "bar", null] has null --  returns true.
+```
 
-```["foo", "bar", ""] has null``` returnerar false eftersom &quot;&quot; inte betraktas som null.
+```
+["foo", "bar", ""] has null -- returns false because "" is not considered as null.
+```
 
 ### ==
 
-**Litteralt uttryck**
 
-```<expression1> == <expression2>```
+
+```
+<expression1> == <expression2>
+```
 
 Både &lt;expression1> och &lt;expression2> måste ha samma datatyp. Resultatet är booleskt.
 
-**Exempel**
+Exempel:
 
-```3.14 == 42```
+```
+3.14 == 42
+```
 
-```"foo" == "bar"```
+```
+"foo" == "bar"
+```
 
 ### !=
 
-**Litteralt uttryck**
 
-```<expression1> != <expression2>```
+
+```
+<expression1> != <expression2>
+```
 
 Både &lt;expression1> och &lt;expression2> måste ha samma datatyp. Resultatet är booleskt.
 
-**Exempel**
+Exempel:
 
-```3.14 != 42```
+```
+3.14 != 42
+```
 
-```"foo" != "bar"```
+```
+"foo" != "bar"
+```
 
 ### >
 
-**Litteralt uttryck**
 
-```<expression1> > <expression2>```
+
+```
+<expression1> > <expression2>
+```
 
 Datetime kan jämföras med Datetime.
 
@@ -162,15 +200,19 @@ Alla andra kombinationer är förbjudna.
 
 Resultatet är booleskt.
 
-**Exempel**
+Exempel:
 
-```3.14 > 42```
+```
+3.14 > 42
+```
 
 ### >=
 
-**Litteralt uttryck**
 
-```<expression1> >= <expression2>```
+
+```
+<expression1> >= <expression2>
+```
 
 Datetime kan jämföras med Datetime.
 
@@ -182,15 +224,19 @@ Alla andra kombinationer är förbjudna.
 
 Resultatet är booleskt.
 
-**Exempel**
+Exempel:
 
-```42 >= 3.14```
+```
+42 >= 3.14
+```
 
 ### &lt;
 
-**Litteralt uttryck**
 
-```<expression1> < <expression2>```
+
+```
+<expression1> < <expression2>
+```
 
 Datetime kan jämföras med Datetime.
 
@@ -202,15 +248,19 @@ Alla andra kombinationer är förbjudna.
 
 Resultatet är booleskt.
 
-**Exempel**
+Exempel:
 
-```42 < 3.14```
+```
+42 < 3.14
+```
 
 ### &lt;=
 
-**Litteralt uttryck**
 
-```<expression1> <= <expression2>```
+
+```
+<expression1> <= <expression2>
+```
 
 Datetime kan jämföras med Datetime.
 
@@ -222,45 +272,57 @@ Alla andra kombinationer är förbjudna.
 
 Resultatet är booleskt.
 
-**Exempel**
+Exempel:
 
-```42 <= 3.14```
+```
+42 <= 3.14
+```
 
 ## Aritmetisk {#arithmetic}
 
 ### +
 
-**Litteralt uttryck**
 
-```<expression1> + <expression2>```
+
+```
+<expression1> + <expression2>
+```
 
 Båda uttrycken måste vara numeriska (heltal eller decimal).
 
 Resultatet är också numeriskt.
 
-**Exempel**
+Exempel:
 
-```1 + 2``` returnerar 3
+```
+1 + 2 -- returns 3
+```
 
 ### -
 
-**Litteralt uttryck**
 
-```<expression1> - <expression2>```
+
+```
+<expression1> - <expression2>
+```
 
 Båda uttrycken måste vara numeriska (heltal eller decimal).
 
 Resultatet är också numeriskt.
 
-**Exempel**
+Exempel:
 
-```2 - 1``` returnerar 1
+```
+2 - 1 -- returns 1
+```
 
 ### /
 
-**Litteralt uttryck**
 
-```<expression1> / <expression2>```
+
+```
+<expression1> / <expression2>
+```
 
 Båda uttrycken måste vara numeriska (heltal eller decimal).
 
@@ -268,114 +330,156 @@ Resultatet är också numeriskt.
 
 &lt;expression2> får inte vara lika med 0 (returnerar 0).
 
-**Exempel**
+Exempel:
 
-```4 / 2``` returnerar 2
+```
+4 / 2 -- returns 2
+```
 
 ### *
 
-**Litteralt uttryck**
 
-```<expression1> * <expression2>```
+
+```
+<expression1> * <expression2>
+```
 
 Båda uttrycken måste vara numeriska (heltal eller decimal).
 
 Resultatet är också numeriskt.
 
-**Exempel**
+Exempel:
 
-```3 * 4``` returnerar 12
+```
+3 * 4 -- returns 12
+```
 
 ### %
 
-**Litteralt uttryck**
 
-```<expression1> % <expression2>```
+
+```
+<expression1> % <expression2>
+```
 
 Båda uttrycken måste vara numeriska (heltal eller decimal).
 
 Resultatet är också numeriskt.
 
-**Exempel**
+Exempel:
 
-```3 % 2``` returnerar 1.
+```
+3 % 2 -- returns 1.
+```
 
 ## Matematik {#math}
 
 ### är numerisk
 
-**Litteralt uttryck**
 
-```<expression> is numeric```
+
+```
+<expression> is numeric
+```
 
 Uttryckstypen är heltal eller decimal.
 
-**Exempel**
+Exempel:
 
-```@ is numeric```
+```
+@ is numeric
+```
 
 ### är heltal
 
-**Litteralt uttryck**
 
-```<expression> is integer```
+
+```
+<expression> is integer
+```
 
 Uttryckstypen är ett heltal.
 
-**Exempel**
+Exempel:
 
-```@ is integer```
+```
+@ is integer
+```
 
 ### är decimal
 
-**Litteralt uttryck**
 
-```<expression> is decimal```
+
+```
+<expression> is decimal
+```
 
 Uttryckstypen är decimal.
 
-**Exempel**
+Exempel:
 
-```@ is decimal```
+```
+@ is decimal
+```
 
 ## Sträng {#string}
 
 ### +
 
-**Litteralt uttryck**
 
-```<string> + <expression>```
 
-```<expression> + <string>```
+```
+<string> + <expression>
+```
+
+```
+<expression> + <string>
+```
 
 Det sammanfogar två uttryck.
 
 Ett uttryck måste vara en kedjad sträng.
 
-**Exempel**
+Exempel:
 
-```"the current time is " + (now())``` returnerar &quot;den aktuella tiden är 2019-09-23T09:30:06.693Z&quot;
+```
+"the current time is " + (now()) -- returns "the current time is 2019-09-23T09:30:06.693Z"
+```
 
-```(now()) + " is the current time"``` returnerar &quot;2019-09-23T09:30:06.693Z är den aktuella tiden&quot;
+```
+(now()) + " is the current time" -- returns "2019-09-23T09:30:06.693Z is the current time"
+```
 
-```"a" + "b" + "c" + 1234``` returnerar &quot;abc1234&quot;.
+```
+"a" + "b" + "c" + 1234 -- returns "abc1234".
+```
 
 ## Datum {#date}
 
 ### +
 
-**Litteralt uttryck**
 
-```<expression + <duration>```
+
+```
+<expression + <duration>
+```
 
 Lägg till en varaktighet för ett dateTime, ett dateTimeOnly eller en varaktighet.
 
-**Exempel**
+Exempel:
 
-```toDateTime("2011-12-03T15:15:30Z") + toDuration("PT15M")``` returnerar 2011-12-03T15:30:30Z
+```
+toDateTime("2011-12-03T15:15:30Z") + toDuration("PT15M") -- returns 2011-12-03T15:30:30Z
+```
 
-```toDateTimeOnly("2011-12-03T15:15:30") + toDuration("PT15M")``` returnerar 2011-12-03T15:30:30
+```
+toDateTimeOnly("2011-12-03T15:15:30") + toDuration("PT15M") -- returns 2011-12-03T15:30:30
+```
 
-```now() + toDuration("PT1H")``` returnerar en dateTime (med UTC-tidszon) en timme senare från aktuell tid
+```
+now() + toDuration("PT1H") -- returns a dateTime (with UTC time zone) one hour later from current time
+```
 
-```toDuration("PT1H") + toDuration("PT1H")``` returnerar PT2H
+```
+toDuration("PT1H") + toDuration("PT1H") -- returns  PT2H
+```
