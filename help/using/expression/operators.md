@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Operatorer
 description: Lär dig mer om operatorer i avancerade uttryck
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 20498e89eb9c95dd19a11e42150a0bbf67024f67
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 4%
+source-wordcount: '531'
+ht-degree: 5%
 
 ---
 
@@ -34,80 +34,348 @@ Det finns två typer av operatorer: unära operatorer och binära operatorer. De
 
 Här är en lista över operatorer som stöds:
 
-## Logisk
+## Logisk  {#logical}
 
-<table>
-<thead>
-<tr><th>Operatör</th><th>Literalt uttryck</th><th>Exempel</th></tr>
-</thead>
-<tbody>
-<tr><td>och</td><td><p><pre>&lt;expression1&gt; och &lt;expression2&gt;</pre></p>Både &lt;expression1&gt; och &lt;expression2&gt; måste vara booleska. Resultatet är booleskt.</td><td><pre>3.14 &gt; 2 och 3.15 &lt; 1</pre></td></tr>
-<tr><td>eller</td><td><p><pre>&lt;expression1&gt; eller &lt;expression2&gt;</pre></p><p>Både &lt;expression1&gt; och &lt;expression2&gt; måste vara booleska.</p><p> Resultatet är booleskt.</p></td><td><p><pre>3.14 &gt; 2 eller 3.15 &lt; 1</pre></p></td></tr>
-<tr><td>not</td><td><p><pre>inte &lt;expression&gt;</pre></p><p>&lt;expression&gt; måste vara booleskt.</p><p> Resultatet är booleskt.</p></td><td><pre>inte 3,15 &lt; 1</pre></td></tr>
-</tbody>
-</table>
+### och
 
-## Jämförelse
+**Litteralt uttryck**
 
-<table>
-<thead>
-<tr><th>Operatör</th><th>Literalt uttryck </th><th>Exempel</th></tr>
-</thead>
-<tbody><tr><td>är null</td><td><p><pre>&lt;expression&gt; är null</pre></p><p>Resultatet är booleskt.</p><p>Observera att null betyder att uttrycket inte har något utvärderat värde.</p></td><td><pre>@{BarBeacon.location} är null</pre></td></tr>
-<tr><td>är inte null</td><td><p><pre>&lt;expression&gt; är inte null</pre></p><p>Resultatet är booleskt.</p><p>Observera att null betyder att uttrycket inte har något utvärderat värde.</p></td><td><pre>@ är inte null</pre></td></tr>
-<tr><td>har null</td><td><p><pre>&lt;expression&gt; har null</pre>&lt;expression&gt; måste vara en lista.</p><p>Resultatet är booleskt.</p><p>Användbart för att identifiera att en lista innehåller minst ett null-värde.</p></td><td><p><pre>["foo", "bar", null] har null</pre></p>returnerar true<p><pre>["foo", "bar", ""] har null</pre></p> returnerar false eftersom "" inte betraktas som null.</td></tr>
-<tr><td>==</td><td><p><pre>&lt;expression1&gt; == &lt;expression2&gt;</pre></p><p>Både &lt;expression1&gt; och &lt;expression2&gt; måste ha samma datatyp.</p><p> Resultatet är booleskt.</p></td><td><pre>3.14 == 42</pre><br /><pre>"foo" == "bar"</pre></td></tr>
-<tr><td>!=</td><td><p><pre>&lt;expression1&gt; != &lt;expression2&gt;</pre></p><p> Både &lt;expression1&gt; och &lt;expression2&gt; måste ha samma datatyp.</p><p> Resultatet är booleskt.</p></td><td><pre>3.14 != 42</pre><br /><pre>"foo" != "bar"</pre></td></tr>
-<tr><td>&gt;</td><td><p><pre>&lt;expression1&gt; &gt; &lt;expression2&gt;</pre></p><p>Datetime kan jämföras med Datetime.</p><p>Datetimeonly kan jämföras med Datetimeonly.</p><p>Både heltal och decimal kan jämföras med både heltal och decimal.</p><p>Alla andra kombinationer är förbjudna.</p><p>Resultatet är booleskt.</p></td><td><pre>3.14 &gt; 42</pre></td></tr>
-<tr><td>&gt;=</td><td><p><pre>&lt;expression1&gt; &gt;= &lt;expression2&gt;</pre></p><p>Datetime kan jämföras med Datetime.</p><p>Datetimeonly kan jämföras med Datetimeonly.</p><p>Både heltal och decimal kan jämföras med både heltal och decimal.</p><p>Alla andra kombinationer är förbjudna.</p><p>Resultatet är booleskt.</p></td><td><pre>42 &gt;= 3.14</pre></td></tr>
-<tr><td>&lt;</td><td><p><pre>&lt;expression1&gt; &lt; &lt;expression2&gt;</pre></p><p>Datetime kan jämföras med Datetime.</p><p>Datetimeonly kan jämföras med Datetimeonly.</p><p>Både heltal och decimal kan jämföras med både heltal och decimal.</p><p>Alla andra kombinationer är förbjudna.</p><p>Resultatet är booleskt.</p></td><td><pre>42 &lt; 3.14</pre></td></tr>
-<tr><td>&lt;=</td><td><p><pre>&lt;expression1&gt; &lt;= &lt;expression2&gt;</pre></p><p>Datetime kan jämföras med Datetime.</p><p>Datetimeonly kan jämföras med Datetimeonly.</p><p>Både heltal och decimal kan jämföras med både heltal och decimal.</p><p>Alla andra kombinationer är förbjudna.</p><p>Resultatet är booleskt.</p></td><td><pre>42 &lt;= 3.14</pre></td></tr>
-</tbody>
-</table>
+```<expression1> and <expression2>```
 
-## Aritmetisk
+Både &lt;expression1> och &lt;expression2> måste vara booleska. Resultatet är booleskt.
 
-<table>
-<thead>
-<tr><th>Operatör</th><th>Literalt uttryck </th><th>Exempel</th></tr>
-</thead>
-<tbody><tr><td>+</td><td><p><pre>&lt;expression1&gt; + &lt;expression2&gt;</pre></p><p>Båda uttrycken måste vara numeriska (heltal eller decimal). </p><p>Resultatet är också numeriskt.</p></td><td><p><p><pre>1 + 2</pre></p></p><br /><p>Returnerar 3</p></td></tr>
-<tr><td>-</td><td><p><pre>&lt;expression1&gt; - &lt;expression2&gt;</pre></p><p> Båda uttrycken måste vara numeriska (heltal eller decimal).</p><p> Resultatet är också numeriskt.</p></td><td><p><pre>2 - 1</pre></p>Returnerar 1</td></tr>
-<tr><td>/</td><td><p><pre>&lt;expression1&gt; / &lt;expression2&gt;</pre></p><p>Båda uttrycken måste vara numeriska (heltal eller decimal). </p><p>Resultatet är också numeriskt.</p><p>&lt;expression2&gt; får inte vara lika med 0 (returnerar 0).</p></td><td><p><pre>4 / 2</pre></p>Returnerar 2</td></tr>
-<tr><td>*</td><td><p><pre>&lt;expression1&gt; * &lt;expression2&gt;</pre></p><p> Båda uttrycken måste vara numeriska (heltal eller decimal). </p><p>Resultatet är också numeriskt.</p></td><td><p><pre>3 * 4</pre></p>Returnerar 12</td></tr>
-<tr><td>%</td><td><p><pre>&lt;expression1&gt; % &lt;expression2&gt;</pre></p><p>Båda uttrycken måste vara numeriska (heltal eller decimal).</p><p> Resultatet är också numeriskt.</p></td><td><p><pre>3 % 2</pre></p>Returnerar 1.</td></tr>
-</tbody>
-</table>
+**Exempel**
 
-## Matematik
+```3.14 > 2 and 3.15 < 1```
 
-<table>
-<thead>
-<tr><th>Operatör</th><th>Literalt uttryck</th><th>Exempel</th></tr>
-</thead>
-<tbody><tr><td>är numerisk</td><td><p><pre>&lt;expression&gt; är numeriskt</pre></p><p>Uttryckstypen är heltal eller decimal.</p></td><td><pre>@ är numeriskt</pre></td></tr>
-<tr><td>är heltal</td><td><p><pre>&lt;expression&gt; är heltal</pre></p><p>Uttryckstypen är ett heltal.</p></td><td><pre>@ är heltal</pre></td></tr>
-<tr><td>är decimal</td><td><p><pre>&lt;expression&gt; är decimal</pre></p><p>Uttryckstypen är decimal.</p></td><td><pre>@ är decimalt</pre></td></tr>
-</tbody>
-</table>
+### eller
 
-## Sträng
+**Litteralt uttryck**
 
-<table>
-<thead>
-<tr><th>Operatör</th><th>Literalt uttryck </th><th>Exempel</th></tr>
-</thead>
-<tbody><tr><td>+</td><td><p><pre>&lt;sträng&gt; + &lt;uttryck&gt;</pre></p><p><pre>&lt;expression&gt; + &lt;string&gt;</pre></p><p>Det sammanfogar två uttryck. </p><p>Ett uttryck måste vara en kedjad sträng.</p></td><td><p><pre>"den aktuella tiden är " + (now())</pre></p> Returnerar"den aktuella tiden är 2019-09-23T09:30:06.693Z"<p><pre>(now()) + " är aktuell tid"</pre></p>Returnerar "2019-09-23T09:30:06.693Z är den aktuella tiden"<p><pre>"a" + "b" + "c" + 1234</pre></p> Returnerar "abc1234".</td></tr>
-</tbody>
-</table>
+```<expression1> or <expression2>```
 
-## Datum
+Både &lt;expression1> och &lt;expression2> måste vara booleska. Resultatet är booleskt.
 
-<table>
-<thead>
-<tr><th>Operatör</th><th>Literalt uttryck </th><th>Exempel</th></tr>
-</thead>
-<tbody>
-<tr><td>+</td><td><p><pre>&lt;expression + &lt;duration&gt;</pre></p><p>Lägg till en varaktighet för ett dateTime, ett dateTimeOnly eller en varaktighet.</p></td><td><p><pre>toDateTime("2011-12-03T15:15:30Z")</pre></p><p><pre> + toDuration("PT15M")</pre></p><p>Returnerar 2011-12-03T15:30:30Z</p><p><pre>toDateTimeOnly("2011-12-03T15:15:30")</pre></p><p><pre> + toDuration("PT15M")</pre></p>Returnerar 2011-12-03T15:30:30<p><pre>now() + toDuration("PT1H")</pre></p><p>Returnerar en dateTime (med UTC-tidszon) en timme senare från aktuell tid</p><p><pre>toDuration("PT1H") + toDuration("PT1H")</pre></p><p>Returnerar PT2H</p></td></tr>
-</tbody>
-</table>
+**Exempel**
+
+```3.14 > 2 or 3.15 < 1```
+
+### not
+
+**Litteralt uttryck**
+
+```not <expression>```
+
+&lt;expression> måste vara booleskt. Resultatet är booleskt.
+
+**Exempel**
+
+```not 3.15 < 1```
+
+## Jämförelse {#comparison}
+
+### är null
+
+**Litteralt uttryck**
+
+```<expression> is null```
+
+Resultatet är booleskt.
+
+Observera att null betyder att uttrycket inte har något utvärderat värde.
+
+**Exempel**
+
+```@{BarBeacon.location} is null```
+
+### är inte null
+
+**Litteralt uttryck**
+
+```<expression> is not null```
+
+Resultatet är booleskt.
+
+Observera att null betyder att uttrycket inte har något utvärderat värde.
+
+**Exempel**
+
+```@ is not null```
+
+### har null
+
+**Litteralt uttryck**
+
+```<expression> has null```
+
+&lt;expression> måste vara en lista. Resultatet är booleskt.
+
+Användbart för att identifiera att en lista innehåller minst ett null-värde.
+
+**Exempel**
+
+```["foo", "bar", null] has null``` returnerar true.
+
+```["foo", "bar", ""] has null``` returnerar false eftersom &quot;&quot; inte betraktas som null.
+
+### ==
+
+**Litteralt uttryck**
+
+```<expression1> == <expression2>```
+
+Både &lt;expression1> och &lt;expression2> måste ha samma datatyp. Resultatet är booleskt.
+
+**Exempel**
+
+```3.14 == 42```
+
+```"foo" == "bar"```
+
+### !=
+
+**Litteralt uttryck**
+
+```<expression1> != <expression2>```
+
+Både &lt;expression1> och &lt;expression2> måste ha samma datatyp. Resultatet är booleskt.
+
+**Exempel**
+
+```3.14 != 42```
+
+```"foo" != "bar"```
+
+### >
+
+**Litteralt uttryck**
+
+```<expression1> > <expression2>```
+
+Datetime kan jämföras med Datetime.
+
+Datetimeonly kan jämföras med Datetimeonly.
+
+Både heltal och decimal kan jämföras med både heltal och decimal.
+
+Alla andra kombinationer är förbjudna.
+
+Resultatet är booleskt.
+
+**Exempel**
+
+```3.14 > 42```
+
+### >=
+
+**Litteralt uttryck**
+
+```<expression1> >= <expression2>```
+
+Datetime kan jämföras med Datetime.
+
+Datetimeonly kan jämföras med Datetimeonly.
+
+Både heltal och decimal kan jämföras med både heltal och decimal.
+
+Alla andra kombinationer är förbjudna.
+
+Resultatet är booleskt.
+
+**Exempel**
+
+```42 >= 3.14```
+
+### &lt;
+
+**Litteralt uttryck**
+
+```<expression1> < <expression2>```
+
+Datetime kan jämföras med Datetime.
+
+Datetimeonly kan jämföras med Datetimeonly.
+
+Både heltal och decimal kan jämföras med både heltal och decimal.
+
+Alla andra kombinationer är förbjudna.
+
+Resultatet är booleskt.
+
+**Exempel**
+
+```42 < 3.14```
+
+### &lt;=
+
+**Litteralt uttryck**
+
+```<expression1> <= <expression2>```
+
+Datetime kan jämföras med Datetime.
+
+Datetimeonly kan jämföras med Datetimeonly.
+
+Både heltal och decimal kan jämföras med både heltal och decimal.
+
+Alla andra kombinationer är förbjudna.
+
+Resultatet är booleskt.
+
+**Exempel**
+
+```42 <= 3.14```
+
+## Aritmetisk {#arithmetic}
+
+### +
+
+**Litteralt uttryck**
+
+```<expression1> + <expression2>```
+
+Båda uttrycken måste vara numeriska (heltal eller decimal).
+
+Resultatet är också numeriskt.
+
+**Exempel**
+
+```1 + 2``` returnerar 3
+
+### -
+
+**Litteralt uttryck**
+
+```<expression1> - <expression2>```
+
+Båda uttrycken måste vara numeriska (heltal eller decimal).
+
+Resultatet är också numeriskt.
+
+**Exempel**
+
+```2 - 1``` returnerar 1
+
+### /
+
+**Litteralt uttryck**
+
+```<expression1> / <expression2>```
+
+Båda uttrycken måste vara numeriska (heltal eller decimal).
+
+Resultatet är också numeriskt.
+
+&lt;expression2> får inte vara lika med 0 (returnerar 0).
+
+**Exempel**
+
+```4 / 2``` returnerar 2
+
+### *
+
+**Litteralt uttryck**
+
+```<expression1> * <expression2>```
+
+Båda uttrycken måste vara numeriska (heltal eller decimal).
+
+Resultatet är också numeriskt.
+
+**Exempel**
+
+```3 * 4``` returnerar 12
+
+### %
+
+**Litteralt uttryck**
+
+```<expression1> % <expression2>```
+
+Båda uttrycken måste vara numeriska (heltal eller decimal).
+
+Resultatet är också numeriskt.
+
+**Exempel**
+
+```3 % 2``` returnerar 1.
+
+## Matematik {#math}
+
+### är numerisk
+
+**Litteralt uttryck**
+
+```<expression> is numeric```
+
+Uttryckstypen är heltal eller decimal.
+
+**Exempel**
+
+```@ is numeric```
+
+### är heltal
+
+**Litteralt uttryck**
+
+```<expression> is integer```
+
+Uttryckstypen är ett heltal.
+
+**Exempel**
+
+```@ is integer```
+
+### är decimal
+
+**Litteralt uttryck**
+
+```<expression> is decimal```
+
+Uttryckstypen är decimal.
+
+**Exempel**
+
+```@ is decimal```
+
+## Sträng {#string}
+
+### +
+
+**Litteralt uttryck**
+
+```<string> + <expression>```
+
+```<expression> + <string>```
+
+Det sammanfogar två uttryck.
+
+Ett uttryck måste vara en kedjad sträng.
+
+**Exempel**
+
+```"the current time is " + (now())``` returnerar &quot;den aktuella tiden är 2019-09-23T09:30:06.693Z&quot;
+
+```(now()) + " is the current time"``` returnerar &quot;2019-09-23T09:30:06.693Z är den aktuella tiden&quot;
+
+```"a" + "b" + "c" + 1234``` returnerar &quot;abc1234&quot;.
+
+## Datum {#date}
+
+### +
+
+**Litteralt uttryck**
+
+```<expression + <duration>```
+
+Lägg till en varaktighet för ett dateTime, ett dateTimeOnly eller en varaktighet.
+
+**Exempel**
+
+```toDateTime("2011-12-03T15:15:30Z") + toDuration("PT15M")``` returnerar 2011-12-03T15:30:30Z
+
+```toDateTimeOnly("2011-12-03T15:15:30") + toDuration("PT15M")``` returnerar 2011-12-03T15:30:30
+
+```now() + toDuration("PT1H")``` returnerar en dateTime (med UTC-tidszon) en timme senare från aktuell tid
+
+```toDuration("PT1H") + toDuration("PT1H")``` returnerar PT2H
