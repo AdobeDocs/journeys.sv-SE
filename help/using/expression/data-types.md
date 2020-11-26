@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Datatyper
 description: Lär dig mer om datatyper i avancerade uttryck
 translation-type: tm+mt
-source-git-commit: f755f92d0479e2889dd7ed6dfa5e72d52c25634f
+source-git-commit: 062b4648e2eb3a4270f9c09e4478d541209e1247
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '558'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ Tekniskt sett innehåller en konstant alltid en datatyp. I det litterala uttryck
 
 Avsnitten nedan innehåller information om de olika datatypsuttrycken och hur de återges.
 
-## Sträng {#string}
+## string {#string}
 
 **Beskrivning**
 
@@ -30,15 +30,23 @@ Serialiseringsformat: UTF-8
 
 **Litteral representation**
 
-```"<value>"```
+```
+"<value>"
+```
 
-```'<value>'```
+```
+'<value>'
+```
 
 **Exempel**
 
-```"hello world"```
+```
+"hello world"
+```
 
-```'hello world'```
+```
+'hello world'
+```
 
 ## heltal {#integer}
 
@@ -50,11 +58,15 @@ JSON-format: Nummer
 
 **Litteral representation**
 
-```<integer value>```
+```
+<integer value>
+```
 
 **Exempel**
 
-```42```
+```
+42
+```
 
 ## decimal {#decimal}
 
@@ -72,11 +84,15 @@ Serialiseringsformat: med &#39;.&#39; som decimalavgränsare.
 
 **Litteral representation**
 
-```<integer value>.<integer value>```
+```
+<integer value>.<integer value>
+```
 
 **Exempel**
 
-```3.14```
+```
+3.14
+```
 
 ## boolesk {#boolean}
 
@@ -88,13 +104,19 @@ JSON-format: Boolean
 
 **Litteral representation**
 
-```true```
+```
+true
+```
 
-```false```
+```
+false
+```
 
 **Exempel**
 
-```true```
+```
+true
+```
 
 ## dateTimeOnly {#date-time-only}
 
@@ -112,7 +134,9 @@ Det använder DateTimeFormatter ISO_LOCAL_DATE_TIME för att avserialisera och s
 
 **Litteral representation**
 
-```toDateTimeOnly("<dateTimeOnly in ISO-8601 format>")  ```
+```
+toDateTimeOnly("<dateTimeOnly in ISO-8601 format>")  
+```
 
 ## dateTime {#date-time}
 
@@ -136,23 +160,39 @@ Tidszonen kan anges med en förskjutningskod eller en tidszonskod (exempel: Euro
 
 **Litteral representation**
 
-```toDateTime("<dateTime in ISO-8601 format>")```
+```
+toDateTime("<dateTime in ISO-8601 format>")
+```
 
-```toDateTime(<integer value of an epoch in milliseconds>)```
+```
+toDateTime(<integer value of an epoch in milliseconds>)
+```
 
 **Exempel**
 
-```toDateTime("1977-04-22T06:00:00Z")```
+```
+toDateTime("1977-04-22T06:00:00Z")
+```
 
-```toDateTime("2011-12-03T15:15:30Z")```
+```
+toDateTime("2011-12-03T15:15:30Z")
+```
 
-```toDateTime("2011-12-03T15:15:30.123Z")```
+```
+toDateTime("2011-12-03T15:15:30.123Z")
+```
 
-```toDateTime("2011-12-03T15:15:30.123+02:00")```
+```
+toDateTime("2011-12-03T15:15:30.123+02:00")
+```
 
-```toDateTime("2011-12-03T15:15:30.123-00:20")```
+```
+toDateTime("2011-12-03T15:15:30.123-00:20")
+```
 
-```toDateTime(1560762190189)```
+```
+toDateTime(1560762190189)
+```
 
 ## varaktighet {#duration}
 
@@ -172,31 +212,55 @@ Duration.parse: De format som godkänns baseras på varaktighetsformatet PnDTnHn
 
 **Litteral representation**
 
-```toDuration("<duration in ISO-8601 format>")```
+```
+toDuration("<duration in ISO-8601 format>")
+```
 
-```toDuration(<duration in milliseconds>)```
+```
+toDuration(<duration in milliseconds>)
+```
 
 **Exempel**
 
-```toDuration("PT5S")``` tolkar som 5 sekunder
+```
+toDuration("PT5S") -- parses as 5 seconds
+```
 
-```toDuration(500)``` tolkar som 500 ms
+```
+toDuration(500) -- parses as 500ms
+```
 
-```toDuration("PT20.345S")``` parses as &quot;20,345 seconds&quot;
+```
+toDuration("PT20.345S") -- parses as "20.345 seconds"
+```
 
-```toDuration("PT15M") ``` parsas som &quot;15 minuter&quot; (där en minut är 60 sekunder)
+```
+toDuration("PT15M") -- parses as "15 minutes" (where a minute is 60 seconds)
+```
 
-```toDuration("PT10H") ``` parsas som&quot;10 timmar&quot; (där en timme är 3 600 sekunder)
+```
+toDuration("PT10H")  -- parses as "10 hours" (where an hour is 3600 seconds)
+```
 
-```toDuration("P2D") ``` parsas som&quot;2 dagar&quot; (där en dag är 24 timmar eller 86 400 sekunder)
+```
+toDuration("P2D") -- parses as "2 days" (where a day is 24 hours or 86400 seconds)
+```
 
-```toDuration("P2DT3H4M") ```parses som &quot;2 dagar, 3 timmar och 4 minuter&quot;
+```
+toDuration("P2DT3H4M") -- parses as "2 days, 3 hours and 4 minutes"
+```
 
-```toDuration("P-6H3M") ``` parsas som &quot;-6 timmar och +3 minuter&quot;
+```
+toDuration("P-6H3M") -- parses as "-6 hours and +3 minutes"
+```
 
-```toDuration("-P6H3M")``` tolkar som&quot;-6 timmar och -3 minuter&quot;
+```
+toDuration("-P6H3M") -- parses as "-6 hours and -3 minutes"
+```
 
-```toDuration("-P-6H+3M") ``` parsas som &quot;+6 timmar och -3 minuter&quot;
+```
+toDuration("-P-6H+3M") -- parses as "+6 hours and -3 minutes"
+```
 
 ## list {#list}
 
@@ -208,12 +272,20 @@ Polymorfism stöds inte, och därför bör alla uttryck i listan ha samma typ.
 
 **Litteral representation**
 
-```[<expression>, <expression>, ... ]```
+```
+[<expression>, <expression>, ... ]
+```
 
 **Exempel**
 
-```["value1","value2"]```
+```
+["value1","value2"]
+```
 
-```[3,5]```
+```
+[3,5]
+```
 
-```[toDuration(500),toDuration(800)]```
+```
+[toDuration(500),toDuration(800)]
+```
