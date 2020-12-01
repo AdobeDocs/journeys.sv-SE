@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Reseegenskaper
 description: Läs om reseegenskaper
 translation-type: tm+mt
-source-git-commit: b989e167c4aa5d8ef2667442231ff8857c5f0b18
+source-git-commit: 341138c31676870878099b4f4eecec200a614c69
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Här är några exempel på användningsområden:
 
 * **Logga ignorerade profiler**: Du kan skicka alla profiler som har uteslutits från ett meddelande med en begränsningsregel till ett tredjepartssystem för loggning. För detta anger du en sökväg i händelse av timeout och fel och lägger till ett villkor som ska filtreras efter en viss feltyp, till exempel: &quot;kasta bort personer genom att sätta på en regel&quot;. Du kan sedan överföra de borttagna profilerna till ett tredjepartssystem via en anpassad åtgärd.
 
-* **Skickade push-varningar vid fel**: du kan skicka ett meddelande till ett tredjepartssystem varje gång ett fel inträffar i ett meddelande. För detta anger du en sökväg om ett fel uppstår, lägger till ett villkor och en anpassad åtgärd. Du kan till exempel skicka ett meddelande på en Slack-kanal med en beskrivning av det fel som påträffats.
+* **Skicka varningar vid fel**: du kan skicka ett meddelande till ett tredjepartssystem varje gång ett fel inträffar i ett meddelande. För detta anger du en sökväg om ett fel uppstår, lägger till ett villkor och en anpassad åtgärd. Du kan till exempel skicka ett meddelande på en Slack-kanal med en beskrivning av det fel som påträffats.
 
 * **Förfina fel i rapportering** : I stället för att bara ha en sökväg för felmeddelanden kan du definiera ett villkor per feltyp. På så sätt kan du förfina rapporteringen och visa alla feltyper.
 
