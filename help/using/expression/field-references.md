@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Fältreferenser
 description: Lär dig mer om fältreferenser i avancerade uttryck
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: e2f7c39e61118c42272f730cf5f688ee34d6a9c2
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '434'
 ht-degree: 3%
 
 ---
@@ -55,6 +55,38 @@ Ett standardvärde kan kopplas till ett fältnamn. Syntaxen är följande:
 >[!NOTE]
 >
 >Fälttypen och standardvärdet måste vara samma. Till exempel @{LobbyBeacon.endUserID:n._experience.emailid.id, defaultValue : {2} blir ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
+
+Exempel:
+
+```
+// for an event 'OrderEvent' having the following payload:
+{
+    "orderId": "12345"
+}
+ 
+expression example:
+- @{OrderEvent.orderId}                                    -> "12345"
+- @{OrderEvent.producdId, defaultValue : "not specified" } -> "not specified" // default value, productId is not a field present in the payload
+- @{OrderEvent.productId}                                  -> null
+ 
+ 
+// for an entity 'Profile' on datasource 'ACP' having fields person/lastName, with fetched data such as:
+{
+    "person": {
+        "lastName":"Snow"
+    },
+    "emails": [
+        { "email":"john.snow@winterfell.westeros" },
+        { "email":"snow@thewall.westeros" }
+    ]
+}
+ 
+expression examples:
+- #{ACP.Profile.person.lastName}                 -> "Snow"
+- #{ACP.Profile.emails.at(1).email}              -> "snow@thewall.westeros"
+- #{ACP.Profile.person.age, defaultValue : -1}   -> -1 // default value, age is not a field present in the payload
+- #{ACP.Profile.person.age}                      -> null
+```
 
 **Referens för ett fält i samlingar**
 
