@@ -4,7 +4,7 @@ solution: Journey Orchestration
 title: Versionsinformation
 description: Läs om versionsinformation
 translation-type: tm+mt
-source-git-commit: 9cd37af0281e9fb837c7bf52a52c8dbffd0d4a78
+source-git-commit: 3015d4caaedbd45ea5b94e426788f39b2774053e
 workflow-type: tm+mt
 source-wordcount: '2055'
 ht-degree: 77%
@@ -70,7 +70,7 @@ Du kan även läsa [dokumentationsuppdateringarna](../release-notes/documentatio
 <p>Vi har lagt till en ny metod för att enklare konfigurera dina händelser. Den här funktionen, som har testats bland ett begränsat antal kunder genom Alpha-programmet, är nu tillgänglig i Beta för alla kunder. Den här nya metoden kräver inte att ett eventID används. Den utvärderar om händelsen ska utlösas enligt ett villkor. Du kan fortfarande använda den befintliga metoden, som nu kallas"systemgenererad".
 </p>
 <p>Observera att den här funktionen kommer att vara tillgänglig de närmaste dagarna.</p>
-<p>Mer information finns i den <a href="../expression/journey-properties.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../event/about-events.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
