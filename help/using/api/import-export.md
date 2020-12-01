@@ -5,15 +5,15 @@ title: Importera beskrivning av export-API
 description: Läs mer om import-API:t för export.
 products: journeys
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 8da1d4a6c01279bf502c3ec39bdaba8fcc8e64f8
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1131'
 ht-degree: 2%
 
 ---
 
 
-# Arbeta med Export Import API
+# Arbeta med Export-Import API
 
 Exportera en reseversion och alla tillhörande objekt (resa, händelser, datakällor, fältgrupper, anpassade åtgärder) med ett enda API-anrop. Den resulterande nyttolasten kan användas för att enkelt importera resan till en annan miljö (instans eller sandlåda).
 Med den här funktionen kan du hantera dina resor över flera instanser eller för flera arbetsflöden för testmiljöer.
@@ -21,7 +21,7 @@ Med den här funktionen kan du hantera dina resor över flera instanser eller f�
 
 ## Resurser
 
-API:t för export av Journey Orchestration beskrivs i en Swagger-fil som finns [här](https://adobedocs.github.io/JourneyAPI/docs/).
+API:t för export/import av Journey Orchestration beskrivs i en Swagger-fil som finns [här](https://adobedocs.github.io/JourneyAPI/docs/).
 
 Om du vill använda detta API med din Journey Orchestration-instans måste du använda AdobeI/O-konsolen. Du kan börja med att följa detta [Komma igång med Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/getting-started.md) och sedan använda avsnitten på den här sidan.
 
@@ -40,26 +40,26 @@ Vi rekommenderar att du följer de här stegen för att exportera och importera 
    * Om din exporterade resa innehåller **specifika autentiseringsuppgifter** måste du ersätta dessa med de som motsvarar den nya miljön.
    * Om den exporterade resan innehåller **händelser** som pekar på ett **XDM-schema** måste du uppdatera schema-ID-referensen manuellt med schema-ID:t för den nya miljön i xdmEntity-noden om ID:n är olika. Den här uppdateringen måste göras för varje händelse. [Mer information här](https://docs.adobe.com/content/help/en/journeys/using/events-journeys/experience-event-schema.html)
    * Om din resa innehåller e-post, sms eller push-åtgärder kan du behöva uppdatera mallnamnet eller namnet på mobileApp om namnet i målmiljön skiljer sig från det i startmiljön.
-1. Anropa **import** -API:t med målmiljön. Observera att du kan anropa import-API:t så många gånger du vill. UUID:t och namnet på varje nod som ingår i resan genereras varje gång du anropar import-API:t.
-1. När resan har importerats kan du publicera den i den nya sandlådan eller den nya miljön.
+1. Anropa **import** -API:t med målmiljöparametrarna (orgID och sandboxName). Observera att du kan anropa import-API:t så många gånger du vill. UUID och namnet på varje objekt som ingår i resan genereras varje gång du anropar import-API:t.
+1. När resan har importerats kan du publicera den i programmet Journey Orchestration. Mer information [här](https://docs.adobe.com/content/help/en/journeys/using/building-journeys/publishing-the-journey.html)
 
 
 ## Behörighet
 
 ### Konfigurera API-åtkomst
 
-API-åtkomst för Journey Orchestration konfigureras genom stegen nedan. Var och en av dessa steg beskrivs i dokumentationen [för](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)Adobe I/O.
+API-åtkomst för Journey Orchestration konfigureras genom stegen nedan. Var och en av dessa steg beskrivs i [Adobe I/O-dokumentationen](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
 
 >[!CAUTION]
 >
 >Om du vill hantera certifikat i Adobe I/O måste du ha <b>systemadministratörsbehörighet</b> för organisationen eller ett [utvecklarkonto](https://helpx.adobe.com/enterprise/using/manage-developers.html) i Admin Console.
 
 1. **Kontrollera att du har ett digitalt certifikat** eller skapa ett om det behövs. De offentliga och privata nycklarna som tillhandahålls med certifikatet behövs i följande steg.
-1. **Skapa en ny integrering för [!DNL Journey Orchestration] Service** i Adobe I/O och konfigurera den. Åtkomst till produktprofilen krävs för Journey Orchestration och Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet...).
+1. **Skapa en ny integrering för [!DNL Journey Orchestration] tjänsten** i Adobe I/O och konfigurera den. Åtkomst till produktprofilen krävs för Journey Orchestration och Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet...).
 1. **Skapa en JSON Web Token (JWT)** utifrån de inloggningsuppgifter som tidigare genererats och signera den med din privata nyckel. JWT kodar all identitets- och säkerhetsinformation som Adobe behöver för att verifiera din identitet och ge dig åtkomst till API:t. Det här steget beskrivs i det här [avsnittet](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
 1. **Byt ut din JWT-fil mot en åtkomsttoken** via en POST-förfrågan eller via gränssnittet för Developer Console. Denna Access Token måste användas i varje rubrik för dina API-begäranden.
 
-Om du vill skapa en säker tjänst-till-tjänst-API-session mellan Adobe måste varje begäran till en Adobe-tjänst innehålla informationen nedan i auktoriseringshuvudet.
+Om du vill skapa en säker tjänst-till-tjänst-API-session för Adobe I/O måste varje begäran till en Adobe-tjänst innehålla informationen nedan i auktoriseringshuvudet.
 
 ```
 curl -X GET https://journey.adobe.io/authoring/XXX \
@@ -71,7 +71,7 @@ curl -X GET https://journey.adobe.io/authoring/XXX \
 * **&lt;ORGANISATION>**: Detta är ditt personliga organisations-ID, och Adobe tillhandahåller ett organisations-ID för varje instans:
 
    * &lt;ORGANISATION>: din produktionsinstans
-   Kontakta din administratör eller din Adobe tekniska kontakt för att få ditt organisations-ID-värde. Du kan även hämta den till Adobe när du skapar en ny integrering i licenslistan (se dokumentationen [för](https://www.adobe.io/authentication.html)Adobe).
+   Kontakta din administratör eller din Adobe tekniska kontakt för att få ditt organisations-ID-värde. Du kan även hämta den till Adobe I/O när du skapar en ny integrering i licenslistan (se [Adobe I/O-dokumentationen](https://www.adobe.io/authentication.html)).
 
 * **&lt;ACCESS_TOKEN>**: Din personliga åtkomsttoken, som hämtades när du bytte din JWT via en POST.
 
@@ -79,9 +79,9 @@ curl -X GET https://journey.adobe.io/authoring/XXX \
 
 
 
-## API-beskrivning för export
+## API-beskrivning för export-import
 
-Med detta API kan du exportera en reseversion och alla relaterade objekt (resa, händelser, datakällor, fältgrupper, anpassade åtgärder) via dess ID.
+Med det här API:t kan du exportera en reseversion som identifieras av dess UID och alla relaterade objekt (resa, händelser, datakällor, fältgrupper, anpassade åtgärder) via dess uid.
 Den resulterande nyttolasten kan användas för att importera reseversionen till en annan miljö (sandlåda eller instans).
 
 | Metod | Bana | Beskrivning |
@@ -94,21 +94,20 @@ Den resulterande nyttolasten kan användas för att importera reseversionen till
 
 ### Exportegenskaper och skyddsräcken
 
-* Referenserna exporteras inte och en platshållare (t.ex. INSERT_SECRET_HERE) infogas.
-Efter nyttolastexporten måste du manuellt infoga de nya autentiseringsuppgifterna (som motsvarar målmiljön) innan du importerar nyttolasten i målmiljön.
-
-* När datakällan innehåller parametern **builtIn:true** behöver du inte ersätta INSERT_SECRET_HERE. Det här är en systemdatakälla som hanteras automatiskt av resemiljön.
-
-* Följande objekt exporteras men kommer aldrig att importeras i målmiljön:
-   * **DataProviders**:  acsDataProvider och acppsDataProvider
-   * **Fältgrupper**: acppsFieldGroup
-   * **Anpassade åtgärder**: acsAction
-
 * Resan måste vara giltig före export.
+
+* Referenserna exporteras inte och en platshållare (t.ex. INSERT_SECRET_HERE) infogas i svarsnyttolasten.
+Efter exportanropet måste du manuellt infoga de nya autentiseringsuppgifterna (som motsvarar målmiljön) innan du importerar nyttolasten i målmiljön.
+
+* Följande objekt exporteras, men de kommer aldrig att importeras i målmiljön. Det här är systemresurser som hanteras automatiskt av Journey Orchestration. Du behöver inte ersätta INSERT_SECRET_HERE.
+   * **DataProviders**:  &quot;Adobe Campaign Standard Data Provider&quot; (acsDataProvider) och &quot;Experience Platform&quot; (acppsDataProvider)
+   * **Fältgrupper** (dataEntities): &quot;ProfileFieldGroup&quot; (acppsDataPack)
+
+
 
 ### Importegenskaper
 
-* Under importen skapas färgobjekten med ett nytt UUID och ett nytt namn för att säkerställa att de är unika i målmiljön (instans eller sandlåda).
+* Under importen skapas färgobjekten med ett nytt UID och ett nytt namn för att säkerställa att de är unika i målmiljön (instans eller sandlåda).
 
 * Om importnyttolasten innehåller hemliga platshållare genereras ett fel. Du måste ersätta inloggningsuppgifterna innan POSTEN anropar för att kunna importera resan.
 
@@ -120,5 +119,4 @@ Möjliga fel är:
 
 * Vid **import**, om nyttolasten inte är giltig efter ändringar eller om autentiseringsuppgifterna inte är väl definierade i nyttolasten: fel 400
 
-* Om du efter importsteget försöker publicera resan i målmiljön utan att ändra XDM-schema-ID för dina händelser, visas ett fel.
-
+* Om XDM-schema-ID:t för dina händelser inte är giltigt i målmiljön efter importsteget visas ett fel i programmet Journey Orchestration. I så fall kommer det inte att vara möjligt att offentliggöra resan.
