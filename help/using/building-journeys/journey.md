@@ -4,13 +4,12 @@ solution: Journey Orchestration
 title: Om att bygga en resa
 description: Som affärsanvändare kan du lära dig att kombinera händelser, samordning och åtgärder för att skapa en resa.
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 6ebedad2cb8e78b4dd953bc7a2993cebbeefabcc
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 12%
 
 ---
-
 
 
 # Skapa en resa {#concept_gq5_sqt_52b}
