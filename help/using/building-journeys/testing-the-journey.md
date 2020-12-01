@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Testa resan
 description: 'Läs om testning av resan '
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 5e97f511872a924cc8c2c3a6904859d63ebeddcd
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1442'
 ht-degree: 3%
 
 ---
@@ -133,6 +133,16 @@ När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör
 När du öppnar en resa i ett test motsvarar den visade sökvägen det senaste testet som utfördes.
 
 Det visuella flödet fungerar oavsett om händelsen aktiveras via gränssnittet eller externt (med till exempel Postman).
+
+## Testläge för regelbaserade resor {#test-rule-based}
+
+Testläget är även tillgängligt för resor som använder en regelbaserad händelse. For more information on rule-based events, refer to [this page](../event/about-events.md).
+
+När du utlöser en händelse kan du på skärmen för **händelsekonfiguration** definiera de händelseparametrar som ska passera i testet. Du kan visa händelse-ID-villkoret genom att klicka på verktygstipsikonen i det övre högra hörnet. Det finns också ett verktygstips bredvid varje fält som ingår i regelutvärderingen.
+
+![](../assets/alpha-event8.png)
+
+Mer information om hur du använder testläget finns på [den här sidan](../building-journeys/testing-the-journey.md).
 
 ## Visa loggarna {#viewing_logs}
 
