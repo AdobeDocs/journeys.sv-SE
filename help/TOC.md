@@ -6,10 +6,10 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 9cd37af0281e9fb837c7bf52a52c8dbffd0d4a78
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 99%
+source-wordcount: '404'
+ht-degree: 95%
 
 ---
 
@@ -28,14 +28,18 @@ ht-degree: 99%
    + [Åtkomsthantering](using/about/access-management.md)
    + [Felsökning](using/about/troubleshooting.md)
 + Konfigurera en händelse {#events-journeys}
-   + [Om händelser](using/event/about-events.md)
-   + [Om scheman i ExperienceEvent](using/event/experience-event-schema.md)
+   + Om händelser {#about-events}
+      + [Allmän princip](using/event/about-events.md)
+      + [Datacecykel](using/event/about-data-cycle.md)
+      + [Skapa en händelse](using/event/about-creating.md)
+      + [Utnyttja Adobe Analytics](using/event/about-analytics.md)
+      + [Om scheman i ExperienceEvent](using/event/experience-event-schema.md)
+      + [Ytterligare steg för att skicka händelser](using/event/additional-steps-to-send-events-to-journey-orchestration.md)
    + [Definiera nyttolastfält](using/event/defining-the-payload-fields.md)
    + [Välja namnrymden](using/event/selecting-the-namespace.md)
    + [Definiera händelsenyckeln](using/event/defining-the-event-key.md)
    + [Lägga till ett villkor](using/event/adding-a-condition.md)
    + [Förhandsgranska nyttolasten](using/event/previewing-the-payload.md)
-   + [Ytterligare steg för att skicka händelser](using/event/additional-steps-to-send-events-to-journey-orchestration.md)
 + Konfigurera en datakälla {#data-source-journeys}
    + [Om datakällor](using/datasource/about-data-sources.md)
    + [Fältgrupper](using/datasource/field-groups.md)
@@ -75,6 +79,7 @@ ht-degree: 99%
          + [Om åtgärdsaktiviteter](using/building-journeys/about-action-activities.md)
          + [Använda åtgärder i Adobe Campaign](using/building-journeys/using-adobe-campaign-actions.md)
          + [Använda anpassade åtgärder](using/building-journeys/using-custom-actions.md)
+         + [Hoppa från en resa till en annan](using/building-journeys/jump.md)
    + [Testa resan](using/building-journeys/testing-the-journey.md)
    + [Publicera resan](using/building-journeys/publishing-the-journey.md)
    + Dela resesteg med Adobe Experience Platform {#sharing-journey-steps}
@@ -93,6 +98,7 @@ ht-degree: 99%
       + [Fältreferenser](using/expression/field-references.md)
       + [Funktioner för att hantera samlingar](using/expression/collection-management-functions.md)
       + [Operatorer](using/expression/operators.md)
+      + [Reseegenskaper](using/expression/journey-properties.md)
       + [Exempel](using/expression/advanced-editor-use-cases.md)
    + Funktioner {#main-functions-journey}
       + [Huvudfunktioner](using/expression/functions.md)
@@ -187,5 +193,4 @@ ht-degree: 99%
    + [Översikt över alfavärden](using/alpha/alpha-overview.md)
    + [Användargränssnitt](using/alpha/alpha-interface.md)
    + [Läsa segmentaktivitet](using/alpha/alpha-segment-trigger.md)
-   + [Regelbaserade händelser](using/alpha/alpha-events.md)
 
