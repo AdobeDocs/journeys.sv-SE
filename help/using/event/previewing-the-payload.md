@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Förhandsgranska nyttolasten
 description: Lär dig hur du förhandsgranskar nyttolasten
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 81bb0b5da38217f9290214901c64e90d7ec2ba0e
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 8%
+source-wordcount: '113'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ Med nyttolastförhandsvisningen kan du validera nyttolastdefinitionen.
 
 >[!NOTE]
 >
->När du skapar en händelse sparar du händelsen och öppnar den igen innan du visar nyttolastförhandsvisningen. Det här steget behövs för att generera ett händelse-ID i nyttolasten.
+>För systemgenererade händelser sparar du händelsen och öppnar den igen när du skapar en händelse innan du visar nyttolastförhandsvisningen. Det här steget behövs för att generera ett händelse-ID i nyttolasten.
 
 1. Klicka på **[!UICONTROL View Payload]** ikonen om du vill förhandsgranska den nyttolast som systemet förväntar sig.
 
