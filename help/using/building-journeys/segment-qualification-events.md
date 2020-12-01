@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Segment med kvalificeringshändelser
 description: Läs mer om kvalificeringshändelser för segment
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 6ebedad2cb8e78b4dd953bc7a2993cebbeefabcc
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '709'
 ht-degree: 1%
 
 ---
@@ -82,6 +82,8 @@ Om gruppsegmentet dessutom är nyskapat och används omedelbart under en resa ka
 ### Strömmade segment{#streamed-speed-segment-qualification}
 
 Vid användning av segmentkvalificering för direktuppspelade segment är risken mindre för att få stora toppar av ingångar/utgångar på grund av den kontinuerliga utvärderingen av segmentet. Men om segmentdefinitionen leder till att ett stort antal kunder kvalificerar sig samtidigt kan det ändå bli en topp.
+
+For more information on streaming segmentation, refer to this [page](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html#api)
 
 ### Så här undviker du överbelastningar{#overloads-speed-segment-qualification}
 
