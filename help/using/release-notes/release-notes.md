@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Versionsinformation
 description: Läs om versionsinformation
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 9cd37af0281e9fb837c7bf52a52c8dbffd0d4a78
 workflow-type: tm+mt
-source-wordcount: '1731'
-ht-degree: 90%
+source-wordcount: '2055'
+ht-degree: 77%
 
 ---
 
@@ -16,6 +16,71 @@ ht-degree: 90%
 
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
+
+## November 2020-utgåvan {#november-release}
+
+<table>
+<thead>
+<tr>
+<th><strong>Hoppa från en resa till en annan</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Vi har lagt till en ny åtgärdsaktivitet som gör att ni kan föra personer från en resa till en annan. Med hoppaktiviteten kan du:
+</p>
+<ul>
+<li>förenkla utformningen av mycket komplexa resor genom att dela upp dem i flera. </li>
+<li>bygga resor baserat på gemensamma och återanvändbara resemönster</li>
+</ul>
+<p>Mer information finns i den <a href="../building-journeys/jump.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Använda reseegenskaper i uttrycksredigeraren</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>I den avancerade uttrycksredigeraren har vi lagt till en ny kategori i listan med fält och funktioner. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats. Då får ni fler möjligheter när ni bygger era resor. Du kan till exempel meddela tredjepartssystem om ett villkor eller en åtgärd innehåller fel.
+</p>
+<p>Observera att den här funktionen kommer att vara tillgänglig de närmaste dagarna.</p>
+<p>Mer information finns i den <a href="../expression/journey-properties.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Regelbaserade händelser (beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Vi har lagt till en ny metod för att enklare konfigurera dina händelser. Den här funktionen, som har testats bland ett begränsat antal kunder genom Alpha-programmet, är nu tillgänglig i Beta för alla kunder. Den här nya metoden kräver inte att ett eventID används. Den utvärderar om händelsen ska utlösas enligt ett villkor. Du kan fortfarande använda den befintliga metoden, som nu kallas"systemgenererad".
+</p>
+<p>Observera att den här funktionen kommer att vara tillgänglig de närmaste dagarna.</p>
+<p>Mer information finns i den <a href="../expression/journey-properties.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Andra förbättringar{#october-november}
+
+Begränsningar har lagts till när nya versioner av en resa skapas. Dessa begränsningar förhindrar alltför stora förändringar i kundresan för att bibehålla en viss enhetlighet mellan versionerna. [Läs mer](../about/limitations.md#journey-versions-limitations)
+
+Aktiviteten **Segmentkvalificering** kan inte längre användas i en resa som innehåller meddelandeaktiviteter för Campaign Standarder. Den här begränsningen skyddar integriteten för Adobe Campaign Standard-instanser. Användningen av Segmentkvalificering kan faktiskt leda till dagliga toppar av meddelanden som skulle överbelasta Campaign Standarden Transactional Messaging. [Läs mer](../about/limitations.md#segment-qualification)
 
 ## Oktober 2020-versionen {#october-release}
 
@@ -135,11 +200,11 @@ Läs det här [avsnittet](../alpha/alpha-overview.md) för att upptäcka omfattn
 <p>Följande förbättringar har gjorts i regelbaserade händelser:
 </p>
 <ul>
-<li><p>Du kan nu utnyttja alla händelsedata från beteenden i Adobe Analytics som du redan samlar in och strömmar till plattformen för att utlösa resor och automatisera kundernas upplevelser. <a href="../alpha/alpha-events.md#analytics-data">Läs mer</a></p>
+<li><p>Du kan nu utnyttja alla händelsedata från beteenden i Adobe Analytics som du redan samlar in och strömmar till plattformen för att utlösa resor och automatisera kundernas upplevelser. <a href="../event/about-analytics.md">Läs mer</a></p>
 </li>
-<li><p>När du utlöser en regelbaserad händelse i testläget kan du nu direkt se villkorets händelse-ID. Dessutom har ett verktygstips lagts till bredvid varje fält som en del av regelutvärderingen. <a href="../alpha/alpha-events.md#configuring-rule-based">Läs mer</a></p>
+<li><p>När du utlöser en regelbaserad händelse i testläget kan du nu direkt se villkorets händelse-ID. Dessutom har ett verktygstips lagts till bredvid varje fält som en del av regelutvärderingen. <a href="../building-journeys/testing-the-journey.md#test-rule-based">Läs mer</a></p>
 </li>
-<li><p>Den regelbaserade skärmen för händelsedefinition har omorganiserats för att leverera en bättre upplevelse. <a href="../alpha/alpha-events.md#test-rule-based">Läs mer</a></p>
+<li><p>Den regelbaserade skärmen för händelsedefinition har omorganiserats för att leverera en bättre upplevelse. <a href="../event/about-creating.md">Läs mer</a></p>
 </li>
 </ul>
 </td>
@@ -201,7 +266,7 @@ De här funktionerna beskrivs i ett dedikerat [avsnitt](../alpha/alpha-overview.
 <tbody>
 <tr>
 <td>
-<p>Vi har förenklat hur du konfigurerar upplevelsehändelser. Vi introducerar en ny metod som inte kräver att ett händelse-ID används. När du konfigurerar en händelse i Journey Orchestration kan du nu definiera en regelbaserad händelse. <a href="../alpha/alpha-events.md">Läs mer</a>
+<p>Vi har förenklat hur du konfigurerar upplevelsehändelser. Vi introducerar en ny metod som inte kräver att ett händelse-ID används. När du konfigurerar en händelse i Journey Orchestration kan du nu definiera en regelbaserad händelse. <a href="../event/about-events.md">Läs mer</a>
 </p>
 </td>
 </tr>
@@ -277,8 +342,6 @@ Journey Orchestration är nu tillgängligt i APAC (Australiens datacenter). Effe
 Gränssnittet i Journey Orchestration finns tillgängligt på japanska.
 
 ## Utgåvan kvartal 1 – mars 2020 {#q1-release---march-2020}
-
-**Nyheter?**
 
 <table>
 <thead>
