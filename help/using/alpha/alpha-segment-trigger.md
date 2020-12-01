@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Läsa segmentaktivitet
 description: Läs mer om Läs segment-aktiviteten.
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 6ebedad2cb8e78b4dd953bc7a2993cebbeefabcc
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '651'
 ht-degree: 4%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 4%
 Med Läs segment-aktiviteten kan alla personer som tillhör ett Adobe Experience Platform-segment delta i en resa. Inträde i en resa kan genomföras antingen en gång eller regelbundet.
 
 Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktiviteten Läs segment kan alla personer som tillhör kundsegmentet Gold ta sig in på en resa och få dem att flöda in i personaliserade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
+
+>[!NOTE]
+>
+>Du kan inte ha ett hopp och en **Läs-segmentsaktivitet** på samma resa. Du kan inte hoppa till en resa som börjar med en **Read-segmenthändelse** .
 
 ## Konfigurera aktiviteten {#configuring-segment-trigger-activity}
 
