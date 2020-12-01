@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: 'Om ExperienceEvent-scheman för Journey Orchestration-händelser '
 description: 'Läs om ExperienceEvent-scheman för Journey Orchestration-händelser '
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 81bb0b5da38217f9290214901c64e90d7ec2ba0e
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Alla XDM-scheman som används för [!DNL Journey Orchestration] händelser ska u
 
    ![](../assets/schema2.png)
 
-* Schemat måste innehålla Orchestration-händelseID-mixin. [!DNL Journey Orchestration] använder det här fältet för att identifiera händelser som används under resor.
+* För systemgenererade händelser måste schemat innehålla Orchestration-händelseID-mixin. [!DNL Journey Orchestration] använder det här fältet för att identifiera händelser som används under resor.
 
    ![](../assets/schema3.png)
 
