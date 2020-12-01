@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Reseversioner
 description: Läs om olika versioner av resan
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 6ebedad2cb8e78b4dd953bc7a2993cebbeefabcc
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 3%
+source-wordcount: '243'
+ht-degree: 2%
 
 ---
 
@@ -19,6 +19,10 @@ I reselistan visas alla reseversioner med versionsnumret. Läs [den här sidan](
 ![](../assets/journeyversions1.png)
 
 Om du behöver ändra till en direktresa måste du skapa en ny version av din resa.
+
+>[!NOTE]
+>
+>Mer information om begränsningar för resversioner finns på [den här sidan](../about/limitations.md#journey-versions-limitations)
 
 1. Öppna den senaste versionen av din liveresa, klicka **[!UICONTROL Create a new version]** och bekräfta.
 
