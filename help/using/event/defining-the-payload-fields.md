@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Definiera nyttolastfält
 description: Lär dig hur du definierar nyttolastfälten
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 81bb0b5da38217f9290214901c64e90d7ec2ba0e
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '282'
 ht-degree: 6%
 
 ---
@@ -34,7 +34,7 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 
    >[!NOTE]
    >
-   >Fältet läggs automatiskt till i listan med markerade fält så att **[!UICONTROL eventID]** händelsen [!DNL Journey Orchestration] kan identifieras. Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. Läs [den här sidan](../event/previewing-the-payload.md).
+   >För systemgenererade händelser läggs **[!UICONTROL eventID]** fältet automatiskt till i listan över valda fält så att händelsen kan [!DNL Journey Orchestration] identifieras. Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. Läs [den här sidan](../event/previewing-the-payload.md).
 
 1. När du är klar med att markera önskade fält klickar du på **[!UICONTROL Save]** eller trycker **[!UICONTROL Enter]**.
 
