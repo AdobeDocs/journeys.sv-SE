@@ -2,17 +2,17 @@
 product: adobe campaign
 solution: Journey Orchestration
 title: Om händelser
-description: Läs om hur du konfigurerar en händelse
+description: Läs mer om evenemang
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: c66c09441f69e7026c60c37f87972e1e4ac9f7f8
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 98%
+source-wordcount: '385'
+ht-degree: 54%
 
 ---
 
 
-# Om händelser {#concept_gfj_fqt_52b}
+# Allmän princip {#concept_gfj_fqt_52b}
 
 >[!CONTEXTUALHELP]
 >id="jo_events"
@@ -27,42 +27,15 @@ Med händelsekonfigurationen kan du definiera vilken information som [!DNL Journ
 
 Om du redigerar en händelse som används i ett utkast eller en resa i realtid kan du bara ändra namn eller beskrivning eller lägga till fält för nyttolast. Vi begränsar strikt utgåvan av utkast eller resor i realtid för att undvika att resor avbryts.
 
-## Allmän princip {#section_r1f_xqt_pgb}
+Du kan definiera två typer av händelser:
 
-Händelser är POST API-anrop. Händelser skickas till Adobe Experience Platform via API:er för strömningsinmatning. URL-destinationen för händelser som skickas via API:er för transaktionsmeddelanden kallas för ett &quot;inlet&quot;. Händelsers nyttolast följer XDM-formateringen.
+* **Regelbaserade** händelser: den här händelsetypen genererar inget eventID. Med den enkla uttrycksredigeraren definierar du helt enkelt en regel som ska användas av systemet för att identifiera de relevanta händelser som utlöser dina resor. Den här regeln kan baseras på alla fält som är tillgängliga i händelsenyttolasten, till exempel profilens plats eller antalet objekt som läggs till i profilens kundvagn.
 
-Nyttolasten innehåller information som krävs för att API:er för strömningsinmatning ska fungera (i rubriken) och den information som krävs för att [!DNL Journey Orchestration] ska kunna fungera (händelse-ID och en del av nyttolastens brödtext). Den innehåller även information som ska användas på resor (i brödtexten, till exempel värdet på en övergiven kundvagn). Det finns två lägen för strömningsinmatning – autentiserad och ej autentiserad. Se [den här länken](https://docs.adobe.com/content/help/sv-SE/experience-platform/xdm/api/getting-started.html) för mer information om API:er för strömningsinmatning.
-
-Efter att ha anlänt via API:er för strömningsinmatning flödar händelserna till en intern tjänst som kallas pipeline och sedan i Adobe Experience Platform. Om händelseschemat har tjänstflaggan realtidskundprofil aktiverad och ett datauppsättnings-ID som även har flaggan realtidskundprofil flödar det in i tjänsten realtidskundprofil.
-
-En pipeline filtrerar händelser som har en nyttolast som innehåller händelse-ID:n i [!DNL Journey Orchestration] (se processen för att skapa händelser nedan) som tillhandahålls av [!DNL Journey Orchestration] och finns i händelsens nyttolast. [!DNL Journey Orchestration] läser av dessa händelser och motsvarande resa aktiveras.
-
-## Skapa en ny händelse {#section_tbk_5qt_pgb}
-
-Här följer de viktigaste stegen för att konfigurera en ny händelse:
-
-1. Klicka på fliken **[!UICONTROL Events]** på den övre menyn. Listan med händelser visas. Mer information om gränssnittet finns på [den här sidan](../about/user-interface.md) .
-
-   ![](../assets/journey5.png)
-
-1. Klicka på **[!UICONTROL Add]** för att skapa en ny händelse. Konfigurationsfönstret för händelsen öppnas till höger på skärmen.
-
-   ![](../assets/journey6.png)
-
-1. Ange ett namn på händelsen.
-
-   >[!NOTE]
+   >[!CAUTION]
    >
-   >Använd inte blanksteg eller specialtecken. Använd maximalt 30 tecken.
+   >En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan behandla till 400 kB per minut. Kontakta Adobe för mer information. Utöver den här begränsningsregeln definieras en gräns på 5000 händelser för sekunder på resenivån.
 
-1. Lägg till en beskrivning för händelsen. Det här steget är valfritt.
-1. Definiera fälten för schemat och nyttolasten. Här väljer du den händelseinformation (kallas vanligtvis nyttolast) som [!DNL Journey Orchestration] förväntas ta emot. Du kan sedan använda den här informationen i din resa. Läs [den här sidan](../event/defining-the-payload-fields.md).
-1. Antalet resor som använder den här händelsen visas i fältet **[!UICONTROL Used in]**. Du kan klicka på ikonen **[!UICONTROL View journeys]** för att visa en lista över resor som använder den här händelsen.
-1. Lägg till en namnrymd. Det här steget är valfritt men rekommenderas eftersom du kan lägga till en namnrymd vilket innebär att du kan utnyttja information som lagras i realtidskundprofilen. Denna definierar vilken typ av nyckel händelsen har. Läs [den här sidan](../event/selecting-the-namespace.md).
-1. Definiera nyckeln. Välj ett fält från dina fält med nyttolaster eller definiera en formel som identifierar den person som är associerad med händelsen. Den här nyckeln konfigureras automatiskt (men kan fortfarande redigeras) om du väljer en namnrymd. [!DNL Journey Orchestration] väljer den nyckel som ska motsvara namnrymden (om du till exempel väljer en e-postnamnrymd väljs e-postnyckeln). Läs [den här sidan](../event/defining-the-event-key.md).
-1. Lägga till ett villkor. Det här steget är valfritt. Med detta kan systemet endast bearbeta händelser som uppfyller villkoret. Villkoret kan endast baseras på information som finns i händelsen. Läs [den här sidan](../event/adding-a-condition.md).
-1. Klicka på **[!UICONTROL Save]**.
+* **Systemgenererade** händelser: dessa händelser kräver ett eventID. Detta eventID-fält genereras automatiskt när händelsen skapas. Det system som skickar händelsen ska inte generera ett ID, det ska skicka det som finns i nyttolastförhandsvisningen.
 
-   ![](../assets/journey7.png)
+Mer information om hur du skapar en händelse finns på den här [sidan](../event/about-creating.md).
 
-   Händelsen är nu konfigurerad och klar att injiceras i en resa. Ytterligare konfigurationssteg krävs för att ta emot händelser. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey-orchestration.md).
