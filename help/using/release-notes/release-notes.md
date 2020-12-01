@@ -4,7 +4,7 @@ solution: Journey Orchestration
 title: Versionsinformation
 description: Läs om versionsinformation
 translation-type: tm+mt
-source-git-commit: 3015d4caaedbd45ea5b94e426788f39b2774053e
+source-git-commit: fe34587181d284944ce1af64b12ad1185c59f890
 workflow-type: tm+mt
 source-wordcount: '2055'
 ht-degree: 77%
@@ -80,9 +80,9 @@ Du kan även läsa [dokumentationsuppdateringarna](../release-notes/documentatio
 
 Begränsningar har lagts till när nya versioner av en resa skapas. Dessa begränsningar förhindrar alltför stora förändringar i kundresan för att bibehålla en viss enhetlighet mellan versionerna. [Läs mer](../about/limitations.md#journey-versions-limitations)
 
-Aktiviteten **Segmentkvalificering** kan inte längre användas i en resa som innehåller meddelandeaktiviteter för Campaign Standarder. Den här begränsningen skyddar integriteten för Adobe Campaign Standard-instanser. Användningen av Segmentkvalificering kan faktiskt leda till dagliga toppar av meddelanden som skulle överbelasta Campaign Standarden Transactional Messaging. [Läs mer](../about/limitations.md#segment-qualification)
+Det går inte längre att använda aktiviteten **Segmentkvalificering** i en resa som innehåller meddelandeaktiviteter för Campaign Standarder. Den här begränsningen skyddar integriteten för Adobe Campaign Standard-instanser. Användningen av Segmentkvalificering kan faktiskt leda till dagliga toppar av meddelanden som skulle överbelasta Campaign Standarden Transactional Messaging. [Läs mer](../about/limitations.md#segment-qualification)
 
-## Oktober 2020-versionen {#october-release}
+## Oktober 2020-utgåvan {#october-release}
 
 <table>
 <thead>
@@ -139,7 +139,7 @@ Läs det här [avsnittet](../alpha/alpha-overview.md) för att upptäcka omfattn
 <tbody>
 <tr>
 <td>
-<p>The following improvements have been made to the <strong>Read segment</strong> activity:
+<p>Följande förbättringar har gjorts i aktiviteten <strong>Läs segment</strong>:
 </p>
 <ul>
 <li><p>Segmentbaserade resor visar nu, ovanför arbetsytan, en påminnelse om resans schematyp. Du kan klicka på den här påminnelsen för att komma åt schemakonfigurationsmenyn.</p>
@@ -147,7 +147,7 @@ Läs det här [avsnittet](../alpha/alpha-overview.md) för att upptäcka omfattn
 <li><p>Detaljrikedomen i testlägesloggarna har förbättrats för att visa segmentets exportförloppsstatus.</p>
 </li>
 </ul>
-<p>Mer information om <strong>Läs-segmentsaktiviteten</strong> finns i den <a href="../alpha/alpha-segment-trigger.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information om aktiviteten <strong>Läs segment</strong> finns i <a href="../alpha/alpha-segment-trigger.md">den detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
