@@ -4,7 +4,7 @@ solution: Journey Orchestration
 title: Reseegenskaper
 description: Läs om reseegenskaper
 translation-type: tm+mt
-source-git-commit: 1fd02fcc2a535046cfbcdb5d1c52850ee93370af
+source-git-commit: b989e167c4aa5d8ef2667442231ff8857c5f0b18
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Reseegenskaper {#journey-properties}
 
-I den avancerade uttrycksredigeraren hittar du kategorin **Reseegenskaper** , under kategorierna för händelse och datakälla. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats.
+I den avancerade uttrycksredigeraren finns kategorin **Reseegenskaper** nedanför kategorierna event och datakälla. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats.
 
 ![](../assets/journey-properties.png)
 
@@ -35,28 +35,28 @@ Här är några exempel på användningsområden:
 
 * **Förfina fel i rapportering** : I stället för att bara ha en sökväg för felmeddelanden kan du definiera ett villkor per feltyp. På så sätt kan du förfina rapporteringen och visa alla feltyper.
 
-## Fältlista {#journey-properties-fields}
+## Lista med fält {#journey-properties-fields}
 
-|Kategori|Fältnamn|Etikett|Beskrivning|
-|-|-|-|—|
-|Reseversion|resaUID|Reseidentifierare| |
-| |travelVersionUID|Identifierare för reseversion| |
-| |travelVersionName|Resursversionsnamn| |
-| |travelVersionDescription|Beskrivning av reseversion| |
-| |travelVersion|Resversion| |
-|Journey-instans|instanceUID|Journey-instans-ID|ID för instans|
-| |externalKey|Extern nyckel|Individuell identifierare som utlöser resan|
-|Identitet|profileId|Identity-ID för profil|Identifierare för profilen i resan|
-| |namespace|Profile Identity Namespace|Namnområde för profilen i resan (exempel: ECID)|
-|Aktuell nod|currentNodeId|Aktuell nod-ID|Identifierare för aktuell aktivitet (nod)|
-| |currentNodeName|Aktuellt nodnamn|Namn på aktuell aktivitet (nod)|
-|Föregående nod|previousNodeId|Föregående nodidentifierare|Identifierare för föregående aktivitet (nod)|
-| |previousNodeName|Föregående nodnamn|Namn på föregående aktivitet (nod)|
-|Fel|lastNodeUIDInError|Senaste nodidentifierare i fel|Identifierare för den senaste aktiviteten (nod) i fel|
-| |lastNodeNameInError|Senaste nodnamn i fel|Namnet på den senaste aktiviteten (nod) i fel|
-| |lastNodeTypeInError|Senaste nodtyp i Error|Feltyp för den senaste aktiviteten (nod) i fel. Möjliga typer:<ul><li>Händelser: Händelser, reaktioner, SQ (exempel: Segmentkvalificering)</li><li>Flödeskontroll: Slut, Villkor, Vänta</li><li>Funktionsmakron: ACS-åtgärder, Jump, Custom Action</li></ul>|
-| |lastErrorCode|Senaste felkod|Felkod för den senaste aktiviteten (nod) i fel. Möjliga fel: <ul><li>HTTP-felkoder</li><li>mappad</li><li>timedOut</li><li>fel (exempel: standard om ett oväntat fel inträffar. Ska inte/mycket sällan inträffa)</li></ul>|
-| |lastExecutedActionErrorCode|Senaste körda felkod|Felkod för senaste felåtgärd |
-| |lastDataFetchErrorCode|Felkod för senaste datainhämtning|Felkod för senaste datainhämtning från datakällor|
-|Time|lastActionExecutionElapsedTime|Senaste körningstid|Tid som har använts för att köra den senaste åtgärden|
-| |lastDataFetchElapsedTime|Senaste tid för datahämtning|Tid för att köra den senaste datahämtningen från datakällor|
+| Kategori | Fältnamn | Etikett | Beskrivning |
+|---|---|---|------------|
+| Reseversion | travelUID | Reseidentifierare |  |
+|  | travelVersionUID | Reseversionsidentifierare |  |
+|  | travelVersionName | Namn på reseversion |  |
+|  | travelVersionDescription | Beskrivning av reseversion |  |
+|  | travelVersion | Reseversion |  |
+| Reseinstans | instanceUID | Journey-instans-ID | ID för instansen |
+|  | externalKey | Extern nyckel | Individuell identifierare som utlöser resan |
+| Identitet | profileId | Identifierare för profilidentitet | Identifierare för profilen i resan |
+|  | namespace | Namnområde för profilidentitet | Profilens namnområde under resan (exempel: ECID) |
+| Aktuell nod | currentNodeId | Aktuell nodidentifierare | Identifierare för den aktuella aktiviteten (nod) |
+|  | currentNodeName | Aktuellt nodnamn | Namn på aktuell aktivitet (nod) |
+| Föregående nod | previousNodeId | Föregående nodidentifierare | Identifierare för föregående aktivitet (nod) |
+|  | previousNodeName | Föregående nodnamn | Namn på föregående aktivitet (nod) |
+| Fel | lastNodeUIDInError | Senaste nodidentifierare i fel | Identifierare för den senaste aktiviteten (nod) vid fel |
+|  | lastNodeNameInError | Senaste nodnamn i fel | Namn på den senaste aktiviteten (nod) med fel |
+|  | lastNodeTypeInError | Senaste nodtyp i fel | Feltyp för den senaste aktiviteten (nod). Möjliga typer:<ul><li>Händelser: Händelser, reaktioner, SQ (exempel: Segmentkvalificering)</li><li>Flödeskontroll: Slut, Villkor, Vänta</li><li>Funktionsmakron: ACS-åtgärder, Jump, Custom Action</li></ul> |
+|  | lastErrorCode | Senaste felkod | Felkod för den senaste aktiviteten (nod). Möjliga fel: <ul><li>HTTP-felkoder</li><li>mappad</li><li>timedOut</li><li>fel (exempel: standard om ett oväntat fel inträffar. Ska inte/mycket sällan inträffa)</li></ul> |
+|  | lastExecutedActionErrorCode | Felkod för senaste körda åtgärd | Felkod för den senaste felåtgärden |
+|  | lastDataFetchErrorCode | Felkod för senaste datainhämtning | Felkod för den senaste datahämtningen från datakällor |
+| Tid | lastActionExecutionElapsedTime | Senaste körningstid för åtgärd | Tid som har använts för att köra den senaste åtgärden |
+|  | lastDataFetchElapsedTime | Senaste tid för datahämtning | Den tid som har använts för att köra den senaste datahämtningen från datakällor |
