@@ -4,19 +4,15 @@ solution: Journey Orchestration
 title: Hoppa från en resa till en annan
 description: Hoppa från en resa till en annan
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 6ebedad2cb8e78b4dd953bc7a2993cebbeefabcc
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
 
 
 # Hoppa från en resa till en annan {#jump}
-
->[!NOTE]
->
->Effektiv tillgänglighet: 15 november 2020
 
 Med aktiviteten **Hoppåtgärd** kan ni föra människor från en resa till en annan. Med den här funktionen kan du:
 
@@ -38,21 +34,31 @@ Här är de olika stegen i körningsprocessen:
 1. Personen kommer till hoppsteget.
 1. Personen flyttas till resa B och fortsätter till nästa steg i resa A, efter hoppet.
 
-Under **resa B** kan den första händelsen utlösas externt (som en vanlig händelse) eller internt, via ett hopp från resa A:
+Under resa B utlöses den första händelsen internt via resan A:
 
 1. Resan B fick en intern händelse från resa A.
-1. Den första händelsen med resa B utlöses av information från resa A.
 1. Personen börjar flyta i resa B.
+
+>[!NOTE]
+>
+>Resa B kan också utlösas via en extern händelse.
 
 ## Viktiga anteckningar
 
+### Redigering
+
+* Hoppa är bara tillgänglig på resor som använder ett namnutrymme.
 * Du kan bara hoppa till en resa som använder samma namnutrymme som ursprungsresan.
 * Du kan inte hoppa till en resa som börjar med en **segmentkvalificeringshändelse** .
-* När hoppet är klart aktiveras den senaste versionen av målresan.
+* Du kan inte ha en hopphändelse och en **segmentkvalificeringshändelse** på samma resa.
 * Du kan inkludera så många hopp som du behöver under en resa. Efter ett hopp kan du lägga till alla aktiviteter som behövs.
 * Du kan ha så många hoppnivåer som behövs. Till exempel hoppar resa A till resa B, som hoppar till resa C och så vidare.
 * Målresan kan även omfatta så många hopp som behövs.
 * Loopmönster stöds inte. Det finns inget sätt att länka samman två eller flera resor som skulle skapa en oändlig slinga. Konfigurationsskärmen för **hoppaktivitet** förhindrar att du gör detta.
+
+### Körning
+
+* När hoppet är klart aktiveras den senaste versionen av målresan.
 * Som vanligt kan en unik individ bara vara närvarande en gång under samma resa. Om den person som har åsamkats från ursprungsresan redan befinner sig på målresan, kommer personen alltså inte att ta sig in på målresan. Inget fel rapporteras om hoppet eftersom det är ett normalt beteende.
 
 ## Konfigurera hoppet
@@ -84,9 +90,16 @@ Fältet **Första händelse** är förifyllt med namnet på målresans första h
 
    ![](../assets/jump5.png)
 
+
+   >[!NOTE]
+   >
+   >Personens identitet mappas automatiskt. Den här informationen visas inte i gränssnittet.
+
 Ditt hopp är konfigurerat. Så snart din resa är live eller i testläge kommer personer som når hoppet att pushas från till målresan.
 
 När ett hopp är konfigurerat på en resa läggs en ikon för att hoppa in automatiskt till i början av målresan. Detta hjälper er att identifiera att resan kan utlösas externt men också internt från ett hopp.
+
+![](../assets/jump7.png)
 
 ## Felsökning
 
@@ -94,3 +107,5 @@ När resan publiceras eller i testläge inträffar fel om:
 * målresan inte längre existerar
 * målresan är utkast, avslutad eller stoppad
 * om den första händelsen i målresan har ändrats och mappningen är bruten
+
+![](../assets/jump6.png)
