@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Om händelser
 description: Läs mer om evenemang
 translation-type: tm+mt
-source-git-commit: c66c09441f69e7026c60c37f87972e1e4ac9f7f8
+source-git-commit: 3dd7cd4dc4e4398b029dd1becd11c8dd7e7c3542
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 54%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,9 +33,9 @@ Du kan definiera två typer av händelser:
 
    >[!CAUTION]
    >
-   >En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan behandla till 400 kB per minut. Kontakta Adobe för mer information. Utöver den här begränsningsregeln definieras en gräns på 5000 händelser för sekunder på resenivån.
+   >En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan behandla till 5 000 per sekund för en viss organisation (ORG). Det motsvarar Journey Orchestration SLA. Se den här [sidan](https://helpx.adobe.com/legal/product-descriptions/journey-orchestration.html).
 
-* **Systemgenererade** händelser: dessa händelser kräver ett eventID. Detta eventID-fält genereras automatiskt när händelsen skapas. Det system som skickar händelsen ska inte generera ett ID, det ska skicka det som finns i nyttolastförhandsvisningen.
+* **Systemgenererade** undantag: dessa händelser kräver ett eventID. Detta eventID-fält genereras automatiskt när händelsen skapas. Det system som skickar händelsen ska inte generera ett ID, det ska skicka det som finns i nyttolastförhandsvisningen.
 
 Mer information om hur du skapar en händelse finns på den här [sidan](../event/about-creating.md).
 
