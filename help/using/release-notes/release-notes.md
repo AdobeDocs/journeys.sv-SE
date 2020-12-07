@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Versionsinformation
 description: Läs om versionsinformation
 translation-type: tm+mt
-source-git-commit: fe34587181d284944ce1af64b12ad1185c59f890
+source-git-commit: 010bccb16d2b6980ff758e3922d3bc315706f61b
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 77%
+source-wordcount: '2026'
+ht-degree: 78%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 77%
 # Versionsinformation {#release-notes}
 
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
-Du kan även läsa [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
+Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
 
 ## November 2020-utgåvan {#november-release}
 
@@ -28,7 +28,7 @@ Du kan även läsa [dokumentationsuppdateringarna](../release-notes/documentatio
 <tbody>
 <tr>
 <td>
-<p>Vi har lagt till en ny åtgärdsaktivitet som gör att ni kan föra personer från en resa till en annan. Med hoppaktiviteten kan du:
+<p>En ny åtgärdsaktivitet gör att ni kan skjuta individer från en resa till en annan. Med aktiviteten <strong>Hoppa</strong> kan du:
 </p>
 <ul>
 <li>förenkla utformningen av mycket komplexa resor genom att dela upp dem i flera. </li>
@@ -51,7 +51,6 @@ Du kan även läsa [dokumentationsuppdateringarna](../release-notes/documentatio
 <td>
 <p>I den avancerade uttrycksredigeraren har vi lagt till en ny kategori i listan med fält och funktioner. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats. Då får ni fler möjligheter när ni bygger era resor. Du kan till exempel meddela tredjepartssystem om ett villkor eller en åtgärd innehåller fel.
 </p>
-<p>Observera att den här funktionen kommer att vara tillgänglig de närmaste dagarna.</p>
 <p>Mer information finns i den <a href="../expression/journey-properties.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -67,9 +66,8 @@ Du kan även läsa [dokumentationsuppdateringarna](../release-notes/documentatio
 <tbody>
 <tr>
 <td>
-<p>Vi har lagt till en ny metod för att enklare konfigurera dina händelser. Den här funktionen, som har testats bland ett begränsat antal kunder genom Alpha-programmet, är nu tillgänglig i Beta för alla kunder. Den här nya metoden kräver inte att ett eventID används. Den utvärderar om händelsen ska utlösas enligt ett villkor. Du kan fortfarande använda den befintliga metoden, som nu kallas"systemgenererad".
+<p>Det finns nu en ny metod för att enklare konfigurera händelser, utan att använda ett eventID: regelbaserade händelser utvärderar om händelsen ska utlösas enligt ett villkor. Du kan fortfarande använda den befintliga metoden, som nu kallas"systemgenererad". Den här funktionen, som har testats bland ett begränsat antal kunder genom Alpha-programmet, är nu tillgänglig i Beta för alla kunder.
 </p>
-<p>Observera att den här funktionen kommer att vara tillgänglig de närmaste dagarna.</p>
 <p>Mer information finns i den <a href="../event/about-events.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
