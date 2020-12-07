@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Hoppa från en resa till en annan
 description: Hoppa från en resa till en annan
 translation-type: tm+mt
-source-git-commit: fe34587181d284944ce1af64b12ad1185c59f890
+source-git-commit: 010bccb16d2b6980ff758e3922d3bc315706f61b
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -14,27 +14,27 @@ ht-degree: 0%
 
 # Hoppa från en resa till en annan {#jump}
 
-Med åtgärden **Hoppa** kan du flytta personer från en resa till en annan. Med den här funktionen kan du:
+Med åtgärden **[!UICONTROL Jump]** kan du flytta personer från en resa till en annan. Med den här funktionen kan du:
 
 * förenkla utformningen av mycket komplexa resor genom att dela upp dem i flera.
 * bygga resor baserat på gemensamma och återanvändbara resemönster
 
-Lägg bara till en **Jump** i den ursprungliga resan och välj en målresa. När personen går över i hoppsteget skickas en intern händelse till den första händelsen i målresan. Om hoppåtgärden lyckas fortsätter personen att göra framsteg på resan. Beteendet liknar andra åtgärder.
+Lägg bara till en **[!UICONTROL Jump]**-aktivitet i den ursprungliga resan och välj en målresa. När personen går in i **[!UICONTROL Jump]**-steget skickas en intern händelse till den första händelsen i målresan. Om **[!UICONTROL Jump]**-åtgärden lyckas fortsätter personen att gå vidare i resan. Beteendet liknar andra åtgärder.
 
-Under målresan kommer den första händelsen som utlöses internt av hoppet att få det enskilda flödet i resan.
+Under målresan kommer den första händelsen som utlöses internt av aktiviteten **[!UICONTROL Jump]** att göra det individuella flödet på resan.
 
 ## Livscykel
 
-Säg att du har lagt till ett hopp i en resa A till en resa B. Resa A är den **ursprungliga resan** och resa B, **målresan**.
+Säg att du har lagt till en **[!UICONTROL Jump]**-aktivitet i en resa A på en resa B. Resa A är den **ursprungliga resan** och resa B, **målresan**.
 Här är de olika stegen i körningsprocessen:
 
 **Resa** Ais utlöses från en extern händelse:
 
 1. Resa A får en extern händelse som rör en individ.
-1. Personen kommer till hoppsteget.
-1. Personen flyttas till resa B och fortsätter till nästa steg i resa A, efter hoppet.
+1. Personen uppnår steget **[!UICONTROL Jump]**.
+1. Personen flyttas till resa B och fortsätter till nästa steg i resa A, efter steget **[!UICONTROL Jump]**.
 
-Under resa B utlöses den första händelsen internt via resan A:
+Under resa B utlöses den första händelsen internt via aktiviteten **[!UICONTROL Jump]** från resa A:
 
 1. Resan B fick en intern händelse från resa A.
 1. Personen börjar flyta i resa B.
@@ -43,31 +43,31 @@ Under resa B utlöses den första händelsen internt via resan A:
 >
 >Resa B kan också utlösas via en extern händelse.
 
-## Viktiga anteckningar
+## God praxis och begränsningar
 
 ### Redigering
 
-* Hoppa är bara tillgänglig på resor som använder ett namnutrymme.
+* Aktiviteten **[!UICONTROL Jump]** är bara tillgänglig på resor som använder ett namnutrymme.
 * Du kan bara hoppa till en resa som använder samma namnutrymme som ursprungsresan.
 * Du kan inte hoppa till en resa som börjar med en **segmentkvalificeringshändelse**.
-* Du kan inte ha ett hopp och en **segmentkvalificeringshändelse** under samma resa.
-* Du kan inkludera så många hopp som du behöver under en resa. Efter ett hopp kan du lägga till alla aktiviteter som behövs.
+* Du kan inte ha en **[!UICONTROL Jump]**-aktivitet och en **segmentkvalificeringshändelse** på samma resa.
+* Du kan inkludera så många **[!UICONTROL Jump]**-aktiviteter som du behöver under en resa. Efter en **[!UICONTROL Jump]** kan du lägga till alla aktiviteter som behövs.
 * Du kan ha så många hoppnivåer som behövs. Till exempel hoppar resa A till resa B, som hoppar till resa C och så vidare.
-* Målresan kan även omfatta så många hopp som behövs.
-* Loopmönster stöds inte. Det finns inget sätt att länka samman två eller flera resor som skulle skapa en oändlig slinga. Aktivitetskonfigurationsskärmen **Hoppa** förhindrar att du gör detta.
+* Målresan kan även innehålla så många **[!UICONTROL Jump]**-aktiviteter som behövs.
+* Loopmönster stöds inte. Det finns inget sätt att länka samman två eller flera resor som skulle skapa en oändlig slinga. Aktivitetskonfigurationsskärmen **[!UICONTROL Jump]** hindrar dig från att göra detta.
 
 ### Körning
 
-* När hoppet är klart aktiveras den senaste versionen av målresan.
-* Som vanligt kan en unik individ bara vara närvarande en gång under samma resa. Om den person som har åsamkats från ursprungsresan redan befinner sig på målresan, kommer personen alltså inte att ta sig in på målresan. Inget fel rapporteras om hoppet eftersom det är ett normalt beteende.
+* När aktiviteten **[!UICONTROL Jump]** körs aktiveras den senaste versionen av målresan.
+* Som vanligt kan en unik individ bara vara närvarande en gång under samma resa. Om den person som har åsamkats från ursprungsresan redan befinner sig på målresan, kommer personen alltså inte att ta sig in på målresan. Inget fel rapporteras för aktiviteten **[!UICONTROL Jump]** eftersom detta är ett normalt beteende.
 
-## Konfigurera hoppet
+## Konfigurera hoppaktiviteten
 
-1. Designa din originalresa.
+1. Utforma din **ursprungliga resa**.
 
    ![](../assets/jump1.png)
 
-1. Lägg till en **Jump**-aktivitet från kategorin **Åtgärd** när som helst under resan. Lägg till en etikett och en beskrivning.
+1. Lägg till en **[!UICONTROL Jump]**-aktivitet från kategorin **[!UICONTROL ACTIONS]** när som helst under resan. Lägg till en etikett och en beskrivning.
 
    ![](../assets/jump2.png)
 
@@ -81,7 +81,7 @@ I listan visas alla reseversioner som är utkast, live eller i testläge. Resurs
    >Du kan klicka på ikonen **Öppna målresa** till höger för att öppna målresan på en ny flik.
 
 1. Välj den målresa som du vill hoppa till.
-Fältet **Första händelsen** är förifyllt med namnet på målresans första händelse. Om målresan innehåller flera händelser tillåts hoppet bara vid den första händelsen.
+Fältet **Första händelsen** är förifyllt med namnet på målresans första händelse. Om målresan innehåller flera händelser tillåts endast **[!UICONTROL Jump]** för den första händelsen.
 
    ![](../assets/jump4.png)
 
@@ -95,9 +95,9 @@ Fältet **Första händelsen** är förifyllt med namnet på målresans första 
    >
    >Personens identitet mappas automatiskt. Den här informationen visas inte i gränssnittet.
 
-Ditt hopp är konfigurerat. Så snart din resa är live eller i testläge kommer personer som når hoppet att pushas från till målresan.
+Din **[!UICONTROL Jump]**-aktivitet är konfigurerad. Så snart din resa är live eller i testläge kommer personer som når steget **[!UICONTROL Jump]** att pushas från till målresan.
 
-När ett hopp är konfigurerat på en resa läggs en ikon för att hoppa in automatiskt till i början av målresan. Detta hjälper er att identifiera att resan kan utlösas externt men också internt från ett hopp.
+När en **[!UICONTROL Jump]**-aktivitet har konfigurerats på en resa läggs en **[!UICONTROL Jump]**-postikon automatiskt till i början av målresan. Detta hjälper dig att identifiera att resan kan utlösas externt men också internt från en **[!UICONTROL Jump]**-aktivitet.
 
 ![](../assets/jump7.png)
 
