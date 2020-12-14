@@ -4,11 +4,11 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Produktdokumentation om Journey Orchestration
 topic: Premium
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '263'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Upptäck de funktioner som för närvarande är tillgängliga genom alfaprogramm
 
 ## Ytterligare resurser
 
-* [Journey Orchestration produktsida](https://www.adobe.com/fr/experience-platform/journey-orchestration.html)
+* [Produktsida för Journey Orchestration](https://www.adobe.com/se/experience-platform/journey-orchestration.html)
 * [Dokumentation om Experience Platform](https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html)
 * [Dokumentation om realtidskundprofil](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html)
 * [Fältdefinition i Experience Cloud XDM](https://docs.adobe.com/content/help/sv-SE/experience-platform/xdm/home.html)
@@ -83,7 +83,7 @@ Upptäck de funktioner som för närvarande är tillgängliga genom alfaprogramm
 
 ## Tekniska självstudiekurser
 
-* [Journey Orchestration-konfiguration](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module6/journey-orchestration-create-account.html#6.-travel-orchestration)
-* [External Weather API, SMS Action med mera](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module12/journey-orchestration-external-weather-api-sms.html#module12)
-* [Skapa en kontakt i Dynamics 365 med Journey Orchestration](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module17/ex3.html#17.3-create-a-contact-in-microsoft-dynamics-365-using-journey-orchestration-%26-import-data-from-microsoft-dynamics)
-* [Använd Journey Orchestration för att aktivera en e-postuppföljning](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module20/ex4.html#20.4-use-journey-orchestration-to-trigger-an-email-follow-up-after-interacting-with-your-chatbot)
+* [Konfiguration av Journey Orchestration](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module6/journey-orchestration-create-account.html?lang=sv#module6-journey-orchestration)
+* [Extern väder-API och SMS-åtgärd med mera](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module12/journey-orchestration-external-weather-api-sms.html?lang=sv#module12)
+* [Skapa en kontakt i Dynamics 365 med Journey Orchestration](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module17/ex3.html?lang=sv#module17)
+* [Använd Journey Orchestration för att utlösa en e-postuppföljning](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module20/ex4.html?lang=sv#module20)
