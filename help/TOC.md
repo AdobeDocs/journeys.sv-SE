@@ -5,11 +5,11 @@ user-guide-title: Journey Orchestration
 title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9cd37af0281e9fb837c7bf52a52c8dbffd0d4a78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '404'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 95%
 + Konfigurera en händelse {#events-journeys}
    + Om händelser {#about-events}
       + [Allmän princip](using/event/about-events.md)
-      + [Datacecykel](using/event/about-data-cycle.md)
+      + [Datacykel](using/event/about-data-cycle.md)
       + [Skapa en händelse](using/event/about-creating.md)
-      + [Utnyttja Adobe Analytics](using/event/about-analytics.md)
+      + [Dra nytta av Adobe Analytics](using/event/about-analytics.md)
       + [Om scheman i ExperienceEvent](using/event/experience-event-schema.md)
       + [Ytterligare steg för att skicka händelser](using/event/additional-steps-to-send-events-to-journey-orchestration.md)
    + [Definiera nyttolastfält](using/event/defining-the-payload-fields.md)
@@ -98,7 +98,7 @@ ht-degree: 95%
       + [Fältreferenser](using/expression/field-references.md)
       + [Funktioner för att hantera samlingar](using/expression/collection-management-functions.md)
       + [Operatorer](using/expression/operators.md)
-      + [Reseegenskaper](using/expression/journey-properties.md)
+      + [Resans egenskaper](using/expression/journey-properties.md)
       + [Exempel](using/expression/advanced-editor-use-cases.md)
    + Funktioner {#main-functions-journey}
       + [Huvudfunktioner](using/expression/functions.md)
