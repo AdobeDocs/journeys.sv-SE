@@ -18,6 +18,6 @@ Integrationen med Intelligent Services gör att ni kan utnyttja kraften i artifi
 
 Mer information om intelligenta tjänster finns i [dokumentationen](https://docs.adobe.com/content/help/en/experience-platform/intelligent-services/home.html).
 
-Tack vare den här integreringen kan ni utnyttja kundernas prognoser, se [Leverera kundens AI](../ai-services/leveraging-customer-ai.md)
+Tack vare den här integreringen kan du utnyttja kundens prognoser, se [Utnyttja kundens AI](../ai-services/leveraging-customer-ai.md)
 
 <!--* fatigue scores, see [Leveraging Journey AI](../ai-services/leveraging-fatigue-scores.md)-->
