@@ -18,7 +18,7 @@ I vårt scenario måste vi ta emot en händelse varje gång en person går nära
 
 Mer information om händelsekonfiguration finns på [den här sidan](../event/about-events.md).
 
-1. In the top menu, click the **[!UICONTROL Events]** tab and click **[!UICONTROL Add]** to create a new event.
+1. Klicka på fliken **[!UICONTROL Events]** på den övre menyn och klicka på **[!UICONTROL Add]** för att skapa en ny händelse.
 
    ![](../assets/journeyuc1_1.png)
 
@@ -26,7 +26,7 @@ Mer information om händelsekonfiguration finns på [den här sidan](../event/ab
 
    ![](../assets/journeyuc1_2.png)
 
-1. Vi väljer sedan schemat och definierar den nyttolast som förväntas för den här händelsen. Vi väljer de fält som behövs i den normaliserade XDM-modellen. Vi behöver Experience Cloud-ID:t för att identifiera personen i kundprofildatabasen i realtid: _endUserIDs > experience > mcid > id_. Ett ID genereras automatiskt för den här händelsen. Detta ID lagras i **[!UICONTROL eventID]** fältet (_upplevelse > kampanj > samordning > eventID_). Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. I det här fallet används det här ID:t för att identifiera var beacon finns. Varje gång en person går i närheten av spaltbeacon skickas en händelse som innehåller detta specifika händelse-ID. På så sätt kan systemet veta vilken signal som utlöste den skickade händelsen.
+1. Vi väljer sedan schemat och definierar den nyttolast som förväntas för den här händelsen. Vi väljer de fält som behövs i den normaliserade XDM-modellen. Vi behöver Experience Cloud-ID:t för att identifiera personen i kundprofildatabasen i realtid: _endUserID:n > experience > mcid > id_. Ett ID genereras automatiskt för den här händelsen. Detta ID lagras i fältet **[!UICONTROL eventID]** (_experience > campaign > orchestration > eventID_). Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. I det här fallet används det här ID:t för att identifiera var beacon finns. Varje gång en person går i närheten av spaltbeacon skickas en händelse som innehåller detta specifika händelse-ID. På så sätt kan systemet veta vilken signal som utlöste den skickade händelsen.
 
    ![](../assets/journeyuc1_3.png)
 
@@ -34,7 +34,7 @@ Mer information om händelsekonfiguration finns på [den här sidan](../event/ab
    >
    >Listan med fält varierar mellan olika scheman. Enligt schemadefinitionen kan vissa fält vara obligatoriska och förmarkerade.
 
-1. Vi måste välja en namnrymd. En namnrymd är förvald baserat på schemats egenskaper. Du kan behålla den som är förmarkerad. For more information on namespaces, see [this page](../event/selecting-the-namespace.md).
+1. Vi måste välja en namnrymd. En namnrymd är förvald baserat på schemats egenskaper. Du kan behålla den som är förmarkerad. Mer information om namnutrymmen finns på [den här sidan](../event/selecting-the-namespace.md).
 
    ![](../assets/journeyuc1_6.png)
 
@@ -44,7 +44,7 @@ Mer information om händelsekonfiguration finns på [den här sidan](../event/ab
 
 1. Klicka på **[!UICONTROL Save]**.
 
-1. Klicka på **[!UICONTROL View Payload]** ikonen för att förhandsgranska den nyttolast som systemet förväntar sig och dela den med den person som ansvarar för händelsen som skickar. Den här nyttolasten måste konfigureras i bakåtgången av administrationskonsolen för Mobile Services.
+1. Klicka på ikonen **[!UICONTROL View Payload]** för att förhandsgranska nyttolasten som systemet förväntar sig och dela den med den person som ansvarar för händelsen som skickar. Den här nyttolasten måste konfigureras i bakåtgången av administrationskonsolen för Mobile Services.
 
    ![](../assets/journeyuc1_7.png)
 
