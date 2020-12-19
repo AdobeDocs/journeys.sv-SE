@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 010bccb16d2b6980ff758e3922d3bc315706f61b
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -43,7 +43,7 @@ Under resa B utlöses den första händelsen internt via aktiviteten **[!UICONTR
 >
 >Resa B kan också utlösas via en extern händelse.
 
-## God praxis och begränsningar
+## Bästa praxis och begränsningar
 
 ### Redigering
 
