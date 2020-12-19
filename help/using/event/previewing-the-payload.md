@@ -21,7 +21,7 @@ Med nyttolastförhandsvisningen kan du validera nyttolastdefinitionen.
 >
 >För systemgenererade händelser sparar du händelsen och öppnar den igen när du skapar en händelse innan du visar nyttolastförhandsvisningen. Det här steget behövs för att generera ett händelse-ID i nyttolasten.
 
-1. Klicka på **[!UICONTROL View Payload]** ikonen om du vill förhandsgranska den nyttolast som systemet förväntar sig.
+1. Klicka på ikonen **[!UICONTROL View Payload]** för att förhandsgranska den nyttolast som systemet förväntar sig.
 
    ![](../assets/journey13.png)
 
@@ -31,4 +31,4 @@ Med nyttolastförhandsvisningen kan du validera nyttolastdefinitionen.
 
 1. Kontrollera förhandsgranskningen för att validera nyttolastdefinitionen.
 
-1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Den här nyttolasten kan hjälpa honom att utforma konfigurationen av en händelse som ska skjutas upp till [!DNL Journey Orchestration]. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey-orchestration.md).
+1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Den här nyttolasten kan hjälpa honom att utforma konfigurationen för en händelse som ska flyttas till [!DNL Journey Orchestration]. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey-orchestration.md).
