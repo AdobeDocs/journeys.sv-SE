@@ -24,7 +24,7 @@ Om du behöver ändra till en direktresa måste du skapa en ny version av din re
 >
 >Mer information om begränsningar för resversioner finns på [den här sidan](../about/limitations.md#journey-versions-limitations)
 
-1. Öppna den senaste versionen av din liveresa, klicka **[!UICONTROL Create a new version]** och bekräfta.
+1. Öppna den senaste versionen av din liveresa, klicka på **[!UICONTROL Create a new version]** och bekräfta.
 
    ![](../assets/journeyversions2.png)
 
@@ -32,7 +32,7 @@ Om du behöver ändra till en direktresa måste du skapa en ny version av din re
    >
    >Du kan bara skapa en ny version av den senaste versionen av en resa.
 
-1. Gör ändringarna genom att klicka **[!UICONTROL Publish]** och bekräfta.
+1. Gör ändringarna genom att klicka på **[!UICONTROL Publish]** och bekräfta.
 
    ![](../assets/journeyversions3.png)
 
@@ -42,4 +42,4 @@ Reseversioner kan stoppas individuellt. Alla versioner av resor har samma namn.
 
 >[!NOTE]
 >
->När du publicerar en ny version av en resa avslutas den tidigare versionen automatiskt och växlar till statusen **Stängd** . Ingen entré på resan kommer att ske. Även om du stoppar den senaste versionen förblir den tidigare versionen stängd.
+>När du publicerar en ny version av en resa avslutas den tidigare versionen automatiskt och växlar till statusen **Closed**. Ingen entré på resan kommer att ske. Även om du stoppar den senaste versionen förblir den tidigare versionen stängd.
