@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Vänta på aktivitet{#section_rlm_nft_dgb}
 
-Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en **[!UICONTROL Wait]** aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Fyra alternativ är tillgängliga:
+Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en **[!UICONTROL Wait]**-aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Fyra alternativ är tillgängliga:
 
 * [Varaktighet](#duration)
 * [Fast datum](#fixed_date)
@@ -42,13 +42,13 @@ Ange väntetiden innan nästa aktivitet körs.
 
 ![](../assets/journey55.png)
 
-## Vänta fast{#fixed_date}
+## Fast datum väntar{#fixed_date}
 
 Välj datumet för körningen av nästa aktivitet.
 
 ![](../assets/journey56.png)
 
-## Anpassad väntetid{#custom}
+## Anpassad väntan{#custom}
 
 Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 juli 2020 klockan 17.00, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller en datakälla. Du kan inte definiera en anpassad längd, till exempel 7 dagar. Uttrycket i uttrycksredigeraren ska ha formatet dateTimeOnly. Läs [den här sidan](../expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns på [den här sidan](../expression/data-types.md).
 
@@ -56,7 +56,7 @@ Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 j
 >
 >Du kan återanvända ett dateTimeOnly-uttryck eller använda en funktion för att konvertera till dateTimeOnly. Till exempel: ```toDateTimeOnly(@{Event.offerOpened.activity.endTime})```, fältet i händelsen har formatet 2016-08-12T09:46:06Z.
 >
->Tidszonen **** förväntas i egenskaperna för din resa. Därför är det inte möjligt i dag från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2016-08-12T09:46:06.982-05. Läs [den här sidan](../building-journeys/timezone-management.md).
+>**Tidszonen** förväntas i egenskaperna för din resa. Därför är det inte möjligt i dag från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2016-08-12T09:46:06.982-05. Läs [den här sidan](../building-journeys/timezone-management.md).
 
 ![](../assets/journey57.png)
 
