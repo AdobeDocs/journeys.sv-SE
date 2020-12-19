@@ -57,7 +57,7 @@ Här är en lista över funktioner som stöds.
 | Datum | [setHours](../functions/functionsethours.md) |
 | Datum | [setDays](../functions/functionsetdays.md) |
 | Lista | [distinkt](../functions/functiondistinct.md) |
-| Lista | [distinctCount](../functions/functiondistinctcount.md) |
+| Lista | [clearCount](../functions/functiondistinctcount.md) |
 | Lista | [i](../functions/functionin.md) |
 | Lista | [listSize](../functions/functionlistsize.md) |
 | Lista | [serializeList](../functions/functionserializelist.md) |
