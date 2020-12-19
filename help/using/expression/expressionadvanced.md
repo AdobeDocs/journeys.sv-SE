@@ -72,7 +72,7 @@ En mekanism för syntaxvalidering kontrollerar kodens integritet. Fel visas öve
 
 **Behovet av parametrar när du skapar villkor med den avancerade uttrycksredigeraren**
 
-If you select a field from an external data source requiring a parameter to be called (see [this page](../datasource/external-data-sources.md). I en väderrelaterad datakälla används till exempel parametern &quot;city&quot; ofta. Därför måste du välja var du vill hämta den här parametern &quot;city&quot;. Funktioner kan även tillämpas på parametrar om man vill utföra formateringsändringar eller sammansättningar.
+Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas (se [den här sidan](../datasource/external-data-sources.md). I en väderrelaterad datakälla används till exempel parametern &quot;city&quot; ofta. Därför måste du välja var du vill hämta den här parametern &quot;city&quot;. Funktioner kan även tillämpas på parametrar om man vill utföra formateringsändringar eller sammansättningar.
 
 ![](../assets/journeyuc2_19.png)
 
