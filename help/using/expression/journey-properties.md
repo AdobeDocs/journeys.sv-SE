@@ -1,18 +1,18 @@
 ---
 product: adobe campaign
 solution: Journey Orchestration
-title: Reseegenskaper
+title: Resans egenskaper
 description: Läs om reseegenskaper
 translation-type: tm+mt
 source-git-commit: 341138c31676870878099b4f4eecec200a614c69
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Reseegenskaper {#journey-properties}
+# Resans egenskaper {#journey-properties}
 
 I den avancerade uttrycksredigeraren finns kategorin **Reseegenskaper** nedanför kategorierna event och datakälla. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats.
 
