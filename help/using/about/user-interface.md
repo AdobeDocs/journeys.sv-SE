@@ -22,7 +22,7 @@ ht-degree: 93%
 
 ## Komma åt [!DNL Journey Orchestration]{#accessing_journey_orchestration}
 
-To access the [!DNL Journey Orchestration]&#39;s interface, click the **[!UICONTROL App Selector]** icon, in the top right, then click **[!UICONTROL Journey Orchestration]**.
+Om du vill komma åt gränssnittet för [!DNL Journey Orchestration] klickar du på ikonen **[!UICONTROL App Selector]** längst upp till höger och sedan på **[!UICONTROL Journey Orchestration]**.
 
 ![](../assets/journey1.png)
 
@@ -138,7 +138,7 @@ _På resans arbetsyta:_
 _Under en resa:_
 
 * Tryck på **T** för att aktivera/inaktivera testläget.
-* Vid en händelsebaserad resa i testläge trycker du på **E** för att aktivera en händelse.
-* När alternativet **Enstaka profil i taget** väljs i testläge i en segmentbaserad resa trycker du på **P** för att aktivera en händelse.
+* I en händelsebaserad resa i testläge trycker du på **E** för att aktivera en händelse.
+* Om alternativet **Enskild profil i taget** är markerat i testläge i en segmentbaserad resa trycker du på **P** för att aktivera en händelse.
 * I testläge trycker du på **L** för att visa loggarna.
 
