@@ -13,22 +13,22 @@ ht-degree: 7%
 
 
 
-# Additional steps to send events to [!DNL Journey Orchestration] {#concept_xrz_n1q_y2b}
+# Ytterligare steg för att skicka händelser till [!DNL Journey Orchestration] {#concept_xrz_n1q_y2b}
 
 >[!NOTE]
 >
 >När du skapar en händelse genererar [!DNL Journey Orchestration] automatiskt ett ID för den här händelsen. Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. Läs [den här sidan](../event/previewing-the-payload.md).
 
-Om du vill konfigurera händelser som ska skickas till **[!UICONTROL Streaming Ingestion APIs]** och användas i [!DNL Journey Orchestration]måste du göra följande:
+Om du vill konfigurera händelser som ska skickas till **[!UICONTROL Streaming Ingestion APIs]** och användas i [!DNL Journey Orchestration] måste du följa dessa steg:
 
-1. Hämta URL:en för inlopp från Adobe Experience Platform API:er (se API:er för [direktuppspelning](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/overview.html)).
-1. Kopiera nyttolasten från nyttolastförhandsvisningen på **[!UICONTROL Event]** menyn. Läs [den här sidan](../event/defining-the-payload-fields.md).
+1. Hämta URL:en för inlopp från Adobe Experience Platform API:er (se [API:er för direktuppspelning](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/overview.html)).
+1. Kopiera nyttolasten från nyttolastförhandsvisningen på menyn **[!UICONTROL Event]**. Läs [den här sidan](../event/defining-the-payload-fields.md).
 
 Sedan måste du konfigurera det datasystem som överför händelser till API:er för direktuppspelning av inmatning med den nyttolast som du kopierade:
 
 1. Konfigurera ett POST-API-anrop till API:n för direktuppspelning (kallas för ett inlopp).
-1. Använd den nyttolast du kopierade från [!DNL Journey Orchestration] i brödtexten (&quot;dataavsnittet&quot;) för API-anropet till API:er för Streaming Ingput. Se nedan för ett exempel
-1. Bestäm var alla variabler som finns i nyttolasten ska hämtas. Exempel: om händelsen ska förmedla adressen, kommer nyttolasten som klistras in att visa&quot;adress&quot;: &quot;string&quot;. &quot;string&quot; ska ersättas med variabeln som automatiskt fyller i rätt värde, e-postadressen till den person som meddelandet ska skickas till. Observera att vi i förhandsvisningen av nyttolasten, i avsnittet, automatiskt fyller i många värden som förväntas underlätta ditt arbete. **[!UICONTROL Header]**
+1. Använd nyttolasten som du kopierade från [!DNL Journey Orchestration] i brödtexten (&quot;dataavsnittet&quot;) för API-anropet till API:er för direktuppspelningsinmatning. Se nedan för ett exempel
+1. Bestäm var alla variabler som finns i nyttolasten ska hämtas. Exempel: om händelsen ska förmedla adressen, kommer nyttolasten som klistras in att visa&quot;adress&quot;: &quot;string&quot;. &quot;string&quot; ska ersättas med variabeln som automatiskt fyller i rätt värde, e-postadressen till den person som meddelandet ska skickas till. Observera att vi automatiskt fyller i många värden som förväntas underlätta ditt arbete i förhandsvisningen av nyttolasten i **[!UICONTROL Header]**-avsnittet.
 1. Välj &quot;application/json&quot; som en texttyp.
 1. Skicka ditt IMS-organisations-ID i huvudet med tangenten &quot;x-gw-ims-org-id&quot;. Använd ditt IMS-organisations-ID (&quot;XXX@AdobeOrg&quot;) för värdet.
 
@@ -89,6 +89,6 @@ Här är ett exempel på en API-händelse för direktuppspelning:
 }
 ```
 
-För att underlätta identifieringen av den plats där delen&quot;data&quot; ska klistras in kan du använda ett JSON-visualiseringsverktyg som [https://jsonformatter.curiousconcept.com](https://jsonformatter.curiousconcept.com)
+För att underlätta identifieringen av den plats där delen &quot;data&quot; ska klistras in kan du använda ett JSON-visualiseringsverktyg som [https://jsonformatter.curiousconcept.com](https://jsonformatter.curiousconcept.com)
 
 Information om hur du felsöker API:er för direktuppspelning finns på den här [sidan](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/troubleshooting.html).
