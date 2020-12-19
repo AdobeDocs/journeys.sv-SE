@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ![](../assets/messageparameterssection.png)
 
-Klistra in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten i **[!UICONTROL Message parameters]** avsnittet.
+I avsnittet **[!UICONTROL Message parameters]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
 
 ![](../assets/customactionpayloadmessage.png)
 
