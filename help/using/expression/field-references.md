@@ -21,7 +21,7 @@ Om du använder specialtecken i ett fält måste du använda dubbla citattecken 
 
 * fältet börjar med numeriska tecken
 * fältet börjar med tecknet &quot;-&quot;
-* fältet innehåller något annat än _a_-_z_, _A_-_Z_, _0_-___9, _ ,¥-_
+* fältet innehåller något annat än _a_-_z_, _A_-_Z_, _0_-_9_, _ , _-_
 
 Om fältet till exempel är _3h_: _#{OpenWeather.westData.rain.&#39;3h&#39;} > 0_
 
@@ -54,7 +54,7 @@ Ett standardvärde kan kopplas till ett fältnamn. Syntaxen är följande:
 
 >[!NOTE]
 >
->Fälttypen och standardvärdet måste vara samma. Till exempel @{LobbyBeacon.endUserID:n._experience.emailid.id, defaultValue : {2} blir ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
+>Fälttypen och standardvärdet måste vara samma. Till exempel @{LobbyBeacon.endUserID:n._experience.emailid.id, defaultValue :  :   blir ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
 
 Exempel:
 
@@ -100,19 +100,19 @@ Exempel :
 
 **Referens för ett fält som definieras i en karta**
 
-För att kunna hämta ett element i en karta använder vi inmatningsfunktionen med en given nyckel. Det används till exempel när du definierar nyckeln för en händelse enligt det valda namnutrymmet. Se Välja namnutrymme. Mer information finns på [den här sidan](../event/selecting-the-namespace.md).
+För att kunna hämta ett element i en karta använder vi inmatningsfunktionen med en given nyckel. Det används till exempel när du definierar nyckeln för en händelse enligt det valda namnutrymmet. Se Välja namnutrymme. Mer information finns i [den här sidan](../event/selecting-the-namespace.md).
 
 ```
 @{MyEvent.identityMap.entry('Email').first().id}
 ```
 
-I det här uttrycket hämtar vi posten för nyckeln&quot;Email&quot; i fältet&quot;IdentityMap&quot; för en händelse. Posten&quot;E-post&quot; är en samling från vilken vi tar&quot;id&quot; i det första elementet med&quot;first()&quot;. Mer information finns på [den här sidan](../expression/collection-management-functions.md).
+I det här uttrycket hämtar vi posten för nyckeln&quot;Email&quot; i fältet&quot;IdentityMap&quot; för en händelse. Posten&quot;E-post&quot; är en samling från vilken vi tar&quot;id&quot; i det första elementet med&quot;first()&quot;. Mer information finns i [den här sidan](../expression/collection-management-functions.md).
 
 **Parametervärden för en datakälla (dynamiska värden för datakälla)**
 
 Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas, visas en ny flik till höger där du kan ange den här parametern. Läs [den här sidan](../expression/expressionadvanced.md).
 
-For more complex use cases, if you want to include the parameters of the data source in the main expression, you can define their values using the keyword _params_. En parameter kan vara vilket giltigt uttryck som helst, även från en annan datakälla som även innehåller en annan parameter.
+Om du vill ta med parametrarna för datakällan i huvuduttrycket kan du definiera deras värden med nyckelordet _params_ för mer komplexa användningsområden. En parameter kan vara vilket giltigt uttryck som helst, även från en annan datakälla som även innehåller en annan parameter.
 
 >[!NOTE]
 >
