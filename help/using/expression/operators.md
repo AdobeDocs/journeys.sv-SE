@@ -34,7 +34,7 @@ Det finns två typer av operatorer: unära operatorer och binära operatorer. De
 
 Här är en lista över operatorer som stöds:
 
-## Logisk  {#logical}
+## Logisk {#logical}
 
 ### och
 
@@ -230,7 +230,7 @@ Exempel:
 42 >= 3.14
 ```
 
-### &lt;
+### &lt;>
 
 
 
@@ -254,7 +254,7 @@ Exempel:
 42 < 3.14
 ```
 
-### &lt;=
+### &lt;>
 
 
 
