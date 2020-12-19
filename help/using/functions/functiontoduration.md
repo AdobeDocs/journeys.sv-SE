@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # toDuration {#toDuration}
 
-Konverterar ett argumentvärde till en längd. For more information on data types, refer to [this page](../expression/data-types.md).
+Konverterar ett argumentvärde till en längd. Mer information om datatyper finns på [den här sidan](../expression/data-types.md).
 
 ## Kategori
 
