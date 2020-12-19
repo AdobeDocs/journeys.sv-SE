@@ -14,9 +14,9 @@ ht-degree: 6%
 
 # Definiera nyttolastfält {#concept_yrw_3qt_52b}
 
-Nyttolastdefinitionen gör att du kan välja vilken information systemet förväntar sig från händelsen under din resa och nyckeln för att identifiera vilken person som är associerad med händelsen. Nyttolasten baseras på Experience Cloud XDM-fältdefinitionen. For more information on XDM, refer to [this page](https://docs.adobe.com/content/help/sv-SE/experience-platform/xdm/home.html).
+Nyttolastdefinitionen gör att du kan välja vilken information systemet förväntar sig från händelsen under din resa och nyckeln för att identifiera vilken person som är associerad med händelsen. Nyttolasten baseras på Experience Cloud XDM-fältdefinitionen. Mer information om XDM finns på [den här sidan](https://docs.adobe.com/content/help/sv-SE/experience-platform/xdm/home.html).
 
-1. Välj ett XDM-schema i listan och klicka på **[!UICONTROL Payload]** fältet eller på **[!UICONTROL Edit]** -ikonen.
+1. Välj ett XDM-schema i listan och klicka på fältet **[!UICONTROL Payload]** eller på ikonen **[!UICONTROL Edit]**.
 
    ![](../assets/journey8.png)
 
@@ -34,12 +34,12 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 
    >[!NOTE]
    >
-   >För systemgenererade händelser läggs **[!UICONTROL eventID]** fältet automatiskt till i listan över valda fält så att händelsen kan [!DNL Journey Orchestration] identifieras. Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. Läs [den här sidan](../event/previewing-the-payload.md).
+   >För systemgenererade händelser läggs fältet **[!UICONTROL eventID]** automatiskt till i listan med markerade fält så att [!DNL Journey Orchestration] kan identifiera händelsen. Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. Läs [den här sidan](../event/previewing-the-payload.md).
 
-1. När du är klar med att markera önskade fält klickar du på **[!UICONTROL Save]** eller trycker **[!UICONTROL Enter]**.
+1. När du är klar med att markera de fält som behövs klickar du på **[!UICONTROL Save]** eller trycker på **[!UICONTROL Enter]**.
 
    ![](../assets/journey11.png)
 
-   Antalet markerade fält visas i **[!UICONTROL Payload]** fältet.
+   Antalet markerade fält visas i fältet **[!UICONTROL Payload]**.
 
    ![](../assets/journey12.png)
