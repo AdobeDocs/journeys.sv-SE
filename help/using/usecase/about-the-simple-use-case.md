@@ -26,7 +26,7 @@ Vi vill bara skicka ett meddelande om personen är en kvinna. Meddelandet måste
 
 ## Krav {#prerequisites}
 
-Vi har utformat en e-postmall för transaktionsmeddelanden i Adobe Campaign Standard. Vi använder en transaktionsmall för händelsetjänster. Refer to this [page](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
+Vi har utformat en e-postmall för transaktionsmeddelanden i Adobe Campaign Standard. Vi använder en transaktionsmall för händelsetjänster. Se den här [sidan](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
 
 Adobe Campaign Standard har konfigurerats för att skicka e-post.
 
