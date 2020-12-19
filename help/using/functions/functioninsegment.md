@@ -50,4 +50,4 @@ Returnerar ett booleskt värde.
 
 Förklaring:
 
-Funktionen returneras **[!UICONTROL true]** om personen i reseinstansen är en del av Adobe Experience Platform-segmentet med namnet&quot;män över 50&quot;, **[!UICONTROL false]** annars returneras .
+Funktionen returnerar **[!UICONTROL true]** om personen i reseinstansen är en del av Adobe Experience Platform-segmentet med namnet &quot;men över 50&quot;, annars **[!UICONTROL false]**.
