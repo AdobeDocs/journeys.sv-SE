@@ -18,7 +18,7 @@ I vårt fall vill vi använda personaliseringsdata för våra meddelanden. Vi m�
 
 Mer information om konfiguration av datakälla finns på [den här sidan](../datasource/about-data-sources.md).
 
-1. Klicka på fliken på den övre menyn och välj den inbyggda Adobe Experience Platform-datakällan **[!UICONTROL Data Sources]** .
+1. Klicka på fliken **[!UICONTROL Data Sources]** på den översta menyn och välj den inbyggda Adobe Experience Platform-datakällan.
 
    ![](../assets/journey23.png)
 
