@@ -14,7 +14,7 @@ ht-degree: 87%
 
 # Komma igång{#concept_y4b_4qt_52b}
 
-I [!DNL Journey Orchestration] finns det två typer av användare som utför olika uppgifter: den **tekniska användaren** och **företagsanvändaren**. Användaråtkomst hanteras via produktprofiler och rättigheter. Refer to [this page](../about/access-management.md) to learn how to configure user access.
+I [!DNL Journey Orchestration] finns det två typer av användare som utför olika uppgifter: den **tekniska användaren** och **företagsanvändaren**. Användaråtkomst hanteras via produktprofiler och rättigheter. Läs [den här sidan](../about/access-management.md) om du vill veta mer om hur du konfigurerar användaråtkomst.
 
 Här följer de viktigaste stegen för att konfigurera och använda [!DNL Journey Orchestration]:
 
@@ -56,7 +56,7 @@ Här följer de viktigaste stegen för att konfigurera och använda [!DNL Journe
 
    Du måste validera och aktivera resan. Det här steget utförs av en **företagsanvändare**.
 
-   Mer information finns i sidorna [Testa resan](../building-journeys/testing-the-journey.md) och [Publicera resan](../building-journeys/publishing-the-journey.md).
+   Mer information finns på sidorna [Testa resan](../building-journeys/testing-the-journey.md) och [Publicera resan](../building-journeys/publishing-the-journey.md).
 
    ![](../assets/journeyuc2_32bis.png)
 
