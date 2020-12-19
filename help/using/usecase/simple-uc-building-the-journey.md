@@ -17,15 +17,15 @@ ht-degree: 36%
 Nu kan **företagsanvändaren** bygga resan. Vår resa omfattar endast en väg med följande aktiviteter:
 
 * &quot;SpaBeacon&quot; **[!UICONTROL Event]**: När en person går nära spaltmarkören får systemet ett evenemang och resan börjar för den personen.
-* en **[!UICONTROL Condition]** aktivitet för att kontrollera att personen är en kvinna
-* en **[!UICONTROL Email]** aktivitet (med Adobe Campaign Standard)
-* an **[!UICONTROL End]** activity
+* en **[!UICONTROL Condition]**-aktivitet för att kontrollera att personen är en kvinna
+* en **[!UICONTROL Email]**-aktivitet (med Adobe Campaign Standard)
+* en **[!UICONTROL End]**-aktivitet
 
 >[!NOTE]
 >
 >Aktiviteterna **[!UICONTROL Push]** och **[!UICONTROL Email]** är bara tillgängliga på paletten om du har Adobe Campaign Standard.
 
-For additional information on how to build a journey, refer to [this page](../building-journeys/journey.md).
+Mer information om hur du skapar en resa finns på [den här sidan](../building-journeys/journey.md).
 
 1. Klicka på fliken **[!UICONTROL Home]** och **[!UICONTROL Create]** på den övre menyn för att skapa en ny resa.
 
@@ -47,15 +47,15 @@ For additional information on how to build a journey, refer to [this page](../bu
 
    ![](../assets/journeyuc1_11.png)
 
-1. Använd den enkla uttrycksredigeraren för att leta efter genusfältet (_person > kön_) och släpp det till höger för att skapa följande villkor: &quot;Kön är lika med &quot;kvinna&quot;.
+1. Använd den enkla uttrycksredigeraren och leta efter könsfältet (_person > kön_) och släpp det till höger för att skapa följande villkor: &quot;Kön är lika med &quot;kvinna&quot;.
 
    ![](../assets/journeyuc1_12.png)
 
-1. Släpp en **[!UICONTROL Email]** aktivitet och välj en mall för transaktionsmeddelanden om&quot;Spa-rabatt&quot;. Den här mallen har utformats med Adobe Campaign. Refer to this [page](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
+1. Släpp en **[!UICONTROL Email]**-aktivitet och välj din&quot;Spa-rabatt&quot;-mall för transaktionsmeddelanden. Den här mallen har utformats med Adobe Campaign. Se den här [sidan](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html).
 
    ![](../assets/journeyuc1_13.png)
 
-1. Click inside the **[!UICONTROL Email]** field and select the email address from the data source.
+1. Klicka i fältet **[!UICONTROL Email]** och välj e-postadressen från datakällan.
 
    ![](../assets/journeyuc1_14.png)
 
@@ -63,11 +63,11 @@ For additional information on how to build a journey, refer to [this page](../bu
 
    ![](../assets/journeyuc1_15.png)
 
-1. Släpp en **[!UICONTROL End]** aktivitet.
+1. Släpp en **[!UICONTROL End]**-aktivitet.
 
    ![](../assets/journeyuc1_17.png)
 
-1. Klicka på **[!UICONTROL Test]** växla och testa din resa med testprofiler. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. For more information on the test mode, refer to [this page](../building-journeys/testing-the-journey.md).
+1. Klicka på **[!UICONTROL Test]** och testa din resa med testprofiler. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. Mer information om testläget finns på [den här sidan](../building-journeys/testing-the-journey.md).
 
    ![](../assets/journeyuc1_18bis.png)
 
