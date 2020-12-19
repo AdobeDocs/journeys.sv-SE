@@ -22,19 +22,19 @@ Så här använder du testläget:
 
 1. Innan du testar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kommer inte att kunna starta ett test av en resa med fel. Se [det här avsnittet](../about/troubleshooting.md#section_h3q_kqk_fhb). En varningssymbol visas om det finns fel.
 
-1. Aktivera testläget genom att klicka på **[!UICONTROL Test]** växlingsknappen i det övre högra hörnet.
+1. Aktivera testläget genom att klicka på växlingsknappen **[!UICONTROL Test]** i det övre högra hörnet.
 
    ![](../assets/journeytest1.png)
 
-1. Använd **[!UICONTROL Wait time in test]** parametern längst ned i det vänstra hörnet för att definiera hur lång tid varje vänteaktivitet ska vara i testläge. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Den här parametern visas bara om du har släppt en eller flera vänteaktiviteter under din resa.
+1. Använd parametern **[!UICONTROL Wait time in test]** i det nedre vänstra hörnet för att definiera den tid som varje vänteaktivitet ska vara i testläge. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Den här parametern visas bara om du har släppt en eller flera vänteaktiviteter under din resa.
 
    ![](../assets/journeytest_wait.png)
 
-1. Klicka **[!UICONTROL Trigger an event]** för att konfigurera och skicka händelser till resan. Se till att skicka händelser som rör testprofiler. Se [Bekräfta dina händelser](#firing_events).
+1. Klicka på **[!UICONTROL Trigger an event]** för att konfigurera och skicka händelser till resan. Se till att skicka händelser som rör testprofiler. Se [Bekräfta dina händelser](#firing_events).
 
    ![](../assets/journeyuctest1.png)
 
-1. När du har fått händelserna klickar du på **[!UICONTROL Show log]** knappen för att visa testresultatet och verifiera dem. Se [Visa loggarna](#viewing_logs).
+1. När händelserna har tagits emot klickar du på knappen **[!UICONTROL Show log]** för att visa testresultatet och verifiera dem. Se [Visa loggarna](#viewing_logs).
 
    ![](../assets/journeyuctest2.png)
 
@@ -50,9 +50,9 @@ Så här använder du testläget:
 * Du kan aktivera/inaktivera testläget så många gånger som behövs.
 * Du kan inte ändra din resa när testläget är aktiverat. När du är i testläge kan du publicera resan direkt, du behöver inte inaktivera testläget tidigare.
 
-## Creating a test profile{#create-test-profile}
+## Skapa en testprofil{#create-test-profile}
 
-Processen för att skapa en testprofil är densamma som när du skapar en profil i Adobe Experience Platform. Den utförs via API-anrop. See this [page](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html)
+Processen för att skapa en testprofil är densamma som när du skapar en profil i Adobe Experience Platform. Den utförs via API-anrop. Se den här [sidan](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html)
 
 Du måste använda ett profilschema som innehåller blandningen &quot;information om profiltester&quot;. Flaggan testProfile ingår i den här mixinen.
 
@@ -104,9 +104,9 @@ curl -X POST \
 }'
 ```
 
-## Aktivera händelser {#firing_events}
+## Aktivera aktiviteter {#firing_events}
 
-Med **[!UICONTROL Trigger an event]** knappen kan du konfigurera en händelse som får en person att komma in på resan.
+Med knappen **[!UICONTROL Trigger an event]** kan du konfigurera en händelse som får en person att komma in på resan.
 
 >[!NOTE]
 >
@@ -118,13 +118,13 @@ Om resan innehåller flera händelser använder du listrutan för att välja en 
 
 ![](../assets/journeytest4.png)
 
-Med gränssnittet kan du skicka enkla händelseparametrar. Om du vill skicka samlingar eller andra avancerade objekt i händelsen kan du klicka på den för **[!UICONTROL Code View]** att se hela koden för nyttolasten och ändra den. Du kan till exempel kopiera och klistra in händelseinformation som har förberetts av en teknisk användare.
+Med gränssnittet kan du skicka enkla händelseparametrar. Om du vill skicka samlingar eller andra avancerade objekt i händelsen kan du klicka på **[!UICONTROL Code View]** för att se hela koden för nyttolasten och ändra den. Du kan till exempel kopiera och klistra in händelseinformation som har förberetts av en teknisk användare.
 
 ![](../assets/journeytest5.png)
 
 En teknisk användare kan också använda det här gränssnittet för att komponera händelsenyttolaster och utlösa händelser utan att behöva använda något tredjepartsverktyg.
 
-När du klickar på **[!UICONTROL Send]** knappen startar testet. Personens förlopp under resan representeras av ett visuellt flöde. Vägen blir progressivt grön allt eftersom personen rör sig över resan. Om ett fel inträffar visas en varningssymbol i motsvarande steg. Du kan placera markören på den för att visa mer information om felet och få tillgång till fullständig information (när den är tillgänglig).
+När du klickar på knappen **[!UICONTROL Send]** påbörjas testet. Personens förlopp under resan representeras av ett visuellt flöde. Vägen blir progressivt grön allt eftersom personen rör sig över resan. Om ett fel inträffar visas en varningssymbol i motsvarande steg. Du kan placera markören på den för att visa mer information om felet och få tillgång till fullständig information (när den är tillgänglig).
 
 ![](../assets/journeytest6.png)
 
@@ -136,9 +136,9 @@ Det visuella flödet fungerar oavsett om händelsen aktiveras via gränssnittet 
 
 ## Testläge för regelbaserade resor {#test-rule-based}
 
-Testläget är även tillgängligt för resor som använder en regelbaserad händelse. For more information on rule-based events, refer to [this page](../event/about-events.md).
+Testläget är även tillgängligt för resor som använder en regelbaserad händelse. Mer information om regelbaserade händelser finns på [den här sidan](../event/about-events.md).
 
-När du utlöser en händelse kan du på skärmen för **händelsekonfiguration** definiera de händelseparametrar som ska passera i testet. Du kan visa händelse-ID-villkoret genom att klicka på verktygstipsikonen i det övre högra hörnet. Det finns också ett verktygstips bredvid varje fält som ingår i regelutvärderingen.
+När du utlöser en händelse kan du med hjälp av skärmen **Händelsekonfiguration** definiera de händelseparametrar som ska passera i testet. Du kan visa händelse-ID-villkoret genom att klicka på verktygstipsikonen i det övre högra hörnet. Det finns också ett verktygstips bredvid varje fält som ingår i regelutvärderingen.
 
 ![](../assets/alpha-event8.png)
 
@@ -159,8 +159,8 @@ Antalet personer (tekniskt sett kallas de instanser) som för närvarande befinn
 * _ID_: Personens interna ID under resan. Detta kan användas för felsökning.
 * _aktuellt steg_: det steg där personen befinner sig på resan. Vi rekommenderar att du lägger till etiketter till dina aktiviteter för att lättare kunna identifiera dem.
 * _currentstep_ > phase: Status för den enskilda personens resa (körning, slutförd, fel eller timeout). Mer information finns nedan.
-* _currentStep_ > _extraInfo_: beskrivning av felet och annan sammanhangsbaserad information.
-* _currentStep_ > _fetchErrors_: information om hämtning av datafel som inträffade under det här steget.
+* _currentstep_ >  _extraInfo_: beskrivning av felet och annan sammanhangsbaserad information.
+* _currentstep_ >  _fetchErrors_: information om hämtning av datafel som inträffade under det här steget.
 * _externalKeys_: värdet för den nyckelformel som definieras i händelsen.
 * _enrichedData_: de data som resan har hämtat om resan använder datakällor.
 * _transitionHistory_: en lista med steg som personen följde. För händelser visas nyttolasten.
