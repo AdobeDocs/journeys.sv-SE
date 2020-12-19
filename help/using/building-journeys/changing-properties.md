@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper.
 
-Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och definiera en **[!UICONTROL Timeout and error]** varaktighet om du är administratör.
+Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och definiera en **[!UICONTROL Timeout and error]**-varaktighet om du är administratör.
 
 ![](../assets/journey32.png)
 
@@ -29,17 +29,17 @@ När en resa&quot;slutar&quot; får den statusen **[!UICONTROL Closed (no entran
 
 ## Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
 
-När du redigerar en åtgärd eller villkorsaktivitet kan du definiera en alternativ sökväg om ett fel eller en timeout inträffar. Om bearbetningen av aktiviteten som förhör ett tredjepartssystem överskrider den tidsgräns som anges i färdens egenskaper (**[!UICONTROL Timeout and  error]** fält), väljs den andra vägen för att utföra en eventuell reservåtgärd.
+När du redigerar en åtgärd eller villkorsaktivitet kan du definiera en alternativ sökväg om ett fel eller en timeout inträffar. Om bearbetningen av aktiviteten som förhör ett tredjepartssystem överskrider den tidsgräns som anges i färdens egenskaper (**[!UICONTROL Timeout and  error]**-fält), väljs den andra vägen för att utföra en eventuell reservåtgärd.
 
 Giltiga värden är mellan 1 och 30 sekunder.
 
-Vi rekommenderar att du definierar ett mycket kort **[!UICONTROL Timeout and error]** värde om din resa är tidskänslig (exempel: att reagera på en persons realtidsplats) eftersom du inte kan fördröja åtgärden i mer än några sekunder. Om resan är mindre tidskänslig kan du använda ett längre värde för att ge mer tid till det system som anropas för att skicka ett giltigt svar.
+Vi rekommenderar att du definierar ett mycket kort **[!UICONTROL Timeout and error]**-värde om din resa är tidskänslig (exempel: att reagera på en persons realtidsplats) eftersom du inte kan fördröja åtgärden i mer än några sekunder. Om resan är mindre tidskänslig kan du använda ett längre värde för att ge mer tid till det system som anropas för att skicka ett giltigt svar.
 
 [!DNL Journey Orchestration] använder också en global timeout. Se [nästa avsnitt](#global_timeout).
 
 ## Tidsgräns för global resa {#global_timeout}
 
-Förutom den [tidsgräns](#timeout_and_error) som används i reseaktiviteter finns det också en global tidsgräns för resan som inte visas i gränssnittet och som inte kan ändras. Den här tidsgränsen kommer att stoppa enskilda personers framsteg på resan 30 dagar efter att de har kommit in. Det innebär att en persons resa inte kan vara längre än 30 dagar. Efter timeoutperioden på 30 dagar tas personens data bort. Individer som fortfarande flyter på i slutet av tidsgränsen kommer att stoppas och de kommer att beaktas som fel vid rapporteringen.
+Förutom den [timeout](#timeout_and_error) som används i reseaktiviteter finns det också en global timeout som inte visas i gränssnittet och inte kan ändras. Den här tidsgränsen kommer att stoppa enskilda personers framsteg på resan 30 dagar efter att de har kommit in. Det innebär att en persons resa inte kan vara längre än 30 dagar. Efter timeoutperioden på 30 dagar tas personens data bort. Individer som fortfarande flyter på i slutet av tidsgränsen kommer att stoppas och de kommer att beaktas som fel vid rapporteringen.
 
 >[!NOTE]
 >
