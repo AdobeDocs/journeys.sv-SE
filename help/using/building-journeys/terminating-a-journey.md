@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Avsluta en resa
 
-Med alternativen **[!UICONTROL Stop]** och **[!UICONTROL Close to new entrances]** kan du avsluta **direktresor** . Att avsluta en resa innebär **att nya kunder inte kan ta sig** in på resan och att de kunder som redan har tagit sig in på resan kan uppleva den till slutet. Det här är det mest rekommenderade sättet att få ett slut på en resa eftersom den erbjuder den bästa upplevelsen för kunderna. Att stoppa en resa innebär att alla som redan har tagit sig in på en resa stoppas i processen. Resan är i stort sett avstängd.
+Med alternativen **[!UICONTROL Stop]** och **[!UICONTROL Close to new entrances]** kan du avsluta **direktresor**. När en resa stängs innebär det **att nya kunder inte kan ta sig in på resan** och att de kunder som redan har tagit sig in på resan kan uppleva den till slutet. Det här är det mest rekommenderade sättet att få ett slut på en resa eftersom den erbjuder den bästa upplevelsen för kunderna. Att stoppa en resa innebär att alla som redan har tagit sig in på en resa stoppas i processen. Resan är i stort sett avstängd.
 
 >[!NOTE]
 >
@@ -26,19 +26,19 @@ Du kan stänga en resa manuellt för att säkerställa att kunder som redan har 
 
 En stängd reseversion kan inte startas om eller tas bort. Du kan skapa en ny version av den eller duplicera den.
 
-Du kan stänga en resa genom att klicka **[!UICONTROL Close to new entrances]** medan du hovrar över en resa i listan över resor.
+Du kan stänga en resa genom att klicka på **[!UICONTROL Close to new entrances]** medan du hovrar över en resa i listan över resor.
 
 ![](../assets/do-not-localize/journey-finish-quick-action.png)
 
 Du kan även:
 
-1. Klicka **[!UICONTROL Home]** på den resa du vill stänga.
+1. Klicka på den resa du vill stänga i **[!UICONTROL Home]**.
 1. Klicka på nedpilen i det övre högra hörnet.
 
    ![](../assets/finish_drop_down_list.png)
 
 1. Klicka på **[!UICONTROL Close to new entrances]**. En dialogruta visas.
-1. Bekräfta genom **[!UICONTROL Close to new entrances]** att klicka.
+1. Bekräfta genom att klicka på **[!UICONTROL Close to new entrances]**.
 
 ## Stoppa en resa
 
@@ -52,10 +52,10 @@ Du kan stoppa en resa (till exempel om en marknadsförare upptäcker att resan r
 
 Du kan även:
 
-1. In **[!UICONTROL Home]**, klicka på den resa du vill stoppa.
+1. Klicka på den resa du vill stoppa i **[!UICONTROL Home]**.
 1. Klicka på nedpilen i det övre högra hörnet.
 
 ![](../assets/finish_drop_down_list.png)
 
 1. Klicka på **[!UICONTROL Stop]**. En dialogruta visas.
-1. Bekräfta genom **[!UICONTROL Stop]** att klicka.
+1. Bekräfta genom att klicka på **[!UICONTROL Stop]**.
