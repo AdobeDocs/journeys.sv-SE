@@ -14,7 +14,7 @@ ht-degree: 12%
 
 # Skapa en resa {#concept_gq5_sqt_52b}
 
-This step is performed by the **business user**. Här skapar du dina resor. Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
+Det här steget utförs av **företagsanvändaren**. Här skapar du dina resor. Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
 
 Med resegränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan. Du kan också dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa steg som är tillgängligt. Varje aktivitet har en särskild roll och plats i processen. Aktiviteterna är sekventierade. När en aktivitet är klar fortsätter flödet och bearbetar nästa aktivitet och så vidare.
 
@@ -26,11 +26,11 @@ Här är de viktigaste stegen för att skapa och publicera en resa.
 
 1. Klicka på fliken **[!UICONTROL Home]** på den övre menyn.
 
-   Listan över resor visas. Mer information om gränssnittet finns på [den här sidan](../building-journeys/using-the-journey-designer.md) .
+   Listan över resor visas. Mer information om gränssnittet finns på [den här sidan](../building-journeys/using-the-journey-designer.md).
 
    ![](../assets/journey30.png)
 
-1. Click **[!UICONTROL Create]** to create a new journey.
+1. Klicka på **[!UICONTROL Create]** för att skapa en ny resa.
 
    ![](../assets/journey31.png)
 
@@ -42,7 +42,7 @@ Här är de viktigaste stegen för att skapa och publicera en resa.
 
    ![](../assets/journey33.png)
 
-1. Dra och släpp dina andra aktiviteter och konfigurera dem. Se sidorna [Händelseaktiviteter](../building-journeys/event-activities.md), [Om](../building-journeys/about-orchestration-activities.md) orkestreringsaktiviteter [och](../building-journeys/about-action-activities.md)Om åtgärdsaktiviteter.
+1. Dra och släpp dina andra aktiviteter och konfigurera dem. Se sidorna [Händelseaktiviteter](../building-journeys/event-activities.md), [Om orkestreringsaktiviteter](../building-journeys/about-orchestration-activities.md) och [Om åtgärdsaktiviteter](../building-journeys/about-action-activities.md).
 
    ![](../assets/journey34.png)
 
@@ -50,7 +50,7 @@ Här är de viktigaste stegen för att skapa och publicera en resa.
 
    ![](../assets/journey36.png)
 
-## Avsluta en resa {#ending_a_journey}
+## Avslutar en resa {#ending_a_journey}
 
 Det finns två sätt att avsluta en resa:
 
