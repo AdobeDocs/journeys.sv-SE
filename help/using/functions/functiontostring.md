@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # toString {#toString}
 
-Konverterar ett argumentvärde till ett strängvärde, beroende på dess typ. For more information on data types, refer to [this page](../expression/data-types.md).
+Konverterar ett argumentvärde till ett strängvärde, beroende på dess typ. Mer information om datatyper finns på [den här sidan](../expression/data-types.md).
 
 ## Kategori
 
