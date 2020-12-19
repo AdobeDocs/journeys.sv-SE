@@ -32,9 +32,9 @@ else
    (<expression3>)
 ```
 
-`<expression1>` måste returnera ett **booleskt värde**.
+`<expression1>` måste returnera ett  **booleskt värde**.
 
-`<expression2>` och måste `<expression3>` ha samma typ eller kompatibla typer. De signaturer och returtyper som stöds är:
+`<expression2>` och  `<expression3>` måste ha samma typ eller kompatibla typer. De signaturer och returtyper som stöds är:
 
 ```
 boolean,boolean : boolean
