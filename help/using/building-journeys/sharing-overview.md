@@ -20,7 +20,7 @@ ht-degree: 7%
 >
 >Den här funktionen är inte aktiverad som standard för alla nyligen distribuerade instanser. Aktiveringen görs på begäran.
 
-Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Med den här funktionen kan ni kombinera [!DNL Journey Orchestration] data med händelsedata längre fram i kedjan, som hur många konverteringar som har gjorts, hur mycket engagemang som har gjorts på webbplatsen eller hur många transaktioner som har gjorts i butiken. Reseinformationen kan kombineras med data om Adobe Experience Platform, antingen från andra digitala resurser eller från offlineanläggningar, för att ge en mer heltäckande bild av resultatet.
+Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Med den här funktionen kan du kombinera [!DNL Journey Orchestration]-data med händelsedata längre fram i kedjan, som hur många konverteringar som har gjorts, hur mycket engagemang som har gjorts på webbplatsen eller hur många transaktioner som har gjorts i butiken. Reseinformationen kan kombineras med data om Adobe Experience Platform, antingen från andra digitala resurser eller från offlineanläggningar, för att ge en mer heltäckande bild av resultatet.
 
 [!DNL Journey Orchestration] skapar automatiskt nödvändiga scheman och strömmar till datauppsättningar till Adobe Experience Platform för varje steg en individ tar på en resa. En steghändelse motsvarar en person som flyttar från en nod till en annan under en resa. Exempel: i en resa som innehåller en händelse, ett villkor och en åtgärd skickas tre steghändelser till Adobe Experience Platform.
 
@@ -28,14 +28,14 @@ Listan över XDM-fält som skickas är omfattande. Vissa innehåller systemgener
 
 >[!CAUTION]
 >
->Datauppsättningar kan inte aktiveras för realtidsprofiltjänst. Kontrollera att **[!UICONTROL Profile]** växlingsknappen är avstängd.
+>Datauppsättningar kan inte aktiveras för realtidsprofiltjänst. Kontrollera att växlingsknappen **[!UICONTROL Profile]** är inaktiverad.
 
 Journeys skickar data när de förekommer, på ett strömmande sätt. Du kan söka efter dessa data med hjälp av frågetjänsten. Du kan ansluta till Customer Journey Analytics eller andra BI-verktyg för att visa data som hör till dessa steg.
 
 Följande scheman skapas:
 
-* Profilhändelseschema för resesegment för [!DNL Journey Orchestration] - Upplev händelser för steg som tagits i en resa tillsammans med en identitetskarta som ska användas för att mappa till en enskild resespart.
-* Händelseschema för resesegment för [!DNL Journey Orchestration] - Händelse för resesteg som är knuten till en resemetadata.
+* Händelseschema för resesegmentprofil för [!DNL Journey Orchestration] - Upplev händelser för steg som tagits på en resa tillsammans med en identitetskarta som ska användas för mappning till en enskild resespart.
+* Resestegshändelseschema för [!DNL Journey Orchestration] - Resestegshändelse som är knuten till en resemetadata.
 * Reseschema med resefält för [!DNL Journey Orchestration] - Resemetadata för att beskriva resor.
 
 ![](../assets/sharing1.png)
@@ -44,7 +44,7 @@ Följande scheman skapas:
 
 Följande datauppsättningar har skickats:
 
-* Profilhändelseschema för resesteg för [!DNL Journey Orchestration]
+* Profilhändelseschema för resestegsprofil för [!DNL Journey Orchestration]
 * Resestegshändelser
 * Resor
 
@@ -58,4 +58,4 @@ Listorna med XDM-fält som skickas till Adobe Experience Platform finns här:
 * [journeyStep, händelser, identitetsfält](../building-journeys/sharing-identity-fields.md)
 * [Resefält](../building-journeys/sharing-journey-fields.md)
 
-Titta på den här [självstudievideon](https://docs.adobe.com/content/help/en/journey-orchestration-learn/tutorials/reporting-step-events-to-adobe-experience-platform.html)om du vill ha mer information om hur du rapporterar steghändelser till Adobe Experience Platform.
+Titta på den här [självstudievideon](https://docs.adobe.com/content/help/en/journey-orchestration-learn/tutorials/reporting-step-events-to-adobe-experience-platform.html) om du vill ha mer information om steghändelser som rapporteras till Adobe Experience Platform.
