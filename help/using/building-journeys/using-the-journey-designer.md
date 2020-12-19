@@ -18,7 +18,7 @@ På hemmenyn för resan kan du visa **listan över resor**. Skapa en ny resa ell
 
 ## Reselistan {#journey_list}
 
-The **journey list** allows you to view all your journeys at once, see their status and perform basic actions. Du kan skapa dubbletter, stoppa eller radera dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte radera eller starta om en resa som är stängd. Du kan skapa en ny version från den, duplicera den eller stoppa den. Du kan också använda sökfältet för att söka efter en resa.
+Med **reselistan** kan du visa alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan skapa dubbletter, stoppa eller radera dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte radera eller starta om en resa som är stängd. Du kan skapa en ny version från den, duplicera den eller stoppa den. Du kan också använda sökfältet för att söka efter en resa.
 
 Du kommer åt **[!UICONTROL Filters]** genom att klicka på filterikonen högst upp till vänster i listan. Med filtermenyn kan du filtrera de visade resorna enligt olika villkor (status, de som du skapade, de som ändrades under de senaste 30 dagarna, endast de senaste versionerna osv.). Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd. Kolumner som visas i listan kan konfigureras. Alla filter och kolumner sparas per användare.
 
@@ -34,7 +34,7 @@ Alla versioner av dina resor visas i listan med versionsnumret. Läs [den här s
 
 ## Paletten {#palette}
 
-Paletten **** finns till vänster på skärmen. Alla tillgängliga aktiviteter är sorterade i flera kategorier: **[!UICONTROL Events]**, **[!UICONTROL Orchestration]** och **[!UICONTROL Actions]**. Du kan expandera/komprimera de olika kategorierna genom att klicka på deras namn. Om du vill använda en aktivitet på din resa drar och släpper du den från paletten till arbetsytan. Du kan också dubbelklicka på en aktivitet på paletten för att lägga till den på arbetsytan i nästa steg. Du måste konfigurera varje aktivitet som läggs till från paletten innan du publicerar resan. Om du släpper en aktivitet på arbetsytan och inte slutför konfigurationen, stannar den kvar på arbetsytan, men en röd varning anger att konfigurationen inte har slutförts för den här aktiviteten.
+Paletten **finns till vänster på skärmen.** Alla tillgängliga aktiviteter är sorterade i flera kategorier: **[!UICONTROL Events]**, **[!UICONTROL Orchestration]** och **[!UICONTROL Actions]**. Du kan expandera/komprimera de olika kategorierna genom att klicka på deras namn. Om du vill använda en aktivitet på din resa drar och släpper du den från paletten till arbetsytan. Du kan också dubbelklicka på en aktivitet på paletten för att lägga till den på arbetsytan i nästa steg. Du måste konfigurera varje aktivitet som läggs till från paletten innan du publicerar resan. Om du släpper en aktivitet på arbetsytan och inte slutför konfigurationen, stannar den kvar på arbetsytan, men en röd varning anger att konfigurationen inte har slutförts för den här aktiviteten.
 
 >[!NOTE]
 >
@@ -42,23 +42,23 @@ Paletten **** finns till vänster på skärmen. Alla tillgängliga aktiviteter �
 
 ![](../assets/journey38.png)
 
-The **[!UICONTROL Show disabled items]** icon in the top left corner allows you to hide or display unavailable elements in the palette, for example the events that use a different namespace than the ones used in your journey. Som standard är otillgängliga objekt dolda. Om du väljer att visa dem visas de som nedtonade.
+Med ikonen **[!UICONTROL Show disabled items]** i det övre vänstra hörnet kan du dölja eller visa otillgängliga element på paletten, till exempel händelser som använder ett annat namnutrymme än de som används under din resa. Som standard är otillgängliga objekt dolda. Om du väljer att visa dem visas de som nedtonade.
 
-När du använder **[!UICONTROL Search]** fältet visas antalet resultat för varje aktivitetskategori på arbetsytan.
+När du använder fältet **[!UICONTROL Search]** visas antalet resultat för varje aktivitetskategori på arbetsytan.
 
 ![](../assets/palette-filter.png)
 
 ## Arbetsytan {#canvas}
 
-Arbetsytan **är** den centrala zonen i resedesignern. Det är i den här zonen som du kan släppa dina aktiviteter och konfigurera dem. Klicka på en aktivitet på arbetsytan för att konfigurera den. Aktivitetskonfigurationsrutan öppnas till höger. Du kan zooma in och ut genom att använda knapparna &quot;+&quot; och &quot;-&quot; högst upp till höger. På arbetsytan kan du lägga till ett steg efter dem, förutom **[!UICONTROL End]** aktiviteter (se [den här sidan](../building-journeys/end-activity.md)).
+**arbetsytan** är den centrala zonen i resedesignern. Det är i den här zonen som du kan släppa dina aktiviteter och konfigurera dem. Klicka på en aktivitet på arbetsytan för att konfigurera den. Aktivitetskonfigurationsrutan öppnas till höger. Du kan zooma in och ut genom att använda knapparna &quot;+&quot; och &quot;-&quot; högst upp till höger. På arbetsytan kan du lägga till ett nästa steg efter dem, förutom **[!UICONTROL End]**-aktiviteter (se [den här sidan](../building-journeys/end-activity.md)).
 
 ![](../assets/journey39.png)
 
-## Åtgärdskonfigurationsfönstret {#configuration_pane}
+## Aktivitetskonfigurationsfönstret {#configuration_pane}
 
-Aktivitetskonfigurationsrutan **** visas när du klickar på en aktivitet på paletten. Fyll i de obligatoriska fälten. Klicka på **[!UICONTROL Delete]** ikonen för att ta bort aktiviteten. Klicka på **[!UICONTROL Cancel]** för att avbryta ändringarna eller **[!UICONTROL Ok]** för att bekräfta. Om du vill ta bort aktiviteter kan du även markera en aktivitet (eller flera) och trycka på backstegstangenten. Om du trycker på Esc stängs aktivitetskonfigurationsrutan.
+Aktivitetskonfigurationsrutan **visas när du klickar på en aktivitet på paletten.** Fyll i de obligatoriska fälten. Klicka på ikonen **[!UICONTROL Delete]** för att ta bort aktiviteten. Klicka på **[!UICONTROL Cancel]** för att avbryta ändringarna eller **[!UICONTROL Ok]** för att bekräfta. Om du vill ta bort aktiviteter kan du även markera en aktivitet (eller flera) och trycka på backstegstangenten. Om du trycker på Esc stängs aktivitetskonfigurationsrutan.
 
-På arbetsytan representeras dina åtgärder och händelseaktiviteter av en ikon med namnet på händelsen eller åtgärden som visas under. I aktivitetskonfigurationsrutan kan du använda **[!UICONTROL Label]** fältet för att lägga till ett suffix till aktivitetsnamnet. Dessa etiketter hjälper dig att kontextualisera användningen av händelser och åtgärder, särskilt när du använder samma händelse eller åtgärd flera gånger under resan. Du kan också se de etiketter som du har lagt till i [!DNL Journey Orchestration] rapporten. Du kan också definiera etiketter för dina villkorsaktiviteter.
+På arbetsytan representeras dina åtgärder och händelseaktiviteter av en ikon med namnet på händelsen eller åtgärden som visas under. I aktivitetskonfigurationsrutan kan du använda fältet **[!UICONTROL Label]** för att lägga till ett suffix till aktivitetsnamnet. Dessa etiketter hjälper dig att kontextualisera användningen av händelser och åtgärder, särskilt när du använder samma händelse eller åtgärd flera gånger under resan. Du kan också se etiketterna som du lade till i [!DNL Journey Orchestration]-rapporten. Du kan också definiera etiketter för dina villkorsaktiviteter.
 
 ![](../assets/journey59bis.png)
 
@@ -70,7 +70,7 @@ Beroende på resans status kan du utföra olika åtgärder under resan med hjäl
 
 ## Användning av banor på arbetsytan {#paths}
 
-Flera aktiviteter (**[!UICONTROL Condition]**, **[!UICONTROL Action]** aktiviteter) gör att du kan definiera en reservåtgärd om ett fel eller en timeout inträffar. Markera kryssrutan i aktivitetskonfigurationsrutan: **[!UICONTROL Add an alternative path in case of a timeout or an error]**. En annan sökväg läggs till efter aktiviteten. Tidsgränsen anges i resans egenskaper (se [den här sidan](../building-journeys/changing-properties.md) av en adminanvändare). Om det t.ex. tar för lång tid att skicka ett e-postmeddelande eller om det är fel, kan du bestämma dig för att skicka ett SMS.
+Flera aktiviteter (**[!UICONTROL Condition]**, **[!UICONTROL Action]** aktiviteter) gör att du kan definiera en reservåtgärd om ett fel eller en timeout inträffar. Markera kryssrutan i aktivitetskonfigurationsrutan: **[!UICONTROL Add an alternative path in case of a timeout or an error]**. En annan sökväg läggs till efter aktiviteten. Tidsgränsen anges i resans egenskaper (se [den här sidan](../building-journeys/changing-properties.md) av en administratörsanvändare). Om det t.ex. tar för lång tid att skicka ett e-postmeddelande eller om det är fel, kan du bestämma dig för att skicka ett SMS.
 
 ![](../assets/journey42.png)
 
@@ -78,7 +78,7 @@ Med olika aktiviteter (händelse, åtgärd, vänta) kan du lägga till flera sö
 
 När du lyssnar på en händelse rekommenderar vi att du inte väntar på händelsen i oändlighet. Det är inte obligatoriskt, bara en god praxis. Om du bara vill lyssna på en eller flera händelser under en viss tid, placerar du en eller flera händelser och en vänteaktivitet parallellt. Se [det här avsnittet](../building-journeys/event-activities.md#section_vxv_h25_pgb).
 
-Om du vill ta bort banan placerar du markören på den och klickar på **[!UICONTROL Delete arrow]** ikonen.
+Om du vill ta bort banan placerar du markören på den och klickar på ikonen **[!UICONTROL Delete arrow]**.
 
 ![](../assets/journey42ter.png)
 
@@ -86,7 +86,7 @@ När två aktiviteter inte är kopplade till arbetsytan visas en varning. Placer
 
 ![](../assets/canvas-disconnected.png)
 
-## Kopierings- och inklistringsaktiviteter {#copy-paste}
+## Kopiera och klistra in aktiviteter {#copy-paste}
 
 Du kan kopiera en eller flera aktiviteter under en resa och klistra in dem antingen under samma resa eller under en annan. På så sätt kan du spara tid om du vill återanvända flera aktiviteter som redan har konfigurerats under en tidigare resa.
 
@@ -102,11 +102,11 @@ Du kan kopiera en eller flera aktiviteter under en resa och klistra in dem antin
 Så här kopierar/klistrar du in aktiviteter:
 
 1. Öppna en resa.
-1. Välj de aktiviteter du vill kopiera genom att flytta musen medan du klickar. Du kan också klicka på varje aktivitet samtidigt som du trycker på **Ctrl/Kommando** . Använd **Ctrl/Cmd + A** om du vill markera alla aktiviteter.
+1. Välj de aktiviteter du vill kopiera genom att flytta musen medan du klickar. Du kan också klicka på varje aktivitet samtidigt som du trycker på **Ctrl/Kommando**. Använd **Ctrl/Kommando + A** om du vill markera alla aktiviteter.
    ![](../assets/copy-paste1.png)
 1. Tryck på **Ctrl/Kommando + C**.
 Om du bara vill kopiera en aktivitet kan du klicka på den och använda ikonen **Kopiera** längst upp till vänster i aktivitetskonfigurationsrutan.
    ![](../assets/copy-paste2.png)
-1. Tryck på **Ctrl/Kommando + V** för att klistra in aktiviteterna under en resa utan att länka dem till en befintlig nod. Inklistrade aktiviteter placeras i samma ordning. När du har klistrat in aktiviteter förblir de markerade så att du enkelt kan flytta dem. Du kan också placera markören på en tom platshållare och trycka på **Ctrl/Cmd + V**. Inklistrade aktiviteter länkas till noden.
+1. Tryck på **Ctrl/Command + V** för att klistra in aktiviteterna utan att länka dem till en befintlig nod under en resa. Inklistrade aktiviteter placeras i samma ordning. När du har klistrat in aktiviteter förblir de markerade så att du enkelt kan flytta dem. Du kan också placera markören på en tom platshållare och trycka på **Ctrl/Kommando + V**. Inklistrade aktiviteter länkas till noden.
    ![](../assets/copy-paste3.png)
 
