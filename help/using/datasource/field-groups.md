@@ -29,7 +29,7 @@ När ett datakällfält används i en resa hämtas alla fält som är definierad
 
 **[!UICONTROL Cache duration]** är också viktigt eftersom det hjälper dig att optimera prestandan. Cachevaraktighet innebär att om data från en fältgrupp hämtas en gång, cachelagras den tillfälligt i en resa. Om samma data krävs senare under samma resa kommer systemet inte att göra någon ny begäran till datakällan. Konfigurationen av cachevaraktigheten bör anpassas för varje användningsfall. Om du behöver hämta realtidsdata, t.ex. hotellbokningsstatus, väderinformation eller antalet förmånspoäng, associerar du fältgruppen som innehåller dessa fält med en kort cachevaraktighet (t.ex. en sekund). För fält som uppdateras mindre ofta (namn, kön) skapar du en andra fältgrupp med längre cachevaraktighet (till exempel 5 dagar).
 
-The number of journeys that use a field group is displayed in the **[!UICONTROL Used in]** field. You can click the **[!UICONTROL View journeys]** button to display the list of journeys using this field group.
+Antalet resor som använder en fältgrupp visas i fältet **[!UICONTROL Used in]**. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa listan över resor som använder den här fältgruppen.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ The number of journeys that use a field group is displayed in the **[!UICONTROL 
 
 ![](../assets/journey3bis.png)
 
-## Livscykel för fältgrupp {#section_abk_njd_fjb}
+## Fältgruppens livscykel {#section_abk_njd_fjb}
 
 Du kan lägga till eller ta bort fält från en fältgrupp som inte används i ett utkast eller en direktresa.
 
@@ -45,9 +45,9 @@ Du kan lägga till men du kan inte ta bort ett fält från en fältgrupp som anv
 
 Följ de här stegen för att ta bort ett fält från en fältgrupp som används i en eller flera resor. Låt oss använda ett exempel på en fältgrupp med namnet&quot;Fältgrupp A&quot;.
 
-1. Placera markören på Fältgrupp A i listan över fältgrupper och klicka på ikonen till höger. Klicka på den **[!UICONTROL Duplicate]** . Ge t.ex. den duplicerade fältgruppen namnet Fältgrupp B.
+1. Placera markören på Fältgrupp A i listan över fältgrupper och klicka på ikonen **[!UICONTROL Duplicate]** till höger. Ge t.ex. den duplicerade fältgruppen namnet Fältgrupp B.
 1. I Fältgrupp B tar du bort de fält som du inte längre vill använda.
-1. I Fältgrupp A ska du kontrollera var fältgruppen används. Den här informationen visas i **[!UICONTROL Used in]** fältet.
+1. I Fältgrupp A ska du kontrollera var fältgruppen används. Den här informationen visas i fältet **[!UICONTROL Used in]**.
 1. Öppna alla resor som använder fältgrupp A.
 1. Skapa nya versioner av varje resa. Redigera alla aktiviteter med fältgrupp A och välj Fältgrupp B.
 1. Stoppa gamla versioner av resor som använder fältgrupp A. Du ska då inte ha någon resa med fältgrupp A.
