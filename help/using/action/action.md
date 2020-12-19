@@ -23,15 +23,15 @@ ht-degree: 89%
 
 Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssystem för att skicka meddelanden eller API-anrop. En åtgärd kan konfigureras med alla tjänster från alla leverantörer som kan anropas via ett REST API med en JSON-formaterad nyttolast.
 
-The actions are available in the left palette of your journey, in the **[!UICONTROL Action]** category. Läs [den här sidan](../building-journeys/about-action-activities.md).
+Åtgärderna är tillgängliga på den vänstra paletten under din resa i kategorin **[!UICONTROL Action]**. Läs [den här sidan](../building-journeys/about-action-activities.md).
 
 >[!NOTE]
 >
 >Konfigurationen av anpassade åtgärder utförs alltid av en **teknisk användare**.
 
-I listan över **åtgärder** kan du trycka på c för att skapa en ny resa, åtgärd, datakälla eller händelse. For more information on shortcuts in [!DNL Journey Orchestration], see [this section](../about/user-interface.md#section_ksq_zr1_ffb).
+I listan över **åtgärder** kan du trycka på c för att skapa en ny resa, åtgärd, datakälla eller händelse. Mer information om genvägar i [!DNL Journey Orchestration] finns i [det här avsnittet](../about/user-interface.md#section_ksq_zr1_ffb).
 
-Klicka på **[!UICONTROL Actions]** på de övre menyerna för att se åtgärdslistan eller konfigurera en ny åtgärd. Listan med åtgärder visas. See [this page](../about/user-interface.md) for more information on the interface.
+Klicka på **[!UICONTROL Actions]** på de övre menyerna för att se åtgärdslistan eller konfigurera en ny åtgärd. Listan med åtgärder visas. Mer information om gränssnittet finns på [den här sidan](../about/user-interface.md).
 
 ![](../assets/custom1.png)
 
