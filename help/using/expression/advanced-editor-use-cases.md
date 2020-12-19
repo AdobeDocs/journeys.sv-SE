@@ -79,7 +79,7 @@ Det här uttrycket returnerar ett booleskt värde.
 
 `#{ArriveLumaStudio._acpevangelists1.location.location}`
 
-* Ange SKU och använd funktionen `first` för att hämta den senaste&quot;addToCart&quot;-interaktionen:
+* Ange SKU och använd funktionen `first` för att hämta den senaste addToCart-åtgärden:
 
    ```
        #{ExperiencePlatformDataSource
@@ -109,9 +109,9 @@ Detta villkor hämtar endast geofence-händelser som utlöses i&quot;Arlington&q
                     .name} == "Arlington"
 ```
 
-Förklaring: Det här är en strikt strängjämförelse (skiftlägeskänslig), som motsvarar en fråga i enkelt läge som använder `equal to` med `Is sensitive` checked.
+Förklaring: Detta är en strikt strängjämförelse (skiftlägeskänslig), som motsvarar en fråga i enkelt läge där `equal to` används med `Is sensitive` markerat.
 
-Samma fråga med `Is sensitive` omarkerad genererar följande uttryck i avancerat läge:
+Samma fråga med `Is sensitive` avmarkerat genererar följande uttryck i avancerat läge:
 
 ```
         equalIgnoreCase(@{GeofenceEntry
@@ -138,6 +138,6 @@ Följande uttryck gör att du kan definiera CRM-ID:t i ett åtgärdspersonaliser
                          ))
 ```
 
-Förklaring: I det här exemplet används `substr` och `lastIndexOf` funktioner för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för en mobilapp.
+Förklaring: I det här exemplet används funktionerna `substr` och `lastIndexOf` för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för en mobilapp.
 
-Titta på [den här videon](https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/create-a-journey.html)om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.
+Titta på den här videon[ om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.](https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/create-a-journey.html)
