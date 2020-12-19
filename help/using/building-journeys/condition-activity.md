@@ -27,7 +27,7 @@ Det finns fyra typer av villkor:
 
 När du använder flera villkor under en resa kan du definiera etiketter för var och en av dem för att lättare kunna identifiera dem.
 
-Klicka **[!UICONTROL Add a path]** om du vill definiera flera villkor. För varje villkor läggs en ny bana till på arbetsytan efter aktiviteten.
+Klicka på **[!UICONTROL Add a path]** om du vill definiera flera villkor. För varje villkor läggs en ny bana till på arbetsytan efter aktiviteten.
 
 ![](../assets/journey47.png)
 
@@ -46,7 +46,7 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 
 ![](../assets/journey64.png)
 
-Om ni använder [Adobe Experience Platform segmenteringstjänst](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) för att skapa era segment kan ni utnyttja dem i era resevillkor. Mer information finns i [Använda segment under villkor](../segment/using-a-segment.md).
+Om du använder [Adobe Experience Platform segmenteringstjänst](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html) för att skapa dina segment kan du utnyttja dem under dina reseförhållanden. Se [Använda segment i villkor](../segment/using-a-segment.md).
 
 
 >[!NOTE]
@@ -57,7 +57,7 @@ När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa
 
 ## Datakällans villkor {#data_source_condition}
 
-På så sätt kan du definiera ett villkor baserat på fält från datakällorna eller händelser som tidigare placerats under resan. Mer information om hur du använder uttrycksredigeraren finns på [den här sidan](../expression/expressionadvanced.md). Med den avancerade uttrycksredigeraren kan du ställa in mer avancerade villkor för att hantera samlingar eller använda datakällor som kräver att parametrar skickas. Läs [den här sidan](../datasource/external-data-sources.md).
+På så sätt kan du definiera ett villkor baserat på fält från datakällorna eller händelser som tidigare placerats under resan. Mer information om hur du använder uttrycksredigeraren finns i [den här sidan](../expression/expressionadvanced.md). Med den avancerade uttrycksredigeraren kan du ställa in mer avancerade villkor för att hantera samlingar eller använda datakällor som kräver att parametrar skickas. Läs [den här sidan](../datasource/external-data-sources.md).
 
 ![](../assets/journey50.png)
 
@@ -71,7 +71,7 @@ På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/
 
 ![](../assets/journey51.png)
 
-## Procentdelning {#percentage_split}
+## Procentuell delning {#percentage_split}
 
 Med det här alternativet kan du slumpmässigt dela målgruppen för att definiera olika åtgärder för varje grupp. Definiera antalet delningar och partitioneringen för varje sökväg. Delningsberäkningen är statistisk eftersom systemet inte kan förutse hur många personer som kommer att flöda i den här kundresan. Därför har delningen en mycket låg felmarginal. Den här funktionen är baserad på en slumpmässig Java-mekanism (se den här [sidan](https://docs.oracle.com/javase/7/docs/api/java/util/Random.html)).
 
