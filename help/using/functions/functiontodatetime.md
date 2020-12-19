@@ -34,7 +34,7 @@ Konvertering
 
 >[!NOTE]
 >
->Tidszons-ID måste vara en strängkonstant. Det kan inte vara en fältreferens eller ett uttryck. For more information on data types, refer to [this page](../expression/data-types.md).
+>Tidszons-ID måste vara en strängkonstant. Det kan inte vara en fältreferens eller ett uttryck. Mer information om datatyper finns på [den här sidan](../expression/data-types.md).
 
 ## Underskrifter och returnerade typer
 
@@ -44,7 +44,7 @@ Konvertering
 
 `toDateTime(<integer>)`
 
-Returnera ett **dateTime**.
+Returnera en **dateTime**.
 
 <!--`toDateTime(<year>,<month>,<dayOfMonth>,<hour>,<minute>,<second>)`
 
