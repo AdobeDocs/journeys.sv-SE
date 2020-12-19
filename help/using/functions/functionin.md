@@ -16,7 +16,7 @@ ht-degree: 11%
 
 Kontrollerar om det första argumentvärdet finns i listan. Kontrollen utförs med en likhetskontroll för varje argumentvärde. Det returnerar true om argumentvärdet hittas, annars false.
 
-Typen av `<expression>` måste matcha objekten i listan. Typer av objekt i listan måste, som en påminnelse, matcha varandra.
+Typen för `<expression>` måste matcha objekten i listan. Typer av objekt i listan måste, som en påminnelse, matcha varandra.
 
 ## Kategori
 
