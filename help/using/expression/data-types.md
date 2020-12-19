@@ -18,7 +18,7 @@ Tekniskt sett innehåller en konstant alltid en datatyp. I det litterala uttryck
 
 Avsnitten nedan innehåller information om de olika datatypsuttrycken och hur de återges.
 
-## string {#string}
+## sträng {#string}
 
 **Beskrivning**
 
@@ -118,7 +118,7 @@ false
 true
 ```
 
-## dateTimeOnly {#date-time-only}
+## dateTimeOnly {#date-time-only}
 
 **Beskrivning**
 
@@ -262,7 +262,7 @@ toDuration("-P6H3M") -- parses as "-6 hours and -3 minutes"
 toDuration("-P-6H+3M") -- parses as "+6 hours and -3 minutes"
 ```
 
-## list {#list}
+## lista {#list}
 
 **Beskrivning**
 
