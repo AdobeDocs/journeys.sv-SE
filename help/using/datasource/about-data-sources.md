@@ -45,11 +45,11 @@ Här följer de huvudsakliga konfigurationsstegen för datakällor:
 
 1. Klicka på fliken **[!UICONTROL Data Sources]** på den övre menyn.
 
-   Listan med datakällor visas. See [this page](../about/user-interface.md) for more information on the interface.
+   Listan med datakällor visas. Mer information om gränssnittet finns på [den här sidan](../about/user-interface.md).
 
    ![](../assets/journey18.png)
 
-1. Then you can either add field groups to the built-in data source (see [this page](../datasource/adobe-experience-platform-data-source.md)) or create a new external data source (see [this page](../datasource/external-data-sources.md)) and associated field groups (see [this page](../datasource/field-groups.md)).
+1. Sedan kan du antingen lägga till fältgrupper i den inbyggda datakällan (se [den här sidan](../datasource/adobe-experience-platform-data-source.md)) eller skapa en ny extern datakälla (se [den här sidan](../datasource/external-data-sources.md)) och associerade fältgrupper (se [den här sidan](../datasource/field-groups.md)).
 
    ![](../assets/journey23.png)
 
