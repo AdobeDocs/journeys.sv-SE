@@ -32,7 +32,7 @@ Du kan välja en tidszon eller välja att använda den tidszon som är definiera
 
 Tidszonen kan också korrigeras. Rensa den fördefinierade tidszonen och välj en i listrutan. Om du använder en fast tidszon är den densamma för alla personer som deltar i resan.
 
-I **[!UICONTROL Properties]** väljer du en tidszon.
+Om du vill göra det väljer du en tidszon i **[!UICONTROL Properties]**.
 
 ![](../assets/journey73.png)
 
@@ -44,7 +44,7 @@ Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas un
 
 Om den enskilda personens profil inte innehåller någon tidszon är den tidszon som hämtas den som definieras i tidszonsfältet.
 
-Om du vill göra det **[!UICONTROL Properties]** går du till **[!UICONTROL Use Profile timezone in timers and conditions]**.
+Om du vill göra det i **[!UICONTROL Properties]** markerar du **[!UICONTROL Use Profile timezone in timers and conditions]**.
 
 ![](../assets/journey72.png)
 
