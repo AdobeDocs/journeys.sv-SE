@@ -26,7 +26,7 @@ Nu kan **företagsanvändaren** bygga resan. Vår resa omfattar följande aktivi
 >
 >Aktiviteterna **[!UICONTROL Push]** och **[!UICONTROL Email]** är bara tillgängliga på paletten om du har Adobe Campaign Standard.
 
-For additional information on how to build a journey, refer to [this page](../building-journeys/journey.md).
+Mer information om hur du skapar en resa finns på [den här sidan](../building-journeys/journey.md).
 
 ## Första stegen{#section_ntb_ws1_ffb}
 
@@ -76,7 +76,7 @@ For additional information on how to build a journey, refer to [this page](../bu
    >
    >I den andra delen av uttrycket är ”Profil” valfri.
 
-1. Vi måste välja en namnrymd. En namnrymd är förvald baserat på schemats egenskaper. Du kan behålla den som är förmarkerad. For more information on namespaces, see [this page](../event/selecting-the-namespace.md).
+1. Vi måste välja en namnrymd. En namnrymd är förvald baserat på schemats egenskaper. Du kan behålla den som är förmarkerad. Mer information om namnutrymmen finns på [den här sidan](../event/selecting-the-namespace.md).
 
 I vårt fall vill vi bara reagera på dessa två villkor vilket innebär att vi inte markerar rutan **[!UICONTROL Show path for other cases than the one(s) above]**.
 
@@ -101,7 +101,7 @@ Två vägar skapas efter ditt villkor:
 
    ![](../assets/journeyuc2_18.png)
 
-1. When you select a field from an external data source, the right part of the screen displays the list of parameters that were defined when configuring the external data source (see [this page](../usecase/configuring-the-data-sources.md)). Klicka på parameterns namn och definiera värdet för reservationens systemnyckel vilken är Experience Cloud-ID i följande exempel:
+1. När du väljer ett fält från en extern datakälla visar den högra delen av skärmen listan med parametrar som definierades när den externa datakällan konfigurerades (se [den här sidan](../usecase/configuring-the-data-sources.md)). Klicka på parameterns namn och definiera värdet för reservationens systemnyckel vilken är Experience Cloud-ID i följande exempel:
 
    ```
    @{LobbyBeacon.endUserIDs._experience.mcid.id}
@@ -167,7 +167,7 @@ Två vägar skapas efter ditt villkor:
 
 1. Lägg till en **[!UICONTROL End]**-aktivitet.  
 
-Klicka på växlingsknappen **[!UICONTROL Test]** och testa din resa. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. For more information on the test mode, refer to [this page](../building-journeys/testing-the-journey.md).
+Klicka på växlingsknappen **[!UICONTROL Test]** och testa din resa. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. Mer information om testläget finns på [den här sidan](../building-journeys/testing-the-journey.md).
 
 ![](../assets/journeyuc2_32bis.png)
 
