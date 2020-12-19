@@ -23,7 +23,7 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 
 ## September 2020 {#september-2020}
 
-* Gränssnittsbeskrivningsavsnittet har uppdaterats för att återspegla den nya menyn **Alla väljare** . [Läs mer](../about/user-interface.md)
+* Gränssnittsbeskrivningsavsnittet har uppdaterats för att återspegla den nya **Alla väljare**-menyn. [Läs mer](../about/user-interface.md)
 * En anteckning om segmentbaserade resor med nya versioner som inte är återkommande har lagts till. [Läs mer](../alpha/alpha-segment-trigger.md)
 
 ## Augusti 2020 {#august-2020}
