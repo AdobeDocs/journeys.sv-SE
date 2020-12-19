@@ -139,6 +139,6 @@ Med [!DNL Journey Orchestration] kan du partitionera instansen i separerade virt
 Sandlådor tilldelas via produktprofiler i Admin Console. Se det här [avsnittet](../about/access-management.md#create-product-profile) för mer information om hur du tilldelar sandlådor.
 
 [!DNL Journey Orchestration] speglar sandlådorna i Adobe Experience Platform som har skapats för en viss organisation.
-Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. Se [användarhandboken om sandlådor](https://docs.adobe.com/content/help/sv-SE/experience-platform/sandbox/ui/user-guide.html) för detaljerade anvisningar.
+Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. Se [användarhandboken om sandlådor](https://docs.adobe.com/content/help/en/experience-platform/sandbox/ui/user-guide.html) för detaljerade anvisningar.
 
 Du hittar kontrollen för att välja sandlåda längst upp till vänster på skärmen. Klicka på den för närvarande aktiva sandlådan i väljaren för att växla från en sandlåda till en annan och välj sedan en annan sandlåda på rullgardinsmenyn.
