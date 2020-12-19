@@ -16,9 +16,9 @@ ht-degree: 5%
 
 Nyckeln är fältet eller kombinationen av fält som är en del av händelsenyttolastdata och som gör att systemet kan identifiera den person som är associerad med händelsen. Nyckeln kan till exempel vara Experience Cloud-ID, ett CRM-ID eller en e-postadress.
 
-Om du planerar att utnyttja data som lagras i kundprofildatabasen i realtid måste du som händelsenyckel välja information som du definierat som en profils identitet i [kundprofiltjänsten](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html)i realtid.
+Om du planerar att utnyttja data som lagras i kundprofildatabasen i realtid måste du som händelsenyckel välja information som du definierat som en profils identitet i [kundprofiltjänsten i realtid](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html).
 
-Det gör att systemet kan utföra avstämningen mellan händelsen och personens profil. Om du väljer ett schema som har en primär identitet fylls **[!UICONTROL Key]** - och **[!UICONTROL Namespace]** -fälten i förväg i. Om ingen identitet har definierats väljer vi _identityMap > id_ som primärnyckel. Sedan måste du markera ett namnutrymme och nyckeln fylls i automatiskt (nedanför **[!UICONTROL Namespace]** fältet) med _identityMap > id_.
+Det gör att systemet kan utföra avstämningen mellan händelsen och personens profil. Om du väljer ett schema som har en primär identitet är fälten **[!UICONTROL Key]** och **[!UICONTROL Namespace]** förfyllda. Om ingen identitet har definierats väljer vi _identityMap > id_ som primärnyckel. Sedan måste du markera ett namnutrymme och nyckeln kommer att vara förifylld (under fältet **[!UICONTROL Namespace]**) med _identityMap > id_.
 
 När du markerar fält taggas primära identitetsfält.
 
@@ -26,7 +26,7 @@ När du markerar fält taggas primära identitetsfält.
 
 Om du behöver använda en annan nyckel, till exempel ett CRM-ID eller en e-postadress, måste du lägga till den manuellt:
 
-1. Klicka inuti **[!UICONTROL Key]** fältet eller på pennikonen.
+1. Klicka i fältet **[!UICONTROL Key]** eller på pennikonen.
 
    ![](../assets/journey16.png)
 
@@ -34,7 +34,7 @@ Om du behöver använda en annan nyckel, till exempel ett CRM-ID eller en e-post
 
    ![](../assets/journey20.png)
 
-När händelsen tas emot, kommer nyckelns värde att göra det möjligt för systemet att identifiera den person som är associerad med händelsen. Nyckeln är kopplad till ett namnutrymme (se [den här sidan](../event/selecting-the-namespace.md)) och kan användas för att utföra frågor på Adobe Experience Platform. Läs [den här sidan](../building-journeys/about-orchestration-activities.md).
+När händelsen tas emot, kommer nyckelns värde att göra det möjligt för systemet att identifiera den person som är associerad med händelsen. Kopplad till ett namnutrymme (se [den här sidan](../event/selecting-the-namespace.md)), kan nyckeln användas för att utföra frågor på Adobe Experience Platform. Läs [den här sidan](../building-journeys/about-orchestration-activities.md).
 Nyckeln används också för att kontrollera att en person befinner sig på en resa. En person kan faktiskt inte befinna sig på två olika platser på samma resa. Därför tillåter systemet inte att samma nyckel, till exempel nyckeln CRMID=3224, finns på olika platser under samma resa.
 
 Du har även tillgång till de avancerade uttrycksfunktionerna (**[!UICONTROL Advanced mode]**) om du vill utföra ytterligare ändringar. Dessa funktioner gör att du kan ändra de värden som används för att utföra specifika frågor, till exempel ändra format, utföra fältsammanfogningar, med hänsyn enbart till en del av ett fält (till exempel de 10 första tecknen). Läs [den här sidan](../expression/expressionadvanced.md).
