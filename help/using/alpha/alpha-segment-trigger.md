@@ -26,21 +26,21 @@ Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktivite
 
 >[!NOTE]
 >
->Du kan inte ha ett hopp och en **Läs-segmentsaktivitet** på samma resa. Du kan inte hoppa till en resa som börjar med en **Read-segmenthändelse** .
+>Du kan inte ha ett hopp och ett **Lässegment**-aktivitet på samma resa. Du kan inte hoppa till en resa som börjar med en **Read segment**-händelse.
 
-## Konfigurera aktiviteten {#configuring-segment-trigger-activity}
+## Konfigurerar aktiviteten {#configuring-segment-trigger-activity}
 
 >[!NOTE]
 >
 >På grund av fördröjningar för segmentexport går det inte att utlösa en segmentbaserad resa inom en kortare tidsram än en timme.
 
-1. Ge kategorin en ny **[!UICONTROL Orchestration]** dimension och släpp en **[!UICONTROL Read Segment]** aktivitet på arbetsytan.
+1. Ta fram kategorin **[!UICONTROL Orchestration]** och släpp en **[!UICONTROL Read Segment]**-aktivitet på arbetsytan.
 
    Aktiviteten måste placeras som det första steget i en resa.
 
-1. Lägg till en aktivitet **[!UICONTROL Label]** (valfritt).
+1. Lägg till en **[!UICONTROL Label]** till aktiviteten (valfritt).
 
-1. I **[!UICONTROL Segment]** fältet väljer du det Adobe Experience Platform-segment som ska användas för resan och klickar sedan på **[!UICONTROL Save]**.
+1. I fältet **[!UICONTROL Segment]** väljer du det Adobe Experience Platform-segment som ska passera resan och klickar sedan på **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
@@ -48,41 +48,41 @@ Säg att du har ett Guldkundssegment på Adobe Experience Platform. Med aktivite
 
    ![](../assets/segment-trigger-segment-selection.png)
 
-   När du har lagt till segmentet kan du med knappen kopiera dess namn och ID: **[!UICONTROL Copy]**
+   När segmentet har lagts till kan du med knappen **[!UICONTROL Copy]** kopiera dess namn och ID:
 
    `{"name":"Gold customers,”id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
 
    ![](../assets/segment-trigger-copy.png)
 
-1. I **[!UICONTROL Namespace]** fältet väljer du det namnutrymme som ska användas för att identifiera personerna. For more on namespaces, refer to [this section](../event/selecting-the-namespace.md).
+1. I fältet **[!UICONTROL Namespace]** väljer du det namnutrymme som ska användas för att identifiera personerna. Mer information om namnutrymmen finns i [det här avsnittet](../event/selecting-the-namespace.md).
 
    >[!NOTE]
    >
    >Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kan inte ta sig in på resan.
 
-1. Med hjälp av den här **[!UICONTROL Read Segment]** aktiviteten kan du ange vid vilken tidpunkt segmentet ska börja färden. Det gör du genom att klicka på **[!UICONTROL Edit journey schedule]** länken för att komma åt resans egenskaper och sedan konfigurera **[!UICONTROL Scheduler type]** fältet.
+1. Med aktiviteten **[!UICONTROL Read Segment]** kan du ange den tidpunkt då segmentet ska gå in i resan. Om du vill göra det klickar du på länken **[!UICONTROL Edit journey schedule]** för att komma åt resans egenskaper och konfigurerar sedan fältet **[!UICONTROL Scheduler type]**.
 
    ![](../assets/segment-trigger-schedule.png)
 
-   Som standard färdas segmenten in på resan, **[!UICONTROL As soon as possible]** vilket innebär en timme efter det att resan har publicerats. Om du vill att segmentet ska anges på en viss dag/tid eller på en återkommande basis, väljer du önskat värde i listan.
+   Som standard anges resan **[!UICONTROL As soon as possible]** i segment, vilket innebär en timme efter att resan har publicerats. Om du vill att segmentet ska anges på en viss dag/tid eller på en återkommande basis, väljer du önskat värde i listan.
 
    >[!NOTE]
    >
-   >Observera att **[!UICONTROL Schedule]** avsnittet endast är tillgängligt när en **[!UICONTROL Read Segment]** aktivitet har släppts på arbetsytan.
+   >Observera att avsnittet **[!UICONTROL Schedule]** bara är tillgängligt när en **[!UICONTROL Read Segment]**-aktivitet har släppts på arbetsytan.
 
    ![](../assets/segment-trigger-properties.png)
 
 ## Testa och publicera resan {#testing-publishing}
 
-Med den här **[!UICONTROL Read Segment]** aktiviteten kan du testa resan antingen med en enhetlig profil eller med 100 slumpmässiga testprofiler som valts bland de profiler som är kvalificerade för segmentet.
+Med aktiviteten **[!UICONTROL Read Segment]** kan du testa resan antingen med en enhetsprofil eller med 100 slumpmässiga testprofiler som valts bland de profiler som är kvalificerade för segmentet.
 
 Aktivera testläget och välj sedan önskat alternativ i den vänstra rutan.
 
 ![](../assets/segment-trigger-test-modes.png)
 
-Sedan kan du konfigurera och köra testläget som vanligt. Detaljerade anvisningar om hur du testar en resa finns i [detta avsnitt](../building-journeys/testing-the-journey.md).
+Sedan kan du konfigurera och köra testläget som vanligt. Detaljerade anvisningar om hur du testar en resa finns i [det här avsnittet](../building-journeys/testing-the-journey.md).
 
-När testet är igång kan du med knappen **[!UICONTROL Show logs]** se testresultaten enligt det valda testalternativet:
+När testet är klart kan du med **[!UICONTROL Show logs]**-knappen se testresultaten enligt det valda testalternativet:
 
 * **[!UICONTROL Single profile at a time]**: testloggarna visar samma information som när det enhetstestläget används. Mer information om detta finns i [det här avsnittet](../building-journeys/testing-the-journey.md#viewing_logs)
 
@@ -92,7 +92,7 @@ När testet är igång kan du med knappen **[!UICONTROL Show logs]** se testresu
 
    ![](../assets/read-segment-log.png)
 
-När testerna är slutförda kan du publicera din resa (se [Publicera resan](../building-journeys/publishing-the-journey.md)). Enskilda personer som tillhör segmentet kommer in i resan på det datum/den tidpunkt som anges i **[!UICONTROL Scheduler]** avsnittet om färdens egenskaper.
+När testerna är slutförda kan du publicera din resa (se [Publicera resan](../building-journeys/publishing-the-journey.md)). Individer som tillhör segmentet kommer att gå in i resan det datum/den tidpunkt som anges i avsnittet **[!UICONTROL Scheduler]** för färdens egenskaper.
 
 >[!NOTE]
 >
