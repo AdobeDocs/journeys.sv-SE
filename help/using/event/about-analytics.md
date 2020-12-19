@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Utnyttja Adobe Analytics data{#analytics-data}
+# Utnyttja Adobe Analytics-data{#analytics-data}
 
 >[!NOTE]
 >
@@ -22,9 +22,9 @@ Ni kan utnyttja alla Adobe Analytics beteendehändelsedata som ni redan samlar i
 
 För att detta ska fungera måste du aktivera rapportsviten som du vill utnyttja i Adobe Experience Platform:
 
-1. I Adobe Experience Platform väljer du **[!UICONTROL Sources]** sedan **[!UICONTROL Add data]** i avsnittet Adobe Analytics. En lista över tillgängliga Adobe Analytics-rapportsviter visas.
+1. I Adobe Experience Platform väljer du **[!UICONTROL Sources]** och sedan **[!UICONTROL Add data]** i avsnittet Adobe Analytics. En lista över tillgängliga Adobe Analytics-rapportsviter visas.
 
-1. Välj den rapportsvit som du vill aktivera, klicka **[!UICONTROL Next]** och klicka på **[!UICONTROL Finish]**.
+1. Välj den rapportserie som du vill aktivera, klicka på **[!UICONTROL Next]** och klicka på **[!UICONTROL Finish]**.
 
 1. Dela källdata-ID:t med alfaprogrammets kontaktpunkt.
 
