@@ -14,11 +14,11 @@ ht-degree: 12%
 
 # Välja namnrymden {#concept_ckb_3qt_52b}
 
-Med namnutrymmet kan du definiera vilken typ av nyckel som används för att identifiera den person som är associerad med händelsen. Dess konfiguration är valfri. Det krävs om du under dina resor vill hämta ytterligare information från kundprofilen [i](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html)realtid. Namnutrymmesdefinitionen behövs inte om du bara använder data från ett tredjepartssystem via en anpassad datakälla.
+Med namnutrymmet kan du definiera vilken typ av nyckel som används för att identifiera den person som är associerad med händelsen. Dess konfiguration är valfri. Det krävs om du under dina resor vill hämta ytterligare information som kommer från [kundprofilen i realtid](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html). Namnutrymmesdefinitionen behövs inte om du bara använder data från ett tredjepartssystem via en anpassad datakälla.
 
-Du kan antingen använda en av de fördefinierade eller skapa en ny med hjälp av tjänsten Identity Namespace. Refer to this [page](https://docs.adobe.com/content/help/sv-SE/experience-platform/identity/home.html).
+Du kan antingen använda en av de fördefinierade eller skapa en ny med hjälp av tjänsten Identity Namespace. Se den här [sidan](https://docs.adobe.com/content/help/sv-SE/experience-platform/identity/home.html).
 
-Om du väljer ett schema som har en primär identitet fylls **[!UICONTROL Key]** - och **[!UICONTROL Namespace]** -fälten i förväg i. Om ingen identitet har definierats väljer vi _identityMap > id_ som primärnyckel. Sedan måste du markera ett namnutrymme och nyckeln fylls i automatiskt (nedanför **[!UICONTROL Namespace]** fältet) med _identityMap > id_.
+Om du väljer ett schema som har en primär identitet är fälten **[!UICONTROL Key]** och **[!UICONTROL Namespace]** förfyllda. Om ingen identitet har definierats väljer vi _identityMap > id_ som primärnyckel. Sedan måste du markera ett namnutrymme och nyckeln kommer att vara förifylld (under fältet **[!UICONTROL Namespace]**) med _identityMap > id_.
 
 När du markerar fält taggas primära identitetsfält.
 
