@@ -14,7 +14,7 @@ ht-degree: 10%
 
 # nu {#now}
 
-Returnerar aktuellt datum i tidsformat för datum. For more information on data types, refer to [this page](../expression/data-types.md).
+Returnerar aktuellt datum i tidsformat för datum. Mer information om datatyper finns på [den här sidan](../expression/data-types.md).
 
 ## Kategori
 
