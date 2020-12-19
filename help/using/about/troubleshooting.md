@@ -46,7 +46,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skickas inte direkt från källan till [!DNL Journey Orchestration]. [!DNL Journey Orchestration] förlitar sig faktiskt på API:er för strömningsinmatning i Adobe Experience Platform. As a result, in case of event related issues, you can refer to [this page](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/troubleshooting.html) for Streaming ingestion APIs troubleshooting.
+Händelser skickas inte direkt från källan till [!DNL Journey Orchestration]. [!DNL Journey Orchestration] förlitar sig faktiskt på API:er för strömningsinmatning i Adobe Experience Platform. Om det gäller händelserelaterade problem kan du därför gå till [den här sidan](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/troubleshooting.html) för felsökning av API:er för direktuppspelning.
 
 ## Kontrollera om någon kommer in i resan{#section_x4v_zzs_dgb}
 
