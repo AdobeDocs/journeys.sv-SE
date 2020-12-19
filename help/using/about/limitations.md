@@ -20,14 +20,14 @@ Här är begränsningar för användning av Journey Orchestration.
 
 * Det finns ingen sändande begränsning. 
 * Två försök görs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. 
-* Den inbyggda **reaktionshändelsen** gör att du kan reagera på åtgärder som inte är installerade (se den här [sidan](../building-journeys/reaction-events.md)). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse. 
+* Den inbyggda **Reaction**-händelsen gör att du kan reagera på åtgärder som inte finns i lådan (se den här [sidan](../building-journeys/reaction-events.md)). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse. 
 * Det finns ingen Adobe Campaign Classic-integration.
 
 ## Begränsningar för reseversioner {#journey-versions-limitations}
 
-* en resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte starta en resa med en **Segmentkvalificeringshändelse** .
-* En resa som börjar med en **segmentkvalificeringsaktivitet** i v1 måste alltid börja med en **segmentkvalificering** i ytterligare versioner.
-* Det segment och namnutrymme som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
+* en resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Det går inte att starta en resa med en **segmentkvalificeringshändelse**.
+* en resa som börjar med en **segmentkvalificering**-aktivitet i v1 måste alltid börja med en **segmentkvalificering** i ytterligare versioner.
+* Det segment och namnområde som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
 
 ## Segmentkvalificering {#segment-qualification}
@@ -46,7 +46,7 @@ Här är begränsningar för användning av Journey Orchestration.
 
 ## Begränsningar för Adobe Campaign-åtgärder
 
-* Adobe Campaign Standard Transactional Messaging har en skala på högst 50 000 meddelanden per timme över alla kanaler för en viss instans. Se [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html). 
+* Adobe Campaign Standard Transactional Messaging har en skala på högst 50 000 meddelanden per timme över alla kanaler för en viss instans. Se [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/campaign-standard.html). 
  
 
 ## Begränsningar för händelser
