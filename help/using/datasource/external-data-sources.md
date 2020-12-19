@@ -53,7 +53,7 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
    ![](../assets/journey27.png)
 
-1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**. For more information on the custom authentication mode, see [this section](../datasource/external-data-sources.md#section_wjp_nl5_nhb). I vårt exempel väljer vi:
+1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**. Mer information om det anpassade autentiseringsläget finns i [det här avsnittet](../datasource/external-data-sources.md#section_wjp_nl5_nhb). I vårt exempel väljer vi:
 
 
    * **[!UICONTROL Type]**: &quot;API-nyckel&quot;
