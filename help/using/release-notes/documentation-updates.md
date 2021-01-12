@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Dokumentationsuppdateringar
 description: Läs om dokumentationsuppdateringar
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: f562d4a967e6551d3b8a1bc4dbddbf01da9b3e70
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 94%
+source-wordcount: '789'
+ht-degree: 93%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 94%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Orchestration].
 Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om [!DNL Journey Orchestration].
+
+## Januari 2021 {#january-2021}
+
+* Lagt till bästa praxis när en resa utlöses samtidigt som en profil skapas. [Läs mer](../about/limitations.md#journeys-limitation-profile-creation).
 
 ## Oktober 2020 {#october-2020}
 
