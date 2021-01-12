@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Journey Orchestration begränsningar
 description: Läs mer om begränsningar i Journey Orchestration
 translation-type: tm+mt
-source-git-commit: 6ebedad2cb8e78b4dd953bc7a2993cebbeefabcc
+source-git-commit: f562d4a967e6551d3b8a1bc4dbddbf01da9b3e70
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 3%
+source-wordcount: '515'
+ht-degree: 2%
 
 ---
 
@@ -57,3 +57,15 @@ Här är begränsningar för användning av Journey Orchestration.
 ## Begränsningar för datakällor
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
+
+## Resor som börjar samtidigt som en profilgenerering {#journeys-limitation-profile-creation}
+
+Det finns en fördröjning i skapandet/uppdateringen av API-baserade profiler i Adobe Experience Platform. Servicenivåmålet (SLT) i form av fördröjning är &lt; 1 min från intag till en enhetlig profil för 95:e percentilen begäranden, vid en volym på 20 000 förfrågningar per sekund (RPS).
+
+Om en resa utlöses samtidigt för att skapa en profil och omedelbart kontrollerar/hämtar information från profiltjänsten kanske den inte fungerar som den ska.
+
+Du kan välja mellan följande två lösningar:
+
+* Lägg till en vänteaktivitet efter den första händelsen för att ge Adobe Experience Platform den tid det behöver för att utföra inmatningen till profiltjänsten.
+
+* Konfigurera en resa som inte omedelbart utnyttjar profilen. Om resan till exempel är utformad för att bekräfta att ett konto har skapats, kan upplevelsehändelsen innehålla information som behövs för att skicka det första bekräftelsemeddelandet (förnamn, efternamn, e-postadress osv.).
