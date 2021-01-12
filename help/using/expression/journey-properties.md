@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Resans egenskaper
 description: Läs om reseegenskaper
 translation-type: tm+mt
-source-git-commit: 341138c31676870878099b4f4eecec200a614c69
+source-git-commit: ba50a1be1a1b8665ab3c557cc1ccc5c4f27bcc87
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '571'
 ht-degree: 1%
 
 ---
@@ -46,6 +46,8 @@ Här är några exempel på användningsområden:
 |  | travelVersion | Reseversion |  |
 | Reseinstans | instanceUID | Journey-instans-ID | ID för instansen |
 |  | externalKey | Extern nyckel | Individuell identifierare som utlöser resan |
+|  | organizationId | Organisationsidentifierare | Varumärkesorganisation |
+|  | sandboxName | Namn på sandlåda | Namn på sandlådan |
 | Identitet | profileId | Identifierare för profilidentitet | Identifierare för profilen i resan |
 |  | namespace | Namnområde för profilidentitet | Profilens namnområde under resan (exempel: ECID) |
 | Aktuell nod | currentNodeId | Aktuell nodidentifierare | Identifierare för den aktuella aktiviteten (nod) |
