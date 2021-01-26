@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Definiera nyttolastfält
 description: Lär dig hur du definierar nyttolastfälten
 translation-type: tm+mt
-source-git-commit: 81bb0b5da38217f9290214901c64e90d7ec2ba0e
+source-git-commit: a515e052a5bc1359632a1829df70a206614a5bb2
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '301'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 
    ![](../assets/journey8.png)
 
-   Alla fält som definieras i schemat visas. Listan med fält varierar mellan olika scheman. Du kan söka efter ett specifikt fält eller använda filtren för att visa alla noder och fält eller endast de markerade fälten. Enligt schemadefinitionen kan vissa fält vara obligatoriska och förmarkerade. Du kan inte avmarkera dem.
+   Alla fält som definieras i schemat visas. Listan med fält varierar mellan olika scheman. Du kan söka efter ett specifikt fält eller använda filtren för att visa alla noder och fält eller endast de markerade fälten. Enligt schemadefinitionen kan vissa fält vara obligatoriska och förmarkerade. Du kan inte avmarkera dem. Alla fält som är obligatoriska för att händelsen ska kunna tas emot av Journey Orchestration är som standard markerade.
 
    >[!NOTE]
    >
