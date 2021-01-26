@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Versionsinformation
 description: Läs om versionsinformation
 translation-type: tm+mt
-source-git-commit: 3c678a16d13b8578526dd0bf9192ace26ade5ed0
+source-git-commit: c7eb29c873f91ed1debe4e8c786a96a1f6b71b71
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2171'
 ht-degree: 73%
 
 ---
@@ -21,7 +21,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 
 När du väljer ett schema i händelsekonfigurationen markeras endast fält som är obligatoriska för att händelsen ska kunna tas emot av Journey Orchestration. [Läs mer](../event/defining-the-payload-fields.md)
 
-Attribut för reseegenskaper är nu tillgängliga i den enkla uttrycksredigeraren.
+Attribut för reseegenskaper är nu tillgängliga i den enkla uttrycksredigeraren. [Läs mer](../expression/journey-properties.md)
 
 Två nya attribut för resans egenskaper har lagts till (sandboxName och organizationId). [Läs mer](../expression/journey-properties.md)
 
