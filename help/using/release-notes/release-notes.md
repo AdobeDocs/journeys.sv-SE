@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Versionsinformation
 description: Läs om versionsinformation
 translation-type: tm+mt
-source-git-commit: 010bccb16d2b6980ff758e3922d3bc315706f61b
+source-git-commit: 3c678a16d13b8578526dd0bf9192ace26ade5ed0
 workflow-type: tm+mt
-source-wordcount: '2026'
-ht-degree: 78%
+source-wordcount: '2169'
+ht-degree: 73%
 
 ---
 
@@ -16,6 +16,20 @@ ht-degree: 78%
 
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
+
+## Januari 2021-utgåvan {#january-release}
+
+När du väljer ett schema i händelsekonfigurationen markeras endast fält som är obligatoriska för att händelsen ska kunna tas emot av Journey Orchestration. [Läs mer](../event/defining-the-payload-fields.md)
+
+Attribut för reseegenskaper är nu tillgängliga i den enkla uttrycksredigeraren.
+
+Två nya attribut för resans egenskaper har lagts till (sandboxName och organizationId). [Läs mer](../expression/journey-properties.md)
+
+För att följa Adobe Campaign Standard SLA-avtal definieras nu en begränsning på 13 anrop per sekund automatiskt för Adobe Campaign Standard-åtgärder så snart Adobe Campaign Standard-integreringen är klar. [Läs mer](../action/working-with-adobe-campaign.md)
+
+Tidsgränsen för händelsen anges nu tydligare på tidsgränsen. [Läs mer](../building-journeys/event-activities.md#listening-to-events-during-a-specific-time)
+
+Funktionerna [getListItem](../functions/functiongetlistitem.md) och [split](../functions/functionsplit.md) har lagts till i listan med funktioner som är tillgängliga i den avancerade uttrycksredigeraren. Detta ger fler möjligheter att använda strängberäkning.
 
 ## November 2020-utgåvan {#november-release}
 
@@ -34,7 +48,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 <li>förenkla utformningen av mycket komplexa resor genom att dela upp dem i flera. </li>
 <li>bygga resor baserat på gemensamma och återanvändbara resemönster</li>
 </ul>
-<p>Mer information finns i den <a href="../building-journeys/jump.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i <a href="../building-journeys/jump.md">den detaljerade dokumentationen</a> och <a href="https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/building-a-journey/jumping-to-another-journey.html">självstudievideon</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -74,7 +88,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 </tbody>
 </table>
 
-### Andra förbättringar{#october-november}
+### Andra förbättringar
 
 Begränsningar har lagts till när nya versioner av en resa skapas. Dessa begränsningar förhindrar alltför stora förändringar i kundresan för att bibehålla en viss enhetlighet mellan versionerna. [Läs mer](../about/limitations.md#journey-versions-limitations)
 
@@ -99,7 +113,7 @@ Det går inte längre att använda aktiviteten **Segmentkvalificering** i en res
 </tbody>
 </table>
 
-### Andra förbättringar{#october-other}
+### Andra förbättringar
 
 * När du publicerar en ny version av en resa avslutas den tidigare versionen automatiskt och ändras till statusen Stängd. [Läs mer](../building-journeys/journey-versions.md)
 
