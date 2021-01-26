@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Hoppa från en resa till en annan
 description: Hoppa från en resa till en annan
 translation-type: tm+mt
-source-git-commit: 010bccb16d2b6980ff758e3922d3bc315706f61b
+source-git-commit: 9d8c3a2cf79f2b861aad61089a263a6a33a747b4
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '791'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,10 @@ Med åtgärden **[!UICONTROL Jump]** kan du flytta personer från en resa till e
 Lägg bara till en **[!UICONTROL Jump]**-aktivitet i den ursprungliga resan och välj en målresa. När personen går in i **[!UICONTROL Jump]**-steget skickas en intern händelse till den första händelsen i målresan. Om **[!UICONTROL Jump]**-åtgärden lyckas fortsätter personen att gå vidare i resan. Beteendet liknar andra åtgärder.
 
 Under målresan kommer den första händelsen som utlöses internt av aktiviteten **[!UICONTROL Jump]** att göra det individuella flödet på resan.
+
+>[!NOTE]
+>
+>Se även självstudievideon [här](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/building-a-journey/jumping-to-another-journey.html)
 
 ## Livscykel
 
