@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Arbeta med Adobe Campaign
 description: Läs om Adobe Campaign åtgärder
 translation-type: tm+mt
-source-git-commit: 723c30865a5039bd68a8ac2e45d4c87a760e694d
+source-git-commit: a515e052a5bc1359632a1829df70a206614a5bb2
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '299'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ Campaign Standardens transaktionsmeddelande och tillhörande händelse måste pu
 
 >[!NOTE]
 >
->Adobe Campaign Standard Transactional Messaging har en skala på högst 50 000 meddelanden per timme över alla kanaler för en viss instans. För att minska risken för överbelastning rekommenderar vi att du skapar en **capping-regel** för integrering av Campaign Standarder.
+>En begränsningsregel på 13 anrop per sekund definieras automatiskt för Adobe Campaign Standard-åtgärder så snart Adobe Campaign Standard-integreringen har konfigurerats. Detta motsvarar den officiella skalan för Adobe Campaign Standard Transactional Messaging.
 >
 >Läs mer om SLA för transaktionsmeddelanden i [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html).
 
@@ -40,7 +40,7 @@ Så här konfigurerar du den:
    >
    >Detta test verifierar att
    >
-   >Värden är &quot;.campaign.adobe.com&quot;, &quot;.campaign-sandbox.adobe.com&quot; eller &quot;campaign-demo.adobe.com&quot;
+   >Värden är &quot;.campaign.adobe.com&quot;, &quot;.campaign-sandbox.adobe.com&quot; eller &quot;.campaign-demo.adobe.com&quot;
    >
    >URL:en börjar med https,
    >
