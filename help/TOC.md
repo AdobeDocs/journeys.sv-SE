@@ -5,11 +5,11 @@ user-guide-title: Journey Orchestration
 title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
-translation-type: ht
-source-git-commit: 9cd37af0281e9fb837c7bf52a52c8dbffd0d4a78
-workflow-type: ht
-source-wordcount: '404'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c18670b32e0e56cf5621fde965b19aa24da8045b
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 99%
 
 ---
 
@@ -139,6 +139,7 @@ ht-degree: 100%
       + Lista {#list}
          + [distinkt](using/functions/functiondistinct.md)
          + [distinctWithNull](using/functions/functiondistinctwithnull.md)
+         + [getListItem](using/functions/functiongetlistitem.md)
          + [i](using/functions/functionin.md)
          + [listSize](using/functions/functionlistsize.md)
          + [serializeList](using/functions/functionserializelist.md)
@@ -163,6 +164,7 @@ ht-degree: 100%
          + [notEqualWithIgnoreCase](using/functions/functionnotequalignorecase.md)
          + [ersätt](using/functions/functionreplace.md)
          + [replaceAll](using/functions/functionreplaceall.md)
+         + [dela](using/functions/functionsplit.md)
          + [startWith](using/functions/functionstartwith.md)
          + [startWithIgnoreCase](using/functions/functionstartwithignorecase.md)
          + [substr](using/functions/functionsubstr.md)
