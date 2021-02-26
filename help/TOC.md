@@ -6,7 +6,7 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 translation-type: tm+mt
-source-git-commit: 937b7235d41fe7f0395e303736974e32eea8558f
+source-git-commit: 59fef99ac17621e81037ddbcc280e9341db729eb
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 98%
@@ -52,6 +52,7 @@ ht-degree: 98%
       + [Om anpassad åtgärdskonfiguration](using/action/about-custom-action-configuration.md)
       + [URL-konfiguration](using/action/url-configuration.md)
       + [Definiera meddelandeparametrar](using/action/defining-the-message-parameters.md)
+   + [Integrera med Adobe Campaign Classic](using/beta/acc-action.md)
 + Använda plattformssegment {#configuring-segment}
    + [Om plattformssegment](using/segment/about-segments.md)
    + [Skapa ett segment](using/segment/creating-a-segment.md)
@@ -195,5 +196,4 @@ ht-degree: 98%
    + [Översikt över alfavärden](using/alpha/alpha-overview.md)
    + [Användargränssnitt](using/alpha/alpha-interface.md)
    + [Läsa segmentaktivitet](using/alpha/alpha-segment-trigger.md)
-   + [Integrera med Adobe Campaign Classic](using/beta/acc-action.md)
 
