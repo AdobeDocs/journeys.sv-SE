@@ -4,7 +4,7 @@ solution: Journey Orchestration
 title: 'Externa datakällor '
 description: 'Läs om hur du konfigurerar externa datakällor '
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 28604af956df18fbc89e44ace36904c5897c028e
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 99%
@@ -74,9 +74,9 @@ För parameteruppsättningen &quot;long/lat&quot; skapar vi en fältgrupp med f�
 * **[!UICONTROL Dynamic Values]**: ange de olika parametrarna avgränsade med kommatecken – &quot;long,lat&quot; i vårt exempel. Eftersom parameterns värden är beroende av körningens sammanhang definieras de i resorna. Läs [den här sidan](../expression/expressionadvanced.md).
 * **[!UICONTROL Sent Payload]**: det här fältet visas inte i vårt exempel. Det är endast tillgängligt om du väljer metoden POST. Klistra in nyttolasten som ska skickas till tredjepartssystemet.
 
-Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fältet **[!UICONTROL Parameters]** och de läggs sedan till automatiskt i slutet av anropet. Om ett POST-anrop används måste du:
+Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fältet **[!UICONTROL Dynamic Values]** och de läggs sedan till automatiskt i slutet av anropet. Om ett POST-anrop används måste du:
 
-* lista de parametrar som ska skickas vid anrop i fältet **[!UICONTROL Parameter]** (i exemplet nedan: &quot;identifier&quot;).
+* lista de parametrar som ska skickas vid anrop i fältet **[!UICONTROL Dynamic Values]** (i exemplet nedan: &quot;identifier&quot;).
 * även ange dem med exakt samma syntax i brödtexten i den skickade nyttolasten. För att göra detta måste du lägga till: &quot;param&quot; – &quot;namn på parametern&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
 
    ```
