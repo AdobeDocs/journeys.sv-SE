@@ -1,14 +1,14 @@
 ---
-keywords: Journeys;home;popular topics
+keywords: Resor;hem;populära ämnen
 product: adobe campaign
 solution: Journey Orchestration
 title: Produktdokumentation om Journey Orchestration
 topic: Premium
-translation-type: ht
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
-workflow-type: ht
-source-wordcount: '263'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d6665fff2d2f7055df09ce8c6b00eac1379002ec
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 98%
 
 ---
 
@@ -30,9 +30,6 @@ Läs om hur du konfigurerar händelser som dina resor kommer att läsa av.
 
 * **[Upptäck nyheterna](using/release-notes/release-notes.md)**<br/>
 Läs mer om de senaste versionerna.
-
-* **[Alfavärden](using/alpha/alpha-overview.md)**<br/>
-Upptäck de funktioner som för närvarande är tillgängliga genom alfaprogrammet.
 
 ## De vanligaste sidorna
 
