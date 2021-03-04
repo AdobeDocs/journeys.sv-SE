@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Dokumentationsuppdateringar
 description: Läs om dokumentationsuppdateringar
 translation-type: tm+mt
-source-git-commit: f562d4a967e6551d3b8a1bc4dbddbf01da9b3e70
+source-git-commit: 349af3a922faa2cf4561c7974466255562d6917d
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '785'
 ht-degree: 93%
 
 ---
@@ -28,7 +28,7 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 ## September 2020 {#september-2020}
 
 * Gränssnittsbeskrivningsavsnittet har uppdaterats för att återspegla den nya **Alla väljare**-menyn. [Läs mer](../about/user-interface.md)
-* En anteckning om segmentbaserade resor med nya versioner som inte är återkommande har lagts till. [Läs mer](../alpha/alpha-segment-trigger.md)
+* En anteckning om segmentbaserade resor med nya versioner som inte är återkommande har lagts till.
 
 ## Augusti 2020 {#august-2020}
 
@@ -42,7 +42,7 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 * Avsnittet Händelseaktiviteter har omorganiserats i dedikerade underavsnitt för varje typ av händelser. [Läs mer](../building-journeys/event-activities.md)
 * Bästa praxis har lagts till för att undvika överbelastning med segmentkvalificering. [Läs mer](../building-journeys/segment-qualification-events.md#speed-segment-qualification)
 * En anteckning har lagts till som förklarar hur en resa fortsätter efter ett fel i en åtgärd eller ett villkor. [Läs mer](../about/troubleshooting.md#section_h3q_kqk_fhb)
-* Ett nytt avsnitt har lagts till om de alfafunktioner som testas bland ett begränsat antal kunder. [Läs mer](../alpha/alpha-overview.md)
+* Ett nytt avsnitt har lagts till om de alfafunktioner som testas bland ett begränsat antal kunder.
 * Ett nytt avsnitt har lagts till om integrationen med intelligenta tjänster. [Läs mer](../ai-services/ai-services-overview.md)
 * Ett nytt avsnitt har lagts till om att skapa testprofiler. [Läs mer](../building-journeys/testing-the-journey.md#create-test-profile)
 * Information har lagts till om hur du använder noden **[!UICONTROL SegmentQualification]** i ett resevillkor eller en åtgärd. [Läs mer](../building-journeys/segment-qualification-events.md)
