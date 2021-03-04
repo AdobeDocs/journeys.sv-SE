@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Använda resedesignern
 description: Läs mer om hur du använder resedesignern
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: 566252f72ef706308249c3b6b27564f086b40760
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1388'
 ht-degree: 5%
 
 ---
@@ -42,11 +42,15 @@ Paletten **finns till vänster på skärmen.** Alla tillgängliga aktiviteter ä
 
 ![](../assets/journey38.png)
 
-Med ikonen **[!UICONTROL Show disabled items]** i det övre vänstra hörnet kan du dölja eller visa otillgängliga element på paletten, till exempel händelser som använder ett annat namnutrymme än de som används under din resa. Som standard är otillgängliga objekt dolda. Om du väljer att visa dem visas de som nedtonade.
+Med ikonen **[!UICONTROL Filter items]** i det övre vänstra hörnet kan du visa följande filter:
 
-När du använder fältet **[!UICONTROL Search]** visas antalet resultat för varje aktivitetskategori på arbetsytan.
+* **Visa endast tillgängliga objekt**: dölja eller visa otillgängliga element på paletten, t.ex. händelser som använder ett annat namnutrymme än de som används under din resa. Som standard är otillgängliga objekt dolda. Om du väljer att visa dem visas de som nedtonade.
+
+* **Visa endast senaste objekt**: Med det här filtret kan du bara visa de fem senast använda händelserna och åtgärderna, förutom de som är färdiga. Detta är specifikt för varje användare. Som standard visas alla objekt.
 
 ![](../assets/palette-filter.png)
+
+Du kan också använda fältet **[!UICONTROL Search]**.
 
 ## Arbetsytan {#canvas}
 
