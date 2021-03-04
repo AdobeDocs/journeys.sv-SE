@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Åtkomsthantering
 description: Läs mer om åtkomsthantering
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: e55078b31b5f0e5811575d5e8993a01a90ec9c14
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 100%
+source-wordcount: '851'
+ht-degree: 99%
 
 ---
 
@@ -45,6 +45,7 @@ I Admin Console kan du tilldela användarna en av följande färdiga produktprof
    * Hantera resor
    * Publicera resor
    * Hantera rapporter
+   * Läs händelser, datakällor och åtgärder
 
 Du kan också skapa egna produktprofiler om de färdiga profilerna inte räcker för att hantera användarna.
 Användare måste alltid vara länkade till en produktprofil för att du ska kunna tilldela dem specifika inbyggda behörigheter såsom:
