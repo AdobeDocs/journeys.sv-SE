@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Om att bygga en resa
 description: Som affärsanvändare kan du lära dig att kombinera händelser, samordning och åtgärder för att skapa en resa.
 translation-type: tm+mt
-source-git-commit: 6ebedad2cb8e78b4dd953bc7a2993cebbeefabcc
+source-git-commit: c41b49e2208727f5e3a562b838c4b052c70e8412
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 12%
+source-wordcount: '435'
+ht-degree: 11%
 
 ---
 
@@ -19,6 +19,8 @@ Det här steget utförs av **företagsanvändaren**. Här skapar du dina resor. 
 Med resegränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan. Du kan också dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa steg som är tillgängligt. Varje aktivitet har en särskild roll och plats i processen. Aktiviteterna är sekventierade. När en aktivitet är klar fortsätter flödet och bearbetar nästa aktivitet och så vidare.
 
 Endast ett namnutrymme tillåts per resa. När du släpper den första händelsen blir händelser med olika namnutrymmen nedtonade. Om den första händelsen inte har något namnutrymme tonas alla händelser med ett namnutrymme ut. Läs [den här sidan](../event/selecting-the-namespace.md). Dessutom är Adobe Experience Platform fältgrupper nedtonade om resan innehåller händelser utan namnutrymme. Och slutligen, om du använder flera händelser under samma resa, måste de använda samma namnutrymme.
+
+När du påbörjar en ny resa döljs element som inte kan släppas på arbetsytan som det första steget. Detta gäller alla åtgärder, villkorsaktiviteten, väntetiden och reaktionen.
 
 ## Snabbstart {#creating_journey}
 
