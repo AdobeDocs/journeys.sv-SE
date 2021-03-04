@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Om den avancerade uttrycksredigeraren
 description: Läs mer om hur du skapar avancerade uttryck
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: c41b49e2208727f5e3a562b838c4b052c70e8412
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 96%
+source-wordcount: '541'
+ht-degree: 90%
 
 ---
 
@@ -56,9 +56,11 @@ Med den här skärmen kan du ange ett uttryck manuellt.
 
 Till vänster på skärmen visas tillgängliga fält och funktioner:
 
-* **[!UICONTROL Events]**: välj ett av fälten som har tagits emot från den inkommande händelsen. Listan med händelsefält som visas är sammanhangsberoende och varierar beroende på vilka händelser som läggs till i resan.
-* **[!UICONTROL Data Sources]**: välj i listan bland tillgängliga fält från datakällornas fältgrupper.
-* **[!UICONTROL Functions]**: välj i listan bland inbyggda funktioner som du använder för att utföra komplex filtrering. Funktionerna är organiserade per kategori.
+* **[!UICONTROL Events]**: välj ett av fälten som har tagits emot från den inkommande händelsen. Listan med händelsefält som visas är sammanhangsberoende och varierar beroende på vilka händelser som läggs till i resan. [Läs mer](../event/about-events.md)
+* **[!UICONTROL Segments]**: Om du har släppt en  **[!UICONTROL Segment qualification]** händelse väljer du det segment som du vill använda i uttrycket. [Läs mer](../segment/using-a-segment.md)
+* **[!UICONTROL Data Sources]**: välj i listan bland tillgängliga fält från datakällornas fältgrupper. [Läs mer](../datasource/about-data-sources.md)
+* **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som rör resan för en viss profil. [Läs mer](../expression/journey-properties.md)
+* **[!UICONTROL Functions]**: välj i listan bland inbyggda funktioner som du använder för att utföra komplex filtrering. Funktionerna är organiserade per kategori. [Läs mer](../expression/functions.md)
 
 ![](../assets/journey65.png)
 
