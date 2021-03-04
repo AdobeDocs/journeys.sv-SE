@@ -6,9 +6,9 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 translation-type: tm+mt
-source-git-commit: 59fef99ac17621e81037ddbcc280e9341db729eb
+source-git-commit: d6665fff2d2f7055df09ce8c6b00eac1379002ec
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '403'
 ht-degree: 98%
 
 ---
@@ -81,6 +81,7 @@ ht-degree: 98%
          + [Använda åtgärder i Adobe Campaign](using/building-journeys/using-adobe-campaign-actions.md)
          + [Använda anpassade åtgärder](using/building-journeys/using-custom-actions.md)
          + [Hoppa från en resa till en annan](using/building-journeys/jump.md)
+         + [Uppdatera profil](using/building-journeys/update-profiles.md)
    + [Testa resan](using/building-journeys/testing-the-journey.md)
    + [Publicera resan](using/building-journeys/publishing-the-journey.md)
    + Dela resesteg med Adobe Experience Platform {#sharing-journey-steps}
@@ -192,8 +193,3 @@ ht-degree: 98%
       + [Bygga resan](using/usecase/building-the-journey.md)
 + Arbeta med API:er{#working-with-apis}
    + [Begränsa API:er](using/api/capping.md)
-+ Alfavärden {#alpha}
-   + [Översikt över alfavärden](using/alpha/alpha-overview.md)
-   + [Användargränssnitt](using/alpha/alpha-interface.md)
-   + [Läsa segmentaktivitet](using/alpha/alpha-segment-trigger.md)
-
