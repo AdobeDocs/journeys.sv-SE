@@ -4,7 +4,7 @@ solution: Journey Orchestration
 title: Använda ett segment
 description: Lär dig hur du använder ett segment
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: c41b49e2208727f5e3a562b838c4b052c70e8412
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Använda segment i villkor {#using-a-segment}
 
-I det här avsnittet beskrivs hur du använder ett segment i ett resevillkor. Mer information om hur du använder en **[!UICONTROL Segment qualification]**-händelse under din resa finns i [Händelseaktiviteter](../building-journeys/segment-qualification-events.md).
+I det här avsnittet beskrivs hur du använder ett segment i ett resevillkor. Mer information om hur du använder en **[!UICONTROL Segment qualification]**-händelse under din resa finns i det här [avsnittet](../building-journeys/segment-qualification-events.md).
 
 Följ de här stegen om du vill använda ett segment i ett resevillkor:
 
