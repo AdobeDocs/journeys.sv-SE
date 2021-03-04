@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Versionsinformation
 description: Läs om versionsinformation
 translation-type: tm+mt
-source-git-commit: c7eb29c873f91ed1debe4e8c786a96a1f6b71b71
+source-git-commit: 9f312c779a6229507c72d3f116b8192bb5f1df34
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 73%
+source-wordcount: '2264'
+ht-degree: 68%
 
 ---
 
@@ -17,7 +17,32 @@ ht-degree: 73%
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
 
-## Januari 2021-utgåvan {#january-release}
+## Februari 2021-utgåvan {#february-2021-release}
+
+<table>
+<thead>
+<tr>
+<th><strong>Uppdatera profilaktivitet</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med den här nya åtgärdsaktiviteten kan du uppdatera en befintlig Adobe Experience Platform-profil med information som kommer från händelsen, en datakälla eller med ett specifikt värde.</p>
+<p>Mer information finns i den <a href="../building-journeys/update-profiles.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Andra förbättringar
+
+* När du konfigurerar en händelse är nu endast fält som är obligatoriska för XDM-valideringen förmarkerade som standard. Dessa fält kan inte avmarkeras.
+* Ett nytt filter har lagts till på paletten Resa. Det gör att du bara kan visa de fem senaste händelserna och åtgärderna, förutom de som är färdiga. Detta är specifikt för varje användare. Som standard visas alla objekt. [Läs mer](../building-journeys/using-the-journey-designer.md#palette)
+* När du påbörjar en ny resa döljs nu element som inte kan släppas på arbetsytan som det första steget. Detta gäller alla åtgärder, villkorsaktiviteten, väntetiden och reaktionen.
+* I den vänstra delen av den avancerade uttrycksredigeraren grupperas funktioner nu om under ett **Funktioner**-avsnitt i slutet av listan.
+
+## Utgåvan från januari 2021 {#january-2021-release}
 
 När du väljer ett schema i händelsekonfigurationen markeras endast fält som är obligatoriska för att händelsen ska kunna tas emot av Journey Orchestration. [Läs mer](../event/defining-the-payload-fields.md)
 
@@ -82,7 +107,6 @@ Funktionerna [getListItem](../functions/functiongetlistitem.md) och [split](../f
 <td>
 <p>Det finns nu en ny metod för att enklare konfigurera händelser, utan att använda ett eventID: regelbaserade händelser utvärderar om händelsen ska utlösas enligt ett villkor. Du kan fortfarande använda den befintliga metoden, som nu kallas"systemgenererad". Den här funktionen, som har testats bland ett begränsat antal kunder genom Alpha-programmet, är nu tillgänglig i Beta för alla kunder.
 </p>
-<p>Mer information finns i den <a href="../event/about-events.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -140,8 +164,6 @@ Det går inte längre att använda aktiviteten **Segmentkvalificering** i en res
 
 ### Alfa-uppdateringar{#september-alpha-update}
 
-Läs det här [avsnittet](../alpha/alpha-overview.md) för att upptäcka omfattningen om alfaversionen.
-
 <table>
 <thead>
 <tr>
@@ -159,7 +181,6 @@ Läs det här [avsnittet](../alpha/alpha-overview.md) för att upptäcka omfattn
 <li><p>Detaljrikedomen i testlägesloggarna har förbättrats för att visa segmentets exportförloppsstatus.</p>
 </li>
 </ul>
-<p>Mer information om aktiviteten <strong>Läs segment</strong> finns i <a href="../alpha/alpha-segment-trigger.md">den detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -172,8 +193,6 @@ Läs det här [avsnittet](../alpha/alpha-overview.md) för att upptäcka omfattn
 Nyttolasten för segments kvalificeringshändelser innehåller nu följande sammanhangsinformation som du kan använda i villkor och åtgärder: beteendet (ingång, utgång), tidsstämpeln för kvalificeringen och segment-ID. [Läs mer](../building-journeys/segment-qualification-events.md)
 
 ### Alfa-uppdateringar{#august-alpha-update}
-
-Läs det här [avsnittet](../alpha/alpha-overview.md) för att upptäcka omfattningen om alfaversionen.
 
 <table>
 <thead>
@@ -194,7 +213,6 @@ Läs det här [avsnittet](../alpha/alpha-overview.md) för att upptäcka omfattn
 <li><p>Du kan nu testa resan med en enhetlig profil och följa förloppet i den med hjälp av det visuella flödet.</p>
 </li>
 </ul>
-<p>Mer information finns i den <a href="../alpha/alpha-segment-trigger.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -228,8 +246,6 @@ Läs det här [avsnittet](../alpha/alpha-overview.md) för att upptäcka omfattn
 
 Programmets alfaversion har funktioner som för närvarande testas bland ett begränsat antal kunder. På så sätt kan vi förbättra vår produkt baserat på den feedback vi får. De här funktionerna är inte tillgängliga för alla kunder som använder Journey Orchestration.
 
-De här funktionerna beskrivs i ett dedikerat [avsnitt](../alpha/alpha-overview.md).
-
 <table>
 <thead>
 <tr>
@@ -247,7 +263,6 @@ De här funktionerna beskrivs i ett dedikerat [avsnitt](../alpha/alpha-overview.
 <li><p>Gruppering av administratörsfunktioner i en enda kontrollpanel.</p>
 </li>
 </ul>
-<p>Mer information finns i den <a href="../alpha/alpha-interface.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -262,7 +277,7 @@ De här funktionerna beskrivs i ett dedikerat [avsnitt](../alpha/alpha-overview.
 <tbody>
 <tr>
 <td>
-<p>Med aktiviteten för utlösare av segment kan du placera alla personer, som tillhör ett segment i Adobe Experience Platform, i en resa. Inträde i en resa kan genomföras antingen en gång eller regelbundet. <a href="../alpha/alpha-segment-trigger.md">Läs mer</a>
+<p>Med aktiviteten för utlösare av segment kan du placera alla personer, som tillhör ett segment i Adobe Experience Platform, i en resa. Inträde i en resa kan genomföras antingen en gång eller regelbundet. 
 </p>
 </td>
 </tr>
