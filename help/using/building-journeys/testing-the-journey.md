@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Testa resan
 description: 'Läs om testning av resan '
 translation-type: tm+mt
-source-git-commit: 5e97f511872a924cc8c2c3a6904859d63ebeddcd
+source-git-commit: ceb8e3267aa9e467ccecf9b343d9f4d883a41e14
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1538'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 3%
 Innan du kan testa din resa måste du åtgärda eventuella fel. Se [det här avsnittet](../about/troubleshooting.md#section_h3q_kqk_fhb).
 
 Du kan testa din resa innan den publiceras med testprofiler. På så sätt kan ni analysera hur individer flödar in på resan och felsöka före publicering.
+
+Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen [skapa en ny testprofil](../building-journeys/testing-the-journey.md#create-test-profile) eller [omvandla en befintlig profil till en testprofil](../building-journeys/testing-the-journey.md#turning-profile-into-test).
 
 Så här använder du testläget:
 
@@ -50,13 +52,19 @@ Så här använder du testläget:
 * Du kan aktivera/inaktivera testläget så många gånger som behövs.
 * Du kan inte ändra din resa när testläget är aktiverat. När du är i testläge kan du publicera resan direkt, du behöver inte inaktivera testläget tidigare.
 
+## Förvandla en profil till en testprofil{#turning-profile-into-test}
+
+Du kan omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan ni uppdatera profilattribut via API-anrop, men det kan inte utföras via gränssnittet.
+
+Det enklaste sättet att göra detta är att använda en **Uppdatera profil**-åtgärd och ändra testprofilens booleska fält från false till true. Se [det här avsnittet](../building-journeys/update-profiles.md#using-the-test-mode).
+
 ## Skapa en testprofil{#create-test-profile}
 
-Processen för att skapa en testprofil är densamma som när du skapar en profil i Adobe Experience Platform. Den utförs via API-anrop. Se den här [sidan](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html)
+Om du vill skapa en ny testprofil är proceduren densamma som när du skapar en profil i Adobe Experience Platform. Den utförs via API-anrop. Se den här [sidan](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html)
 
 Du måste använda ett profilschema som innehåller blandningen &quot;information om profiltester&quot;. Flaggan testProfile ingår i den här mixinen.
 
-När du skapar en profil måste du skicka värdet: testprofile = true.
+När du skapar en profil måste du skicka värdet: testProfile = true.
 
 Observera att du även kan uppdatera en befintlig profil för att ändra dess testProfile-flagga till &quot;true&quot;.
 
