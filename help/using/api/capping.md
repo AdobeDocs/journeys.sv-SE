@@ -4,10 +4,13 @@ solution: Journey Orchestration
 title: Beskrivning av API för begränsning
 description: Läs mer om API:t för tak.
 products: journeys
+feature: Resor
+role: Yrkesverksamma inom affärsverksamhet
+level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1112'
 ht-degree: 1%
 
 ---
@@ -49,7 +52,7 @@ För att testa och förbereda integreringen finns en Postman-samling [här](http
 1. **Skapa en JSON Web Token (JWT)** utifrån de inloggningsuppgifter som tidigare genererats och signera den med din privata nyckel. JWT kodar all identitets- och säkerhetsinformation som Adobe behöver för att verifiera din identitet och ge dig åtkomst till API:t. Det här steget beskrivs närmare i det här [avsnittet](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
 1. **Byt ut din JWT mot en Access-** token via en POST-förfrågan eller via gränssnittet för Developer Console. Denna Access Token måste användas i varje rubrik för dina API-begäranden.
 
-Om du vill skapa en säker tjänst-till-tjänst-API-session för Adobe I/O måste varje begäran till en Adobe-tjänst innehålla informationen nedan i auktoriseringshuvudet.
+Om du vill skapa en säker tjänst-till-tjänst-API-session mellan Adobe I/O måste varje begäran till en Adobe-tjänst innehålla informationen nedan i auktoriseringshuvudet.
 
 ```
 curl -X GET https://journey.adobe.io/authoring/XXX \
