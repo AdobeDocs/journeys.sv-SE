@@ -3,10 +3,13 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Operatorer
 description: Lär dig mer om operatorer i avancerade uttryck
+feature: Resor
+role: Datatekniker
+level: Erfaren
 translation-type: tm+mt
-source-git-commit: 062b4648e2eb3a4270f9c09e4478d541209e1247
+source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '439'
 ht-degree: 6%
 
 ---
