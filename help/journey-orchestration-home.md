@@ -4,11 +4,14 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Produktdokumentation om Journey Orchestration
 topic: Premium
+feature: Resor
+role: Yrkesverksamma inom affärsverksamhet
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: d6665fff2d2f7055df09ce8c6b00eac1379002ec
+source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 98%
+source-wordcount: '259'
+ht-degree: 96%
 
 ---
 
