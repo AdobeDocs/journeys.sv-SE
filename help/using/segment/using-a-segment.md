@@ -3,10 +3,13 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Använda ett segment
 description: Lär dig hur du använder ett segment
+feature: Resor
+role: Yrkesverksamma inom affärsverksamhet
+level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: c41b49e2208727f5e3a562b838c4b052c70e8412
+source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '123'
 ht-degree: 3%
 
 ---
