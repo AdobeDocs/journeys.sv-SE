@@ -3,11 +3,14 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Om instruktionsaktiviteter
 description: Läs mer om åtgärdsaktiviteter
+feature: Resor
+role: Yrkesverksamma inom affärsverksamhet
+level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 28%
+source-wordcount: '177'
+ht-degree: 27%
 
 ---
 
@@ -24,7 +27,7 @@ Om du har Adobe Campaign Standard finns följande färdiga åtgärdsaktiviteter:
 
 Om du har konfigurerat anpassade åtgärder visas de också här (se [den här sidan](../building-journeys/using-custom-actions.md)).
 
-När du släpper en åtgärdsaktivitet på arbetsytan kan du definiera en **[!UICONTROL Label]**. På så sätt kan du lägga till ett suffix till åtgärdsnamnet som ska visas under aktiviteten på arbetsytan. Detta är användbart om du använder samma åtgärd flera gånger under resan och vill identifiera dem enklare. Rapporterna blir också enklare att läsa. Du kan även lägga till ett valfritt **[!UICONTROL Description]**-värde.
+När du släpper en åtgärdsaktivitet på arbetsytan kan du definiera en **[!UICONTROL Label]**. På så sätt kan du lägga till ett suffix till åtgärdsnamnet som ska visas under aktiviteten på arbetsytan. Detta är användbart om du använder samma åtgärd flera gånger under resan och vill identifiera dem enklare. Rapporterna blir också enklare att läsa. Du kan också lägga till ett valfritt **[!UICONTROL Description]**.
 
 ![](../assets/journey59bis.png)
 
