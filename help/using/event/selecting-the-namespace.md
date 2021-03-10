@@ -3,10 +3,13 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Välja namnrymden
 description: Lär dig hur du väljer namnutrymmet
+feature: Resor
+role: Yrkesverksamma inom affärsverksamhet
+level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '208'
 ht-degree: 12%
 
 ---
