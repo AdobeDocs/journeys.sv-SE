@@ -3,10 +3,13 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Om händelser
 description: Läs mer om evenemang
+feature: Resor
+role: Yrkesverksamma inom affärsverksamhet
+level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: 3dd7cd4dc4e4398b029dd1becd11c8dd7e7c3542
+source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '378'
 ht-degree: 55%
 
 ---
