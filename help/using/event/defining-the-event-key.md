@@ -3,10 +3,13 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Definiera händelsenyckeln
 description: Lär dig hur du definierar händelsenyckeln
+feature: Resor
+role: Yrkesverksamma inom affärsverksamhet
+level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '403'
 ht-degree: 5%
 
 ---
