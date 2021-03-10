@@ -3,10 +3,13 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Fältreferenser
 description: Lär dig mer om fältreferenser i avancerade uttryck
+feature: Resor
+role: Datatekniker
+level: Erfaren
 translation-type: tm+mt
-source-git-commit: e2f7c39e61118c42272f730cf5f688ee34d6a9c2
+source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '438'
 ht-degree: 3%
 
 ---
