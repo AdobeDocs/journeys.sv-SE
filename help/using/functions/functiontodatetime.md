@@ -3,11 +3,14 @@ product: adobe campaign
 solution: Journey Orchestration
 title: toDateTime
 description: Läs mer om funktionen toDateTime
+feature: Resor
+role: Datatekniker
+level: Erfaren
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 4%
+source-wordcount: '97'
+ht-degree: 5%
 
 ---
 
