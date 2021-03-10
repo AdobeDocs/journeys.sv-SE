@@ -3,10 +3,13 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Använda resedesignern
 description: Läs mer om hur du använder resedesignern
+feature: Resor
+role: Yrkesverksamma inom affärsverksamhet
+level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: 566252f72ef706308249c3b6b27564f086b40760
+source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1392'
 ht-degree: 5%
 
 ---
