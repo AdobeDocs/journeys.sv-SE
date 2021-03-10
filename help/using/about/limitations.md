@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Journey Orchestration begränsningar
 description: Läs mer om begränsningar i Journey Orchestration
 translation-type: tm+mt
-source-git-commit: a0b6f54e37abded690dc200bc3a901a8e0f04f79
+source-git-commit: 1433ccabaceb31c7ffac117a31531d0d380a54f8
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '526'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Här är begränsningar för användning av Journey Orchestration.
 
 ## Begränsningar för händelser
 
-* För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras i kundresehanteringen först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
+* För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inifrån Journey Orchestration först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
  
 
 ## Begränsningar för datakällor
