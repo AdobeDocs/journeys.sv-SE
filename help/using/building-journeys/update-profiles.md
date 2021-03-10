@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Hoppa från en resa till en annan
 description: Hoppa från en resa till en annan
 translation-type: tm+mt
-source-git-commit: 27a65d8bac83e7a9343ad68306c06a0590a607e9
+source-git-commit: 5c94f64c10d12690e27585806962bf9537636e9c
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '442'
 ht-degree: 3%
 
 ---
@@ -19,14 +19,21 @@ Med åtgärdsaktiviteten **[!UICONTROL Update profile]** kan du uppdatera en bef
 ## Viktiga anteckningar
 
 * Åtgärden **Uppdatera profil** kan bara användas i resor som börjar med en händelse som har ett namnutrymme.
-* I testläge simuleras inte profiluppdateringen. Uppdateringen utförs på testprofilen.
 * Åtgärden uppdaterar bara befintliga fält, inga nya profilfält skapas.
 * Du kan inte använda åtgärden **Uppdatera profil** för att generera upplevelsehändelser, till exempel ett köp.
 * Precis som med andra åtgärder kan du definiera en alternativ sökväg om fel eller timeout inträffar, och du kan inte placera två åtgärder parallellt.
 * Uppdateringsbegäran som skickas till Platform kommer snabbt men inte omedelbart/inom en sekund. Det tar normalt några sekunder men ibland mer utan garanti. Om en åtgärd till exempel använder&quot;fält 1&quot; som har uppdaterats av en åtgärd av typen Uppdatera profil som har placerats precis tidigare, bör du därför inte förvänta dig att&quot;fält 1&quot; kommer att uppdateras i åtgärden.
 * Datakällor har en uppfattning om cache-varaktighet på fältgruppsnivå. Om du förväntar dig att under en resa återanvända ett profilfält som nyligen uppdaterats bör du vara noga med att definiera en mycket kort cachevaraktighet.
 
-## Använda profiluppdateringen.
+## Använda testläget {#using-the-test-mode}
+
+I testläge simuleras inte profiluppdateringen. Uppdateringen utförs på testprofilen.
+
+Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen skapa en ny testprofil eller omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan ni uppdatera profilattribut via API-anrop, men det kan inte utföras via gränssnittet. Det enklaste sättet att göra detta är att använda en **Uppdatera profil**-åtgärd och ändra testprofilens booleska fält från false till true.
+
+Mer information om testläget finns i [avsnittet](../building-journeys/testing-the-journey.md).
+
+## Använda profiluppdateringen
 
 1. Designa din resa genom att börja med ett evenemang. Se det här [avsnittet](../building-journeys/journey.md).
 
