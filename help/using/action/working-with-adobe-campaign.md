@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Arbeta med Adobe Campaign
 description: Läs om Adobe Campaign åtgärder
 translation-type: tm+mt
-source-git-commit: a515e052a5bc1359632a1829df70a206614a5bb2
+source-git-commit: 5c94f64c10d12690e27585806962bf9537636e9c
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '301'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ Så här konfigurerar du den:
    >
    >Detta test verifierar att
    >
-   >Värden är &quot;.campaign.adobe.com&quot;, &quot;.campaign-sandbox.adobe.com&quot; eller &quot;.campaign-demo.adobe.com&quot;
+   >Värden är &quot;.campaign.adobe.com&quot;, &quot;.campaign-sandbox.adobe.com&quot;, &quot;.campaign-demo.adobe.com&quot;, &quot;.ats.adobe.com&quot; eller &quot;.adls.adobe.com&quot;.
    >
    >URL:en börjar med https,
    >
