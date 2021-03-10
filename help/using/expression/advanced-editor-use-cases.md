@@ -3,10 +3,13 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Använda den avancerade uttrycksredigeraren
 description: Läs mer om hur du skapar avancerade uttryck
+feature: Resor
+role: Datatekniker
+level: Erfaren
 translation-type: tm+mt
-source-git-commit: 57dc86d775bf8860aa09300cf2432d70c62a2993
+source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '498'
 ht-degree: 2%
 
 ---
@@ -140,4 +143,4 @@ Följande uttryck gör att du kan definiera CRM-ID:t i ett åtgärdspersonaliser
 
 Förklaring: I det här exemplet används funktionerna `substr` och `lastIndexOf` för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för en mobilapp.
 
-Titta på den här videon[ om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.](https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/create-a-journey.html)
+Titta på den här videon](https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/create-a-journey.html) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.[
