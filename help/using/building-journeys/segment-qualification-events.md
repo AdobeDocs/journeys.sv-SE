@@ -7,9 +7,9 @@ feature: Resor
 role: Yrkesverksamma inom affärsverksamhet
 level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+source-git-commit: a99ad6a589bcd1f3083eabbcac35dd5c0497093d
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '753'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,11 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 
    ![](../assets/segment-copy.png)
 
-1. I fältet **[!UICONTROL Behavior]** väljer du om du vill lyssna på segmentingångar, utgångar eller både och.
+1. I fältet **[!UICONTROL Behaviour]** väljer du om du vill lyssna på segmentingångar, utgångar eller både och.
+
+   >[!NOTE]
+   >
+   >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** segmentdeltagarstatus från Adobe Experience Platform. Mer information om hur du utvärderar ett segment finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=en#interpret-segment-results).
 
 1. Välj ett namnutrymme. Detta behövs bara om händelsen placeras som det första steget i resan.
 
