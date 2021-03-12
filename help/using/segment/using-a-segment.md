@@ -7,10 +7,10 @@ feature: Resor
 role: Yrkesverksamma inom affärsverksamhet
 level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+source-git-commit: a99ad6a589bcd1f3083eabbcac35dd5c0497093d
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 3%
+source-wordcount: '166'
+ht-degree: 2%
 
 ---
 
@@ -31,5 +31,9 @@ Följ de här stegen om du vill använda ett segment i ett resevillkor:
 1. Till vänster kan du visa noden **[!UICONTROL Segments]**. Dra och släpp det segment som du vill använda för villkoret. Som standard är villkoret i segmentet sant.
 
    ![](../assets/segment4.png)
+
+   >[!NOTE]
+   >
+   >Endast individer med segmentdeltagarstatus **Realiserad** och **Befintlig** betraktas som medlemmar i segmentet. Mer information om hur du utvärderar ett segment finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=en#interpret-segment-results).
 
 Mer information om resevillkor och hur du använder redigeraren för enkla uttryck finns i [Villkorsaktivitet](../building-journeys/condition-activity.md#about_condition).
