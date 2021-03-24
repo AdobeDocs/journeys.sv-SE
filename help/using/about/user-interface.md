@@ -4,13 +4,13 @@ solution: Journey Orchestration
 title: Användargränssnittet
 description: Läs mer om användargränssnittet
 feature: Resor
-role: Yrkesverksamma inom affärsverksamhet
+role: Yrkesverksam
 level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+source-git-commit: f73e357d8947997f7f5872efa6a5ef4f51bc63a9
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 93%
+source-wordcount: '1014'
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Du kan även komma åt [!DNL Journey Orchestration] från webbplatsen för Exper
 >[!CONTEXTUALHELP]
 >id="jo_home"
 >title="Om reselistan"
->abstract="Med reselistan kan du se alla dina resor på en gång, se deras status och utföra grundläggande åtgärder. Du kan skapa dubbletter, stoppa eller radera dina resor. Beroende på resan kanske vissa åtgärder inte är tillgängliga. Du kan till exempel inte radera eller starta om en resa som är stängd. Du kan skapa en ny version av den eller skapa en dubblett. Du kan också använda sökfältet för att söka efter en resa."
+>abstract="Med reselistan kan du se alla dina resor på en gång, se deras status och utföra grundläggande åtgärder."
 >additional-url="https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4" text="Se demovideon"
 
 Med de översta menyerna kan du navigera bland de olika funktionerna i [!DNL Journey Orchestration]: **[!UICONTROL Home]** (resorna), **[!UICONTROL Data Sources]**, **[!UICONTROL Events]**, **[!UICONTROL Actions]**.
