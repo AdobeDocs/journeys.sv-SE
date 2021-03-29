@@ -7,9 +7,9 @@ topic: Premium
 feature: Resor
 role: Yrkesverksam
 level: Nybörjare
-translation-type: ht
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 784e4203b77673317c11ee767278c48dd10a5332
+workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Läs mer om de senaste versionerna.
 
 ## De vanligaste sidorna
 
-<table>
+<table style="table-layout:fixed">
 <tr>
     <td valign="top">
         <a href="using/about/troubleshooting.md">
