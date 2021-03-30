@@ -4,12 +4,12 @@ solution: Journey Orchestration
 title: Avsluta en resa
 description: Lär dig hur du avslutar en resa
 feature: Resor
-role: Yrkesverksamma inom affärsverksamhet
+role: Yrkesverksam
 level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+source-git-commit: 7755822065eb0bcc44f78e0e36c53ce73ac60ada
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '359'
 ht-degree: 4%
 
 ---
@@ -22,12 +22,16 @@ Med alternativen **[!UICONTROL Stop]** och **[!UICONTROL Close to new entrances]
 >[!NOTE]
 >
 >Observera att du inte kan återuppta en stängd eller stoppad resa.
+>
+>Begreppet slutresa beskrivs i detta [avsnitt](../building-journeys/journey.md#ending_a_journey).
 
 ## Stänga en resa
 
 Du kan stänga en resa manuellt för att säkerställa att kunder som redan har gått in på resan kan slutföra sin resa, men nya användare inte kan ta sig in på resan.
 
-En stängd reseversion kan inte startas om eller tas bort. Du kan skapa en ny version av den eller duplicera den.
+När en resa stängs får den statusen **[!UICONTROL Closed (no entrance)]**. Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se det här [avsnittet](../building-journeys/changing-properties.md#entrance).
+
+En stängd reseversion kan inte startas om eller tas bort. Du kan skapa en ny version av den eller duplicera den. Endast slutförda resor kan tas bort.
 
 Du kan stänga en resa genom att klicka på **[!UICONTROL Close to new entrances]** medan du hovrar över en resa i listan över resor.
 
@@ -48,6 +52,8 @@ Du kan även:
 Du kan stoppa en resa när en kris inträffar och all behandling måste avslutas omedelbart under en resa.
 
 Det går inte att starta om en stoppad reseversion.
+
+När den stoppas får en resa statusen **[!UICONTROL Stopped]**.
 
 Du kan stoppa en resa (till exempel om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt..) genom att klicka på **[!UICONTROL Stop]** medan du hovrar över en resa i listan över resor.
 
