@@ -4,12 +4,12 @@ solution: Journey Orchestration
 title: Testa resan
 description: 'Läs om testning av resan '
 feature: Resor
-role: Yrkesverksamma inom affärsverksamhet
+role: Yrkesverksam
 level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: 8685dfdcbfb414af89b304a6a9a0f9418959909b
+source-git-commit: 4b30ac80a2dfb5b0675a88ecb5abf81e57c64097
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1619'
 ht-degree: 3%
 
 ---
@@ -31,13 +31,21 @@ Så här använder du testläget:
 
    ![](../assets/journeytest1.png)
 
-1. Använd parametern **[!UICONTROL Wait time in test]** i det nedre vänstra hörnet för att definiera den tid som varje vänteaktivitet ska vara i testläge. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Den här parametern visas bara om du har släppt en eller flera vänteaktiviteter under din resa.
+1. Använd parametern **[!UICONTROL Wait time]** i det nedre vänstra hörnet för att definiera den tid som varje vänteaktivitet och händelsetimeout ska vara i testläge. Standardtiden är 10 sekunder för timeout för väntetider och händelser. Detta säkerställer att du får testresultaten snabbt. Den här parametern visas bara om du har släppt en eller flera vänteaktiviteter under din resa.
 
    ![](../assets/journeytest_wait.png)
 
-1. Klicka på **[!UICONTROL Trigger an event]** för att konfigurera och skicka händelser till resan. Se till att skicka händelser som rör testprofiler. Se [Bekräfta dina händelser](#firing_events).
+   >[!NOTE]
+   >
+   >När en reaktionshändelse används under en resa är väntetiden som standard och minimivärdet 40 sekunder. Se [det här avsnittet](../building-journeys/reaction-events.md)
+
+1. Klicka på **[!UICONTROL Trigger an event]** för att konfigurera och skicka händelser till resan.
 
    ![](../assets/journeyuctest1.png)
+
+1. Konfigurera de olika fälten. I fältet **Profilidentifierare** anger du värdet för fältet som används för att identifiera testprofilen. Det kan till exempel vara e-postadressen. Se till att skicka händelser som rör testprofiler. Se [Bekräfta dina händelser](#firing_events).
+
+   ![](../assets/journeyuctest1-bis.png)
 
 1. När händelserna har tagits emot klickar du på knappen **[!UICONTROL Show log]** för att visa testresultatet och verifiera dem. Se [Visa loggarna](#viewing_logs).
 
@@ -123,7 +131,7 @@ Med knappen **[!UICONTROL Trigger an event]** kan du konfigurera en händelse so
 >
 >När du utlöser en händelse i testläge genereras en verklig händelse, vilket innebär att den även kommer att drabba andra resor som lyssnar på den här händelsen.
 
-Du måste veta vilka profiler som är flaggade som testprofiler i Adobe Experience Platform. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID.
+Du måste veta vilka profiler som är flaggade som testprofiler i Adobe Experience Platform. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID eller en e-postadress. Värdet för den här nyckeln måste läggas till i fältet **Profilidentifierare**.
 
 Om resan innehåller flera händelser använder du listrutan för att välja en händelse. Konfigurera sedan de fält som skickats och körningen av den händelse som skickats för varje händelse. Med gränssnittet kan du skicka rätt information i händelsens nyttolast och kontrollera att informationstypen är korrekt. Testläget sparar de senaste parametrarna som användes i en testsession för senare bruk.
 
