@@ -4,13 +4,13 @@ solution: Journey Orchestration
 title: Versionsinformation
 description: Läs om versionsinformation
 feature: Resor
-role: Yrkesverksamma inom affärsverksamhet
+role: Yrkesverksam
 level: Nybörjare
 translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+source-git-commit: 455b0f083d598e70b8a3f33c7f21432628fef8b5
 workflow-type: tm+mt
-source-wordcount: '2268'
-ht-degree: 68%
+source-wordcount: '2438'
+ht-degree: 64%
 
 ---
 
@@ -19,6 +19,15 @@ ht-degree: 68%
 
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
+
+## Mars 2021-utgåvan {#march-2021-release}
+
+### Förbättringar
+
+* En ny status har lagts till på resor. När en resa avslutas eller stängs manuellt växlar dess status från **Closed** till **Finished** 30 dagar efter att den stängdes. På så sätt kan ni enklare identifiera inaktiva resor samtidigt som ni ser till att alla personer fortfarande är närvarande har tid att slutföra resan. [Läs mer](../building-journeys/journey.md#ending_a_journey)
+* I de högra aktivitetspanelerna för utkastresor är skrivskyddade fält nu dolda som standard. Den här förenklingen hjälper dig att konfigurera dina aktiviteter enklare. Om du vill visa dem klickar du på ikonen **Visa skrivskyddade fält** som finns i det övre vänstra hörnet i aktivitetskonfigurationsrutan. [Läs mer](../building-journeys/using-the-journey-designer.md#configuration_pane)
+* I testläge har fältet **Nyckel** som används för att definiera testprofilens ID ändrats till **Profilidentifierare** på skärmen **Händelsekonfiguration** för en bättre användarupplevelse. [Läs mer](../building-journeys/testing-the-journey.md).
+* För reaktionshändelser kan tidsgränsen nu bara anges mellan 40 sekunder och 30 dagar. När du testar en resa som använder en reaktionshändelse är standardläget **[!UICONTROL Wait time]** och minimivärdet 40 sekunder. [Läs mer](../building-journeys/reaction-events.md).
 
 ## Februari 2021-utgåvan {#february-2021-release}
 
