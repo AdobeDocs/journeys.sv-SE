@@ -4,13 +4,13 @@ solution: Journey Orchestration
 title: Om att bygga en resa
 description: Som affärsanvändare kan du lära dig att kombinera händelser, samordning och åtgärder för att skapa en resa.
 feature: Resor
-role: Yrkesverksamma inom affärsverksamhet
+role: Yrkesverksam
 level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+source-git-commit: 409197458ba32f9fdb3e42e4b06eae2814eff9f8
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 11%
+source-wordcount: '561'
+ht-degree: 9%
 
 ---
 
@@ -57,9 +57,20 @@ Här är de viktigaste stegen för att skapa och publicera en resa.
 
 ## Avslutar en resa {#ending_a_journey}
 
-Det finns två sätt att avsluta en resa:
+En resa kan ta slut för en individ på grund av två orsaker:
 
 * Personen kommer till den sista aktiviteten i en bana. Den senaste aktiviteten kan vara en slutaktivitet eller en annan aktivitet. Det finns ingen skyldighet att avsluta ett tågläge med en slutaktivitet. Läs [den här sidan](../building-journeys/end-activity.md).
 * Personen kommer till en villkorsaktivitet (eller en vänteaktivitet med ett villkor) och matchar inte något av villkoren.
 
 Personen kan sedan återinträda i resan om återinträde tillåts. Läs [den här sidan](../building-journeys/changing-properties.md).
+
+En resa kan avslutas på grund av följande orsaker:
+
+* Resan stängs manuellt med knappen **[!UICONTROL Close to new entrances]**.
+* Slutdatumet för resan har nåtts.
+
+När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed (no entrance)]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se det här [avsnittet](../building-journeys/changing-properties.md#entrance).
+
+Om ni behöver stoppa alla personers framsteg på resan kan ni stoppa den. Om du stoppar resan kommer alla personer på resan att tidsgränsen för timeout.
+
+Mer information om hur du stänger eller stoppar en resa manuellt finns i det här [avsnittet](../building-journeys/terminating-a-journey.md).
