@@ -4,13 +4,13 @@ solution: Journey Orchestration
 title: Reaktionshändelser
 description: Läs mer om reaktionshändelser
 feature: Resor
-role: Yrkesverksamma inom affärsverksamhet
+role: Yrkesverksam
 level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+source-git-commit: 4b30ac80a2dfb5b0675a88ecb5abf81e57c64097
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 1%
+source-wordcount: '416'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ Här följer de olika stegen för att konfigurera reaktionshändelser:
 1. Lägg till en **[!UICONTROL Label]** i reaktionen. Det här steget är valfritt.
 1. Välj den åtgärd som du vill reagera på i listrutan. Du kan välja vilken åtgärdsaktivitet som helst som placerats i banans tidigare steg.
 1. Beroende på vilken åtgärd du har valt (ett e-postmeddelande, SMS eller ett push-meddelande) väljer du vad du vill reagera på.
-1. Du kan definiera ett villkor som ett valfritt steg. Efter en e-poståtgärd kan du till exempel bestämma att du ska skapa två banor, en med en reaktionshändelse som bara spårar klickningar för VIP och en med en reaktionshändelse som spårar klickningar som utförs av kvinnor.
+1. Du kan definiera en timeout för en händelse (mellan 40 sekunder och 30 dagar) och en timeout-sökväg. Detta kommer att skapa en andra väg för individer som inte reagerade inom den definierade tidsperioden. När du testar en resa som använder en reaktionshändelse är standardläget **[!UICONTROL Wait time]** och det lägsta värdet 40 sekunder. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
 
 >[!NOTE]
 >
