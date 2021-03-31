@@ -4,13 +4,13 @@ solution: Journey Orchestration
 title: Dokumentationsuppdateringar
 description: Läs om dokumentationsuppdateringar
 feature: Resor
-role: Yrkesverksamma inom affärsverksamhet
+role: Yrkesverksam
 level: Nybörjare
 translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+source-git-commit: 8c7c7d85d4e7835721b70faa7b3b6166796e79c4
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 92%
+source-wordcount: '806'
+ht-degree: 91%
 
 ---
 
@@ -19,6 +19,10 @@ ht-degree: 92%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Orchestration].
 Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om [!DNL Journey Orchestration].
+
+## Mars 2021 {#march-2021}
+
+* Vi har detaljerat hela proceduren för att skapa testprofiler i Adobe Experience Platform. [Läs mer](../building-journeys/creating-test-profiles.md).
 
 ## Januari 2021 {#january-2021}
 
@@ -47,7 +51,7 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 * En anteckning har lagts till som förklarar hur en resa fortsätter efter ett fel i en åtgärd eller ett villkor. [Läs mer](../about/troubleshooting.md#section_h3q_kqk_fhb)
 * Ett nytt avsnitt har lagts till om de alfafunktioner som testas bland ett begränsat antal kunder.
 * Ett nytt avsnitt har lagts till om integrationen med intelligenta tjänster. [Läs mer](../ai-services/ai-services-overview.md)
-* Ett nytt avsnitt har lagts till om att skapa testprofiler. [Läs mer](../building-journeys/testing-the-journey.md#create-test-profile)
+* Ett nytt avsnitt har lagts till om att skapa testprofiler. [Läs mer](../building-journeys/testing-the-journey.md)
 * Information har lagts till om hur du använder noden **[!UICONTROL SegmentQualification]** i ett resevillkor eller en åtgärd. [Läs mer](../building-journeys/segment-qualification-events.md)
 * En anteckning har lagts till om transaktionsmeddelanden och händelsepublicering i Campaign. Se [Arbeta med Adobe Campaign](../action/working-with-adobe-campaign.md) och [Använda Adobe Campaign](../building-journeys/using-adobe-campaign-actions.md).
 * Information har lagts till om de kontroller som utförs när instansens URL i Campaign Standard testas. [Läs mer](../action/working-with-adobe-campaign.md)
