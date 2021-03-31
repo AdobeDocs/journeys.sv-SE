@@ -4,7 +4,7 @@ solution: Journey Orchestration
 title: Skapa en testprofil
 description: 'Läs om hur du skapar testprofiler '
 translation-type: tm+mt
-source-git-commit: 7123cff30039d6a5174b0272db33e4a9d15d4ca9
+source-git-commit: 86df088c3e2da43318de16b7ae51ff0e3a20d55b
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 1%
@@ -13,8 +13,6 @@ ht-degree: 1%
 
 
 # Skapa testprofiler {#create-test-profiles}
-
-![](../assets/do-not-localize/badge.png)
 
 Testprofiler krävs när testläget används under en resa. Mer information om hur du använder testläget finns i [det här avsnittet](../building-journeys/testing-the-journey.md).
 
