@@ -6,10 +6,10 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Resor
-translation-type: ht
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
-workflow-type: ht
-source-wordcount: '404'
+translation-type: tm+mt
+source-git-commit: 8c7c7d85d4e7835721b70faa7b3b6166796e79c4
+workflow-type: tm+mt
+source-wordcount: '406'
 ht-degree: 100%
 
 ---
@@ -66,6 +66,7 @@ ht-degree: 100%
       + [Reseversioner](using/building-journeys/journey-versions.md)
       + [Avsluta en resa](using/building-journeys/terminating-a-journey.md)
       + [Hantera tidszoner](using/building-journeys/timezone-management.md)
+      + [Testprofiler](using/building-journeys/creating-test-profiles.md)
    + Aktiviteter {#about-journey-building}
       + Händelseaktiviteter {#events-activities}
          + [Om händelseaktiviteter](using/building-journeys/event-activities.md)
