@@ -4,13 +4,13 @@ solution: Journey Orchestration
 title: Hoppa från en resa till en annan
 description: Hoppa från en resa till en annan
 feature: Resor
-role: Yrkesverksamma inom affärsverksamhet
+role: Yrkesverksam
 level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: 8685dfdcbfb414af89b304a6a9a0f9418959909b
+source-git-commit: 7123cff30039d6a5174b0272db33e4a9d15d4ca9
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 3%
+source-wordcount: '359'
+ht-degree: 5%
 
 ---
 
@@ -27,14 +27,7 @@ Med åtgärdsaktiviteten **[!UICONTROL Update profile]** kan du uppdatera en bef
 * Precis som med andra åtgärder kan du definiera en alternativ sökväg om fel eller timeout inträffar, och du kan inte placera två åtgärder parallellt.
 * Uppdateringsbegäran som skickas till Platform kommer snabbt men inte omedelbart/inom en sekund. Det tar normalt några sekunder men ibland mer utan garanti. Om en åtgärd till exempel använder&quot;fält 1&quot; som har uppdaterats av en åtgärd av typen Uppdatera profil som har placerats precis tidigare, bör du därför inte förvänta dig att&quot;fält 1&quot; kommer att uppdateras i åtgärden.
 * Datakällor har en uppfattning om cache-varaktighet på fältgruppsnivå. Om du förväntar dig att under en resa återanvända ett profilfält som nyligen uppdaterats bör du vara noga med att definiera en mycket kort cachevaraktighet.
-
-## Använda testläget {#using-the-test-mode}
-
-I testläge simuleras inte profiluppdateringen. Uppdateringen utförs på testprofilen.
-
-Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen skapa en ny testprofil eller omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan ni uppdatera profilattribut via API-anrop, men det kan inte utföras via gränssnittet. Det enklaste sättet att göra detta är att använda en **Uppdatera profil**-åtgärd och ändra testprofilens booleska fält från false till true.
-
-Mer information om testläget finns i [avsnittet](../building-journeys/testing-the-journey.md).
+* I testläge simuleras inte profiluppdateringen. Uppdateringen utförs på testprofilen.
 
 ## Använda profiluppdateringen
 
