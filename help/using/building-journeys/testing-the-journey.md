@@ -7,9 +7,9 @@ feature: Resor
 role: Yrkesverksam
 level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: 1100f8224284f3b863ecd053469e86d72f18287e
+source-git-commit: 8c7c7d85d4e7835721b70faa7b3b6166796e79c4
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1624'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Innan du kan testa din resa måste du åtgärda eventuella fel. Se [det här avs
 
 Du kan testa din resa innan den publiceras med testprofiler. På så sätt kan ni analysera hur individer flödar in på resan och felsöka före publicering.
 
-Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen [skapa en ny testprofil](../building-journeys/testing-the-journey.md#create-test-profile) eller [omvandla en befintlig profil till en testprofil](../building-journeys/testing-the-journey.md#turning-profile-into-test).
+Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen skapa en ny testprofil eller omvandla en befintlig profil till en testprofil. Se det här [avsnittet](../building-journeys/creating-test-profiles.md).
 
 Så här använder du testläget:
 
@@ -56,7 +56,7 @@ Så här använder du testläget:
 ## Viktiga anteckningar {#important_notes}
 
 * Det finns ett gränssnitt för att utlösa händelser till den testade resan, men händelser kan också skickas av tredjepartssystem som Postman.
-* Endast personer som markerats som&quot;testprofiler&quot; i kundprofiltjänsten i realtid får delta i den testade resan. Se [det här avsnittet](../building-journeys/testing-the-journey.md#create-test-profile).
+* Endast personer som markerats som&quot;testprofiler&quot; i kundprofiltjänsten i realtid får delta i den testade resan. Se det här [avsnittet](../building-journeys/creating-test-profiles.md).
 * Testläget är bara tillgängligt i utkastresor som använder ett namnutrymme. Testläget måste kontrollera om en person som deltar i resan är en testprofil eller inte och därför måste kunna nå Adobe Experience Platform.
 * Det högsta antalet testprofiler som kan gå in på en resa under en testsession är 100.
 * När du inaktiverar testläget töms resorna från alla som har gått in i det tidigare eller som befinner sig i det. Rapporten blir också tydligare.
