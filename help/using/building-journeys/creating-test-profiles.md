@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Skapa en testprofil
 description: 'Läs om hur du skapar testprofiler '
 translation-type: tm+mt
-source-git-commit: 8c7c7d85d4e7835721b70faa7b3b6166796e79c4
+source-git-commit: 7123cff30039d6a5174b0272db33e4a9d15d4ca9
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '728'
 ht-degree: 1%
 
 ---
@@ -16,9 +16,11 @@ ht-degree: 1%
 
 ![](../assets/do-not-localize/badge.png)
 
-Testprofiler krävs när testläget används under en resa. Du kan antingen omvandla en [befintlig profil](../building-journeys/creating-test-profiles.md#turning-profile-into-test) till en testprofil eller [skapa en testprofil](../building-journeys/creating-test-profiles.md#create-test-profiles-csv). Mer information om hur du använder testläget finns i [det här avsnittet](../building-journeys/testing-the-journey.md).
+Testprofiler krävs när testläget används under en resa. Mer information om hur du använder testläget finns i [det här avsnittet](../building-journeys/testing-the-journey.md).
 
-Det finns olika sätt att skapa en testprofil i Adobe Experience Platform. I den här dokumentationen fokuserar vi på två metoder: överföra en [csv-fil](../building-journeys/creating-test-profiles.md#create-test-profiles-csv) och använda [API-anrop](../building-journeys/creating-test-profiles.md#create-test-profiles-api). Du kan också överföra en json-fil i en datauppsättning, se [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset)
+Det finns olika sätt att skapa en testprofil i Adobe Experience Platform. I den här dokumentationen fokuserar vi på två metoder: överföra en [csv-fil](../building-journeys/creating-test-profiles.md#create-test-profiles-csv) och använda [API-anrop](../building-journeys/creating-test-profiles.md#create-test-profiles-api). Du kan också överföra en json-fil i en datauppsättning, se [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset).
+
+Med de här importmetoderna kan du även uppdatera profilattribut. På så sätt kan du omvandla en befintlig profil till en testprofil. Använd bara ett liknande fil- eller API-anrop och inkludera bara fältet&quot;testProfile&quot; med värdet&quot;true&quot;.
 
 Att skapa en testprofil liknar att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [dokumentationen för kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html).
 
@@ -68,44 +70,6 @@ Sedan måste du **skapa datauppsättningen** som profilerna ska importeras i. F�
 >[!NOTE]
 >
 > Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started).
-
-## Förvandla en profil till en testprofil{#turning-profile-into-test}
-
-Du kan omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan du uppdatera profilattribut på samma sätt som när du skapar en profil.
-
-Ett enklare sätt att göra detta är att använda en **Uppdatera profil**-åtgärdsaktivitet på en resa och ändra det booleska fältet testProfile från false till true.
-
-Din resa kommer att bestå av en **Läs-segment** och en **Uppdatera profil**-aktivitet. Du måste först skapa ett segment som riktar sig till de profiler du vill omvandla till testprofiler.
-
->[!NOTE]
->
-> Eftersom du kommer att uppdatera fältet **testProfile** måste de valda profilerna innehålla det här fältet. Det relaterade schemat måste ha blandningen **Profiltestinformation**. Se [det här avsnittet](../building-journeys/creating-test-profiles.md#test-profiles-prerequisites).
-
-1. Klicka på **Segment** i den vänstra menyn i Kundresehantering och sedan **Skapa segment** i den övre högra menyn.
-   ![](../assets/test-profiles-22.png)
-1. Definiera ett namn för segmentet och bygg segmentet: välj fält och värden för de profiler som du vill använda.
-   ![](../assets/test-profiles-23.png)
-1. Klicka på **Spara** och kontrollera att profilerna har rätt mål för segmentet.
-   ![](../assets/test-profiles-24.png)
-
-   >[!NOTE]
-   >
-   > Segmentberäkning kan ta lite tid. Läs mer om segment i [det här avsnittet](../segment/about-segments.md).
-
-1. Skapa nu en ny resa och börja med en **Orchestration-aktivitet för att läsa segment**.
-1. Välj det segment som skapats tidigare och det namnutrymme som profilerna använder.
-   ![](../assets/test-profiles-25.png)
-1. Lägg till en **Uppdatera profil**-åtgärdsaktivitet.
-1. Markera schemat, fältet **testProfiles**, datauppsättningen och ange värdet till &quot;true&quot;.
-   ![](../assets/test-profiles-26.png)
-1. Lägg till en **End**-aktivitet och klicka på **Publicera**.
-   ![](../assets/test-profiles-27.png)
-1. Kontrollera att profilerna har uppdaterats korrekt i Adobe Experience Platform.
-   ![](../assets/test-profiles-28.png)
-
-   >[!NOTE]
-   >
-   > Mer information om aktiviteten **Uppdatera profil** finns i [det här avsnittet](../building-journeys/update-profiles.md).
 
 ## Skapa en testprofil med en CSV-fil{#create-test-profiles-csv}
 
