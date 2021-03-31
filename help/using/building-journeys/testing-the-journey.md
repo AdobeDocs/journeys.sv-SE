@@ -7,7 +7,7 @@ feature: Resor
 role: Yrkesverksam
 level: Mellanliggande
 translation-type: tm+mt
-source-git-commit: 4b30ac80a2dfb5b0675a88ecb5abf81e57c64097
+source-git-commit: 1100f8224284f3b863ecd053469e86d72f18287e
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 3%
@@ -37,7 +37,7 @@ Så här använder du testläget:
 
    >[!NOTE]
    >
-   >När en reaktionshändelse används under en resa är väntetiden som standard och minimivärdet 40 sekunder. Se [det här avsnittet](../building-journeys/reaction-events.md)
+   >När en reaktionshändelse används under en resa är väntetiden som standard och minimivärdet 40 sekunder. Se [det här avsnittet](../building-journeys/reaction-events.md).
 
 1. Klicka på **[!UICONTROL Trigger an event]** för att konfigurera och skicka händelser till resan.
 
