@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Skapa en testprofil
 description: 'Läs om hur du skapar testprofiler '
 translation-type: tm+mt
-source-git-commit: 86df088c3e2da43318de16b7ae51ff0e3a20d55b
+source-git-commit: ccfe8d4d3eb8bf59d6dfd14eeb9f02578a09776f
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 1%
+source-wordcount: '677'
+ht-degree: 2%
 
 ---
 
@@ -28,25 +28,25 @@ För att kunna skapa profiler måste du först skapa ett schema och en dataupps�
 
 Först måste du **skapa ett schema**. Följ de här stegen:
 
-1. I Adobe Experience Platform klickar du på **Scheman** på den vänstra menyn.
+1. Klicka på **[!UICONTROL Schemas]** i den vänstra menyn i Adobe Experience Platform.
    ![](../assets/test-profiles-0.png)
-1. Klicka på **Skapa schema** i det övre högra hörnet och välj sedan en schematyp, till exempel **XDM Individual Profile**.
+1. Klicka på **[!UICONTROL Create schema]** i det övre högra hörnet och välj sedan en schematyp, till exempel **[!UICONTROL XDM Individual Profile]**.
    ![](../assets/test-profiles-1.png)
 1. Välj ett namn för schemat.
-1. Klicka på **Lägg till** i avsnittet **Blandningar**.
+1. Klicka på **[!UICONTROL Add]** i **[!UICONTROL Mixins]**-avsnittet.
    ![](../assets/test-profiles-1-bis.png)
-1. Välj lämpliga mixar. Se till att du lägger till **profiltestinformationen**-blandningen. Klicka på **Lägg till blandning**.
+1. Välj lämpliga mixar. Se till att du lägger till **[!UICONTROL Profile test details]**-blandningen. Klicka på **[!UICONTROL Add mixin]**.
    ![](../assets/test-profiles-1-ter.png)
 Listan med mixar visas på schemaöversiktsskärmen.
 
    ![](../assets/test-profiles-2.png)
 1. I listan med fält klickar du på det fält som du vill definiera som primär identitet.
    ![](../assets/test-profiles-3.png)
-1. I den högra panelen **Fältegenskaper** kontrollerar du alternativen **Identitet** och **Primär identitet** och väljer ett namnutrymme. Om du vill att den primära identiteten ska vara en e-postadress väljer du namnutrymmet **E-post**. Klicka på **Använd**.
+1. I den högra panelen **[!UICONTROL Field properties]** kontrollerar du alternativen **[!UICONTROL Identity]** och **[!UICONTROL Primary Identity]** och väljer ett namnutrymme. Om du vill att den primära identiteten ska vara en e-postadress väljer du namnutrymmet **[!UICONTROL Email]**. Klicka på **[!UICONTROL Apply]**.
    ![](../assets/test-profiles-4.png)
-1. Markera schemat och aktivera alternativet **Profil** i **Schemaegenskaperna**.
+1. Markera schemat och aktivera alternativet **[!UICONTROL Profile]** i **[!UICONTROL Schema properties]**.
    ![](../assets/test-profiles-5.png)
-1. Klicka på **Spara**.
+1. Klicka på **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
@@ -54,15 +54,15 @@ Listan med mixar visas på schemaöversiktsskärmen.
 
 Sedan måste du **skapa datauppsättningen** som profilerna ska importeras i. Följ de här stegen:
 
-1. I Adobe Experience Platform klickar du på **Datauppsättningar** på den vänstra menyn och sedan på **Skapa datauppsättning**.
+1. I Adobe Experience Platform klickar du på **[!UICONTROL Datasets]** på den vänstra menyn och sedan på **[!UICONTROL Create dataset]**.
    ![](../assets/test-profiles-6.png)
-1. Välj **Skapa datauppsättning från schema**.
+1. Välj **[!UICONTROL Create dataset from schema]**.
    ![](../assets/test-profiles-7.png)
-1. Markera det tidigare skapade schemat och klicka sedan på **Nästa**.
+1. Markera det tidigare skapade schemat och klicka sedan på **[!UICONTROL Next]**.
    ![](../assets/test-profiles-8.png)
-1. Välj ett namn och klicka sedan på **Slutför**.
+1. Välj ett namn och klicka sedan på **[!UICONTROL Finish]**.
    ![](../assets/test-profiles-9.png)
-1. Aktivera alternativet **Profil**.
+1. Aktivera alternativet **[!UICONTROL Profile]**.
    ![](../assets/test-profiles-10.png)
 
 >[!NOTE]
@@ -79,17 +79,17 @@ I Adobe Experience Platform kan du skapa profiler genom att överföra en CSV-fi
 1. Lägg till en rad per profil och fyll i värdena för varje fält.
    ![](../assets/test-profiles-12.png)
 1. Spara kalkylbladet som en CSV-fil. Se till att kommatecken används som avgränsare.
-1. Klicka på **Arbetsflöden** i den vänstra menyn i Adobe Experience Platform.
+1. Klicka på **[!UICONTROL Workflows]** i den vänstra menyn i Adobe Experience Platform.
    ![](../assets/test-profiles-14.png)
-1. Välj **Mappa CSV till XDM-schema** och klicka sedan på **Starta**.
+1. Välj **[!UICONTROL Map CSV to XDM schema]** och klicka sedan på **[!UICONTROL Launch]**.
    ![](../assets/test-profiles-16.png)
-1. Markera den datauppsättning som du vill importera profilerna till. Klicka på **Nästa**.
+1. Markera den datauppsättning som du vill importera profilerna till. Klicka på **[!UICONTROL Next]**.
    ![](../assets/test-profiles-17.png)
-1. Klicka på **Välj filer** och välj din CSV-fil. När filen har överförts klickar du på **Nästa**.
+1. Klicka på **[!UICONTROL Choose files]** och välj din CSV-fil. När filen har överförts klickar du på **[!UICONTROL Next]**.
    ![](../assets/test-profiles-18.png)
-1. Mappa CSV-källfälten till schemafälten och klicka sedan på **Slutför**.
+1. Mappa CSV-källfälten till schemafälten och klicka sedan på **[!UICONTROL Finish]**.
    ![](../assets/test-profiles-19.png)
-1. Dataimporten börjar. Statusen kommer att flyttas från **Bearbetning** till **Lyckades**. Klicka på **Förhandsgranska datauppsättning** i det övre högra hörnet.
+1. Dataimporten börjar. Statusen ändras från **[!UICONTROL Processing]** till **[!UICONTROL Success]**. Klicka på **[!UICONTROL Preview data set]** i det övre högra hörnet.
    ![](../assets/test-profiles-20.png)
 1. Kontrollera att testprofilerna har lagts till korrekt.
    ![](../assets/test-profiles-21.png)
