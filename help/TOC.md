@@ -6,9 +6,9 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Resor
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8c7c7d85d4e7835721b70faa7b3b6166796e79c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '406'
 ht-degree: 100%
 
@@ -109,15 +109,15 @@ ht-degree: 100%
       + Adobe Experience Platform {#adobe-experience-platform}
          + [inSegment](using/functions/functioninsegment.md)
       + Aggregera {#aggregation}
-         + [medel](using/functions/functionavg.md)
-         + [antal](using/functions/functioncount.md)
+         + [avg](using/functions/functionavg.md)
+         + [count](using/functions/functioncount.md)
          + [countOnlyNull](using/functions/functioncountonlynull.md)
          + [countWithNull](using/functions/functioncountwithnull.md)
          + [distinctCount](using/functions/functiondistinctcount.md)
          + [distinctCountWithNull](using/functions/functiondistinctcountwithnull.md)
          + [max](using/functions/functionmax.md)
          + [min](using/functions/functionmin.md)
-         + [summa](using/functions/functionsum.md)
+         + [sum](using/functions/functionsum.md)
       + Konvertering {#conversion}
          + [toBool](using/functions/functiontobool.md)
          + [toDateTime](using/functions/functiontodatetime.md)
@@ -136,24 +136,24 @@ ht-degree: 100%
          + [inNextHours](using/functions/functioninnexthours.md)
          + [inNextMonths](using/functions/functioninnextmonths.md)
          + [inNextYears](using/functions/functioninnextyears.md)
-         + [nu](using/functions/functionnow.md)
+         + [now](using/functions/functionnow.md)
          + [nowWithDelta](using/functions/functionnowwithdelta.md)
          + [setHours](using/functions/functionsethours.md)
          + [setDays](using/functions/functionsetdays.md)
       + Lista {#list}
-         + [distinkt](using/functions/functiondistinct.md)
+         + [distinct](using/functions/functiondistinct.md)
          + [distinctWithNull](using/functions/functiondistinctwithnull.md)
          + [getListItem](using/functions/functiongetlistitem.md)
-         + [i](using/functions/functionin.md)
+         + [in](using/functions/functionin.md)
          + [listSize](using/functions/functionlistsize.md)
          + [serializeList](using/functions/functionserializelist.md)
-         + [sortera](using/functions/functionsort.md)
+         + [sort](using/functions/functionsort.md)
       + Matematik {#math}
-         + [slumpmässig](using/functions/functionrandom.md)
-         + [rund](using/functions/functionround.md)
+         + [random](using/functions/functionrandom.md)
+         + [round](using/functions/functionround.md)
       + Sträng {#string}
          + [concat](using/functions/functionconcat.md)
-         + [innehåller](using/functions/functioncontain.md)
+         + [contain](using/functions/functioncontain.md)
          + [containWithIgnoreCase](using/functions/functioncontainwithignorecase.md)
          + [endWith](using/functions/functionendwith.md)
          + [endWithIgnorecase](using/functions/functionendwithignorecase.md)
@@ -163,16 +163,16 @@ ht-degree: 100%
          + [isNotEmpty](using/functions/functionisnotempty.md)
          + [lastIndexOf](using/functions/functionlastindexof.md)
          + [length](using/functions/functionlength.md)
-         + [nedre](using/functions/functionlower.md)
+         + [lower](using/functions/functionlower.md)
          + [matchRegExp](using/functions/functionmatchregexp.md)
          + [notEqualWithIgnoreCase](using/functions/functionnotequalignorecase.md)
-         + [ersätt](using/functions/functionreplace.md)
+         + [replace](using/functions/functionreplace.md)
          + [replaceAll](using/functions/functionreplaceall.md)
          + [split](using/functions/functionsplit.md)
          + [startWith](using/functions/functionstartwith.md)
          + [startWithIgnoreCase](using/functions/functionstartwithignorecase.md)
          + [substr](using/functions/functionsubstr.md)
-         + [trimma](using/functions/functiontrim.md)
+         + [trim](using/functions/functiontrim.md)
          + [upper](using/functions/functionupper.md)
          + [uuid](using/functions/functionuuid.md)
 + Bygga rapporter{#journey-reports}
