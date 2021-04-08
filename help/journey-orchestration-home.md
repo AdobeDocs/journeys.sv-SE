@@ -7,9 +7,9 @@ topic: Premium
 feature: Resor
 role: Yrkesverksam
 level: Nybörjare
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 784e4203b77673317c11ee767278c48dd10a5332
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '259'
 ht-degree: 100%
 
