@@ -4,16 +4,16 @@ solution: Journey Orchestration
 title: Åtkomsthantering
 description: Läs mer om åtkomsthantering
 feature: Resor
-role: Yrkesverksamma inom affärsverksamhet
-level: Mellanliggande
+role: Business Practitioner
+level: Intermediate
+exl-id: a551efa5-c0d8-4138-96ca-fb407fad8c59
 translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+source-git-commit: 2f824417d3e5357f0c015c40233296239ab8db5c
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '861'
 ht-degree: 98%
 
 ---
-
 
 # Åtkomsthantering{#concept_rfj_wpt_52b}
 
@@ -42,7 +42,7 @@ I Admin Console kan du tilldela användarna en av följande färdiga produktprof
 
    >[!NOTE]
    >
-   >**[!UICONTROL Administrators]** är den enda produktprofil som har åtkomst till att skapa, redigera och publicera transaktionsmeddelanden (eller meddelandemallar) i Adobe Campaign Standard. Den här produktprofilen behövs om du använder Adobe Campaign Standard för att skicka meddelanden i dina resor.
+   >**[!UICONTROL Administrators]** är den enda produktprofil som har åtkomst till att skapa, redigera och publicera transaktionsmeddelanden (eller meddelandemallar) i Adobe Campaign Standard. Den här produktprofilen behövs om du använder Adobe Campaign Standard för att skicka meddelanden i dina resor. Namnet bör inte ändras i Admin Console.
 
 * **[!UICONTROL Standard User]**: användare med grundläggande åtkomst, till exempel resehantering. Den här produktprofilen innehåller följande behörigheter:
    * Hantera resor
