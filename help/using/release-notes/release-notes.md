@@ -3,9 +3,9 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Versionsinformation
 description: Läs om versionsinformation
-feature: Resor
-role: Yrkesverksam
-level: Nybörjare
+feature: Journeys
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: 455b0f083d598e70b8a3f33c7f21432628fef8b5
 workflow-type: tm+mt

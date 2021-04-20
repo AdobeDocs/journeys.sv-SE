@@ -3,9 +3,9 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Konfigurera datakällan
 description: Lär dig hur du konfigurerar datakällan för ett enkelt användningsfall för resan
-feature: Resor
-role: Yrkesverksamma inom affärsverksamhet
-level: Mellanliggande
+feature: Journeys
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
 workflow-type: tm+mt

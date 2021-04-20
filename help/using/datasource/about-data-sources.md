@@ -3,9 +3,9 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Om datakällor
 description: 'Läs om hur du konfigurerar en datakälla '
-feature: Resor
-role: Yrkesverksam
-level: Mellanliggande
+feature: Journeys
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: f73e357d8947997f7f5872efa6a5ef4f51bc63a9
 workflow-type: tm+mt

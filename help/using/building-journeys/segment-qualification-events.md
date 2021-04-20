@@ -3,9 +3,9 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Segment med kvalificeringshändelser
 description: Läs mer om kvalificeringshändelser för segment
-feature: Resor
-role: Yrkesverksamma inom affärsverksamhet
-level: Mellanliggande
+feature: Journeys
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: a99ad6a589bcd1f3083eabbcac35dd5c0497093d
 workflow-type: tm+mt

@@ -3,9 +3,9 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Reaktionshändelser
 description: Läs mer om reaktionshändelser
-feature: Resor
-role: Yrkesverksam
-level: Mellanliggande
+feature: Journeys
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: 4b30ac80a2dfb5b0675a88ecb5abf81e57c64097
 workflow-type: tm+mt

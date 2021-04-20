@@ -3,9 +3,9 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Arbeta med Adobe Campaign
 description: Läs om Adobe Campaign åtgärder
-feature: Resor
-role: Yrkesverksamma inom affärsverksamhet
-level: Mellanliggande
+feature: Journeys
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: 8685dfdcbfb414af89b304a6a9a0f9418959909b
 workflow-type: tm+mt

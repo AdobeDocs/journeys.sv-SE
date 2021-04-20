@@ -3,7 +3,7 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Åtkomsthantering
 description: Läs mer om åtkomsthantering
-feature: Resor
+feature: Journeys
 role: Business Practitioner
 level: Intermediate
 exl-id: a551efa5-c0d8-4138-96ca-fb407fad8c59
