@@ -3,17 +3,17 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Testa resan
 description: 'Läs om testning av resan '
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
+exl-id: be413905-0631-4229-a954-80a92651206d
 translation-type: tm+mt
-source-git-commit: 8c7c7d85d4e7835721b70faa7b3b6166796e79c4
+source-git-commit: cb90f764ae6ccc0dab9728899dafd266db89a4e7
 workflow-type: tm+mt
-source-wordcount: '1624'
-ht-degree: 3%
+source-wordcount: '1638'
+ht-degree: 2%
 
 ---
-
 
 # Testa resan{#testing_the_journey}
 
@@ -133,6 +133,10 @@ Med knappen **[!UICONTROL Trigger an event]** kan du konfigurera en händelse so
 
 Du måste veta vilka profiler som är flaggade som testprofiler i Adobe Experience Platform. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID eller en e-postadress. Värdet för den här nyckeln måste läggas till i fältet **Profilidentifierare**.
 
+>[!NOTE]
+>
+>En listruta visas för fält där en uppräkning förväntas. Välj bara ett av de tillgängliga värdena.
+
 Om resan innehåller flera händelser använder du listrutan för att välja en händelse. Konfigurera sedan de fält som skickats och körningen av den händelse som skickats för varje händelse. Med gränssnittet kan du skicka rätt information i händelsens nyttolast och kontrollera att informationstypen är korrekt. Testläget sparar de senaste parametrarna som användes i en testsession för senare bruk.
 
 ![](../assets/journeytest4.png)
@@ -205,4 +209,3 @@ Det finns ett scenario när flera händelser skickas från flera resor som komme
 Dessa datauppsättningar skapas och namnges automatiskt om en måldatauppsättning inte ingår i upplevelsehändelsen. Därför ser vi dagens&quot;Automatiskt skapade datauppsättningar för resenärer&quot;.
 
 Namngivningen av vår källa skapar automatiskt. Om vi har flera händelser bör vi sammanfoga och låta det vara &quot;Journey Orchestration Test Event - NAME OF SCHEMA&quot;. Detta blir automatiskt&quot;Automatiskt genererad datauppsättning för testhändelsen Journey Orchestration - SCHEMAS NAMN&quot;.
-
