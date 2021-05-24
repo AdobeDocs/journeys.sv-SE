@@ -3,17 +3,16 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Om händelseaktiviteter
 description: Läs mer om aktiviteter
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 3a4ff8b1-bbe7-47c8-9fba-defe4b1d5299
+source-git-commit: db7567f7f3333ad69015d07991158ce5b8f01af5
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '447'
 ht-degree: 1%
 
 ---
-
 
 # Om händelseaktiviteter {#concept_rws_1rt_52b}
 
@@ -47,11 +46,11 @@ Så här konfigurerar du en timeout för en händelse:
 
 I det här exemplet skickar resan en första välkomstknuff till en kund. Sedan skickas en reklamfilm för måltidsrabatt endast om kunden kommer in på restaurangen nästa dag. Därför har vi konfigurerat restaurangevenemanget med en 1-dagars timeout:
 
-* Om restauranghändelsen tas emot mindre än 1 dygn efter välkomstsändningen skickas push-aktiviteten för måltidsrabatt.
+* Om restauranghändelsen tas emot mindre än 1 dag efter välkomstsändningen skickas push-aktiviteten för måltidsrabatt.
 * Om ingen restauranghändelse tas emot under nästa dag flödar personen genom timeoutvägen.
 
-Observera att om du vill konfigurera en timeout för flera händelser som placerats efter en **[!UICONTROL Wait]**-aktivitet, måste du bara konfigurera timeout för en av dessa händelser.
+Observera, att om du vill konfigurera en timeout för flera händelser som placerats efter en **[!UICONTROL Wait]**-aktivitet, måste du bara konfigurera timeout för en av dessa händelser.
 
-Tidsgränsen gäller för alla händelser som placeras efter aktiviteten **[!UICONTROL Wait]**. Om ingen händelse tas emot efter den angivna tidsgränsen kommer individerna att flyta in i en enda tidsgräns eller avsluta sin resa.
+Tidsgränsen gäller för alla händelser som placerats efter aktiviteten **[!UICONTROL Wait]**. Om ingen händelse tas emot före den angivna tidsgränsen kommer individerna att flyta in i en enda tidsgräns eller avsluta sin resa.
 
 ![](../assets/event-timeout-group.png)
