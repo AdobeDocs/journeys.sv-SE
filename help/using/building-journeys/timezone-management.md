@@ -1,22 +1,20 @@
 ---
 product: adobe campaign
 solution: Journey Orchestration
-title: Hantera tidszoner
+title: Hantering av tidszoner
 description: Läs mer om hantering av tidszoner
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: c0e67849-caa0-4045-94ed-38e483054e1d
+source-git-commit: a19493178652a7fc91b7b778c5cb47eda72cd877
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '262'
 ht-degree: 2%
 
 ---
 
-
-
-# Hantera tidszoner {#timezone_management}
+# Hantering av tidszoner {#timezone_management}
 
 Du kan definiera en tidszon i [egenskaperna](../building-journeys/changing-properties.md) för din resa.
 
@@ -37,7 +35,7 @@ Tidszonen kan också korrigeras. Rensa den fördefinierade tidszonen och välj e
 
 Om du vill göra det väljer du en tidszon i **[!UICONTROL Properties]**.
 
-![](../assets/journey73.png)
+![](../assets/journey72.png)
 
 ## Använda profiler för att definiera resetidszonen {#timezone-from-profiles}
 
@@ -49,7 +47,7 @@ Om den enskilda personens profil inte innehåller någon tidszon är den tidszon
 
 Om du vill göra det i **[!UICONTROL Properties]** markerar du **[!UICONTROL Use Profile timezone in timers and conditions]**.
 
-![](../assets/journey72.png)
+![](../assets/journey73.png)
 
 ## Använda tidszoner i uttryck {#timezone-in-expressions}
 
