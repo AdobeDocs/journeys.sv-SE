@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Mätvärden och mått
 description: Läs om mått och mätvärden för Journey Orchestration
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: f6897011-0a5e-4094-a18e-ba2aa25f902c
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 0%
+source-wordcount: '1036'
+ht-degree: 1%
 
 ---
-
 
 # Mätvärden och mått {#concept_rfj_wpt_52b}
 
