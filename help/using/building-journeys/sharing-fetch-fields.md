@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: journeyStep, händelser, datafält för hämtning
 description: journeyStep, händelser, datafält för hämtning
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 4df471ae-c6b7-452e-8e44-a108d0da276f
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '372'
 ht-degree: 4%
 
 ---
-
 
 # journeyStep, händelser, datafält för hämtning {#sharing-fetch-fields}
 
