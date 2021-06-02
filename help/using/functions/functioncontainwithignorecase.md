@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: containWithIgnoreCase
 description: Läs mer om funktionen containWithIgnoreCase
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: ebec646e-9dbb-4432-a430-ab69fb7d75cf
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 9%
+source-wordcount: '49'
+ht-degree: 12%
 
 ---
-
 
 # containWithIgnoreCase {#containWithIgnoreCase}
 
