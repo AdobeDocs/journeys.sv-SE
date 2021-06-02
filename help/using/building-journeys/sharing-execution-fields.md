@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: journeyStep, händelser, körningsfält för åtgärder
 description: journeyStep, händelser, körningsfält för åtgärder
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 9af66037-63d7-41a8-86d1-b03c655dfb82
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '321'
 ht-degree: 4%
 
 ---
-
 
 # journeyStep, händelser, körningsfält för åtgärder {#sharing-execution-fields}
 
