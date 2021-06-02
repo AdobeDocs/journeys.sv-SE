@@ -1,21 +1,19 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
-title: i
+title: in
 description: Läs mer om funktionen i
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 6a19ae25-99c9-47f9-8417-c3d247dbbe3f
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 12%
+source-wordcount: '112'
+ht-degree: 13%
 
 ---
 
-
-# i {#in}
+# in {#in}
 
 Kontrollerar om det första argumentvärdet finns i listan. Kontrollen utförs med en likhetskontroll för varje argumentvärde. Det returnerar true om argumentvärdet hittas, annars false.
 
