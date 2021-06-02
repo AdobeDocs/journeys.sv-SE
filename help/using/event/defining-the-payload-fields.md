@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Definiera nyttolastfält
 description: Lär dig hur du definierar nyttolastfälten
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 9d385b64-46cd-489b-9c18-352fa2a2dbba
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '302'
 ht-degree: 6%
 
 ---
-
 
 # Definiera nyttolastfält {#concept_yrw_3qt_52b}
 
