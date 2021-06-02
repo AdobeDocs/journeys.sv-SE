@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: inSegment
 description: Läs mer om funktionen inSegment
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: a99ad6a589bcd1f3083eabbcac35dd5c0497093d
+exl-id: 7f756ec5-d787-4024-aaf8-5b4f1d4ddece
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 5%
+source-wordcount: '150'
+ht-degree: 6%
 
 ---
-
 
 # inSegment {#inSegment}
 
