@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Om den avancerade uttrycksredigeraren
 description: Läs mer om hur du skapar avancerade uttryck
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: f6f0004d-8a33-4671-9c16-e56edfe2a45e
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '542'
 ht-degree: 90%
 
 ---
-
 
 # Om den avancerade uttrycksredigeraren {#concept_uyj_trt_52b}
 
