@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Utnyttja kundernas AI-poäng
 description: Utnyttja kundernas AI-poäng
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: b507ed24-820f-41e2-b8ce-63e992710e3a
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 2%
+source-wordcount: '108'
+ht-degree: 3%
 
 ---
-
 
 # Utnyttja kund-AI {#customer-ai}
 
@@ -26,5 +24,3 @@ De kan därför användas som andra profilattribut i Journey Orchestration-villk
 ![](../assets/customer-ai.png)
 
 Observera att AI är en betalfunktion i Adobe Experience Platform.
-
-
