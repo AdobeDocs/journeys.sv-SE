@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Om Adobe Experience Platform-segment
 description: Lär dig konfigurera ett Adobe Experience Platform-segment
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 94e1e3e3-9a46-41ca-bec1-f41287925372
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
-
 
 # Om Adobe Experience Platform-segment {#about-segments}
 
