@@ -1,14 +1,12 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 user-guide-title: Journey Orchestration
 title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
-feature: Journeys
-translation-type: ht
-source-git-commit: 8c7c7d85d4e7835721b70faa7b3b6166796e79c4
-workflow-type: ht
+feature: Resor
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 100%
 
@@ -24,7 +22,7 @@ ht-degree: 100%
 + Börja med [!DNL Journey Orchestration] {#starting-with-journeys}
    + [Om [!DNL Journey Orchestration]](using/about/about-journey-orchestration.md)
    + [Begränsningar](using/about/limitations.md)
-   + [Komma igång](using/about/get-started.md)
+   + [Kom igång](using/about/get-started.md)
    + [Användargränssnitt](using/about/user-interface.md)
    + [Åtkomsthantering](using/about/access-management.md)
    + [Felsökning](using/about/troubleshooting.md)
@@ -65,7 +63,7 @@ ht-degree: 100%
       + [Ändra egenskaper](using/building-journeys/changing-properties.md)
       + [Reseversioner](using/building-journeys/journey-versions.md)
       + [Avsluta en resa](using/building-journeys/terminating-a-journey.md)
-      + [Hantera tidszoner](using/building-journeys/timezone-management.md)
+      + [Hantering av tidszoner](using/building-journeys/timezone-management.md)
       + [Testprofiler](using/building-journeys/creating-test-profiles.md)
    + Aktiviteter {#about-journey-building}
       + Händelseaktiviteter {#events-activities}
