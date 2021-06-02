@@ -1,16 +1,15 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: max
 description: Läs mer om funktionen max
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 116713e0-7bbd-4150-8495-f87034eafb5f
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 5%
+source-wordcount: '89'
+ht-degree: 6%
 
 ---
 
