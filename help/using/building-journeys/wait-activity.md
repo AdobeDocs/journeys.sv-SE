@@ -1,14 +1,12 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Vänta på aktivitet
 description: Läs mer om vänteaktiviteten
 feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: 819ff3c3-0e3e-4d86-b5d2-10c5b10d19e6
-translation-type: tm+mt
-source-git-commit: 532e8db3fde8ec86714d0b45a1b2a6c9c54367fb
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 4%
@@ -45,13 +43,13 @@ Ange väntetiden innan nästa aktivitet körs.
 
 ![](../assets/journey55.png)
 
-## Fast datum väntar{#fixed_date}
+## Vänta fast{#fixed_date}
 
 Välj datumet för körningen av nästa aktivitet.
 
 ![](../assets/journey56.png)
 
-## Anpassad väntan{#custom}
+## Anpassad väntetid{#custom}
 
 Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 juli 2020 klockan 17.00, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller en datakälla. Du kan inte definiera en anpassad längd, till exempel 7 dagar. Uttrycket i uttrycksredigeraren ska ha formatet dateTimeOnly. Läs [den här sidan](../expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns på [den här sidan](../expression/data-types.md).
 
