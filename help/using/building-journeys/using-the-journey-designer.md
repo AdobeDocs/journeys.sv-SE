@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Använda resedesignern
 description: Läs mer om hur du använder resedesignern
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: 7755822065eb0bcc44f78e0e36c53ce73ac60ada
+exl-id: 2f001e42-46dd-48aa-b3dd-23bfdf97e1c7
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1413'
 ht-degree: 5%
 
 ---
-
 
 # Använda resedesignern {#concept_m1g_5qt_52b}
 
@@ -61,7 +59,7 @@ Du kan också använda fältet **[!UICONTROL Search]**.
 
 ![](../assets/journey39.png)
 
-## Aktivitetskonfigurationsfönstret {#configuration_pane}
+## Åtgärdskonfigurationsfönstret {#configuration_pane}
 
 Aktivitetskonfigurationsrutan **visas när du klickar på en aktivitet på paletten.** Fyll i de obligatoriska fälten. Klicka på ikonen **[!UICONTROL Delete]** för att ta bort aktiviteten. Klicka på **[!UICONTROL Cancel]** för att avbryta ändringarna eller **[!UICONTROL Ok]** för att bekräfta. Om du vill ta bort aktiviteter kan du även markera en aktivitet (eller flera) och trycka på backstegstangenten. Om du trycker på Esc stängs aktivitetskonfigurationsrutan.
 
@@ -118,4 +116,3 @@ Om du bara vill kopiera en aktivitet kan du klicka på den och använda ikonen *
    ![](../assets/copy-paste2.png)
 1. Tryck på **Ctrl/Command + V** för att klistra in aktiviteterna utan att länka dem till en befintlig nod under en resa. Inklistrade aktiviteter placeras i samma ordning. När du har klistrat in aktiviteter förblir de markerade så att du enkelt kan flytta dem. Du kan också placera markören på en tom platshållare och trycka på **Ctrl/Kommando + V**. Inklistrade aktiviteter länkas till noden.
    ![](../assets/copy-paste3.png)
-
