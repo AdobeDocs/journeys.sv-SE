@@ -1,20 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Operatorer
 description: Lär dig mer om operatorer i avancerade uttryck
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: fd86b6ab-76cf-4b35-9e87-f441e914f20b
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '436'
 ht-degree: 6%
 
 ---
-
-
 
 # Operatorer {#concept_wd5_pj5_dgb}
 
@@ -37,7 +34,7 @@ Det finns två typer av operatorer: unära operatorer och binära operatorer. De
 
 Här är en lista över operatorer som stöds:
 
-## Logisk {#logical}
+## Logisk  {#logical}
 
 ### och
 
