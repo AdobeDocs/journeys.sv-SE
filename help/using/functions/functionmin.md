@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: min
 description: Läs mer om min-funktionen
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 7e13a08c-c51a-4d40-a3e2-ef70bd3edca5
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 5%
+source-wordcount: '89'
+ht-degree: 6%
 
 ---
-
 
 # min {#min}
 
