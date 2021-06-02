@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Om orkestreringsaktiviteter
 description: Lär dig mer om orkestreringsaktiviteter
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 3c2de723-d990-43f5-b39d-2348de62bbcc
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '36'
-ht-degree: 33%
+source-wordcount: '33'
+ht-degree: 39%
 
 ---
-
 
 # Om orkestreringsaktiviteter {#concept_ksq_2rt_52b}
 
