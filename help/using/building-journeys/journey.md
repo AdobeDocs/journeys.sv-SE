@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Om att bygga en resa
 description: Som affärsanvändare kan du lära dig att kombinera händelser, samordning och åtgärder för att skapa en resa.
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: 409197458ba32f9fdb3e42e4b06eae2814eff9f8
+exl-id: 540b5142-9323-4cc1-9b5a-3fa20a5945bf
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '558'
 ht-degree: 9%
 
 ---
-
 
 # Skapa en resa {#concept_gq5_sqt_52b}
 
@@ -55,7 +53,7 @@ Här är de viktigaste stegen för att skapa och publicera en resa.
 
    ![](../assets/journey36.png)
 
-## Avslutar en resa {#ending_a_journey}
+## Avsluta en resa {#ending_a_journey}
 
 En resa kan ta slut för en individ på grund av två orsaker:
 
