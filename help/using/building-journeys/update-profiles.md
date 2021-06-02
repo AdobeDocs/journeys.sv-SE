@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Hoppa från en resa till en annan
 description: Hoppa från en resa till en annan
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: 7123cff30039d6a5174b0272db33e4a9d15d4ca9
+exl-id: eaf2c795-0920-4b9c-9f06-801e43c1844b
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 5%
+source-wordcount: '356'
+ht-degree: 4%
 
 ---
-
 
 # Uppdatera profil {#update-profile}
 
