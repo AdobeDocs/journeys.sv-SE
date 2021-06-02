@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Reaktionshändelser
 description: Läs mer om reaktionshändelser
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: 4b30ac80a2dfb5b0675a88ecb5abf81e57c64097
+exl-id: 2f2a2905-1521-48d9-b593-9b31238282a5
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '413'
 ht-degree: 2%
 
 ---
-
 
 # Reaktionshändelser {#section_dhx_gss_dgb}
 
