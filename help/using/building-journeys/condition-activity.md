@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Villkorsaktivitet
 description: Läs mer om villkorsaktiviteter
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 7b44edbe-9d05-4d67-8a64-2a0a553fcb92
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '744'
 ht-degree: 10%
 
 ---
-
 
 # Villkorsaktivitet{#section_e2n_pft_dgb}
 
@@ -74,7 +72,7 @@ På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/
 
 ![](../assets/journey51.png)
 
-## Procentuell delning {#percentage_split}
+## Procentdelning {#percentage_split}
 
 Med det här alternativet kan du slumpmässigt dela målgruppen för att definiera olika åtgärder för varje grupp. Definiera antalet delningar och partitioneringen för varje sökväg. Delningsberäkningen är statistisk eftersom systemet inte kan förutse hur många personer som kommer att flöda i den här kundresan. Därför har delningen en mycket låg felmarginal. Den här funktionen är baserad på en slumpmässig Java-mekanism (se den här [sidan](https://docs.oracle.com/javase/7/docs/api/java/util/Random.html)).
 
