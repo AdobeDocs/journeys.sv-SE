@@ -1,21 +1,19 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: distinctCount
 description: Lär dig mer om funktionen distinktCount
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: b7844bce-1286-4d9e-b9e6-619c2d467c91
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 23%
+source-wordcount: '48'
+ht-degree: 27%
 
 ---
 
-
-# distinctCount{#distinctCount}
+# clearCount{#distinctCount}
 
 Räknar antalet olika värden som ignorerar null-värden.
 
