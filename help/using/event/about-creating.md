@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Skapa en händelse
 description: Lär dig hur du skapar en händelse
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 2ae8854a-c3e7-469d-9f89-25b54bc3e894
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '544'
 ht-degree: 53%
 
 ---
-
 
 # Skapa en ny händelse {#section_tbk_5qt_pgb}
 
