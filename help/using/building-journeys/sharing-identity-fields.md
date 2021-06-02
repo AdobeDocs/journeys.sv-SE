@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: journeyStep, händelser, identitetsfält
 description: journeyStep, händelser, identitetsfält
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 9c0ff38f-51dd-40bd-8c19-d142b9c23308
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 19%
+source-wordcount: '60'
+ht-degree: 21%
 
 ---
-
 
 # journeyStep, händelser, identitetsfält {#sharing-identity-fields}
 
