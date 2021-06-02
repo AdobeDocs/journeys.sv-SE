@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Definiera händelsenyckeln
 description: Lär dig hur du definierar händelsenyckeln
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 79bcf562-f971-42f1-a607-94a2510c4a07
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '400'
 ht-degree: 5%
 
 ---
-
 
 # Definiera händelsenyckeln {#concept_ond_hqt_52b}
 
