@@ -1,20 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Ändra egenskaper
 description: Lär dig hur du ändrar egenskaper
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: a8bfd4fd829ff8fadc68de87dc0b9de085a962e3
+exl-id: 06d26078-b9b8-4dc4-918d-0f2426d00f54
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '492'
 ht-degree: 1%
 
 ---
-
-
 
 # Ändra egenskaper {#concept_prq_wqt_52b}
 
