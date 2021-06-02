@@ -1,11 +1,9 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Importera beskrivning av export-API
 description: Läs mer om import-API:t för export.
 products: journeys
-translation-type: tm+mt
-source-git-commit: 8da1d4a6c01279bf502c3ec39bdaba8fcc8e64f8
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
 source-wordcount: '1131'
 ht-degree: 2%
@@ -59,7 +57,7 @@ API-åtkomst för Journey Orchestration konfigureras genom stegen nedan. Var och
 1. **Skapa en JSON Web Token (JWT)** utifrån de inloggningsuppgifter som tidigare genererats och signera den med din privata nyckel. JWT kodar all identitets- och säkerhetsinformation som Adobe behöver för att verifiera din identitet och ge dig åtkomst till API:t. Det här steget beskrivs närmare i det här [avsnittet](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
 1. **Byt ut din JWT mot en Access-** token via en POST-förfrågan eller via gränssnittet för Developer Console. Denna Access Token måste användas i varje rubrik för dina API-begäranden.
 
-Om du vill skapa en säker tjänst-till-tjänst-API-session för Adobe I/O måste varje begäran till en Adobe-tjänst innehålla informationen nedan i auktoriseringshuvudet.
+Om du vill skapa en säker tjänst-till-tjänst-API-session mellan Adobe I/O måste varje begäran till en Adobe-tjänst innehålla informationen nedan i auktoriseringshuvudet.
 
 ```
 curl -X GET https://journey.adobe.io/authoring/XXX \
