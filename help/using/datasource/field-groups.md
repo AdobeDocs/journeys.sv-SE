@@ -1,20 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Fältgrupper
 description: Läs mer om fältgrupper
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 6f7f2673-9080-4274-afa3-a0255798f78d
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
-
-
 
 # Fältgrupper {#concept_ntl_ypt_52b}
 
@@ -40,7 +37,7 @@ Antalet resor som använder en fältgrupp visas i fältet **[!UICONTROL Used in]
 
 ![](../assets/journey3bis.png)
 
-## Fältgruppens livscykel {#section_abk_njd_fjb}
+## Livscykel för fältgrupp {#section_abk_njd_fjb}
 
 Du kan lägga till eller ta bort fält från en fältgrupp som inte används i ett utkast eller en direktresa.
 
