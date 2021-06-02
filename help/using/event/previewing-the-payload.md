@@ -1,20 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Förhandsgranska nyttolasten
 description: Lär dig hur du förhandsgranskar nyttolasten
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 5a4cf7cd-463f-4e5b-a679-419649efef12
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 7%
+source-wordcount: '114'
+ht-degree: 8%
 
 ---
-
-
 
 # Förhandsgranska nyttolasten {#concept_jgf_4yk_4fb}
 
