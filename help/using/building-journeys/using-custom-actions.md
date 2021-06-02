@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Använda anpassade åtgärder
 description: Läs mer om åtgärdsaktiviteter
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 9996d1eb-ddef-46dd-aaa9-c37fa9deb2f9
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 6%
+source-wordcount: '128'
+ht-degree: 7%
 
 ---
-
 
 # Använda anpassade åtgärder {#section_f2c_hbg_nhb}
 
