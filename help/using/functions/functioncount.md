@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
-title: antal
+title: count
 description: Läs mer om antalet funktioner
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 46528642-18d5-4ca9-a344-de2c7f939d00
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 22%
+source-wordcount: '51'
+ht-degree: 25%
 
 ---
-
 
 # antal {#count}
 
