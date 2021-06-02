@@ -1,21 +1,19 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
-title: slumpmässig
+title: random
 description: Lär dig mer om funktionen slumpmässigt
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: c47dc5f0-ea69-4814-863b-e0e483ba7770
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '55'
-ht-degree: 5%
+source-wordcount: '52'
+ht-degree: 7%
 
 ---
 
-
-# slumpmässig {#random}
+# random {#random}
 
 Genererar ett slumpmässigt tal mellan 0 och 1.
 
