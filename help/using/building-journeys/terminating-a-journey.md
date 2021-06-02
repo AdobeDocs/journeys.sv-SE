@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Avsluta en resa
 description: Lär dig hur du avslutar en resa
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: 7755822065eb0bcc44f78e0e36c53ce73ac60ada
+exl-id: 2d1b9d6b-0a53-436c-b251-ce77cb931aaa
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '356'
 ht-degree: 4%
 
 ---
-
 
 # Avsluta en resa
 
