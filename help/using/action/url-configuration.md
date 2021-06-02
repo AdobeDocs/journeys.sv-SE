@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: URL-konfiguration
 description: Läs mer om URL-konfiguration
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: e7cba6c4-a231-44f9-927a-10115e7ab1dd
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 9%
+source-wordcount: '127'
+ht-degree: 10%
 
 ---
-
 
 # URL-konfiguration {#concept_gbg_1f1_2gb}
 
