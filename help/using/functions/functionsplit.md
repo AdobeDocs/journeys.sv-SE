@@ -1,21 +1,19 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: split
 description: Lär dig mer om funktionsdelningen
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 44499a09-19e2-4085-bf2f-7d9080ec382d
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 7%
+source-wordcount: '64'
+ht-degree: 9%
 
 ---
 
-
-# split {#split}
+# dela {#split}
 
 Delar den första argumentsträngen med en avgränsningssträng (den andra argumentsträngen, som kan vara ett reguljärt uttryck) för att skapa en lista med strängar (tokens).
 
