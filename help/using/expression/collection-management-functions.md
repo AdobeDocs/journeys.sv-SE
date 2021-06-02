@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Funktioner för att hantera samlingar
 description: Läs mer om datatyper i samlingshanteringsfunktioner
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: e80b04fe-b2d3-4c1b-ba22-7e37a9ad1d57
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '583'
 ht-degree: 1%
 
 ---
-
 
 # Funktioner för att hantera samlingar {#collection-management-functions}
 
