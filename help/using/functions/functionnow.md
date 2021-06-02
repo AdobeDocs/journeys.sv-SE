@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
-title: nu
+title: now
 description: Läs om funktionen nu
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: ab1f9efe-cbb7-4e3a-ace0-24f2fb6165cb
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 11%
+source-wordcount: '50'
+ht-degree: 14%
 
 ---
-
 
 # nu {#now}
 
