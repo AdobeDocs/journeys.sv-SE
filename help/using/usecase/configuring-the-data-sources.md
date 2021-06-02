@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Konfigurera datakällorna
 description: Lär dig hur du konfigurerar datakällan för resan med avancerad användning
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 2cfa4397-fe8f-44b3-b219-2fd5d3bdd156
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '460'
 ht-degree: 14%
 
 ---
-
 
 # Konfigurera datakällorna {#concept_vml_hdy_w2b}
 
