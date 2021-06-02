@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Om Journey Orchestration
 description: Läs mer om Journey Orchestration
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Beginner
-translation-type: ht
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
-workflow-type: ht
-source-wordcount: '394'
+exl-id: 430bac3a-06da-45a8-af90-1dcd1504d532
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+workflow-type: tm+mt
+source-wordcount: '391'
 ht-degree: 100%
 
 ---
-
 
 # Om [!DNL Journey Orchestration]{#concept_nd3_mqt_52b}
 
