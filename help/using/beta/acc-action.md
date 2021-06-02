@@ -1,21 +1,19 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Om integrering med Campaign Classic
 description: Läs om integrationen mellan Campaign Classic
 hide: true
 hidefromtoc: true
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 4b321b63-c624-4c2a-ae92-f9a2a95688d4
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 0%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
-
 
 # Integrera med Adobe Campaign Classic {#integrating-with-adobe-campaign-classic}
 
@@ -80,4 +78,3 @@ För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på pa
 1. I **åtgärdsparametrarna** visas alla fält som förväntas i meddelandets nyttolast. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Detta liknar anpassade åtgärder. Se det här [avsnittet](../building-journeys/using-custom-actions.md).
 
 ![](../assets/accintegration2.png)
-
