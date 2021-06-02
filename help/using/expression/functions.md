@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Funktioner
 description: Läs om funktioner
-feature: Journeys
+feature: Resor
 role: Data Engineer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: b514d2e9-1444-46d5-a1ac-3591e62807c1
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 71%
+source-wordcount: '168'
+ht-degree: 73%
 
 ---
-
 
 # Funktioner {#concept_p1r_qj5_dgb}
 
@@ -30,15 +28,15 @@ Här är en lista över funktioner som stöds.
 | Kategori |  -funktion |
 |-------------|-----------------------|
 | Adobe Experience Platform | [inSegment](../functions/functioninsegment.md) |
-| Aggregera | [medel](../functions/functionavg.md) |
-| Aggregera | [antal](../functions/functioncount.md) |
+| Aggregera | [avg](../functions/functionavg.md) |
+| Aggregera | [count](../functions/functioncount.md) |
 | Aggregera | [countOnlyNull](../functions/functioncountonlynull.md) |
 | Aggregera | [countWithNull](../functions/functioncountwithnull.md) |
 | Aggregera | [distinctCount](../functions/functiondistinctcount.md) |
 | Aggregera | [distinctCountWithNull](../functions/functiondistinctcountwithnull.md) |
 | Aggregera | [max](../functions/functionmax.md) |
 | Aggregera | [min](../functions/functionmin.md) |
-| Aggregera | [summa](../functions/functionsum.md) |
+| Aggregera | [sum](../functions/functionsum.md) |
 | Konvertering | [toBool](../functions/functiontobool.md) |
 | Konvertering | [toDateTime](../functions/functiontodatetime.md) |
 | Konvertering | [toDateTimeOnly](../functions/functiontodatetimeonly.md) |
@@ -55,20 +53,20 @@ Här är en lista över funktioner som stöds.
 | Datum | [inNextHours](../functions/functioninnexthours.md) |
 | Datum | [inNextMonths](../functions/functioninnextmonths.md) |
 | Datum | [inNextYears](../functions/functioninnextyears.md) |
-| Datum | [nu](../functions/functionnow.md) |
+| Datum | [now](../functions/functionnow.md) |
 | Datum | [nowWithDelta](../functions/functionnowwithdelta.md) |
 | Datum | [setHours](../functions/functionsethours.md) |
 | Datum | [setDays](../functions/functionsetdays.md) |
-| Lista | [distinkt](../functions/functiondistinct.md) |
+| Lista | [distinct](../functions/functiondistinct.md) |
 | Lista | [clearCount](../functions/functiondistinctcount.md) |
-| Lista | [i](../functions/functionin.md) |
+| Lista | [in](../functions/functionin.md) |
 | Lista | [listSize](../functions/functionlistsize.md) |
 | Lista | [serializeList](../functions/functionserializelist.md) |
-| Lista | [sortera](../functions/functionsort.md) |
-| Matematik | [slumpmässig](../functions/functionrandom.md) |
-| Matematik | [rund](../functions/functionround.md) |
+| Lista | [sort](../functions/functionsort.md) |
+| Matematik | [random](../functions/functionrandom.md) |
+| Matematik | [round](../functions/functionround.md) |
 | Sträng | [concat](../functions/functionconcat.md) |
-| Sträng | [innehåller](../functions/functioncontain.md) |
+| Sträng | [contain](../functions/functioncontain.md) |
 | Sträng | [containWithIgnoreCase](../functions/functioncontainwithignorecase.md) |
 | Sträng | [endWith](../functions/functionendwith.md) |
 | Sträng | [endWithIgnoreCase](../functions/functionendwithignorecase.md) |
@@ -78,14 +76,14 @@ Här är en lista över funktioner som stöds.
 | Sträng | [isNotEmpty](../functions/functionisnotempty.md) |
 | Sträng | [lastIndexOf](../functions/functionlastindexof.md) |
 | Sträng | [length](../functions/functionlength.md) |
-| Sträng | [nedre](../functions/functionlower.md) |
+| Sträng | [lower](../functions/functionlower.md) |
 | Sträng | [matchRegExp](../functions/functionmatchregexp.md) |
 | Sträng | [notEqualWithIgnoreCase](../functions/functionnotequalignorecase.md) |
-| Sträng | [ersätt](../functions/functionreplace.md) |
+| Sträng | [replace](../functions/functionreplace.md) |
 | Sträng | [replaceAll](../functions/functionreplaceall.md) |
 | Sträng | [startWith](../functions/functionstartwith.md) |
 | Sträng | [startWithIgnoreCase](../functions/functionstartwithignorecase.md) |
 | Sträng | [substr](../functions/functionsubstr.md) |
-| Sträng | [trimma](../functions/functiontrim.md) |
+| Sträng | [trim](../functions/functiontrim.md) |
 | Sträng | [upper](../functions/functionupper.md) |
 | Sträng | [uuid](../functions/functionuuid.md) |
