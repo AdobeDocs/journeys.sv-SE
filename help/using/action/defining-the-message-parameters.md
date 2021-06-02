@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Definiera meddelandeparametrar
 description: Lär dig hur du definierar meddelandeparametrar
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: ea9cdb1d-dde6-4080-8f35-7f8cd3cf3644
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 3%
+source-wordcount: '211'
+ht-degree: 4%
 
 ---
-
 
 # Definiera meddelandeparametrar {#concept_wy4_bf1_2gb}
 
