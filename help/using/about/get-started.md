@@ -1,21 +1,19 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
-title: Komma igång
+title: Kom igång
 description: Upptäck de viktigaste stegen för att konfigurera Journey Orchestration och bygga din första resa.
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: fe7bb5fe-7b5e-46da-8ef8-ae9401522c03
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 86%
+source-wordcount: '323'
+ht-degree: 87%
 
 ---
 
-
-# Komma igång{#concept_y4b_4qt_52b}
+# Kom igång{#concept_y4b_4qt_52b}
 
 I [!DNL Journey Orchestration] finns det två typer av användare som utför olika uppgifter: den **tekniska användaren** och **företagsanvändaren**. Användaråtkomst hanteras via produktprofiler och rättigheter. Läs [den här sidan](../about/access-management.md) om du vill veta mer om hur du konfigurerar användaråtkomst.
 
@@ -70,4 +68,3 @@ Här följer de viktigaste stegen för att konfigurera och använda [!DNL Journe
    Mer information finns på [den här sidan](../reporting/about-journey-reports.md).
 
    ![](../assets/dynamic_report_journey_12.png)
-
