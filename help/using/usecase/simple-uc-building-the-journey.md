@@ -1,19 +1,17 @@
 ---
 product: adobe campaign
-solution: Journey Orchestration
 title: Bygga resan
 description: Lär dig hur du bygger en enkel ärenderesa
-feature: Journeys
+feature: Resor
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: ab19cc5a3d998d1178984c5028b1ba650d3e1292
+exl-id: 22bcd7f4-03ee-4e4c-b221-9f14aeadded6
+source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 36%
+source-wordcount: '396'
+ht-degree: 37%
 
 ---
-
 
 # Bygga resan{#concept_eyw_mcy_w2b}
 
