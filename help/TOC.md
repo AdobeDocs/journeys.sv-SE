@@ -5,10 +5,10 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Resor
-source-git-commit: 1712529984af02d0a3f678418db1e819370056d6
+source-git-commit: 33e7f08cfe7eb39b761991fdcfbabe99af02e3f0
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 94%
+source-wordcount: '421'
+ht-degree: 93%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 94%
    + [Användargränssnitt](using/about/user-interface.md)
    + [Åtkomsthantering](using/about/access-management.md)
    + [Felsökning](using/about/troubleshooting.md)
+   + [Integrering med externa system](using/about/external-systems.md)
 + Konfigurera en händelse {#events-journeys}
    + Om händelser {#about-events}
       + [Allmän princip](using/event/about-events.md)
