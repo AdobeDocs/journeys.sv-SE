@@ -6,14 +6,14 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: c7e08542-fde8-4072-a697-42d35d6c58ba
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 1712529984af02d0a3f678418db1e819370056d6
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 4%
+source-wordcount: '303'
+ht-degree: 3%
 
 ---
 
-# Arbeta med Adobe Campaign {#using_adobe_campaign_standard}
+# Arbeta med Adobe Campaign Standard {#using_adobe_campaign_standard}
 
 Du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Standard Transactional Messaging-funktioner.
 
