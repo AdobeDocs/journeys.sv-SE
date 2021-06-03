@@ -3,9 +3,9 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Utnyttja utmattningspoäng
 description: Lär dig hur man utnyttjar trötthetspoäng på resor
-source-git-commit: bc17cd3c0aee2652e55e3cf0623f87c4187a165e
+source-git-commit: 83a2410151a8a388d1db845502f434e97d89bdcc
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I det här exemplet beskrivs alla steg som krävs för att skicka e-post med hjälp av Adobe Campaign Classic-integreringen.
 
-Vi ska först skapa en e-postmall för transaktioner i Campaign Classic. I Journey Orchestration ska vi skapa handlingen och utforma resan.
+Vi ska först skapa en e-postmall för transaktioner i Campaign Classic. I Journey Orchestration ska vi sedan skapa evenemanget, handlingen och utforma resan.
 
 Mer information om integrationen mellan Campaign Classic finns på följande sidor:
 
@@ -28,7 +28,7 @@ Din Campaign Classic-instans måste etableras för den här integreringen. Funkt
 
 1. Logga in på kontrollinstansen för Campaign Classic.
 
-1. Under **Administration** > **Plattform** > **Uppräkningar** väljer du uppräkningen **Händelsetyp** (eventType). Skapa en ny händelsetyp (&quot;travel-event&quot;, i vårt exempel). Du måste använda det interna namnet för händelsetypen när du skriver JSON-filen.
+1. Under **Administration** > **Plattform** > **Uppräkningar** väljer du uppräkningen **Händelsetyp** (eventType). Skapa en ny händelsetyp (&quot;travel-event&quot;, i vårt exempel). Du måste använda det interna namnet för händelsetypen när du skriver JSON-filen senare.
 
    ![](../assets/accintegration-uc-1.png)
 
@@ -59,14 +59,14 @@ Din Campaign Classic-instans måste etableras för den här integreringen. Funkt
 }
 ```
 
-    * För kanalen måste du skriva &quot;email&quot;.
-    * Använd det interna namnet för händelsetypen som skapades tidigare för eventType.
-    * E-postadressen blir en variabel, så du kan skriva vilken etikett som helst.
-    * I ctx är även personaliseringsfälten variabler.
+* För kanalen måste du skriva&quot;email&quot;.
+* Använd det interna namnet för händelsetypen som skapades tidigare för eventType.
+* E-postadressen blir en variabel, så du kan skriva vilken etikett som helst.
+* I ctx är även personaliseringsfälten variabler.
 
 **Journey Orchestration**
 
-1. Först måste du skapa en händelse. Se till att du inkluderar&quot;purchaseOrderNumber&quot;.
+1. Först måste du skapa en händelse. Se till att du inkluderar fältet&quot;purchaseOrderNumber&quot;.
 
    ![](../assets/accintegration-uc-5.png)
 
@@ -78,11 +78,11 @@ Din Campaign Classic-instans måste etableras för den här integreringen. Funkt
 
    ![](../assets/accintegration-uc-7.png)
 
-1. För e-postadressen och två anpassningsfält ändrar du **Konstant** till **Variabel**.
+1. För e-postadressen och de två anpassningsfälten ändrar du **Konstant** till **Variabel**.
 
    ![](../assets/accintegration-uc-8.png)
 
-1. Skapa nu en ny resa och börja med det evenemang som skapats tidigare.
+1. Skapa nu en ny resa och börja med det event som skapats tidigare.
 
    ![](../assets/accintegration-uc-9.png)
 
@@ -92,6 +92,6 @@ Din Campaign Classic-instans måste etableras för den här integreringen. Funkt
 
 1. Lägg till en **End**-aktivitet och testa din resa.
 
-   ![](../assets/accintegration-uc-10.png)
+   ![](../assets/accintegration-uc-11.png)
 
 1. Nu kan du publicera din resa.
