@@ -5,10 +5,10 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Resor
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 1712529984af02d0a3f678418db1e819370056d6
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 100%
+source-wordcount: '417'
+ht-degree: 94%
 
 ---
 
@@ -46,12 +46,12 @@ ht-degree: 100%
    + [Externa datakällor](using/datasource/external-data-sources.md)
 + Konfigurera en åtgärd {#action-journeys}
    + [Om åtgärder](using/action/action.md)
-   + [Arbeta med Adobe Campaign](using/action/working-with-adobe-campaign.md)
+   + [Arbeta med Adobe Campaign Standard](using/action/working-with-adobe-campaign.md)
+   + [Arbeta med Adobe Campaign Classic](using/action/acc-action.md)
    + Använda ett tredjepartssystem {#action-third-party}
       + [Om anpassad åtgärdskonfiguration](using/action/about-custom-action-configuration.md)
       + [URL-konfiguration](using/action/url-configuration.md)
       + [Definiera meddelandeparametrar](using/action/defining-the-message-parameters.md)
-   + [Integrera med Adobe Campaign Classic](using/beta/acc-action.md)
 + Använda plattformssegment {#configuring-segment}
    + [Om plattformssegment](using/segment/about-segments.md)
    + [Skapa ett segment](using/segment/creating-a-segment.md)
@@ -78,7 +78,8 @@ ht-degree: 100%
          + [Vänta på aktivitet](using/building-journeys/wait-activity.md)
       + Åtgärdsaktiviteter {#action-activities}
          + [Om åtgärdsaktiviteter](using/building-journeys/about-action-activities.md)
-         + [Använda åtgärder i Adobe Campaign](using/building-journeys/using-adobe-campaign-actions.md)
+         + [Använda Adobe Campaign Standard](using/building-journeys/using-adobe-campaign-actions.md)
+         + [Använda Adobe Campaign Classic](using/building-journeys/using-adobe-campaign-classic.md)
          + [Använda anpassade åtgärder](using/building-journeys/using-custom-actions.md)
          + [Hoppa från en resa till en annan](using/building-journeys/jump.md)
          + [Uppdatera profil](using/building-journeys/update-profiles.md)
@@ -191,5 +192,6 @@ ht-degree: 100%
       + [Konfigurera händelserna](using/usecase/configuring-the-events.md)
       + [Konfigurera datakällorna](using/usecase/configuring-the-data-sources.md)
       + [Bygga resan](using/usecase/building-the-journey.md)
+   + [Skicka ett meddelande med Campaign Classic](using/usecase/campaign-classic-use-case.md)
 + Arbeta med API:er{#working-with-apis}
    + [Begränsa API:er](using/api/capping.md)
