@@ -5,10 +5,10 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Resor
-source-git-commit: 33e7f08cfe7eb39b761991fdcfbabe99af02e3f0
+source-git-commit: eff510d0e41e07560db8d56a8ca64da546e8fca6
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 93%
+source-wordcount: '411'
+ht-degree: 97%
 
 ---
 
@@ -47,8 +47,7 @@ ht-degree: 93%
    + [Externa datakällor](using/datasource/external-data-sources.md)
 + Konfigurera en åtgärd {#action-journeys}
    + [Om åtgärder](using/action/action.md)
-   + [Arbeta med Adobe Campaign Standard](using/action/working-with-adobe-campaign.md)
-   + [Arbeta med Adobe Campaign Classic](using/action/acc-action.md)
+   + [Arbeta med Adobe Campaign](using/action/working-with-adobe-campaig.md)
    + Använda ett tredjepartssystem {#action-third-party}
       + [Om anpassad åtgärdskonfiguration](using/action/about-custom-action-configuration.md)
       + [URL-konfiguration](using/action/url-configuration.md)
@@ -79,8 +78,7 @@ ht-degree: 93%
          + [Vänta på aktivitet](using/building-journeys/wait-activity.md)
       + Åtgärdsaktiviteter {#action-activities}
          + [Om åtgärdsaktiviteter](using/building-journeys/about-action-activities.md)
-         + [Använda Adobe Campaign Standard](using/building-journeys/using-adobe-campaign-actions.md)
-         + [Använda Adobe Campaign Classic](using/building-journeys/using-adobe-campaign-classic.md)
+         + [Använda åtgärder i Adobe Campaign](using/building-journeys/using-adobe-campaign-actions.md)
          + [Använda anpassade åtgärder](using/building-journeys/using-custom-actions.md)
          + [Hoppa från en resa till en annan](using/building-journeys/jump.md)
          + [Uppdatera profil](using/building-journeys/update-profiles.md)
@@ -193,6 +191,6 @@ ht-degree: 93%
       + [Konfigurera händelserna](using/usecase/configuring-the-events.md)
       + [Konfigurera datakällorna](using/usecase/configuring-the-data-sources.md)
       + [Bygga resan](using/usecase/building-the-journey.md)
-   + [Skicka ett meddelande med Campaign Classic](using/usecase/campaign-classic-use-case.md)
+   + [Skicka ett meddelande med Campaign Classic](using/usecase/campaign-v7-v8-use-case.md)
 + Arbeta med API:er{#working-with-apis}
    + [Begränsa API:er](using/api/capping.md)
