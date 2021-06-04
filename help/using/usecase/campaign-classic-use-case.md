@@ -1,32 +1,32 @@
 ---
 product: adobe campaign
 solution: Journey Orchestration
-title: Utnyttja utmattningspoäng
-description: Lär dig hur man utnyttjar trötthetspoäng på resor
-source-git-commit: c17808a4cae7ebbd1129f6b28ad2ea945098f826
+title: Skicka ett meddelande med Campaign v7/v8
+description: Skicka ett meddelande med Campaign v7/v8
+source-git-commit: 8d10739381b4f5b09ad7070498d5f1566961c221
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 0%
+source-wordcount: '394'
+ht-degree: 1%
 
 ---
 
 
-# Skicka ett meddelande med Campaign Classic {#campaign-classic-use-case}
+# Skicka ett meddelande med Campaign v7/v8 {#campaign-classic-use-case}
 
-I det här exemplet beskrivs alla steg som krävs för att skicka e-post med hjälp av Adobe Campaign Classic-integreringen.
+I det här exemplet presenteras alla steg som krävs för att skicka e-post med hjälp av integreringen med Adobe Campaign Classic v7 och Adobe Campaign v8.
 
-Vi ska först skapa en e-postmall för transaktioner i Campaign Classic. I Journey Orchestration ska vi sedan skapa evenemanget, handlingen och utforma resan.
+Vi skapar först en transaktionell e-postmall i Campaign. I Journey Orchestration ska vi sedan skapa evenemanget, handlingen och utforma resan.
 
-Mer information om integrationen mellan Campaign Classic finns på följande sidor:
+Mer information om Campaign-integrationen finns på följande sidor:
 
-* [Skapa en Campaign Classic-åtgärd](../action/acc-action.md)
+* [Skapa en Campaign-åtgärd](../action/acc-action.md)
 * [Använda åtgärden på en resa](../building-journeys/using-adobe-campaign-classic.md).
 
-**Adobe Campaign Classic**
+**Adobe Campaign**
 
-Din Campaign Classic-instans måste etableras för den här integreringen. Funktionen för transaktionsmeddelanden måste konfigureras.
+Din Campaign-instans måste etableras för den här integreringen. Funktionen för transaktionsmeddelanden måste konfigureras.
 
-1. Logga in på kontrollinstansen för Campaign Classic.
+1. Logga in på din Campaign-kontrollinstans.
 
 1. Under **Administration** > **Plattform** > **Uppräkningar** väljer du uppräkningen **Händelsetyp** (eventType). Skapa en ny händelsetyp (&quot;travel-event&quot;, i vårt exempel). Du måste använda det interna namnet för händelsetypen när du skriver JSON-filen senare.
 
@@ -38,7 +38,7 @@ Din Campaign Classic-instans måste etableras för den här integreringen. Funkt
 
    ![](../assets/accintegration-uc-2.png)
 
-1. Designa din mall. I det här exemplet använder vi personalisering på profilens förnamn och ordernummer. Förnamnet finns i Adobe Experience Platform datakälla och ordernumret är ett fält från händelsen Journey Orchestration. Se till att du använder rätt fältnamn i Campaign Classic.
+1. Designa din mall. I det här exemplet använder vi personalisering på profilens förnamn och ordernummer. Förnamnet finns i Adobe Experience Platform datakälla och ordernumret är ett fält från händelsen Journey Orchestration. Se till att du använder rätt fältnamn i Campaign.
 
    ![](../assets/accintegration-uc-3.png)
 
@@ -70,7 +70,7 @@ Din Campaign Classic-instans måste etableras för den här integreringen. Funkt
 
    ![](../assets/accintegration-uc-5.png)
 
-1. Sedan måste du skapa en åtgärd som motsvarar Campaign Classic-mallen i Journey Orchestration. I listrutan **Åtgärdstyp** väljer du **Adobe Campaign Classic**.
+1. Sedan måste ni i Journey Orchestration skapa en åtgärd som motsvarar er Campaign-mall. I listrutan **Åtgärdstyp** väljer du **Adobe Campaign Classic**.
 
    ![](../assets/accintegration-uc-6.png)
 
