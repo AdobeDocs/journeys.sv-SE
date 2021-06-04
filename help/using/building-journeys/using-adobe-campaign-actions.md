@@ -6,14 +6,16 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: 4e59a256-d494-4407-a0a8-a2523eb1084e
-source-git-commit: b108294acf8e1c4be00ca981e7ba15a23973f8ac
+source-git-commit: c49908d36ecbc68ae11b5621305f39dd59c67871
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 5%
+source-wordcount: '1058'
+ht-degree: 4%
 
 ---
 
 # Använda åtgärder i Adobe Campaign {#using_campaign_action}
+
+## Använda Adobe Campaign Standard {#using_campaign_standard_action}
 
 Om du har Adobe Campaign Standard finns följande färdiga åtgärdsaktiviteter: **[!UICONTROL Email]**, **[!UICONTROL Push]** och **[!UICONTROL SMS]**.
 
@@ -39,7 +41,7 @@ När du väljer en mall visas alla fält som förväntas i meddelandenyttolasten
 
 ![](../assets/journey60.png)
 
-## E-post och SMS {#section_asc_51g_nhb}
+### E-post och SMS {#section_asc_51g_nhb}
 
 Parametrarna är identiska för **[!UICONTROL Email]** och **[!UICONTROL SMS]**.
 
@@ -73,7 +75,7 @@ Detta är de fält som förväntas av Adobe Campaign Standard-meddelandet. Dessa
 
 ![](../assets/journey62.png)
 
-## Tryck {#section_im3_hvf_nhb}
+### Tryck {#section_im3_hvf_nhb}
 
 Innan du använder push-aktiviteten måste din mobilapp konfigureras tillsammans med Campaign Standard för att skicka push-meddelanden. Använd den här [artikeln](https://helpx.adobe.com/se/campaign/kb/integrate-mobile-sdk.html) när du vill utföra nödvändiga implementeringsåtgärder för mobilen.
 
@@ -104,3 +106,20 @@ Du måste också definiera **[!UICONTROL Registration Token]**. Uttrycket beror 
 >Du kan inte skicka en samling med personaliseringsdata. Om transaktionspush förväntar sig samlingar fungerar den inte. Observera också att personaliseringsdata har ett förväntat format (exempel: sträng, decimal osv.). Du måste vara försiktig med att ta hänsyn till dessa förväntade format.
 
 Detta är de fält som förväntas av transaktionsmallen som används i ditt Adobe Campaign Standard-meddelande. Dessa fält kan användas för att anpassa ditt meddelande, använda villkorsstyrd formatering eller välja en viss meddelandevariant.
+
+## Använda Adobe Campaign v7/v8 {#using_campaign_v7_v8_action}
+
+Den här integreringen är tillgänglig för Adobe Campaign Classic v7 från och med version 21.1 och Adobe Campaign v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner.
+
+Anslutningen mellan Journey Orchestration och Campaign-instansen konfigureras av Adobe vid etableringstidpunkten. Kontakta Adobe.
+
+För att detta ska fungera måste du konfigurera en dedikerad åtgärd. Se det här [avsnittet](../action/working-with-adobe-campaign.md#using_adobe_campaign_v7_v8).
+
+Det finns ett användningsexempel från början till slut i det här [avsnittet](../usecase/campaign-v7-v8-use-case.md).
+
+1. Designa din resa och börja med ett evenemang. Se det här [avsnittet](../building-journeys/journey.md).
+1. Välj en Campaign-åtgärd i **Åtgärd**-delen av paletten och lägg till den på din resa.
+1. I **åtgärdsparametrarna** visas alla fält som förväntas i meddelandets nyttolast. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Detta liknar anpassade åtgärder. Se det här [avsnittet](../building-journeys/using-custom-actions.md).
+
+![](../assets/accintegration2.png)
+
