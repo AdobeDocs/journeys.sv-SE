@@ -6,9 +6,9 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: 34f7666b-1c91-4edd-b5d6-4c0513b9c4f3
-source-git-commit: eff510d0e41e07560db8d56a8ca64da546e8fca6
+source-git-commit: b108294acf8e1c4be00ca981e7ba15a23973f8ac
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '312'
 ht-degree: 85%
 
 ---
@@ -36,9 +36,9 @@ Klicka på **[!UICONTROL Actions]** på de övre menyerna för att se åtgärdsl
 
 ![](../assets/custom1.png)
 
-Om du har Adobe Campaign Standard måste du konfigurera den redan skapade åtgärden för att skicka e-postmeddelanden, push-meddelanden och SMS med funktionen Transaktionsmeddelanden i Adobe Campaign Standard. Se [den här sidan](../action/working-with-adobe-campaign.md#using_adobe_campaign_standard).
+Om du har Adobe Campaign Standard måste du konfigurera den redan skapade åtgärden för att skicka e-postmeddelanden, push-meddelanden och SMS med funktionen Transaktionsmeddelanden i Adobe Campaign Standard. Se [den här sidan](../action/working-with-adobe-campaign.md).
 
-Om du har Adobe Campaign v7 eller v8 blir en integrering tillgänglig på begäran. Se [den här sidan](../action/working-with-adobe-campaign.md#using_adobe_campaign_v7_v8).
+Om du har Adobe Campaign Classic kan du hämta en integrering på begäran. Se [den här sidan](../action/acc-action.md).
 
 Om du använder ett tredjepartssystem för att skicka meddelanden såsom Epsilon, Facebook, Adobe.io, Firebase osv. måste du lägga till och konfigurera en anpassad åtgärd. Se [den här sidan](../action/about-custom-action-configuration.md).
 
