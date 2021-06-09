@@ -7,9 +7,9 @@ feature: Resor
 role: Business Practitioner
 level: Beginner
 exl-id: b1964a3c-9ed4-4ec4-b399-567b1d6a120f
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: e7c3dde02837d31c5eb7d170cae7f142ce376175
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '249'
 ht-degree: 100%
 
 ---
@@ -77,7 +77,7 @@ Läs mer om de senaste versionerna.
 * [Fältdefinition i Experience Cloud XDM](https://docs.adobe.com/content/help/sv-SE/experience-platform/xdm/home.html)
 * [Dokumentation om att identifiera namnrymd](https://docs.adobe.com/content/help/sv-SE/experience-platform/identity/home.html)
 * [API för strömningsinmatning](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/overview.html)
-* [Dokumentation om transaktionsmeddelanden i Campaign Standard](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/communication-channels/transactional-messaging/about-transactional-messaging.html)
+* [Dokumentation om transaktionsmeddelanden i Campaign Standard]()
 
 ## Tekniska självstudiekurser
 
