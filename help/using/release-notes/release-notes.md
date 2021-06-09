@@ -6,9 +6,9 @@ feature: Resor
 role: Business Practitioner
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: 1712529984af02d0a3f678418db1e819370056d6
+source-git-commit: 002b67f4e09635b58c00fad9dbc2c16b872a5fb3
 workflow-type: tm+mt
-source-wordcount: '2539'
+source-wordcount: '2540'
 ht-degree: 61%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 61%
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
 
-## Version {#may-2021-release} från maj 2021
+## Juniversion 2021 {#may-2021-release}
 
 <table>
 <thead>
@@ -29,8 +29,8 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 <tbody>
 <tr>
 <td>
-<p>Integrationen med Adobe Campaign Classic är nu GA. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Classic Transactional Messaging-funktioner.</p>
-<p>Anslutningen mellan Journey Orchestration och Campaign Classic är konfigurerad av Adobe vid etableringstidpunkten.</p>
+<p>Integrationen med Adobe Campaign Classic är nu GA. Det gör att du kan skicka e-post, push-meddelanden och SMS med hjälp av funktionerna för transaktionsmeddelanden i Adobe Campaign v7 eller v8.</p>
+<p>Anslutningen mellan Journey Orchestration och Campaign-instansen konfigureras av Adobe vid etableringstidpunkten.</p>
 <p>Mer information finns i den <a href="../action/acc-action.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
