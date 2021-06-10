@@ -6,9 +6,9 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: ea9cdb1d-dde6-4080-8f35-7f8cd3cf3644
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 1251eafcfe7487c3df01b412f17706f5ed6c6836
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '220'
 ht-degree: 4%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 4%
 I avsnittet **[!UICONTROL Message parameters]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
 
 ![](../assets/customactionpayloadmessage.png)
+
+>[!NOTE]
+>
+>Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken.
 
 Du kan definiera parametertypen (t.ex.: sträng, heltal osv.).
 
