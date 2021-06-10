@@ -6,9 +6,9 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: eaf2c795-0920-4b9c-9f06-801e43c1844b
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 29aa6b6e16f8e6d051065f8157f4e25e8b1c05e1
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '371'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,11 @@ Med åtgärdsaktiviteten **[!UICONTROL Update profile]** kan du uppdatera en bef
 
    ![](../assets/profileupdate2.png)
 
-1. Välj en datauppsättning i listan. Datamängdsvalet avgör var det nya värdet i profilfältet ska lagras.
+1. Välj en datauppsättning i listan.
+
+   >[!NOTE]
+   >
+   >Åtgärden **Uppdatera profil** uppdaterar profildata i realtid, men uppdaterar inte datauppsättningar. Val av datauppsättning krävs eftersom profilen är en post som är relaterad till en datauppsättning.
 
 1. Klicka på fältet **Värde** för att definiera värdet som du vill använda:
 
