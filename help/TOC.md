@@ -6,9 +6,9 @@ user-guide-description: Tillhandahåller anvisningar för hur man implementerar 
 index: true
 feature: Resor
 source-git-commit: 8d10739381b4f5b09ad7070498d5f1566961c221
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 92%
    + [Kom igång](using/about/get-started.md)
    + [Användargränssnitt](using/about/user-interface.md)
    + [Åtkomsthantering](using/about/access-management.md)
-   + [Felsökning](using/about/troubleshooting.md)
+   + [Felsöka](using/about/troubleshooting.md)
    + [Integrering med externa system](using/about/external-systems.md)
 + Konfigurera en händelse {#events-journeys}
    + Om händelser {#about-events}
@@ -47,12 +47,12 @@ ht-degree: 92%
    + [Externa datakällor](using/datasource/external-data-sources.md)
 + Konfigurera en åtgärd {#action-journeys}
    + [Om åtgärder](using/action/action.md)
-   + [Arbeta med Adobe Campaign Standard](using/action/working-with-adobe-campaign.md)
+   + [Arbeta med Adobe Campaign ](using/action/working-with-adobe-campaign.md)
    + [Arbeta med Adobe Campaign v7/v8](using/action/acc-action.md)
    + Använda ett tredjepartssystem {#action-third-party}
       + [Om anpassad åtgärdskonfiguration](using/action/about-custom-action-configuration.md)
       + [URL-konfiguration](using/action/url-configuration.md)
-      + [Definiera meddelandeparametrar](using/action/defining-the-message-parameters.md)
+      + [Definiera meddelandeparametrarna](using/action/defining-the-message-parameters.md)
 + Använda plattformssegment {#configuring-segment}
    + [Om plattformssegment](using/segment/about-segments.md)
    + [Skapa ett segment](using/segment/creating-a-segment.md)
@@ -88,11 +88,11 @@ ht-degree: 92%
    + [Publicera resan](using/building-journeys/publishing-the-journey.md)
    + Dela resesteg med Adobe Experience Platform {#sharing-journey-steps}
       + [Översikt över att dela steg i resan](using/building-journeys/sharing-overview.md)
-      + [journeySteps, händelser, vanliga fält](using/building-journeys/sharing-common-fields.md)
-      + [journeyStep, händelser, körningsfält för åtgärder](using/building-journeys/sharing-execution-fields.md)
-      + [journeyStep, händelser, datafält för hämtning](using/building-journeys/sharing-fetch-fields.md)
-      + [journeyStep, händelser, identitetsfält](using/building-journeys/sharing-identity-fields.md)
-      + [Resefält](using/building-journeys/sharing-journey-fields.md)
+      + [vanliga fält för händelsen journeySteps](using/building-journeys/sharing-common-fields.md)
+      + [fält för händelseexekvering för händelsen journeyStep](using/building-journeys/sharing-execution-fields.md)
+      + [datafält för hämtning för händelsen journeyStep](using/building-journeys/sharing-fetch-fields.md)
+      + [identitetsfält för händelsen journeyStep](using/building-journeys/sharing-identity-fields.md)
+      + [resefält](using/building-journeys/sharing-journey-fields.md)
 + Använda den avancerade uttrycksredigeraren {#building-advanced-conditions-journeys}
    + [Om den avancerade uttrycksredigeraren](using/expression/expressionadvanced.md)
    + Syntax {#syntax}
@@ -127,7 +127,7 @@ ht-degree: 92%
          + [toInteger](using/functions/functiontointeger.md)
          + [toString](using/functions/functiontostring.md)
       + Datum {#date}
-         + [currentTime&#x200B;InMillis](using/functions/functioncurrenttimeinmillis.md)
+         + [currentTimeInMillis](using/functions/functioncurrenttimeinmillis.md)
          + [inLastDays](using/functions/functioninlastdays.md)
          + [inLastHours](using/functions/functioninlasthours.md)
          + [inLastMonths](using/functions/functioninlastmonths.md)
@@ -162,18 +162,18 @@ ht-degree: 92%
          + [isEmpty](using/functions/functionisempty.md)
          + [isNotEmpty](using/functions/functionisnotempty.md)
          + [lastIndexOf](using/functions/functionlastindexof.md)
-         + [length](using/functions/functionlength.md)
-         + [lower](using/functions/functionlower.md)
+         + [längd](using/functions/functionlength.md)
+         + [nedre](using/functions/functionlower.md)
          + [matchRegExp](using/functions/functionmatchregexp.md)
          + [notEqualWithIgnoreCase](using/functions/functionnotequalignorecase.md)
-         + [replace](using/functions/functionreplace.md)
+         + [ersätta](using/functions/functionreplace.md)
          + [replaceAll](using/functions/functionreplaceall.md)
-         + [split](using/functions/functionsplit.md)
+         + [dela](using/functions/functionsplit.md)
          + [startWith](using/functions/functionstartwith.md)
          + [startWithIgnoreCase](using/functions/functionstartwithignorecase.md)
          + [substr](using/functions/functionsubstr.md)
          + [trim](using/functions/functiontrim.md)
-         + [upper](using/functions/functionupper.md)
+         + [övre](using/functions/functionupper.md)
          + [uuid](using/functions/functionuuid.md)
 + Bygga rapporter{#journey-reports}
    + [Om reserapporter](using/reporting/about-journey-reports.md)
@@ -181,7 +181,7 @@ ht-degree: 92%
    + [Mätvärden och mått](using/reporting/metrics-and-dimensions.md)
 + Integrering med intelligenta tjänster{#use-case-advanced}
    + [Om AI-integrering](using/ai-services/ai-services-overview.md)
-   + [Utnyttja kund-AI](using/ai-services/leveraging-customer-ai.md)
+   + [Utnyttja AI för kundbenägenhet](using/ai-services/leveraging-customer-ai.md)
 + Användningsfall{#use-cases-journeys}
    + Skicka ett personligt e-postmeddelande{#use-case-simple}
       + [Om det enkla användningsfallet](using/usecase/about-the-simple-use-case.md)
