@@ -7,9 +7,9 @@ role: Business Practitioner
 level: Beginner
 exl-id: ac5d2cec-0b48-4863-afe3-19ac5f61c9fd
 source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 
 ## Mars 2021 {#march-2021}
 
-* Vi har detaljerat hela proceduren för att skapa testprofiler i Adobe Experience Platform. [Läs mer](../building-journeys/creating-test-profiles.md).
+* Vi har beskrivit hela proceduren för att skapa testprofiler i Adobe Experience Platform. [Läs mer](../building-journeys/creating-test-profiles.md).
 
 ## Januari 2021 {#january-2021}
 
-* Lagt till bästa praxis när en resa utlöses samtidigt som en profil skapas. [Läs mer](../about/limitations.md#journeys-limitation-profile-creation).
+* Bästa praxis när en resa utlöses samtidigt som en profil skapas, har lagts till. [Läs mer](../about/limitations.md#journeys-limitation-profile-creation).
 
 ## Oktober 2020 {#october-2020}
 
@@ -32,8 +32,8 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 
 ## September 2020 {#september-2020}
 
-* Gränssnittsbeskrivningsavsnittet har uppdaterats för att återspegla den nya **Alla väljare**-menyn. [Läs mer](../about/user-interface.md)
-* En anteckning om segmentbaserade resor med nya versioner som inte är återkommande har lagts till.
+* Avsnittet som beskriver gränssnittet har uppdaterats för att återspegla den nya menyn **Alla väljare**. [Läs mer](../about/user-interface.md)
+* En anteckning om segmentbaserade resor med nya versioner som inte är återkommande, har lagts till.
 
 ## Augusti 2020 {#august-2020}
 
