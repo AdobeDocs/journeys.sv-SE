@@ -7,9 +7,9 @@ role: Business Practitioner
 level: Beginner
 exl-id: 430bac3a-06da-45a8-af90-1dcd1504d532
 source-git-commit: 3af822bacfd1a5a53ec7280dff1136d77b90c809
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '389'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Bygg en orkestrering i realtid med hjälp av kontextuella data lagrade i händel
 
 ![](../assets/journeydiagram.png)
 
-[!DNL Journey Orchestration] möjliggör orkestrering i realtid som bygger på kontextuella data från händelser, information från Adobe Experience Platform eller data från API-tjänster från tredje part. Du kan konfigurera en anpassad åtgärd om du använder ett tredjepartssystem för att skicka meddelanden. Om du har Adobe Campaign Standard kan du skicka e-postmeddelanden, push-meddelanden och SMS med funktionen [Transaktionsmeddelanden](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html) i Adobe Campaign Standard.
+[!DNL Journey Orchestration] möjliggör orkestrering i realtid som bygger på kontextuella data från händelser, information från Adobe Experience Platform eller data från API-tjänster från tredje part. Du kan konfigurera en anpassad åtgärd om du använder ett tredjepartssystem för att skicka meddelanden. Om du har Adobe Campaign Standard kan du skicka e-postmeddelanden, push-meddelanden och SMS med funktionen [Transaktionsmeddelanden](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv) i Adobe Campaign Standard.
 
 På fliken Händelsekonfiguration kan en **teknisk användare** konfigurera händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobes upplevelsedatamodell (XDM). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK).
 
