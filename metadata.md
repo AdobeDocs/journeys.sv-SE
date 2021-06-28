@@ -14,7 +14,7 @@ solution: Experience Platform, Journey Orchestration
 type: Documentation
 feature: Resor
 source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '32'
 ht-degree: 100%
 
