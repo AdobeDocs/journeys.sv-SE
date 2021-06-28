@@ -8,9 +8,9 @@ role: Business Practitioner
 level: Beginner
 exl-id: b1964a3c-9ed4-4ec4-b399-567b1d6a120f
 source-git-commit: 3af822bacfd1a5a53ec7280dff1136d77b90c809
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -77,11 +77,11 @@ Läs mer om de senaste versionerna.
 * [Fältdefinition i Experience Cloud XDM](https://docs.adobe.com/content/help/sv-SE/experience-platform/xdm/home.html)
 * [Dokumentation om att identifiera namnrymd](https://docs.adobe.com/content/help/sv-SE/experience-platform/identity/home.html)
 * [API för strömningsinmatning](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/overview.html)
-* [Dokumentation om transaktionsmeddelanden i Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html)
+* [Dokumentation om transaktionsmeddelanden i Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv)
 
 ## Tekniska självstudiekurser
 
-* [Konfiguration av Journey Orchestration](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module6/journey-orchestration-create-account.html?lang=sv#module6-journey-orchestration)
+* [Konfiguration av Journey Orchestration](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module6/journey-orchestration-create-account.html?lang=sv#6.-journey-orchestration)
 * [Extern väder-API och SMS-åtgärd med mera](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module12/journey-orchestration-external-weather-api-sms.html?lang=sv#module12)
-* [Skapa en kontakt i Dynamics 365 med Journey Orchestration](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module17/ex3.html?lang=sv#module17)
+* [Skapa en kontakt i Dynamics 365 med Journey Orchestration](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module17/ex3.html?lang=sv#17.3-create-a-contact-in-microsoft-dynamics-365-using-journey-orchestration-%26-import-data-from-microsoft-dynamics)
 * [Använd Journey Orchestration för att utlösa en e-postuppföljning](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module20/ex4.html?lang=sv#module20)
