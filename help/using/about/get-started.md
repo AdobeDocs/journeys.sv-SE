@@ -1,21 +1,21 @@
 ---
 product: adobe campaign
 title: Kom igång
-description: Upptäck de viktigaste stegen för att konfigurera Journey Orchestration och bygga din första resa.
+description: Upptäck huvudstegen för att konfigurera Journey Orchestration och skapa din första resa.
 feature: Resor
 role: Business Practitioner
 level: Beginner
 exl-id: fe7bb5fe-7b5e-46da-8ef8-ae9401522c03
 source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '323'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Kom igång{#concept_y4b_4qt_52b}
 
-I [!DNL Journey Orchestration] finns det två typer av användare som utför olika uppgifter: den **tekniska användaren** och **företagsanvändaren**. Användaråtkomst hanteras via produktprofiler och rättigheter. Läs [den här sidan](../about/access-management.md) om du vill veta mer om hur du konfigurerar användaråtkomst.
+I [!DNL Journey Orchestration] finns det två typer av användare som utför olika uppgifter: den **tekniska användaren** och **företagsanvändaren**. Användaråtkomst hanteras via produktprofiler och rättigheter. Mer information om hur du konfigurerar användaråtkomster finns på den här [sidan](../about/access-management.md).
 
 Här följer de viktigaste stegen för att konfigurera och använda [!DNL Journey Orchestration]:
 
@@ -23,7 +23,7 @@ Här följer de viktigaste stegen för att konfigurera och använda [!DNL Journe
 
    Du måste definiera den förväntade informationen och hur den ska behandlas. Den här konfigurationen är obligatorisk. Det här steget utförs av en **teknisk användare**.
 
-   Se denna [sida](../event/about-events.md) för mer information om detta.
+   Mer information finns på [den här sidan](../event/about-events.md).
 
    ![](../assets/journey7.png)
 
@@ -31,7 +31,7 @@ Här följer de viktigaste stegen för att konfigurera och använda [!DNL Journe
 
    Du måste definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel i dina villkor. En inbyggd datakälla i Adobe Experience Platform konfigureras även vid tidpunkten för etablering. Det här steget är inte nödvändigt om du bara utnyttjar data från händelserna under din resa. Det här steget utförs av en **teknisk användare**.
 
-   Se denna [sida](../datasource/about-data-sources.md) för mer information om detta.
+   Mer information finns på [den här sidan](../datasource/about-data-sources.md).
 
    ![](../assets/journey22.png)
 
