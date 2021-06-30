@@ -6,9 +6,9 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: c0e67849-caa0-4045-94ed-38e483054e1d
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 78c758c75825c0f85788190c4526fa5c743c6673
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '278'
 ht-degree: 2%
 
 ---
@@ -27,6 +27,10 @@ Den här tidszonen kommer att användas för varje aktivitet i resan som innehå
 * [Vänta fast](../building-journeys/wait-activity.md#fixed_date)
 
 Du kan välja en tidszon eller välja att använda den tidszon som är definierad i användarprofilen.
+
+>[!NOTE]
+>
+>Tidszonen för profilen fungerar med fältet **timeZone** i fältgruppen **Inställningsinformation**.
 
 ## Definiera en fast tidszon {#fixed-timezone}
 
