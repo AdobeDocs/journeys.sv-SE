@@ -6,14 +6,14 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: e9b128be-9411-4b68-935e-4cc09eae3ef6
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
 
-# Utnyttja Adobe Analytics-data{#analytics-data}
+# Utnyttja Adobe Analytics data{#analytics-data}
 
 >[!NOTE]
 >
@@ -33,4 +33,4 @@ Detta aktiverar Analytics-källkopplingen för den rapportsviten. När informati
 
 ![](../assets/alpha-event9.png)
 
-Mer information om Adobe Analytics källanslutning finns i [dokumentationen](https://docs.adobe.com/help/en/experience-platform/sources/connectors/adobe-applications/analytics.html) och [självstudiekursen](https://docs.adobe.com/content/help/en/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
+Mer information om Adobe Analytics källanslutning finns i [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) och [självstudiekursen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
