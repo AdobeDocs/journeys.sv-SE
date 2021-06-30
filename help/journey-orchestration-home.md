@@ -7,10 +7,10 @@ feature: Resor
 role: Business Practitioner
 level: Beginner
 exl-id: b1964a3c-9ed4-4ec4-b399-567b1d6a120f
-source-git-commit: 3af822bacfd1a5a53ec7280dff1136d77b90c809
-workflow-type: ht
-source-wordcount: '257'
-ht-degree: 100%
+source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 89%
 
 ---
 
@@ -73,10 +73,10 @@ Läs mer om de senaste versionerna.
 
 * [Produktsida för Journey Orchestration](https://www.adobe.com/se/experience-platform/journey-orchestration.html)
 * [Dokumentation om Experience Platform](https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html)
-* [Dokumentation om realtidskundprofil](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html)
-* [Fältdefinition i Experience Cloud XDM](https://docs.adobe.com/content/help/sv-SE/experience-platform/xdm/home.html)
-* [Dokumentation om att identifiera namnrymd](https://docs.adobe.com/content/help/sv-SE/experience-platform/identity/home.html)
-* [API för strömningsinmatning](https://docs.adobe.com/content/help/sv-SE/experience-platform/ingestion/streaming/overview.html)
+* [Dokumentation om realtidskundprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* [Fältdefinition i Experience Cloud XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
+* [Dokumentation om att identifiera namnrymd](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)
+* [API för strömningsinmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
 * [Dokumentation om transaktionsmeddelanden i Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv)
 
 ## Tekniska självstudiekurser
