@@ -6,9 +6,9 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: be413905-0631-4229-a954-80a92651206d
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 78c758c75825c0f85788190c4526fa5c743c6673
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1665'
 ht-degree: 2%
 
 ---
@@ -60,6 +60,7 @@ Så här använder du testläget:
 * När du inaktiverar testläget töms resorna från alla som har gått in i det tidigare eller som befinner sig i det. Rapporten blir också tydligare.
 * Du kan aktivera/inaktivera testläget så många gånger som behövs.
 * Du kan inte ändra din resa när testläget är aktiverat. När du är i testläge kan du publicera resan direkt, du behöver inte inaktivera testläget tidigare.
+* När en delning nås väljs alltid den översta grenen. Du kan ordna om placeringen av de delade grenarna om du vill att testet ska välja en annan bana.
 
 ## Förvandla en profil till en testprofil{#turning-profile-into-test}
 
@@ -69,7 +70,7 @@ Det enklaste sättet att göra detta är att använda en **Uppdatera profil**-å
 
 ## Skapa en testprofil{#create-test-profile}
 
-Om du vill skapa en ny testprofil är proceduren densamma som när du skapar en profil i Adobe Experience Platform. Den utförs via API-anrop. Se den här [sidan](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html)
+Om du vill skapa en ny testprofil är proceduren densamma som när du skapar en profil i Adobe Experience Platform. Den utförs via API-anrop. Läs den här [sidan](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 
 Du måste använda ett profilschema som innehåller blandningen &quot;information om profiltester&quot;. Flaggan testProfile ingår i den här mixinen.
 
