@@ -6,7 +6,7 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: 540b5142-9323-4cc1-9b5a-3fa20a5945bf
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 784c91054e0f6b9ea12aa4b7f4079f7c2da8f949
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 9%
@@ -67,7 +67,7 @@ En resa kan avslutas på grund av följande orsaker:
 * Resan stängs manuellt med knappen **[!UICONTROL Close to new entrances]**.
 * Slutdatumet för resan har nåtts.
 
-När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed (no entrance)]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se det här [avsnittet](../building-journeys/changing-properties.md#entrance).
+När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se det här [avsnittet](../building-journeys/changing-properties.md#entrance).
 
 Om ni behöver stoppa alla personers framsteg på resan kan ni stoppa den. Om du stoppar resan kommer alla personer på resan att tidsgränsen för timeout.
 
