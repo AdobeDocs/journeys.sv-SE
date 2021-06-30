@@ -6,9 +6,9 @@ feature: Resor
 role: Business Practitioner
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: 120671af1f8863c9d8dce5a93a487ee42a92a408
+source-git-commit: e2ff3e9d86aa9f603cf3d66507881d482a95a4a5
 workflow-type: tm+mt
-source-wordcount: '2627'
+source-wordcount: '2625'
 ht-degree: 60%
 
 ---
@@ -40,7 +40,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 ### Förbättringar
 
 * För externa datakällor definieras nu en begränsningsregel på 15 anrop per sekund automatiskt. [Läs mer](../about/external-systems.md#capping)
-* I den enkla och avancerade uttrycksredigeraren har vi nu stöd för datumformatet XDM.
+* De enkla och avancerade uttrycksredigerarna har nu stöd för XDM-datumformatet.
 * Ett nytt filter har lagts till på skärmen med reselistan. Nu kan du filtrera efter resetyp: **[!UICONTROL Unitary event]** eller **[!UICONTROL Segment qualification]**. [Läs mer](../about/user-interface.md#section_lgm_hpz_pgb)
 * För direktresor visas nu publiceringsdatumet och namnet på den användare som publicerade resan på skärmen för reseegenskaper. Den här informationen är också tillgänglig när du kopierar resans tekniska information. [Läs mer](../building-journeys/changing-properties.md#section_lgm_hpz_pgb)
 
