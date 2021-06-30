@@ -3,10 +3,10 @@ product: adobe campaign
 title: Importera beskrivning av export-API
 description: Läs mer om import-API:t för export.
 products: journeys
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 2%
+source-wordcount: '1123'
+ht-degree: 1%
 
 ---
 
@@ -30,16 +30,16 @@ För att testa och förbereda integreringen finns en Postman-samling [här](http
 
 Vi rekommenderar att du följer de här stegen för att exportera och importera dina resor mellan olika miljöer:
 
-1. Skapa och parametera en resa i din startmiljö. [Mer information här](https://docs.adobe.com/content/help/sv-SE/journeys/using/building-journeys/about-journey-building/journey.html)
-1. Kontrollera om reseversionen inte innehåller något fel. [Mer information här](https://docs.adobe.com/content/help/en/journeys/using/building-journeys/testing-the-journey.html)
+1. Skapa och parametera en resa i din startmiljö. [Mer information här](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/about-journey-building/journey.html)
+1. Kontrollera om reseversionen inte innehåller något fel. [Mer information här](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/testing-the-journey.html)
 1. Ring **/list/travel** API för att hämta UID-resan och UID:t för den senaste reseversionen. Om det behövs kan du ringa **/neys/`{uid}`/latest** för att hitta UID:t för din senaste reseversion.
 1. Anropa **export**-API:t med dina startmiljöparametrar (orgID och sandboxName).
 1. Öppna den returnerade nyttolasten och kontrollera följande objekt:
    * Om din exporterade resa innehåller **specifika autentiseringsuppgifter** måste du ersätta dessa autentiseringsuppgifter med de som motsvarar den nya miljön.
-   * Om din exporterade resa innehåller **händelser** som pekar på ett **XDM-schema**, måste du uppdatera schema-ID-referensen manuellt med schema-ID:t för den nya miljön i xdmEntity-noden om ID:n-värdena är olika. Den här uppdateringen måste göras för varje händelse. [Mer information här](https://docs.adobe.com/content/help/en/journeys/using/events-journeys/experience-event-schema.html)
+   * Om din exporterade resa innehåller **händelser** som pekar på ett **XDM-schema**, måste du uppdatera schema-ID-referensen manuellt med schema-ID:t för den nya miljön i xdmEntity-noden om ID:n-värdena är olika. Den här uppdateringen måste göras för varje händelse. [Mer information här](https://experienceleague.adobe.com/docs/journeys/using/events-journeys/experience-event-schema.html)
    * Om din resa innehåller e-post, sms eller push-åtgärder kan du behöva uppdatera mallnamnet eller namnet på mobileApp om namnet i målmiljön skiljer sig från det i startmiljön.
 1. Anropa **Import**-API:t med målmiljöparametrarna (orgID och sandboxName). Observera att du kan anropa import-API:t så många gånger du vill. UUID och namnet på varje objekt som ingår i resan genereras varje gång du anropar import-API:t.
-1. När resan har importerats kan du publicera den i programmet Journey Orchestration. Mer information [här](https://docs.adobe.com/content/help/en/journeys/using/building-journeys/publishing-the-journey.html)
+1. När resan har importerats kan du publicera den i programmet Journey Orchestration. Mer information [här](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/publishing-the-journey.html)
 
 
 ## Behörighet
