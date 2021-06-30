@@ -3,10 +3,10 @@ product: adobe campaign
 title: Skapa en testprofil
 description: Läs om hur du skapar testprofiler
 exl-id: f1be46a8-04b9-4f40-b18e-9099099d2e1c
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 2%
+source-wordcount: '675'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Med de här importmetoderna kan du även uppdatera profilattribut. På så sätt
 
 Att skapa en testprofil liknar att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [dokumentationen för kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html).
 
-## Förutsättningar{#test-profile-prerequisites}
+## Förhandskrav{#test-profile-prerequisites}
 
 För att kunna skapa profiler måste du först skapa ett schema och en datauppsättning i Adobe Experience Platform.
 
@@ -99,7 +99,7 @@ Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det 
 
 ## Skapa testprofiler med API-anrop{#create-test-profiles-api}
 
-Du kan också skapa testprofiler via API-anrop. Se den här [sidan](https://docs.adobe.com/content/help/sv-SE/experience-platform/profile/home.html).
+Du kan också skapa testprofiler via API-anrop. Läs den här [sidan](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html).
 
 Du måste använda ett profilschema som innehåller blandningen &quot;Profiltestinformation&quot;. Flaggan testProfile ingår i den här mixinen.
 
