@@ -6,9 +6,9 @@ feature: Resor
 role: Business Practitioner
 level: Beginner
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 784c91054e0f6b9ea12aa4b7f4079f7c2da8f949
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '519'
 ht-degree: 2%
 
 ---
@@ -20,14 +20,13 @@ Här är begränsningar för användning av Journey Orchestration.
 ## Allmänna åtgärdsbegränsningar
 
 * Det finns ingen sändande begränsning. 
-* Två försök görs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. 
+* Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. 
 * Den inbyggda **Reaction**-händelsen gör att du kan reagera på åtgärder som inte finns i lådan (se den här [sidan](../building-journeys/reaction-events.md)). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse. 
-* Det finns ingen Adobe Campaign Classic-integration.
 
 ## Begränsningar för reseversioner {#journey-versions-limitations}
 
-* en resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Det går inte att starta en resa med en **segmentkvalificeringshändelse**.
-* en resa som börjar med en **segmentkvalificering**-aktivitet i v1 måste alltid börja med en **segmentkvalificering** i ytterligare versioner.
+* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Det går inte att starta en resa med en **segmentkvalificeringshändelse**.
+* En resa som börjar med en **segmentkvalificering**-aktivitet i v1 måste alltid börja med en **segmentkvalificering** i ytterligare versioner.
 * Det segment och namnområde som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
 
@@ -59,7 +58,7 @@ Här är begränsningar för användning av Journey Orchestration.
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
 
-## Resor som börjar samtidigt som en profilgenerering {#journeys-limitation-profile-creation}
+## Resor som börjar samtidigt som en profil skapas {#journeys-limitation-profile-creation}
 
 Det finns en fördröjning i skapandet/uppdateringen av API-baserade profiler i Adobe Experience Platform. Servicenivåmålet (SLT) i form av fördröjning är &lt; 1 min från intag till en enhetlig profil för 95:e percentilen begäranden, vid en volym på 20 000 förfrågningar per sekund (RPS).
 
