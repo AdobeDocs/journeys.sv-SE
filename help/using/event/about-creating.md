@@ -6,10 +6,10 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: 2ae8854a-c3e7-469d-9f89-25b54bc3e894
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 78c758c75825c0f85788190c4526fa5c743c6673
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 53%
+source-wordcount: '554'
+ht-degree: 63%
 
 ---
 
@@ -33,9 +33,9 @@ Här följer de viktigaste stegen för att konfigurera en ny händelse:
 
    ![](../assets/journey6bis.png)
 
-   * **Regelbaserade** händelser: den här händelsetypen genererar inget eventID. I fältet **Händelse-ID villkor** definierar du bara en regel som ska användas av systemet för att identifiera de relevanta händelser som utlöser dina resor. Den här regeln kan baseras på alla fält som är tillgängliga i händelsenyttolasten, till exempel profilens plats eller antalet objekt som läggs till i profilens kundvagn.
+   * **Regelbaserade** händelser: Den här händelsetypen genererar inget eventID. I fältet **Händelse-ID villkor** definierar du bara en regel som ska användas av systemet för att identifiera de relevanta händelser som utlöser dina resor. Den här regeln kan baseras på alla fält som är tillgängliga i händelsenyttolasten, till exempel profilens plats eller antalet objekt som läggs till i profilens kundvagn.
 
-   * **Systemgenererade** undantag: den här typen kräver ett eventID. Detta eventID-fält genereras automatiskt när händelsen skapas och läggs till i nyttolastförhandsvisningen. Det system som skickar händelsen ska inte generera ett ID, det ska skicka det som finns i nyttolastförhandsvisningen. Se [det här avsnittet](../event/previewing-the-payload.md).
+   * **Systemgenererade** undantag: den här typen kräver ett eventID. Detta eventID-fält genereras automatiskt när händelsen skapas och läggs till i nyttolastförhandsvisningen. Systemet som skickar händelsen ska inte generera ett ID utan det ska skicka det som finns i nyttolastförhandsvisningen. Se [det här avsnittet](../event/previewing-the-payload.md).
    >[!NOTE]
    >
    >Läs mer om händelsetyper i [det här avsnittet](../event/about-events.md).
@@ -49,6 +49,10 @@ Här följer de viktigaste stegen för att konfigurera en ny händelse:
    ![](../assets/alpha-event6.png)
 
    I vårt exempel skrev vi ett villkor baserat på profilens stad. Det innebär att när systemet tar emot en händelse som matchar det här villkoret (**[!UICONTROL City]**-fält och **[!UICONTROL Paris]**-värde) skickas den till Journey Orchestration.
+
+   >[!NOTE]
+   >
+   >Den avancerade uttrycksredigeraren är inte tillgänglig när du definierar **[!UICONTROL Event ID condition]**.
 
 1. Lägg till en namnrymd. Det här steget är valfritt men rekommenderas eftersom du kan lägga till en namnrymd vilket innebär att du kan utnyttja information som lagras i realtidskundprofilen. Denna definierar vilken typ av nyckel händelsen har. Läs [den här sidan](../event/selecting-the-namespace.md).
 1. Definiera nyckeln. Välj ett fält från dina fält med nyttolaster eller definiera en formel som identifierar den person som är associerad med händelsen. Den här nyckeln konfigureras automatiskt (men kan fortfarande redigeras) om du väljer en namnrymd. [!DNL Journey Orchestration] väljer den nyckel som ska motsvara namnrymden (om du till exempel väljer en e-postnamnrymd väljs e-postnyckeln). Läs [den här sidan](../event/defining-the-event-key.md).
