@@ -6,9 +6,9 @@ feature: Resor
 role: Data Engineer
 level: Experienced
 exl-id: 724ae59e-d1b5-4de9-b140-d37064e22ac6
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -141,4 +141,4 @@ Följande uttryck gör att du kan definiera CRM-ID:t i ett åtgärdspersonaliser
 
 Förklaring: I det här exemplet används funktionerna `substr` och `lastIndexOf` för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för en mobilapp.
 
-Titta på den här videon](https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/create-a-journey.html) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.[
+Titta på den här videon](https://experienceleague.adobe.com/docs/platform-learn/tutorials/journey-orchestration/create-a-journey.html) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.[
