@@ -6,9 +6,9 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: e8e54dbd-8178-4c70-907c-68eb4dc54da7
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 51915ac931c0c4af03b49140c20e1b0939beff65
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,9 @@ Se [Villkorsaktivitet](../building-journeys/condition-activity.md#about_conditio
 
 ![](../assets/segment8.png)
 
-## God praxis {#best-practices-segments}
+En ny resa som innehåller en segmentkvalificeringshändelse kan användas tio minuter efter att du har publicerat den. Det här tidsintervallet motsvarar cacheuppdateringsintervallet för den dedikerade tjänsten. Du måste därför vänta tio minuter innan du kan använda den här resan.
+
+## Bästa praxis {#best-practices-segments}
 
 Aktiviteten **[!UICONTROL Segment Qualification]** gör det möjligt att omedelbart ta sig in på resor för personer som kvalificerats eller diskvalificerats från ett Adobe Experience Platform-segment.
 
