@@ -6,10 +6,10 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: a551efa5-c0d8-4138-96ca-fb407fad8c59
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 98%
+source-wordcount: '855'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ De kan hanteras av administratörer som har åtkomst till Admin Console. Se den 
 För att få åtkomst till [!DNL Journey Orchestration] måste användaren vara:
 
 * En del av en **[!UICONTROL product profile]** i [!DNL Journey Orchestration] som är kopplad till [!DNL Journey Orchestration]-behörigheter.
-* En del av en **[!UICONTROL product profile]** i [!DNL Adobe Experience Platform]. Det finns inget obligatoriskt tillstånd att inneha. Användaren ska ha **[!UICONTROL profile management]**-behörighet för att skapa och redigera plattformssegment från gränssnittet i [!DNL Journey Orchestration]. Se denna [sida](https://docs.adobe.com/content/help/sv-SE/experience-platform/access-control/home.html#adobe-admin-console) för mer information om detta.
+* En del av en **[!UICONTROL product profile]** i [!DNL Adobe Experience Platform]. Det finns inget obligatoriskt tillstånd att inneha. Användaren ska ha **[!UICONTROL profile management]**-behörighet för att skapa och redigera plattformssegment från gränssnittet i [!DNL Journey Orchestration]. Se denna [sida](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#adobe-admin-console) för mer information om detta.
 
 I Admin Console kan du tilldela användarna en av följande färdiga produktprofiler:
 
@@ -67,7 +67,7 @@ Du hittar kompatibiliteten mellan behörigheter och de olika funktionerna i [!DN
 
 Med [!DNL Journey Orchestration] kan du skapa anpassade produktprofiler och tilldela en uppsättning behörigheter och sandlådor till dina användare. Med produktprofiler kan du auktorisera eller neka åtkomst till vissa funktioner eller objekt i gränssnittet.
 
-Se [dokumentationen om Adobe Experience Platform](https://docs.adobe.com/content/help/sv-SE/experience-platform/sandbox/ui/user-guide.html) för mer information om hur du skapar och hanterar sandlådor.
+Se [dokumentationen om Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html) för mer information om hur du skapar och hanterar sandlådor.
 
 Så här skapar du en produktprofil och tilldelar en uppsättning behörigheter och sandlådor:
 
@@ -141,6 +141,6 @@ Med [!DNL Journey Orchestration] kan du partitionera instansen i separerade virt
 Sandlådor tilldelas via produktprofiler i Admin Console. Se det här [avsnittet](../about/access-management.md#create-product-profile) för mer information om hur du tilldelar sandlådor.
 
 [!DNL Journey Orchestration] speglar sandlådorna i Adobe Experience Platform som har skapats för en viss organisation.
-Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. Se [användarhandboken om sandlådor](https://docs.adobe.com/content/help/en/experience-platform/sandbox/ui/user-guide.html) för detaljerade anvisningar.
+Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. Se [användarhandboken om sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html) för detaljerade anvisningar.
 
 Du hittar kontrollen för att välja sandlåda längst upp till vänster på skärmen. Klicka på den för närvarande aktiva sandlådan i väljaren för att växla från en sandlåda till en annan och välj sedan en annan sandlåda på rullgardinsmenyn.
