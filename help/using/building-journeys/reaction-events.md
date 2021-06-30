@@ -6,9 +6,9 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: 2f2a2905-1521-48d9-b593-9b31238282a5
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '411'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Här följer de olika stegen för att konfigurera reaktionshändelser:
 >
 >Reaktionshändelser kan inte spåra e-post, SMS eller push-åtgärder som utförs under en annan resa.
 >
->Reaktionshändelser spårar klickningar på länkar av typen &quot;spårade&quot; (se den här [sidan](https://docs.adobe.com/content/help/en/campaign-standard/using/designing-content/links.html#about-tracked-urls)). Ta inte hänsyn till länkar för att ta bort prenumerationer och spegla sidor.
+>Reaktionshändelser spårar klickningar på länkar av typen &quot;spårade&quot; (se den här [sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/designing-content/links.html#about-tracked-urls)). Ta inte hänsyn till länkar för att ta bort prenumerationer och spegla sidor.
 
 >[!IMPORTANT]
 >
