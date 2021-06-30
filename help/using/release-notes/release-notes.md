@@ -6,10 +6,10 @@ feature: Resor
 role: Business Practitioner
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: 002b67f4e09635b58c00fad9dbc2c16b872a5fb3
+source-git-commit: 120671af1f8863c9d8dce5a93a487ee42a92a408
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 61%
+source-wordcount: '2627'
+ht-degree: 60%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 61%
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
 
-## Juniversion 2021 {#may-2021-release}
+## Juniversion 2021 {#june-2021-release}
 
 <table>
 <thead>
@@ -30,14 +30,21 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 <tr>
 <td>
 <p>Integrationen med Adobe Campaign Classic är nu GA. Det gör att du kan skicka e-post, push-meddelanden och SMS med hjälp av funktionerna för transaktionsmeddelanden i Adobe Campaign v7 eller v8.</p>
-<p>Anslutningen mellan Journey Orchestration och Campaign-instansen konfigureras av Adobe vid etableringstidpunkten.</p>
+<p>Kopplingen mellan Journey Orchestration och instanser i Campaign är konfigurerad av Adobe vid etableringstidpunkten.</p>
 <p>Mer information finns i den <a href="../action/acc-action.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Version {#april-2021-release} från april 2021
+### Förbättringar
+
+* För externa datakällor definieras nu en begränsningsregel på 15 anrop per sekund automatiskt. [Läs mer](../about/external-systems.md#capping)
+* I den enkla och avancerade uttrycksredigeraren har vi nu stöd för datumformatet XDM.
+* Ett nytt filter har lagts till på skärmen med reselistan. Nu kan du filtrera efter resetyp: **[!UICONTROL Unitary event]** eller **[!UICONTROL Segment qualification]**. [Läs mer](../about/user-interface.md#section_lgm_hpz_pgb)
+* För direktresor visas nu publiceringsdatumet och namnet på den användare som publicerade resan på skärmen för reseegenskaper. Den här informationen är också tillgänglig när du kopierar resans tekniska information. [Läs mer](../building-journeys/changing-properties.md#section_lgm_hpz_pgb)
+
+## Version från april 2021 {#april-2021-release}
 
 ### Förbättringar
 
@@ -52,7 +59,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 * I testläge har fältet **Nyckel** som används för att definiera testprofilens ID ändrats till **Profilidentifierare** på skärmen **Händelsekonfiguration** för en bättre användarupplevelse. [Läs mer](../building-journeys/testing-the-journey.md).
 * För reaktionshändelser kan tidsgränsen nu bara anges mellan 40 sekunder och 30 dagar. När du testar en resa som använder en reaktionshändelse är standardläget **[!UICONTROL Wait time]** och minimivärdet 40 sekunder. [Läs mer](../building-journeys/reaction-events.md).
 
-## Februari 2021-utgåvan {#february-2021-release}
+## Version från februari 2021 {#february-2021-release}
 
 <table>
 <thead>
@@ -153,7 +160,7 @@ Begränsningar har lagts till när nya versioner av en resa skapas. Dessa begrä
 
 Det går inte längre att använda aktiviteten **Segmentkvalificering** i en resa som innehåller meddelandeaktiviteter för Campaign Standarder. Den här begränsningen skyddar integriteten för Adobe Campaign Standard-instanser. Användningen av Segmentkvalificering kan faktiskt leda till dagliga toppar av meddelanden som skulle överbelasta Campaign Standarden Transactional Messaging. [Läs mer](../about/limitations.md#segment-qualification)
 
-## Oktober 2020-utgåvan {#october-release}
+## Oktober 2020-versionen {#october-release}
 
 <table>
 <thead>
@@ -513,5 +520,5 @@ Journey Orchestration möjliggör orkestrering i realtid som bygger på kontextu
 
 Ytterligare resurser:
 
-* [Självstudiekurser](https://docs.adobe.com/content/help/sv-SE/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html)
+* [Självstudiekurser](https://experienceleague.adobe.com/docs/platform-learn/tutorials/journey-orchestration/introduction.html)
 * [Community](https://www.adobe.com/go/journeyorchestrationcommunity)
