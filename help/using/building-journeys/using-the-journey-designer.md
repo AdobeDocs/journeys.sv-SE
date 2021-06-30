@@ -6,9 +6,9 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: 2f001e42-46dd-48aa-b3dd-23bfdf97e1c7
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 51915ac931c0c4af03b49140c20e1b0939beff65
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1423'
 ht-degree: 5%
 
 ---
@@ -65,7 +65,7 @@ Aktivitetskonfigurationsrutan **visas när du klickar på en aktivitet på palet
 
 På arbetsytan representeras dina åtgärder och händelseaktiviteter av en ikon med namnet på händelsen eller åtgärden som visas under. I aktivitetskonfigurationsrutan kan du använda fältet **[!UICONTROL Label]** för att lägga till ett suffix till aktivitetsnamnet. Dessa etiketter hjälper dig att kontextualisera användningen av händelser och åtgärder, särskilt när du använder samma händelse eller åtgärd flera gånger under resan. Du kan också se etiketterna som du lade till i [!DNL Journey Orchestration]-rapporten. Du kan också definiera etiketter för dina villkorsaktiviteter.
 
-Som standard är skrivskyddade fält dolda. Om du vill visa dem klickar du på ikonen **Visa skrivskyddade fält** längst upp till vänster i aktivitetskonfigurationsrutan.
+Som standard är skrivskyddade fält dolda. Om du vill visa skrivskyddade fält klickar du på ikonen **Visa skrivskyddade fält** längst upp till vänster i aktivitetskonfigurationsrutan. Denna inställning gäller alla aktiviteter på alla resor.
 
 ![](../assets/journey59bis.png)
 
@@ -93,7 +93,7 @@ När två aktiviteter inte är kopplade till arbetsytan visas en varning. Placer
 
 ![](../assets/canvas-disconnected.png)
 
-## Kopiera och klistra in aktiviteter {#copy-paste}
+## Kopierings- och inklistringsaktiviteter {#copy-paste}
 
 Du kan kopiera en eller flera aktiviteter under en resa och klistra in dem antingen under samma resa eller under en annan. På så sätt kan du spara tid om du vill återanvända flera aktiviteter som redan har konfigurerats under en tidigare resa.
 
