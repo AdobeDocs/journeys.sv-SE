@@ -6,10 +6,10 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: 06d26078-b9b8-4dc4-918d-0f2426d00f54
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 58891c1bddd8fb9b0ae247d54be5cf1d7c40b9a8
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 1%
+source-wordcount: '544'
+ht-degree: 0%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 1%
 Klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper.
 
 Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och definiera en **[!UICONTROL Timeout and error]**-varaktighet om du är administratör.
+
+På den här skärmen visas publiceringsdatumet och namnet på den användare som publicerade resan.
+
+Med **Kopiera teknisk information** kan du kopiera teknisk information om den resa som supportteamet kan använda för att felsöka. Följande information kopieras: JourneyVersion UID, OrgID, orgName, sandboxName, lastDeployedBy, lastDeployedAt.
 
 ![](../assets/journey32.png)
 
