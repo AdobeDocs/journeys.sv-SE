@@ -7,9 +7,9 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: 6f28e62d-7747-43f5-a360-1d6af14944b6
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1103'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Under en datakällkonfiguration definierar du en anslutning till ett system för att hämta ytterligare information som ska användas på dina resor, eller för en åtgärdsdefinition konfigurerar du anslutningen till ett tredjepartssystem för att skicka meddelanden eller API-anrop. Varje gång ett API-anrop utförs av Journey efterfrågas API:t för appning, sker anropet via API-motorn. Om det finns en definierad gräns avvisas anropet och det externa systemet överbelastas inte.
 
-Mer information om åtgärder och konfiguration av datakälla finns i [Om åtgärder](https://docs.adobe.com/content/help/en/journeys/using/action-journeys/action.html) eller [Om datakällor](https://docs.adobe.com/content/help/en/journeys/using/data-source-journeys/about-data-sources.html)
+Mer information om åtgärder och konfiguration av datakälla finns i [Om åtgärder](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/action.html) eller [Om datakällor](https://experienceleague.adobe.com/docs/journeys/using/data-source-journeys/about-data-sources.html)
 
 
 ## Resurser
@@ -173,7 +173,7 @@ Den här Postman-samlingen har konfigurerats för att dela Postman Variable-saml
 När du har laddat ned och överfört till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{Base_Path}` och `{SANDBOX_NAME}`.
 * `{JO_HOST}` :  [!DNL Journey Orchestration] Gateway-URL
 * `{BASE_PATH}` : startpunkt för API. Värdet är /authoring
-* `{SANDBOX_NAME}` : huvudet  **x-sandbox-name**  (till exempel &quot;prod&quot;) som motsvarar sandlådenamnet där API-åtgärderna ska utföras. Mer information finns i [översikten över sandlådor](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html).
+* `{SANDBOX_NAME}` : huvudet  **x-sandbox-name**  (till exempel &quot;prod&quot;) som motsvarar sandlådenamnet där API-åtgärderna ska utföras. Mer information finns i [översikten över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html).
 
 I följande avsnitt hittar du listan med Rest API-anrop ordnade för att utföra fallstudien.
 
