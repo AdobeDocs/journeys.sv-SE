@@ -6,7 +6,7 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: 95ca5fdb-38b7-47a0-b1a9-b1b26bf8e5f5
-source-git-commit: 78c758c75825c0f85788190c4526fa5c743c6673
+source-git-commit: f6059f174e983433d3ad24d06c0d0c74788bc792
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 7%
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Den här funktionen aktiveras som standard för alla instanser för steg i kundresan. Vid portoplanssteg aktiveras aktiveringen på begäran. Scheman och datauppsättningarna som skapades under etableringen för den här funktionen får inte ändras.
+>Den här funktionen aktiveras som standard för alla instanser för steg i kundresan. För steg i kundprofiler aktiveras aktiveringen på begäran. Scheman och datauppsättningarna som skapades under etableringen för den här funktionen får inte ändras.
 
 Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Med den här funktionen kan du kombinera [!DNL Journey Orchestration]-data med händelsedata längre fram i kedjan, som hur många konverteringar som har gjorts, hur mycket engagemang som har gjorts på webbplatsen eller hur många transaktioner som har gjorts i butiken. Reseinformationen kan kombineras med data om Adobe Experience Platform, antingen från andra digitala resurser eller från offlineanläggningar, för att ge en mer heltäckande bild av resultatet.
 
