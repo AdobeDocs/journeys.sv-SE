@@ -7,9 +7,9 @@ feature: Resor
 role: Business Practitioner
 level: Beginner
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: 5346c3a25900b1e167ea5b199e1873adab39d07d
+source-git-commit: f6059f174e983433d3ad24d06c0d0c74788bc792
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1012'
 ht-degree: 1%
 
 ---
@@ -68,13 +68,13 @@ Låt oss ta ett exempel i 5 sekunder.
    * Om ett av de tre försöken lyckas före slutet av de fem sekunderna utförs anropet och det finns inget fel.
    * Om tidsgränsen nås under återförsöken avbryts anropet och räknas som ett timeout-fel i rapporteringen.
 
-## Vanliga frågor och svar{#faq}
+## Frågor och svar{#faq}
 
 **Hur konfigurerar jag en capping-regel? Finns det en standardregel för capping?**
 
 Som standard finns det ingen begränsning. Takregler definieras på sandlådenivå för en specifik slutpunkt (den URL som anropas) med API:t för begränsning. Se [det här avsnittet](../about/external-systems.md#capping) och [den här sidan](../api/capping.md).
 
-**Hur många försök utförs? Kan jag ändra antalet återförsök eller definiera en minimal vänteperiod mellan återförsök?**
+**Hur många försök utförs? Kan jag ändra antalet återförsök eller definiera en minsta vänteperiod mellan återförsök?**
 
 För ett visst anrop kan högst tre försök utföras efter det första anropet, tills tidsgränsen för anropet har nåtts. Antalet försök och tiden mellan varje nytt försök kan inte ändras. Se [det här avsnittet](../about/external-systems.md#timeout).
 
