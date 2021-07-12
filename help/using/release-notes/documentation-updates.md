@@ -6,10 +6,10 @@ feature: Resor
 role: Business Practitioner
 level: Beginner
 exl-id: ac5d2cec-0b48-4863-afe3-19ac5f61c9fd
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
-workflow-type: ht
+source-git-commit: f6059f174e983433d3ad24d06c0d0c74788bc792
+workflow-type: tm+mt
 source-wordcount: '803'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -39,13 +39,13 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 
 * Information har lagts till om hur du sorterar och väljer vilka kolumner som ska visas i segmentlistan. [Läs mer](../building-journeys/segment-qualification-events.md)
 * Information har lagts till om hur du kopierar ett segments namn och ID när det har markerats. [Läs mer](../building-journeys/segment-qualification-events.md)
-* Förekomster av Experience Platform har harmoniserats över de olika sidorna.
+* Förekomsten av Experience Platform har harmoniserats på de olika sidorna.
 
 ## Juli 2020 {#july-2020}
 
 * En länk till en ny självstudievideo har lagts till som visar stegen hur du rapporterar till Adobe Experience Platform. [Läs mer](../building-journeys/sharing-overview.md)
 * Avsnittet Händelseaktiviteter har omorganiserats i dedikerade underavsnitt för varje typ av händelser. [Läs mer](../building-journeys/event-activities.md)
-* Bästa praxis har lagts till för att undvika överbelastning med segmentkvalificering. [Läs mer](../building-journeys/segment-qualification-events.md#speed-segment-qualification)
+* Lagt till metodtips för att undvika överbelastning med segmentkvalificering. [Läs mer](../building-journeys/segment-qualification-events.md#speed-segment-qualification)
 * En anteckning har lagts till som förklarar hur en resa fortsätter efter ett fel i en åtgärd eller ett villkor. [Läs mer](../about/troubleshooting.md#section_h3q_kqk_fhb)
 * Ett nytt avsnitt har lagts till om de alfafunktioner som testas bland ett begränsat antal kunder.
 * Ett nytt avsnitt har lagts till om integrationen med intelligenta tjänster. [Läs mer](../ai-services/ai-services-overview.md)
@@ -67,7 +67,7 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 ## April 2020 {#april-2020}
 
 * Ett nytt avsnitt har lagts till om schemadefinitionen för en upplevelsehändelse för att hjälpa användare att konfigurera sin första händelse. [Läs mer](../event/experience-event-schema.md)
-* Hemsidan för dokumentation om [!DNL Journey Orchestration] har uppdaterats med ytterligare användbara länkar. [Läs mer](../../journey-orchestration-home.md)
+* Hemsidan för [!DNL Journey Orchestration]-dokumentationen har uppdaterats med ytterligare användbara länkar. [Läs mer](../../journey-orchestration-home.md)
 
 ## Mars 2020 {#march-2020}
 
@@ -86,7 +86,7 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 
 ## Februari 2020 {#february-2020}
 
-* Avsnittet för genvägar har uppdaterats. Med tangentbordsgenvägen **C** kan du skapa en ny post på alla listskärmar. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
+* Genvägsavsnittet har uppdaterats. Med tangentbordsgenvägen **C** kan du skapa en ny post på alla listskärmar. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
 * Översiktssidorna över [datakälla](../datasource/about-data-sources.md) och [åtgärd](../action/action.md) har förbättrats.
 
 ## Januari 2020 {#january-2020}
