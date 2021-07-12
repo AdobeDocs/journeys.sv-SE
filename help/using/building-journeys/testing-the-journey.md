@@ -6,7 +6,7 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: be413905-0631-4229-a954-80a92651206d
-source-git-commit: 78c758c75825c0f85788190c4526fa5c743c6673
+source-git-commit: f6059f174e983433d3ad24d06c0d0c74788bc792
 workflow-type: tm+mt
 source-wordcount: '1665'
 ht-degree: 2%
@@ -64,7 +64,7 @@ Så här använder du testläget:
 
 ## Förvandla en profil till en testprofil{#turning-profile-into-test}
 
-Du kan omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan ni uppdatera profilattribut via API-anrop, men det kan inte utföras via gränssnittet.
+Du kan omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan du uppdatera profilattribut via API-anrop, men det kan inte utföras via gränssnittet.
 
 Det enklaste sättet att göra detta är att använda en **Uppdatera profil**-åtgärd och ändra testprofilens booleska fält från false till true. Se [det här avsnittet](../building-journeys/update-profiles.md#using-the-test-mode).
 
