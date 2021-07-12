@@ -6,7 +6,7 @@ feature: Resor
 role: Business Practitioner
 level: Intermediate
 exl-id: e8e54dbd-8178-4c70-907c-68eb4dc54da7
-source-git-commit: 51915ac931c0c4af03b49140c20e1b0939beff65
+source-git-commit: f6059f174e983433d3ad24d06c0d0c74788bc792
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Den här typen av händelse kan placeras som det första steget eller senare und
    >
    >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** segmentdeltagarstatus från Adobe Experience Platform. Mer information om hur du utvärderar ett segment finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=en#interpret-segment-results).
 
-1. Välj ett namnutrymme. Detta behövs bara om händelsen placeras som det första steget i resan.
+1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan.
 
    ![](../assets/segment7.png)
 
@@ -74,7 +74,7 @@ Se [Villkorsaktivitet](../building-journeys/condition-activity.md#about_conditio
 
 En ny resa som innehåller en segmentkvalificeringshändelse kan användas tio minuter efter att du har publicerat den. Det här tidsintervallet motsvarar cacheuppdateringsintervallet för den dedikerade tjänsten. Du måste därför vänta tio minuter innan du kan använda den här resan.
 
-## Bästa praxis {#best-practices-segments}
+## God praxis {#best-practices-segments}
 
 Aktiviteten **[!UICONTROL Segment Qualification]** gör det möjligt att omedelbart ta sig in på resor för personer som kvalificerats eller diskvalificerats från ett Adobe Experience Platform-segment.
 
