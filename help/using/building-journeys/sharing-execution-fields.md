@@ -1,19 +1,19 @@
 ---
 product: adobe campaign
-title: journeyStep, händelser, körningsfält för åtgärder
-description: journeyStep, händelser, körningsfält för åtgärder
+title: fält för händelseexekvering för händelsen journeyStep
+description: fält för händelseexekvering för händelsen journeyStep
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 9af66037-63d7-41a8-86d1-b03c655dfb82
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-# journeyStep, händelser, körningsfält för åtgärder {#sharing-execution-fields}
+# fält för händelseexekvering för händelsen journeyStep {#sharing-execution-fields}
 
 Den här mixinen delas av travelStepEvent och travelStepProfileEvent.
 
@@ -59,7 +59,7 @@ Värden:
 * http
 * capping
 * timeout
-* fel
+* error
 
 ## actionExecutionErrorCode
 
