@@ -3,11 +3,11 @@ product: adobe campaign
 title: Om Journey Orchestration
 description: Läs mer om Journey Orchestration
 feature: Resor
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 430bac3a-06da-45a8-af90-1dcd1504d532
-source-git-commit: 3af822bacfd1a5a53ec7280dff1136d77b90c809
-workflow-type: ht
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 100%
 
