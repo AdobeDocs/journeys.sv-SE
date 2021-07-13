@@ -3,10 +3,10 @@ product: adobe campaign
 title: Hoppa från en resa till en annan
 description: Hoppa från en resa till en annan
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 520376aa-2cb5-46d6-8f21-3e03544f5da1
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 3%
@@ -48,7 +48,7 @@ Under resa B utlöses den första händelsen internt via aktiviteten **[!UICONTR
 >
 >Resa B kan också utlösas via en extern händelse.
 
-## Bästa praxis och begränsningar
+## God praxis och begränsningar
 
 ### Redigering
 
@@ -61,7 +61,7 @@ Under resa B utlöses den första händelsen internt via aktiviteten **[!UICONTR
 * Målresan kan även innehålla så många **[!UICONTROL Jump]**-aktiviteter som behövs.
 * Loopmönster stöds inte. Det finns inget sätt att länka samman två eller flera resor som skulle skapa en oändlig slinga. Aktivitetskonfigurationsskärmen **[!UICONTROL Jump]** hindrar dig från att göra detta.
 
-### Körning
+### Körning 
 
 * När aktiviteten **[!UICONTROL Jump]** körs aktiveras den senaste versionen av målresan.
 * Som vanligt kan en unik individ bara vara närvarande en gång under samma resa. Om den person som har åsamkats från ursprungsresan redan befinner sig på målresan, kommer personen alltså inte att ta sig in på målresan. Inget fel rapporteras för aktiviteten **[!UICONTROL Jump]** eftersom detta är ett normalt beteende.
