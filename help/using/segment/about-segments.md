@@ -3,10 +3,10 @@ product: adobe campaign
 title: Om Adobe Experience Platform-segment
 description: Lär dig konfigurera ett Adobe Experience Platform-segment
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 94e1e3e3-9a46-41ca-bec1-f41287925372
-source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
