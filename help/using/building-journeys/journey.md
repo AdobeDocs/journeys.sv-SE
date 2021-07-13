@@ -3,10 +3,10 @@ product: adobe campaign
 title: Om att bygga en resa
 description: Som affärsanvändare kan du lära dig att kombinera händelser, samordning och åtgärder för att skapa en resa.
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 540b5142-9323-4cc1-9b5a-3fa20a5945bf
-source-git-commit: 784c91054e0f6b9ea12aa4b7f4079f7c2da8f949
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 9%
