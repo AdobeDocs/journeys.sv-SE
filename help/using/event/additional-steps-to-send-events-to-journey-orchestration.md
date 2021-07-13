@@ -3,10 +3,10 @@ product: adobe campaign
 title: Ytterligare steg för att skicka händelser till Journey Orchestration
 description: Läs mer om hur du skickar händelser till Journey Orchestration
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 11e337c6-5e05-4898-9953-b6b821af8fd1
-source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
