@@ -3,10 +3,10 @@ product: adobe campaign
 title: Skapa en händelse
 description: Lär dig hur du skapar en händelse
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 2ae8854a-c3e7-469d-9f89-25b54bc3e894
-source-git-commit: 78c758c75825c0f85788190c4526fa5c743c6673
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 63%
