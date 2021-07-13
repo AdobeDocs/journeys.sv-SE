@@ -3,10 +3,10 @@ product: adobe campaign
 title: Åtkomsthantering
 description: Läs mer om åtkomsthantering
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: a551efa5-c0d8-4138-96ca-fb407fad8c59
-source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 95%
@@ -19,7 +19,7 @@ ht-degree: 95%
 
 Med [!DNL Journey Orchestration] kan du tilldela en uppsättning behörigheter till dina användare för att definiera vilken del av gränssnittet de ska kunna komma åt.
 
-De kan hanteras av administratörer som har åtkomst till Admin Console. Se den här [dokumentationen](https://helpx.adobe.com/se/enterprise/managing/user-guide.html) för mer information om Admin Console.
+De kan hanteras av administratörer som har åtkomst till Admin Console. Se den här [dokumentationen](https://helpx.adobe.com/enterprise/managing/user-guide.html) för mer information om Admin Console.
 
 För att få åtkomst till [!DNL Journey Orchestration] måste användaren vara:
 
