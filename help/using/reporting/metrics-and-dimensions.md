@@ -1,19 +1,19 @@
 ---
 product: adobe campaign
-title: Mätvärden och mått
+title: Mätvärden och dimensioner
 description: Läs om mått och mätvärden för Journey Orchestration
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: f6897011-0a5e-4094-a18e-ba2aa25f902c
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 1%
 
 ---
 
-# Mätvärden och mått {#concept_rfj_wpt_52b}
+# Mätvärden och dimensioner {#concept_rfj_wpt_52b}
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Mer information om kompatibilitet mellan dimensioner och mått finns på [den h�
 
 Tabellen nedan visar en lista över de dimensioner som används i reserapporter, definitioner och formler.
 
-| Dimensioner | Definition |
+| Mått | Definition |
 |--- |--- |
 | **Åtgärd** | Lista över alla åtgärder (**åtgärdsnamn - åtgärdsetikett**) som används i resor, t.ex. Tryck - Checka ut bekräftelse, E-post - Återbetalningsföljsamhet. |
 | **Datakälla** | Lista med datakällor (**namn på datakälla**) som används för att förbättra data i en resa, t.ex. Adobe Experience Platform, Reservation System. |
@@ -81,7 +81,7 @@ Tabellen nedan visar en lista över mätvärden som används i reserapporter, de
 | **Misslyckades** | Totalt antal resor som inte har slutförts. |
 | **Misslyckad frekvens** | Totalt antal resor som inte har genomförts korrekt jämfört med antalet körningar. |
 
-## Leveransmått {#delivery-metrics}
+## Leveransstatistik {#delivery-metrics}
 
 Tabellen nedan visar en lista över mätvärden som används under resan
 rapporter, definitioner och formler.
