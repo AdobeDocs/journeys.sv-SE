@@ -3,13 +3,13 @@ product: adobe campaign
 title: Bygga resan
 description: Lär dig hur du bygger en enkel ärenderesa
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 22bcd7f4-03ee-4e4c-b221-9f14aeadded6
-source-git-commit: 3af822bacfd1a5a53ec7280dff1136d77b90c809
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 34%
+ht-degree: 36%
 
 ---
 
@@ -52,7 +52,7 @@ Mer information om hur du skapar en resa finns på [den här sidan](../building-
 
    ![](../assets/journeyuc1_12.png)
 
-1. Släpp en **[!UICONTROL Email]**-aktivitet och välj din&quot;Spa-rabatt&quot;-mall för transaktionsmeddelanden. Den här mallen har utformats med Adobe Campaign. Se den här [sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html).
+1. Släpp en **[!UICONTROL Email]**-aktivitet och välj din&quot;Spa-rabatt&quot;-mall för transaktionsmeddelanden. Den här mallen har utformats med Adobe Campaign. Se den här [sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
 
    ![](../assets/journeyuc1_13.png)
 
