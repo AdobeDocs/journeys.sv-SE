@@ -4,13 +4,13 @@ solution: Journey Orchestration
 title: Använda Adobe Campaign v7/v8-åtgärder
 description: Läs om åtgärder i Adobe Campaign v7/v8
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 4e59a256-d494-4407-a0a8-a2523eb1084e
-source-git-commit: b2439788ef547b401dea64faf46d4398b9a1a0c7
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Det finns en integrering om du har Adobe Campaign v7 eller v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner.
 
-Anslutningen mellan Journey Orchestration och Campaign-instansen konfigureras av Adobe vid etableringstidpunkten. Kontakta Adobe.
+Kopplingen mellan Journey Orchestration och instanser i Campaign är konfigurerad av Adobe vid etableringstidpunkten. Kontakta Adobe.
 
 För att detta ska fungera måste du konfigurera en dedikerad åtgärd. Se det här [avsnittet](../action/acc-action.md).
 
