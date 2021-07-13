@@ -3,17 +3,17 @@ product: adobe campaign
 title: Felsökning
 description: Läs mer om felsökning
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: c678ba01-c868-49f2-99f3-1abe0302779e
-source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 97%
 
 ---
 
-# Felsöka{#concept_nlv_bcv_2fb}
+# Felsökning{#concept_nlv_bcv_2fb}
 
 I det här avsnittet lär du dig att felsöka resor innan de testas eller publiceras. Alla kontroller som anges nedan kan utföras medan resan är i testläge eller när den är live. Rekommendationen är att göra alla kontroller nedan i testläget och sedan gå vidare till publiceringen. Läs [den här sidan](../building-journeys/testing-the-journey.md).
 
