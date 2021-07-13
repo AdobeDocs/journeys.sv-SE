@@ -3,13 +3,13 @@ product: adobe campaign
 title: Vänta på aktivitet
 description: Läs mer om vänteaktiviteten
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 819ff3c3-0e3e-4d86-b5d2-10c5b10d19e6
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en
 
 * [Varaktighet](#duration)
 * [Fast datum](#fixed_date)
-* [Egen](#custom)
+* [Anpassat](#custom)
 
 <!--* [Email send time optimization](#email_send_time_optimization)-->
 
