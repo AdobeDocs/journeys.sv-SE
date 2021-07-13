@@ -3,10 +3,10 @@ product: adobe campaign
 title: Definiera händelsenyckeln
 description: Lär dig hur du definierar händelsenyckeln
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 79bcf562-f971-42f1-a607-94a2510c4a07
-source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 3%
