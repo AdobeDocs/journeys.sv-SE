@@ -3,13 +3,13 @@ product: adobe campaign
 title: Avsluta en resa
 description: Lär dig hur du avslutar en resa
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 2d1b9d6b-0a53-436c-b251-ce77cb931aaa
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
