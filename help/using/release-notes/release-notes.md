@@ -3,10 +3,10 @@ product: adobe campaign
 title: Versionsinformation
 description: Läs om versionsinformation
 feature: Resor
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: e2ff3e9d86aa9f603cf3d66507881d482a95a4a5
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '2625'
 ht-degree: 60%
@@ -50,7 +50,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 
 * I skärmen **Händelsekonfiguration** i testläget visas nu en listruta för fält som förväntar sig en uppräkning. Välj bara ett av de tillgängliga värdena. Detta undviker fel när händelsen utlöses om ett felaktigt värde definieras. [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
 
-## Mars 2021-utgåvan {#march-2021-release}
+## Version från mars 2021 {#march-2021-release}
 
 ### Förbättringar
 
@@ -59,7 +59,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 * I testläge har fältet **Nyckel** som används för att definiera testprofilens ID ändrats till **Profilidentifierare** på skärmen **Händelsekonfiguration** för en bättre användarupplevelse. [Läs mer](../building-journeys/testing-the-journey.md).
 * För reaktionshändelser kan tidsgränsen nu bara anges mellan 40 sekunder och 30 dagar. När du testar en resa som använder en reaktionshändelse är standardläget **[!UICONTROL Wait time]** och minimivärdet 40 sekunder. [Läs mer](../building-journeys/reaction-events.md).
 
-## Version från februari 2021 {#february-2021-release}
+## Utgåva från februari 2021 {#february-2021-release}
 
 <table>
 <thead>
@@ -84,7 +84,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 * När du påbörjar en ny resa döljs nu element som inte kan släppas på arbetsytan som det första steget. Detta gäller alla åtgärder, villkorsaktiviteten, väntetiden och reaktionen.
 * I den vänstra delen av den avancerade uttrycksredigeraren grupperas funktioner nu om under ett **Funktioner**-avsnitt i slutet av listan.
 
-## Utgåvan från januari 2021 {#january-2021-release}
+## Version från januari 2021 {#january-2021-release}
 
 När du väljer ett schema i händelsekonfigurationen markeras endast fält som är obligatoriska för att händelsen ska kunna tas emot av Journey Orchestration. [Läs mer](../event/defining-the-payload-fields.md)
 
@@ -473,7 +473,7 @@ Gränssnittet i Journey Orchestration finns tillgängligt på japanska.
 <p>I resedesignern kan du nu kontrollera att du har tillgång till den senaste versionen av resan. Den här informationen visas bredvid versionsnumret.</p>
 <p>När två aktiviteter inte är kopplade till resans <strong>arbetsyta</strong> visas ett varningsmeddelande.</p>
 <img src="../assets/rn-canvas.png"/>
-<p>Se den <a href="../building-journeys/using-the-journey-designer.md">detaljerade dokumentationen</a> för mer information.</p>
+<p>Mer information finns i den <a href="../building-journeys/using-the-journey-designer.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -500,7 +500,7 @@ Gränssnittet i Journey Orchestration finns tillgängligt på japanska.
 
 * Förutom i USA finns nu även Journey Orchestration tillgänglig i **EMEA**. Ansökan och dokumentationen finns tillgänglig på franska och tyska.
 
-* Experience League är nu integrerad i produkten. Detta förenklar åtkomsten till relaterat innehåll och hjälper dig att få ut mesta möjliga av Experience Cloud. Direktåtkomst till dokumentationen om Journey Orchestration finns tillgänglig längst ned på hjälpfliken. Du kan dessutom klicka på Hjälp > Feedback för att rapportera problem eller dela med dig av dina idéer till Adobe.
+* Experience League är nu integrerad i produkten. Detta förenklar åtkomsten till relaterat innehåll och hjälper dig att få ut mesta möjliga av Experience Cloud. Direktåtkomst till dokumentationen om Journey Orchestration finns tillgänglig längst ned på hjälpfliken. Dessutom kan du klicka på Help > Feedback om du vill rapportera problem eller dela med dig av dina idéer till Adobe.
 
 * Tangentbordsgenvägen **C**, som du använder för att skapa en ny post, är nu tillgängligt på alla listskärmar såsom resor, datakällor, åtgärder och händelser. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
 
