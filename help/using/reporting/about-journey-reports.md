@@ -3,10 +3,10 @@ product: adobe campaign
 title: Om reserapporter
 description: Lär dig hur du skapar reserapporter
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 93768321-b171-4338-a440-6ea189a85a4a
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 I det här avsnittet beskrivs hur du får tillgång till och använder rapporter för att mäta hur effektiva dina resor är.
 
-## Rapportgränssnitt {#reporting-interface}
+## Rapporteringsgränssnitt {#reporting-interface}
 
 I det övre verktygsfältet kan du till exempel ändra, spara eller skriva ut rapporten.
 
@@ -58,7 +58,7 @@ Med de här flikarna får du tillgång till följande objekt:
 * **[!UICONTROL Visualizations]**: dra och släpp ett urval av visualiseringsobjekt för att ge rapporten en grafisk dimension. Mer information finns i avsnittet [Lägga till visualiseringar](../reporting/creating-your-journey-reports.md#adding-visualizations).
 * **[!UICONTROL Components]**: anpassa era rapporter med olika dimensioner, mätvärden, segment och tidsperioder. Mer information finns i avsnittet [Lägga till komponenter](../reporting/creating-your-journey-reports.md#adding-components).
 
-## Resesammanfattningsmall {#ootb-template}
+## Översiktsmall för resa {#ootb-template}
 
 Rapporterna är uppdelade i två kategorier: en färdig mall och anpassade rapporter.
 Den färdiga mallen **[!UICONTROL Journey summary]** ger en tydlig bild av de viktigaste spårningsdata.
