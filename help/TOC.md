@@ -5,10 +5,10 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Resor
-source-git-commit: 8d10739381b4f5b09ad7070498d5f1566961c221
-workflow-type: ht
-source-wordcount: '424'
-ht-degree: 100%
+source-git-commit: a472bb9ffe45159c8318f00a43c25fc41cb6d683
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
    + [Kom igång](using/about/get-started.md)
    + [Användargränssnitt](using/about/user-interface.md)
    + [Åtkomsthantering](using/about/access-management.md)
-   + [Felsöka](using/about/troubleshooting.md)
+   + [Felsökning](using/about/troubleshooting.md)
    + [Integrering med externa system](using/about/external-systems.md)
 + Konfigurera en händelse {#events-journeys}
    + Om händelser {#about-events}
@@ -53,8 +53,8 @@ ht-degree: 100%
       + [Om anpassad åtgärdskonfiguration](using/action/about-custom-action-configuration.md)
       + [URL-konfiguration](using/action/url-configuration.md)
       + [Definiera meddelandeparametrarna](using/action/defining-the-message-parameters.md)
-+ Använda plattformssegment {#configuring-segment}
-   + [Om plattformssegment](using/segment/about-segments.md)
++ Använda segment {#configuring-segment}
+   + [Om segment](using/segment/about-segments.md)
    + [Skapa ett segment](using/segment/creating-a-segment.md)
    + [Använda segment i villkor](using/segment/using-a-segment.md)
 + Bygga en resa {#building-journeys}
@@ -162,7 +162,7 @@ ht-degree: 100%
          + [isEmpty](using/functions/functionisempty.md)
          + [isNotEmpty](using/functions/functionisnotempty.md)
          + [lastIndexOf](using/functions/functionlastindexof.md)
-         + [längd](using/functions/functionlength.md)
+         + [length](using/functions/functionlength.md)
          + [nedre](using/functions/functionlower.md)
          + [matchRegExp](using/functions/functionmatchregexp.md)
          + [notEqualWithIgnoreCase](using/functions/functionnotequalignorecase.md)
@@ -178,7 +178,7 @@ ht-degree: 100%
 + Bygga rapporter{#journey-reports}
    + [Om reserapporter](using/reporting/about-journey-reports.md)
    + [Skapa reserapporter](using/reporting/creating-your-journey-reports.md)
-   + [Mätvärden och mått](using/reporting/metrics-and-dimensions.md)
+   + [Mätvärden och dimensioner](using/reporting/metrics-and-dimensions.md)
 + Integrering med intelligenta tjänster{#use-case-advanced}
    + [Om AI-integrering](using/ai-services/ai-services-overview.md)
    + [Utnyttja AI för kundbenägenhet](using/ai-services/leveraging-customer-ai.md)
