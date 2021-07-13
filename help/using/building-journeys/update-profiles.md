@@ -3,10 +3,10 @@ product: adobe campaign
 title: Hoppa från en resa till en annan
 description: Hoppa från en resa till en annan
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: eaf2c795-0920-4b9c-9f06-801e43c1844b
-source-git-commit: 29aa6b6e16f8e6d051065f8157f4e25e8b1c05e1
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 4%
