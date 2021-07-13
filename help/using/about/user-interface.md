@@ -3,10 +3,10 @@ product: adobe campaign
 title: Användargränssnittet
 description: Läs mer om användargränssnittet
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 0d0e74c7-6cb0-4068-a69a-3c01f8b3552d
-source-git-commit: e09b49372f217a2e77504046ddf11e04a4c2b364
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 89%
