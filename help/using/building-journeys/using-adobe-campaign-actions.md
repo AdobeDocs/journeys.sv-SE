@@ -3,13 +3,13 @@ product: adobe campaign
 title: Använda åtgärder i Adobe Campaign
 description: Läs om Adobe Campaign åtgärder
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 4e59a256-d494-4407-a0a8-a2523eb1084e
-source-git-commit: e7c3dde02837d31c5eb7d170cae7f142ce376175
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ Om du har Adobe Campaign Standard finns följande färdiga åtgärdsaktiviteter:
 >
 >Därför måste du konfigurera den inbyggda åtgärden. Se [den här sidan](../action/working-with-adobe-campaign.md).
 
-För var och en av dessa kanaler väljer du en Adobe Campaign Standard Transactional Messaging **mall**. [!DNL Journey Orchestration] är inte en lösning för att skicka meddelanden. För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i Adobe Campaign Standard. Mer information om hur du använder den här funktionen finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html).
+För var och en av dessa kanaler väljer du en Adobe Campaign Standard Transactional Messaging **mall**. [!DNL Journey Orchestration] är inte en lösning för att skicka meddelanden. För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i Adobe Campaign Standard. Mer information om hur du använder den här funktionen finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Detta är de fält som förväntas av Adobe Campaign Standard-meddelandet. Dessa
 
 ![](../assets/journey62.png)
 
-## Tryck {#section_im3_hvf_nhb}
+## Push {#section_im3_hvf_nhb}
 
 Innan du använder push-aktiviteten måste din mobilapp konfigureras tillsammans med Campaign Standard för att skicka push-meddelanden. Använd den här [artikeln](https://helpx.adobe.com/se/campaign/kb/integrate-mobile-sdk.html) när du vill utföra nödvändiga implementeringsåtgärder för mobilen.
 
