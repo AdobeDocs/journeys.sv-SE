@@ -3,13 +3,13 @@ product: adobe campaign
 title: Om integrering med Campaign v7/v8
 description: Läs om integrationen mellan Campaign v7 och v8
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 4b321b63-c624-4c2a-ae92-f9a2a95688d4
-source-git-commit: 8d10739381b4f5b09ad7070498d5f1566961c221
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Den här integreringen är tillgänglig för Adobe Campaign Classic v7 från och med version 21.1 och Adobe Campaign v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner.
 
-Anslutningen mellan Journey Orchestration och Campaign-instansen konfigureras av Adobe vid etableringstidpunkten.
+Kopplingen mellan Journey Orchestration och instanser i Campaign är konfigurerad av Adobe vid etableringstidpunkten.
 
 Det finns ett användningsexempel från början till slut i det här [avsnittet](../usecase/campaign-classic-use-case.md).
 
@@ -35,7 +35,7 @@ För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på pa
 
 * Du kan inte använda en Campaign-åtgärd med en segmentkvalificeringshändelse.
 
-## Förhandskrav
+## Förutsättningar
 
 I Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Läs [Adobe Campaign-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html#transactional-messaging).
 
