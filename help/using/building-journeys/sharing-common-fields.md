@@ -3,17 +3,17 @@ product: adobe campaign
 title: historikstegshändelser, vanliga fält
 description: historikstegshändelser, vanliga fält
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 5cf8e6b5-2162-4aa3-b071-96ede31948e6
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
 
 ---
 
-# guideStegen händelser vanliga fält {#sharing-common-fields}
+# historikstegshändelser, vanliga fält {#sharing-common-fields}
 
 Den här mixinen delas av travelStepEvent och travelStepProfileEvent.
 
