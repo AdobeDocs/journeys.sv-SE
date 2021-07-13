@@ -4,10 +4,10 @@ solution: Journey Orchestration
 title: Integrera med externa system
 description: Lär dig de bästa sätten att integrera externa system
 feature: Resor
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: f6059f174e983433d3ad24d06c0d0c74788bc792
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 1%
