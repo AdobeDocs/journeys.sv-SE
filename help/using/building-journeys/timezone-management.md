@@ -3,10 +3,10 @@ product: adobe campaign
 title: Hantering av tidszoner
 description: Läs mer om hantering av tidszoner
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: c0e67849-caa0-4045-94ed-38e483054e1d
-source-git-commit: 78c758c75825c0f85788190c4526fa5c743c6673
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 2%
