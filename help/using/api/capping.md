@@ -4,13 +4,13 @@ title: Beskrivning av API för begränsning
 description: Läs mer om API:t för tak.
 products: journeys
 feature: Resor
-role: Business Practitioner
+role: User
 level: Intermediate
 exl-id: 6f28e62d-7747-43f5-a360-1d6af14944b6
-source-git-commit: e42ef98b1d84d8311cf49967ec75ec9be6cc53f1
+source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -180,14 +180,14 @@ I följande avsnitt hittar du listan med Rest API-anrop ordnade för att utföra
 
 Användningsfall n°1: **Skapa och distribuera en ny takkonfiguration**
 
-1. list
+1. lista
 1. skapa
 1. candeploy
 1. driftsätta
 
 Use-Case n°2: **Uppdatera och distribuera en cachelagringskonfiguration som inte har distribuerats ännu**
 
-1. list
+1. lista
 1. get
 1. uppdatera
 1. candeploy
@@ -195,19 +195,19 @@ Use-Case n°2: **Uppdatera och distribuera en cachelagringskonfiguration som int
 
 Användningsfall nr 3: **Avdistribuera och ta bort en distribuerad cappningskonfiguration**
 
-1. list
+1. lista
 1. avdistribuera
 1. delete
 
 Use-Case n°4: **Ta bort en distribuerad capping-konfiguration.**
 
 I endast ett API-anrop kan du avdistribuera och ta bort konfigurationen med hjälp av parametern forceDelete.
-1. list
+1. lista
 1. delete, with forceDelete param
 
 Use-Case n°5: **Uppdatera en takkonfiguration som redan har distribuerats**
 
-1. list
+1. lista
 1. get
 1. uppdatera
 1. avdistribuera
