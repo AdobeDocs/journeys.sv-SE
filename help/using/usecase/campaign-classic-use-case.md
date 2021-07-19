@@ -3,13 +3,13 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Skicka ett meddelande med Campaign v7/v8
 description: Skicka ett meddelande med Campaign v7/v8
-source-git-commit: 8d10739381b4f5b09ad7070498d5f1566961c221
+exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
+source-git-commit: 3e78e429bbdfc95bfef74e0f2e2b92f8ff17cfdb
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
-
 
 # Skicka ett meddelande med Campaign v7/v8 {#campaign-classic-use-case}
 
