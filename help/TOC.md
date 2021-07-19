@@ -22,7 +22,7 @@ ht-degree: 99%
 + Börja med [!DNL Journey Orchestration] {#starting-with-journeys}
    + [Om [!DNL Journey Orchestration]](using/about/about-journey-orchestration.md)
    + [Begränsningar](using/about/limitations.md)
-   + [Kom igång](using/about/get-started.md)
+   + [Komma igång](using/about/get-started.md)
    + [Användargränssnitt](using/about/user-interface.md)
    + [Åtkomsthantering](using/about/access-management.md)
    + [Felsökning](using/about/troubleshooting.md)
