@@ -40,7 +40,7 @@ Här är några exempel på användningsområden:
 
 * **Förfina fel i rapportering** : I stället för att bara ha en sökväg för felmeddelanden kan du definiera ett villkor per feltyp. På så sätt kan du förfina rapporteringen och visa alla feltyper.
 
-## Lista med fält {#journey-properties-fields}
+## Fältlista {#journey-properties-fields}
 
 | Kategori | Fältnamn | Etikett | Beskrivning |
 |---|---|---|------------|
