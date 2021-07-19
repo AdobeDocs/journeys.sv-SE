@@ -6,7 +6,7 @@ exl-id: f1be46a8-04b9-4f40-b18e-9099099d2e1c
 source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
 workflow-type: tm+mt
 source-wordcount: '675'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -18,9 +18,9 @@ Det finns olika sätt att skapa en testprofil i Adobe Experience Platform. I den
 
 Med de här importmetoderna kan du även uppdatera profilattribut. På så sätt kan du omvandla en befintlig profil till en testprofil. Använd bara ett liknande fil- eller API-anrop och inkludera bara fältet&quot;testProfile&quot; med värdet&quot;true&quot;.
 
-Att skapa en testprofil liknar att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [dokumentationen för kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html).
+Att skapa en testprofil liknar att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [dokumentationen för kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv).
 
-## Förhandskrav{#test-profile-prerequisites}
+## Förutsättningar{#test-profile-prerequisites}
 
 För att kunna skapa profiler måste du först skapa ett schema och en datauppsättning i Adobe Experience Platform.
 
