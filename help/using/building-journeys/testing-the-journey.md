@@ -70,7 +70,7 @@ Det enklaste sättet att göra detta är att använda en **Uppdatera profil**-å
 
 ## Skapa en testprofil{#create-test-profile}
 
-Om du vill skapa en ny testprofil är proceduren densamma som när du skapar en profil i Adobe Experience Platform. Den utförs via API-anrop. Läs den här [sidan](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+Om du vill skapa en ny testprofil är proceduren densamma som när du skapar en profil i Adobe Experience Platform. Den utförs via API-anrop. Läs den här [sidan](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv)
 
 Du måste använda ett profilschema som innehåller blandningen &quot;information om profiltester&quot;. Flaggan testProfile ingår i den här mixinen.
 
