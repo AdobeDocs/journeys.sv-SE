@@ -36,7 +36,7 @@ Här är en lista över operatorer som stöds:
 
 ## Logisk  {#logical}
 
-### och
+###  och 
 
 ```
 <expression1> and <expression2>
@@ -298,7 +298,7 @@ Exempel:
 1 + 2 -- returns 3
 ```
 
-### -
+### –
 
 
 
