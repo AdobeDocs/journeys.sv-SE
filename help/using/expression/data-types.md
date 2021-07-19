@@ -119,7 +119,7 @@ false
 true
 ```
 
-## dateTimeOnly {#date-time-only}
+## dateTimeOnly {#date-time-only}
 
 **Beskrivning**
 
@@ -263,7 +263,7 @@ toDuration("-P6H3M") -- parses as "-6 hours and -3 minutes"
 toDuration("-P-6H+3M") -- parses as "+6 hours and -3 minutes"
 ```
 
-## list {#list}
+## lista {#list}
 
 **Beskrivning**
 
