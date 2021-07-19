@@ -1,6 +1,6 @@
 ---
 product: adobe campaign
-title: Kom igång
+title: Komma igång
 description: Upptäck huvudstegen för att konfigurera Journey Orchestration och skapa din första resa.
 feature: Resor
 role: User
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ---
 
-# Kom igång{#concept_y4b_4qt_52b}
+# Komma igång{#concept_y4b_4qt_52b}
 
 I [!DNL Journey Orchestration] finns det två typer av användare som utför olika uppgifter: den **tekniska användaren** och **företagsanvändaren**. Användaråtkomst hanteras via produktprofiler och rättigheter. Mer information om hur du konfigurerar användaråtkomster finns på den här [sidan](../about/access-management.md).
 
