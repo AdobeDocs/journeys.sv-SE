@@ -6,10 +6,10 @@ feature: Resor
 role: User
 level: Intermediate
 exl-id: 9b666c15-2215-4ca5-bc72-40109749dc15
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 5ea6578ec15b8e1116f58f7644cbf45c523d1840
 workflow-type: tm+mt
-source-wordcount: '1276'
-ht-degree: 99%
+source-wordcount: '1264'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två p
 
 Här följer de viktigaste stegen för att skapa och konfigurera en ny extern datakälla:
 
-1. Klicka på **[!UICONTROL Add]** i listan med datakällor för att skapa en ny extern datakälla.
+1. Klicka på **[!UICONTROL Create data source]** i listan över datakällor för att skapa en ny extern datakälla.
 
    ![](../assets/journey25.png)
 
@@ -69,7 +69,6 @@ För parameteruppsättningen &quot;long/lat&quot; skapar vi en fältgrupp med f�
 
 * **[!UICONTROL Used in]**: visar antalet resor som använder en fältgrupp. Du kan klicka på ikonen **[!UICONTROL View journeys]** för att visa en lista över resor som använder den här fältgruppen.
 * **[!UICONTROL Method]**: välj metoden POST eller GET. I vårt fall väljer vi metoden GET.
-* **[!UICONTROL Cache duration]**: vi vill att vädret ska sparas i cacheminnet under tio minuter.
 * **[!UICONTROL Response Payload]**: klicka inuti fältet **[!UICONTROL Payload]** och klistra in ett exempel på nyttolasten som returneras av anropet. Vi har till exempel använt en nyttolast som finns på en API-webbplats för väder. Kontrollera att fälttyperna är korrekta. Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast. Observera att du kan klicka på **[!UICONTROL Paste a new payload]** för att ändra den nyttolast som för närvarande används.
 * **[!UICONTROL Dynamic Values]**: ange de olika parametrarna avgränsade med kommatecken – &quot;long,lat&quot; i vårt exempel. Eftersom parameterns värden är beroende av körningens sammanhang definieras de i resorna. Läs [den här sidan](../expression/expressionadvanced.md).
 * **[!UICONTROL Sent Payload]**: det här fältet visas inte i vårt exempel. Det är endast tillgängligt om du väljer metoden POST. Klistra in nyttolasten som ska skickas till tredjepartssystemet.
