@@ -6,10 +6,10 @@ feature: Resor
 role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 6300a606d49a65a5527f9ba29a7efdfe782c7334
 workflow-type: tm+mt
-source-wordcount: '2625'
-ht-degree: 60%
+source-wordcount: '2701'
+ht-degree: 59%
 
 ---
 
@@ -17,6 +17,29 @@ ht-degree: 60%
 
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
+
+## juliversion 2021 {#july-2021-release}
+
+<table>
+<thead>
+<tr>
+<th><strong>Utnyttja schemarelationer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med Adobe Experience Platform kan du definiera relationer mellan scheman för att kunna använda en datauppsättning som en uppslagstabell för en annan. Journey Orchestration kan nu utnyttja data från ett länkat schema.</p>
+<p>Dessa fält är tillgängliga i en enhetlig händelsekonfiguration, resevillkor och anpassad åtgärdspersonalisering.
+<p>Mer information finns i den <a href="../event/experience-event-schema.md#leverage_schema_relationships">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Förbättringar
+
+* Fältet **Cachevaraktighet** har tagits bort från konfigurationspanelen för datakällan. [Läs mer](../datasource/about-data-sources.md)
 
 ## Juniversion 2021 {#june-2021-release}
 
