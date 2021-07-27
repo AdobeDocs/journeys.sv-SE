@@ -6,10 +6,10 @@ feature: Resor
 role: User
 level: Intermediate
 exl-id: ea9cdb1d-dde6-4080-8f35-7f8cd3cf3644
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: eb765d2f12ade397e124281f52213bb3e58263cb
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 4%
+source-wordcount: '226'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ I avsnittet **[!UICONTROL Message parameters]** klistrar du in ett exempel på J
 
 >[!NOTE]
 >
->Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken.
+>Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken. De kan inte börja med tecknet &quot;$&quot;.
 
 Du kan definiera parametertypen (t.ex.: sträng, heltal osv.).
 
