@@ -6,9 +6,9 @@ feature: Resor
 role: User
 level: Intermediate
 exl-id: 847fa819-2b92-49e5-8a5e-4f3f0acd5e35
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: e1ee5a488e9eb6fd8d175a2ab8989c73289ea708
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '351'
 ht-degree: 11%
 
 ---
@@ -39,7 +39,6 @@ Här är de viktigaste stegen för att lägga till fältgrupper i den inbyggda d
 
 1. Välj ett schema i listrutan **[!UICONTROL Schema]**. I det här fältet visas profilscheman och Experience Events-scheman som är tillgängliga i Adobe Experience Platform. Schemat skapas inte i [!DNL Journey Orchestration]. Det görs i Adobe Experience Platform.
 1. Markera de fält som du vill använda.
-1. Definiera cachens varaktighet.
 1. Klicka på **[!UICONTROL Save]**.
 
 När du placerar markören på namnet på en fältgrupp visas två ikoner till höger. De gör att du kan ta bort och duplicera fältgruppen. Observera att ikonen **[!UICONTROL Delete]** bara är tillgänglig om fältgruppen inte används i någon direktresa eller utkastresa (information visas i fältet **[!UICONTROL Used in]**).
