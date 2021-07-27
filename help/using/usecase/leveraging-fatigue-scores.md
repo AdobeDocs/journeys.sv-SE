@@ -2,9 +2,9 @@
 product: adobe campaign
 title: Utnyttja utmattningspoäng
 description: Lär dig hur man utnyttjar trötthetspoäng på resor
-source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
+source-git-commit: e1ee5a488e9eb6fd8d175a2ab8989c73289ea708
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '249'
 ht-degree: 9%
 
 ---
@@ -26,7 +26,8 @@ Följ stegen som beskrivs i [den här sidan](../event/about-events.md).
 
 Utför följande steg för att välja utmattningspoängfält i den inbyggda datakällan:
 
-1. Klicka på fliken **[!UICONTROL Data Sources]** på den översta menyn och välj den inbyggda Adobe Experience Platform-datakällan.
+1. Välj **[!UICONTROL Admin]** i menyrutan. Klicka på **[!UICONTROL Manage]** i **[!UICONTROL Data sources]**-avsnittet.
+1. Välj den inbyggda Adobe Experience Platform-datakällan.
 
    ![](../assets/journey23.png)
 
