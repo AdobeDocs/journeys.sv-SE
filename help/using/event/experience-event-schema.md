@@ -6,9 +6,9 @@ feature: Resor
 role: User
 level: Intermediate
 exl-id: ffec0d42-8632-4806-97df-da2a2372ca53
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 3a0fc5cd6b7bc4177ab50986b11b020a11a72c9b
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -50,3 +50,64 @@ Alla XDM-scheman som används för [!DNL Journey Orchestration]-händelser ska u
    ![](../assets/schema7.png)
 
    ![](../assets/schema8.png)
+
+## Utnyttja schemarelationer{#leverage_schema_relationships}
+
+Med Adobe Experience Platform kan du definiera relationer mellan scheman för att kunna använda en datauppsättning som en uppslagstabell för en annan.
+
+Låt oss säga att er varumärkesdatamodell har ett schema som fångar upp inköp. Du har också ett schema för produktkatalogen. Du kan hämta produkt-ID:t i inköpsschemat och använda en relation för att söka efter mer fullständig produktinformation från produktkatalogen. På så sätt kan du skapa ett segment för alla kunder som köpte en bärbar dator, till exempel, utan att behöva göra en explicit lista över alla bärbara ID:n eller hämta alla produktdetaljer i transaktionssystem.
+
+Om du vill definiera en relation måste du ha ett dedikerat fält i källschemat, i det här fallet produkt-ID-fältet i inköpsschemat. Det här fältet måste referera till produkt-ID-fältet i målschemat. Käll- och måltabellerna måste vara aktiverade för profiler och målschemat måste ha det gemensamma fältet definierat som sin primära identitet.
+
+Här är produktkatalogschemat aktiverat för profilen med produkt-ID definierat som primär identitet.
+
+![](../assets/schema9.png)
+
+Här är inköpsschemat med relationen definierad i produkt-ID-fältet.
+
+![](../assets/schema10.png)
+
+>[!NOTE]
+>
+>Läs mer om schemarelationer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html?lang=en).
+
+I Journey Orchestration kan du sedan använda alla fält från de länkade tabellerna:
+
+* när en enhetshändelse konfigureras, [Läs mer](../event/experience-event-schema.md#unitary_event_configuration)
+* när villkor används i en resa, [Läs mer](../event/experience-event-schema.md#journey_conditions_using_event_context)
+* i anpassad åtgärdspersonalisering, [Läs mer](../event/experience-event-schema.md#custom_action_personalization_with_journey_event_context)
+
+### Konfiguration av Unitary-händelse{#unitary_event_configuration}
+
+De länkade schemafälten är tillgängliga i en händelsekonfiguration:
+
+* när du bläddrar genom händelseschemafälten på händelsens konfigurationsskärm.
+* när du definierar ett villkor för systemgenererade händelser.
+
+![](../assets/schema11.png)
+
+De länkade fälten är inte tillgängliga:
+
+* i händelsenyckelformeln
+* händelse-id-villkor (regelbaserade händelser)
+
+Mer information om hur du konfigurerar en enhetshändelse finns på den här [sidan](../event/about-creating.md).
+
+### Resevillkor med händelsetyp{#journey_conditions_using_event_context}
+
+Du kan använda data från en uppslagstabell som är länkad till en händelse som används i en resa för villkorsuppbyggnad (uttrycksredigeraren).
+
+Lägg till ett villkor i en resa, redigera uttrycket och visa händelsnoden i uttrycksredigeraren.
+
+![](../assets/schema12.png)
+
+Mer information om hur du definierar resevillkor finns på den här [sidan](../building-journeys/condition-activity.md).
+
+### Åtgärdspersonalisering med reseventsammanhang{#custom_action_personalization_with_journey_event_context}
+
+De länkade fälten är tillgängliga när åtgärdsparametrarna för en reseåtgärdsaktivitet konfigureras.
+
+![](../assets/schema13.png)
+
+Mer information om hur du använder anpassade åtgärder finns på den här [sidan](../building-journeys/using-custom-actions.md).
+
