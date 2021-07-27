@@ -6,10 +6,10 @@ feature: Resor
 role: User
 level: Intermediate
 exl-id: 2cfa4397-fe8f-44b3-b219-2fd5d3bdd156
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: e1ee5a488e9eb6fd8d175a2ab8989c73289ea708
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 14%
+source-wordcount: '441'
+ht-degree: 15%
 
 ---
 
@@ -19,7 +19,8 @@ I vårt fall vill vi använda personaliseringsdata för våra meddelanden. Vi m�
 
 Mer information om konfiguration av datakälla finns på [den här sidan](../datasource/about-data-sources.md).
 
-1. Klicka på fliken **[!UICONTROL Data Sources]** på den översta menyn och välj den inbyggda Adobe Experience Platform-datakällan.
+1. Välj **[!UICONTROL Admin]** i menyrutan. Klicka på **[!UICONTROL Manage]** i **[!UICONTROL Data sources]**-avsnittet.
+1. Välj den inbyggda Adobe Experience Platform-datakällan.
 
    ![](../assets/journey23.png)
 
@@ -58,7 +59,6 @@ Vi måste också kontrollera om personen har en bokning i hotellbokningen. Den t
 1. Klicka på **[!UICONTROL Add a New Field Group]** för att definiera informationen som ska hämtas och API-parametrarna. Det finns till exempel bara en parameter (id), så vi måste skapa en fältgrupp med följande information:
 
    * **[!UICONTROL Method]**: välj metoden POST eller GET. I vårt fall väljer vi metoden GET.
-   * **[!UICONTROL Cache duration]**: detta varierar beroende på hur ofta API-anrop görs. I vårt fall uppdateras reservationssystemet var 10:e minut.
    * **[!UICONTROL Response Payload]**: klicka inuti  **[!UICONTROL Payload]** fältet och klistra in ett exempel på nyttolasten. Kontrollera att fälttyperna är korrekta. Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast. I vårt exempel innehåller nyttolasten bara reservationsstatusen:
 
    ```
