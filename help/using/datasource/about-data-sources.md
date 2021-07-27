@@ -6,10 +6,10 @@ feature: Resor
 role: User
 level: Intermediate
 exl-id: 2371d2c9-3035-46ac-9c76-755fb453c24e
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: e1ee5a488e9eb6fd8d175a2ab8989c73289ea708
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 79%
+source-wordcount: '345'
+ht-degree: 76%
 
 ---
 
@@ -44,7 +44,7 @@ Här följer de huvudsakliga konfigurationsstegen för datakällor:
 >
 >Datakällans konfiguration utförs alltid av en **teknisk användare**.
 
-1. Klicka på fliken **[!UICONTROL Data Sources]** på den övre menyn.
+1. Välj **[!UICONTROL Admin]** i menyrutan. Klicka på **[!UICONTROL Manage]** i **[!UICONTROL Data sources]**-avsnittet.
 
    Listan med datakällor visas. Mer information om gränssnittet finns på [den här sidan](../about/user-interface.md).
 
