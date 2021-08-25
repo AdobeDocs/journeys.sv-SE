@@ -2,13 +2,13 @@
 product: adobe campaign
 title: Om anpassad åtgärdskonfiguration
 description: Lär dig hur du konfigurerar en anpassad åtgärd
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 8b24abef-700d-4f68-a921-d7299c939439
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 7ce4ddec60f62662d67351b8ca70d7763e76b977
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '249'
 ht-degree: 15%
 
 ---
@@ -34,7 +34,7 @@ Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 1. Antalet resor som använder den här åtgärden visas i fältet **[!UICONTROL Used in]**. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa listan över resor med den här åtgärden.
 1. Definiera de olika **[!UICONTROL URL Configuration]**-parametrarna. Läs [den här sidan](../action/url-configuration.md).
 1. Konfigurera avsnittet **[!UICONTROL Authentication]**. Den här konfigurationen är densamma som för datakällor.  Se [det här avsnittet](../datasource/external-data-sources.md#section_wjp_nl5_nhb).
-1. Definiera **[!UICONTROL Message parameters]**. Läs [den här sidan](../action/defining-the-message-parameters.md).
+1. Definiera **[!UICONTROL Action parameters]**. Läs [den här sidan](../action/defining-the-message-parameters.md).
 1. Klicka på **[!UICONTROL Save]**.
 
    Den anpassade åtgärden är nu konfigurerad och klar att användas på dina resor. Läs [den här sidan](../building-journeys/about-action-activities.md).
