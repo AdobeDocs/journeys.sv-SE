@@ -1,23 +1,23 @@
 ---
 product: adobe campaign
-title: Definiera meddelandeparametrarna
-description: Lär dig hur du definierar meddelandeparametrar
-feature: Resor
+title: Definiera åtgärdsparametrar
+description: Lär dig hur du definierar åtgärdsparametrar
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: ea9cdb1d-dde6-4080-8f35-7f8cd3cf3644
-source-git-commit: eb765d2f12ade397e124281f52213bb3e58263cb
+source-git-commit: 7ce4ddec60f62662d67351b8ca70d7763e76b977
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 3%
+source-wordcount: '225'
+ht-degree: 0%
 
 ---
 
-# Definiera meddelandeparametrarna {#concept_wy4_bf1_2gb}
+# Definiera åtgärdsparametrar {#concept_wy4_bf1_2gb}
 
 ![](../assets/messageparameterssection.png)
 
-I avsnittet **[!UICONTROL Message parameters]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
+I avsnittet **[!UICONTROL Action parameters]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
 
 ![](../assets/customactionpayloadmessage.png)
 
