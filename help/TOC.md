@@ -4,11 +4,11 @@ user-guide-title: Journey Orchestration
 title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
-feature: Resor
-source-git-commit: a472bb9ffe45159c8318f00a43c25fc41cb6d683
+feature: Journeys
+source-git-commit: 7ce4ddec60f62662d67351b8ca70d7763e76b977
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 99%
+source-wordcount: '421'
+ht-degree: 98%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 99%
    + Använda ett tredjepartssystem {#action-third-party}
       + [Om anpassad åtgärdskonfiguration](using/action/about-custom-action-configuration.md)
       + [URL-konfiguration](using/action/url-configuration.md)
-      + [Definiera meddelandeparametrarna](using/action/defining-the-message-parameters.md)
+      + [Definiera åtgärdsparametrar](using/action/defining-the-message-parameters.md)
 + Använda segment {#configuring-segment}
    + [Om segment](using/segment/about-segments.md)
    + [Skapa ett segment](using/segment/creating-a-segment.md)
