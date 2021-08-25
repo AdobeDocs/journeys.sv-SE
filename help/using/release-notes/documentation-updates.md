@@ -2,14 +2,14 @@
 product: adobe campaign
 title: Dokumentationsuppdateringar
 description: Läs om dokumentationsuppdateringar
-feature: Resor
+feature: Journeys
 role: User
 level: Beginner
 exl-id: ac5d2cec-0b48-4863-afe3-19ac5f61c9fd
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: e5c0db2e1f85ea72fd54f91e4a26cc287377fb0e
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 100%
+source-wordcount: '836'
+ht-degree: 96%
 
 ---
 
@@ -17,6 +17,12 @@ ht-degree: 100%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Orchestration].
 Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om [!DNL Journey Orchestration].
+
+## Augusti 2021
+
+* Konfigurationsproceduren för anpassade åtgärder med dynamiska URL-sökvägar och dynamiska rubriker har uppdaterats. [Läs mer](../action/url-configuration.md)
+* Ett avsnitt om tillgänglighetsfunktioner har lagts till. [Läs mer](../about/user-interface.md#accessibility)
+* Ett avsnitt om metoder för segmentutvärdering har lagts till. [Läs mer](../segment/about-segments.md#evaluation-method-in-journey-orchestration)
 
 ## Mars 2021 {#march-2021}
 
@@ -99,7 +105,7 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 
 * Alla skärmbilder har uppdaterats för att återspegla ändringar i gränssnitten.
 * Avsnittet Testläge har uppdaterats. [Läs mer](../building-journeys/testing-the-journey.md)
-<!--* A warning has been added in the [email send time optimization](../building-journeys/wait-activity.md) and [predictive fatigue scores](../ai-services/leveraging-fatigue-scores.md) sections. These capabilities are only available to customers who use the [Adobe Experience Platform Data Connector](https://docs.adobe.com/content/help/en/campaign-standard/using/developing/mapping-campaign-and-aep-data/aep-about-data-connector.html).-->
+<!--* A warning has been added in the [email send time optimization](../building-journeys/wait-activity.md) and [predictive fatigue scores](../ai-services/leveraging-fatigue-scores.md) sections. These capabilities are only available to customers who use the [Adobe Experience Platform Data Connector](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/data-connector/aep-about-data-connector.html).-->
 * Stoppade resor kan nu raderas. Relaterade sidor i dokumentationen har uppdaterats.
 * Två färger visas nu när fel upptäcks i en resa. Röd för fel och orange för varningar. [Läs mer](../about/troubleshooting.md)
 * Avsnittet Avancerad uttrycksredigerare har uppdaterats. [Läs mer](../expression/expressionadvanced.md).
