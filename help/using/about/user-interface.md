@@ -2,14 +2,14 @@
 product: adobe campaign
 title: Användargränssnittet
 description: Läs mer om användargränssnittet
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 0d0e74c7-6cb0-4068-a69a-3c01f8b3552d
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: a5ec1c4c5608113bb17dfbdea0587f6bb342099a
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 89%
+source-wordcount: '989'
+ht-degree: 61%
 
 ---
 
@@ -87,58 +87,135 @@ Om användarvänliga namn finns visas fältet som `<friendly-name>(<name>)`. Om 
 >
 >Användarvänliga namn hämtas inte när du väljer fält från en sammanslutning av scheman.
 
-## Använda olika kortkommandon{#section_ksq_zr1_ffb}
+## Tillgänglighet{#accessibility}
 
-Här är de olika kortkommandona som finns i gränssnittet i [!DNL Journey Orchestration].
+Tillgänglighetsfunktionerna i Adobe Journey Optimizer tillhandahålls av Adobe Experience Platform:
 
-_I listan över resor, åtgärder, datakällor eller händelser:_
+* Tangentbordstillgänglighet
+* Färgkontrast
+* Bekräfta att du fyllt i samtliga obligatoriska fält
 
-* Tryck på **c** för att skapa en ny resa, åtgärd, datakälla eller händelse.
+[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target=&quot;_blank&quot;} i Adobe Experience Platform-dokumentationen.
 
-_När du konfigurerar en aktivitet i en resa:_
+Du kan använda följande vanliga kortkommandon i Adobe Journey Optimizer:
 
-Arbetsytan sparas automatiskt. Sparstatus visas längst upp till vänster på arbetsytan.
+| Åtgärd | Genväg |
+| --- | --- |
+| Växla mellan element, avsnitt och menygrupper i användargränssnittet | Tabb |
+| Gå bakåt mellan element, avsnitt och menygrupper i användargränssnittet | Skift+Tabb |
+| Flytta inom avsnitt för att ange fokus till enskilda element | Pil |
+| Markera eller rensa ett element som är i fokus | Enter eller mellanslagstangenten |
+| Avbryt en markering, komprimera en panel eller stänga en dialogruta | Esc |
 
-* Tryck på **Esc** för att stänga konfigurationsfönstret och ignorera ändringarna. Det här är motsvarigheten till knappen **[!UICONTROL Cancel]**.
-* Tryck på **Enter** eller klicka utanför fönstret för att stänga konfigurationsfönstret. Ändringarna sparas. Det här är motsvarigheten till knappen **[!UICONTROL Ok]**.
-* Om du trycker på **Delete** eller på **Backsteg** kan du sedan trycka på **Enter** för att bekräfta borttagningen.
+[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/custom.html){target=&quot;_blank&quot;} i Adobe Experience Platform-dokumentationen.
 
-_I popup-fönster:_
+Du kan använda dessa kortkommandon i vissa delar av Journey Optimizer:
 
-* Tryck på **Esc** för att stänga fönstret (motsvarar knappen **[!UICONTROL Cancel]**).
-* Tryck på **Enter** för att spara eller bekräfta (motsvarar knappen **[!UICONTROL Ok]** eller **[!UICONTROL Save]**).
+<table>
+  <thead>
+    <tr>
+      <th>Gränssnittselement</th>
+      <th>Åtgärd</th>
+      <th>Genväg</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Förteckning över resor, åtgärder, datakällor eller händelser</td>
+    <td>Skapa en resa, en åtgärd, en datakälla eller en händelse</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Researbetsyta med utkaststatus</td>
+    <td>Lägg till en aktivitet från den vänstra paletten vid den första tillgängliga positionen, uppifrån och ned</td>
+    <td>Dubbelklicka på aktiviteten</td>
+  </tr>
+  <tr>
+    <td>Välj alla aktiviteter</td>
+    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
+  </tr>
+  <tr>
+    <td>Ta bort de valda aktiviteterna</td>
+    <td>Ta bort eller Backsteg och bekräfta sedan borttagningen genom att ange</td>
+  </tr>
+  <tr>
+  <td rowspan="3">
 
-_I konfigurationsfönstret för händelser, datakällor eller åtgärder:_
+Konfigurationsruta för dessa element:
 
-* Tryck på **Esc** för att stänga konfigurationsfönstret utan att spara.
-* Tryck på **Enter** för att spara ändringarna och stänga konfigurationsfönstret.
-* Tryck på **Tabb** för att hoppa mellan de olika fälten som ska konfigureras.
+<ul>
+  <li>Aktivitet under en resa</li>
+  <li>Händelse</li>
+  <li>Datakälla</li>
+  <li>Åtgärd</li>
+</ul>
 
-_I den enkla uttrycksredigeraren:_
+</td>
+    <td>Flytta till nästa fält som ska konfigureras</td>
+    <td>Tabb</td>
+  </tr>
+  <tr>
+    <td>Spara ändringar och stäng konfigurationsfönstret</td>
+    <td>Retur</td>
+  </tr>
+  <tr>
+    <td>Ignorera ändringar och stäng konfigurationsfönstret</td>
+    <td>Esc</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Resa i testläge</td>
+    <td>Aktivera eller inaktivera testläget</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>Utlösa en händelse i en händelsebaserad resa</td>
+    <td>E</td>
+  </tr>
+  <tr>
+    <td>
 
-* Dubbelklicka på ett fält till vänster för att lägga till en fråga (motsvarande dra och släpp).
+Utlös en händelse i en segmentbaserad resa för vilken alternativet **[!UICONTROL Single profile at a time]** är aktiverat
 
-_När du bläddrar bland XDM-fält:_
-
-* Om du markerar en &quot;nod&quot; markeras alla fält i noden.
-
-_I alla textområden:_
-
-* Markera texten med tangentkombinationen **Ctrl/Kommando+A**. I nyttolastens förhandsvisning väljs nyttolasten.
-
-_På en skärm med ett sökfält:_
-
-* Markera sökfältet med tangentkombinationen **Ctrl/Kommando+F**.
-
-_På resans arbetsyta:_
-
-* Markera alla aktiviteter med tangentkombinationen **Ctrl/Kommando+A**.
-* Tryck på **Delete** eller på **Backsteg** för att radera en eller flera aktiviteter som är markerade. Därefter kan du trycka på **Enter** för att bekräfta i popup-fönstret.
-* Dubbelklicka på en aktivitet från den vänstra paletten för att lägga till den på den första tillgängliga positionen (uppifrån och ned).
-
-_Under en resa:_
-
-* Tryck på **T** för att aktivera/inaktivera testläget.
-* I en händelsebaserad resa i testläge trycker du på **E** för att aktivera en händelse.
-* Om alternativet **Enskild profil i taget** är markerat i testläge i en segmentbaserad resa trycker du på **P** för att aktivera en händelse.
-* I testläge trycker du på **L** för att visa loggarna.
+</td>
+    <td>P</td>
+  </tr>
+  <tr>
+    <td>Visa testloggarna</td>
+    <td>L</td>
+  </tr>
+<!-- //Ajouter ce raccourci quand il marchera (actuellement, le raccourci Ctrl/Cmd+F du navigateur a priorité sur celui de AJO).//
+  <tr>
+    <td>Page with a search bar</td>
+    <td>Select the search bar</td>
+    <td>Ctrl/Command + F</td>
+  </tr>
+-->
+  <tr>
+    <td>Textfält</td>
+    <td>Markera all text i det markerade fältet</td>
+    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Popup-fönster</td>
+    <td>Spara ändringarna eller bekräfta åtgärden</td>
+    <td>Retur</td>
+  </tr>
+  <tr>
+    <td>Stäng fönstret</td>
+    <td>Esc</td>
+  </tr>
+  <tr>
+    <td>Enkel uttrycksredigerare</td>
+    <td>Markera och lägga till ett fält</td>
+    <td>Dubbelklicka på ett fält</td>
+  </tr>
+  <tr>
+    <td>Bläddra bland XDM-fält</td>
+    <td>Markera alla fält i en nod</td>
+    <td>Markera den överordnade noden</td>
+  </tr>
+  <tr>
+    <td>Förhandsgranska nyttolast</td>
+    <td>Välj nyttolast</td>
+    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
+  </tr>
+</table>
