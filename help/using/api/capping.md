@@ -3,14 +3,14 @@ product: adobe campaign
 title: Beskrivning av API för begränsning
 description: Läs mer om API:t för tak.
 products: journeys
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 6f28e62d-7747-43f5-a360-1d6af14944b6
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: a32a208fcaef9a408c850c0ad74ab44e3eb44709
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 2%
+source-wordcount: '1173'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Under en datakällkonfiguration definierar du en anslutning till ett system för att hämta ytterligare information som ska användas på dina resor, eller för en åtgärdsdefinition konfigurerar du anslutningen till ett tredjepartssystem för att skicka meddelanden eller API-anrop. Varje gång ett API-anrop utförs av Journey efterfrågas API:t för appning, sker anropet via API-motorn. Om det finns en definierad gräns avvisas anropet och det externa systemet överbelastas inte.
 
-För externa datakällor är det maximala antalet anrop per sekund satt till 15. Om antalet anrop överstiger 15 per sekund ignoreras de återstående samtalen. Du kan öka den här gränsen för privata externa datakällor. Kontakta Adobe för att vitlista slutpunkten. Detta är inte möjligt för offentliga externa datakällor. Mer information om bästa praxis och riktlinjer när du integrerar externa system finns på den här [sidan](../about/external-systems.md).
+För externa datakällor är det maximala antalet anrop per sekund satt till 15. Om antalet anrop överstiger 15 per sekund ignoreras de återstående samtalen. Du kan öka den här gränsen för privata externa datakällor. Kontakta Adobe för att inkludera slutpunkten i tillåtelselista. Detta är inte möjligt för offentliga externa datakällor. Mer information om bästa praxis och riktlinjer när du integrerar externa system finns på den här [sidan](../about/external-systems.md).
 
 Mer information om åtgärder och konfiguration av datakälla finns i [Om åtgärder](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/action.html) eller [Om datakällor](https://experienceleague.adobe.com/docs/journeys/using/data-source-journeys/about-data-sources.html)
 
