@@ -2,14 +2,14 @@
 product: adobe campaign
 title: Versionsinformation
 description: Läs om versionsinformation
-feature: Resor
+feature: Journeys
 role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: 6300a606d49a65a5527f9ba29a7efdfe782c7334
+source-git-commit: e71d641888caa9385d078d9c85e073b5f1ed743f
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 59%
+source-wordcount: '2756'
+ht-degree: 58%
 
 ---
 
@@ -17,6 +17,15 @@ ht-degree: 59%
 
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
+
+## Versionen från augusti 2021 {#august-2021-release}
+
+### Förbättringar
+
+**Resor**
+
+* **Dynamiska rubriker**  - Nu kan du skicka dynamiska data i HTTP-rubrikparametrar. De här parametrarna kan användas av de integreringssystem som tar emot resans åtgärd via HTTP-anrop, till exempel tidsstämpel eller spårnings-ID. [Läs mer](../action/url-configuration.md)
+* **Dynamiska URL-sökvägar**  - Du kan nu ställa in dynamiska URL-sökvägar för anpassade åtgärder. [Läs mer](../action/url-configuration.md)
 
 ## juliversion 2021 {#july-2021-release}
 
@@ -41,7 +50,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 
 * Fältet **Cachevaraktighet** har tagits bort från konfigurationspanelen för datakällan. [Läs mer](../datasource/about-data-sources.md)
 
-## Juniversion 2021 {#june-2021-release}
+## Version från juni 2021 {#june-2021-release}
 
 <table>
 <thead>
@@ -82,7 +91,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 * I testläge har fältet **Nyckel** som används för att definiera testprofilens ID ändrats till **Profilidentifierare** på skärmen **Händelsekonfiguration** för en bättre användarupplevelse. [Läs mer](../building-journeys/testing-the-journey.md).
 * För reaktionshändelser kan tidsgränsen nu bara anges mellan 40 sekunder och 30 dagar. När du testar en resa som använder en reaktionshändelse är standardläget **[!UICONTROL Wait time]** och minimivärdet 40 sekunder. [Läs mer](../building-journeys/reaction-events.md).
 
-## Utgåva från februari 2021 {#february-2021-release}
+## Version från februari 2021 {#february-2021-release}
 
 <table>
 <thead>
