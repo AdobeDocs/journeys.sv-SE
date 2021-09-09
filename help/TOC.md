@@ -6,9 +6,9 @@ user-guide-description: Tillhandahåller anvisningar för hur man implementerar 
 index: true
 feature: Journeys
 source-git-commit: 7ce4ddec60f62662d67351b8ca70d7763e76b977
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '421'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 + Börja med [!DNL Journey Orchestration] {#starting-with-journeys}
    + [Om [!DNL Journey Orchestration]](using/about/about-journey-orchestration.md)
    + [Begränsningar](using/about/limitations.md)
-   + [Komma igång](using/about/get-started.md)
+   + [Kom igång](using/about/get-started.md)
    + [Användargränssnitt](using/about/user-interface.md)
    + [Åtkomsthantering](using/about/access-management.md)
    + [Felsökning](using/about/troubleshooting.md)
@@ -52,7 +52,7 @@ ht-degree: 98%
    + Använda ett tredjepartssystem {#action-third-party}
       + [Om anpassad åtgärdskonfiguration](using/action/about-custom-action-configuration.md)
       + [URL-konfiguration](using/action/url-configuration.md)
-      + [Definiera åtgärdsparametrar](using/action/defining-the-message-parameters.md)
+      + [Definiera åtgärdsparametrarna](using/action/defining-the-message-parameters.md)
 + Använda segment {#configuring-segment}
    + [Om segment](using/segment/about-segments.md)
    + [Skapa ett segment](using/segment/creating-a-segment.md)
@@ -162,7 +162,7 @@ ht-degree: 98%
          + [isEmpty](using/functions/functionisempty.md)
          + [isNotEmpty](using/functions/functionisnotempty.md)
          + [lastIndexOf](using/functions/functionlastindexof.md)
-         + [length](using/functions/functionlength.md)
+         + [längd](using/functions/functionlength.md)
          + [nedre](using/functions/functionlower.md)
          + [matchRegExp](using/functions/functionmatchregexp.md)
          + [notEqualWithIgnoreCase](using/functions/functionnotequalignorecase.md)
