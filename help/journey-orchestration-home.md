@@ -3,13 +3,13 @@ keywords: Resor;hem;populära ämnen
 product: adobe campaign
 title: Produktdokumentation om Journey Orchestration
 description: Produktdokumentation om Journey Orchestration
-feature: Resor
+feature: Journeys
 role: User
 level: Beginner
 exl-id: b1964a3c-9ed4-4ec4-b399-567b1d6a120f
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
-workflow-type: tm+mt
-source-wordcount: '249'
+workflow-type: ht
+source-wordcount: '248'
 ht-degree: 100%
 
 ---
