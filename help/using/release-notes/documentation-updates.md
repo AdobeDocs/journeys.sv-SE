@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: ac5d2cec-0b48-4863-afe3-19ac5f61c9fd
 source-git-commit: e5c0db2e1f85ea72fd54f91e4a26cc287377fb0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '836'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,8 +20,8 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 
 ## Augusti 2021
 
-* Konfigurationsproceduren för anpassade åtgärder med dynamiska URL-sökvägar och dynamiska rubriker har uppdaterats. [Läs mer](../action/url-configuration.md)
-* Ett avsnitt om tillgänglighetsfunktioner har lagts till. [Läs mer](../about/user-interface.md#accessibility)
+* Konfigurationsproceduren för anpassade åtgärder med dynamiska URL-sökvägar och dynamiska huvuden har uppdaterats. [Läs mer](../action/url-configuration.md)
+* Ett avsnitt om hjälpmedelsfunktioner har lagts till. [Läs mer](../about/user-interface.md#accessibility)
 * Ett avsnitt om metoder för segmentutvärdering har lagts till. [Läs mer](../segment/about-segments.md#evaluation-method-in-journey-orchestration)
 
 ## Mars 2021 {#march-2021}
