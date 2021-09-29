@@ -2,14 +2,14 @@
 product: adobe campaign
 title: Funktioner
 description: Läs om funktioner
-feature: Resor
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: b514d2e9-1444-46d5-a1ac-3591e62807c1
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 0b4d925410e1ab4895f27455eb082dd9cc305cff
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 74%
+source-wordcount: '175'
+ht-degree: 73%
 
 ---
 
@@ -38,6 +38,7 @@ Här är en lista över funktioner som stöds.
 | Aggregera | [min](../functions/functionmin.md) |
 | Aggregera | [sum](../functions/functionsum.md) |
 | Konvertering | [toBool](../functions/functiontobool.md) |
+| Konvertering | [toDateOnly](../functions/functiontodateonly.md) |
 | Konvertering | [toDateTime](../functions/functiontodatetime.md) |
 | Konvertering | [toDateTimeOnly](../functions/functiontodatetimeonly.md) |
 | Konvertering | [toDecimal](../functions/functiontodecimal.md) |
@@ -58,8 +59,11 @@ Här är en lista över funktioner som stöds.
 | Datum | [setHours](../functions/functionsethours.md) |
 | Datum | [setDays](../functions/functionsetdays.md) |
 | Lista | [distinct](../functions/functiondistinct.md) |
-| Lista | [clearCount](../functions/functiondistinctcount.md) |
+| Lista | [distinctWithNull](../functions/functiondistinctwithnull.md) |
+| Lista | [filter](../functions/functionfilter.md) |
+| Lista | [getListItem](../functions/functiongetlistitem.md) |
 | Lista | [in](../functions/functionin.md) |
+| Lista | [korsa](../functions/functionintersect.md) |
 | Lista | [listSize](../functions/functionlistsize.md) |
 | Lista | [serializeList](../functions/functionserializelist.md) |
 | Lista | [sort](../functions/functionsort.md) |
@@ -75,7 +79,7 @@ Här är en lista över funktioner som stöds.
 | Sträng | [isEmpty](../functions/functionisempty.md) |
 | Sträng | [isNotEmpty](../functions/functionisnotempty.md) |
 | Sträng | [lastIndexOf](../functions/functionlastindexof.md) |
-| Sträng | [length](../functions/functionlength.md) |
+| Sträng | [längd](../functions/functionlength.md) |
 | Sträng | [lower](../functions/functionlower.md) |
 | Sträng | [matchRegExp](../functions/functionmatchregexp.md) |
 | Sträng | [notEqualWithIgnoreCase](../functions/functionnotequalignorecase.md) |

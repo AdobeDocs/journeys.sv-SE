@@ -6,10 +6,10 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: e71d641888caa9385d078d9c85e073b5f1ed743f
+source-git-commit: a60640f91e80becd2769d647b762ca2225f9e9b2
 workflow-type: tm+mt
-source-wordcount: '2756'
-ht-degree: 58%
+source-wordcount: '2965'
+ht-degree: 54%
 
 ---
 
@@ -18,7 +18,34 @@ ht-degree: 58%
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
 
-## Versionen från augusti 2021 {#august-2021-release}
+## September 2021-utgåvan {#september-2021-release}
+
+<table>
+<thead>
+<tr>
+<th><strong>Skicka listor med data dynamiskt med anpassade åtgärder</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du skicka samlingar eller en lista med data i dina anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Två sorters samlingar stöds: enkla samlingar och objektsamlingar. Tidigare skapade anpassade åtgärder fortsätter att fungera. </p>
+<p>Mer information om samlingar finns i <a href="../usecase/collections.md">den detaljerade dokumentationen</a>. </p>
+<p>Funktionerna för att filtrera och överlappa har lagts till i listan med funktioner som är tillgängliga i den avancerade uttrycksredigeraren. Det ger fler möjligheter att filtrera och jämföra samlingar.</p>
+<p>Läs dokumentationen om funktionerna <a href="../functions/functionfilter.md">filter</a> och <a href="../functions/functionintersect.md">överlappa</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Förbättringar
+
+* Systemgenererade scheman och datauppsättningar som har skapats under etablering av steghändelser är nu i skrivskyddat läge, vilket skyddar mot oavsiktliga ändringar av viktiga scheman. [Läs mer](../building-journeys/sharing-overview.md)
+* Etikettera aktiviteten **Wait** med en etikett som ska visas på arbetsytan. Etiketten används också i loggar för rapportering och testläge för att tydligt identifiera vad du gör. [Läs mer](../building-journeys/using-the-journey-designer.md)
+* Hitta händelser och åtgärder snabbare genom att filtrera element i kategorierna **Händelser** och **Åtgärd** med hjälp av sökning. Orchestration-aktiviteter är inte längre filtrerade. [Läs mer](../building-journeys/using-the-journey-designer.md)
+* När du definierar ett händelse-ID-villkor i en regelbaserad operator är operatorn &quot;contains&quot; nu tillgänglig för strängtyper av fält. [Läs mer](../event/about-creating.md)
+
+## Version från augusti 2021 {#august-2021-release}
 
 ### Förbättringar
 
@@ -27,7 +54,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 * **Dynamiska rubriker**  - Nu kan du skicka dynamiska data i HTTP-rubrikparametrar. De här parametrarna kan användas av de integreringssystem som tar emot resans åtgärd via HTTP-anrop, till exempel tidsstämpel eller spårnings-ID. [Läs mer](../action/url-configuration.md)
 * **Dynamiska URL-sökvägar**  - Du kan nu ställa in dynamiska URL-sökvägar för anpassade åtgärder. [Läs mer](../action/url-configuration.md)
 
-## juliversion 2021 {#july-2021-release}
+## Juli 2021 Version {#july-2021-release}
 
 <table>
 <thead>
@@ -260,7 +287,7 @@ Det går inte längre att använda aktiviteten **Segmentkvalificering** i en res
 </tbody>
 </table>
 
-## Versionen från augusti 2020 {#august-release}
+## Version från augusti 2020 {#august-release}
 
 ### GA-uppdateringar{#august-ga-update}
 

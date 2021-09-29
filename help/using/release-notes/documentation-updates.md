@@ -6,10 +6,10 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: ac5d2cec-0b48-4863-afe3-19ac5f61c9fd
-source-git-commit: e5c0db2e1f85ea72fd54f91e4a26cc287377fb0e
-workflow-type: ht
-source-wordcount: '836'
-ht-degree: 100%
+source-git-commit: ed09f77617ae193ef7a217222f831f17ffc6b07c
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 93%
 
 ---
 
@@ -17,6 +17,20 @@ ht-degree: 100%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Orchestration].
 Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om [!DNL Journey Orchestration].
+
+## September 2021
+
+* Följande funktionssidor har uppdaterats: [sökter](../functions/functionsethours.md), [getListItem](../functions/functiongetlistitem.md), [inSegment](../functions/functioninsegment.md)
+
+* Följande funktioner har lagts till: [filter](../functions/functionfilter.md), [överlappa](../functions/functionintersect.md), [toDateOnly](../functions/functiontodateonly.md)
+
+* Datumtypen dateOnly har lagts till i uttrycksredigerarens dokumentation. [Läs mer](../expression/data-types.md)
+
+* Lagt till information om varaktighet för anpassad åtgärdscache. [Läs mer](../datasource/external-data-sources.md#section_wjp_nl5_nhb)
+
+* Lagt till information om standardportar för anpassade åtgärder. [Läs mer](../action/url-configuration.md)
+
+* Vanliga exempel har lagts till för att fråga efter händelser för resesteg i datasjön. [Läs mer](../building-journeys/query-examples.md)
 
 ## Augusti 2021
 

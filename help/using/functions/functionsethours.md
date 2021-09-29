@@ -2,14 +2,14 @@
 product: adobe campaign
 title: setHours
 description: Läs mer om funktionen setHours
-feature: Resor
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: d4fe578f-c3be-4c8b-98b3-090dab0c41d1
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 51536b20e81cde1a7fdd7f4654d70bfe6176b0d4
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 10%
+source-wordcount: '101'
+ht-degree: 6%
 
 ---
 
@@ -51,4 +51,4 @@ Returnerar 2010-12-12T04:11:00Z.
 
 `setHours(nowWithDelta(1, "days"), 20)`
 
-Returnerar imorgon klockan åtta.
+Returnerar imorgon kl. 8:XY PM, XY är minuter vid tidpunkten för den aktuella tidsutvärderingen. Om utvärderingen görs kl. 02.45 blir den returnerade tiden 08.45.

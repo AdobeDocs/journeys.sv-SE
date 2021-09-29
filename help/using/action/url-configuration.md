@@ -6,10 +6,10 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: e7cba6c4-a231-44f9-927a-10115e7ab1dd
-source-git-commit: e71d641888caa9385d078d9c85e073b5f1ed743f
+source-git-commit: 2a93bce42ea9f1f21d70c68da3dbc36844dafd1b
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 5%
+source-wordcount: '328'
+ht-degree: 4%
 
 ---
 
@@ -25,12 +25,14 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 
    * Om URL:en innehåller en dynamisk sökväg anger du bara den statiska delen av URL:en, det vill säga schemat, värden, porten och, eventuellt, en statisk del av sökvägen.
 
-      Exempel: `https://xxx.yyy.com:8080/somethingstatic/`
+      Exempel: `https://xxx.yyy.com/somethingstatic/`
 
       Du anger den dynamiska sökvägen för URL:en när du lägger till den anpassade åtgärden på en resa. [Läs mer](../building-journeys/using-custom-actions.md).
    >[!NOTE]
    >
    >Av säkerhetsskäl rekommenderar vi starkt att du använder HTTPS-schemat för URL:en. Vi tillåter inte användning av Adobe-adresser som inte är offentliga och användning av IP-adresser.
+   >
+   >Endast standardportar tillåts när en anpassad åtgärd definieras: 80 för http och 443 för https.
 
 1. Markera samtalet **[!UICONTROL Method]**: det kan vara antingen **[!UICONTROL POST]** eller **[!UICONTROL PUT]**.
 1. I avsnittet **[!UICONTROL Headers]** anger du HTTP-rubrikerna för det begärandemeddelande som ska skickas till den externa tjänsten:

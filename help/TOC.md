@@ -5,10 +5,10 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Journeys
-source-git-commit: 7ce4ddec60f62662d67351b8ca70d7763e76b977
-workflow-type: ht
-source-wordcount: '421'
-ht-degree: 100%
+source-git-commit: 5c3cc59d83b4b88c8ba9bde1bb8ea15a29e069be
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 97%
 
 ---
 
@@ -93,6 +93,7 @@ ht-degree: 100%
       + [datafält för hämtning för händelsen journeyStep](using/building-journeys/sharing-fetch-fields.md)
       + [identitetsfält för händelsen journeyStep](using/building-journeys/sharing-identity-fields.md)
       + [resefält](using/building-journeys/sharing-journey-fields.md)
+      + [Exempel på frågor](using/building-journeys/query-examples.md)
 + Använda den avancerade uttrycksredigeraren {#building-advanced-conditions-journeys}
    + [Om den avancerade uttrycksredigeraren](using/expression/expressionadvanced.md)
    + Syntax {#syntax}
@@ -120,6 +121,7 @@ ht-degree: 100%
          + [sum](using/functions/functionsum.md)
       + Konvertering {#conversion}
          + [toBool](using/functions/functiontobool.md)
+         + [toDateOnly](using/functions/functiontodateonly.md)
          + [toDateTime](using/functions/functiontodatetime.md)
          + [toDateTimeOnly](using/functions/functiontodatetimeonly.md)
          + [toDecimal](using/functions/functiontodecimal.md)
@@ -143,8 +145,10 @@ ht-degree: 100%
       + Lista {#list}
          + [distinct](using/functions/functiondistinct.md)
          + [distinctWithNull](using/functions/functiondistinctwithnull.md)
+         + [filter](using/functions/functionfilter.md)
          + [getListItem](using/functions/functiongetlistitem.md)
          + [in](using/functions/functionin.md)
+         + [korsa](using/functions/functionintersect.md)
          + [listSize](using/functions/functionlistsize.md)
          + [serializeList](using/functions/functionserializelist.md)
          + [sort](using/functions/functionsort.md)
@@ -194,5 +198,6 @@ ht-degree: 100%
       + [Konfigurera datakällorna](using/usecase/configuring-the-data-sources.md)
       + [Bygga resan](using/usecase/building-the-journey.md)
    + [Skicka ett meddelande med Campaign v7/v8](using/usecase/campaign-classic-use-case.md)
+   + [Skicka samlingar dynamiskt med anpassade åtgärder](using/usecase/collections.md)
 + Arbeta med API:er{#working-with-apis}
    + [Begränsa API:er](using/api/capping.md)

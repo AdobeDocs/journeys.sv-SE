@@ -2,13 +2,13 @@
 product: adobe campaign
 title: Datatyper
 description: Lär dig mer om datatyper i avancerade uttryck
-feature: Resor
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 343f61b8-2315-4971-8b2b-6aa815bd9ced
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 0b4d925410e1ab4895f27455eb082dd9cc305cff
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '636'
 ht-degree: 5%
 
 ---
@@ -119,15 +119,47 @@ false
 true
 ```
 
+## dateOnly {#date-only}
+
+**Beskrivning**
+
+Representerar endast ett datum utan tidszon, vilket visas som en dag i månaden.
+
+Det är en beskrivning av datumet, som används för födelsedagar.
+
+JSON-format: Sträng.
+
+Formatet är: YYYY-MM-DD (ISO-8601), till exempel: &quot;2021-03-11&quot;.
+
+Den kan kapslas in i en toDateOnly-funktion.
+
+Det använder DateTimeFormatter ISO_LOCAL_DATE_TIME för att avserialisera och serialisera värdet. [Läs mer](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6)
+
+**Litteral representation**
+
+```
+date("<dateOnly in ISO-8601 format>")  
+```
+
+**Exempel**
+
+```
+date("2021-02-19")
+```
+
 ## dateTimeOnly {#date-time-only}
 
 **Beskrivning**
 
 Representerar en datumtid utan tidszon, som visas som en millisekund för år-månad-timme-minut-sekund-millisekund.
 
+JSON-format: Sträng.
+
 Den lagrar inte eller representerar en tidszon. I stället är det en beskrivning av datumet, som används för födelsedagar, kombinerat med lokal tid enligt en väggklocka.
 
 Det kan inte representera en instans på tidslinjen utan ytterligare information som en förskjutning eller tidszon.
+
+Den kan kapslas in i en toDateTimeOnly-funktion.
 
 Serialiseringsformat: ISO-8601 extended offset date-time format.
 
@@ -136,7 +168,14 @@ Det använder DateTimeFormatter ISO_LOCAL_DATE_TIME för att avserialisera och s
 **Litteral representation**
 
 ```
-toDateTimeOnly("<dateTimeOnly in ISO-8601 format>")  
+date("<dateTimeOnly in ISO-8601 format>")  
+```
+
+**Exempel**
+
+```
+date("2021-02-19T00.00.000")
+date("2021-02-19T00.00")
 ```
 
 ## dateTime {#date-time}
@@ -149,7 +188,7 @@ Den kan visas som ett ögonblick i tid med ytterligare information om förskjutn
 
 JSON-format: Sträng.
 
-Den måste kapslas in i en toDateTime-funktion.
+Den kan kapslas in i en toDateTime-funktion.
 
 Serialiseringsformat: ISO-8601 extended offset date-time format.
 
@@ -166,10 +205,18 @@ toDateTime("<dateTime in ISO-8601 format>")
 ```
 
 ```
+date("<dateTime in ISO-8601 format>")
+```
+
+```
 toDateTime(<integer value of an epoch in milliseconds>)
 ```
 
 **Exempel**
+
+```
+date("2021-02-19T00.00.000Z")
+```
 
 ```
 toDateTime("1977-04-22T06:00:00Z")
