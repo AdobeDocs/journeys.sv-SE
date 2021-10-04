@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Skicka samlingar dynamiskt med anpassade åtgärder
 description: Skicka ett meddelande med Campaign v7/v8
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
-source-git-commit: 5fa7df4f2e778c0b0fd31d81edab34e86ee40c47
+source-git-commit: 8225167c686112f737d2b6ca22237324a6189b09
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '434'
 ht-degree: 4%
 
 ---
@@ -148,7 +148,7 @@ Du ser att&quot;products&quot; är en array med två objekt. Du måste ha minst 
 
    ![](../assets/uc-collection-4.png)
 
-För arrayfältet kan du även använda den avancerade uttrycksredigeraren för att utföra datamanipulering. I följande exempel använder vi funktionerna [filter](https://git.corp.adobe.com/AdobeDocs/journeys.en/blob/fvi-21.9/help/using/functions/functionfilter.md) och [överlappa](https://git.corp.adobe.com/AdobeDocs/journeys.en/blob/fvi-21.9/help/using/functions/functiontintersect.md):
+För arrayfältet kan du även använda den avancerade uttrycksredigeraren för att utföra datamanipulering. I följande exempel använder vi funktionerna [filter](../functions/functionfilter.md) och [överlappa](../functions/functiontintersect.md):
 
 ![](../assets/uc-collection-5.png)
 
