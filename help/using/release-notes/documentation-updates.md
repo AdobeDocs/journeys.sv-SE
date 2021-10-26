@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: ac5d2cec-0b48-4863-afe3-19ac5f61c9fd
 source-git-commit: ed09f77617ae193ef7a217222f831f17ffc6b07c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,17 +20,17 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 
 ## September 2021
 
-* Följande funktionssidor har uppdaterats: [sökter](../functions/functionsethours.md), [getListItem](../functions/functiongetlistitem.md), [inSegment](../functions/functioninsegment.md)
+* Följande funktionssidor har uppdaterats: [sethours](../functions/functionsethours.md), [getListItem](../functions/functiongetlistitem.md), [inSegment](../functions/functioninsegment.md)
 
-* Följande funktioner har lagts till: [filter](../functions/functionfilter.md), [överlappa](../functions/functionintersect.md), [toDateOnly](../functions/functiontodateonly.md)
+* Följande funktioner har lagts till: [filter](../functions/functionfilter.md), [intersect](../functions/functionintersect.md), [toDateOnly](../functions/functiontodateonly.md)
 
-* Datumtypen dateOnly har lagts till i uttrycksredigerarens dokumentation. [Läs mer](../expression/data-types.md)
+* Datumtypen dateOnly har lagts till i dokumentationen för utrycksredigering. [Läs mer](../expression/data-types.md)
 
-* Lagt till information om varaktighet för anpassad åtgärdscache. [Läs mer](../datasource/external-data-sources.md#section_wjp_nl5_nhb)
+* Tillagda uppgifter om anpassad cachelängd på åtgärd. [Läs mer](../datasource/external-data-sources.md#section_wjp_nl5_nhb)
 
-* Lagt till information om standardportar för anpassade åtgärder. [Läs mer](../action/url-configuration.md)
+* Tillagd information om standardportar för anpassade åtgärder. [Läs mer](../action/url-configuration.md)
 
-* Vanliga exempel har lagts till för att fråga efter händelser för resesteg i datasjön. [Läs mer](../building-journeys/query-examples.md)
+* Tillagda vanligt förekommande exempel till frågor om Journey Step Events i Data Lake. [Läs mer](../building-journeys/query-examples.md)
 
 ## Augusti 2021
 
