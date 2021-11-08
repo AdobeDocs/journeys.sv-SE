@@ -6,7 +6,7 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: b514d2e9-1444-46d5-a1ac-3591e62807c1
-source-git-commit: 0b4d925410e1ab4895f27455eb082dd9cc305cff
+source-git-commit: 5225045f02fb1b2a8505756d9d7f6f60a32b3ed6
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 73%
@@ -71,10 +71,10 @@ Här är en lista över funktioner som stöds.
 | Matematik | [round](../functions/functionround.md) |
 | Sträng | [concat](../functions/functionconcat.md) |
 | Sträng | [contain](../functions/functioncontain.md) |
-| Sträng | [containWithIgnoreCase](../functions/functioncontainwithignorecase.md) |
+| Sträng | [containIgnoreCase](../functions/functioncontainwithignorecase.md) |
 | Sträng | [endWith](../functions/functionendwith.md) |
 | Sträng | [endWithIgnoreCase](../functions/functionendwithignorecase.md) |
-| Sträng | [equalWithIgnoreCase](../functions/functionequalignorecase.md) |
+| Sträng | [equalIgnoreCase](../functions/functionequalignorecase.md) |
 | Sträng | [indexOf](../functions/functionindexof.md) |
 | Sträng | [isEmpty](../functions/functionisempty.md) |
 | Sträng | [isNotEmpty](../functions/functionisnotempty.md) |
@@ -82,7 +82,7 @@ Här är en lista över funktioner som stöds.
 | Sträng | [längd](../functions/functionlength.md) |
 | Sträng | [lower](../functions/functionlower.md) |
 | Sträng | [matchRegExp](../functions/functionmatchregexp.md) |
-| Sträng | [notEqualWithIgnoreCase](../functions/functionnotequalignorecase.md) |
+| Sträng | [notEqualIgnoreCase](../functions/functionnotequalignorecase.md) |
 | Sträng | [replace](../functions/functionreplace.md) |
 | Sträng | [replaceAll](../functions/functionreplaceall.md) |
 | Sträng | [startWith](../functions/functionstartwith.md) |

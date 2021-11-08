@@ -4,9 +4,9 @@ solution: Journey Orchestration
 title: Skicka samlingar dynamiskt med anpassade åtgärder
 description: Skicka ett meddelande med Campaign v7/v8
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
-source-git-commit: ded8f65e7210c252f59ec26150daaa964c7a6a77
+source-git-commit: 358fddd8e5c2ca80532ff2b74dc9627ffdc8837e
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '424'
 ht-degree: 4%
 
 ---
@@ -52,23 +52,6 @@ Du kan skicka en samling i anpassade åtgärdsparametrar som fylls i dynamiskt v
    ```
 
 ## Begränsningar {#limitations}
-
-* Matriser med objekt som innehåller underobjekt stöds inte. Exempel:
-
-   ```
-   {
-   "products":[
-     {
-        "id":"productA",
-        "name":"A",
-        "details": {
-        "color":"blue"
-        },
-        "price":20.0
-     }
-    ]
-   }
-   ```
 
 * Kapslade arrayer med objekt i en objektarray stöds för närvarande inte. Exempel:
 
@@ -118,7 +101,7 @@ Du ser att&quot;products&quot; är en array med två objekt. Du måste ha minst 
 
 1. Skapa en anpassad åtgärd. Läs [den här sidan](../action/about-custom-action-configuration.md).
 
-1. Klistra in JSON-exemplet i **[!UICONTROL Action parameters]**-avsnittet. Den visade strukturen är statisk: när du klistrar in nyttolasten definieras alla fält som konstanter.
+1. I **[!UICONTROL Action parameters]** -avsnittet, klistra in JSON-exemplet. Den visade strukturen är statisk: när du klistrar in nyttolasten definieras alla fält som konstanter.
 
    ![](../assets/uc-collection-1.png)
 
@@ -140,7 +123,7 @@ Du ser att&quot;products&quot; är en array med två objekt. Du måste ha minst 
 
 1. Skapa din resa och lägg till den anpassade åtgärd du skapade. Läs [den här sidan](../building-journeys/using-custom-actions.md).
 
-1. I avsnittet **[!UICONTROL Action parameters]** definierar du arrayparametern (&quot;products&quot; in our example) med den avancerade uttrycksredigeraren.
+1. I **[!UICONTROL Action parameters]** definierar du arrayparametern (&quot;products&quot; in our example) med den avancerade uttrycksredigeraren.
 
    ![](../assets/uc-collection-3.png)
 
@@ -148,7 +131,7 @@ Du ser att&quot;products&quot; är en array med två objekt. Du måste ha minst 
 
    ![](../assets/uc-collection-4.png)
 
-För arrayfältet kan du även använda den avancerade uttrycksredigeraren för att utföra datamanipulering. I följande exempel använder vi funktionerna [filter](../functions/functionfilter.md) och [överlappa](../functions/functionintersect.md):
+För arrayfältet kan du även använda den avancerade uttrycksredigeraren för att utföra datamanipulering. I följande exempel använder vi [filter](../functions/functionfilter.md) och [korsa](../functions/functionintersect.md) funktioner:
 
 ![](../assets/uc-collection-5.png)
 

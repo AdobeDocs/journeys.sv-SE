@@ -2,14 +2,14 @@
 product: adobe campaign
 title: Villkorlig instruktion (if, then, else)
 description: Läs om villkorlig instruktion
-feature: Resor
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 48fb4944-5b78-4ccd-9b9b-ffe0719e7c21
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 9c33474a72542b6ad1d1ae0854622dfd7575f2d9
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 1%
+source-wordcount: '161'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ Den villkorliga instruktionen (if, then, else) stöds i den avancerade redigerar
 >
 >Parenteser krävs runt alla uttryck.
 
-```
+```json
 if  (<expression1>)
 then
    (<expression2>)
@@ -33,11 +33,11 @@ else
    (<expression3>)
 ```
 
-`<expression1>` måste returnera ett  **booleskt värde**.
+`<expression1>` måste returnera en **boolesk**.
 
-`<expression2>` och  `<expression3>` måste ha samma typ eller kompatibla typer. De signaturer och returtyper som stöds är:
+`<expression2>` och `<expression3>` måste ha samma typ eller kompatibla typer. De signaturer och returtyper som stöds är:
 
-```
+```json
 boolean,boolean : boolean
 dateTime,dateTime : dateTime
 dateTimeOnly,dateTimeOnly : dateTimeOnly
@@ -49,6 +49,7 @@ string,string : string
 listBoolean,listBoolean : listBoolean
 listDateTime,listDateTime : listDateTime
 listDateTimeOnly,listDateTimeOnly : listDateTimeOnly
+listDateOnly,listDateOnly : listDateOnly
 listDecimal,listDecimal : listDecimal
 listInteger,listInteger : listInteger
 listString,listString : listString
@@ -60,7 +61,7 @@ Med den villkorliga instruktionen kan du optimera arbetsflödet för resan genom
 
 Exempel för en åtgärdsaktivitet (för ett fält som förväntar en sträng som ett resultat av den villkorliga instruktionen):
 
-```
+```json
 if (startWithIgnoreCase(@{eventiOSPushPermissionAllowed.device.model}, 'iPad') or startWithIgnoreCase(@{eventiOSPushPermissionAllowed.device.model}, 'iOS'))
 then
    ('apns')

@@ -5,10 +5,10 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Journeys
-source-git-commit: 5c3cc59d83b4b88c8ba9bde1bb8ea15a29e069be
-workflow-type: ht
-source-wordcount: '433'
-ht-degree: 100%
+source-git-commit: b557e94076bc7ce5c212246ddf313248ca10dd60
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 96%
 
 ---
 
@@ -88,11 +88,14 @@ ht-degree: 100%
    + [Publicera resan](using/building-journeys/publishing-the-journey.md)
    + Dela resesteg med Adobe Experience Platform {#sharing-journey-steps}
       + [Översikt över att dela steg i resan](using/building-journeys/sharing-overview.md)
-      + [vanliga fält för händelsen journeySteps](using/building-journeys/sharing-common-fields.md)
-      + [fält för händelseexekvering för händelsen journeyStep](using/building-journeys/sharing-execution-fields.md)
-      + [datafält för hämtning för händelsen journeyStep](using/building-journeys/sharing-fetch-fields.md)
-      + [identitetsfält för händelsen journeyStep](using/building-journeys/sharing-identity-fields.md)
-      + [resefält](using/building-journeys/sharing-journey-fields.md)
+      + [Stega händelsefältslista](using/building-journeys/sharing-field-list.md)
+      + Händelsefält för äldre steg {#legacy-step-event-fields}
+         + [Om äldre fält](using/building-journeys/sharing-legacy-fields.md)
+         + [vanliga fält för händelsen journeySteps](using/building-journeys/sharing-common-fields.md)
+         + [fält för händelseexekvering för händelsen journeyStep](using/building-journeys/sharing-execution-fields.md)
+         + [datafält för hämtning för händelsen journeyStep](using/building-journeys/sharing-fetch-fields.md)
+         + [identitetsfält för händelsen journeyStep](using/building-journeys/sharing-identity-fields.md)
+         + [resefält](using/building-journeys/sharing-journey-fields.md)
       + [Exempel på frågor](using/building-journeys/query-examples.md)
 + Använda den avancerade uttrycksredigeraren {#building-advanced-conditions-journeys}
    + [Om den avancerade uttrycksredigeraren](using/expression/expressionadvanced.md)
@@ -158,10 +161,10 @@ ht-degree: 100%
       + Sträng {#string}
          + [concat](using/functions/functionconcat.md)
          + [contain](using/functions/functioncontain.md)
-         + [containWithIgnoreCase](using/functions/functioncontainwithignorecase.md)
+         + [containIgnoreCase](using/functions/functioncontainwithignorecase.md)
          + [endWith](using/functions/functionendwith.md)
          + [endWithIgnorecase](using/functions/functionendwithignorecase.md)
-         + [equalWithIgnoreCase](using/functions/functionequalignorecase.md)
+         + [equalIgnoreCase](using/functions/functionequalignorecase.md)
          + [indexOf](using/functions/functionindexof.md)
          + [isEmpty](using/functions/functionisempty.md)
          + [isNotEmpty](using/functions/functionisnotempty.md)
@@ -169,7 +172,7 @@ ht-degree: 100%
          + [längd](using/functions/functionlength.md)
          + [nedre](using/functions/functionlower.md)
          + [matchRegExp](using/functions/functionmatchregexp.md)
-         + [notEqualWithIgnoreCase](using/functions/functionnotequalignorecase.md)
+         + [notequalIgnoreCase](using/functions/functionnotequalignorecase.md)
          + [ersätta](using/functions/functionreplace.md)
          + [replaceAll](using/functions/functionreplaceall.md)
          + [dela](using/functions/functionsplit.md)

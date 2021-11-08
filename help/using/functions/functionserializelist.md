@@ -2,13 +2,13 @@
 product: adobe campaign
 title: serializeList
 description: Läs mer om funktionen serializeList
-feature: Resor
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 84912d38-32ee-4cfe-8cb4-bad12f9c52af
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 9c33474a72542b6ad1d1ae0854622dfd7575f2d9
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '88'
 ht-degree: 19%
 
 ---
@@ -39,6 +39,7 @@ Lista
 | Lista | listDuration |
 | Lista | listDateTime |
 | Lista | listDateTimeOnly |
+| Lista | listDateOnly |
 
 ## Signatur och returtyp
 
@@ -53,6 +54,8 @@ Lista
 `serializeList(<listDateTimeOnly>,<string>,<boolean>)`
 
 `serializeList(<listDateTime>,<string>,<boolean>)`
+
+`serializeList(<listDateOnly>,<string>,<boolean>)`
 
 `serializeList(<listDuration>,<string>,<boolean>)`
 

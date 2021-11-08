@@ -2,13 +2,13 @@
 product: adobe campaign
 title: Funktioner för att hantera samlingar
 description: Läs mer om datatyper i samlingshanteringsfunktioner
-feature: Resor
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: e80b04fe-b2d3-4c1b-ba22-7e37a9ad1d57
-source-git-commit: e0bf1a6f9c160b72da28feaca1ca52665f365630
+source-git-commit: 579e5a0dbdc11369248c2683c399b090130a7262
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '584'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Uttrycksspråket innehåller även en uppsättning funktioner för att fråga ef
 
 Dessa funktioner förklaras nedan. I följande exempel använder vi händelsenyttolasten som innehåller en samling:
 
-```
+```json
                 { 
    "_experience":{ 
       "campaign":{ 
@@ -59,23 +59,23 @@ Dessa funktioner förklaras nedan. I följande exempel använder vi händelsenyt
 }
 ```
 
-**Funktionen &quot;all(`<condition>`)&quot;**
+**Funktionen &quot;all()`<condition>`)&quot;**
 
-Funktionen **[!UICONTROL all]** aktiverar definitionen av ett filter i en given samling genom att använda ett booleskt uttryck.
+The **[!UICONTROL all]** funktionen aktiverar definitionen av ett filter i en viss samling med hjälp av ett booleskt uttryck.
 
-```
+```json
 <listExpression>.all(<condition>)
 ```
 
 Bland alla appanvändare kan du till exempel hämta de som använder IOS 13 (booleskt uttryck &quot;app used == IOS 13&quot;). Resultatet av den här funktionen är den filtrerade lista som innehåller objekt som matchar det booleska uttrycket (exempel: appanvändare 1, appanvändare 34, appanvändare 432).
 
-I en aktivitet i Datakällans villkor kan du kontrollera om resultatet av funktionen **[!UICONTROL all]** är null eller inte. Du kan också kombinera den här **[!UICONTROL all]**-funktionen med andra funktioner som **[!UICONTROL count]**. Mer information finns i [Villkorsaktivitet för datakälla](../building-journeys/condition-activity.md#data_source_condition).
+I en aktivitet i Datakällans villkor kan du kontrollera om resultatet av **[!UICONTROL all]** är null eller inte. Du kan också kombinera detta **[!UICONTROL all]** funktion med andra funktioner som **[!UICONTROL count]**. Mer information finns i [Villkorsaktivitet för datakälla](../building-journeys/condition-activity.md#data_source_condition).
 
 **Exempel 1:**
 
-Vi vill kontrollera om en användare har installerat en specifik version av ett program. För detta får vi alla push-meddelandetoken som är kopplade till mobilprogram som har version 1.0. Sedan utför vi ett villkor med funktionen **[!UICONTROL count]** för att kontrollera att den returnerade tokenlistan innehåller minst ett element.
+Vi vill kontrollera om en användare har installerat en specifik version av ett program. För detta får vi alla push-meddelandetoken som är associerade med mobilprogram som har version 1.0. Sedan utför vi ett villkor med **[!UICONTROL count]** -funktion för att kontrollera att den returnerade listan med token innehåller minst ett element.
 
-```
+```json
 count(@{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all(currentEventField.application.version == "1.0").token}) > 0
 ```
 
@@ -83,9 +83,9 @@ Resultatet är sant.
 
 **Exempel 2:**
 
-Här använder vi funktionen **[!UICONTROL count]** för att kontrollera om det finns push-meddelandetoken i samlingen.
+Här använder vi **[!UICONTROL count]** funktion för att kontrollera om det finns push-meddelandetoken i samlingen.
 
-```
+```json
 count(@{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().token}) > 0
 ```
 
@@ -93,7 +93,7 @@ Resultatet blir sant.
 
 <!--Alternatively, you can check if there is no token in the collection:
 
-   ```
+   ```json
    count(@{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().token}) == 0
    ```
 
@@ -116,10 +116,10 @@ earlier timestamp) in order to only consider prior events.-->
 
 >[!NOTE]
 >
->När filtervillkoret i funktionen **all()** är tomt returnerar filtret alla element i listan. **För att antalet element i en samling ska kunna räknas krävs dock inte funktionen all.**
+>När filtervillkoret i **all()** är tom, filtret returnerar alla element i listan. **För att antalet element i en samling ska kunna räknas krävs dock inte funktionen all.**
 
 
-```
+```json
 count(@{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.token})
 ```
 
@@ -127,9 +127,9 @@ Resultatet av uttrycket är **3**.
 
 **Exempel 3:**
 
-Här kontrollerar vi om en individ inte har fått någon information inom de senaste 24 timmarna. Vi filtrerar samlingen av upplevelsehändelser som hämtats från ExperiencePlatform-datakällan med två uttryck som baseras på två element i samlingen. I synnerhet jämförs tidsstämpeln för händelsen med dateTime som returneras av funktionen **[!UICONTROL nowWithDelta]**.
+Här kontrollerar vi om en individ inte har fått någon information inom de senaste 24 timmarna. Vi filtrerar samlingen av upplevelsehändelser som hämtats från ExperiencePlatform-datakällan med två uttryck som baseras på två element i samlingen. I synnerhet jämförs tidsstämpeln för händelsen med dateTime som returneras av **[!UICONTROL nowWithDelta]** funktion.
 
-```
+```json
 count(#{ExperiencePlatform.MarltonExperience.experienceevent.all(
    currentDataPackField.directMarketing.sends.value > 0 and
    currentDataPackField.timestamp > nowWithDelta(-1, "days")).timestamp}) == 0
@@ -139,9 +139,9 @@ Resultatet blir true om det inte finns någon upplevelsehändelse som matchar de
 
 **Exempel 4:**
 
-Här ska vi kontrollera om en individ har startat minst en gång ett program de senaste 7 dagarna, till exempel för att utlösa ett push-meddelande som bjuder in honom att starta en självstudiekurs.
+Här ska vi kontrollera om en individ har startat minst en gång ett program de senaste 7 dagarna, till exempel för att utlösa ett push-meddelande som bjuder in honom/henne att starta en självstudiekurs.
 
-```
+```json
 count(
  #{ExperiencePlatform.AnalyticsData.experienceevent.all(
  nowWithDelta(-7,"days") <= currentDataPackField.timestamp
@@ -167,14 +167,14 @@ The result will be:
 
 >[!NOTE]
 >
->**[!UICONTROL currentEventField]** är bara tillgängligt när händelsesamlingar och  **currentDataPackField ändras**
->när du hanterar datakällsamlingar. När vi bearbetar samlingar med **[!UICONTROL all]**, **[!UICONTROL first]** och **[!UICONTROL last]**
->slinga för varje element i samlingen ett i taget. **[!UICONTROL currentEventField]** och  **currentDataPackField**
+>**[!UICONTROL currentEventField]** är bara tillgängligt när du hanterar händelsesamlingar och **currentDataPackField**
+>när du hanterar datakällsamlingar. Vid bearbetning av samlingar med **[!UICONTROL all]**, **[!UICONTROL first]** och **[!UICONTROL last]**, vi
+>slinga för varje element i samlingen ett i taget. **[!UICONTROL currentEventField]** och **currentDataPackField**
 >motsvarar elementet som repeteras.
 
-**Funktionerna &quot;first(`<condition>`)&quot; och &quot;last(`<condition>`)&quot;**
+**Funktionerna &quot;first(`<condition>`)&quot; och&quot;last(`<condition>`)&quot;**
 
-Funktionerna **[!UICONTROL first]** och **[!UICONTROL last]** aktiverar även definitionen av ett filter i samlingen när det första/sista elementet i listan som uppfyller filtret returneras.
+The **[!UICONTROL first]** och **[!UICONTROL last]** funktioner aktiverar även definitionen av ett filter i samlingen samtidigt som det första/sista elementet i listan som uppfyller filtret returneras.
 
 _`<listExpression>.first(<condition>)`_
 
@@ -182,9 +182,9 @@ _`<listExpression>.last(<condition>)`_
 
 **Exempel 1:**
 
-Det här uttrycket returnerar den första push-meddelandetoken som är associerad med mobilprogram för vilka versionen är 1.0.
+Det här uttrycket returnerar den första push-meddelandetoken som är associerad med mobilprogram som versionen är 1.0 för.
 
-```
+```json
 @{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.first(currentEventField.application.version == "1.0").token
 ```
 
@@ -194,7 +194,7 @@ Resultatet är &quot;token_1&quot;.
 
 Det här uttrycket returnerar den senaste push-meddelandetoken som är associerad med mobilprogram för vilka versionen är 1.0.
 
-```
+```json
 @{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.last&#8203;(currentEventField.application.version == "1.0").token}
 ```
 
@@ -203,6 +203,7 @@ Resultatet är &quot;token_2&quot;.
 >[!NOTE]
 >
 >Experience Events hämtas från Adobe Experience Platform som en samling i omvänd kronologisk ordning, vilket innebär att
+>
 >* **[!UICONTROL first]** funktionen returnerar den senaste händelsen
 >* **[!UICONTROL last]** returnerar den äldsta.
 
@@ -211,14 +212,14 @@ Resultatet är &quot;token_2&quot;.
 
 Vi kontrollerar om den första (senaste) Adobe Analytics-händelsen med ett värde som inte är noll för DMA ID har ett värde som är lika med 602.
 
-```
+```json
 #{ExperiencePlatform.AnalyticsProd_EvarsProps.experienceevent.first(
 currentDataPackField.placeContext.geo.dmaID > 0).placeContext.geo.dmaID} == 602
 ```
 
 **Funktionen &quot;at(`<index>`)&quot;**
 
-Med funktionen **[!UICONTROL at]** kan du referera till ett specifikt element i en samling enligt ett index.
+The **[!UICONTROL at]** kan du referera till ett visst element i en samling enligt ett index.
 Index 0 är samlingens första index.
 
 _`<listExpression>`.at(`<index>`)_
@@ -227,7 +228,7 @@ _`<listExpression>`.at(`<index>`)_
 
 Det här uttrycket returnerar listans andra push-meddelandetoken.
 
-```
+```json
 @{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.at(1).token}
 ```
 
@@ -235,12 +236,12 @@ Resultatet är &quot;token_2&quot;.
 
 **Andra exempel**
 
-```
+```json
 #{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent. all(currentDataPackField._aepgdcdevenablement2.purchase_event.receipt_nbr == "10-337-4016"). 
 _aepgdcdevenablement2.purchase_event.productListItems. all(currentDataPackField.SKU == "AB17 1234 1775 19DT B4DR 8HDK 762").name}
 ```
 
-```
+```json
  #{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent.last(
 currentDataPackField.eventType == "commerce.productListAdds").productListItems.last(currentDataPackField.priceTotal >= 150).name}
 ```

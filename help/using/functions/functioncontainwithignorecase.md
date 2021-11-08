@@ -1,19 +1,19 @@
 ---
 product: adobe campaign
-title: containWithIgnoreCase
-description: Läs mer om funktionen containWithIgnoreCase
-feature: Resor
+title: containIgnoreCase
+description: Läs mer om funktionen containIgnoreCase
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: ebec646e-9dbb-4432-a430-ab69fb7d75cf
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 5225045f02fb1b2a8505756d9d7f6f60a32b3ed6
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 16%
+source-wordcount: '48'
+ht-degree: 10%
 
 ---
 
-# containWithIgnoreCase {#containWithIgnoreCase}
+# containIgnoreCase {#containIgnoreCase}
 
 Kontrollerar om den andra argumentsträngen finns i den första argumentsträngen, utan att ta hänsyn till skiftläget.
 
@@ -23,7 +23,7 @@ Sträng
 
 ## Funktionssyntax
 
-`containWithIgnoreCase(<parameters>)`
+`containIgnoreCase(<parameters>)`
 
 ## Parametrar
 
@@ -34,12 +34,12 @@ Sträng
 
 ## Signatur och returtyp
 
-`containWithIgnoreCase(<string>,<string>)`
+`containIgnoreCase(<string>,<string>)`
 
 Returnerar ett booleskt värde.
 
 ## Exempel
 
-`containWithIgnoreCase("rowing is great', "GREAT")`
+`containIgnoreCase("rowing is great", "GREAT")`
 
 Returnerar true.

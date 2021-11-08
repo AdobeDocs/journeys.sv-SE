@@ -2,13 +2,13 @@
 product: adobe campaign
 title: countOnlyNull
 description: Läs mer om funktionen countOnlyNull
-feature: Resor
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: e6170a21-0418-4311-a43b-fd4f323cd020
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 9c33474a72542b6ad1d1ae0854622dfd7575f2d9
 workflow-type: tm+mt
-source-wordcount: '47'
+source-wordcount: '48'
 ht-degree: 31%
 
 ---
@@ -36,6 +36,7 @@ Aggregera
 | Lista | listDuration |
 | Lista | listDateTime |
 | Lista | listDateTimeOnly |
+| Lista | listDateOnly |
 
 ## Signatur och returtyp
 
@@ -45,6 +46,6 @@ Returnerar ett heltal.
 
 ## Exempel
 
-`count([10,2,10,null])`
+`countOnlyNull([10,2,10,null])`
 
 Returnerar 1.

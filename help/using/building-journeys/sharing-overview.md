@@ -6,10 +6,10 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 95ca5fdb-38b7-47a0-b1a9-b1b26bf8e5f5
-source-git-commit: ec5337e6b2df126370b55e1466fc5027659441fe
+source-git-commit: b557e94076bc7ce5c212246ddf313248ca10dd60
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 7%
+source-wordcount: '440'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
 >
 >Den här funktionen aktiveras som standard för alla instanser för steg i kundresan. För steg i kundprofiler aktiveras aktiveringen på begäran. Du kan inte ändra eller uppdatera scheman och datauppsättningar som har skapats under etablering för steghändelser. Dessa scheman och datauppsättningar är som standard skrivskyddade.
 
-Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Med den här funktionen kan du kombinera [!DNL Journey Orchestration]-data med händelsedata längre fram i kedjan, som hur många konverteringar som har gjorts, hur mycket engagemang som har gjorts på webbplatsen eller hur många transaktioner som har gjorts i butiken. Reseinformationen kan kombineras med data om Adobe Experience Platform, antingen från andra digitala resurser eller från offlineanläggningar, för att ge en mer heltäckande bild av resultatet.
+Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Med den här funktionen kan du kombinera [!DNL Journey Orchestration] data med händelsedata längre fram i kedjan, som hur många konverteringar som har gjorts, hur mycket engagemang som har gjorts på webbplatsen eller hur många transaktioner som har gjorts i butiken. Reseinformationen kan kombineras med data om Adobe Experience Platform, antingen från andra digitala resurser eller från offlineanläggningar, för att ge en mer heltäckande bild av resultatet.
 
 [!DNL Journey Orchestration] skapar automatiskt nödvändiga scheman och strömmar till datauppsättningar till Adobe Experience Platform för varje steg en individ tar på en resa. En steghändelse motsvarar en person som flyttar från en nod till en annan under en resa. Exempel: i en resa som innehåller en händelse, ett villkor och en åtgärd skickas tre steghändelser till Adobe Experience Platform.
 
@@ -29,14 +29,14 @@ Listan över XDM-fält som skickas är omfattande. Vissa innehåller systemgener
 
 >[!CAUTION]
 >
->Datauppsättningar kan inte aktiveras för realtidsprofiltjänst. Kontrollera att växlingsknappen **[!UICONTROL Profile]** är inaktiverad.
+>Datauppsättningar kan inte aktiveras för realtidsprofiltjänst. Se till att **[!UICONTROL Profile]** växlingsknappen är inaktiverad.
 
 Journeys skickar data när de förekommer, på ett strömmande sätt. Du kan söka efter dessa data med hjälp av frågetjänsten. Du kan ansluta till Customer Journey Analytics eller andra BI-verktyg för att visa data som hör till dessa steg.
 
 Följande scheman skapas:
 
-* Händelseschema för resesegmentprofil för [!DNL Journey Orchestration] - Upplev händelser för steg som tagits på en resa tillsammans med en identitetskarta som ska användas för mappning till en enskild resespart.
-* Resestegshändelseschema för [!DNL Journey Orchestration] - Resestegshändelse som är knuten till en resemetadata.
+* Profilhändelseschema för resesteg för [!DNL Journey Orchestration] - Upplev händelser för steg som tagits på en resa tillsammans med en identitetskarta som ska användas för att mappa till en enskild resedeltagare.
+* Schema för resesegmenthändelse för [!DNL Journey Orchestration] - Resestegshändelse som är knuten till en resemetadata.
 * Reseschema med resefält för [!DNL Journey Orchestration] - Resemetadata för att beskriva resor.
 
 ![](../assets/sharing1.png)
@@ -45,7 +45,7 @@ Följande scheman skapas:
 
 Följande datauppsättningar har skickats:
 
-* Profilhändelseschema för resestegsprofil för [!DNL Journey Orchestration]
+* Profilhändelseschema för resesteg för [!DNL Journey Orchestration]
 * Resestegshändelser
 * Resor
 
@@ -53,10 +53,7 @@ Följande datauppsättningar har skickats:
 
 Listorna med XDM-fält som skickas till Adobe Experience Platform finns här:
 
-* [vanliga fält för händelsen journeySteps](../building-journeys/sharing-common-fields.md)
-* [fält för händelseexekvering för händelsen journeyStep](../building-journeys/sharing-execution-fields.md)
-* [datafält för hämtning för händelsen journeyStep](../building-journeys/sharing-fetch-fields.md)
-* [identitetsfält för händelsen journeyStep](../building-journeys/sharing-identity-fields.md)
-* [resefält](../building-journeys/sharing-journey-fields.md)
+* [Stega händelsefältslista](../building-journeys/sharing-field-list.md)
+* [Händelsefält för äldre steg](../building-journeys/sharing-legacy-fields.md)
 
-Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/reporting-step-events-to-adobe-experience-platform.html) om du vill ha mer information om steghändelser som rapporteras till Adobe Experience Platform.
+Om du vill ha mer information om steghändelser som rapporterar till Adobe Experience Platform kan du titta på den här [video med självstudiekurser](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/reporting-step-events-to-adobe-experience-platform.html).

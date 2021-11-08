@@ -2,14 +2,14 @@
 product: adobe campaign
 title: distinctWithNull
 description: Lär dig mer om funktionen distinktMedNull
-feature: Resor
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 65a904c1-14ff-42b3-8f03-abb97ef47625
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 9c33474a72542b6ad1d1ae0854622dfd7575f2d9
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 15%
+source-wordcount: '106'
+ht-degree: 14%
 
 ---
 
@@ -36,6 +36,7 @@ Lista
 | Lista | listDuration |
 | Lista | listDateTime |
 | Lista | listDateTimeOnly |
+| Lista | listDateOnly |
 
 ## Underskrifter och returnerade typer
 
@@ -58,6 +59,10 @@ Returnerar en lista med datum/tid utan hänsyn till tidszon.
 `distinctWithNull(<listDateTime>)`
 
 Returnerar en lista med datetimes.
+
+`distinctWithNull(<listDateOnly>)`
+
+Returnerar en lista med datum.
 
 `distinctWithNull(<listBoolean>)`
 

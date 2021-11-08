@@ -6,17 +6,41 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: a60640f91e80becd2769d647b762ca2225f9e9b2
+source-git-commit: d09d70a0ec2720c5a75385b9036bf3a6ab74f4ab
 workflow-type: tm+mt
-source-wordcount: '2965'
-ht-degree: 54%
+source-wordcount: '3069'
+ht-degree: 53%
 
 ---
 
 # Versionsinformation {#release-notes}
 
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
-Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/documentation-updates.md).
+Du kan även läsa det senaste [Dokumentationsuppdateringar](../release-notes/documentation-updates.md).
+
+## Oktober 2021-versionen {#october-2021-release}
+
+<!--table>
+<thead>
+<tr>
+<th><strong>Profile cap condition</strong><br/></th>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>When using a <strong>Condition</strong> activity in a journey, you can now define a <strong>Profile cap</strong> condition. This new condition type allows you set a maximum number of profiles for a journey path. When this limit is reached, the selected profiles take a second path. This allows you to optimize your IP ramp up. For example, you may want to ramp up your deliveries on a domain to 50 millions by splitting the execution: send 1000 messages on day 1, 2000 on day 2, etc.</p>
+<p>For more information, refer to the <a href="../building-journeys/condition-activity.md#profile_cap}">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table-->
+
+### Förbättringar
+
+* **Uttrycksredigerare** - Som kraftfull användare kan du nu använda funktioner för att arbeta med kartor. [Läs mer](../expression/field-references.md)
+* **Tillgänglighet** - Tillgänglighetsförbättringar har implementerats. Journey Orchestration är nu helt kompatibelt när det gäller tillgänglighet.
+* **Samlingar** - Arrayer med objekt som innehåller underobjekt stöds nu. [Läs mer](../usecase/collections.md)
+* **Övervakning** - Steghändelser för direktresor och testläge har förbättrats. [Nya fält](../building-journeys/sharing-field-list.md#serviceevents) har lagts till i samband med profilexportjobb. För en bättre användarupplevelse är steghändelsefält nu ordnade i olika kategorier i schemat för guidade händelser för Journey Orchestration. Alla föregående steg-händelsefält är fortfarande tillgängliga i [stepEvents](../building-journeys/sharing-legacy-fields.md) kategori.
 
 ## September 2021-utgåvan {#september-2021-release}
 
@@ -30,9 +54,9 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 <tr>
 <td>
 <p>Nu kan du skicka samlingar eller en lista med data i dina anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Två sorters samlingar stöds: enkla samlingar och objektsamlingar. Tidigare skapade anpassade åtgärder fortsätter att fungera. </p>
-<p>Mer information om samlingar finns i <a href="../usecase/collections.md">den detaljerade dokumentationen</a>. </p>
+<p>Mer information om samlingar finns i <a href="../usecase/collections.md">detaljerad dokumentation</a>. </p>
 <p>Funktionerna för att filtrera och överlappa har lagts till i listan med funktioner som är tillgängliga i den avancerade uttrycksredigeraren. Det ger fler möjligheter att filtrera och jämföra samlingar.</p>
-<p>Läs dokumentationen om funktionerna <a href="../functions/functionfilter.md">filter</a> och <a href="../functions/functionintersect.md">överlappa</a>.</p>
+<p>Läs dokumentationen på <a href="../functions/functionfilter.md">filter</a> och <a href="../functions/functionintersect.md">korsa</a> funktioner.</p>
 </td>
 </tr>
 </tbody>
@@ -41,8 +65,8 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 ### Förbättringar
 
 * Systemgenererade scheman och datauppsättningar som har skapats under etablering av steghändelser är nu i skrivskyddat läge, vilket skyddar mot oavsiktliga ändringar av viktiga scheman. [Läs mer](../building-journeys/sharing-overview.md)
-* Etikettera aktiviteten **Wait** med en etikett som ska visas på arbetsytan. Etiketten används också i loggar för rapportering och testläge för att tydligt identifiera vad du gör. [Läs mer](../building-journeys/using-the-journey-designer.md)
-* Hitta händelser och åtgärder snabbare genom att filtrera element i kategorierna **Händelser** och **Åtgärd** med hjälp av sökning. Orchestration-aktiviteter är inte längre filtrerade. [Läs mer](../building-journeys/using-the-journey-designer.md)
+* Etikettera **Vänta** aktivitet med en etikett som ska visas på arbetsytan. Etiketten används också i loggar för rapportering och testläge för att tydligt identifiera vad du gör. [Läs mer](../building-journeys/using-the-journey-designer.md)
+* Hitta händelser och funktionsmakron snabbare genom att filtrera elementen i **Händelser** och **Åtgärd** kategorier med hjälp av sökning. Orchestration-aktiviteter är inte längre filtrerade. [Läs mer](../building-journeys/using-the-journey-designer.md)
 * När du definierar ett händelse-ID-villkor i en regelbaserad operator är operatorn &quot;contains&quot; nu tillgänglig för strängtyper av fält. [Läs mer](../event/about-creating.md)
 
 ## Version från augusti 2021 {#august-2021-release}
@@ -51,10 +75,10 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 
 **Resor**
 
-* **Dynamiska rubriker**  - Nu kan du skicka dynamiska data i HTTP-rubrikparametrar. De här parametrarna kan användas av de integreringssystem som tar emot resans åtgärd via HTTP-anrop, till exempel tidsstämpel eller spårnings-ID. [Läs mer](../action/url-configuration.md)
-* **Dynamiska URL-sökvägar**  - Du kan nu ställa in dynamiska URL-sökvägar för anpassade åtgärder. [Läs mer](../action/url-configuration.md)
+* **Dynamiska rubriker** - Du kan nu skicka dynamiska data i HTTP-rubrikparametrar. De här parametrarna kan användas av de integreringssystem som tar emot resans åtgärd via HTTP-anrop, till exempel tidsstämpel eller spårnings-ID. [Läs mer](../action/url-configuration.md)
+* **Dynamiska URL-sökvägar** - Nu kan du ställa in dynamiska URL-sökvägar för anpassade åtgärder. [Läs mer](../action/url-configuration.md)
 
-## Juli 2021 Version {#july-2021-release}
+## Version från juli 2021 {#july-2021-release}
 
 <table>
 <thead>
@@ -75,7 +99,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 
 ### Förbättringar
 
-* Fältet **Cachevaraktighet** har tagits bort från konfigurationspanelen för datakällan. [Läs mer](../datasource/about-data-sources.md)
+* The **Cachevaraktighet** -fältet har tagits bort från konfigurationspanelen för datakällan. [Läs mer](../datasource/about-data-sources.md)
 
 ## Version från juni 2021 {#june-2021-release}
 
@@ -107,16 +131,16 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 
 ### Förbättringar
 
-* I skärmen **Händelsekonfiguration** i testläget visas nu en listruta för fält som förväntar sig en uppräkning. Välj bara ett av de tillgängliga värdena. Detta undviker fel när händelsen utlöses om ett felaktigt värde definieras. [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
+* I **Händelsekonfiguration** i testläget visas nu en listruta för fält där en uppräkning förväntas. Välj bara ett av de tillgängliga värdena. Detta undviker fel när händelsen utlöses om ett felaktigt värde definieras. [Läs mer](../building-journeys/testing-the-journey.md#firing_events)
 
 ## Version från mars 2021 {#march-2021-release}
 
 ### Förbättringar
 
-* En ny status har lagts till på resor. När en resa avslutas eller stängs manuellt växlar dess status från **Closed** till **Finished** 30 dagar efter att den stängdes. På så sätt kan ni enklare identifiera inaktiva resor samtidigt som ni ser till att alla personer fortfarande är närvarande har tid att slutföra resan. [Läs mer](../building-journeys/journey.md#ending_a_journey)
-* I de högra aktivitetspanelerna för utkastresor är skrivskyddade fält nu dolda som standard. Den här förenklingen hjälper dig att konfigurera dina aktiviteter enklare. Om du vill visa dem klickar du på ikonen **Visa skrivskyddade fält** som finns i det övre vänstra hörnet i aktivitetskonfigurationsrutan. [Läs mer](../building-journeys/using-the-journey-designer.md#configuration_pane)
-* I testläge har fältet **Nyckel** som används för att definiera testprofilens ID ändrats till **Profilidentifierare** på skärmen **Händelsekonfiguration** för en bättre användarupplevelse. [Läs mer](../building-journeys/testing-the-journey.md).
-* För reaktionshändelser kan tidsgränsen nu bara anges mellan 40 sekunder och 30 dagar. När du testar en resa som använder en reaktionshändelse är standardläget **[!UICONTROL Wait time]** och minimivärdet 40 sekunder. [Läs mer](../building-journeys/reaction-events.md).
+* En ny status har lagts till på resor. När en resa avslutas eller stängs manuellt ändras dess status från **Stängd** till **Slutförd** 30 dagar efter att den stängts. På så sätt kan ni enklare identifiera inaktiva resor samtidigt som ni ser till att alla personer fortfarande är närvarande har tid att slutföra resan. [Läs mer](../building-journeys/journey.md#ending_a_journey)
+* I de högra aktivitetspanelerna för utkastresor är skrivskyddade fält nu dolda som standard. Den här förenklingen hjälper dig att konfigurera dina aktiviteter enklare. Om du vill visa dem klickar du på **Visa skrivskyddade fält** -ikonen, som finns i det övre vänstra hörnet av aktivitetskonfigurationsrutan. [Läs mer](../building-journeys/using-the-journey-designer.md#configuration_pane)
+* I testläge **Händelsekonfiguration** skärm, **Nyckel** fält som används för att definiera testprofilens ID har bytt namn **Profilidentifierare** för en bättre användarupplevelse. [Läs mer](../building-journeys/testing-the-journey.md).
+* För reaktionshändelser kan tidsgränsen nu bara anges mellan 40 sekunder och 30 dagar. När du testar en resa där en reaktionshändelse används, testläget **[!UICONTROL Wait time]** standard och minimivärde är nu 40 sekunder. [Läs mer](../building-journeys/reaction-events.md).
 
 ## Version från februari 2021 {#february-2021-release}
 
@@ -141,7 +165,7 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](../release-notes/d
 * När du konfigurerar en händelse är nu endast fält som är obligatoriska för XDM-valideringen förmarkerade som standard. Dessa fält kan inte avmarkeras.
 * Ett nytt filter har lagts till på paletten Resa. Det gör att du bara kan visa de fem senaste händelserna och åtgärderna, förutom de som är färdiga. Detta är specifikt för varje användare. Som standard visas alla objekt. [Läs mer](../building-journeys/using-the-journey-designer.md#palette)
 * När du påbörjar en ny resa döljs nu element som inte kan släppas på arbetsytan som det första steget. Detta gäller alla åtgärder, villkorsaktiviteten, väntetiden och reaktionen.
-* I den vänstra delen av den avancerade uttrycksredigeraren grupperas funktioner nu om under ett **Funktioner**-avsnitt i slutet av listan.
+* I den vänstra delen av den avancerade uttrycksredigeraren grupperas funktioner nu om under en **Funktioner** i slutet av listan.
 
 ## Version från januari 2021 {#january-2021-release}
 
@@ -155,7 +179,7 @@ För att följa Adobe Campaign Standard SLA-avtal definieras nu en begränsning 
 
 Tidsgränsen för händelsen anges nu tydligare på tidsgränsen. [Läs mer](../building-journeys/event-activities.md#listening-to-events-during-a-specific-time)
 
-Funktionerna [getListItem](../functions/functiongetlistitem.md) och [split](../functions/functionsplit.md) har lagts till i listan med funktioner som är tillgängliga i den avancerade uttrycksredigeraren. Detta ger fler möjligheter att använda strängberäkning.
+The [getListItem](../functions/functiongetlistitem.md) och [dela](../functions/functionsplit.md) funktioner har lagts till i listan över funktioner som är tillgängliga i den avancerade uttrycksredigeraren. Detta ger fler möjligheter att använda strängberäkning.
 
 ## November 2020-utgåvan {#november-release}
 
@@ -168,13 +192,13 @@ Funktionerna [getListItem](../functions/functiongetlistitem.md) och [split](../f
 <tbody>
 <tr>
 <td>
-<p>En ny åtgärdsaktivitet gör att ni kan skjuta individer från en resa till en annan. Med aktiviteten <strong>Hoppa</strong> kan du:
+<p>En ny åtgärdsaktivitet gör att ni kan skjuta individer från en resa till en annan. The <strong>Hoppa</strong> kan du göra följande:
 </p>
 <ul>
 <li>förenkla utformningen av mycket komplexa resor genom att dela upp dem i flera. </li>
 <li>bygga resor baserat på gemensamma och återanvändbara resemönster</li>
 </ul>
-<p>Mer information finns i <a href="../building-journeys/jump.md">den detaljerade dokumentationen</a> och <a href="https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/building-a-journey/jumping-to-another-journey.html">självstudievideon</a>.</p>
+<p>Mer information finns i <a href="../building-journeys/jump.md">detaljerad dokumentation</a> och <a href="https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/building-a-journey/jumping-to-another-journey.html">video med självstudiekurser</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -217,7 +241,7 @@ Funktionerna [getListItem](../functions/functiongetlistitem.md) och [split](../f
 
 Begränsningar har lagts till när nya versioner av en resa skapas. Dessa begränsningar förhindrar alltför stora förändringar i kundresan för att bibehålla en viss enhetlighet mellan versionerna. [Läs mer](../about/limitations.md#journey-versions-limitations)
 
-Det går inte längre att använda aktiviteten **Segmentkvalificering** i en resa som innehåller meddelandeaktiviteter för Campaign Standarder. Den här begränsningen skyddar integriteten för Adobe Campaign Standard-instanser. Användningen av Segmentkvalificering kan faktiskt leda till dagliga toppar av meddelanden som skulle överbelasta Campaign Standarden Transactional Messaging. [Läs mer](../about/limitations.md#segment-qualification)
+The **Segmentkvalificering** aktiviteten inte längre kan användas i en resa som innehåller aktiviteter för Campaign Standard. Den här begränsningen skyddar integriteten för Adobe Campaign Standard-instanser. Användningen av Segmentkvalificering kan faktiskt leda till dagliga toppar av meddelanden som skulle överbelasta Campaign Standarden Transactional Messaging. [Läs mer](../about/limitations.md#segment-qualification)
 
 ## Oktober 2020-versionen {#october-release}
 
@@ -274,7 +298,7 @@ Det går inte längre att använda aktiviteten **Segmentkvalificering** i en res
 <tbody>
 <tr>
 <td>
-<p>Följande förbättringar har gjorts i aktiviteten <strong>Läs segment</strong>:
+<p>Följande förbättringar har gjorts i <strong>Lässegment</strong> aktivitet:
 </p>
 <ul>
 <li><p>Segmentbaserade resor visar nu, ovanför arbetsytan, en påminnelse om resans schematyp. Du kan klicka på den här påminnelsen för att komma åt schemakonfigurationsmenyn.</p>

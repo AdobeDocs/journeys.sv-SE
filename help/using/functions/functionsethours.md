@@ -6,7 +6,7 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: d4fe578f-c3be-4c8b-98b3-090dab0c41d1
-source-git-commit: 51536b20e81cde1a7fdd7f4654d70bfe6176b0d4
+source-git-commit: 5225045f02fb1b2a8505756d9d7f6f60a32b3ed6
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 6%
@@ -45,7 +45,7 @@ Returnerar en datetime utan att ta hänsyn till tidszon.
 
 ## Exempel
 
-`setHours(toDateTime('2010-12-12T01:11:00Z'), 4))`
+`setHours(toDateTime('2010-12-12T01:11:00Z'), 4)`
 
 Returnerar 2010-12-12T04:11:00Z.
 

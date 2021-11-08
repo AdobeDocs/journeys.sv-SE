@@ -2,13 +2,13 @@
 product: adobe campaign
 title: Använda den avancerade uttrycksredigeraren
 description: Läs mer om hur du skapar avancerade uttryck
-feature: Resor
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 724ae59e-d1b5-4de9-b140-d37064e22ac6
-source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
+source-git-commit: 601bed30d3c414f03c60ef52c787372e778dee54
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '492'
 ht-degree: 2%
 
 ---
@@ -50,22 +50,22 @@ Sedan markeras alla tilläggshändelser som inte omvandlades till completePurcha
 
 Den angivna tidsstämpeln fungerar som datum-/tidsvärde, den andra är antalet dagar.
 
-```
-        In( “addToCart”, #{ExperiencePlatformDataSource
+```json
+        in( "addToCart", #{ExperiencePlatformDataSource
                         .ExperienceEventFieldGroup
                         .experienceevent
                         .all(
                         inLastDays(currentDataPackField.timestamp, 7 ))
                         .productData
                         .productInteraction})
-        And
-        Not(In( “completePurchase”, #{ExperiencePlatformDataSource
+        and
+        not(in( "completePurchase", #{ExperiencePlatformDataSource
                         .ExperienceEventFieldGroup
                         .experienceevent
                         .all(
                         inLastDays(currentDataPackField.timestamp, 7 ))
                         .productData
-                        .productInteraction})
+                        .productInteraction}))
 ```
 
 Det här uttrycket returnerar ett booleskt värde.
@@ -76,20 +76,20 @@ Det här uttrycket returnerar ett booleskt värde.
 
 `#{Inventory.fieldgroup3.quantity} > 0`
 
-* Till höger anges nödvändiga värden, här måste vi hämta platsen för butiken som mappas från platsen för händelsen ArriveLumaStudio:
+* Till höger anges de nödvändiga värdena, här måste vi hämta platsen för butiken som mappas från platsen för händelsen ArriveLumaStudio:
 
 `#{ArriveLumaStudio._acpevangelists1.location.location}`
 
-* Ange SKU och använd funktionen `first` för att hämta den senaste addToCart-åtgärden:
+* Och ange SKU med funktionen `first` för att hämta den senaste&quot;addToCart&quot;-interaktionen:
 
-   ```
+   ```json
        #{ExperiencePlatformDataSource
                        .ExperienceEventFieldGroup
                        .experienceevent
                        .first(
                        currentDataPackField
                        .productData
-                       .productInteraction == “addToCart”
+                       .productInteraction == "addToCart"
                        )
                        .SKU}
    ```
@@ -102,7 +102,7 @@ Därifrån kan ni lägga till ytterligare en väg på resan när produkten inte 
 
 Detta villkor hämtar endast geofence-händelser som utlöses i&quot;Arlington&quot;:
 
-```
+```json
         @{GeofenceEntry
                     .placeContext
                     .POIinteraction
@@ -110,11 +110,11 @@ Detta villkor hämtar endast geofence-händelser som utlöses i&quot;Arlington&q
                     .name} == "Arlington"
 ```
 
-Förklaring: Detta är en strikt strängjämförelse (skiftlägeskänslig), som motsvarar en fråga i enkelt läge där `equal to` används med `Is sensitive` markerat.
+Förklaring: Det här är en strikt strängjämförelse (skiftlägeskänslig), som motsvarar en fråga i enkelt läge som använder `equal to` med `Is sensitive` markerad.
 
-Samma fråga med `Is sensitive` avmarkerat genererar följande uttryck i avancerat läge:
+Samma fråga med `Is sensitive` om du inte markerar det här alternativet genereras följande uttryck i avancerat läge:
 
-```
+```json
         equalIgnoreCase(@{GeofenceEntry
                         .placeContext
                         .POIinteraction
@@ -126,7 +126,7 @@ Samma fråga med `Is sensitive` avmarkerat genererar följande uttryck i avancer
 
 Följande uttryck gör att du kan definiera CRM-ID:t i ett åtgärdspersonaliseringsfält:
 
-```
+```json
     substr(@{MobileAppLaunch
             ._myorganization
             .identification
@@ -135,10 +135,9 @@ Följande uttryck gör att du kan definiera CRM-ID:t i ett åtgärdspersonaliser
                         ._myorganization
                         .identification
                         .crmid}
-                         }
                          ))
 ```
 
-Förklaring: I det här exemplet används funktionerna `substr` och `lastIndexOf` för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för en mobilapp.
+Förklaring: Det här exemplet använder `substr` och `lastIndexOf` funktioner för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för mobilappar.
 
-Titta på den här videon](https://experienceleague.adobe.com/docs/platform-learn/tutorials/journey-orchestration/create-a-journey.html) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.[
+Mer information om hur du använder den avancerade uttrycksredigeraren finns i [den här videon](https://experienceleague.adobe.com/docs/platform-learn/tutorials/journey-orchestration/create-a-journey.html).

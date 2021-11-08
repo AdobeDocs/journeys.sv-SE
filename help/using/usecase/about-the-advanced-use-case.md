@@ -2,13 +2,13 @@
 product: adobe campaign
 title: Om det avancerade användningsfallet
 description: Läs mer om resan - avancerad fallstudie
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 43435aee-572d-4db2-88d5-6124ce074285
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 579e5a0dbdc11369248c2683c399b090130a7262
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '416'
 ht-degree: 4%
 
 ---
@@ -29,10 +29,10 @@ Först och främst vill vi skicka ett meddelande så snart en person kommer in p
 
 Sedan kontrollerar vi två villkor:
 
-* Om den här personen inte är lojalitetsmedlem skickar vi ett e-postmeddelande till honom/henne där han kan gå med i erbjudandet om lojalitetsmedlemskap.
+* Om den här personen inte är en lojalitetsmedlem skickar vi ett e-postmeddelande till dem där de kan gå med i erbjudandet om lojalitetsmedlemskap.
 * Om den här personen redan är en lojalitetsmedlem kontrollerar vi om han har en rumsreservation:
-   * Om han inte gör det skickar vi ett push-meddelande till honom med rumssatser.
-   * Om han gör det skickar vi ett välkomstmeddelande. Och om han kommer in på restaurangen inom 6 timmar skickar vi ett push-meddelande med rabatt på en måltid till honom.
+   * Om han inte gör det skickar vi ett push-meddelande till dem med rumstariffer.
+   * Om han gör det skickar vi ett välkomstmeddelande till dem. Och om han kommer in på restaurangen inom 6 timmar skickar vi ett push-meddelande med rabatt på en måltid till dem.
 
 ![](../assets/journeyuc2_29.png)
 
@@ -48,7 +48,7 @@ Vi måste konfigurera en anslutning till två datakällor (se [den här sidan](.
 
 ## Krav {#prerequisites}
 
-Vi har utformat tre mallar för transaktionsmeddelanden från Adobe Campaign Standard. Vi använder mallar för händelsetransaktioner. Se den här [sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
+Vi har utformat tre mallar för transaktionsmeddelanden från Adobe Campaign Standard. Vi använder mallar för händelsetransaktioner. Se detta [page](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
 
 Adobe Campaign Standard är konfigurerat att skicka e-post och push-meddelanden.
 
