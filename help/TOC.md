@@ -5,9 +5,9 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Journeys
-source-git-commit: b557e94076bc7ce5c212246ddf313248ca10dd60
+source-git-commit: f0cb883a09d553bb47491b750fabde54c92f3225
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '438'
 ht-degree: 96%
 
 ---
@@ -97,8 +97,8 @@ ht-degree: 96%
          + [identitetsfält för händelsen journeyStep](using/building-journeys/sharing-identity-fields.md)
          + [resefält](using/building-journeys/sharing-journey-fields.md)
       + [Exempel på frågor](using/building-journeys/query-examples.md)
-+ Använda den avancerade uttrycksredigeraren {#building-advanced-conditions-journeys}
-   + [Om den avancerade uttrycksredigeraren](using/expression/expressionadvanced.md)
++ Skapa uttryck {#building-advanced-conditions-journeys}
+   + [Översikt](using/expression/expressionadvanced.md)
    + Syntax {#syntax}
       + [Allmänt](using/expression/generalities.md)
       + [Villkorlig instruktion](using/expression/conditional-instruction.md)
@@ -145,6 +145,7 @@ ht-degree: 96%
          + [nowWithDelta](using/functions/functionnowwithdelta.md)
          + [setHours](using/functions/functionsethours.md)
          + [setDays](using/functions/functionsetdays.md)
+         + [updateTimeZone](using/functions/functionupdatetimezone.md)
       + Lista {#list}
          + [distinct](using/functions/functiondistinct.md)
          + [distinctWithNull](using/functions/functiondistinctwithnull.md)

@@ -2,20 +2,20 @@
 product: adobe campaign
 title: Om den avancerade uttrycksredigeraren
 description: Läs mer om hur du skapar avancerade uttryck
-feature: Resor
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: f6f0004d-8a33-4671-9c16-e56edfe2a45e
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: f0cb883a09d553bb47491b750fabde54c92f3225
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 90%
+source-wordcount: '550'
+ht-degree: 85%
 
 ---
 
 # Om den avancerade uttrycksredigeraren {#concept_uyj_trt_52b}
 
-Med den avancerade uttrycksredigeraren kan du skapa avancerade uttryck på olika skärmar i gränssnittet. Ett exempel är när du definierar ett villkor för en datakälla.
+Använd den avancerade uttrycksredigeraren för att skapa avancerade uttryck på olika skärmar i gränssnittet. Du kan till exempel skapa uttryck när du konfigurerar och använder resor och när du definierar ett datakällsvillkor.
 Den är också tillgänglig varje gång du behöver definiera åtgärdsparametrar som kräver specifika dataändringar. Du kan utnyttja data från händelser eller ytterligare information som hämtats från datakällan. I en resa är den lista med händelsefält som visas sammanhangsberoende och varierar beroende på vilka händelser som läggs till i resan.
 
 Den avancerade uttrycksredigeraren har en uppsättning inbyggda funktioner och operatorer som du använder för att manipulera värden och definiera ett uttryck som passar dina behov. Med den avancerade uttrycksredigeraren kan du även definiera värden för den externa datakällans parameter samt ändra kartläggningsfält och samlingar, till exempel upplevelsehändelser.
@@ -58,7 +58,7 @@ Med den här skärmen kan du ange ett uttryck manuellt.
 Till vänster på skärmen visas tillgängliga fält och funktioner:
 
 * **[!UICONTROL Events]**: välj ett av fälten som har tagits emot från den inkommande händelsen. Listan med händelsefält som visas är sammanhangsberoende och varierar beroende på vilka händelser som läggs till i resan. [Läs mer](../event/about-events.md)
-* **[!UICONTROL Segments]**: Om du har släppt en  **[!UICONTROL Segment qualification]** händelse väljer du det segment som du vill använda i uttrycket. [Läs mer](../segment/using-a-segment.md)
+* **[!UICONTROL Segments]**: om du har släppt en **[!UICONTROL Segment qualification]** väljer du det segment som du vill använda i uttrycket. [Läs mer](../segment/using-a-segment.md)
 * **[!UICONTROL Data Sources]**: välj i listan bland tillgängliga fält från datakällornas fältgrupper. [Läs mer](../datasource/about-data-sources.md)
 * **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som rör resan för en viss profil. [Läs mer](../expression/journey-properties.md)
 * **[!UICONTROL Functions]**: välj i listan bland inbyggda funktioner som du använder för att utföra komplex filtrering. Funktionerna är organiserade per kategori. [Läs mer](../expression/functions.md)
