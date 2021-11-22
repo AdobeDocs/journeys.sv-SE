@@ -23,7 +23,7 @@ Kontrollerar om en individ tillhör ett visst segment.
 
 Segmentnamnet måste vara en strängkonstant. Det kan inte vara en fältreferens eller ett uttryck.
 
-Segment definieras i [Adobe Experience Platform](https://platform.adobe.com/segment/overview). Uttrycksredigeraren innehåller en lista över segment som fylls i automatiskt.
+Segmenten definieras i [Adobe Experience Platform](https://platform.adobe.com/segment/overview). Uttrycksredigeraren innehåller en lista över segment som fylls i automatiskt.
 
 Segment kan ha tre statusar:
 
@@ -31,7 +31,7 @@ Segment kan ha tre statusar:
 * realiserad: företaget anger segmentet.
 * avslutad: enheten avslutar segmentet.
 
-Endast individer med segmentdeltagarstatus **Realiserad** och **Befintlig** betraktas som medlemmar i segmentet. Mer information om hur du utvärderar ett segment finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=en#interpret-segment-results).
+Endast personer med **Realiserad** och **Befintlig** Deltagandestatus för segment betraktas som medlemmar i segmentet. Mer information om hur du utvärderar ett segment finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=en#interpret-segment-results).
 
 `IF inSegment('segmentName') == true` betyder att du har ett segmentMembership med den angivna/befintliga statusen.
 
@@ -63,4 +63,4 @@ Returnerar ett booleskt värde.
 
 Förklaring:
 
-Funktionen returnerar **[!UICONTROL true]** om personen i reseinstansen är en del av Adobe Experience Platform-segmentet med namnet &quot;men över 50&quot;, annars **[!UICONTROL false]**.
+Funktionen returneras **[!UICONTROL true]** om personen i reseinstansen är en del av Adobe Experience Platform-segmentet med namnet&quot;män över 50&quot;, **[!UICONTROL false]** i annat fall.

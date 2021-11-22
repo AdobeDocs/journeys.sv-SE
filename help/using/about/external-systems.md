@@ -44,7 +44,7 @@ En begränsningsregel är specifik för en slutpunkt men global för alla resor 
 
 Anta till exempel att du har definierat en begränsning på 100 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 200 samtal per sekund används de 100 tillgängliga kortplatserna och de 100 återstående kortplatserna tas bort. Eftersom den högsta nivån har överskridits kommer de övriga nio resorna inte att ha några platser kvar. Denna granularitet hjälper till att skydda det externa systemet från överbelastning och krascher.
 
-Mer information om API:t för capping och hur du konfigurerar regler för capping finns på [den här sidan](../api/capping.md).
+Mer information om API:t för appning och hur du konfigurerar regler för appning finns i [den här sidan](../api/capping.md).
 
 ## Timeout och försök igen{#timeout}
 

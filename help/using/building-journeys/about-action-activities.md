@@ -2,20 +2,20 @@
 product: adobe campaign
 title: Om åtgärdsaktiviteter
 description: Läs mer om åtgärdsaktiviteter
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 5436602f-af7a-41db-8b10-d3d28a6d0cd0
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '173'
 ht-degree: 28%
 
 ---
 
 # Om åtgärdsaktiviteter {#concept_hbj_hrt_52b}
 
-På paletten, till vänster på skärmen, nedanför **[!UICONTROL Events]** och **[!UICONTROL Orchestration]** finns kategorin **[!UICONTROL Actions]**.
+Från paletten, till vänster på skärmen, nedanför **[!UICONTROL Events]** och **[!UICONTROL Orchestration]** hittar du **[!UICONTROL Actions]** kategori.
 
 ![](../assets/journey58.png)
 
@@ -25,7 +25,7 @@ Om du har Adobe Campaign Standard finns följande färdiga åtgärdsaktiviteter:
 
 Om du har konfigurerat anpassade åtgärder visas de också här (se [den här sidan](../building-journeys/using-custom-actions.md)).
 
-När du släpper en åtgärdsaktivitet på arbetsytan kan du definiera en **[!UICONTROL Label]**. På så sätt kan du lägga till ett suffix till åtgärdsnamnet som ska visas under aktiviteten på arbetsytan. Detta är användbart om du använder samma åtgärd flera gånger under resan och vill identifiera dem enklare. Rapporterna blir också enklare att läsa. Du kan också lägga till ett valfritt **[!UICONTROL Description]**.
+När du släpper en funktionsmakroaktivitet på arbetsytan kan du definiera en **[!UICONTROL Label]**. På så sätt kan du lägga till ett suffix till åtgärdsnamnet som ska visas under aktiviteten på arbetsytan. Detta är användbart om du använder samma åtgärd flera gånger under resan och vill identifiera dem enklare. Rapporterna blir också enklare att läsa. Du kan också lägga till ett valfritt **[!UICONTROL Description]**.
 
 ![](../assets/journey59bis.png)
 

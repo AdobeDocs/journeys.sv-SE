@@ -2,13 +2,13 @@
 product: adobe campaign
 title: Om integrering med Campaign v7/v8
 description: Läs om integrationen mellan Campaign v7 och v8
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 4b321b63-c624-4c2a-ae92-f9a2a95688d4
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '442'
 ht-degree: 5%
 
 ---
@@ -19,9 +19,9 @@ Den här integreringen är tillgänglig för Adobe Campaign Classic v7 från och
 
 Kopplingen mellan Journey Orchestration och instanser i Campaign är konfigurerad av Adobe vid etableringstidpunkten.
 
-Det finns ett användningsexempel från början till slut i det här [avsnittet](../usecase/campaign-classic-use-case.md).
+Ett heltäckande exempel på användning presenteras i detta [section](../usecase/campaign-classic-use-case.md).
 
-För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på paletten Resursdesigner. Se det här [avsnittet](../building-journeys/using-adobe-campaign-classic.md).
+För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på paletten Resursdesigner. Se detta [section](../building-journeys/using-adobe-campaign-classic.md).
 
 ## Viktiga anteckningar
 
@@ -37,7 +37,7 @@ För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på pa
 
 ## Förutsättningar
 
-I Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Läs [Adobe Campaign-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html#transactional-messaging).
+I Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Se [Adobe Campaign-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html#transactional-messaging).
 
 Du kan skapa din JSON-nyttolast som motsvarar varje meddelande enligt mönstret nedan. Du klistrar sedan in den här nyttolasten när du konfigurerar åtgärden i Journey Orchestration (se nedan)
 
@@ -62,12 +62,12 @@ Här är ett exempel:
 
 I Journey Orchestration måste du konfigurera en åtgärd per transaktionsmeddelande. Följ de här stegen:
 
-1. Skapa en ny åtgärd. Se det här [avsnittet](../action/action.md).
+1. Skapa en ny åtgärd. Se detta [section](../action/action.md).
 1. Ange ett namn och en beskrivning.
-1. I fältet **Åtgärdstyp** väljer du **Adobe Campaign Classic**.
-1. Klicka i fältet **Nyttolast** och klistra in ett exempel på JSON-nyttolasten som motsvarar Campaign-meddelandet. Kontakta Adobe för att få denna nyttolast.
+1. I **Åtgärdstyp** fält, markera **Adobe Campaign Classic**.
+1. Klicka på **Nyttolast** och klistra in ett exempel på JSON-nyttolasten som motsvarar Campaign-meddelandet. Kontakta Adobe för att få denna nyttolast.
 1. Justera de olika fälten så att de blir statiska eller variabla beroende på om du vill mappa dem på arbetsytan på resan. Vissa fält, till exempel kanalparametrar för e-postadresser och anpassningsfält (ctx), kan behöva definieras som variabler för mappning i samband med resan.
-1. Klicka på **Spara**.
+1. Klicka **Spara**.
 
 ![](../assets/accintegration1.png)
 

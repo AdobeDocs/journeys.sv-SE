@@ -23,7 +23,7 @@ Starta alltid din resa genom att dra och släppa en händelseaktivitet. Du kan o
 
 ![](../assets/journey44.png)
 
-När du klickar på händelseaktiviteten på arbetsytan visas aktivitetskonfigurationsrutan. Som standard, när du använder samma händelse flera gånger, läggs ett stegvis värde till i händelsenamnet på arbetsytan. Dessutom kan du använda **[!UICONTROL Label]** om du vill lägga till ett suffix till händelsenamnet som ska visas under aktiviteten på arbetsytan. Detta är användbart när du vill identifiera händelser på arbetsytan, särskilt om du använder samma händelse flera gånger. Felsökningen blir också enklare om fel uppstår, vilket gör det lättare att läsa rapporterna.
+När du klickar på händelseaktiviteten på arbetsytan visas aktivitetskonfigurationsrutan. Som standard, när du använder samma händelse flera gånger, läggs ett stegvis värde till i händelsenamnet på arbetsytan. Dessutom kan du använda **[!UICONTROL Label]** om du vill lägga till ett suffix till händelsenamnet som ska visas under aktiviteten på arbetsytan. Detta är användbart om du vill identifiera händelser på arbetsytan, särskilt om du använder samma händelse flera gånger. Felsökningen blir också enklare om fel uppstår, vilket gör det lättare att läsa rapporterna.
 
 ![](../assets/journey33.png)
 

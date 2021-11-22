@@ -2,13 +2,13 @@
 product: adobe campaign
 title: Bygga resan
 description: Lär dig hur du bygger en enkel ärenderesa
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 22bcd7f4-03ee-4e4c-b221-9f14aeadded6
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 36%
 
 ---
@@ -18,15 +18,15 @@ ht-degree: 36%
 Nu kan **företagsanvändaren** bygga resan. Vår resa omfattar endast en väg med följande aktiviteter:
 
 * &quot;SpaBeacon&quot; **[!UICONTROL Event]**: När en person går nära spaltmarkören får systemet ett evenemang och resan börjar för den personen.
-* en **[!UICONTROL Condition]**-aktivitet för att kontrollera att personen är en kvinna
-* en **[!UICONTROL Email]**-aktivitet (med Adobe Campaign Standard)
-* en **[!UICONTROL End]**-aktivitet
+* a **[!UICONTROL Condition]** aktiviteter för att kontrollera att personen är en kvinna
+* en **[!UICONTROL Email]** aktivitet (med Adobe Campaign Standard)
+* en **[!UICONTROL End]** aktivitet
 
 >[!NOTE]
 >
 >Aktiviteterna **[!UICONTROL Push]** och **[!UICONTROL Email]** är bara tillgängliga på paletten om du har Adobe Campaign Standard.
 
-Mer information om hur du skapar en resa finns på [den här sidan](../building-journeys/journey.md).
+Mer information om hur du bygger en resa finns i [den här sidan](../building-journeys/journey.md).
 
 1. Klicka på fliken **[!UICONTROL Home]** och **[!UICONTROL Create]** på den övre menyn för att skapa en ny resa.
 
@@ -48,15 +48,15 @@ Mer information om hur du skapar en resa finns på [den här sidan](../building-
 
    ![](../assets/journeyuc1_11.png)
 
-1. Använd den enkla uttrycksredigeraren och leta efter könsfältet (_person > kön_) och släpp det till höger för att skapa följande villkor: &quot;Kön är lika med &quot;kvinna&quot;.
+1. Använd den enkla uttrycksredigeraren för att leta efter könsfältet (_person > kön_) och släpp det till höger för att skapa följande villkor: &quot;Kön är lika med &quot;kvinna&quot;.
 
    ![](../assets/journeyuc1_12.png)
 
-1. Släpp en **[!UICONTROL Email]**-aktivitet och välj din&quot;Spa-rabatt&quot;-mall för transaktionsmeddelanden. Den här mallen har utformats med Adobe Campaign. Se den här [sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
+1. Släpp **[!UICONTROL Email]** och väljer en mall för transaktionsmeddelanden om&quot;specialrabatt&quot;. Den här mallen har utformats med Adobe Campaign. Se detta [page](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
 
    ![](../assets/journeyuc1_13.png)
 
-1. Klicka i fältet **[!UICONTROL Email]** och välj e-postadressen från datakällan.
+1. Klicka inuti **[!UICONTROL Email]** och välj e-postadressen från datakällan.
 
    ![](../assets/journeyuc1_14.png)
 
@@ -64,11 +64,11 @@ Mer information om hur du skapar en resa finns på [den här sidan](../building-
 
    ![](../assets/journeyuc1_15.png)
 
-1. Släpp en **[!UICONTROL End]**-aktivitet.
+1. Släpp **[!UICONTROL End]** aktivitet.
 
    ![](../assets/journeyuc1_17.png)
 
-1. Klicka på **[!UICONTROL Test]** och testa din resa med testprofiler. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. Mer information om testläget finns på [den här sidan](../building-journeys/testing-the-journey.md).
+1. Klicka på **[!UICONTROL Test]** växla och testa din resa med testprofiler. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. Mer information om testläget finns i [den här sidan](../building-journeys/testing-the-journey.md).
 
    ![](../assets/journeyuc1_18bis.png)
 

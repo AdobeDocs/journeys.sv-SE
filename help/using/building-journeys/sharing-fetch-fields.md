@@ -2,13 +2,13 @@
 product: adobe campaign
 title: datafält för hämtning för händelsen journeyStep
 description: datafält för hämtning för händelsen journeyStep
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 4df471ae-c6b7-452e-8e44-a108d0da276f
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '371'
 ht-degree: 4%
 
 ---
@@ -75,7 +75,7 @@ Typ: string
 
 ## fetchOriginErrorCode
 
-Felkoden som tillhandahålls av systemet [!DNL Journey Orchestration] efterfrågas. Det kan till exempel vara en 404, 500 osv.
+Felkoden som tillhandahålls av systemet [!DNL Journey Orchestration] frågar. Det kan till exempel vara en 404, 500 osv.
 
 Typ: string
 

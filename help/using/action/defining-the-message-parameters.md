@@ -1,6 +1,6 @@
 ---
 product: adobe campaign
-title: Definiera åtgärdsparametrar
+title: Definiera åtgärdsparametrarna
 description: Lär dig hur du definierar åtgärdsparametrar
 feature: Journeys
 role: User
@@ -9,15 +9,15 @@ exl-id: ea9cdb1d-dde6-4080-8f35-7f8cd3cf3644
 source-git-commit: 7ce4ddec60f62662d67351b8ca70d7763e76b977
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Definiera åtgärdsparametrar {#concept_wy4_bf1_2gb}
+# Definiera åtgärdsparametrarna {#concept_wy4_bf1_2gb}
 
 ![](../assets/messageparameterssection.png)
 
-I avsnittet **[!UICONTROL Action parameters]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
+I **[!UICONTROL Action parameters]** klistra in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
 
 ![](../assets/customactionpayloadmessage.png)
 

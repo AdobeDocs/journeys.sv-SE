@@ -2,13 +2,13 @@
 product: adobe campaign
 title: historikstegshändelser, vanliga fält
 description: historikstegshändelser, vanliga fält
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 5cf8e6b5-2162-4aa3-b071-96ede31948e6
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Den här mixinen delas av travelStepEvent och travelStepProfileEvent.
 
-Detta är de vanliga XDM-fälten som [!DNL Journey Orchestration] skickar till Adobe Experience Platform. Vanliga fält skickas för varje steg som bearbetas under en resa. Mer specifika fält används för anpassade åtgärder och berikning.
+Det här är de vanliga XDM-fälten som [!DNL Journey Orchestration] skickar till Adobe Experience Platform. Vanliga fält skickas för varje steg som bearbetas under en resa. Mer specifika fält används för anpassade åtgärder och berikning.
 
 Vissa av dessa fält är bara tillgängliga i specifika bearbetningsmönster (åtgärdskörning, datahämtning osv.) för att begränsa storleken på händelser.
 

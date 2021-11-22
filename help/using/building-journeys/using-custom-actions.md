@@ -25,7 +25,7 @@ I aktivitetskonfigurationsrutan visas URL-konfigurationsparametrarna och autenti
 
 ### Dynamisk sökväg
 
-Om URL:en innehåller en dynamisk sökväg anger du sökvägen i fältet **[!UICONTROL Path]**.
+Om URL:en innehåller en dynamisk sökväg anger du sökvägen i **[!UICONTROL Path]** fält.
 
 >[!NOTE]
 >
@@ -42,18 +42,18 @@ I den här tabellen visas ett exempel på konfiguration:
 
 Den sammanfogade URL:en har följande format:
 
-`https://xxx.yyy.com:8080/somethingstatic/`\&lt;campaign ID=&quot;&quot;>`/messages`
+`https://xxx.yyy.com:8080/somethingstatic/`\&lt;campaign id=&quot;&quot;>`/messages`
 
 ![](../assets/journey-custom-action-url.png)
 
 ### Sidhuvuden
 
-Avsnittet **[!UICONTROL URL Configuration]** visar de dynamiska rubrikfälten, men inte de konstanta rubrikfälten. Dynamiska rubrikfält är HTTP-rubrikfält vars värde är konfigurerat som en variabel. [Läs mer](../action/about-custom-action-configuration.md).
+The **[!UICONTROL URL Configuration]** -avsnittet visar de dynamiska rubrikfälten, men inte de konstanta rubrikfälten. Dynamiska rubrikfält är HTTP-rubrikfält vars värde är konfigurerat som en variabel. [Läs mer](../action/about-custom-action-configuration.md).
 
 Ange vid behov värdet för dynamiska rubrikfält:
 
 1. Välj den anpassade åtgärden under resan.
-1. Klicka på pennikonen bredvid rubrikfältet i **[!UICONTROL URL Configuration]**-avsnittet i konfigurationsfönstret.
+1. Klicka på pennikonen bredvid rubrikfältet i konfigurationsfönstret **[!UICONTROL URL Configuration]** -avsnitt.
 
    ![](../assets/journey-dynamicheaderfield.png)
 
@@ -61,7 +61,7 @@ Ange vid behov värdet för dynamiska rubrikfält:
 
 ## Åtgärdsparametrar
 
-I avsnittet **[!UICONTROL Action parameters]** ser du meddelandeparametrarna som är definierade som _&quot;Variabel&quot;_. För de här parametrarna kan du definiera var informationen ska hämtas (exempel: händelser, datakällor), skicka värden manuellt eller använd den avancerade uttrycksredigeraren för avancerade användningsområden. Avancerade användningsområden kan vara datahantering och annan funktionsanvändning. [Läs mer](../expression/expressionadvanced.md).
+I **[!UICONTROL Action parameters]** visas meddelandeparametrar som _&quot;Variabel&quot;_. För de här parametrarna kan du definiera var informationen ska hämtas (exempel: händelser, datakällor), skicka värden manuellt eller använd den avancerade uttrycksredigeraren för avancerade användningsområden. Avancerade användningsområden kan vara datahantering och annan funktionsanvändning. [Läs mer](../expression/expressionadvanced.md).
 
 **Relaterade ämnen**
 

@@ -2,14 +2,14 @@
 product: adobe campaign
 title: Om det enkla användningsfallet
 description: Läs mer om enkel användning
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 11858c7a-fdb3-43a4-af28-0d5c23fa2468
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 11%
+source-wordcount: '173'
+ht-degree: 10%
 
 ---
 
@@ -27,7 +27,7 @@ Vi vill bara skicka ett meddelande om personen är en kvinna. Meddelandet måste
 
 ## Krav {#prerequisites}
 
-Vi har utformat en e-postmall för transaktionsmeddelanden i Adobe Campaign Standard. Vi använder en transaktionsmall för händelsetjänster. Se den här [sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
+Vi har utformat en e-postmall för transaktionsmeddelanden i Adobe Campaign Standard. Vi använder en transaktionsmall för händelsetjänster. Se detta [page](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
 
 Adobe Campaign Standard har konfigurerats för att skicka e-post.
 

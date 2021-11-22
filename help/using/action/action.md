@@ -2,14 +2,14 @@
 product: adobe campaign
 title: Om åtgärder
 description: Läs om hur du konfigurerar en åtgärd
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 34f7666b-1c91-4edd-b5d6-4c0513b9c4f3
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 83%
+source-wordcount: '311'
+ht-degree: 82%
 
 ---
 
@@ -24,15 +24,15 @@ ht-degree: 83%
 
 Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssystem för att skicka meddelanden eller API-anrop. En åtgärd kan konfigureras med alla tjänster från alla leverantörer som kan anropas via ett REST API med en JSON-formaterad nyttolast.
 
-Åtgärderna är tillgängliga på den vänstra paletten under din resa i kategorin **[!UICONTROL Action]**. Läs [den här sidan](../building-journeys/about-action-activities.md).
+Åtgärderna finns tillgängliga på den vänstra paletten under resan, i **[!UICONTROL Action]** kategori. Läs [den här sidan](../building-journeys/about-action-activities.md).
 
 >[!NOTE]
 >
 >Konfigurationen av anpassade åtgärder utförs alltid av en **teknisk användare**.
 
-I listan över **åtgärder** kan du trycka på c för att skapa en ny resa, åtgärd, datakälla eller händelse. Mer information om genvägar i [!DNL Journey Orchestration] finns i [det här avsnittet](../about/user-interface.md#section_ksq_zr1_ffb).
+I listan över **åtgärder** kan du trycka på c för att skapa en ny resa, åtgärd, datakälla eller händelse. Mer information om kortkommandon finns i [!DNL Journey Orchestration], se [det här avsnittet](../about/user-interface.md#section_ksq_zr1_ffb).
 
-Klicka på **[!UICONTROL Actions]** på de övre menyerna för att se åtgärdslistan eller konfigurera en ny åtgärd. Listan med åtgärder visas. Mer information om gränssnittet finns på [den här sidan](../about/user-interface.md).
+Klicka på **[!UICONTROL Actions]** på de övre menyerna för att se åtgärdslistan eller konfigurera en ny åtgärd. Listan med åtgärder visas. Se [den här sidan](../about/user-interface.md) för mer information om gränssnittet.
 
 ![](../assets/custom1.png)
 

@@ -30,7 +30,7 @@ Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två p
 
 Här följer de viktigaste stegen för att skapa och konfigurera en ny extern datakälla:
 
-1. Klicka på **[!UICONTROL Create data source]** i listan över datakällor för att skapa en ny extern datakälla.
+1. Klicka på i listan över datakällor **[!UICONTROL Create data source]** för att skapa en ny extern datakälla.
 
    ![](../assets/journey25.png)
 
@@ -186,4 +186,4 @@ Du kan ändra cachevaraktigheten på en token för en anpassad autentiseringsdat
 
 >[!NOTE]
 >
->Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med ett rent cacheminne. Cachevaraktigheten är som standard 1 timme. I den anpassade åtgärdsnyttolasten kan den anpassas genom att ange en annan kvarhållningsperiod.
+>Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med ett rent cacheminne. Cachevaraktigheten är som standard 1 timme. I den anpassade åtgärdsnyttolasten kan den anpassas genom att ange en annan kvarhållningstid.

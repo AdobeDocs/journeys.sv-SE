@@ -17,7 +17,7 @@ ht-degree: 60%
 
 Här följer de viktigaste stegen för att konfigurera en ny händelse:
 
-1. Klicka på fliken **[!UICONTROL Events]** på den övre menyn. Listan med händelser visas. Mer information om gränssnittet finns på [den här sidan](../about/user-interface.md).
+1. Klicka på fliken **[!UICONTROL Events]** på den övre menyn. Listan med händelser visas. Se [den här sidan](../about/user-interface.md) för mer information om gränssnittet.
 
    ![](../assets/journey5.png)
 
@@ -29,13 +29,13 @@ Här följer de viktigaste stegen för att konfigurera en ny händelse:
    >
    >Använd inte blanksteg eller specialtecken. Använd maximalt 30 tecken.
 
-1. Välj händelsetypen som du vill använda i fältet **[!UICONTROL Event ID type]**.
+1. I **[!UICONTROL Event ID type]** väljer du den händelsetyp som du vill använda.
 
    ![](../assets/journey6bis.png)
 
-   * **Regelbaserade** händelser: Den här händelsetypen genererar inget eventID. I fältet **Händelse-ID villkor** definierar du bara en regel som ska användas av systemet för att identifiera de relevanta händelser som utlöser dina resor. Den här regeln kan baseras på alla fält som är tillgängliga i händelsenyttolasten, till exempel profilens plats eller antalet objekt som läggs till i profilens kundvagn.
+   * **Regelbaserade** händelser: Den här händelsetypen genererar inget eventID. I **Händelse-ID-villkor** definierar du bara en regel som ska användas av systemet för att identifiera de relevanta händelser som utlöser dina resor. Den här regeln kan baseras på alla fält som är tillgängliga i händelsenyttolasten, till exempel profilens plats eller antalet objekt som läggs till i profilens kundvagn.
 
-   * **Systemgenererade** undantag: den här typen kräver ett eventID. Detta eventID-fält genereras automatiskt när händelsen skapas och läggs till i nyttolastförhandsvisningen. Systemet som skickar händelsen ska inte generera ett ID utan det ska skicka det som finns i nyttolastförhandsvisningen. Se [det här avsnittet](../event/previewing-the-payload.md).
+   * **Systemgenererad** händelser: den här typen kräver ett eventID. Detta eventID-fält genereras automatiskt när händelsen skapas och läggs till i nyttolastförhandsvisningen. Systemet som skickar händelsen ska inte generera ett ID utan det ska skicka det som finns i nyttolastförhandsvisningen. Se [det här avsnittet](../event/previewing-the-payload.md).
    >[!NOTE]
    >
    >Läs mer om händelsetyper i [det här avsnittet](../event/about-events.md).
@@ -43,12 +43,12 @@ Här följer de viktigaste stegen för att konfigurera en ny händelse:
 1. Definiera fälten för schemat och nyttolasten. Här väljer du den händelseinformation (kallas vanligtvis nyttolast) som [!DNL Journey Orchestration] förväntas ta emot. Du kan sedan använda den här informationen i din resa. Läs [den här sidan](../event/defining-the-payload-fields.md).
    >[!NOTE]
    >
-   >När du väljer typen **[!UICONTROL System Generated]** är endast scheman som har typen eventID tillgängliga. När du väljer typen **[!UICONTROL Rule Based]** är alla Experience Event-scheman tillgängliga.
+   >När du väljer **[!UICONTROL System Generated]** type är bara scheman som har typen eventID mixin tillgängliga. När du väljer **[!UICONTROL Rule Based]** är alla Experience Event-scheman tillgängliga.
 
-1. För regelbaserade händelser klickar du i fältet **[!UICONTROL Event ID condition]**. Använd den enkla uttrycksredigeraren för att definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa.
+1. För regelbaserade händelser klickar du inuti **[!UICONTROL Event ID condition]** fält. Använd den enkla uttrycksredigeraren för att definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa.
    ![](../assets/alpha-event6.png)
 
-   I vårt exempel skrev vi ett villkor baserat på profilens stad. Det innebär att när systemet tar emot en händelse som matchar det här villkoret (**[!UICONTROL City]**-fält och **[!UICONTROL Paris]**-värde) skickas den till Journey Orchestration.
+   I vårt exempel skrev vi ett villkor baserat på profilens stad. Det innebär att när systemet tar emot en händelse som matchar det här villkoret (**[!UICONTROL City]** fält och **[!UICONTROL Paris]** värdet), skickas det till Journey Orchestration.
 
    >[!NOTE]
    >

@@ -23,7 +23,7 @@ ht-degree: 61%
 
 ## Komma åt [!DNL Journey Orchestration]{#accessing_journey_orchestration}
 
-Om du vill komma åt gränssnittet för [!DNL Journey Orchestration] klickar du på ikonen **[!UICONTROL App Selector]** längst upp till höger och sedan på **[!UICONTROL Journey Orchestration]**.
+Så här öppnar du [!DNL Journey Orchestration]I gränssnittet klickar du på **[!UICONTROL App Selector]** ikonen, längst upp till höger och klicka sedan på **[!UICONTROL Journey Orchestration]**.
 
 ![](../assets/journey1.png)
 
@@ -55,7 +55,7 @@ Du kommer åt **[!UICONTROL Filters]** genom att klicka på filterikonen högst 
 
 I listorna **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** kan du använda **[!UICONTROL Creation filters]** för att filtrera per datum för skapande och per användare. Du kan till exempel välja att bara visa händelser som du har skapat under de senaste 30 dagarna.
 
-I reselistan (under **[!UICONTROL Home]**) kan du, utöver **[!UICONTROL Creation filters]**, även filtrera de visade resorna efter status, typ och version (**[!UICONTROL Status and version filters]**). Typen kan vara: **[!UICONTROL Unitary event]** eller **[!UICONTROL Segment qualification]**. Du kan även välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). Med **[!UICONTROL Publication filters]** kan du välja ett publiceringsdatum eller en viss användare. Du kan till exempel välja att endast visa de senaste versionerna av resor i realtid som publicerades i går. Läs [den här sidan](../building-journeys/using-the-journey-designer.md).
+I reselistan (under **[!UICONTROL Home]**), utöver **[!UICONTROL Creation filters]** kan du även filtrera de visade resorna efter status, typ och version (**[!UICONTROL Status and version filters]**). Typen kan vara: **[!UICONTROL Unitary event]** eller **[!UICONTROL Segment qualification]**. Du kan även välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). Med **[!UICONTROL Publication filters]** kan du välja ett publiceringsdatum eller en viss användare. Du kan till exempel välja att endast visa de senaste versionerna av resor i realtid som publicerades i går. Läs [den här sidan](../building-journeys/using-the-journey-designer.md).
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Du kan använda dessa kortkommandon i vissa delar av Journey Optimizer:
   </tr>
   <tr>
     <td>Välj alla aktiviteter</td>
-    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
+    <td>Ctrl + A (Windows)<br/>Cmd + A (Mac)</td>
   </tr>
   <tr>
     <td>Ta bort de valda aktiviteterna</td>
@@ -173,7 +173,7 @@ Konfigurationsruta för dessa element:
   <tr>
     <td>
 
-Utlös en händelse i en segmentbaserad resa för vilken alternativet **[!UICONTROL Single profile at a time]** är aktiverat
+Utlös en händelse i en segmentbaserad resa för vilken **[!UICONTROL Single profile at a time]** alternativ är aktiverat
 
 </td>
     <td>P</td>
@@ -192,7 +192,7 @@ Utlös en händelse i en segmentbaserad resa för vilken alternativet **[!UICONT
   <tr>
     <td>Textfält</td>
     <td>Markera all text i det markerade fältet</td>
-    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
+    <td>Ctrl + A (Windows)<br/>Cmd + A (Mac)</td>
   </tr>
   <tr>
     <td rowspan="2">Popup-fönster</td>
@@ -216,6 +216,6 @@ Utlös en händelse i en segmentbaserad resa för vilken alternativet **[!UICONT
   <tr>
     <td>Förhandsgranska nyttolast</td>
     <td>Välj nyttolast</td>
-    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
+    <td>Ctrl + A (Windows)<br/>Cmd + A (Mac)</td>
   </tr>
 </table>

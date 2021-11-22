@@ -2,13 +2,13 @@
 product: adobe campaign
 title: Om datakällor
 description: 'Läs om hur du konfigurerar en datakälla '
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 2371d2c9-3035-46ac-9c76-755fb453c24e
 source-git-commit: e1ee5a488e9eb6fd8d175a2ab8989c73289ea708
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '344'
 ht-degree: 76%
 
 ---
@@ -44,9 +44,9 @@ Här följer de huvudsakliga konfigurationsstegen för datakällor:
 >
 >Datakällans konfiguration utförs alltid av en **teknisk användare**.
 
-1. Välj **[!UICONTROL Admin]** i menyrutan. Klicka på **[!UICONTROL Manage]** i **[!UICONTROL Data sources]**-avsnittet.
+1. I menyrutan väljer du **[!UICONTROL Admin]**. I **[!UICONTROL Data sources]** avsnitt, klicka **[!UICONTROL Manage]**.
 
-   Listan med datakällor visas. Mer information om gränssnittet finns på [den här sidan](../about/user-interface.md).
+   Listan med datakällor visas. Se [den här sidan](../about/user-interface.md) för mer information om gränssnittet.
 
    ![](../assets/journey18.png)
 

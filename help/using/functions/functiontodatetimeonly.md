@@ -2,14 +2,14 @@
 product: adobe campaign
 title: toDateTimeOnly
 description: Läs mer om funktionen toDateTime
-feature: Resor
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 19a4b7f8-5636-4b8f-b81f-28ff7da99671
 source-git-commit: 0c55ece133639ec001b58f73afcbc69787b98c0e
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 14%
+source-wordcount: '55'
+ht-degree: 12%
 
 ---
 
@@ -46,7 +46,7 @@ Returnera en datetime utan att överväga tidszon.
 
 `toDateTimeOnly ("2016-08-18")`
 
-returnerar ett dateTime som representerar 2016-08-18T00:00:00.00
+returnerar ett dateTime som representerar 2016-08-18T00:00:00,000
 
 `toDateTimeOnly(now())`
 

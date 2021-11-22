@@ -2,13 +2,13 @@
 product: adobe campaign
 title: Mätvärden och dimensioner
 description: Läs om mått och mätvärden för Journey Orchestration
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: f6897011-0a5e-4094-a18e-ba2aa25f902c
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1035'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Här finns en lista över alla komponenter som är tillgängliga i dynamiska rap
 
 Tabellen nedan visar en lista över de dimensioner som används i reserapporter och definitioner av dessa.
 
-Mer information om kompatibilitet mellan dimensioner och mått finns på [den här sidan](../assets/do-not-localize/dynamic_report_compatibility_journey.pdf).
+Mer information om kompatibilitet mellan dimensioner och mätvärden finns i [den här sidan](../assets/do-not-localize/dynamic_report_compatibility_journey.pdf).
 
 ## Resedimensioner {#MBE_table_wk4_bnj_w2b}
 
@@ -31,13 +31,13 @@ Tabellen nedan visar en lista över de dimensioner som används i reserapporter,
 
 | Mått | Definition |
 |--- |--- |
-| **Åtgärd** | Lista över alla åtgärder (**åtgärdsnamn - åtgärdsetikett**) som används i resor, t.ex. Tryck - Checka ut bekräftelse, E-post - Återbetalningsföljsamhet. |
-| **Datakälla** | Lista med datakällor (**namn på datakälla**) som används för att förbättra data i en resa, t.ex. Adobe Experience Platform, Reservation System. |
-| **[!UICONTROL Event]** | Lista över alla händelser (**händelsenamn - händelseetikett**) som används i resor, t.ex. Geometrixx event - Geometrixx check out. |
-| **Fältgrupp** | Lista över fältgrupper (**fältgruppnamn**) som används för att förbättra data i resor, t.ex. profilfältgrupp, reservationssystem för Geometrixx. |
-| **Resa** | Lista över varje resa (**resenamn**) i testläge och live, t.ex. kundvagnsöverlämning, Hotel-bokningsmeddelande. |
-| **Reseversion** | Lista över alla publicerade versioner av en resa (**kundens namn + versionens nummer**), t.ex. kundvagnens överlämnande v1, Hotel-reservationsmeddelande v2. |
-| **Orchestration** | Lista över alla koordinationsaktiviteter (**Condition, End, Wait**) som definierats och används i resor. |
+| **Åtgärd** | Lista över alla åtgärder (**åtgärdsnamn - åtgärdsetikett**) används vid resor, t.ex. Push - Check out confirmation, Email - Rewards fidelity. |
+| **Datakälla** | Förteckning över datakällor (**datakällans namn**) används för att berika data i en resa, t.ex. Adobe Experience Platform, reservationssystem. |
+| **[!UICONTROL Event]** | Lista över alla händelser (**händelsenamn - händelseetikett**) som används vid resor, t.ex. Geometrixx event - Geometrixx check out. |
+| **Fältgrupp** | Lista över fältgrupper (**fältgruppsnamn**) som används för att berika data vid resor, t.ex. profilfältgrupp, reservationssystem för Geometrixx. |
+| **Resa** | Förteckning över varje resa (**resenamn**) i testläge och i realtid, t.ex. när kunden överger en varukorg, ett meddelande om hotellreservation. |
+| **Reseversion** | Lista över alla publicerade versioner av en resa (**resans namn + versionsnummer**), t.ex. övergivande av kundvagn v1, meddelande om hotellreservation v2. |
+| **Orchestration** | Lista över alla orkestreringsaktiviteter (**Villkor, avsluta, vänta**) definieras och används vid resor. |
 
 ## Leveransdimensioner {#delivery-dimensions}
 
@@ -83,8 +83,7 @@ Tabellen nedan visar en lista över mätvärden som används i reserapporter, de
 
 ## Leveransstatistik {#delivery-metrics}
 
-Tabellen nedan visar en lista över mätvärden som används under resan
-rapporter, definitioner och formler.
+Tabellen nedan visar en lista över mätvärden som används i reserapporter, definitioner och formler.
 
 | Mått | Definition |
 |--- |--- |

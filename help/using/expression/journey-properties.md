@@ -2,24 +2,24 @@
 product: adobe campaign
 title: Resans egenskaper
 description: Läs om reseegenskaper
-feature: Resor
+feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 798e4207-5bef-4002-9c1f-608bb6243e43
 source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 1%
 
 ---
 
 # Attribut för reseegenskaper {#journey-properties}
 
-I den avancerade uttrycksredigeraren finns kategorin **Reseegenskaper** nedanför kategorierna event och datakälla. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats.
+I den avancerade uttrycksredigeraren hittar du **Reseegenskaper** -kategorin, under kategorierna för händelsen och datakällan. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats.
 
 >[!NOTE]
 >
->Attribut för reseegenskaper är också tillgängliga i redigeraren för enkla uttryck. Se det här [avsnittet](../building-journeys/condition-activity.md#about_condition)
+>Attribut för reseegenskaper är också tillgängliga i redigeraren för enkla uttryck. Se det här [section](../building-journeys/condition-activity.md#about_condition)
 
 ![](../assets/journey-properties.png)
 

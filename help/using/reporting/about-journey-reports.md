@@ -2,13 +2,13 @@
 product: adobe campaign
 title: Om reserapporter
 description: Lär dig hur du skapar reserapporter
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: 93768321-b171-4338-a440-6ea189a85a4a
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '732'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ I det övre verktygsfältet kan du till exempel ändra, spara eller skriva ut ra
 
 ![](../assets/dynamic_report_toolbar.png)
 
-Använd fliken **[!UICONTROL Project]** för att:
+Använd **[!UICONTROL Project]** till:
 
 * **[!UICONTROL Open]**: öppnar en tidigare skapad rapport eller mall.
 * **[!UICONTROL Save As]**: duplicerar mallar för att kunna ändra dem.
@@ -35,13 +35,13 @@ Använd fliken **[!UICONTROL Project]** för att:
 * **[!UICONTROL Download CSV]**: exporterar dina rapporter till en CSV-fil.
 * **[!UICONTROL Print]**: skriver ut rapporten.
 
-På fliken **[!UICONTROL Edit]** kan du:
+The **[!UICONTROL Edit]** kan du
 
 * **[!UICONTROL Undo]**: avbryter din senaste åtgärd på instrumentpanelen.
-* **[!UICONTROL Redo]**: avbryter den senaste  **[!UICONTROL Undo]** åtgärden på instrumentpanelen.
+* **[!UICONTROL Redo]**: avbryter ditt senaste **[!UICONTROL Undo]** på din instrumentpanel.
 * **[!UICONTROL Clear all]**: tar bort alla paneler på kontrollpanelen.
 
-Med tabellen **[!UICONTROL Insert]** kan du anpassa rapporter genom att lägga till diagram och tabeller på kontrollpanelen:
+The **[!UICONTROL Insert]** Med tabell kan du anpassa rapporter genom att lägga till diagram och tabeller på kontrollpanelen:
 
 * **[!UICONTROL New Blank Panel]**: lägger till en ny tom panel på instrumentpanelen.
 * **[!UICONTROL New Freeform]**: lägger till en ny friformstabell på kontrollpanelen.
@@ -54,14 +54,14 @@ Med de vänstra flikarna kan du skapa en rapport och filtrera data efter behov.
 
 Med de här flikarna får du tillgång till följande objekt:
 
-* **[!UICONTROL Panels]**: lägg till en tom panel eller ett frihandsritat i rapporten för att börja filtrera dina data. Mer information finns i avsnittet [Lägga till paneler](../reporting/creating-your-journey-reports.md#adding-panels)
-* **[!UICONTROL Visualizations]**: dra och släpp ett urval av visualiseringsobjekt för att ge rapporten en grafisk dimension. Mer information finns i avsnittet [Lägga till visualiseringar](../reporting/creating-your-journey-reports.md#adding-visualizations).
-* **[!UICONTROL Components]**: anpassa era rapporter med olika dimensioner, mätvärden, segment och tidsperioder. Mer information finns i avsnittet [Lägga till komponenter](../reporting/creating-your-journey-reports.md#adding-components).
+* **[!UICONTROL Panels]**: lägg till en tom panel eller ett frihandsritat i rapporten för att börja filtrera dina data. Mer information finns i [Lägga till paneler](../reporting/creating-your-journey-reports.md#adding-panels) section
+* **[!UICONTROL Visualizations]**: dra och släpp ett urval av visualiseringsobjekt för att ge rapporten en grafisk dimension. Mer information finns i [Lägga till visualiseringar](../reporting/creating-your-journey-reports.md#adding-visualizations) -avsnitt.
+* **[!UICONTROL Components]**: anpassa era rapporter med olika dimensioner, mätvärden, segment och tidsperioder. Mer information finns i [Lägga till komponenter](../reporting/creating-your-journey-reports.md#adding-components) -avsnitt.
 
 ## Översiktsmall för resa {#ootb-template}
 
 Rapporterna är uppdelade i två kategorier: en färdig mall och anpassade rapporter.
-Den färdiga mallen **[!UICONTROL Journey summary]** ger en tydlig bild av de viktigaste spårningsdata.
+färdiga mallar, **[!UICONTROL Journey summary]**, ger en tydlig bild av de viktigaste spårningsdata.
 
 ![](../assets/dynamic_report_journey_8.png)
 
@@ -84,7 +84,7 @@ Med hjälp av reseflödesvisualiseringen kan ni se vägen för era målprofiler 
 
 ![](../assets/dynamic_report_journey_10.png)
 
-Tabellen **[!UICONTROL Journey summary]** innehåller de data som är tillgängliga för din resa, till exempel:
+The **[!UICONTROL Journey summary]** tabellen innehåller de data som är tillgängliga för din resa, till exempel:
 
 * **[!UICONTROL Entered]**: Totalt antal personer som har nått resans inträde.
 * **[!UICONTROL Completion rate]**: det totala antalet personer som har nått slutflödeskontrollen för resan jämfört med det totala antalet personer som har passerat resan.
@@ -92,11 +92,11 @@ Tabellen **[!UICONTROL Journey summary]** innehåller de data som är tillgängl
 * **[!UICONTROL Failed]**: Totalt antal resor som inte har slutförts.
 * **[!UICONTROL Failed rate]**: det totala antalet resor som inte har slutförts, jämfört med antalet körningar.
 
-Tabellen **[!UICONTROL Top events]** visar de mest framgångsrika händelserna och **[!UICONTROL Top action]**, de mest framgångsrika åtgärderna på dina resor.
+The **[!UICONTROL Top events]** tabellen visar de mest framgångsrika händelserna och **[!UICONTROL Top action]**, de mest framgångsrika åtgärderna på era resor.
 
 ![](../assets/dynamic_report_journey_11.png)
 
-Tabellen **[!UICONTROL Delivery - Sending summary]** innehåller de data som är tillgängliga för kundens leveranser, till exempel:
+The **[!UICONTROL Delivery - Sending summary]** tabellen innehåller de data som är tillgängliga för kundens leveranser, till exempel:
 
 * **[!UICONTROL Processed/sent]**: totalt antal skickade meddelanden.
 * **[!UICONTROL Delivered rate]**: Totalt antal meddelanden som har levererats jämfört med skickade meddelanden.
@@ -104,7 +104,7 @@ Tabellen **[!UICONTROL Delivery - Sending summary]** innehåller de data som är
 * **[!UICONTROL Bounce + error rate]**: Totalt antal meddelanden som studsade jämfört med skickade meddelanden.
 * **[!UICONTROL Bounces + errors]**: det totala antalet fel som sammanställts under leveransen och den automatiska returbearbetningen i förhållande till det totala antalet skickade meddelanden.
 
-Tabellen **[!UICONTROL Delivery - Tracking summary]** innehåller de data som är tillgängliga för att spåra resultatet av dina resleveranser, som:
+The **[!UICONTROL Delivery - Tracking summary]** tabellen innehåller tillgängliga uppgifter för att spåra hur väl resorna har lyckats, t.ex.
 
 * **[!UICONTROL Open Rate]**: procentandel öppnade meddelanden.
 * **[!UICONTROL Open]**: antal gånger ett meddelande öppnades i en leverans.

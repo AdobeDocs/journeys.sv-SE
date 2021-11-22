@@ -2,20 +2,20 @@
 product: adobe campaign
 title: Hantering av tidszoner
 description: Läs mer om hantering av tidszoner
-feature: Resor
+feature: Journeys
 role: User
 level: Intermediate
 exl-id: c0e67849-caa0-4045-94ed-38e483054e1d
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '277'
 ht-degree: 2%
 
 ---
 
 # Hantering av tidszoner {#timezone_management}
 
-Du kan definiera en tidszon i [egenskaperna](../building-journeys/changing-properties.md) för din resa.
+Du kan definiera en tidszon i dialogrutan [egenskaper](../building-journeys/changing-properties.md) av din resa.
 
 Du öppnar Egenskaper genom att klicka på pennikonen i skärmens övre högra hörn.
 
@@ -30,13 +30,13 @@ Du kan välja en tidszon eller välja att använda den tidszon som är definiera
 
 >[!NOTE]
 >
->Tidszonen för profilen fungerar med fältet **timeZone** i fältgruppen **Inställningsinformation**.
+>Tidszonen för profilen fungerar med **timeZone** fältet finns i **Inställningsinformation** fältgrupp.
 
 ## Definiera en fast tidszon {#fixed-timezone}
 
 Tidszonen kan också korrigeras. Rensa den fördefinierade tidszonen och välj en i listrutan. Om du använder en fast tidszon är den densamma för alla personer som deltar i resan.
 
-Om du vill göra det väljer du en tidszon i **[!UICONTROL Properties]**.
+Gör så här: **[!UICONTROL Properties]** väljer du en tidszon.
 
 ![](../assets/journey72.png)
 
@@ -48,7 +48,7 @@ Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas un
 
 Om den enskilda personens profil inte innehåller någon tidszon är den tidszon som hämtas den som definieras i tidszonsfältet.
 
-Om du vill göra det i **[!UICONTROL Properties]** markerar du **[!UICONTROL Use Profile timezone in timers and conditions]**.
+Gör så här: **[!UICONTROL Properties]**, kontrollera **[!UICONTROL Use Profile timezone in timers and conditions]**.
 
 ![](../assets/journey73.png)
 
