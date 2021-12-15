@@ -15,7 +15,7 @@ ht-degree: 13%
 
 # toDateOnly{#toDateOnly}
 
-Konverterar ett argumentvärde till ett värde för endast datum.
+Converts an argument value into a date only value.
 
 ## Kategori
 
@@ -30,15 +30,15 @@ Konvertering
 | Parameter | Typ |
 |-----------|------------------|
 | datum i ISO-8601- eller &quot;YYY-MM-DD&quot;-format (XDM-datumformat) | string |
-| datum | datum |
+| datum | date |
 
-## Underskrifter och returnerade typer
+## Signatures and returned types
 
 `toDateOnly(<date>)`
 
 `toDateOnly(<string>)`
 
-Returnera en datetime utan att överväga tidszon.
+Return a datetime without considering time zone.
 
 ## Exempel
 
