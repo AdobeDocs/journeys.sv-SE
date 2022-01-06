@@ -6,9 +6,9 @@ user-guide-description: Tillhandahåller anvisningar för hur man implementerar 
 index: true
 feature: Journeys
 source-git-commit: f0cb883a09d553bb47491b750fabde54c92f3225
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -88,8 +88,8 @@ ht-degree: 96%
    + [Publicera resan](using/building-journeys/publishing-the-journey.md)
    + Dela resesteg med Adobe Experience Platform {#sharing-journey-steps}
       + [Översikt över att dela steg i resan](using/building-journeys/sharing-overview.md)
-      + [Stega händelsefältslista](using/building-journeys/sharing-field-list.md)
-      + Händelsefält för äldre steg {#legacy-step-event-fields}
+      + [Lista över steghändelsefält](using/building-journeys/sharing-field-list.md)
+      + Äldre steghändelsefält {#legacy-step-event-fields}
          + [Om äldre fält](using/building-journeys/sharing-legacy-fields.md)
          + [vanliga fält för händelsen journeySteps](using/building-journeys/sharing-common-fields.md)
          + [fält för händelseexekvering för händelsen journeyStep](using/building-journeys/sharing-execution-fields.md)
@@ -97,7 +97,7 @@ ht-degree: 96%
          + [identitetsfält för händelsen journeyStep](using/building-journeys/sharing-identity-fields.md)
          + [resefält](using/building-journeys/sharing-journey-fields.md)
       + [Exempel på frågor](using/building-journeys/query-examples.md)
-+ Skapa uttryck {#building-advanced-conditions-journeys}
++ Bygga uttryck {#building-advanced-conditions-journeys}
    + [Översikt](using/expression/expressionadvanced.md)
    + Syntax {#syntax}
       + [Allmänt](using/expression/generalities.md)
