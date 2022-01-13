@@ -6,7 +6,7 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 9b666c15-2215-4ca5-bc72-40109749dc15
-source-git-commit: 7805ee4beb056ba84bc994162da2b0e54db60ca3
+source-git-commit: 3856e323569054fac9e73f2a6af2b86518f62ab9
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 93%
@@ -186,4 +186,4 @@ Du kan ändra cachevaraktigheten på en token för en anpassad autentiseringsdat
 
 >[!NOTE]
 >
->Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med ett rent cacheminne. Cachevaraktigheten är som standard 1 timme. I den anpassade åtgärdsnyttolasten kan den anpassas genom att ange en annan kvarhållningstid.
+>Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med ett rent cacheminne. Cachevaraktigheten är som standard 1 timme. I den anpassade autentiseringsnyttolasten kan den anpassas genom att ange en annan kvarhållningstid.
