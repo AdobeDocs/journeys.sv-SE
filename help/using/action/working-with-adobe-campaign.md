@@ -6,7 +6,7 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: c7e08542-fde8-4072-a697-42d35d6c58ba
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 545352efdcda80cb9940010c4587a20f53326085
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
@@ -23,7 +23,7 @@ Campaign Standardens transaktionsmeddelande och tillhörande händelse måste pu
 
 >[!NOTE]
 >
->En begränsningsregel på 13 anrop per sekund definieras automatiskt för Adobe Campaign Standard-åtgärder så snart Adobe Campaign Standard-integreringen har konfigurerats. Detta motsvarar den officiella skalan för Adobe Campaign Standard Transactional Messaging.
+>En begränsning på 4 000 anrop per 5 minuter definieras automatiskt för Adobe Campaign Standard-åtgärder så snart Adobe Campaign Standard-integreringen är klar. Detta motsvarar den officiella skalan för Adobe Campaign Standard Transactional Messaging.
 >
 >Läs mer om SLA för transaktionsmeddelanden i [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html).
 
