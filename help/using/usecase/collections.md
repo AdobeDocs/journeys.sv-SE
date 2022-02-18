@@ -3,8 +3,7 @@ product: adobe campaign
 solution: Journey Orchestration
 title: Skicka samlingar dynamiskt med anpassade åtgärder
 description: Skicka ett meddelande med Campaign v7/v8
-exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
-source-git-commit: 358fddd8e5c2ca80532ff2b74dc9627ffdc8837e
+source-git-commit: 2195ee3863b38ead504eb6785ceb3c37735fade9
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 4%

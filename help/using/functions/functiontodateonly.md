@@ -5,8 +5,7 @@ description: Läs mer om funktionen toDateOnly
 feature: Journeys
 role: Data Engineer
 level: Experienced
-exl-id: 19a4b7f8-5636-4b8f-b81f-28ff7da99671
-source-git-commit: 5225045f02fb1b2a8505756d9d7f6f60a32b3ed6
+source-git-commit: 2195ee3863b38ead504eb6785ceb3c37735fade9
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 13%
@@ -15,7 +14,7 @@ ht-degree: 13%
 
 # toDateOnly{#toDateOnly}
 
-Converts an argument value into a date only value.
+Konverterar ett argumentvärde till ett värde för endast datum.
 
 ## Kategori
 
@@ -30,15 +29,15 @@ Konvertering
 | Parameter | Typ |
 |-----------|------------------|
 | datum i ISO-8601- eller &quot;YYY-MM-DD&quot;-format (XDM-datumformat) | string |
-| datum | date |
+| datum | datum |
 
-## Signatures and returned types
+## Underskrifter och returnerade typer
 
 `toDateOnly(<date>)`
 
 `toDateOnly(<string>)`
 
-Return a datetime without considering time zone.
+Returnera en datetime utan att överväga tidszon.
 
 ## Exempel
 

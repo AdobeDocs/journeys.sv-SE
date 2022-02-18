@@ -1,19 +1,18 @@
 ---
-title: Stega händelsefältslista
-description: Stega händelsefältslista
+title: Lista över steghändelsefält
+description: Lista över steghändelsefält
 feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-exl-id: 177b4a97-c757-40ca-a190-fbd88169e5e2
-source-git-commit: 4291dfc91c2fb29d294416ceed022ee00842c870
+source-git-commit: 2195ee3863b38ead504eb6785ceb3c37735fade9
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 8%
+ht-degree: 12%
 
 ---
 
-# Stega händelsefältslista {#sharing-field-list}
+# Lista över steghändelsefält {#sharing-field-list}
 
 Fälten för steghändelser är ordnade efter kategori.
 
