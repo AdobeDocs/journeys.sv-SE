@@ -6,10 +6,10 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: ac5d2cec-0b48-4863-afe3-19ac5f61c9fd
-source-git-commit: ed09f77617ae193ef7a217222f831f17ffc6b07c
+source-git-commit: a5f84d291a5fcb3a0899e9eaabfaf7a7aa12471d
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,6 +17,11 @@ ht-degree: 100%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Orchestration].
 Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om [!DNL Journey Orchestration].
+
+## Februari 2022 {#feb-2022}
+
+* The [ersätt](../functions/functionreplace.md#example_2) och [replaceAll](../functions/functionreplaceall.md#example) funktionsdokumentationssidor har uppdaterats med ytterligare information och exempel om målparametern.
+* Bästa tillvägagångssätt har lagts till i [Operatorer](../expression/operators.md#important-notes) sida.
 
 ## September 2021
 

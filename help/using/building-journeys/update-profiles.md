@@ -1,15 +1,15 @@
 ---
 product: adobe campaign
-title: Hoppa från en resa till en annan
-description: Hoppa från en resa till en annan
+title: Uppdatera profil
+description: Uppdatera profil
 feature: Journeys
 role: User
 level: Intermediate
 exl-id: eaf2c795-0920-4b9c-9f06-801e43c1844b
-source-git-commit: e1ee5a488e9eb6fd8d175a2ab8989c73289ea708
+source-git-commit: 64f415f3a4120685b64a4b1dc15bf004e86b35d2
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 4%
+source-wordcount: '343'
+ht-degree: 2%
 
 ---
 
@@ -25,6 +25,7 @@ The **[!UICONTROL Update profile]** kan du uppdatera en befintlig Adobe Experien
 * Precis som med andra åtgärder kan du definiera en alternativ sökväg om fel eller timeout inträffar, och du kan inte placera två åtgärder parallellt.
 * Uppdateringsbegäran som skickas till Platform kommer snabbt men inte omedelbart/inom en sekund. Det tar normalt några sekunder men ibland mer utan garanti. Om en åtgärd till exempel använder&quot;fält 1&quot; som har uppdaterats av en åtgärd av typen Uppdatera profil som har placerats precis tidigare, bör du därför inte förvänta dig att&quot;fält 1&quot; kommer att uppdateras i åtgärden.
 * I testläge simuleras inte profiluppdateringen. Uppdateringen utförs på testprofilen.
+* The **Uppdatera profil** aktiviteten stöder inte XDM-fält som är definierade som en uppräkning.
 
 ## Använda profiluppdateringen
 

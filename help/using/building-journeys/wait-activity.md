@@ -6,10 +6,10 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 819ff3c3-0e3e-4d86-b5d2-10c5b10d19e6
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: bdc9ac3f54fae1dfd6f24a54a2687a0834f69c36
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 4%
+source-wordcount: '370'
+ht-degree: 5%
 
 ---
 
@@ -25,11 +25,9 @@ Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en
 
 ## Om aktiviteten Vänta{#about_wait}
 
-Så här prioriterar du vänta när du använder flera bilder parallellt. Om de har samma tidskonfiguration och ett annat, men överlappande, villkor är den ovan angivna väntetiden den som prioriteras. Till exempel är villkoret för den första väntetiden&quot;att vara kvinna&quot; och villkoret för den andra väntetiden parallellt är&quot;att vara en VIP&quot;. Den första vänteaktiviteten kommer att prioriteras
+Så här prioriterar du vänta när du använder flera bilder parallellt. Om de har samma tidskonfiguration och ett annat, men överlappande, villkor är den ovan angivna väntetiden den som prioriteras. Till exempel är villkoret för den första väntetiden&quot;att vara kvinna&quot; och villkoret för den andra väntetiden parallellt är&quot;att vara en VIP&quot;. Den första vänteaktiviteten kommer att prioriteras.
 
 Observera också att om två olika platser är parallella så kommer den första att prioriteras, oavsett dess lodräta position. Om t.ex. en 1-timmars väntan är över och en 30-minuters väntan är under, efter 30 minuter, kommer 30-minutersväntan att bearbetas.
-
-Du kan definiera ett villkor om du vill begränsa väntetiden till en viss population.
 
 >[!NOTE]
 >

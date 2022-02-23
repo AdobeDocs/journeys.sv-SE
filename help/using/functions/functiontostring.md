@@ -6,10 +6,10 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 942e7a44-1cb1-4c99-abd6-e0b045c42c80
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: c7730ecac062719e5e5adfd465d1cedb59b3eaf1
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,6 @@ Konvertering
 | dateTime | konverterar datumet i UTC-datumformat |
 | dateTimeOnly | konverterar datumet i UTC-datumformat |
 | varaktighet | konvertera till motsvarande antal millisekunder som en sträng |
-| tidszon | konvertera till strängrepresentation av tidszon-id (JODA-id) |
 | heltal | konverterar till strängbeteckning för värdet (1 blir &quot;1&quot;) |
 | decimal | konverterar till strängbeteckning för värdet (1.5 blir &quot;1.5&quot;) |
 | boolesk | konvertera det booleska värdet till true om true, false om false |
@@ -44,8 +43,6 @@ Konvertering
 `toString(<dateTime>)`
 
 `toString(<duration>)`
-
-`toString(<timeZone>)`
 
 `toString(<boolean>)`
 

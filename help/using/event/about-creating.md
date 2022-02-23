@@ -6,10 +6,10 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 2ae8854a-c3e7-469d-9f89-25b54bc3e894
-source-git-commit: f1773cc56f69894d376d83eb68891499991aa1ab
+source-git-commit: bdc9ac3f54fae1dfd6f24a54a2687a0834f69c36
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 60%
+source-wordcount: '544'
+ht-degree: 58%
 
 ---
 
@@ -56,7 +56,6 @@ Här följer de viktigaste stegen för att konfigurera en ny händelse:
 
 1. Lägg till en namnrymd. Det här steget är valfritt men rekommenderas eftersom du kan lägga till en namnrymd vilket innebär att du kan utnyttja information som lagras i realtidskundprofilen. Denna definierar vilken typ av nyckel händelsen har. Läs [den här sidan](../event/selecting-the-namespace.md).
 1. Definiera nyckeln. Välj ett fält från dina fält med nyttolaster eller definiera en formel som identifierar den person som är associerad med händelsen. Den här nyckeln konfigureras automatiskt (men kan fortfarande redigeras) om du väljer en namnrymd. [!DNL Journey Orchestration] väljer den nyckel som ska motsvara namnrymden (om du till exempel väljer en e-postnamnrymd väljs e-postnyckeln). Läs [den här sidan](../event/defining-the-event-key.md).
-1. För systemgenererade händelser kan du lägga till ett villkor. Det här steget är valfritt. Med detta kan systemet endast bearbeta händelser som uppfyller villkoret. Villkoret kan endast baseras på information som finns i händelsen. Läs [den här sidan](../event/adding-a-condition.md).
 1. Klicka på **[!UICONTROL Save]**.
 
    ![](../assets/journey7.png)

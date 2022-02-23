@@ -6,20 +6,16 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 9996d1eb-ddef-46dd-aaa9-c37fa9deb2f9
-source-git-commit: e71d641888caa9385d078d9c85e073b5f1ed743f
+source-git-commit: 8980df5cc238a7195f01a1631e418a8de677fbea
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Använda anpassade åtgärder {#section_f2c_hbg_nhb}
 
 I aktivitetskonfigurationsrutan visas URL-konfigurationsparametrarna och autentiseringsparametrarna som har konfigurerats för den anpassade åtgärden. [Läs mer](../action/about-custom-action-configuration.md).
-
->[!NOTE]
->
->Du kan inte skicka en enkel samling i anpassade åtgärdsparametrar. Mer komplexa samlingsfält (arrayer med objekt) stöds inte.  Observera också att parametrarna har ett förväntat format (exempel: sträng, decimal osv.). Du måste vara försiktig med att ta hänsyn till dessa förväntade format.
 
 ## URL-konfiguration
 

@@ -5,9 +5,9 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Journeys
-source-git-commit: f0cb883a09d553bb47491b750fabde54c92f3225
-workflow-type: ht
-source-wordcount: '438'
+source-git-commit: 95d9ce8ffd213e46320a4c131ffae8442cfb23bf
+workflow-type: tm+mt
+source-wordcount: '435'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,6 @@ ht-degree: 100%
    + [Definiera nyttolastfält](using/event/defining-the-payload-fields.md)
    + [Välja namnrymden](using/event/selecting-the-namespace.md)
    + [Definiera händelsenyckeln](using/event/defining-the-event-key.md)
-   + [Lägga till ett villkor](using/event/adding-a-condition.md)
    + [Förhandsgranska nyttolasten](using/event/previewing-the-payload.md)
 + Konfigurera en datakälla {#data-source-journeys}
    + [Om datakällor](using/datasource/about-data-sources.md)

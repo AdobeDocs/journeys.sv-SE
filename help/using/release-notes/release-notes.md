@@ -6,10 +6,10 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: 4a6e2afc19a95e834278c161b271ba6e8a345425
+source-git-commit: 0d1355f036b22df6b484ed2a0ea9a8b121e947e0
 workflow-type: tm+mt
-source-wordcount: '3130'
-ht-degree: 52%
+source-wordcount: '3164'
+ht-degree: 51%
 
 ---
 
@@ -17,6 +17,12 @@ ht-degree: 52%
 
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa det senaste [Dokumentationsuppdateringar](../release-notes/documentation-updates.md).
+
+## Version från februari 2022 {#february-2022-release}
+
+### Förbättringar
+
+* För att optimera prestanda och förhindra föråldrad resursanvändning kommer alla resor i testläge som inte har utlösts på en vecka nu att återgå till statusen Utkast. [Läs mer](../building-journeys/testing-the-journey.md#important_notes)
 
 ## Version från januari 2022 {#january-2022-release}
 

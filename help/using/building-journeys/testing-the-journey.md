@@ -6,9 +6,9 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: be413905-0631-4229-a954-80a92651206d
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 141937cd16d5676a80412b2b72750710ee1e537f
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1692'
 ht-degree: 2%
 
 ---
@@ -61,6 +61,7 @@ Så här använder du testläget:
 * Du kan aktivera/inaktivera testläget så många gånger som behövs.
 * Du kan inte ändra din resa när testläget är aktiverat. När du är i testläge kan du publicera resan direkt, du behöver inte inaktivera testläget tidigare.
 * När en delning nås väljs alltid den översta grenen. Du kan ordna om placeringen av de delade grenarna om du vill att testet ska välja en annan bana.
+* För att optimera prestandan och förhindra föråldrad resursanvändning kommer alla resor i testläge som inte har utlösts på en vecka att återgå till statusen Utkast.
 
 ## Förvandla en profil till en testprofil{#turning-profile-into-test}
 

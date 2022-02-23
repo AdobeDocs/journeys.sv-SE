@@ -6,10 +6,10 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: d60059e5-6bf8-4a57-88a4-5323d5f0fa0b
-source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
+source-git-commit: 8980df5cc238a7195f01a1631e418a8de677fbea
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 9%
+source-wordcount: '105'
+ht-degree: 6%
 
 ---
 
@@ -32,7 +32,7 @@ Sträng
 | Parameter | Typ |
 |-----------|--------------|
 | bas | string |
-| target | string |
+| target | sträng (RegExp) |
 | ersättare | string |
 
 ## Signatur och returtyp
@@ -41,8 +41,10 @@ Sträng
 
 Returnerar en sträng.
 
-## Exempel
+## Exempel{#example}
 
 `replaceAll("Hello World", "l", "x")`
 
 Returnerar &quot;Hexo Worxd&quot;.
+
+Eftersom målparametern är en RegExp, beroende på vilken sträng du vill ersätta, kan du behöva undvika vissa tecken. Se exemplet i [den här sidan](../functions/functionreplace.md#example_2).
