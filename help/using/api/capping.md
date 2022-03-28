@@ -34,7 +34,7 @@ Mer information om åtgärder eller konfiguration av datakälla finns i [Om funk
 
 Så här använder du detta API med [!DNL Journey Orchestration] Du måste till exempel använda AdobeI/O-konsolen. Du kan börja med att följa detta [Komma igång med Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/getting-started.md) och sedan använda avsnitten på den här sidan.
 
-För att testa och förbereda integreringen finns en Postman-samling [här](https://raw.githubusercontent.com/AdobeDocs/JourneyAPI/master/postman-collections/Journey-Orchestration_Capping-API_postman-collection.json).
+En Postman-samling finns tillgänglig för att testa och förbereda integreringen [här](https://raw.githubusercontent.com/AdobeDocs/JourneyAPI/master/postman-collections/Journey-Orchestration_Capping-API_postman-collection.json).
 
 ## Behörighet
 
@@ -167,11 +167,11 @@ Den potentiella varningen är:
 
 I det här avsnittet hittar du de fem huvudsakliga användningsområdena som du kan använda för att hantera din appkonfiguration i [!DNL Journey Orchestration].
 
-En Postman-samling är tillgänglig för att hjälpa dig med testning och konfiguration [här](https://raw.githubusercontent.com/AdobeDocs/JourneyAPI/master/postman-collections/Journey-Orchestration_Capping-API_postman-collection.json).
+Det finns en Postman-samling som kan hjälpa dig med testning och konfiguration [här](https://raw.githubusercontent.com/AdobeDocs/JourneyAPI/master/postman-collections/Journey-Orchestration_Capping-API_postman-collection.json).
 
-Denna Postman Collection har konfigurerats för att dela Postman Variable-samlingen som genererats via __[Integreringar i Adobe I/O Console](https://console.adobe.io/integrations) > Testa > Ladda ned för Postman__, som genererar en Postman Environment-fil med de valda integreringsvärdena.
+Den här Postman Collection har konfigurerats för att dela den Postman Variable-samling som genererats via __[Integreringar i Adobe I/O Console](https://console.adobe.io/integrations) > Testa > Ladda ned för Postman__, som genererar en Postman-miljöfil med de valda integreringsvärdena.
 
-När du har laddat ned och överfört till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{Base_Path}` och `{SANDBOX_NAME}`.
+När du laddat ned och överfört till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{Base_Path}` och `{SANDBOX_NAME}`.
 * `{JO_HOST}` : [!DNL Journey Orchestration] Gateway-URL
 * `{BASE_PATH}` : startpunkt för API. Värdet är /authoring
 * `{SANDBOX_NAME}` : sidhuvudet **x-sandbox-name** (till exempel prod) som motsvarar namnet på sandlådan där API-åtgärderna ska utföras. Se [översikt över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) för mer information.

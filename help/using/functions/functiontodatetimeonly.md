@@ -5,10 +5,11 @@ description: Läs mer om funktionen toDateTime
 feature: Journeys
 role: Data Engineer
 level: Experienced
-source-git-commit: 2195ee3863b38ead504eb6785ceb3c37735fade9
+exl-id: b19adbd0-8449-4bd4-bc4d-f1f305f87cb0
+source-git-commit: a9a129b1949d64c4a412d3ea4002b32e3563ea96
 workflow-type: tm+mt
-source-wordcount: '55'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
