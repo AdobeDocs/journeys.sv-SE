@@ -6,9 +6,9 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: 0d1355f036b22df6b484ed2a0ea9a8b121e947e0
+source-git-commit: 617915d3f2e62e750c3559424ef4c203891124eb
 workflow-type: tm+mt
-source-wordcount: '3164'
+source-wordcount: '3226'
 ht-degree: 51%
 
 ---
@@ -17,6 +17,15 @@ ht-degree: 51%
 
 På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
 Du kan även läsa det senaste [Dokumentationsuppdateringar](../release-notes/documentation-updates.md).
+
+## Version från mars 2022 {#feb-2022-release}
+
+### Förbättringar
+
+**Resor**
+
+* För att undvika att det finns onödiga fält i det enhetliga profilschemat är händelseschemat för resan som standard inte längre aktiverat för profiler. Om det behövs kan du aktivera det. [Läs mer](../building-journeys/sharing-overview.md)
+* Nya steghändelser för exportjobb skickas nu av Journey Optimizer till Adobe Experience Platform. Exempel på frågor har lagts till i dokumentationen. [Läs mer](../building-journeys/query-examples.md)
 
 ## Version från februari 2022 {#february-2022-release}
 
