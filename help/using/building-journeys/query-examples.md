@@ -5,10 +5,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 07d25f8e-0065-4410-9895-ffa15d6447bb
-source-git-commit: e758d4430bb28c109633c96e330b56ad08a61c02
+source-git-commit: bb07c0edaae469962ee3bf678664b4a0a83572fe
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 4%
+source-wordcount: '1020'
+ht-degree: 2%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 4%
 
 I det här avsnittet visas flera vanliga exempel för att fråga efter händelser i resesteg i datasjön.
 
-## Meddelande-/åtgärdsfel
+## Meddelande-/åtgärdsfel {#message-action-errors}
 
-### Lista över alla fel som påträffats under resor
+### Lista över alla fel som påträffats under resor {#error-list-journey}
 
 Med den här frågan kan du lista alla fel som påträffas under resor när ett meddelande/en åtgärd körs.
 
 _Data Lake-fråga_
 
-```
+```sql
 SELECT _experience.journeyOrchestration.stepEvents.actionExecutionError, count(distinct _id) FROM journey_step_events
 WHERE _experience.journeyOrchestration.stepEvents.nodeName=<'message-name'>
 AND _experience.journeyOrchestration.stepEvents.actionExecutionError IS NOT NULL
@@ -34,7 +34,7 @@ GROUP BY _experience.journeyOrchestration.stepEvents.actionExecutionError
 
 _Exempel_
 
-```
+```sql
 SELECT _experience.journeyOrchestration.stepEvents.actionExecutionError, count(distinct _id) FROM journey_step_events
 WHERE _experience.journeyOrchestration.stepEvents.nodeName='Message - 100KB Email with Gateway and Kafkav2'
 AND _experience.journeyOrchestration.stepEvents.actionExecutionError IS NOT NULL
@@ -44,13 +44,13 @@ GROUP BY _experience.journeyOrchestration.stepEvents.actionExecutionError
 
 Den här frågan returnerar alla olika fel som inträffade när en åtgärd kördes i en resa tillsammans med antalet gånger åtgärden utfördes.
 
-## Profilbaserade frågor
+## Profilbaserade frågor {#profile-based-queries}
 
-### Sök efter om en profil har angett en viss resa
+### Sök efter om en profil har angett en viss resa {#profile-entered-journey}
 
 _Data Lake-fråga_
 
-```
+```sql
 SELECT count(distinct _id) FROM journey_step_events
 where
 _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' AND
@@ -59,7 +59,7 @@ _experience.journeyOrchestration.stepEvents.profileID = '<profileID correspondin
 
 _Exempel_
 
-```
+```sql
 SELECT count(distinct _id) FROM journey_step_events
 where
 _experience.journeyOrchestration.stepEvents.journeyVersionID = 'ec9efdd0-8a7c-4d7a-a765-b2cad659fa4e' AND
@@ -68,13 +68,13 @@ _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 
 Resultatet måste vara större än 0. Den här frågan returnerar det exakta antalet gånger en profil har påbörjat en resa.
 
-### Sök efter om en profil skickades ett visst meddelande
+### Sök efter om en profil skickades ett visst meddelande {#profile-specific-message}
 
 **Metod 1:** om namnet på ditt meddelande inte är unikt i resan (det används på flera platser).
 
 _Data Lake-fråga_
 
-```
+```sql
 SELECT count(distinct _id) FROM journey_step_events WHERE
 _experience.journeyOrchestration.stepEvents.nodeID='<NodeId in the UI corresponding to the message>' AND
 _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
@@ -84,7 +84,7 @@ _experience.journeyOrchestration.stepEvents.profileID = '<profileID correspondin
 
 _Exempel_
 
-```
+```sql
 SELECT count(distinct _id) FROM journey_step_events WHERE
 _experience.journeyOrchestration.stepEvents.nodeID='17ae65a1-02dd-439d-b54e-b56a78520eba' AND
 _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
@@ -98,7 +98,7 @@ Resultatet måste vara större än 0. Den här frågan talar bara om för oss om
 
 _Data Lake-fråga_
 
-```
+```sql
 SELECT count(distinct _id) FROM journey_step_events WHERE
 _experience.journeyOrchestration.stepEvents.nodeName='<NodeName in the UI corresponding to the message>' AND
 _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
@@ -108,7 +108,7 @@ _experience.journeyOrchestration.stepEvents.profileID = '<profileID correspondin
 
 _Exempel_
 
-```
+```sql
 SELECT count(distinct _id) FROM journey_step_events WHERE
 _experience.journeyOrchestration.stepEvents.nodeID='Message- 100KB Email' AND
 _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
@@ -118,11 +118,11 @@ _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 
 Frågan returnerar listan med alla meddelanden tillsammans med antalet som anropats för den valda profilen.
 
-## Hitta alla meddelanden en profil har tagit emot de senaste 30 dagarna
+## Hitta alla meddelanden en profil har tagit emot de senaste 30 dagarna {#message-received-30-days}
 
 _Data Lake-fråga_
 
-```
+```sql
 SELECT _experience.journeyOrchestration.stepEvents.nodeName, count(distinct _id) FROM journey_step_events
 WHERE  _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
 _experience.journeyOrchestration.stepEvents.nodeType = 'action' AND
@@ -133,7 +133,7 @@ GROUP BY _experience.journeyOrchestration.stepEvents.nodeName
 
 _Exempel_
 
-```
+```sql
 SELECT _experience.journeyOrchestration.stepEvents.nodeName, count(distinct _id) FROM journey_step_events
 WHERE  _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
 _experience.journeyOrchestration.stepEvents.nodeType = 'action' AND
@@ -144,11 +144,11 @@ GROUP BY _experience.journeyOrchestration.stepEvents.nodeName
 
 Frågan returnerar listan med alla meddelanden tillsammans med antalet som anropats för den valda profilen.
 
-### Hitta alla resor en profil har registrerat under de senaste 30 dagarna
+### Hitta alla resor en profil har registrerat under de senaste 30 dagarna {#profile-entered-30-days}
 
 _Data Lake-fråga_
 
-```
+```sql
 SELECT _experience.journeyOrchestration.stepEvents.journeyVersionName, count(distinct _id) FROM journey_step_events
 WHERE  _experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
 _experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>' AND
@@ -158,7 +158,7 @@ GROUP BY _experience.journeyOrchestration.stepEvents.journeyVersionName
 
 _Exempel_
 
-```
+```sql
 SELECT _experience.journeyOrchestration.stepEvents.journeyVersionName, count(distinct _id) FROM journey_step_events
 WHERE  _experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
 _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com' AND
@@ -168,11 +168,11 @@ GROUP BY _experience.journeyOrchestration.stepEvents.journeyVersionName
 
 Frågan returnerar listan med alla resenamn tillsammans med det antal gånger som den efterfrågade profilen angav resan.
 
-### Antal profiler som är kvalificerade för en resa dagligen
+### Antal profiler som är kvalificerade för en resa dagligen {#profile-qualified}
 
 _Data Lake-fråga_
 
-```
+```sql
 SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.profileID) FROM journey_step_events
 WHERE DATE(timestamp) > (now() - interval '<last x days>' day)
 AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>'
@@ -182,7 +182,7 @@ ORDER BY DATE(timestamp) desc
 
 _Exempel_
 
-```
+```sql
 SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.profileID) FROM journey_step_events
 WHERE DATE(timestamp) > (now() - interval '100' day)
 AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1'
@@ -192,13 +192,425 @@ ORDER BY DATE(timestamp) desc
 
 Frågan returnerar, för den angivna perioden, antalet profiler som har skickats in till resan varje dag. Om en profil anges via flera identiteter räknas den två gånger. Om återinträde är aktiverat kan antalet profiler dupliceras över olika dagar om det återgår till resan på en annan dag.
 
-## Resebaserade frågor
+## Frågor relaterade till Lässegmentet {#read-segment-queries}
 
-### Antal dagliga aktiva resor
+### Tidsåtgång för att avsluta ett segmentexportjobb
 
 _Data Lake-fråga_
 
+```sql
+select DATEDIFF (minute,
+              (select timestamp
+                where
+_experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'queued') ,
+              (select timestamp
+                where
+_experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'finished')) AS export_job_runtime;
 ```
+
+_Exempel_
+
+```sql
+select DATEDIFF (minute,
+              (select timestamp
+                where
+_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'queued') ,
+              (select timestamp
+                where
+_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'finished')) AS export_job_runtime;
+```
+
+Frågan returnerar tidsskillnaden i minuter mellan den tidpunkt då segmentexportjobbet placerades i kö och den tidpunkt det slutligen avslutades.
+
+### Antal profiler som har ignorerats under resan eftersom de var dubbletter
+
+_Data Lake-fråga_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
+where
+_experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_DUPLICATION'
+```
+
+_Exempel_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
+where
+_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_DUPLICATION'
+```
+
+Frågan returnerar alla profil-ID:n som ignorerades av resan eftersom de var dubbletter.
+
+### Antal profiler som har ignorerats under resan på grund av ogiltigt namnutrymme
+
+_Data Lake-fråga_
+
+```sql
+SELECT count(*) FROM journey_step_events
+where
+_experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_BAD_NAMESPACE'
+```
+
+_Exempel_
+
+```sql
+SELECT count(*) FROM journey_step_events
+where
+_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_BAD_NAMESPACE'
+```
+
+Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom de hade ett ogiltigt namnutrymme eller ingen identitet för det namnutrymmet.
+
+### Antal profiler som har ignorerats under resan på grund av ingen identitetskarta
+
+_Data Lake-fråga_
+
+```sql
+SELECT count(*) FROM journey_step_events
+where
+_experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NO_IDENTITY_MAP'
+```
+
+_Exempel_
+
+```sql
+SELECT count(*) FROM journey_step_events
+where
+_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NO_IDENTITY_MAP'
+```
+
+Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom identitetskartan saknades.
+
+### Antal profiler som ignorerades under resan eftersom resan var i testnoden och profilen inte var en testprofil
+
+_Data Lake-fråga_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
+where
+_experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NOT_A_TEST_PROFILE'
+```
+
+_Exempel_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
+where
+_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NOT_A_TEST_PROFILE'
+```
+
+Frågan returnerar alla profil-ID:n som ignorerades av resan eftersom exportjobbet kördes i testläge, men profilen hade inte attributet testProfile inställt på true.
+
+### Antal profiler som har ignorerats under resan på grund av ett internt fel
+
+_Data Lake-fråga_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
+where
+_experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_INTERNAL'
+```
+
+_Exempel_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
+where
+_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
+_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_INTERNAL'
+```
+
+Frågan returnerar alla profil-ID:n som ignorerades av resan på grund av ett internt fel.
+
+### Översikt över Läs segment för en viss reseversion
+
+_Data Lake-fråga_
+
+```sql
+SELECT
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode           AS EVENT_CODE,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.exportSegmentID     AS SEGMENT_ID,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.ID                  AS EXPORTJOB_ID,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.status              AS EXPORTJOB_STATUS,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountTotal    AS TOTAL_EXPORTED_PROFILES_COUNT,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountRealized AS SUCCESS_EXPORTED_PROFILES_COUNT,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountFailed   AS FAILED_EXPORTED_PROFILES_COUNT
+FROM
+    journey_step_events
+WHERE
+    _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventType = 'segmenttrigger-orchestrator'
+```
+
+Den returnerar alla servicehändelser som hör till den angivna reseversionen. Vi kan följa verksamhetskedjan:
+
+* ämnesskapande
+* skapa exportjobb
+* avslutande av exportjobb (med mätvärden för exporterade profiler)
+* arbetarens uppsägning
+
+Vi kan också upptäcka problem som:
+
+* fel i ämne eller skapande av exportjobb (inklusive timeout för API-anrop för segmentexport)
+* exporteringsjobb som kan fastna (när det gäller en viss reseversion har vi ingen händelse om att exportjobbet avslutas)
+* arbetarutleveranser, om vi har tagit emot en händelse om att exportjobben har avslutats, men ingen arbetare har avslutat
+
+VIKTIGT! Om ingen händelse returneras av frågan kan det bero på någon av följande orsaker:
+
+* transportversionen inte har nått schemat
+* Om reseversionen ska ha startat exportjobbet genom att anropa orkestratorn, gick något fel i upstram-flödet: Problem med transportdistribution, affärshändelser eller problem med schemaläggare.
+
+### Hämta fel för lässegment för en viss reseversion
+
+_Data Lake-fråga_
+
+```sql
+SELECT
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode           AS EVENT_CODE,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.exportSegmentID     AS SEGMENT_ID,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.ID                  AS EXPORTJOB_ID,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.status              AS EXPORTJOB_STATUS,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountTotal    AS TOTAL_EXPORTED_PROFILES_COUNT,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountRealized AS SUCCESS_EXPORTED_PROFILES_COUNT,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountFailed   AS FAILED_EXPORTED_PROFILES_COUNT
+FROM
+    journey_step_events
+WHERE
+    _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventType = 'segmenttrigger-orchestrator' AND
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode IN (
+        'ERROR_TOPIC_CREATION',
+        'ERROR_EXPORTJOB_APICALL',
+        'ERROR_EXPORTJOB_APICALL_TIMEOUT',
+        'ERROR_EXPORTJOB_FAILED'
+    )
+```
+
+### Hämta bearbetningsstatus för exportjobb
+
+_Data Lake-fråga_
+
+```sql
+SELECT
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode           AS EVENT_CODE,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.exportSegmentID     AS SEGMENT_ID,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.ID                  AS EXPORTJOB_ID,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.status              AS EXPORTJOB_STATUS,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountTotal    AS TOTAL_EXPORTED_PROFILES_COUNT,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountRealized AS SUCCESS_EXPORTED_PROFILES_COUNT,
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountFailed   AS FAILED_EXPORTED_PROFILES_COUNT 
+FROM
+    journey_step_events
+WHERE
+    _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventType = 'segmenttrigger-orchestrator' AND
+    _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode IN (
+        'INFO_EXPORTJOB_SUCCEEDED',
+        'ERROR_EXPORTJOB_FAILED'
+    )
+```
+
+Om ingen post returneras betyder det att antingen:
+
+* ett fel uppstod när ämnet eller exportjobbet skapades
+* exportjobbet fortfarande körs
+
+### Få mätvärden för exporterade profiler, inklusive utkast och exportjobbstatistik för varje exportjobb
+
+_Data Lake-fråga_
+
+```sql
+WITH
+  
+DISCARDED_EXPORTED_PROFILES AS (
+  
+    SELECT
+        _experience.journeyOrchestration.serviceEvents.segmentExportJob.ID AS EXPORTJOB_ID,
+        count(distinct _experience.journeyOrchestration.profile.ID) AS DISCARDED_PROFILES_COUNT
+    FROM
+        journey_step_events
+    WHERE
+        _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+        _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode IN (
+            'ERROR_INSTANCE_DUPLICATION',
+            'ERROR_INSTANCE_BAD_NAMESPACE',
+            'ERROR_INSTANCE_NO_IDENTITY_MAP',
+            'ERROR_INSTANCE_NOT_A_TEST_PROFILE',
+            'ERROR_INSTANCE_INTERNAL'
+        )
+    GROUP BY
+        _experience.journeyOrchestration.serviceEvents.segmentExportJob.ID
+ 
+),
+  
+SEGMENT_EXPORT_METRICS AS (
+  
+    SELECT
+        _experience.journeyOrchestration.serviceEvents.segmentExportJob.ID AS EXPORTJOB_ID,
+        sum(_experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountTotal) AS TOTAL_EXPORTED_PROFILES_COUNT,
+        sum(_experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountRealized) AS SUCCESS_EXPORTED_PROFILES_COUNT,
+        sum(_experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountFailed) AS FAILED_EXPORTED_PROFILES_COUNT
+    FROM
+        journey_step_events
+    WHERE
+        _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+        _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventType = 'segmenttrigger-orchestrator' AND
+        _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode IN (
+            'INFO_EXPORTJOB_SUCCEEDED',
+            'ERROR_EXPORTJOB_FAILED'
+        )
+    GROUP BY
+        _experience.journeyOrchestration.serviceEvents.segmentExportJob.ID
+  
+)
+  
+SELECT
+    sum(T2.TOTAL_EXPORTED_PROFILES_COUNT),
+    sum(T2.SUCCESS_EXPORTED_PROFILES_COUNT),
+    sum(T2.FAILED_EXPORTED_PROFILES_COUNT),
+    sum(T1.DISCARDED_PROFILES_COUNT)
+FROM
+    DISCARDED_EXPORTED_PROFILES AS T1,
+    SEGMENT_EXPORT_METRICS AS T2
+WHERE T1.EXPORTJOB_ID = T2.EXPORTJOB_ID
+```
+
+### Få aggregerade mätvärden (segmentexportjobb och utkast) för alla exportjobb
+
+_Data Lake-fråga_
+
+```sql
+WITH
+  
+DISCARDED_EXPORTED_PROFILES AS (
+  
+    SELECT
+        _experience.journeyOrchestration.journey.versionID AS JOURNEYVERSION_ID,
+        count(distinct _experience.journeyOrchestration.profile.ID) AS DISCARDED_PROFILES_COUNT
+    FROM
+        journey_step_events
+    WHERE
+        _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+        _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode IN (
+            'ERROR_INSTANCE_DUPLICATION',
+            'ERROR_INSTANCE_BAD_NAMESPACE',
+            'ERROR_INSTANCE_NO_IDENTITY_MAP',
+            'ERROR_INSTANCE_NOT_A_TEST_PROFILE',
+            'ERROR_INSTANCE_INTERNAL'
+        )
+    GROUP BY
+        _experience.journeyOrchestration.journey.versionID
+),
+  
+SEGMENT_EXPORT_METRICS AS (
+  
+    SELECT
+        _experience.journeyOrchestration.journey.versionID AS JOURNEYVERSION_ID,
+        sum(_experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountTotal) AS TOTAL_EXPORTED_PROFILES_COUNT,
+        sum(_experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountRealized) AS SUCCESS_EXPORTED_PROFILES_COUNT,
+        sum(_experience.journeyOrchestration.serviceEvents.segmentExportJob.exportCountFailed) AS FAILED_EXPORTED_PROFILES_COUNT
+    FROM
+        journey_step_events
+    WHERE
+        _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+        _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventType = 'segmenttrigger-orchestrator' AND
+        _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode IN (
+            'INFO_EXPORTJOB_SUCCEEDED',
+            'ERROR_EXPORTJOB_FAILED'
+        )
+    GROUP BY
+          _experience.journeyOrchestration.journey.versionID
+ 
+)
+  
+SELECT
+    sum(T2.TOTAL_EXPORTED_PROFILES_COUNT),
+    sum(T2.SUCCESS_EXPORTED_PROFILES_COUNT),
+    sum(T2.FAILED_EXPORTED_PROFILES_COUNT),
+    sum(T1.DISCARDED_PROFILES_COUNT)
+FROM
+    DISCARDED_EXPORTED_PROFILES AS T1,
+    SEGMENT_EXPORT_METRICS AS T2
+WHERE T1.JOURNEYVERSION_ID = T2.JOURNEYVERSION_ID
+```
+
+Den här frågan skiljer sig från den föregående.
+
+Den returnerar den totala mätningen för en viss reseversion, oavsett vilka jobb som kan ha körts för den (vid återkommande resor utlöstes affärshändelser som utnyttjar återanvändning av ämnet).
+
+## Frågor relaterade till segmentkvalificering {#segment-qualification-queries}
+
+### Profilen ignoreras på grund av en annan segmentimplementering än den konfigurerade
+
+_Data Lake-fråga_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
+where
+_experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'ERROR_INSTANCE_WRONG_SEGMENT_REALIZATION'
+```
+
+_Exempel_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
+where
+_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'ERROR_INSTANCE_WRONG_SEGMENT_REALIZATION'
+```
+
+Den här frågan returnerar alla profil-ID:n som togs bort av reseversionen på grund av felaktig segmentrealisering.
+
+## Händelsebaserade frågor {#event-based-queries}
+
+### Kontrollera om en affärshändelse har tagits emot för en resa
+
+_Data Lake-fråga_
+
+```sql
+SELECT DATE(timestamp), count(distinct _id)
+FROM journey_step_events
+where
+_experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' AND
+_experience.journeyOrchestration.stepEvents.nodeName = '<node-name-corresponding-to-business-event>' AND
+_experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
+WHERE DATE(timestamp) > (now() - interval '<last x hours>' hour)
+```
+
+_Exempel_
+
+```sql
+SELECT DATE(timestamp), count(distinct _id)
+FROM journey_step_events
+where
+_experience.journeyOrchestration.stepEvents.journeyVersionID = 'b1093bd4-11f3-44cc-961e-33925cc58e18' AND
+_experience.journeyOrchestration.stepEvents.nodeName = 'TEST_MLTrainingSession' AND
+_experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
+WHERE DATE(timestamp) > (now() - interval '6' hour)
+```
+
+## Vanliga resebaserade frågor {#journey-based-queries}
+
+### Antal dagliga aktiva resor {#daily-active-journeys}
+
+_Data Lake-fråga_
+
+```sql
 SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.journeyVersionID) FROM journey_step_events
 WHERE DATE(timestamp) > (now() - interval '<last x days>' day)
 GROUP BY DATE(timestamp)
@@ -207,7 +619,7 @@ ORDER BY DATE(timestamp) desc
 
 _Exempel_
 
-```
+```sql
 SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.journeyVersionID) FROM journey_step_events
 WHERE DATE(timestamp) > (now() - interval '100' day)
 GROUP BY DATE(timestamp)
@@ -215,3 +627,234 @@ ORDER BY DATE(timestamp) desc
 ```
 
 Frågan returnerar, för den angivna perioden, antalet unika resor som utlöstes varje dag. En enda resa som utlöses på flera dagar räknas en gång om dagen.
+
+## Frågor om reseinstanser {#journey-instances-queries}
+
+### Antal profiler i ett specifikt tillstånd vid en viss tidpunkt
+
+_Data Lake-fråga_
+
+```sql
+WITH
+ 
+INSTANCES_PASSED_IN_ALL_NODES_WITH_DETAILS AS (
+ 
+    SELECT
+        STEP_EVENTS.timestamp AS TS,
+        STEP_EVENTS._experience.journeyOrchestration.stepEvents.nodeName AS NODE_NAME,
+        STEP_EVENTS._experience.journeyOrchestration.stepEvents.instanceID AS ID
+    FROM
+        journey_step_events AS STEP_EVENTS
+    WHERE
+        STEP_EVENTS._experience.journeyOrchestration.stepEvents.journeyVersionName = '<journey version name>'
+ 
+),
+ 
+INSTANCES_PASSED_IN_NODE_WITH_DETAILS AS (
+ 
+    SELECT
+        T1.TS AS TS,
+        T1.ID AS ID
+    FROM
+        INSTANCES_PASSED_IN_ALL_NODES_WITH_DETAILS AS T1
+    WHERE
+        T1.NODE_NAME = '<specific node name>' AND
+        <filter on time for profile in specific node>
+ 
+),
+ 
+INSTANCES_PASSED_IN_NEXT_NODES AS (
+     
+    SELECT
+        T1.TS AS TS,
+        T1.ID AS ID
+    FROM
+        INSTANCES_PASSED_IN_ALL_NODES_WITH_DETAILS AS T1
+    WHERE
+        T1.NODE_NAME in (<list of next node names from the specific node>)
+ 
+),
+ 
+INSTANCES_PASSED_IN_NODE_NOT_PASSED_IN_NODES AS (
+ 
+    SELECT
+        distinct T1.ID AS ID
+    FROM
+        INSTANCES_PASSED_IN_NODE_WITH_DETAILS AS T1
+ 
+    EXCEPT
+     
+    SELECT
+        distinct T1.ID AS ID
+    FROM
+        INSTANCES_PASSED_IN_NEXT_NODES AS T1
+ 
+)
+ 
+SELECT
+    DATE_FORMAT(T1.TS,'<date pattern>') AS DATETIME,
+    count(T1.ID) AS INSTANCES_COUNT
+FROM
+    INSTANCES_PASSED_IN_NODE_WITH_DETAILS AS T1,
+    INSTANCES_PASSED_IN_NODE_NOT_PASSED_IN_NODES AS T2
+WHERE
+    T1.ID = T2.ID
+GROUP BY
+    DATETIME
+ORDER BY
+    DATETIME DESC
+```
+
+_Exempel_
+
+```sql
+WITH
+ 
+INSTANCES_PASSED_IN_ALL_NODES_WITH_DETAILS AS (
+ 
+    SELECT
+        STEP_EVENTS.timestamp AS TS,
+        STEP_EVENTS._experience.journeyOrchestration.stepEvents.nodeName AS NODE_NAME,
+        STEP_EVENTS._experience.journeyOrchestration.stepEvents.instanceID AS ID
+    FROM
+        journey_step_events AS STEP_EVENTS
+    WHERE
+        STEP_EVENTS._experience.journeyOrchestration.stepEvents.journeyVersionName = 'Journey20009'
+ 
+),
+ 
+INSTANCES_PASSED_IN_NODE_WITH_DETAILS AS (
+ 
+    SELECT
+        T1.TS AS TS,
+        T1.ID AS ID
+    FROM
+        INSTANCES_PASSED_IN_ALL_NODES_WITH_DETAILS AS T1
+    WHERE
+        T1.NODE_NAME = 'slack_bso_tests - test1' AND
+        T1.TS > (now() - interval '18 hour')
+ 
+),
+ 
+INSTANCES_PASSED_IN_NEXT_NODES AS (
+     
+    SELECT
+        T1.TS AS TS,
+        T1.ID AS ID
+    FROM
+        INSTANCES_PASSED_IN_ALL_NODES_WITH_DETAILS AS T1
+    WHERE
+        T1.NODE_NAME in ('slack_bso_tests - test2')
+ 
+),
+ 
+INSTANCES_PASSED_IN_NODE_NOT_PASSED_IN_NODES AS (
+ 
+    SELECT
+        distinct T1.ID AS ID
+    FROM
+        INSTANCES_PASSED_IN_NODE_WITH_DETAILS AS T1
+ 
+    EXCEPT
+     
+    SELECT
+        distinct T1.ID AS ID
+    FROM
+        INSTANCES_PASSED_IN_NEXT_NODES AS T1
+ 
+)
+ 
+SELECT
+    DATE_FORMAT(T1.TS,'yyyy/MM/dd HH:mm') AS DATETIME,
+    count(T1.ID) AS INSTANCES_COUNT
+FROM
+    INSTANCES_PASSED_IN_NODE_WITH_DETAILS AS T1,
+    INSTANCES_PASSED_IN_NODE_NOT_PASSED_IN_NODES AS T2
+WHERE
+    T1.ID = T2.ID
+GROUP BY
+    DATETIME
+ORDER BY
+    DATETIME DESC
+```
+
+### Hur många profiler som slutade resan under den angivna tidsperioden
+
+_Data Lake-fråga_
+
+```sql
+SELECT
+    DATE_FORMAT(STEP_EVENTS.timestamp,'yyyy/MM/dd HH:mm') AS DATETIME,
+    count(STEP_EVENTS._experience.journeyOrchestration.stepEvents.instanceID) AS EXITED_INSTANCES_COUNT
+FROM
+    journey_step_events AS STEP_EVENTS
+WHERE
+    STEP_EVENTS._experience.journeyOrchestration.stepEvents.journeyVersionName = '<journey version name>' AND
+    STEP_EVENTS._experience.journeyOrchestration.stepEvents.stepStatus in ('endStep', 'error', 'timedOut', 'cappingError') AND
+    <timestamp filter>
+GROUP BY
+    DATETIME
+ORDER BY
+    DATETIME DESC
+```
+
+_Exempel_
+
+```sql
+SELECT
+    DATE_FORMAT(STEP_EVENTS.timestamp,'yyyy/MM/dd HH:mm') AS DATETIME,
+    count(STEP_EVENTS._experience.journeyOrchestration.stepEvents.instanceID) AS EXITED_INSTANCES_COUNT
+FROM
+    journey_step_events AS STEP_EVENTS
+WHERE
+    STEP_EVENTS._experience.journeyOrchestration.stepEvents.journeyVersionName = 'Journey20009' AND
+    STEP_EVENTS._experience.journeyOrchestration.stepEvents.stepStatus in ('endStep', 'error', 'timedOut', 'cappingError') AND
+    STEP_EVENTS.timestamp > (now() - interval '22 hour')
+GROUP BY
+    DATETIME
+ORDER BY
+    DATETIME DESC
+```
+
+### Hur många profiler slutade resan under den angivna tidsperioden med nod/status
+
+_Data Lake-fråga_
+
+```sql
+SELECT
+    DATE_FORMAT(STEP_EVENTS.timestamp,'yyyy/MM/dd HH:mm') AS DATETIME,
+    STEP_EVENTS._experience.journeyOrchestration.stepEvents.nodeName AS NODE_NAME,
+    STEP_EVENTS._experience.journeyOrchestration.stepEvents.stepStatus AS EXIT_STATUS,
+    count(STEP_EVENTS._experience.journeyOrchestration.stepEvents.instanceID) AS EXITED_INSTANCES_COUNT
+FROM
+    journey_step_events AS STEP_EVENTS
+WHERE
+    STEP_EVENTS._experience.journeyOrchestration.stepEvents.journeyVersionName = '<journey version name>' AND
+    STEP_EVENTS._experience.journeyOrchestration.stepEvents.stepStatus in ('endStep', 'error', 'timedOut', 'cappingError') AND
+    <timestamp filter>
+GROUP BY
+    DATETIME, NODE_NAME, EXIT_STATUS
+ORDER BY
+    DATETIME DESC
+```
+
+_Exempel_
+
+```sql
+SELECT
+    DATE_FORMAT(STEP_EVENTS.timestamp,'yyyy/MM/dd HH:mm') AS DATETIME,
+    STEP_EVENTS._experience.journeyOrchestration.stepEvents.nodeName AS NODE_NAME,
+    STEP_EVENTS._experience.journeyOrchestration.stepEvents.stepStatus AS EXIT_STATUS,
+    count(STEP_EVENTS._experience.journeyOrchestration.stepEvents.instanceID) AS EXITED_INSTANCES_COUNT
+FROM
+    journey_step_events AS STEP_EVENTS
+WHERE
+    STEP_EVENTS._experience.journeyOrchestration.stepEvents.journeyVersionName = 'Journey20009' AND
+    STEP_EVENTS._experience.journeyOrchestration.stepEvents.stepStatus in ('endStep', 'error', 'timedOut', 'cappingError') AND
+    STEP_EVENTS.timestamp > (now() - interval '22 hour')
+GROUP BY
+    DATETIME, NODE_NAME, EXIT_STATUS
+ORDER BY
+    DATETIME DESC
+```
+
