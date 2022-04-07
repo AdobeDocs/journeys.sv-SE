@@ -6,10 +6,10 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: be413905-0631-4229-a954-80a92651206d
-source-git-commit: 141937cd16d5676a80412b2b72750710ee1e537f
+source-git-commit: 1e9cb572cbebf1434e236f18ce58ce45dc6c0409
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 2%
+source-wordcount: '1573'
+ht-degree: 3%
 
 ---
 
@@ -201,11 +201,3 @@ När en händelse aktiveras i testläget genereras en datauppsättning automatis
 När en händelse aktiveras i testläget genereras en datauppsättning automatiskt med källans namn.
 
 Testläget skapar automatiskt en Experience Event och skickar den till Adobe Experience Platform. Källan för upplevelsehändelsen heter&quot;Journey Orchestration Test Events&quot;.
-
-Vid flera händelser som triggas av flera resor
-
-Det finns ett scenario när flera händelser skickas från flera resor som kommer att ha olika scheman. Kan ett schema mappas till en datauppsättning? Annars behöver vi flera datauppsättningar.
-
-Dessa datauppsättningar skapas och namnges automatiskt om en måldatauppsättning inte ingår i upplevelsehändelsen. Därför ser vi dagens&quot;Automatiskt skapade datauppsättningar för resenärer&quot;.
-
-Namngivningen av vår källa skapar automatiskt. Om vi har flera händelser bör vi sammanfoga och låta det vara &quot;Journey Orchestration Test Event - NAME OF SCHEMA&quot;. Detta blir automatiskt&quot;Automatiskt genererad datauppsättning för testhändelsen Journey Orchestration - SCHEMAS NAMN&quot;.
