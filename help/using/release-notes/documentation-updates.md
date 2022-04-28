@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: ac5d2cec-0b48-4863-afe3-19ac5f61c9fd
 source-git-commit: bb07c0edaae469962ee3bf678664b4a0a83572fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '951'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,12 +20,12 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 
 ## Mars 2022 {#march-2022}
 
-* Ett exempel har lagts till om hur du lägger till ett uttryck som standardvärde i uttrycksredigeraren. [Läs mer](../expression/field-references.md#default-value)
+* Ett exempel har lagts till om hur du lägger till ett uttryck som ett standardvärde i uttrycksredigeraren. [Läs mer](../expression/field-references.md#default-value)
 
 ## Februari 2022 {#feb-2022}
 
-* The [ersätt](../functions/functionreplace.md#example_2) och [replaceAll](../functions/functionreplaceall.md#example) funktionsdokumentationssidor har uppdaterats med ytterligare information och exempel om målparametern.
-* Bästa tillvägagångssätt har lagts till i [Operatorer](../expression/operators.md#important-notes) sida.
+* Dokumentationssidorna för funktionerna [replace](../functions/functionreplace.md#example_2) och [replaceAll](../functions/functionreplaceall.md#example) har uppdaterats med ytterligare information och exempel angående målparametern.
+* Bästa praxis har lagts till på sidan [Operatorer](../expression/operators.md#important-notes).
 
 ## September 2021
 
