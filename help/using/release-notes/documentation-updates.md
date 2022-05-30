@@ -6,10 +6,10 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: ac5d2cec-0b48-4863-afe3-19ac5f61c9fd
-source-git-commit: bb07c0edaae469962ee3bf678664b4a0a83572fe
-workflow-type: ht
-source-wordcount: '951'
-ht-degree: 100%
+source-git-commit: 052ecdeb0813dcc2c4c870e8ec6b12676fbf60f1
+workflow-type: tm+mt
+source-wordcount: '961'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 100%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Orchestration].
 Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om [!DNL Journey Orchestration].
+
+## Juni 2022 {#june-2022}
+
+* Nya frågeexempel har lagts till i detta [page](../building-journeys/query-examples.md)
 
 ## Mars 2022 {#march-2022}
 

@@ -6,16 +6,16 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 8e86b919-41f5-45f9-a6af-9fe290405095
-source-git-commit: 9c33474a72542b6ad1d1ae0854622dfd7575f2d9
+source-git-commit: 052ecdeb0813dcc2c4c870e8ec6b12676fbf60f1
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 13%
+source-wordcount: '131'
+ht-degree: 6%
 
 ---
 
 # sortera {#sort}
 
-Sorterar en lista med värden i den naturliga ordningen. Det första argumentet är listan med värden, det andra är ett booleskt värde som anger om sorteringen är stigande (true) eller fallande (false).
+Sorterar en lista med värden eller objekt i den naturliga ordningen.
 
 ## Kategori
 
@@ -27,17 +27,11 @@ Lista
 
 ## Parametrar
 
-| Parameter | Typ |
-|-----------|------------------|
-| Lista | listString |
-| Lista | listBoolean |
-| Lista | listInteger |
-| Lista | listDecimal |
-| Lista | listDuration |
-| Lista | listDateTime |
-| Lista | listDateTimeOnly |
-| Lista | listDateOnly |
-| Boolean | Boolean |
+| Parameter | Typ | Beskrivning |
+|-----------|------------------|------------------|
+| listToSort | listString, listBoolean, listInteger, listDecimal, listDuration, listDateTime, listDateTimeOnly, listDateOnly eller listObject | Lista att sortera ut. För listObject måste det vara en fältreferens. |
+| keyAttributeName | string | Den här parametern är bara för listObject. Attributnamnet i objekten i den angivna listan används som nyckel för sorteringen. |
+| sortingOrder | boolesk | Stigande (true) eller fallande (false) |
 
 ## Signatur och returtyp
 
@@ -69,6 +63,10 @@ Returnerar en lista med datum.
 
 Returnerar en lista med boolesk.
 
+`sort(<listObject>,<string>,<boolean>)`
+
+Returnerar en lista med objekt.
+
 ## Exempel
 
 `sort(["A", "C", "B"], true)`
@@ -78,3 +76,4 @@ Returnerar `["A","B","C"]`.
 `sort([1, 3, 2], false)`
 
 Returnerar `[3, 2, 1]`.
+

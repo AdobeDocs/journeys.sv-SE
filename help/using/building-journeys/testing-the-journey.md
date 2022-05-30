@@ -6,9 +6,9 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: be413905-0631-4229-a954-80a92651206d
-source-git-commit: 1e9cb572cbebf1434e236f18ce58ce45dc6c0409
+source-git-commit: 052ecdeb0813dcc2c4c870e8ec6b12676fbf60f1
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1576'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ Så här använder du testläget:
 
    >[!NOTE]
    >
-   >När en reaktionshändelse används under en resa är väntetiden som standard och minimivärdet 40 sekunder. Se [det här avsnittet](../building-journeys/reaction-events.md).
+   >När en reaktionshändelse med en tidsgräns används i en resa är väntetiden som standard och det lägsta värdet 40 sekunder. Se [det här avsnittet](../building-journeys/reaction-events.md).
 
 1. Klicka **[!UICONTROL Trigger an event]** för att konfigurera och skicka händelser till resan.
 
@@ -155,7 +155,7 @@ När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör
 
 När du öppnar en resa i ett test motsvarar den visade sökvägen det senaste testet som utfördes.
 
-Det visuella flödet fungerar oavsett om händelsen aktiveras via gränssnittet eller externt (med till exempel Postman).
+Det visuella flödet fungerar oavsett om händelsen aktiveras via gränssnittet eller externt (med t.ex. Postman).
 
 ## Testläge för regelbaserade resor {#test-rule-based}
 
