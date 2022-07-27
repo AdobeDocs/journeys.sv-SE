@@ -6,9 +6,9 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 819ff3c3-0e3e-4d86-b5d2-10c5b10d19e6
-source-git-commit: bdc9ac3f54fae1dfd6f24a54a2687a0834f69c36
+source-git-commit: 77fcc4ba02a855d4d584627625a08abb4af0da2f
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '355'
 ht-degree: 5%
 
 ---
@@ -18,9 +18,7 @@ ht-degree: 5%
 Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en **[!UICONTROL Wait]** aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Tre alternativ är tillgängliga:
 
 * [Varaktighet](#duration)
-* [Fast datum](#fixed_date)
 * [Anpassat](#custom)
-
 <!--* [Email send time optimization](#email_send_time_optimization)-->
 
 ## Om aktiviteten Vänta{#about_wait}
@@ -40,12 +38,6 @@ Observera också att om två olika platser är parallella så kommer den första
 Ange väntetiden innan nästa aktivitet körs.
 
 ![](../assets/journey55.png)
-
-## Vänta fast{#fixed_date}
-
-Välj datumet för körningen av nästa aktivitet.
-
-![](../assets/journey56.png)
 
 ## Anpassad väntetid{#custom}
 

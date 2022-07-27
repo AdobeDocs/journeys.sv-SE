@@ -6,7 +6,7 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: c0e67849-caa0-4045-94ed-38e483054e1d
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 77fcc4ba02a855d4d584627625a08abb4af0da2f
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 2%
@@ -24,7 +24,6 @@ Den här tidszonen kommer att användas för varje aktivitet i resan som innehå
 * [Tidsvillkor](../building-journeys/condition-activity.md#time_condition)
 * [Datumvillkor](../building-journeys/condition-activity.md#date_condition)
 * [Anpassad väntetid](../building-journeys/wait-activity.md#custom)
-* [Vänta fast](../building-journeys/wait-activity.md#fixed_date)
 
 Du kan välja en tidszon eller välja att använda den tidszon som är definierad i användarprofilen.
 
@@ -42,13 +41,9 @@ Gör så här: **[!UICONTROL Properties]** väljer du en tidszon.
 
 ## Använda profiler för att definiera resetidszonen {#timezone-from-profiles}
 
-Om resans inträde har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid i Adobe Experience Platform, är tidszonen fördefinierad med den som anges i profilen för den person som passerar resan.
+Om resans inträde-händelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid i Adobe Experience Platform, kanske du vill använda den tidszon som har definierats på profilnivån. Gör så här: **Egenskaper**, kontrollera **Använd profilens tidszon i väntetider och villkor**. Det här alternativet är inte markerat som standard.
 
-Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas under resan.
-
-Om den enskilda personens profil inte innehåller någon tidszon är den tidszon som hämtas den som definieras i tidszonsfältet.
-
-Gör så här: **[!UICONTROL Properties]**, kontrollera **[!UICONTROL Use Profile timezone in timers and conditions]**.
+Om en tidszon har definierats för en profil hämtas den och används av resan. Om så inte är fallet används tidszonen som definieras i tidszonsfältet.
 
 ![](../assets/journey73.png)
 
