@@ -5,10 +5,10 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Journeys
-source-git-commit: 052ecdeb0813dcc2c4c870e8ec6b12676fbf60f1
+source-git-commit: 19760b779c2b105286d502b3bf4edda5bec79194
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 99%
+source-wordcount: '440'
+ht-degree: 98%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 99%
 + Nyheter {#release-notes}
    + [Versionsinformation](using/release-notes/release-notes.md)
    + [Dokumentationsuppdateringar](using/release-notes/documentation-updates.md)
+   + [Migrering till Journey Optimizer](using/release-notes/migration-to-ajo.md)
 + Börja med [!DNL Journey Orchestration] {#starting-with-journeys}
    + [Om [!DNL Journey Orchestration]](using/about/about-journey-orchestration.md)
    + [Begränsningar](using/about/limitations.md)
