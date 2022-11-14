@@ -2,19 +2,19 @@
 keywords: Resor;hem;populära ämnen
 product: adobe campaign
 title: Produktdokumentation om Journey Orchestration
-description: Följ vår guide för Adobe Journey Orchestration för enkla instruktioner om hur man implementerar och bygger resor.
+description: Följ vår användarhandbok för Adobe Journey Orchestration för enkla instruktioner om hur man implementerar och bygger resor.
 feature: Journeys
 role: User
 level: Beginner
 exl-id: b1964a3c-9ed4-4ec4-b399-567b1d6a120f
 source-git-commit: b0bf5c12adc6e9c538f2264f79b7c43656424f05
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '260'
+ht-degree: 100%
 
 ---
 
-# Journey Orchestration guide {#journeys-documentation}
+# Användarhandbok för Journey Orchestration {#journeys-documentation}
 
 ![](using/assets/do-not-localize/bannerjourney.png)
 
