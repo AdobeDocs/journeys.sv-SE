@@ -6,9 +6,9 @@ user-guide-description: Tillhandahåller anvisningar för hur man implementerar 
 index: true
 feature: Journeys
 source-git-commit: 235992282b0a05873dc17984e044400dc8de1dd8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -153,7 +153,7 @@ ht-degree: 98%
          + [getListItem](using/functions/functiongetlistitem.md)
          + [in](using/functions/functionin.md)
          + [korsa](using/functions/functionintersect.md)
-         + [limit](using/functions/functionlimit.md)
+         + [gräns](using/functions/functionlimit.md)
          + [listSize](using/functions/functionlistsize.md)
          + [serializeList](using/functions/functionserializelist.md)
          + [sort](using/functions/functionsort.md)
