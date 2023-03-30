@@ -5,15 +5,15 @@ title: Guide till Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Journeys
-source-git-commit: 235992282b0a05873dc17984e044400dc8de1dd8
-workflow-type: ht
-source-wordcount: '440'
-ht-degree: 100%
+source-git-commit: 137637a753ba44cc4f8e397b77c3fc076ec3de3f
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 97%
 
 ---
 
 
-# [!DNL Journey Orchestration] Guide {#using}
+# [!DNL Journey Orchestration] Användarhandbok {#using}
 
 + [Produktdokumentation](journey-orchestration-home.md)
 + Nyheter {#release-notes}
@@ -205,4 +205,6 @@ ht-degree: 100%
    + [Skicka ett meddelande med Campaign v7/v8](using/usecase/campaign-classic-use-case.md)
    + [Skicka samlingar dynamiskt med anpassade åtgärder](using/usecase/collections.md)
 + Arbeta med API:er{#working-with-apis}
-   + [Begränsa API:er](using/api/capping.md)
+   + [Kom igång med rese-API:er](using/api/journeys-apis.md)
+   + [API för begränsning](using/api/capping.md)
+   + [Begränsnings-API](using/api/throttling.md)
