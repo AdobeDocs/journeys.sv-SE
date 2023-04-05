@@ -6,9 +6,9 @@ products: journeys
 feature: Journeys
 role: User
 level: Intermediate
-source-git-commit: 1f91bae24dfcb291dd354e4bff9eab85afdaf5a1
+source-git-commit: fa493cf1e856378e4d79a6932c30cebf5e11e028
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,8 @@ API:t för begränsning hjälper dig att skapa, konfigurera och övervaka dina b
 >Endast en konfiguration är för närvarande tillåten per organisation. En konfiguration måste definieras i en produktionssandlåda (anges via x-sandbox-name i rubrikerna).
 >
 >En konfiguration används på organisationsnivå.
+>
+>När gränsvärdet i API:t har uppnåtts köas ytterligare händelser i upp till 6 timmar. Detta värde kan inte ändras.
 
 ## Beskrivning av begränsnings-API {#description}
 
