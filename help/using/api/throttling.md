@@ -1,6 +1,6 @@
 ---
 product: adobe campaign
-title: Arbeta med begränsnings-API
+title: Arbeta med API:t för begränsning
 description: Läs mer om API:t för begränsning
 products: journeys
 feature: Journeys
@@ -9,12 +9,12 @@ level: Intermediate
 exl-id: 76afe397-3e18-4e01-9b0b-c21705927ce2
 source-git-commit: 25d8dcd027f3f433759ce97f9a3a1dad85ba1427
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '799'
+ht-degree: 96%
 
 ---
 
-# Arbeta med begränsnings-API
+# Arbeta med API:t för begränsning
 
 API:t för begränsning hjälper dig att skapa, konfigurera och övervaka dina begränsningskonfigurationer för att begränsa antalet händelser som skickas per sekund.
 
@@ -22,26 +22,26 @@ API:t för begränsning hjälper dig att skapa, konfigurera och övervaka dina b
 >
 >Endast en konfiguration är för närvarande tillåten per organisation. En konfiguration måste definieras i en produktionssandlåda (anges via x-sandbox-name i rubrikerna).
 >
->En konfiguration används på organisationsnivå.
+>En konfiguration tillämpas på organisationsnivå.
 >
->När gränsvärdet i API:t har uppnåtts köas ytterligare händelser i upp till 6 timmar. Detta värde kan inte ändras.
+>När gränsvärdet i API:t har uppnåtts köas ytterligare händelser i upp till sex timmar. Detta värde kan inte ändras.
 
-## Beskrivning av begränsnings-API {#description}
+## Beskrivning av API:et för begränsing {#description}
 
-| Metod | Bana | Beskrivning |
+| Metod | Sökväg | Beskrivning |
 |---|---|---|
-| [!DNL POST] | list/throttlingConfigs | Hämta en lista med begränsningskonfigurationer |
+| [!DNL POST] | list/throttlingConfigs | Hämta en lista över begränsningskonfigurationer |
 | [!DNL POST] | /throttlingConfigs | Skapa en begränsningskonfiguration |
-| [!DNL POST] | /throttlingConfigs/`{uid}`/deploy | Distribuera en begränsningskonfiguration |
-| [!DNL POST] | /throttlingConfigs/`{uid}`/undeploy | Avdistribuera en begränsningskonfiguration |
-| [!DNL POST] | /throttlingConfigs/`{uid}`/canDeploy | Kontrollera om en begränsningskonfiguration kan distribueras eller inte |
+| [!DNL POST] | /throttlingConfigs/`{uid}`/deploy | Driftsätt en begränsningskonfiguration |
+| [!DNL POST] | /throttlingConfigs/`{uid}`/undeploy | Avbryta driftsättning för en begränsningskonfiguration |
+| [!DNL POST] | /throttlingConfigs/`{uid}`/canDeploy | Kontrollera om en begränsningskonfiguration kan driftsättas eller inte |
 | [!DNL PUT] | /throttlingConfigs/`{uid}` | Uppdatera en begränsningskonfiguration |
 | [!DNL GET] | /throttlingConfigs/`{uid}` | Hämta en begränsningskonfiguration |
-| [!DNL DELETE] | /throttlingConfigs/`{uid}` | Ta bort en begränsningskonfiguration |
+| [!DNL DELETE] | /throttlingConfigs/`{uid}` | Radera en begränsningskonfiguration |
 
 ## Begränsningskonfiguration {#configuration}
 
-Här är strukturen för en strypningskonfiguration. **name** och **description** attribut är valfria.
+Här är strukturen för en begränsningskonfiguration. Attributen **name** och **description** är valfria.
 
 ```
 {
@@ -67,7 +67,7 @@ Exempel:
 
 ## Fel
 
-När en konfiguration skapas eller uppdateras validerar processen den angivna konfigurationen och returnerar den verifieringsstatus som identifieras av dess unika ID, antingen:
+När en konfiguration skapas eller uppdateras validerar processen den angivna konfigurationen och returnerar den valideringsstatus som identifieras av dess unika ID, antingen:
 
 ```
 "ok" or "error"
@@ -75,34 +75,34 @@ När en konfiguration skapas eller uppdateras validerar processen den angivna ko
 
 >[!IMPORTANT]
 >
->Attributen **maxThrottput**, **urlPattern** och **metoder** är obligatoriska.
+>Attributen **maxThroughput**, **urlPattern** och **methods** är obligatoriska.
 >
->**maxThrottput** värdet måste vara i intervallet 200-5000.
+>Värdet **maxThroughput** måste vara i intervallet 200–5 000.
 
-Följande fel kan uppstå när du skapar, tar bort eller distribuerar begränsningskonfiguration:
+Följande fel kan uppstå när du skapar, raderar eller distribuerar en begränsningskonfiguration:
 
-* **ERR_THROTTLING_CONFIG_100**: strypningskonfiguration: `<mandatory attribute>` obligatoriskt
-* **ERR_THROTTLING_CONFIG_101**: strypningskonfiguration: maxThoutput krävs och måste vara större än eller lika med 200 och mindre än eller lika med 5000
-* **ERR_THROTTLING_CONFIG_104**: strypningskonfiguration: felformat url-mönster
-* **ERR_THROTTLING_CONFIG_105**: strypningskonfiguration: jokertecken tillåts inte i värddelen av URL-mönstret
-* **ERR_THROTTLING_CONFIG_106**: strypningskonfiguration: ogiltig nyttolast
-* **THROTTLING_CONFIG_DELETE_FORBIDDEN_ERROR: 1456**,&quot;Det går inte att ta bort en distribuerad begränsningskonfiguration. Avdistribuera den innan den tas bort&quot;
-* **THROTTLING_CONFIG_DELETE_ERROR: 1457**, &quot;Can&#39;t delete Throttling config: oväntat fel inträffar&quot;
-* **THROTTLING_CONFIG_DEPLOY_ERROR: 1458**, &quot;Can&#39;t deploy throttling config: oväntat fel inträffar&quot;
-* **THROTTLING_CONFIG_UNDEPLOY_ERROR: 1459**, &quot;Det går inte att avdistribuera begränsningskonfiguration: oväntat fel inträffar&quot;
-* **THROTTLING_CONFIG_GET_ERROR: 1460**, &quot;Can&#39;t get throttling config: oväntat fel inträffar&quot;
-* **THROTTLING_CONFIG_UPDATE_NOT_ACTIVE_ERROR: 1461**, &quot;Can&#39;t update throttling config: Körningsversionen är inte aktiv&quot;
-* **THROTTLING_CONFIG_UPDATE_ERROR: 1462**, &quot;Can&#39;t update throttling config: oväntat fel inträffar&quot;
-* **THROTTLING_CONFIG_NON_PROD_SANDBOX_ERROR: 1463**, &quot;Åtgärden tillåts inte för strypningskonfiguration: ej känd sandlåda&quot;
-* **THROTTLING_CONFIG_CREATE_ERROR: 1464**, &quot;Det går inte att skapa strypningskonfiguration: oväntat fel inträffar&quot;
-* **THROTTLING_CONFIG_CREATE_LIMIT_ERROR: 1465**, &quot;Det går inte att skapa strypningskonfiguration: endast en konfiguration tillåts per organisation&quot;
-* **THROTTLING_CONFIG_ALREADY_DEPLOYED_ERROR: 14466**, &quot;Can&#39;t deploy throttling config: redan distribuerad&quot;
-* **THROTTLING_CONFIG_NOT_FOUND_ERROR: 14467**, &quot;strypningen config not found&quot;
-* **THROTTLING_CONFIG_NOT_DEPLOYED_ERROR: 14468**, &quot;Det går inte att avdistribuera begränsningskonfiguration: inte distribuerat ännu&quot;
+* **ERR_THROTTLING_CONFIG_100**: begränsningskonfiguration: `<mandatory attribute>` obligatoriskt
+* **ERR_THROTTLING_CONFIG_101**: begränsningskonfiguration: maxThroughput krävs och måste vara större än eller lika med 200 och mindre än eller lika med 5 000
+* **ERR_THROTTLING_CONFIG_104**: begränsningskonfiguration: felformat URL-mönster
+* **ERR_THROTTLING_CONFIG_105**: begränsningskonfiguration: jokertecken tillåts inte i värddelen av URL-mönstret
+* **ERR_THROTTLING_CONFIG_106**: begränsningskonfiguration: ogiltig nyttolast
+* **THROTTLING_CONFIG_DELETE_FORBIDDEN_ERROR: 1456**, ”Det gick inte att radera en driftsatt begränsningskonfiguration. Avbryt driftsättning innan den tas bort”
+* **THROTTLING_CONFIG_DELETE_ERROR: 1457**, ”Det gick inte att radera begränsningskonfigurationen: ett oväntat fel inträffade”
+* **THROTTLING_CONFIG_DEPLOY_ERROR: 1458**, ”Det gick inte att driftsätta begränsningskonfigurationen: ett oväntat fel inträffade”
+* **THROTTLING_CONFIG_UNDEPLOY_ERROR: 1459**, ”Det gick inte att avbryta driftsättningen av begränsningskonfigurationen: ett oväntat fel inträffade”
+* **THROTTLING_CONFIG_GET_ERROR: 1460**, ”Det gick inte att hämta begränsningskonfigurationen: ett oväntat fel inträffade”
+* **THROTTLING_CONFIG_UPDATE_NOT_ACTIVE_ERROR: 1461**, ”Det gick inte att uppdatera begränsningskonfigurationen: körningsversionen är inte aktiv”
+* **THROTTLING_CONFIG_UPDATE_ERROR: 1462**, ”Det gick inte att uppdatera begränsningskonfigurationen: ett oväntat fel inträffade”
+* **THROTTLING_CONFIG_NON_PROD_SANDBOX_ERROR: 1463**, ”Åtgärden tillåts inte för begränsningskonfiguration: sandlåda ej för produktion”
+* **THROTTLING_CONFIG_CREATE_ERROR: 1464**, ”Det gick inte att skapa begränsningskonfigurationen: ett oväntat fel inträffade”
+* **THROTTLING_CONFIG_CREATE_LIMIT_ERROR: 1465**, ”Det gick inte att skapa begränsningskonfigurationen: endast en konfiguration tillåts per organisation”
+* **THROTTLING_CONFIG_ALREADY_DEPLOYED_ERROR: 14466**, ”Det gick inte att driftsätta begränsningskonfigurationen: den är redan driftsatt”
+* **THROTTLING_CONFIG_NOT_FOUND_ERROR: 14467**, ”begränsningskonfigurationen hittades inte”
+* **THROTTLING_CONFIG_NOT_DEPLOYED_ERROR: 14468**, ”Det gick inte att avbryta driftsättningen av begränsningskonfigurationen: den är inte ännu driftsatt”
 
 **Exempel på fel**
 
-När du försöker skapa en konfiguration i en icke-prod sandlåda:
+När du försöker skapa en konfiguration i en sandlåda som är ej för produktion:
 
 ```
 {
@@ -136,64 +136,64 @@ När du försöker skapa en annan konfiguration:
 
 Det finns en Postman-samling som kan hjälpa dig med testning och konfiguration [här](https://raw.githubusercontent.com/AdobeDocs/JourneyAPI/master/postman-collections/Journey-Throttling-API_postman-collection.json).
 
-Den här Postman Collection har konfigurerats för att dela den Postman Variable-samling som genererats via __[Integreringar i Adobe I/O Console](https://console.adobe.io/integrations) > Testa > Ladda ned för Postman__, som genererar en Postman-miljöfil med de valda integreringsvärdena.
+Den här Postman-samlingen har konfigurerats för att dela den samling med Postman-variabler som genererats via __[Integreringar i Adobe I/O Console](https://console.adobe.io/integrations) > Testa > Hämta för Postman__, som genererar en Postman-miljöfil med de valda integreringsvärdena.
 
-När du laddat ned och överfört till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{BASE_PATH}` och `{SANDBOX_NAME}`.
-* `{JO_HOST}` : [!DNL Journey Orchestration] Gateway-URL
-* `{BASE_PATH}` : startpunkt för API. Värdet är /authoring
-* `{SANDBOX_NAME}` : sidhuvudet **x-sandbox-name** (till exempel prod) som motsvarar namnet på sandlådan där API-åtgärderna ska utföras. Se [översikt över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) för mer information.
+När du hämtat och laddat upp till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{BASE_PATH}` och `{SANDBOX_NAME}`.
+* `{JO_HOST}`: [!DNL Journey Orchestration] Gateway-URL
+* `{BASE_PATH}`: startpunkt för API:et. Värdet är ”/authoring”
+* `{SANDBOX_NAME}`: sidhuvudet **x-sandbox-name** (till exempel ”produktion”) som motsvarar namnet på sandlådan där API-åtgärderna utförs. Se [översikten över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) för mer information.
 
-I följande avsnitt hittar du listan med Rest API-anrop ordnade för att utföra fallstudien.
+I följande avsnitt hittar du listan över Rest API-anrop ordnade för att utföra fallstudien.
 
-Användningsfall n°1: **Skapa och distribuera en ny begränsningskonfiguration**
+Första användningsfallet: **Skapa och driftsätt en ny begränsningskonfiguration**
 
-1. lista
-1. skapa
+1. list
+1. create
 1. candeploy
-1. driftsätta
+1. deploy
 
-Use-Case n°2: **Uppdatera och distribuera en begränsningskonfiguration som inte har distribuerats ännu**
+Andra användningsfallet: **Uppdatera och driftsätt en begränsningskonfiguration som inte har distribuerats ännu**
 
-1. lista
+1. list
 1. get
-1. uppdatera
+1. update
 1. candeploy
-1. driftsätta
+1. deploy
 
-Användningsfall nr 3: **Avdistribuera och ta bort en distribuerad begränsningskonfiguration**
+Tredje användningsfallet: **Avbryta driftsättning och radera en driftsatt begränsningskonfiguration**
 
-1. lista
-1. avdistribuera
+1. list
+1. undeploy
 1. delete
 
-Användningsfall nr 4: **Ta bort en distribuerad begränsningskonfiguration**
+Fjärde användningsfallet: **Radera en driftsatt begränsningskonfiguration**
 
-I endast ett API-anrop kan du avdistribuera och ta bort konfigurationen med hjälp av parametern forceDelete.
+I endast ett API-anrop kan du avbryta driftsättning och radera konfigurationen med hjälp av parametern forceDelete.
 
-1. lista
-1. delete, with forceDelete param
+1. list
+1. radera med parametern forceDelete
 
-Use-Case n°5: **Uppdatera en begränsningskonfiguration som redan har distribuerats**
+Femte användningsfallet: **Uppdatera en begränsningskonfiguration som redan har driftsatts**
 
 >[!NOTE]
 >
->Du behöver inte avdistribuera konfigurationen innan du uppdaterar
+>Du behöver inte avbryta driftsättningen av konfigurationen innan du uppdaterar
 
-1. lista
+1. list
 1. get
-1. uppdatera
+1. update
 
 ## Konfigurationens livscykel på körningsnivå {#config}
 
-När en konfiguration inte distribueras markeras den som inaktiv på körningsnivå och väntande händelser bearbetas under 24 timmar. Den tas sedan bort i runtime-tjänsten.
+När en konfiguration inte driftsätts markeras den som inaktiv på körningsnivå och väntande händelser fortsätter bearbetas under 24 timmar. Den raderas sedan i körningstjänsten.
 
-När en konfiguration har avdistribuerats är det möjligt att uppdatera och distribuera om konfigurationen. Detta skapar en ny runtime-konfiguration som kommer att beaktas i kommande åtgärder.
+När driftsättningen av en konfiguration har avbrutits är det möjligt att uppdatera och driftsätta konfigurationen igen. Detta skapar en ny körningskonfiguration som beaktas i körandet av kommande åtgärder.
 
-När du uppdaterar en konfiguration som redan har distribuerats beaktas de nya värdena omedelbart. De underliggande systemresurserna anpassas automatiskt. Detta är optimalt jämfört med att avdistribuera och sedan distribuera om konfigurationen.
+När du uppdaterar en konfiguration som redan har driftsatts beaktas de nya värdena omedelbart. De underliggande systemresurserna anpassas automatiskt. Detta är optimalt jämfört med att avbryta driftsättningen och sedan driftsätta konfigurationen igen.
 
 ## Exempel på svar {#responses}
 
-**Skapa - POST**
+**Skapa – POST**
 
 ```
 {
@@ -230,7 +230,7 @@ När du uppdaterar en konfiguration som redan har distribuerats beaktas de nya v
 }
 ```
 
-**Uppdatera - PUT**
+**Uppdatera – PUT**
 
 ```
 {
@@ -268,7 +268,7 @@ När du uppdaterar en konfiguration som redan har distribuerats beaktas de nya v
 }
 ```
 
-**Läs (efter uppdatering) - GET**
+**Läs (efter uppdatering) – GET**
 
 ```
 {
@@ -300,7 +300,7 @@ När du uppdaterar en konfiguration som redan har distribuerats beaktas de nya v
 }
 ```
 
-**Läs (efter driftsättning) - GET**
+**Läs (efter driftsättning) – GET**
 
 ```
 {
