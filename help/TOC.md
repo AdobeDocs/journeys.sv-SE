@@ -1,14 +1,14 @@
 ---
 product: adobe campaign
 user-guide-title: Journey Orchestration
-title: Guide till Journey Orchestration
+title: Användarhandbok för Journey Orchestration
 user-guide-description: Tillhandahåller anvisningar för hur man implementerar och bygger resor.
 index: true
 feature: Journeys
 source-git-commit: 137637a753ba44cc4f8e397b77c3fc076ec3de3f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -205,6 +205,6 @@ ht-degree: 97%
    + [Skicka ett meddelande med Campaign v7/v8](using/usecase/campaign-classic-use-case.md)
    + [Skicka samlingar dynamiskt med anpassade åtgärder](using/usecase/collections.md)
 + Arbeta med API:er{#working-with-apis}
-   + [Kom igång med rese-API:er](using/api/journeys-apis.md)
-   + [API för begränsning](using/api/capping.md)
-   + [Begränsnings-API](using/api/throttling.md)
+   + [Kom igång med API:er för resor](using/api/journeys-apis.md)
+   + [API för reglering](using/api/capping.md)
+   + [API för begränsning](using/api/throttling.md)
