@@ -1,7 +1,7 @@
 ---
 product: adobe campaign
 title: Kom igång
-description: Upptäck huvudstegen för att konfigurera Journey Orchestration och skapa din första resa.
+description: Upptäck de viktigaste stegen för att konfigurera Journey Orchestration och bygga din första resa.
 feature: Journeys
 role: User
 level: Beginner
