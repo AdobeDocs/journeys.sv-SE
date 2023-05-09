@@ -6,9 +6,9 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: fef039ae-c04d-4198-a082-4be27710255f
-source-git-commit: a9a129b1949d64c4a412d3ea4002b32e3563ea96
+source-git-commit: 18c94897b5cea0d92a83f36845fdda64220b668f
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '572'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 2%
 # Begränsningar {#limitations}
 
 Här är begränsningar för användning av Journey Orchestration.
+
+## Allmänna skyddsräcken för resan {#journeys-guardrails-journeys}
+
+* Antalet aktiviteter under en resa är begränsat till 50. Antalet aktiviteter visas i den övre vänstra delen av arbetsytan.
+* Antalet **direktresor** i en organisation är begränsad till 100 per sandlåda. När den här gränsen har nåtts kan du inte längre publicera en ny resa.
 
 ## Allmänna åtgärdsbegränsningar
 
@@ -46,7 +51,7 @@ Här är begränsningar för användning av Journey Orchestration.
 
 ## Begränsningar för Adobe Campaign-åtgärder
 
-* Adobe Campaign Standard Transactional Messaging har en skala på högst 50 000 meddelanden per timme över alla kanaler för en viss instans. Se [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/campaign-standard.html). 
+* Adobe Campaign Standard Transactional Messaging har en skala på högst 50 000 meddelanden per timme över alla kanaler för en viss instans. Se [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html). 
  
 
 ## Begränsningar för händelser
