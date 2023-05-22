@@ -1,7 +1,7 @@
 ---
 product: adobe campaign
-title: 'Externa datakällor '
-description: 'Läs om hur du konfigurerar externa datakällor '
+title: Externa datakällor
+description: Läs om hur du konfigurerar externa datakällor
 feature: Journeys
 role: User
 level: Intermediate

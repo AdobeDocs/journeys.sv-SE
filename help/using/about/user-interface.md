@@ -8,7 +8,7 @@ level: Intermediate
 exl-id: 0d0e74c7-6cb0-4068-a69a-3c01f8b3552d
 source-git-commit: a5ec1c4c5608113bb17dfbdea0587f6bb342099a
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '985'
 ht-degree: 61%
 
 ---
@@ -95,7 +95,7 @@ Tillgänglighetsfunktionerna i Adobe Journey Optimizer tillhandahålls av Adobe 
 * Färgkontrast
 * Bekräfta att du fyllt i samtliga obligatoriska fält
 
-[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target=&quot;_blank&quot;} i Adobe Experience Platform-dokumentationen.
+[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target="_blank"} i Adobe Experience Platform-dokumentationen.
 
 Du kan använda följande vanliga kortkommandon i Adobe Journey Optimizer:
 
@@ -107,7 +107,7 @@ Du kan använda följande vanliga kortkommandon i Adobe Journey Optimizer:
 | Markera eller rensa ett element som är i fokus | Enter eller mellanslagstangenten |
 | Avbryt en markering, komprimera en panel eller stänga en dialogruta | Esc |
 
-[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/custom.html){target=&quot;_blank&quot;} i Adobe Experience Platform-dokumentationen.
+[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/custom.html){target="_blank"} i Adobe Experience Platform-dokumentationen.
 
 Du kan använda dessa kortkommandon i vissa delar av Journey Optimizer:
 
