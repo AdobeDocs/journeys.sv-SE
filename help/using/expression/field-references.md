@@ -6,9 +6,9 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 2f317306-9afd-4e9a-88b8-fc66102e1046
-source-git-commit: e4a003656058ac7ae6706e22fd5162c9e875629a
+source-git-commit: bb07c0edaae469962ee3bf678664b4a0a83572fe
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '557'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ I uttrycket refereras händelsefält till&quot;@&quot; och datakällfält refere
 
 En syntaxfärg används för att visuellt skilja händelsefält (grönt) från fältgrupper (blått).
 
-## Standardvärden för fältreferenser
+## Standardvärden för fältreferenser {#default-value}
 
 Ett standardvärde kan associeras med ett fältnamn. Syntaxen är följande:
 
@@ -54,7 +54,7 @@ Ett standardvärde kan associeras med ett fältnamn. Syntaxen är följande:
 
 >[!NOTE]
 >
->Fälttypen och standardvärdet måste vara samma. Till exempel @{LobbyBeacon.endUserID:n._experience.emailid.id, defaultValue : 2} will be invalid because the default value is an integer whereas the expected value should be a string.
+>Fälttypen och standardvärdet måste vara samma. Till exempel @{LobbyBeacon.endUserID:n._experience.email.id, defaultValue : 2} är ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
 
 Exempel:
 
@@ -86,6 +86,13 @@ expression examples:
 - #{ACP.Profile.emails.at(1).email}              -> "snow@thewall.westeros"
 - #{ACP.Profile.person.age, defaultValue : -1}   -> -1 // default value, age is not a field present in the payload
 - #{ACP.Profile.person.age}                      -> null
+```
+
+Du kan lägga till vilken typ av uttryck som helst som standardvärde. Den enda begränsningen är att uttrycket måste returnera den förväntade datatypen. När du använder en funktion måste du kapsla in funktionen med ().
+
+```
+#{ExperiencePlatform.Subscriptions.profile.consents.marketing.any.time, defaultValue : (now())} 
+== date("2022-02-10T00:00:00Z")
 ```
 
 ## Referens till ett fält i samlingar
