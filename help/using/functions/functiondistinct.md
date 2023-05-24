@@ -13,7 +13,7 @@ ht-degree: 5%
 
 ---
 
-# distinkt {#distinct}
+# distinct {#distinct}
 
 Returnerar de distinkta värdena eller objekten i en viss lista. Null-poster ignoreras.
 

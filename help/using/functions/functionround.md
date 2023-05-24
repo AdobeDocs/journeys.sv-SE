@@ -13,7 +13,7 @@ ht-degree: 12%
 
 ---
 
-# rund {#round}
+# round {#round}
 
 Returnerar det närmaste heltalsvärdet till argumentet med banden avrundade till positiv oändlighet.
 

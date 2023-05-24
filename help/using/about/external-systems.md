@@ -10,7 +10,7 @@ exl-id: e39218bd-fa6e-443f-9843-92b7a07070fa
 source-git-commit: a9a129b1949d64c4a412d3ea4002b32e3563ea96
 workflow-type: tm+mt
 source-wordcount: '1014'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
@@ -36,13 +36,13 @@ Det inbyggda Capping API:t erbjuder ett tekniskt skyddsräcke som hjälper till 
 
 För externa datakällor är det maximala antalet anrop per sekund satt till 15. Om antalet anrop överstiger 15 per sekund ignoreras de återstående samtalen. Du kan öka den här gränsen för privata externa datakällor. Kontakta Adobe för att inkludera slutpunkten i tillåtelselista. Detta är inte möjligt för offentliga externa datakällor.
 
-För anpassade åtgärder måste du utvärdera kapaciteten för det externa API:t. Om Journey Optimizer t.ex. skickar 1 000 samtal per sekund och systemet bara har stöd för 100 samtal per sekund, måste du definiera en spärrregel så att systemet inte blir mättat.
+För anpassade åtgärder måste du utvärdera kapaciteten för ditt externa API. Om Journey Optimizer t.ex. skickar 1 000 samtal per sekund och systemet bara har stöd för 100 samtal per sekund, måste du definiera en spärrregel så att systemet inte blir mättat.
 
 Takregler definieras på sandlådenivå för en specifik slutpunkt (URL:en anropas). Vid körning verifierar Journey Orchestration om det finns en definierad begränsningsregel och tillämpar den definierade hastigheten under anropen till den slutpunkten. Om antalet anrop överstiger den definierade hastigheten, ignoreras de återstående samtalen och räknas som fel i rapporteringen.
 
 En begränsningsregel är specifik för en slutpunkt men global för alla resor i en sandlåda. Detta innebär att takplatser delas mellan alla resor i en sandlåda.
 
-Anta till exempel att du har definierat en begränsning på 100 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 200 samtal per sekund används de 100 tillgängliga kortplatserna och de 100 återstående kortplatserna tas bort. Eftersom den högsta nivån har överskridits kommer de övriga nio resorna inte att ha några platser kvar. Denna granularitet hjälper till att skydda det externa systemet från överbelastning och krascher.
+Anta till exempel att du har definierat en begränsning på 100 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 200 samtal per sekund används de 100 tillgängliga kortplatserna och de 100 återstående kortplatserna tas bort. Eftersom den högsta nivån har överskridits har de övriga nio resorna inte några fack kvar. Denna precision hjälper till att skydda det externa systemet från överbelastning och krascher.
 
 Mer information om API:t för appning och hur du konfigurerar regler för appning finns i [den här sidan](../api/capping.md).
 

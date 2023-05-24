@@ -13,7 +13,7 @@ ht-degree: 19%
 
 ---
 
-# trimma {#trim}
+# trim {#trim}
 
 Tar bort start- och slutblanksteg.
 

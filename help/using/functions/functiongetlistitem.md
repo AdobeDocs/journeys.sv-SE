@@ -29,14 +29,14 @@ Lista
 
 | Parameter | Typ |
 |-----------|------------------|
-| lista | listString |
-| lista | listBoolean |
-| lista | listInteger |
-| lista | listDecimal |
-| lista | listDuration |
-| lista | listDateTime |
-| lista | listDateTimeOnly |
-| lista | listDateOnly |
+| list | listString |
+| list | listBoolean |
+| list | listInteger |
+| list | listDecimal |
+| list | listDuration |
+| list | listDateTime |
+| list | listDateTimeOnly |
+| list | listDateOnly |
 | index | heltal |
 
 ## Underskrifter och returtyp

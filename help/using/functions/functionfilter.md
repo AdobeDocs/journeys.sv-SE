@@ -31,7 +31,7 @@ Lista
 |-----------|------------------|------------------|
 | listToFilter | listObject | lista med objekt som ska filtreras. Det måste vara en fältreferens. |
 | keyAttributeName | string | attributnamn i objekten i den angivna listan, används som nyckel för filtrering |
-| keyValueList | lista | array med nyckelvärden för filtrering |
+| keyValueList | list | array med nyckelvärden för filtrering |
 
 ## Underskrifter och returnerade typer
 

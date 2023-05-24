@@ -13,7 +13,7 @@ ht-degree: 6%
 
 ---
 
-# sortera {#sort}
+# sort {#sort}
 
 Sorterar en lista med värden eller objekt i den naturliga ordningen.
 

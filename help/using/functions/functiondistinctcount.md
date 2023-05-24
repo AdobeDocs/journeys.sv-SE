@@ -13,7 +13,7 @@ ht-degree: 30%
 
 ---
 
-# clearCount{#distinctCount}
+# distinctCount{#distinctCount}
 
 Räknar antalet olika värden som ignorerar null-värden.
 

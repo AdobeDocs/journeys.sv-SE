@@ -1,7 +1,7 @@
 ---
 product: adobe campaign
 title: Om datakällor
-description: 'Läs om hur du konfigurerar en datakälla '
+description: Läs om hur du konfigurerar en datakälla
 feature: Journeys
 role: User
 level: Intermediate

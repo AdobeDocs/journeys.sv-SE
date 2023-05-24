@@ -19,7 +19,7 @@ ht-degree: 95%
 
 Med [!DNL Journey Orchestration] kan du tilldela en uppsättning behörigheter till dina användare för att definiera vilken del av gränssnittet de ska kunna komma åt.
 
-De kan hanteras av administratörer som har åtkomst till Admin Console. Se den här [dokumentationen](https://helpx.adobe.com/enterprise/managing/user-guide.html) för mer information om Admin Console.
+De kan hanteras av administratörer som har åtkomst till Admin Console. Se den här [dokumentationen](https://helpx.adobe.com/se/enterprise/managing/user-guide.html) för mer information om Admin Console.
 
 För att få åtkomst till [!DNL Journey Orchestration] måste användaren vara:
 

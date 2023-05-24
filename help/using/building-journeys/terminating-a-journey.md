@@ -9,7 +9,7 @@ exl-id: 2d1b9d6b-0a53-436c-b251-ce77cb931aaa
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -43,7 +43,7 @@ Du kan även:
    ![](../assets/finish_drop_down_list.png)
 
 1. Klicka på **[!UICONTROL Close to new entrances]**. En dialogruta visas.
-1. Klicka **[!UICONTROL Close to new entrances]** för att bekräfta.
+1. Klicka på **[!UICONTROL Close to new entrances]** för att bekräfta.
 
 ## Stoppa en resa
 
@@ -65,4 +65,4 @@ Du kan även:
 ![](../assets/finish_drop_down_list.png)
 
 1. Klicka på **[!UICONTROL Stop]**. En dialogruta visas.
-1. Klicka **[!UICONTROL Stop]** för att bekräfta.
+1. Klicka på **[!UICONTROL Stop]** för att bekräfta.

@@ -13,7 +13,7 @@ ht-degree: 28%
 
 ---
 
-# antal {#count}
+# count {#count}
 
 Räknar elementen i listan utan att ta hänsyn till null-värden.
 

@@ -9,7 +9,7 @@ exl-id: 9996d1eb-ddef-46dd-aaa9-c37fa9deb2f9
 source-git-commit: 8980df5cc238a7195f01a1631e418a8de677fbea
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -34,7 +34,7 @@ I den här tabellen visas ett exempel på konfiguration:
 | Fält | Värde |
 | --- | --- |
 | URL | `https://xxx.yyy.com:8080/somethingstatic/` |
-| Bana | `The id of marketingCampaign + '/messages'` |
+| Sökväg | `The id of marketingCampaign + '/messages'` |
 
 Den sammanfogade URL:en har följande format:
 

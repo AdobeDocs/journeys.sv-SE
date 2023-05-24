@@ -13,7 +13,7 @@ ht-degree: 11%
 
 ---
 
-# summa {#sum}
+# sum {#sum}
 
 Returnerar summan av värdena för en uppsättning uttryck. Null-värden ignoreras.
 

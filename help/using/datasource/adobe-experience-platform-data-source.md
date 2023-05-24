@@ -1,7 +1,7 @@
 ---
 product: adobe campaign
-title: 'Datakällan i Adobe Experience Platform '
-description: 'Lär dig konfigurera Adobe Experience Platform datakälla '
+title: Datakällan i Adobe Experience Platform
+description: Lär dig konfigurera Adobe Experience Platform datakälla
 feature: Journeys
 role: User
 level: Intermediate

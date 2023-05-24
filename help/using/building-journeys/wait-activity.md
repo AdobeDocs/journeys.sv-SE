@@ -19,7 +19,7 @@ Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en
 
 * [Varaktighet](#duration)
 * [Anpassat](#custom)
-<!--* [Email send time optimization](#email_send_time_optimization)-->
+   <!--* [Email send time optimization](#email_send_time_optimization)-->
 
 ## Om aktiviteten Vänta{#about_wait}
 

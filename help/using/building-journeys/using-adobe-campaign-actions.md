@@ -45,7 +45,7 @@ För **[!UICONTROL Email]** och **[!UICONTROL SMS]**, parametrarna är identiska
 
 >[!NOTE]
 >
->Om du använder en transaktionsmall för profiler för e-post hanteras avprenumerationsfunktionen som Campaign Standard. Du lägger bara till en **[!UICONTROL Unsubscription link]** innehållsblock i mallen ([läs mer](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html)). Om du använder en händelsebaserad mall (rtEvent) måste du i meddelandet lägga till en länk som skickar personens e-post i URL-parametern och pekar på en startsida som inte är en prenumeration. Du måste skapa den här landningssidan och se till att personens beslut att avbryta prenumerationen skickas till Adobe.
+>Om du använder en transaktionsmall för profiler för e-post hanteras avprenumerationsfunktionen som Campaign Standard. Du lägger bara till en **[!UICONTROL Unsubscription link]** innehållsblock i mallen ([läs mer](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv)). Om du använder en händelsebaserad mall (rtEvent) måste du i meddelandet lägga till en länk som skickar personens e-post i URL-parametern och pekar på en startsida som inte är en prenumeration. Du måste skapa den här landningssidan och se till att personens beslut att avbryta prenumerationen skickas till Adobe.
 
 Först måste du välja en transaktionsmall. Se [den här sidan](../building-journeys/about-action-activities.md).
 
@@ -75,7 +75,7 @@ Detta är de fält som förväntas av Adobe Campaign Standard-meddelandet. Dessa
 
 ## Push {#section_im3_hvf_nhb}
 
-Innan du använder push-aktiviteten måste din mobilapp konfigureras tillsammans med Campaign Standard för att skicka push-meddelanden. Använd den här [artikel](https://helpx.adobe.com/se/campaign/kb/integrate-mobile-sdk.html) för att vidta nödvändiga implementeringsåtgärder för mobilen.
+Innan du använder push-aktiviteten måste din mobilapp konfigureras tillsammans med Campaign Standard för att skicka push-meddelanden. Använd den här [artikel](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-mobile/supported-mobile-use-cases.html?lang=sv) för att vidta nödvändiga implementeringsåtgärder för mobilen.
 
 Först måste du välja en mobilapp i listrutan och ett transaktionsmeddelande. Läs [den här sidan](../building-journeys/about-action-activities.md).
 

@@ -29,8 +29,8 @@ Lista
 
 | Parameter | Typ |
 |-----------|------------------|
-| lista 1 | lista |
-| lista 2 | lista |
+| lista 1 | list |
+| lista 2 | list |
 
 ## Underskrifter och returnerade typer
 

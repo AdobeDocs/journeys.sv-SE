@@ -13,7 +13,7 @@ ht-degree: 16%
 
 ---
 
-# innehåller {#contain}
+# contain {#contain}
 
 Kontrollerar om den andra argumentsträngen finns i den första argumentsträngen.
 

@@ -1,7 +1,7 @@
 ---
 product: adobe campaign
 title: Testa resan
-description: 'Läs om testning av resan '
+description: Läs om testning av resan
 feature: Journeys
 role: User
 level: Intermediate

@@ -13,7 +13,7 @@ ht-degree: 14%
 
 ---
 
-# nu {#now}
+# now {#now}
 
 Returnerar aktuellt datum i tidsformat för datum. Mer information om datatyper finns i [den här sidan](../expression/data-types.md).
 

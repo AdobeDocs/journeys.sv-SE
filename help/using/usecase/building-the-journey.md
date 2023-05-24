@@ -1,7 +1,7 @@
 ---
 product: adobe campaign
 title: Skapa resan - avancerat
-description: 'Lär dig hur du bygger en resa med avancerade användningsfall '
+description: Lär dig hur du bygger en resa med avancerade användningsfall
 feature: Journeys
 role: User
 level: Intermediate

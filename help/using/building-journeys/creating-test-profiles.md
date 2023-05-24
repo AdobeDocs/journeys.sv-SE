@@ -99,7 +99,7 @@ Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det 
 
 ## Skapa testprofiler med API-anrop{#create-test-profiles-api}
 
-Du kan också skapa testprofiler via API-anrop. Läs den här [sidan](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html).
+Du kan också skapa testprofiler via API-anrop. Läs den här [sidan](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv).
 
 Du måste använda ett profilschema som innehåller blandningen &quot;Profiltestinformation&quot;. Flaggan testProfile ingår i den här mixinen.
 

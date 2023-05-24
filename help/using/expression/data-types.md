@@ -310,7 +310,7 @@ toDuration("-P6H3M") -- parses as "-6 hours and -3 minutes"
 toDuration("-P-6H+3M") -- parses as "+6 hours and -3 minutes"
 ```
 
-## lista {#list}
+## list {#list}
 
 **Beskrivning**
 

@@ -13,7 +13,7 @@ ht-degree: 4%
 
 ---
 
-# clearWithNull {#distinctWithNull}
+# distinctWithNull {#distinctWithNull}
 
 Returnerar de distinkta värdena eller objekten i en viss lista. Om listan har minst en null-post kommer en null-post att finnas i den returnerade listan.
 

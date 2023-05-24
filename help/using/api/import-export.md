@@ -6,7 +6,7 @@ products: journeys
 source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 1%
+ht-degree: 29%
 
 ---
 
@@ -46,18 +46,18 @@ Vi rekommenderar att du följer de här stegen för att exportera och importera 
 
 ### Konfigurera API-åtkomst
 
-API-åtkomst för Journey Orchestration konfigureras genom stegen nedan. Varje steg beskrivs i [Adobe I/O dokumentation](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
+API-åtkomst för Journey Orchestration konfigureras genom stegen nedan. Varje steg beskrivs i [Dokumentation för Adobe I/O](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
 
 >[!CAUTION]
 >
->Kontrollera att du har <b>Systemadministratör</b> rättigheter till organisationen eller [utvecklarkonto](https://helpx.adobe.com/enterprise/using/manage-developers.html) i Admin Console.
+>Kontrollera att du är en berättigad <b>systemadministratör</b> i organisationen eller att du har ett [utvecklarkonto](https://helpx.adobe.com/se/enterprise/using/manage-developers.html) i Admin Console för att hantera certifikat i Adobe I/O.
 
-1. **Kontrollera att du har ett digitalt certifikat** eller skapa en vid behov. De offentliga och privata nycklarna som tillhandahålls med certifikatet behövs i följande steg.
-1. **Skapa en ny integrering för att [!DNL Journey Orchestration] Tjänst** i Adobe I/O och konfigurera det. Åtkomst till produktprofilen krävs för Journey Orchestration och Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet...).
-1. **Skapa en JSON-webbtoken (JWT)** från de inloggningsuppgifter som tidigare genererats och signera med din privata nyckel. JWT kodar all identitets- och säkerhetsinformation som Adobe behöver för att verifiera din identitet och ge dig åtkomst till API:t. Det här steget beskrivs närmare i det här [section](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
-1. **Byt ut din JWT mot en åtkomsttoken** via en POST eller via Developer Console Interface. Denna Access Token måste användas i varje rubrik för dina API-begäranden.
+1. **Kontrollera att du har ett digitalt certifikat** eller skapa ett vid behov. De offentliga och privata nycklarna som tillhandahålls med certifikatet behövs i följande steg.
+1. **Skapa en ny integrering med [!DNL Journey Orchestration] Tjänst** i Adobe I/O och konfigurera den. Åtkomst till produktprofilen krävs för Journey Orchestration och Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet ...).
+1. **Skapa en JSON-webbtoken (JWT)** från de inloggningsuppgifter som tidigare genererats och signera den med din privata nyckel. JWT kodar all identitets- och säkerhetsinformation som Adobe behöver för att verifiera din identitet och bevilja dig åtkomst till API:et. Det här steget beskrivs närmare i det här [avsnittet](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
+1. **Byt ut JWT mot en åtkomsttoken** via en POST-begäran eller via gränssnittet Developer Console. Denna åtkomsttoken måste användas i varje rubrik för dina API-begäranden.
 
-Om du vill skapa en säker Adobe I/O-till-tjänst-API-session måste alla förfrågningar till en Adobe-tjänst innehålla informationen nedan i auktoriseringshuvudet.
+För att upprätta en säker tjänst-till-tjänst Adobe I/O API-session måste varje begäran till en Adobe-tjänst innehålla informationen nedan i auktoriseringshuvudet.
 
 ```
 curl -X GET https://journey.adobe.io/authoring/XXX \
@@ -66,14 +66,14 @@ curl -X GET https://journey.adobe.io/authoring/XXX \
  -H 'x-gw-ims-org-id: <ORGANIZATION>'
 ```
 
-* **&lt;organization>**: Detta är ditt personliga organisations-ID, och Adobe tillhandahåller ett organisations-ID för varje instans:
+* **&lt;ORGANIZATION>**: Detta är ditt personliga organisations-ID, och Adobe tillhandahåller ett organisations-ID för varje instans :
 
    * &lt;organization> : din produktionsinstans
-   Kontakta din administratör eller din Adobe tekniska kontakt för att få ditt organisations-ID-värde. Du kan även hämta den till Adobe I/O när du skapar en ny integrering i licenslistan (se [Adobe I/O dokumentation](https://www.adobe.io/authentication.html)).
+   Kontakta din administratör eller din teknikkunniga Adobe-kontakt för att få ditt organisations-ID-värde. Du kan även hämta det till Adobe I/O när du skapar en ny integrering i licenslistan (se [Dokumentation för Adobe I/O](https://www.adobe.io/authentication.html)).
 
-* **&lt;access_token>**: Din personliga åtkomsttoken, som hämtades när du bytte din JWT via en POST.
+* **&lt;ACCESS_TOKEN>**: Din personliga åtkomsttoken, som hämtades när du bytte din JWT via en POST-begäran.
 
-* **&lt;api_key>**: din egen API-nyckel. Det tillhandahålls i Adobe I/O efter att en ny integrering av [!DNL Journey Orchestration] Tjänst.
+* **&lt;API_KEY>**: Din egen API-nyckel. Det tillhandahålls i Adobe I/O efter att en ny integrering av tjänsten [!DNL Journey Orchestration] har skapats.
 
 
 
@@ -82,7 +82,7 @@ curl -X GET https://journey.adobe.io/authoring/XXX \
 Med det här API:t kan du exportera en reseversion som identifieras av dess UID och alla relaterade objekt (resa, händelser, datakällor, fältgrupper, anpassade åtgärder) via dess uid.
 Den resulterande nyttolasten kan användas för att importera reseversionen till en annan miljö (sandlåda eller instans).
 
-| Metod | Bana | Beskrivning |
+| Metod | Sökväg | Beskrivning |
 |---|---|---|
 | `[POST]` | /travelVersions/import | Importera innehåll från en reseversion som är ett resultat av en reseversionsexport |
 | `[GET]` | /travelVersions/`{uid}`/export | Exportera en reseversion |
