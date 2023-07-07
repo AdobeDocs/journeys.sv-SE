@@ -6,17 +6,92 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: 052ecdeb0813dcc2c4c870e8ec6b12676fbf60f1
+source-git-commit: d759aab70b2a6f6d4897bdd3498a9499dff2899f
 workflow-type: tm+mt
-source-wordcount: '3274'
-ht-degree: 50%
+source-wordcount: '4188'
+ht-degree: 39%
 
 ---
 
 # Versionsinformation {#release-notes}
 
-På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration.
-Du kan även läsa det senaste [Dokumentationsuppdateringar](../release-notes/documentation-updates.md).
+På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration. Mer information om funktionerna i Experience Platform finns i följande [versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html).
+
+>[!NOTE]
+>
+>Länkarna finns i Adobe Journey Optimizer-dokumentationen för de funktioner som lanserades 2022 och 2023.
+
+## Version från april 2023 {#apr-rn-2023}
+
+### Förbättringar {#april-2023-improvements}
+
+**Resor**
+
+* Konfigurationsrutans layout, som visas i åtgärder, datakällor, händelser och resor, har förbättrats.
+* Nu kan du definiera statiska eller dynamiska frågeparametrar i dina anpassade åtgärder. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/action-journeys/about-custom-action-configuration.html#url-configuration).
+* Nya garantimöjligheter för att hantera upplevelsetillväxt som Journeys levererar:
+   * Vi rekommenderar att du begränsar antalet noder till 50 eller färre för att hålla dina resor upprätt, lättlästa, QA och felsökning. Antalet aktiviteter visas i den övre vänstra delen av arbetsytan. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html#journeys-guardrails-journeys)
+   * När du utvecklar och startar resor kommer vi att meddela dig när du närmar dig milstolpen på 100 resor i realtid. Om dina planer kräver mer än 100 resor i taget kan du skapa en supportanmälan efter att du har fått meddelandet så hjälper vi dig. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html#journeys-guardrails-journeys)
+
+## Version från mars 2023 {#mar-2023}
+
+### Förbättringar {#mar-2023-improvements}
+
+* Den nya **Begränsnings-API** gör att du kan ange en gräns för hur många händelser som skickas per sekund, vilket förhindrar överväldigande trafiktoppar i externa system eller API. När den angivna gränsen nås ställs alla efterföljande API-anrop i kö och behandlas så snart som möjligt, i den ordning som de togs emot. Observera att den här funktionen bara har stöd för en begränsad konfiguration i alla sandlådor. [Läs mer](../api/throttling.md)
+* Resans arbetsyta har förbättrats för en enklare och förbättrad användarupplevelse. I slutet av varje bana på arbetsytan har de tomma platshållarna tagits bort. Nu kan du enkelt lägga till dina aktiviteter genom att dra dem i slutet av en bana.
+* På arbetsytan är etiketten för **End** -taggen anges inte längre automatiskt med den föregående aktivitetens namn. Användarna kan lägga till en anpassad etikett manuellt vid behov.
+* Standardtidsgränsen och fellängden för resans egenskaper har ändrats från 5 till 30 sekunder. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/external-systems/external-systems.html#timeout).
+* Ett skyddsutkast har lagts till i testläget för att endast lyssna på händelser som skickas via gränssnittet. Händelser som skickas via ett externt verktyg beaktas inte. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey.html).
+
+## Version från februari 2023 {#feb-2023}
+
+### Förbättringar {#feb-2023-improvements}
+
+* The **Vänteperiod för återinträde** fältet har lagts till i reseegenskaperna. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en segmentkvalificering). Detta förhindrar att resorna felaktigt aktiveras flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs.html#entrance).
+* Förbättringar har gjorts för **start- och slutdatum för resan**. Om du inte har angett något startdatum läggs det nu till automatiskt vid publiceringstidpunkten. Detta gör att profiler kan avslutas automatiskt när datumet nås. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs.html#dates).
+
+## Version från januari 2023 {#jan-2023-release}
+
+### Förbättringar {#jan-2023-improvements}
+
+* När du lägger till en **Segmentkvalificering** I en resa är namnutrymmet nu som standard förfyllt med det senast använda namnutrymmet. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/segment-qualification-events.html#about-segment-qualification).
+* I arbetsytan på resan finns en ny knapp i verktygsfältet som gör att du kan hämta en skärmbild av din resa.
+
+## September 2022-utgåvan{#sept-2022-release}
+
+### Nya funktioner{#sept-2022-features}
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Datastyrning och sekretess</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med styrningsramverket DULE (Data Usage Labeling and Enforcement) kan Journey Orchestration nu utnyttja Adobe Experience Platform styrningsprinciper för att förhindra att känsliga fält exporteras till tredjepartssystem via anpassade åtgärder. Om systemet identifierar ett begränsat fält i de anpassade åtgärdsparametrarna visas ett fel som hindrar dig från att publicera resan.</p>
+<p>Användningen av etiketter och tvångsåtgärder för användning av data (DULE) är för närvarande begränsad till utvalda kunder och kommer att distribueras till alla miljöer i en framtida version.</p>
+<p>Mer information finns i Journey Optimizer <a href="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/action-privacy.html">dokumentation</a>.
+</td>
+</tr>
+</tbody>
+</table>
+
+### Förbättringar{#sept-2022-improvements}
+
+* Ett nytt skyddsräcke har lagts till för enhetsresor (med början vid en händelse eller en segmentkvalificering) för att förhindra att resor utlöses felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras nu tillfälligt som standard i 5 minuter. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html#events-g).
+
+### Andra ändringar{#sept-2022-other}
+
+* För att förbättra prestanda kan inte längre Experience-fältgrupper användas i resor som börjar med en segmentkvalificeringsaktivitet. Denna ändring gäller endast för nya resor. Befintliga beteenden behåller det aktuella beteendet. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html#expression-editor).
+
+### Förbättringar
+
+* **Avsluta en resa** - På arbetsytan **End** aktiviteten har tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/end-journey.html).
+
+* The **Tidszon för profil** alternativet är nu avmarkerat som standard i resans egenskaper. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/timezone-management.html#timezone-from-profiles).
 
 ## Version från maj 2022 {#may-2022-release}
 
