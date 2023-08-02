@@ -6,9 +6,9 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: fef039ae-c04d-4198-a082-4be27710255f
-source-git-commit: 18c94897b5cea0d92a83f36845fdda64220b668f
+source-git-commit: 861c6bd8ce65793b6009e220d88f105c75ea3008
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '567'
 ht-degree: 2%
 
 ---
@@ -24,14 +24,13 @@ Här är begränsningar för användning av Journey Orchestration.
 
 ## Allmänna åtgärdsbegränsningar
 
-* Det finns ingen sändande begränsning. 
 * Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. 
-* Den inbyggda **Reaktion** gör att du kan reagera på åtgärder som är klara (se det här [page](../building-journeys/reaction-events.md)). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse. 
+* Den inbyggda **Reaktion** gör att du kan reagera på åtgärder som är klara (se detta [page](../building-journeys/reaction-events.md)). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse. 
 
 ## Begränsningar för reseversioner {#journey-versions-limitations}
 
 * En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte påbörja en resa med en **Segmentkvalificering** -händelse.
-* En resa som börjar med en **Segmentkvalificering** aktivitet i v1 måste alltid börja med **Segmentkvalificering** i andra versioner.
+* En resa som börjar med en **Segmentkvalificering** aktivitet i v1 måste alltid börja med en **Segmentkvalificering** i andra versioner.
 * Det segment och namnutrymme som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
 
@@ -39,26 +38,22 @@ Här är begränsningar för användning av Journey Orchestration.
 
 * The **Segmentkvalificering** -aktiviteten kan inte användas tillsammans med Adobe Campaign Standard Transactional Messaging på grund av dataflödesbegränsningar. Se [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html). 
  
-
 ## Begränsningar för anpassade åtgärder
 
 * Den anpassade åtgärds-URL:en stöder inte dynamiska parametrar. 
 * Endast anropsmetoderna POST och PUT stöds. 
-* Namnet på frågeparametern eller huvudet får inte börja med &quot;.&quot; eller &quot;$&quot;. 
+* Namnet på frågeparametern eller -rubriken får inte börja med &quot;.&quot; eller &quot;$&quot;. 
 * IP-adresser tillåts inte. 
 * Interna Adobe-adresser (.adobe.) tillåts inte.
  
-
-## Begränsningar för Adobe Campaign-åtgärder
+## Adobe Campaign åtgärdsbegränsningar
 
 * Adobe Campaign Standard Transactional Messaging har en skala på högst 50 000 meddelanden per timme över alla kanaler för en viss instans. Se [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html). 
  
-
 ## Begränsningar för händelser
 
 * För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inifrån Journey Orchestration först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
  
-
 ## Begränsningar för datakällor
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
