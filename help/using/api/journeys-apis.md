@@ -7,10 +7,10 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: a5dd3d23-c820-4ab7-bc6c-b1dcfe15022c
-source-git-commit: 03a58d765a6c98df6a976a5b9c537bdb5cc3ce99
+source-git-commit: 8f409fe6e37a3b80527d9a5514b066e539dcd9f3
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 100%
+source-wordcount: '828'
+ht-degree: 84%
 
 ---
 
@@ -24,7 +24,7 @@ API:er för resor har stöd för upp till 5 000 händelser per sekund, men vissa
 
 Varje gång ett API-anrop utförs via resor skickas det via API-motorn. Om gränsvärdet i API:et nås avvisas anropet om du använder API:et för reglering, eller köas upp till sex timmar och behandlas så snart som möjligt i den ordning som de togs emot om du använder API:et för begränsning.
 
-Anta till exempel att du har definierat en regel för reglering eller begränsning på 100 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 200 anrop per sekund används de 100 tillgängliga facken och de 100 återstående facken tas bort eller köas. Eftersom den högsta nivån har överskridits har de övriga nio resorna inte några fack kvar. Denna precision hjälper till att skydda det externa systemet från överbelastning och krascher.
+Anta till exempel att du har definierat en begränsning eller begränsning på 100 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 200 anrop per sekund används de 100 tillgängliga facken och de 100 återstående facken tas bort eller köas. Eftersom den högsta nivån har överskridits har de övriga nio resorna inte några fack kvar. Denna precision hjälper till att skydda det externa systemet från överbelastning och krascher.
 
 >[!IMPORTANT]
 >
@@ -59,8 +59,15 @@ För att använda dessa API:er med instansen [!DNL Journey Orchestration] måste
 
 1. **Kontrollera att du har ett digitalt certifikat** eller skapa ett vid behov. De offentliga och privata nycklarna som tillhandahålls med certifikatet behövs i följande steg.
 1. **Skapa en ny integrering med [!DNL Journey Orchestration] Tjänst** i Adobe I/O och konfigurera den. Du behöver åtkomst till produktprofilen för [!DNL Journey Orchestration] och till Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet ...).
-1. **Skapa en JSON-webbtoken (JWT)** från de inloggningsuppgifter som tidigare genererats och signera den med din privata nyckel. JWT kodar all identitets- och säkerhetsinformation som Adobe behöver för att verifiera din identitet och bevilja dig åtkomst till API:et. Det här steget beskrivs närmare i det här [avsnittet](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
-1. **Byt ut JWT mot en åtkomsttoken** via en POST-begäran eller via gränssnittet Developer Console. Denna åtkomsttoken måste användas i varje rubrik för dina API-begäranden.
+
+>[!CAUTION]
+>
+>JWT-metoden för att generera åtkomsttoken har tagits bort. Alla nya integreringar måste skapas med [OAuth Server-till-Server-autentiseringsmetod](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-oauth-server-to-server). Adobe rekommenderar också att du migrerar dina befintliga integreringar till OAuth-metoden.
+>
+>Läs följande viktiga dokumentation:
+>[Migreringsguide för program från JWT till OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/),
+>[Implementeringsguide för nya och gamla program med OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/),
+>[Fördelar med att använda inloggningsmetoden OAuth Server-till-Server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#why-oauth-server-to-server-credentials)
 
 För att upprätta en säker tjänst-till-tjänst Adobe I/O API-session måste varje begäran till en Adobe-tjänst innehålla informationen nedan i auktoriseringshuvudet.
 
@@ -73,6 +80,6 @@ curl -X GET https://journey.adobe.io/authoring/XXX \
 
 * **&lt;ORGANIZATION>**: Detta är ditt personliga organisations-ID, och Adobe tillhandahåller ett organisations-ID för varje instans. Kontakta din administratör eller din teknikkunniga Adobe-kontakt för att få ditt organisations-ID-värde. Du kan även hämta det till Adobe I/O när du skapar en ny integrering i licenslistan (se <a href="https://www.adobe.io/authentication.html">Dokumentation för Adobe I/O</a>).
 
-* **&lt;ACCESS_TOKEN>**: Din personliga åtkomsttoken, som hämtades när du bytte din JWT via en POST-begäran.
+* **&lt;access_token>**: Din personliga åtkomsttoken
 
 * **&lt;API_KEY>**: Din egen API-nyckel. Det tillhandahålls i Adobe I/O efter att en ny integrering av tjänsten [!DNL Journey Orchestration] har skapats.

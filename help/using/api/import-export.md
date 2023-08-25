@@ -3,10 +3,10 @@ product: adobe campaign
 title: Importera beskrivning av export-API
 description: Läs mer om import-API:t för export.
 products: journeys
-source-git-commit: fb6bdb60ac70a94a62956a306bedee9cb607e2a2
+source-git-commit: 8f409fe6e37a3b80527d9a5514b066e539dcd9f3
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 29%
+source-wordcount: '1119'
+ht-degree: 19%
 
 ---
 
@@ -54,8 +54,16 @@ API-åtkomst för Journey Orchestration konfigureras genom stegen nedan. Varje s
 
 1. **Kontrollera att du har ett digitalt certifikat** eller skapa ett vid behov. De offentliga och privata nycklarna som tillhandahålls med certifikatet behövs i följande steg.
 1. **Skapa en ny integrering med [!DNL Journey Orchestration] Tjänst** i Adobe I/O och konfigurera den. Åtkomst till produktprofilen krävs för Journey Orchestration och Adobe Experience Platform. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet ...).
-1. **Skapa en JSON-webbtoken (JWT)** från de inloggningsuppgifter som tidigare genererats och signera den med din privata nyckel. JWT kodar all identitets- och säkerhetsinformation som Adobe behöver för att verifiera din identitet och bevilja dig åtkomst till API:et. Det här steget beskrivs närmare i det här [avsnittet](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
-1. **Byt ut JWT mot en åtkomsttoken** via en POST-begäran eller via gränssnittet Developer Console. Denna åtkomsttoken måste användas i varje rubrik för dina API-begäranden.
+
+>[!CAUTION]
+>
+>JWT-metoden för att generera åtkomsttoken har tagits bort. Alla nya integreringar måste skapas med [OAuth Server-till-Server-autentiseringsmetod](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-oauth-server-to-server). Adobe rekommenderar också att du migrerar dina befintliga integreringar till OAuth-metoden.
+>
+>Läs följande viktiga dokumentation:
+>[Migreringsguide för program från JWT till OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/),
+>[Implementeringsguide för nya och gamla program med OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/),
+>[Fördelar med att använda inloggningsmetoden OAuth Server-till-Server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#why-oauth-server-to-server-credentials)
+
 
 För att upprätta en säker tjänst-till-tjänst Adobe I/O API-session måste varje begäran till en Adobe-tjänst innehålla informationen nedan i auktoriseringshuvudet.
 
@@ -69,9 +77,10 @@ curl -X GET https://journey.adobe.io/authoring/XXX \
 * **&lt;ORGANIZATION>**: Detta är ditt personliga organisations-ID, och Adobe tillhandahåller ett organisations-ID för varje instans :
 
    * &lt;organization> : din produktionsinstans
-   Kontakta din administratör eller din teknikkunniga Adobe-kontakt för att få ditt organisations-ID-värde. Du kan även hämta det till Adobe I/O när du skapar en ny integrering i licenslistan (se [Dokumentation för Adobe I/O](https://www.adobe.io/authentication.html)).
 
-* **&lt;ACCESS_TOKEN>**: Din personliga åtkomsttoken, som hämtades när du bytte din JWT via en POST-begäran.
+  Kontakta din administratör eller din teknikkunniga Adobe-kontakt för att få ditt organisations-ID-värde. Du kan även hämta det till Adobe I/O när du skapar en ny integrering i licenslistan (se [Dokumentation för Adobe I/O](https://www.adobe.io/authentication.html)).
+
+* **&lt;access_token>**: Din personliga åtkomsttoken
 
 * **&lt;API_KEY>**: Din egen API-nyckel. Det tillhandahålls i Adobe I/O efter att en ny integrering av tjänsten [!DNL Journey Orchestration] har skapats.
 
@@ -87,7 +96,7 @@ Den resulterande nyttolasten kan användas för att importera reseversionen till
 | `[POST]` | /travelVersions/import | Importera innehåll från en reseversion som är ett resultat av en reseversionsexport |
 | `[GET]` | /travelVersions/`{uid}`/export | Exportera en reseversion |
 | `[GET]` | /resor/`{uid}`/latest | Skaffa den senaste versionen för en resa |
-| `[POST]` | /list/travel | Ange metadata för resorna och deras resversioner |
+| `[POST]` | /list/travel | Ange metadata för resorna och deras reseversioner |
 
 
 ### Exportegenskaper och skyddsräcken
@@ -105,7 +114,7 @@ Efter exportanropet måste du manuellt infoga de nya autentiseringsuppgifterna (
 
 ### Importegenskaper
 
-* Under importen skapas färgobjekten med ett nytt UID och ett nytt namn för att säkerställa att de är unika i målmiljön (instans eller sandlåda).
+* Under importen skapas färgobjekten med ett nytt UID och ett nytt namn för att säkerställa unika egenskaper i målmiljön (instans eller sandlåda).
 
 * Om importnyttolasten innehåller hemliga platshållare genereras ett fel. Du måste ersätta inloggningsuppgifterna innan POSTEN anropar för att kunna importera resan.
 
@@ -113,8 +122,8 @@ Efter exportanropet måste du manuellt infoga de nya autentiseringsuppgifterna (
 
 Möjliga fel är:
 
-* At **exporttid**, om reseversionen inte är giltig: fel 500
+* At **exporttid**, om reseversionen inte är giltig: error 500
 
-* At **importtid**, om nyttolasten inte är giltig efter ändringar eller om autentiseringsuppgifterna inte är väl definierade i nyttolasten: fel 400
+* At **importtid**, om nyttolasten inte är giltig efter ändringar eller om autentiseringsuppgifterna inte är väl definierade i nyttolasten: error 400
 
 * Om XDM-schema-ID:t för dina händelser inte är giltigt i målmiljön efter importsteget visas ett fel i programmet Journey Orchestration. I så fall kommer det inte att vara möjligt att offentliggöra resan.
