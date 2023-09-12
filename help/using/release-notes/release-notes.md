@@ -6,9 +6,9 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: d759aab70b2a6f6d4897bdd3498a9499dff2899f
+source-git-commit: 77b7979b2023e58298298c88240cb2855b55d56b
 workflow-type: tm+mt
-source-wordcount: '4188'
+source-wordcount: '4232'
 ht-degree: 39%
 
 ---
@@ -21,11 +21,15 @@ På den här sidan listas alla nya funktioner och förbättringar i Journey Orch
 >
 >Länkarna finns i Adobe Journey Optimizer-dokumentationen för de funktioner som lanserades 2022 och 2023.
 
+## Version från augusti 2023 {#aug-rn-2023}
+
+### Förbättringar {#aug-2023-improvements}
+
+* Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar. Den här funktionen är för närvarande tillgänglig som en privat beta. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/action-journeys/action-response.html).
+
 ## Version från april 2023 {#apr-rn-2023}
 
 ### Förbättringar {#april-2023-improvements}
-
-**Resor**
 
 * Konfigurationsrutans layout, som visas i åtgärder, datakällor, händelser och resor, har förbättrats.
 * Nu kan du definiera statiska eller dynamiska frågeparametrar i dina anpassade åtgärder. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/action-journeys/about-custom-action-configuration.html#url-configuration).
@@ -38,7 +42,7 @@ På den här sidan listas alla nya funktioner och förbättringar i Journey Orch
 ### Förbättringar {#mar-2023-improvements}
 
 * Den nya **Begränsnings-API** gör att du kan ange en gräns för hur många händelser som skickas per sekund, vilket förhindrar överväldigande trafiktoppar i externa system eller API. När den angivna gränsen nås ställs alla efterföljande API-anrop i kö och behandlas så snart som möjligt, i den ordning som de togs emot. Observera att den här funktionen bara har stöd för en begränsad konfiguration i alla sandlådor. [Läs mer](../api/throttling.md)
-* Resans arbetsyta har förbättrats för en enklare och förbättrad användarupplevelse. I slutet av varje bana på arbetsytan har de tomma platshållarna tagits bort. Nu kan du enkelt lägga till dina aktiviteter genom att dra dem i slutet av en bana.
+* Resans arbetsyta har förbättrats för en enklare och förbättrad användarupplevelse. I slutet av varje bana på arbetsytan har platshållarna tagits bort. Nu kan du enkelt lägga till dina aktiviteter genom att dra dem i slutet av en bana.
 * På arbetsytan är etiketten för **End** -taggen anges inte längre automatiskt med den föregående aktivitetens namn. Användarna kan lägga till en anpassad etikett manuellt vid behov.
 * Standardtidsgränsen och fellängden för resans egenskaper har ändrats från 5 till 30 sekunder. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/external-systems/external-systems.html#timeout).
 * Ett skyddsutkast har lagts till i testläget för att endast lyssna på händelser som skickas via gränssnittet. Händelser som skickas via ett externt verktyg beaktas inte. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey.html).
@@ -47,14 +51,14 @@ På den här sidan listas alla nya funktioner och förbättringar i Journey Orch
 
 ### Förbättringar {#feb-2023-improvements}
 
-* The **Vänteperiod för återinträde** fältet har lagts till i reseegenskaperna. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en segmentkvalificering). Detta förhindrar att resorna felaktigt aktiveras flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs.html#entrance).
+* The **Vänteperiod för återinträde** fältet har lagts till i reseegenskaperna. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en segmentkvalificering). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs.html#entrance).
 * Förbättringar har gjorts för **start- och slutdatum för resan**. Om du inte har angett något startdatum läggs det nu till automatiskt vid publiceringstidpunkten. Detta gör att profiler kan avslutas automatiskt när datumet nås. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs.html#dates).
 
 ## Version från januari 2023 {#jan-2023-release}
 
 ### Förbättringar {#jan-2023-improvements}
 
-* När du lägger till en **Segmentkvalificering** I en resa är namnutrymmet nu som standard förfyllt med det senast använda namnutrymmet. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/segment-qualification-events.html#about-segment-qualification).
+* När en **Segmentkvalificering** I en resa är namnutrymmet nu som standard förfyllt med det senast använda namnutrymmet. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/segment-qualification-events.html#about-segment-qualification).
 * I arbetsytan på resan finns en ny knapp i verktygsfältet som gör att du kan hämta en skärmbild av din resa.
 
 ## September 2022-utgåvan{#sept-2022-release}
@@ -89,7 +93,7 @@ På den här sidan listas alla nya funktioner och förbättringar i Journey Orch
 
 ### Förbättringar
 
-* **Avsluta en resa** - På arbetsytan **End** aktiviteten har tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/end-journey.html).
+* **Avsluta en resa** - På resans arbetsyta **End** aktiviteten har tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se Journey Optimizer [dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/end-journey.html).
 
 * The **Tidszon för profil** alternativet är nu avmarkerat som standard i resans egenskaper. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/timezone-management.html#timezone-from-profiles).
 
@@ -97,7 +101,7 @@ På den här sidan listas alla nya funktioner och förbättringar i Journey Orch
 
 ### Förbättringar
 
-* **Uttrycksredigerare** - [limit](../functions/functionlimit.md) -funktionen har lagts till så att du kan begränsa antalet objekt i en lista. The [sortera](../functions/functionsort.md) kan du nu sortera ut ett listobjekt. Stödet för listObject har också lagts till i [urskilja](../functions/functiondistinct.md) och [clearWithNull](../functions/functiondistinctwithnull.md) funktioner.
+* **Uttrycksredigerare** - [limit](../functions/functionlimit.md) -funktionen har lagts till så att du kan begränsa antalet objekt i en lista. The [sortera](../functions/functionsort.md) kan du nu sortera ut ett listobjekt. Stödet för listObject har också lagts till i [diskurkt](../functions/functiondistinct.md) och [clearWithNull](../functions/functiondistinctwithnull.md) funktioner.
 
 ## Version från mars 2022 {#feb-2022-release}
 
@@ -126,7 +130,7 @@ På den här sidan listas alla nya funktioner och förbättringar i Journey Orch
 * **Uttrycksredigerare** - Som kraftfull användare kan du nu använda funktioner för att arbeta med kartor. [Läs mer](../expression/field-references.md)
 * **Tillgänglighet** - Tillgänglighetsförbättringar har implementerats. Journey Orchestration är nu helt kompatibelt när det gäller tillgänglighet.
 * **Samlingar** - Arrayer med objekt som innehåller underobjekt stöds nu. [Läs mer](../usecase/collections.md)
-* **Övervakning** - Steghändelser för direktresor och testläge har förbättrats. [Nya fält](../building-journeys/sharing-field-list.md#serviceevents) har lagts till i samband med profilexportjobb. För en bättre användarupplevelse är steghändelsefält nu ordnade i olika kategorier i schemat för guidade händelser för Journey Orchestration. Alla föregående steg-händelsefält är fortfarande tillgängliga i [stepEvents](../building-journeys/sharing-legacy-fields.md) kategori.
+* **Övervakning** - Steghändelser för direktresor och testläge har förbättrats. [Nya fält](../building-journeys/sharing-field-list.md#serviceevents) har lagts till i samband med profilexportjobb. För en bättre användarupplevelse är steghändelsefält nu ordnade i olika kategorier i schemat för guidade händelser för resan för Journey Orchestration. Alla föregående steg-händelsefält är fortfarande tillgängliga i [stepEvents](../building-journeys/sharing-legacy-fields.md) kategori.
 
 ## September 2021-utgåvan {#september-2021-release}
 
@@ -139,7 +143,7 @@ På den här sidan listas alla nya funktioner och förbättringar i Journey Orch
 <tbody>
 <tr>
 <td>
-<p>Nu kan du skicka samlingar eller en lista med data i dina anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Två sorters samlingar stöds: enkla samlingar och objektsamlingar. Tidigare skapade anpassade åtgärder fortsätter att fungera. </p>
+<p>Nu kan du skicka samlingar eller en lista med data i dina anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Det finns två sorters samlingar: enkla samlingar och objektsamlingar. Tidigare skapade anpassade åtgärder fortsätter att fungera. </p>
 <p>Mer information om samlingar finns i <a href="../usecase/collections.md">detaljerad dokumentation</a>. </p>
 <p>Funktionerna för att filtrera och överlappa har lagts till i listan med funktioner som är tillgängliga i den avancerade uttrycksredigeraren. Det ger fler möjligheter att filtrera och jämföra samlingar.</p>
 <p>Läs dokumentationen på <a href="../functions/functionfilter.md">filter</a> och <a href="../functions/functionintersect.md">korsa</a> funktioner.</p>
@@ -150,7 +154,7 @@ På den här sidan listas alla nya funktioner och förbättringar i Journey Orch
 
 ### Förbättringar
 
-* Systemgenererade scheman och datauppsättningar som har skapats under etablering av steghändelser är nu i skrivskyddat läge, vilket skyddar mot oavsiktliga ändringar av viktiga scheman. [Läs mer](../building-journeys/sharing-overview.md)
+* Systemgenererade scheman och datauppsättningar som har skapats under etablering av steghändelser är nu skrivskyddade, vilket skyddar mot oavsiktliga ändringar av viktiga scheman. [Läs mer](../building-journeys/sharing-overview.md)
 * Etikettera **Vänta** aktivitet med en etikett som ska visas på arbetsytan. Etiketten används också i loggar för rapportering och testläge för att tydligt identifiera vad du gör. [Läs mer](../building-journeys/using-the-journey-designer.md)
 * Hitta händelser och funktionsmakron snabbare genom att filtrera elementen i **Händelser** och **Åtgärd** kategorier med hjälp av sökning. Orchestration-aktiviteter är inte längre filtrerade. [Läs mer](../building-journeys/using-the-journey-designer.md)
 * När du definierar ett händelse-ID-villkor i en regelbaserad operator är operatorn &quot;contains&quot; nu tillgänglig för strängtyper av fält. [Läs mer](../event/about-creating.md)
@@ -162,7 +166,7 @@ På den här sidan listas alla nya funktioner och förbättringar i Journey Orch
 **Resor**
 
 * **Dynamiska rubriker** - Du kan nu skicka dynamiska data i HTTP-rubrikparametrar. De här parametrarna kan användas av de integreringssystem som tar emot resans åtgärd via HTTP-anrop, till exempel tidsstämpel eller spårnings-ID. [Läs mer](../action/url-configuration.md)
-* **Dynamiska URL-sökvägar** - Nu kan du ställa in dynamiska URL-sökvägar för anpassade åtgärder. [Läs mer](../action/url-configuration.md)
+* **Dynamiska webbadresser** - Nu kan du ställa in dynamiska URL-sökvägar för anpassade åtgärder. [Läs mer](../action/url-configuration.md)
 
 ## Version från juli 2021 {#july-2021-release}
 
@@ -223,9 +227,9 @@ På den här sidan listas alla nya funktioner och förbättringar i Journey Orch
 
 ### Förbättringar
 
-* En ny status har lagts till på resor. När en resa avslutas eller stängs manuellt ändras dess status från **Stängd** till **Slutförd** 30 dagar efter att den stängts. På så sätt kan ni enklare identifiera inaktiva resor samtidigt som ni ser till att alla personer fortfarande är närvarande har tid att slutföra resan. [Läs mer](../building-journeys/journey.md#ending_a_journey)
-* I de högra aktivitetspanelerna för utkastresor är skrivskyddade fält nu dolda som standard. Den här förenklingen hjälper dig att konfigurera dina aktiviteter enklare. Om du vill visa dem klickar du på **Visa skrivskyddade fält** -ikonen, som finns i det övre vänstra hörnet av aktivitetskonfigurationsrutan. [Läs mer](../building-journeys/using-the-journey-designer.md#configuration_pane)
-* I testläge **Händelsekonfiguration** skärm, **Nyckel** fält som används för att definiera testprofilens ID har bytt namn **Profilidentifierare** för en bättre användarupplevelse. [Läs mer](../building-journeys/testing-the-journey.md).
+* En ny status har lagts till på resor. När en resa avslutas eller stängs manuellt, ändras dess status från **Stängd** till **Slutförd** 30 dagar efter att den stängts. På så sätt kan ni enklare identifiera inaktiva resor samtidigt som ni ser till att alla personer fortfarande är närvarande har tid att slutföra resan. [Läs mer](../building-journeys/journey.md#ending_a_journey)
+* I de högra aktivitetspanelerna för utkastresor är skrivskyddade fält nu dolda som standard. Den här förenklingen hjälper dig att konfigurera dina aktiviteter enklare. Klicka på knappen **Visa skrivskyddade fält** -ikonen, som finns i det övre vänstra hörnet av aktivitetskonfigurationsrutan. [Läs mer](../building-journeys/using-the-journey-designer.md#configuration_pane)
+* I testläge, i **Händelsekonfiguration** skärm, **Nyckel** fält som används för att definiera testprofilens ID har bytt namn **Profilidentifierare** för en bättre användarupplevelse. [Läs mer](../building-journeys/testing-the-journey.md).
 * För reaktionshändelser kan tidsgränsen nu bara anges mellan 40 sekunder och 30 dagar. När du testar en resa där en reaktionshändelse används, testläget **[!UICONTROL Wait time]** standard och minimivärde är nu 40 sekunder. [Läs mer](../building-journeys/reaction-events.md).
 
 ## Version från februari 2021 {#february-2021-release}
@@ -284,7 +288,7 @@ The [getListItem](../functions/functiongetlistitem.md) och [dela](../functions/f
 <li>förenkla utformningen av mycket komplexa resor genom att dela upp dem i flera. </li>
 <li>bygga resor baserat på gemensamma och återanvändbara resemönster</li>
 </ul>
-<p>Mer information finns i <a href="../building-journeys/jump.md">detaljerad dokumentation</a> och <a href="https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/building-a-journey/jumping-to-another-journey.html">video med självstudiekurser</a>.</p>
+<p>Mer information finns i <a href="../building-journeys/jump.md">detaljerad dokumentation</a> och <a href="https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/building-a-journey/jumping-to-another-journey.html">videokurs</a>.</p>
 </td>
 </tr>
 </tbody>
