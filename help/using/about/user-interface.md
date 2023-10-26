@@ -93,7 +93,7 @@ Tillgänglighetsfunktionerna i Adobe Journey Optimizer tillhandahålls av Adobe 
 
 * Tangentbordstillgänglighet
 * Färgkontrast
-* Bekräfta att du fyllt i samtliga obligatoriska fält
+* Validering av obligatoriska fält
 
 [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target="_blank"} i Adobe Experience Platform-dokumentationen.
 
@@ -135,7 +135,7 @@ Du kan använda dessa kortkommandon i vissa delar av Journey Optimizer:
   </tr>
   <tr>
     <td>Ta bort de valda aktiviteterna</td>
-    <td>Ta bort eller Backsteg och bekräfta sedan borttagningen genom att ange</td>
+    <td>Ta bort eller Backsteg, och bekräfta sedan borttagningen genom att ange</td>
   </tr>
   <tr>
   <td rowspan="3">
