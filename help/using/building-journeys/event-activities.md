@@ -6,9 +6,9 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 3a4ff8b1-bbe7-47c8-9fba-defe4b1d5299
-source-git-commit: 5b09ed456b6a9645dbb7897481317d3904e29d31
+source-git-commit: fca24f7dd0f9170fa209474f270a4c0fb4080c03
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '522'
 ht-degree: 1%
 
 ---
@@ -27,11 +27,11 @@ När du klickar på händelseaktiviteten på arbetsytan visas aktivitetskonfigur
 
 ![](../assets/journey33.png)
 
-## Lyssna på händelser under en viss tid
+## Lyssna på händelser under en specifik {#listening}
 
 En händelseaktivitet som placeras på resan lyssnar på händelser i oändlighet. Om du bara vill lyssna på en händelse under en viss tid måste du konfigurera en timeout för händelsen.
 
-Resan lyssnar sedan på händelsen under den tid som anges i tidsgränsen. Om en händelse tas emot under den perioden kommer personen att flöda in i händelsens sökväg. Annars kommer kunden antingen att flöda in i en tidsgräns eller avsluta sin resa.
+Resan lyssnar sedan på händelsen under den tid som anges i tidsgränsen. Om en händelse tas emot under den perioden kommer personen att flöda in i händelsens sökväg. Annars kommer kunden antingen att flöda in i tidsgränsen om den är definierad eller fortsätta den resan. Om ingen timeout-sökväg har definierats fungerar timeout-inställningen som en vänteaktivitet, vilket gör att profilen väntar en viss tid, vilket kan stoppas om en händelse inträffar före slutet av väntetiden. Om du vill att profiler ska uteslutas från den resan efter timeout måste du ange en timeout-sökväg.
 
 Så här konfigurerar du en timeout för en händelse:
 
@@ -39,7 +39,7 @@ Så här konfigurerar du en timeout för en händelse:
 
 1. Ange hur lång tid resan ska vänta på händelsen.
 
-1. Om du vill skicka personerna till en timeout-sökväg när ingen händelse tas emot inom den angivna tidsgränsen aktiverar du **[!UICONTROL Set the timeout path]** alternativ. Om det här alternativet inte är aktiverat avslutas kundresan för personen när tidsgränsen nås.
+1. Om du vill skicka personerna till en timeout-sökväg när ingen händelse tas emot inom den angivna tidsgränsen aktiverar du **[!UICONTROL Set the timeout path]** alternativ. Om det här alternativet inte är aktiverat fortsätter kundresan för personen när tidsgränsen nås.
 
    ![](../assets/event-timeout.png)
 
@@ -50,6 +50,6 @@ I det här exemplet skickar resan en första välkomstknuff till en kund. Sedan 
 
 Observera att om du vill konfigurera en timeout för flera händelser som placerats efter en **[!UICONTROL Wait]** behöver du bara konfigurera timeout för en av dessa händelser.
 
-Tidsgränsen gäller för alla händelser som placerats efter **[!UICONTROL Wait]** aktivitet. Om ingen händelse tas emot före den angivna tidsgränsen kommer individerna att flyta in i en enda tidsgräns eller avsluta sin resa.
+Tidsgränsen gäller för alla händelser som placerats efter **[!UICONTROL Wait]** aktivitet. Om ingen händelse tas emot före den angivna tidsgränsen, kommer individerna att flyta in i en enda tidsgräns eller fortsätta den resan genom grenen när aktiviteten avslutas där tidsgränsen har definierats.
 
 ![](../assets/event-timeout-group.png)
