@@ -6,20 +6,37 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: 77b7979b2023e58298298c88240cb2855b55d56b
+source-git-commit: ea4b589755b904007cc4ea8be04f67f8742ff5a0
 workflow-type: tm+mt
-source-wordcount: '4232'
-ht-degree: 39%
+source-wordcount: '4352'
+ht-degree: 36%
 
 ---
 
 # Versionsinformation {#release-notes}
 
-På den här sidan listas alla nya funktioner och förbättringar i Journey Orchestration. Mer information om funktionerna i Experience Platform finns i följande [versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html).
+På den här sidan visas alla nya funktioner och förbättringar för Journey Orchestration. Mer information om funktionerna i Experience Platform finns i följande [versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html).
 
 >[!NOTE]
 >
 >Länkarna finns i Adobe Journey Optimizer-dokumentationen för de funktioner som lanserades 2022 och 2023.
+
+## Version från februari 2024 {#feb-rn-2024}
+
+### Förbättringar {#feb-2024-improvements}
+
+* **Filtrera dina resor** - Nu kan du använda **anpassade datum för att filtrera resorna** lager, utöver befintliga fördefinierade datumfilter. På så sätt kan du förfina listan genom att visa resor som skapats eller publicerats på ett visst datum, inom en viss månad, under ett helt år eller inom angivna tidsintervall. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs.html#filter)
+* **Anpassade åtgärder** - Du kan nu uppdatera **content-type** header. Den här nya **content-type** ska referera till JSON-innehåll. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/action-journeys/about-custom-action-configuration.html#url-configuration)
+* **Konfiguration** - Attributet identityMap i stepEvents är nu förfyllt. Den primära identiteten definieras som &quot;primär = true&quot;. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/reports/sharing-field-list.html)
+* **Användargränssnitt** - Den övre ribban på skärmar har omstrukturerats för en förbättrad upplevelse. Bland de olika uppdateringarna kan du lägga märke till att pennikonen som gör att du kan komma åt färgegenskaperna nu visas till vänster om det övre fältet, bredvid resans namn. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs.html#change-properties)
+
+## Version från januari 2024 {#jan-rn-2024}
+
+### Förbättringar {#jan-2024-improvements}
+
+* **Varaktighet för reaktionshändelser** - Den maximala varaktighet som du kan definiera i **Reaktionshändelser** är nu 29 dagar i stället för 30. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/reaction-events.html)
+* **Fältgrupper** - Den här versionen åtgärdar ett fel som gjorde att fältgrupper inte kunde sparas i vissa fall.
+* Stöd för `<listObject>` har ändrats i flera funktioner.
 
 ## Version från augusti 2023 {#aug-rn-2023}
 
@@ -203,7 +220,7 @@ På den här sidan listas alla nya funktioner och förbättringar i Journey Orch
 <tr>
 <td>
 <p>Integrationen med Adobe Campaign Classic är nu GA. Det gör att du kan skicka e-post, push-meddelanden och SMS med hjälp av funktionerna för transaktionsmeddelanden i Adobe Campaign v7 eller v8.</p>
-<p>Kopplingen mellan Journey Orchestration och instanser i Campaign är konfigurerad av Adobe vid etableringstidpunkten.</p>
+<p>Anslutningen mellan Journey Orchestration och Campaign-instansen konfigureras av Adobe vid etableringstidpunkten.</p>
 <p>Mer information finns i den <a href="../action/acc-action.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -320,7 +337,7 @@ The [getListItem](../functions/functiongetlistitem.md) och [dela](../functions/f
 <tbody>
 <tr>
 <td>
-<p>Det finns nu en ny metod för att enklare konfigurera händelser, utan att använda ett eventID: regelbaserade händelser utvärderar om händelsen ska utlösas enligt ett villkor. Du kan fortfarande använda den befintliga metoden, som nu kallas"systemgenererad". Den här funktionen, som har testats bland ett begränsat antal kunder genom Alpha-programmet, är nu tillgänglig i Beta för alla kunder.
+<p>Det finns nu en ny metod för att enklare konfigurera händelser, utan att använda ett eventID: regelbaserade händelser utvärderar om händelsen ska utlösas enligt ett villkor. Du kan fortfarande använda den befintliga metoden, som nu kallas"systemgenererad". Den här funktionen, som har testats bland ett begränsat antal kunder genom programmet Alpha, är nu tillgänglig i betaversionen för alla kunder.
 </p>
 </td>
 </tr>
@@ -377,7 +394,7 @@ The **Segmentkvalificering** aktiviteten inte längre kan användas i en resa so
 </tbody>
 </table>
 
-### Alfa-uppdateringar{#september-alpha-update}
+### Alpha-uppdateringar{#september-alpha-update}
 
 <table>
 <thead>
@@ -407,7 +424,7 @@ The **Segmentkvalificering** aktiviteten inte längre kan användas i en resa so
 
 Nyttolasten för segments kvalificeringshändelser innehåller nu följande sammanhangsinformation som du kan använda i villkor och åtgärder: beteendet (ingång, utgång), tidsstämpeln för kvalificeringen och segment-ID. [Läs mer](../building-journeys/segment-qualification-events.md)
 
-### Alfa-uppdateringar{#august-alpha-update}
+### Alpha-uppdateringar{#august-alpha-update}
 
 <table>
 <thead>
@@ -457,7 +474,7 @@ Nyttolasten för segments kvalificeringshändelser innehåller nu följande samm
 </tbody>
 </table>
 
-## Alfaaversion – juli 2020 {#alpha-release---july-2020}
+## Alpha - juli 2020 {#alpha-release---july-2020}
 
 Programmets alfaversion har funktioner som för närvarande testas bland ett begränsat antal kunder. På så sätt kan vi förbättra vår produkt baserat på den feedback vi får. De här funktionerna är inte tillgängliga för alla kunder som använder Journey Orchestration.
 
@@ -492,7 +509,7 @@ Programmets alfaversion har funktioner som för närvarande testas bland ett beg
 <tbody>
 <tr>
 <td>
-<p>Med aktiviteten för utlösare av segment kan du placera alla personer, som tillhör ett segment i Adobe Experience Platform, i en resa. Inträde i en resa kan genomföras antingen en gång eller regelbundet. 
+<p>Med aktiviteten för utlösare av segment kan du placera alla personer, som tillhör ett segment i Adobe Experience Platform, i en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet. 
 </p>
 </td>
 </tr>
@@ -516,7 +533,7 @@ Programmets alfaversion har funktioner som för närvarande testas bland ett beg
 </table>
 
 
-## Utgåvan kvartal 2 – juni 2020 {#q2-release---june-2020}
+## Q2-utgåvan - juni 2020 {#q2-release---june-2020}
 
 <table>
 <thead>
@@ -532,10 +549,10 @@ Programmets alfaversion har funktioner som för närvarande testas bland ett beg
 <li><p>En ny aktivitet tillåter avläsning av ett segments ingångar/utgångar i Adobe Experience Platform för att få människor att komma in i eller gå framåt i en resa. <a href="../building-journeys/segment-qualification-events.md">Läs mer</a></p>
 <img src="../assets/rn-segment7.png"/>
 </li>
-<li><p>Segment i Adobe Experience Platform kan nu skapas och redigeras utan att man lämnar gränssnittet i Journey Orchestration tack vare en ny flik för <strong>segment</strong> . <a href="../segment/about-segments.md">Läs mer</a></p>
+<li><p>Adobe Experience Platform-segment kan nu skapas och redigeras utan att lämna Journey Orchestration-gränssnittet, tack vare en ny <strong>Segment</strong> -fliken. <a href="../segment/about-segments.md">Läs mer</a></p>
 <img src="../assets/rn-segment1.png"/>
 </li>
-<li><p>I den enkla uttrycksredigeraren visas nu segment i Adobe Experience Platform direkt i navigeringsträdet så att man enkelt kan konfigurera villkor såsom ”tillhör den här personen segment A?”. <a href="../segment/using-a-segment.md">Läs mer</a></p>
+<li><p>I den enkla uttrycksredigeraren visas nu Adobe Experience Platform-segment direkt i navigeringsträdet för att göra det möjligt att enkelt konfigurera villkor som"tillhör den här personen segment A?". <a href="../segment/using-a-segment.md">Läs mer</a></p>
 <img src="../assets/rn-segment4.png"/>
 </li>
 <li><p>Journey Orchestration skickar nu automatiskt de steg som har körts i resorna till Adobe Experience Platform. Detta inkluderar potentiella fel som påträffas. Den här informationen kan användas när man vill utföra rapportering och felsökning genom att köra frågor om steg i resehändelser för en viss resa eller för alla resor. <a href="../building-journeys/sharing-overview.md">Läs mer</a></p>
@@ -583,7 +600,7 @@ Journey Orchestration är nu tillgängligt i APAC (Australiens datacenter). Effe
 
 Gränssnittet i Journey Orchestration finns tillgängligt på japanska.
 
-## Utgåvan kvartal 1 – mars 2020 {#q1-release---march-2020}
+## Q1-utgåvan - mars 2020 {#q1-release---march-2020}
 
 <table>
 <thead>
@@ -673,7 +690,7 @@ Gränssnittet i Journey Orchestration finns tillgängligt på japanska.
 
 * Förutom i USA finns nu även Journey Orchestration tillgänglig i **EMEA**. Ansökan och dokumentationen finns tillgänglig på franska och tyska.
 
-* Experience League är nu integrerad i produkten. Detta förenklar åtkomsten till relaterat innehåll och hjälper dig att få ut mesta möjliga av Experience Cloud. Direktåtkomst till dokumentationen om Journey Orchestration finns tillgänglig längst ned på hjälpfliken. Dessutom kan du klicka på Help > Feedback om du vill rapportera problem eller dela med dig av dina idéer till Adobe.
+* Experience League är nu integrerad i produkten. Detta förenklar åtkomsten till relaterat innehåll och hjälper dig att få ut mesta möjliga av Experience Cloud. Direktåtkomst till dokumentationen om Journey Orchestration finns tillgänglig längst ned på hjälpfliken. Du kan dessutom klicka på Hjälp > Feedback för att rapportera problem eller dela med dig av dina idéer till Adobe.
 
 * Tangentbordsgenvägen **C**, som du använder för att skapa en ny post, är nu tillgängligt på alla listskärmar såsom resor, datakällor, åtgärder och händelser. [Läs mer](../about/user-interface.md#section_ksq_zr1_ffb)
 
@@ -681,7 +698,7 @@ Gränssnittet i Journey Orchestration finns tillgängligt på japanska.
 
 * När du bläddrar bland **datafälten i Adobe Experience Platform** (XDM-format) visas nu även visningsnamnet tillsammans med fältnamnet. Den här informationen hämtas från schemadefinitionen i upplevelsedatamodellen. Det alternativa visningsnamnet visas när det är tillgängligt. Med den här användarvänliga beskrivningen, som är särskilt användbar för eVar-fält, blir det enklare att identifiera fälten. [Läs mer](../about/user-interface.md#friendly-names-display)
 
-## GA-utgåva – december 2019 {#ga-release---december-2019}
+## GA-release - december 2019 {#ga-release---december-2019}
 
 Journey Orchestration är nu GA.
 
