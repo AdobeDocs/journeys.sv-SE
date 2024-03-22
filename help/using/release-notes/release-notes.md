@@ -6,9 +6,9 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: ea4b589755b904007cc4ea8be04f67f8742ff5a0
+source-git-commit: bb74c7dc1ebad0a707b830602a8d0b33e8443a5d
 workflow-type: tm+mt
-source-wordcount: '4352'
+source-wordcount: '4418'
 ht-degree: 36%
 
 ---
@@ -20,6 +20,18 @@ På den här sidan visas alla nya funktioner och förbättringar för Journey Or
 >[!NOTE]
 >
 >Länkarna finns i Adobe Journey Optimizer-dokumentationen för de funktioner som lanserades 2022 och 2023.
+
+## Version från mars 2024 {#mar-rn-2024}
+
+### Förbättringar {#mar-2024-improvements}
+
+Nya mellanliggande statusvärden har lagts till i reseutvecklingscykeln:
+
+* **Publicering** status mellan **Utkast** status och **Live** status
+* **Stoppar** status mellan **Live** status och **Stoppad** status
+* **Aktiverar testläge** eller **Inaktiverar testläge** statusvärden mellan **Utkast** status och **Utkast (test)** status
+
+När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad. [Läs mer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs#filter)
 
 ## Version från februari 2024 {#feb-rn-2024}
 
