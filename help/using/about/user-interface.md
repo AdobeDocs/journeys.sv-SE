@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: 0d0e74c7-6cb0-4068-a69a-3c01f8b3552d
 source-git-commit: a5ec1c4c5608113bb17dfbdea0587f6bb342099a
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 61%
+source-wordcount: '959'
+ht-degree: 59%
 
 ---
 
@@ -36,7 +36,7 @@ Du kan även komma åt [!DNL Journey Orchestration] från webbplatsen för Exper
 >[!CONTEXTUALHELP]
 >id="jo_home"
 >title="Om reselistan"
->abstract="Med reselistan kan du se alla dina resor på en gång, se deras status och utföra grundläggande åtgärder."
+>abstract="Med reselistan kan du visa alla dina resor på en gång, se deras status och utföra grundläggande åtgärder."
 >additional-url="https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4" text="Se demovideon"
 
 Med de översta menyerna kan du navigera bland de olika funktionerna i [!DNL Journey Orchestration]: **[!UICONTROL Home]** (resorna), **[!UICONTROL Data Sources]**, **[!UICONTROL Events]**, **[!UICONTROL Actions]**.
@@ -73,7 +73,7 @@ I de olika listorna kan du utföra grundläggande åtgärder för varje element.
 
 ![](../assets/journey4.png)
 
-## Bläddra bland datafälten i Adobe Experience Platform {#friendly-names-display}
+## Bläddra bland Adobe Experience Platform-fält {#friendly-names-display}
 
 När du definierar [händelsers nyttolast](../event/defining-the-payload-fields.md), [fältgruppers nyttolast](../datasource/field-groups.md) och väljer fält i [uttrycksredigeraren](../expression/expressionadvanced.md) visas visningsnamnet förutom fältnamnet. Den här informationen hämtas från schemadefinitionen i upplevelsedatamodellen.
 
