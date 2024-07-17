@@ -8,18 +8,18 @@ level: Intermediate
 exl-id: 819ff3c3-0e3e-4d86-b5d2-10c5b10d19e6
 source-git-commit: 77fcc4ba02a855d4d584627625a08abb4af0da2f
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 5%
+source-wordcount: '368'
+ht-degree: 3%
 
 ---
 
 # Vänta på aktivitet{#section_rlm_nft_dgb}
 
-Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en **[!UICONTROL Wait]** aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Tre alternativ är tillgängliga:
+Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en **[!UICONTROL Wait]**-aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Tre alternativ är tillgängliga:
 
 * [Varaktighet](#duration)
-* [Anpassat](#custom)
-   <!--* [Email send time optimization](#email_send_time_optimization)-->
+* [Egen](#custom)
+  <!--* [Email send time optimization](#email_send_time_optimization)-->
 
 ## Om aktiviteten Vänta{#about_wait}
 
@@ -31,7 +31,7 @@ Observera också att om två olika platser är parallella så kommer den första
 >
 >Maximal väntetid är 30 dagar.
 >
->I testläge **[!UICONTROL Wait time in test]** kan du definiera hur länge varje vänteaktivitet ska vara. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Läs [den här sidan](../building-journeys/testing-the-journey.md)
+>I testläge kan du med parametern **[!UICONTROL Wait time in test]** definiera hur lång tid varje vänteaktivitet ska ta. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Se [den här sidan](../building-journeys/testing-the-journey.md)
 
 ## Väntetid{#duration}
 
@@ -41,13 +41,13 @@ Ange väntetiden innan nästa aktivitet körs.
 
 ## Anpassad väntetid{#custom}
 
-Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 juli 2020 klockan 17.00, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller en datakälla. Du kan inte definiera en anpassad längd, till exempel 7 dagar. Uttrycket i uttrycksredigeraren ska ha formatet dateTimeOnly. Läs [den här sidan](../expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns i [den här sidan](../expression/data-types.md).
+Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 juli 2020 klockan 17.00, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller en datakälla. Du kan inte definiera en anpassad längd, till exempel 7 dagar. Uttrycket i uttrycksredigeraren ska ha formatet dateTimeOnly. Se [den här sidan](../expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns på [den här sidan](../expression/data-types.md).
 
 >[!NOTE]
 >
 >Du kan återanvända ett dateTimeOnly-uttryck eller använda en funktion för att konvertera till dateTimeOnly. Till exempel: toDateTimeOnly(@{Event.offerOpened.activity.endTime}), fältet i händelsen har formatet 2016-08-12T09:46:06Z.
 >
->The **tidszon** är förväntat i egenskaperna för din resa. Därför är det inte möjligt i dag från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2016-08-12T09:46:06.982-05. Läs [den här sidan](../building-journeys/timezone-management.md).
+>**Tidszonen** förväntas i egenskaperna för din resa. Därför är det inte möjligt i dag från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2016-08-12T09:46:06.982-05. Läs [den här sidan](../building-journeys/timezone-management.md).
 
 ![](../assets/journey57.png)
 

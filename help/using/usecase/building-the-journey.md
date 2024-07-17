@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: cca6ed3c-e151-4494-9e2d-9ed504bfc54b
 source-git-commit: 9db330405130b14d1d8a8cbed59f612fd1f6767b
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 91%
+source-wordcount: '857'
+ht-degree: 89%
 
 ---
 
@@ -27,9 +27,9 @@ Nu kan **företagsanvändaren** bygga resan. Vår resa omfattar följande aktivi
 >
 >Aktiviteterna **[!UICONTROL Push]** och **[!UICONTROL Email]** är bara tillgängliga på paletten om du har Adobe Campaign Standard.
 
-Mer information om hur du bygger en resa finns i [den här sidan](../building-journeys/journey.md).
+Mer information om hur du skapar en resa finns på [den här sidan](../building-journeys/journey.md).
 
-## Första stegen{#section_ntb_ws1_ffb}
+## Första steget{#section_ntb_ws1_ffb}
 
 1. Klicka på fliken **[!UICONTROL Home]** och **[!UICONTROL Create]** på den övre menyn för att skapa en ny resa.
 
@@ -77,7 +77,7 @@ Mer information om hur du bygger en resa finns i [den här sidan](../building-jo
    >
    >I den andra delen av uttrycket är ”Profil” valfri.
 
-1. Vi måste välja en namnrymd. En namnrymd är förvald baserat på schemats egenskaper. Du kan behålla den som är förmarkerad. Mer information om namnutrymmen finns i [den här sidan](../event/selecting-the-namespace.md).
+1. Vi måste välja en namnrymd. En namnrymd är förvald baserat på schemats egenskaper. Du kan behålla den som är förmarkerad. Mer information om namnutrymmen finns på [den här sidan](../event/selecting-the-namespace.md).
 
 I vårt fall vill vi bara reagera på dessa två villkor vilket innebär att vi inte markerar rutan **[!UICONTROL Show path for other cases than the one(s) above]**.
 
@@ -130,9 +130,9 @@ Två vägar skapas efter ditt villkor:
    * **[!UICONTROL Push platform]**: välj plattformen: **[!UICONTROL Apple Push Notification Server]** (Apple) eller **[!UICONTROL Firebase Cloud Messaging]** (Android).
    * **[!UICONTROL Registration token]**: lägg till följande uttryck (baserat på den konfigurerade händelsen) med hjälp av det avancerade läget:
 
-      ```
-      @{LobbyBeacon._experience.campaign.message.profileSnapshot.pushNotificationTokens.first().token}
-      ```
+     ```
+     @{LobbyBeacon._experience.campaign.message.profileSnapshot.pushNotificationTokens.first().token}
+     ```
 
 1. Definiera personaliseringsfälten för push-meddelandet. I vårt exempel: förnamn och efternamn.
 
@@ -168,7 +168,7 @@ Två vägar skapas efter ditt villkor:
 
 1. Lägg till en **[!UICONTROL End]**-aktivitet.  
 
-Klicka på växlingsknappen **[!UICONTROL Test]** och testa din resa. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. Mer information om testläget finns i [den här sidan](../building-journeys/testing-the-journey.md).
+Klicka på växlingsknappen **[!UICONTROL Test]** och testa din resa. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. Mer information om testläget finns på [den här sidan](../building-journeys/testing-the-journey.md).
 
 ![](../assets/journeyuc2_32bis.png)
 

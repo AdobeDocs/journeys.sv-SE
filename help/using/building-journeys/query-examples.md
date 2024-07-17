@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: 07d25f8e-0065-4410-9895-ffa15d6447bb
 source-git-commit: 052ecdeb0813dcc2c4c870e8ec6b12676fbf60f1
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 2%
+source-wordcount: '1283'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ Systemdatauppsättning för inhämtning av e-postspårningshändelser från Jour
 
 Det relaterade schemat är CJM-händelseschema för e-postspårning.
 
-_Användningsfall för rapportering_
+_Rapporterar användningsfall_
 
 ```sql
 select
@@ -63,7 +63,7 @@ Datauppsättning för inmatning av e-post och push-meddelanden från Journey Opt
 
 Det relaterade schemat är händelseschema för CJM-meddelandefeedback.
 
-_Användningsfall för rapportering_
+_Rapporterar användningsfall_
 
 ```sql
 select
@@ -92,13 +92,13 @@ order by
 limit 100;
 ```
 
-**Händelsedatauppsättning för push-spårning** (cjm_push_tracking_experience_event_dataset)
+**Push Tracking Experience, händelsedatauppsättning** (cjm_push_tracking_experience_event_dataset)
 
 Datauppsättning för inhämtning av upplevelsehändelser för mobilspårning för push- och appkanaler från Journey Optimizer.
 
 Det relaterade schemat är CJM Push Tracking Experience Event Schema.
 
-_Användningsfall för rapportering_
+_Rapporterar användningsfall_
 
 ```sql
 select _experience.customerJourneyManagement.pushChannelContext.platform, sum(pushNotificationTracking.customAction.value)  from cjm_push_tracking_experience_event_dataset
@@ -114,7 +114,7 @@ Datauppsättning för att importera steghändelser för användaren under resan.
 
 Det relaterade schemat är schemat för resesegmenthändelser för Journey Orchestration.
 
-_Användningsfall för rapportering_
+_Rapporterar användningsfall_
 
 ```sql
 select
@@ -150,7 +150,7 @@ group by
 
 Med den här frågan kan du lista alla fel som påträffas under resor när ett meddelande/en åtgärd körs.
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT _experience.journeyOrchestration.stepEvents.actionExecutionError, count(distinct _id) FROM journey_step_events
@@ -176,7 +176,7 @@ Den här frågan returnerar alla olika fel som inträffade när en åtgärd kör
 
 **Sök efter om en profil har angett en viss resa**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT count(distinct _id) FROM journey_step_events
@@ -196,11 +196,11 @@ _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 
 Resultatet måste vara större än 0. Den här frågan returnerar det exakta antalet gånger en profil har påbörjat en resa.
 
-**Sök efter om en profil skickades ett visst meddelande**
+**Sök efter om en profil skickades ett specifikt meddelande**
 
-Metod 1: om namnet på ditt meddelande inte är unikt i resan (det används på flera platser).
+Metod 1: Om namnet på ditt meddelande inte är unikt i resan (det används på flera platser).
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT count(distinct _id) FROM journey_step_events WHERE
@@ -220,11 +220,11 @@ _experience.journeyOrchestration.stepEvents.journeyVersionID = '67b14482-143e-4f
 _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 ```
 
-Resultatet måste vara större än 0. Den här frågan talar bara om för oss om meddelandeåtgärden har utförts på kundsidan.
+Resultatet måste vara större än 0. Den här frågan talar bara om för oss om meddelandeåtgärden har utförts på resans sida.
 
-Metod 2: om namnet på ditt meddelande är unikt under resan.
+Metod 2: Om namnet på ditt meddelande är unikt under resan.
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT count(distinct _id) FROM journey_step_events WHERE
@@ -246,9 +246,9 @@ _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 
 Frågan returnerar listan med alla meddelanden tillsammans med antalet som anropats för den valda profilen.
 
-**Hitta alla meddelanden en profil har tagit emot de senaste 30 dagarna**
+**Sök efter alla meddelanden som en profil har tagit emot under de senaste 30 dagarna**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT _experience.journeyOrchestration.stepEvents.nodeName, count(distinct _id) FROM journey_step_events
@@ -272,9 +272,9 @@ GROUP BY _experience.journeyOrchestration.stepEvents.nodeName
 
 Frågan returnerar listan med alla meddelanden tillsammans med antalet som anropats för den valda profilen.
 
-**Hitta alla resor en profil har registrerat under de senaste 30 dagarna**
+**Hitta alla resor en profil har angivit under de senaste 30 dagarna**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT _experience.journeyOrchestration.stepEvents.journeyVersionName, count(distinct _id) FROM journey_step_events
@@ -298,7 +298,7 @@ Frågan returnerar listan med alla resenamn tillsammans med det antal gånger so
 
 **Antal profiler som är kvalificerade för en resa dagligen**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.profileID) FROM journey_step_events
@@ -320,11 +320,11 @@ ORDER BY DATE(timestamp) desc
 
 Frågan returnerar, för den angivna perioden, antalet profiler som har skickats in till resan varje dag. Om en profil anges via flera identiteter räknas den två gånger. Om återinträde är aktiverat kan antalet profiler dupliceras över olika dagar om det återgår till resan på en annan dag.
 
-## Frågor relaterade till Lässegmentet {#read-segment-queries}
+## Frågor relaterade till Lässegment {#read-segment-queries}
 
-**Tidsåtgång för att avsluta ett segmentexportjobb**
+**Tid för att avsluta ett segmentexportjobb**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 select DATEDIFF (minute,
@@ -356,7 +356,7 @@ Frågan returnerar tidsskillnaden i minuter mellan den tidpunkt då segmentexpor
 
 **Antal profiler som har ignorerats under resan eftersom de var dubbletter**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
@@ -376,9 +376,9 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERR
 
 Frågan returnerar alla profil-ID:n som ignorerades av resan eftersom de var dubbletter.
 
-**Antal profiler som har ignorerats under resan på grund av ogiltigt namnutrymme**
+**Antal profiler som har ignorerats under resan på grund av ogiltigt namnområde**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT count(*) FROM journey_step_events
@@ -400,7 +400,7 @@ Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom de hade
 
 **Antal profiler som har ignorerats under resan på grund av ingen identitetskarta**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT count(*) FROM journey_step_events
@@ -422,7 +422,7 @@ Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom identit
 
 **Antal profiler som ignorerades under resan eftersom resan var i testnoden och profilen inte var en testprofil**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
@@ -444,7 +444,7 @@ Frågan returnerar alla profil-ID:n som ignorerades av resan eftersom exportjobb
 
 **Antal profiler som har ignorerats under resan på grund av ett internt fel**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
@@ -466,7 +466,7 @@ Frågan returnerar alla profil-ID:n som ignorerades av resan på grund av ett in
 
 **Översikt över Läs segment för en viss reseversion**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT
@@ -489,7 +489,7 @@ Den returnerar alla servicehändelser som hör till den angivna reseversionen. V
 * ämnesskapande
 * skapa exportjobb
 * avslutande av exportjobb (med mätvärden för exporterade profiler)
-* arbetarens uppsägning
+* arbetarens avslutande av bearbetningen
 
 Vi kan också upptäcka problem som:
 
@@ -500,11 +500,11 @@ Vi kan också upptäcka problem som:
 VIKTIGT! Om ingen händelse returneras av frågan kan det bero på någon av följande orsaker:
 
 * transportversionen inte har nått schemat
-* Om reseversionen ska ha startat exportjobbet genom att anropa orkestratorn, gick något fel i upstram-flödet: Problem med transportdistribution, affärshändelser eller problem med schemaläggare.
+* Om reseversionen ska ha utlöst exportjobbet genom att anropa orchestrator, gick något fel i upstram-flödet: problem vid resedistribution, affärshändelse eller problem med schemaläggaren.
 
 **Hämta fel för lässegment för en viss reseversion**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT
@@ -530,7 +530,7 @@ WHERE
 
 **Hämta bearbetningsstatus för exportjobb**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT
@@ -557,9 +557,9 @@ Om ingen post returneras betyder det att antingen:
 * ett fel uppstod när ämnet eller exportjobbet skapades
 * exportjobbet fortfarande körs
 
-**Få mätvärden för exporterade profiler, inklusive utkast och exportjobbstatistik för varje exportjobb**
+**Hämta statistik om exporterade profiler, inklusive utkast och exportjobbstatistik för varje exportjobb**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 WITH
@@ -617,9 +617,9 @@ FROM
 WHERE T1.EXPORTJOB_ID = T2.EXPORTJOB_ID
 ```
 
-**Få aggregerade mätvärden (segmentexportjobb och utkast) för alla exportjobb**
+**Hämta aggregerade mått (segmentexportjobb och ignorerade) för alla exportjobb**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 WITH
@@ -682,9 +682,9 @@ Den returnerar den totala mätningen för en viss reseversion, oavsett vilka job
 
 ## Frågor relaterade till segmentkvalificering {#segment-qualification-queries}
 
-**Profilen ignoreras på grund av en annan segmentimplementering än den konfigurerade**
+**Profilen ignorerades på grund av en annan segmentimplementering än den som konfigurerats**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT DATE(timestamp),  _experience.journeyOrchestration.profile.ID
@@ -706,9 +706,9 @@ _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SEG
 
 Den här frågan returnerar alla profil-ID:n som togs bort av reseversionen på grund av felaktig segmentrealisering.
 
-**Segmentkvalificeringshändelser som ignorerats av någon annan orsak för en viss profil**
+**Segmentkvalificeringshändelser ignoreras av någon annan orsak för en viss profil**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT DATE(timestamp),  _experience.journeyOrchestration.profile.ID, _experience.journeyOrchestration.serviceEvents.dispatcher.projectionID
@@ -736,7 +736,7 @@ Den här frågan returnerar alla händelser (externa händelser/segmentkvalifice
 
 **Kontrollera om en affärshändelse har tagits emot för en resa**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT DATE(timestamp), count(distinct _id)
@@ -762,7 +762,7 @@ WHERE DATE(timestamp) > (now() - interval '6' hour)
 
 **Kontrollera om en extern händelse för en profil ignorerades eftersom ingen relaterad resa hittades**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp) FROM journey_step_events
@@ -784,9 +784,9 @@ _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' 
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
 ```
 
-**Kontrollera om en extern händelse för en profil har ignorerats av någon annan anledning**
+**Kontrollera om en extern händelse för en profil har ignorerats på grund av någon annan orsak**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp), _experience.journeyOrchestration.serviceEvents.dispatcher.eventID, _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode
@@ -810,9 +810,9 @@ _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' 
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
 ```
 
-**Kontrollera antalet händelser som ignoreras av stateMachine av errorCode**
+**Kontrollera antalet alla händelser som tas bort av stateMachine av errorCode**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode, COUNT() FROM journey_step_events
@@ -830,7 +830,7 @@ _experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard
 
 **Kontrollera alla ignorerade händelser eftersom återinträde inte tillåts**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT DATE(timestamp), _experience.journeyOrchestration.profile.ID,
@@ -854,9 +854,9 @@ _experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard
 
 ## Vanliga resebaserade frågor {#journey-based-queries}
 
-**Antal dagliga aktiva resor**
+**Antal aktiva dagliga resor**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.journeyVersionID) FROM journey_step_events
@@ -880,7 +880,7 @@ Frågan returnerar, för den angivna perioden, antalet unika resor som utlöstes
 
 **Antal profiler i ett specifikt tillstånd vid en viss tidpunkt**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 WITH
@@ -1026,9 +1026,9 @@ ORDER BY
     DATETIME DESC
 ```
 
-**Hur många profiler som slutade resan under den angivna tidsperioden**
+**Hur många profiler avslutade resan under den angivna tidsperioden**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT
@@ -1064,9 +1064,9 @@ ORDER BY
     DATETIME DESC
 ```
 
-**Hur många profiler slutade resan under den angivna tidsperioden med nod/status**
+**Hur många profiler avslutade resan under den angivna tidsperioden med nod/status**
 
-_Data Lake-fråga_
+_Datasjöfråga_
 
 ```sql
 SELECT

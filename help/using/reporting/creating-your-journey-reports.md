@@ -1,7 +1,7 @@
 ---
 product: adobe campaign
 title: Skapa reserapporter
-description: Lär dig skapa reserapporter
+description: Lär dig hur du skapar reserapporter
 feature: Journeys
 role: User
 level: Intermediate
@@ -27,33 +27,33 @@ Så här får du tillgång till reserapporter och kan börja följa upp hur bra 
 
 1. Klicka på fliken **[!UICONTROL Home]** på den övre menyn.
 
-1. Välj den resa du vill rapportera om.
+1. Välj den resa som du vill rapportera om.
 
    Observera att du även kan komma åt dina rapporter genom att klicka på **Rapport** när du hovrar över en resa i listan över resor.
 
    ![](../assets/dynamic_report_journey.png)
 
-1. Klicka på **[!UICONTROL Report]** ikonen längst upp till höger på skärmen.
+1. Klicka på ikonen **[!UICONTROL Report]** längst upp till höger på skärmen.
 
    ![](../assets/dynamic_report_journey_2.png)
 
-1. The **[!UICONTROL Journey summary]** en färdig rapport visas på skärmen. Klicka på **[!UICONTROL Close]** -knappen.
+1. Rapporten **[!UICONTROL Journey summary]** visas inte på skärmen. Klicka på knappen **[!UICONTROL Close]** om du vill få åtkomst till anpassade rapporter.
 
    ![](../assets/dynamic_report_journey_12.png)
 
-1. Klicka på **[!UICONTROL Create new project]** för att skapa en helt ny rapport.
+1. Klicka på **[!UICONTROL Create new project]** för att skapa rapporten från grunden.
 
    ![](../assets/dynamic_report_journey_3.png)
 
-1. Från **[!UICONTROL Panels]** kan du dra och släppa så många paneler eller frihandstabeller som behövs. Mer information finns i [section](#adding-panels).
+1. Dra och släpp så många paneler eller frihandstabeller som behövs från fliken **[!UICONTROL Panels]**. Mer information finns i det här [avsnittet](#adding-panels).
 
    ![](../assets/dynamic_report_journey_4.png)
 
-1. Du kan sedan börja filtrera dina data genom att dra och släppa mått och mätvärden från **[!UICONTROL Components]** till din frihandstabell. Mer information finns i [section](#adding-components).
+1. Du kan sedan börja filtrera dina data genom att dra och släppa mått och mätvärden från fliken **[!UICONTROL Components]** till frihandstabellen. Mer information finns i det här [avsnittet](#adding-components).
 
    ![](../assets/dynamic_report_journey_5.png)
 
-1. Om du vill få en tydligare bild av dina data kan du lägga till visualiseringar från **[!UICONTROL Visualizations]** -fliken. Mer information finns i [section](#adding-visualizations).
+1. Om du vill få en tydligare bild av dina data kan du lägga till visualiseringar från fliken **[!UICONTROL Visualizations]**. Mer information finns i det här [avsnittet](#adding-visualizations).
 
 ## Lägga till paneler{#adding-panels}
 
@@ -63,11 +63,11 @@ För att starta rapporten kan du lägga till en uppsättning paneler i en färdi
 
 Med den här panelen kan du skapa rapporter efter behov. Du kan lägga till så många paneler du vill i dina rapporter för att filtrera data med olika tidsperioder.
 
-1. Klicka på **[!UICONTROL Panels]** ikon. Du kan också lägga till en panel genom att klicka på **[!UICONTROL Insert tab]** och markera **[!UICONTROL New Blank Panel]**.
+1. Klicka på ikonen **[!UICONTROL Panels]**. Du kan också lägga till en panel genom att klicka på **[!UICONTROL Insert tab]** och välja **[!UICONTROL New Blank Panel]**.
 
    ![](../assets/dynamic_report_panel_1.png)
 
-1. Dra och släpp **[!UICONTROL Blank Panel]** till din instrumentpanel.
+1. Dra och släpp **[!UICONTROL Blank Panel]** på instrumentpanelen.
 
    ![](../assets/dynamic_report_panel.png)
 
@@ -75,37 +75,37 @@ Nu kan du lägga till en friformstabell på panelen för att börja målinrikta 
 
 ### Lägga till en frihandstabell {#adding-a-freeform-table}
 
-Med frihandstabeller kan du skapa en tabell för att analysera data med hjälp av de olika mätvärden och dimensioner som finns i **[!UICONTROL Component]** tabell.
+Med frihandstabeller kan du skapa en tabell för att analysera dina data med hjälp av de olika mätvärden och dimensioner som är tillgängliga i tabellen **[!UICONTROL Component]**.
 
 Det går att ändra storlek på alla tabeller och visualiseringar och de kan flyttas för att bättre anpassa rapporten.
 
-1. Klicka på **[!UICONTROL Panels]** ikon.
+1. Klicka på ikonen **[!UICONTROL Panels]**.
 
    ![](../assets/dynamic_report_panel_1.png)
 
-1. Dra och släpp **[!UICONTROL Freeform]** objekt på kontrollpanelen.
+1. Dra och släpp **[!UICONTROL Freeform]**-objektet på instrumentpanelen.
 
-   Du kan också lägga till en tabell genom att klicka på **[!UICONTROL Insert]** flik och markera **[!UICONTROL New Freeform]** eller genom att klicka **[!UICONTROL Add a freeform table]** i en tom panel.
+   Du kan också lägga till en tabell genom att klicka på fliken **[!UICONTROL Insert]** och välja **[!UICONTROL New Freeform]** eller genom att klicka på **[!UICONTROL Add a freeform table]** i en tom panel.
 
    ![](../assets/dynamic_report_panel_2.png)
 
-1. Dra och släpp objekt från **[!UICONTROL Components]** i kolumnerna och raderna för att skapa tabellen.
+1. Dra och släpp objekt från fliken **[!UICONTROL Components]** till kolumnerna och raderna för att skapa tabellen.
 
    ![](../assets/dynamic_report_freeform_3.png)
 
-1. Klicka på **[!UICONTROL Settings]** om du vill ändra hur data visas i kolumnerna.
+1. Klicka på ikonen **[!UICONTROL Settings]** om du vill ändra hur data visas i kolumnerna.
 
    ![](../assets/dynamic_report_freeform_4.png)
 
-   The **[!UICONTROL Column settings]** består av
+   **[!UICONTROL Column settings]** består av:
 
-   * **[!UICONTROL Number]**: I kan du visa eller dölja sammanfattningsnummer i kolumnen.
-   * **[!UICONTROL Percent]**: I kan du visa eller dölja procentsatser i kolumnen.
+   * **[!UICONTROL Number]**: gör att du kan visa eller dölja sammanfattningsnummer i kolumnen.
+   * **[!UICONTROL Percent]**: gör att du kan visa eller dölja procentsatser i kolumnen.
    * **[!UICONTROL Interpret zero as no value]**: gör att du kan visa eller dölja när värdet är lika med noll.
-   * **[!UICONTROL Background]**: I kan du visa eller dölja den vågräta förloppsindikatorn i celler.
-   * **[!UICONTROL Include retries]**: gör att du kan inkludera återförsök i resultatet. Detta är endast tillgängligt för **[!UICONTROL Sent]** och **[!UICONTROL Bounces + Errors]**.
+   * **[!UICONTROL Background]**: gör att du kan visa eller dölja den vågräta förloppsindikatorn i celler.
+   * **[!UICONTROL Include retries]**: gör att du kan inkludera återförsök i resultatet. Detta är bara tillgängligt för **[!UICONTROL Sent]** och **[!UICONTROL Bounces + Errors]**.
 
-1. Markera en eller flera rader och klicka på **[!UICONTROL Visualize]** ikon. En visualisering läggs till för att återspegla de rader du har valt.
+1. Markera en eller flera rader och klicka på ikonen **[!UICONTROL Visualize]**. En visualisering läggs till för att återspegla de rader du har valt.
 
    ![](../assets/dynamic_report_freeform_5.png)
 
@@ -115,15 +115,15 @@ Nu kan du lägga till så många komponenter du behöver och även lägga till v
 
 Med komponenter kan du anpassa rapporter med olika dimensioner, mätvärden och tidsperioder.
 
-1. Klicka på **[!UICONTROL Components]** för att komma åt komponentlistan.
+1. Klicka på fliken **[!UICONTROL Components]** för att komma åt komponentlistan.
 
    ![](../assets/dynamic_report_components.png)
 
-1. Varje kategori som presenteras i **[!UICONTROL Components]** -fliken visar de fem mest använda objekten. Klicka på namnet på en kategori för att få tillgång till dess fullständiga lista över komponenter.
+1. Varje kategori som visas på fliken **[!UICONTROL Components]** visar de fem mest använda objekten. Klicka på namnet på en kategori för att få tillgång till dess fullständiga lista över komponenter.
 
    Komponenttabellen är uppdelad i tre kategorier:
 
-   * **[!UICONTROL Dimensions]**: Hämta information från leveransloggen, t.ex. mottagarens webbläsare eller domän, eller leveransens framgångar.
+   * **[!UICONTROL Dimensions]**: Hämta information från leveransloggen, till exempel mottagarens webbläsare eller domän, eller om leveransen lyckades.
    * **[!UICONTROL Metrics]**: Hämta information om status för ett meddelande. Om ett meddelande till exempel har levererats och användaren har öppnat det.
    * **[!UICONTROL Time]**: Ange en tidsperiod för tabellen.
 
@@ -133,26 +133,26 @@ Du kan dra och släppa så många komponenter som behövs och jämföra dem med 
 
 ## Lägga till visualiseringar{#adding-visualizations}
 
-The **[!UICONTROL Visualizations]** Med -fliken kan du dra och släppa visualiseringsobjekt, till exempel område, munstycke och diagram. Visualiseringar ger er grafiska representationer av era data.
+På fliken **[!UICONTROL Visualizations]** kan du dra och släppa visualiseringsobjekt, till exempel område, munstycke och diagram. Visualiseringar ger er grafiska representationer av era data.
 
-1. I **[!UICONTROL Visualizations]** drar och släpper du ett visualiseringsobjekt på en panel.
+1. Dra och släpp ett visualiseringsobjekt på en panel på fliken **[!UICONTROL Visualizations]**.
 
    ![](../assets/dynamic_report_visualization_1.png)
 
 1. När du har lagt till en visualisering på panelen kommer dina rapporter automatiskt att identifiera data i din frihandstabell. Välj inställningar för visualiseringen.
-1. Om du har fler än en friformstabell väljer du den datakälla som du vill lägga till i diagrammet i **[!UICONTROL Data Source Settings]** -fönstret. Det här fönstret är också tillgängligt genom att klicka på den färgade punkten bredvid din visualiseringstitel.
+1. Om du har fler än en friformstabell väljer du den tillgängliga datakälla som du vill lägga till i diagrammet i fönstret **[!UICONTROL Data Source Settings]**. Det här fönstret är också tillgängligt genom att klicka på den färgade punkten bredvid din visualiseringstitel.
 
    ![](../assets/dynamic_report_visualization_2.png)
 
-1. Klicka på **[!UICONTROL Visualization]** inställningsknapp för att direkt ändra diagramtyp eller vad som visas på den, till exempel:
+1. Klicka på inställningsknappen för **[!UICONTROL Visualization]** om du vill ändra diagramtypen eller vad som visas på den, till exempel:
 
    * **[!UICONTROL Percentages]**: Visar värdena i procent.
-   * **[!UICONTROL Anchor Y Axis at Zero]**: Tvingar y-axeln att vara noll även om värdena ligger över noll.
-   * **[!UICONTROL Legend visible]**: Gör att du kan dölja teckenförklaringen.
-   * **[!UICONTROL Normalization]**: Tvingar värdena att matcha.
+   * **[!UICONTROL Anchor Y Axis at Zero]**: tvingar y-axeln till noll även om värdena ligger över noll.
+   * **[!UICONTROL Legend visible]**: Dölj teckenförklaringen.
+   * **[!UICONTROL Normalization]**: Tvingar värden att matcha.
    * **[!UICONTROL Display Dual Axis]**: Lägger till en annan axel i diagrammet.
    * **[!UICONTROL Limit Max Items]**: Begränsar antalet diagram som visas.
-   * **[!UICONTROL Threshold]**: Gör att du kan ange ett tröskelvärde för diagrammet. Det visas som en svart prickad linje.
+   * **[!UICONTROL Threshold]**: Ange ett tröskelvärde för diagrammet. Det visas som en svart prickad linje.
 
    ![](../assets/dynamic_report_visualization_3.png)
 

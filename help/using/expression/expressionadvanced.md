@@ -9,7 +9,7 @@ exl-id: f6f0004d-8a33-4671-9c16-e56edfe2a45e
 source-git-commit: f0cb883a09d553bb47491b750fabde54c92f3225
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 85%
+ht-degree: 77%
 
 ---
 
@@ -38,13 +38,13 @@ När det är möjligt kan du växla mellan de två lägena med hjälp av knappen
 >
 >Åtgärdsparametrar kan definieras genom fältval eller via den avancerade uttrycksredigeraren. De returnerar en viss datatyp enligt sina uttryck.
 
-## Komma åt den avancerade uttrycksredigeraren {#section_fdz_4nj_cjb}
+## Åtkomst till den avancerade uttrycksredigeraren {#section_fdz_4nj_cjb}
 
 Du kan komma åt den avancerade uttrycksredigeraren på olika sätt.
 
 * När du skapar ett villkor för datakällan kan du klicka på **[!UICONTROL Advanced mode]** för att komma åt den avancerade redigeraren.
 
-   ![](../assets/journeyuc2_33.png)
+  ![](../assets/journeyuc2_33.png)
 
 * När du skapar en anpassad timer visas den avancerade redigeraren direkt.
 * Klicka på **[!UICONTROL Advanced mode]** när du kartlägger en åtgärdsparameter.
@@ -57,11 +57,11 @@ Med den här skärmen kan du ange ett uttryck manuellt.
 
 Till vänster på skärmen visas tillgängliga fält och funktioner:
 
-* **[!UICONTROL Events]**: välj ett av fälten som har tagits emot från den inkommande händelsen. Listan med händelsefält som visas är sammanhangsberoende och varierar beroende på vilka händelser som läggs till i resan. [Läs mer](../event/about-events.md)
-* **[!UICONTROL Segments]**: om du har släppt en **[!UICONTROL Segment qualification]** väljer du det segment som du vill använda i uttrycket. [Läs mer](../segment/using-a-segment.md)
-* **[!UICONTROL Data Sources]**: välj i listan bland tillgängliga fält från datakällornas fältgrupper. [Läs mer](../datasource/about-data-sources.md)
-* **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som rör resan för en viss profil. [Läs mer](../expression/journey-properties.md)
-* **[!UICONTROL Functions]**: välj i listan bland inbyggda funktioner som du använder för att utföra komplex filtrering. Funktionerna är organiserade per kategori. [Läs mer](../expression/functions.md)
+* **[!UICONTROL Events]**: välj ett av fälten som har tagits emot från den inkommande händelsen. Den visade listan med händelsefält är sammanhangsberoende och varierar beroende på vilka händelser som läggs till under resan. [Läs mer](../event/about-events.md)
+* **[!UICONTROL Segments]**: Om du har släppt en **[!UICONTROL Segment qualification]**-händelse väljer du det segment som du vill använda i uttrycket. [Läs mer](../segment/using-a-segment.md)
+* **[!UICONTROL Data Sources]**: välj i listan över fält som är tillgängliga från fältgrupperna i datakällorna. [Läs mer](../datasource/about-data-sources.md)
+* **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som är relaterade till resan för en viss profil om. [Läs mer](../expression/journey-properties.md)
+* **[!UICONTROL Functions]**: välj i listan bland inbyggda funktioner som du använder för att utföra komplex filtrering. Funktionerna är ordnade efter kategorier. [Läs mer](../expression/functions.md)
 
 ![](../assets/journey65.png)
 
@@ -75,7 +75,7 @@ En mekanism för syntaxvalidering kontrollerar kodens integritet. Fel visas öve
 
 **Behovet av parametrar när du skapar villkor med den avancerade uttrycksredigeraren**
 
-Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas (se [den här sidan](../datasource/external-data-sources.md). I en väderrelaterad datakälla används till exempel parametern &quot;city&quot; ofta. Därför måste du välja var du vill hämta den här parametern &quot;city&quot;. Funktioner kan även tillämpas på parametrar om man vill utföra formateringsändringar eller sammansättningar.
+Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas (se [den här sidan](../datasource/external-data-sources.md)). I en väderrelaterad datakälla används till exempel parametern &quot;city&quot; ofta. Därför måste du välja var du vill hämta den här parametern &quot;city&quot;. Funktioner kan även tillämpas på parametrar om man vill utföra formateringsändringar eller sammansättningar.
 
 ![](../assets/journeyuc2_19.png)
 

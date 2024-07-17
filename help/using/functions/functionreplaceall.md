@@ -1,7 +1,7 @@
 ---
 product: adobe campaign
 title: replaceAll
-description: Läs om funktionen replaceAll
+description: Läs mer om funktionen replaceAll
 feature: Journeys
 role: Data Engineer
 level: Experienced
@@ -9,7 +9,7 @@ exl-id: d60059e5-6bf8-4a57-88a4-5323d5f0fa0b
 source-git-commit: 8980df5cc238a7195f01a1631e418a8de677fbea
 workflow-type: tm+mt
 source-wordcount: '105'
-ht-degree: 6%
+ht-degree: 3%
 
 ---
 

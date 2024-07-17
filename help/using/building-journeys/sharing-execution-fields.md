@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: 9af66037-63d7-41a8-86d1-b03c655dfb82
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 5%
+source-wordcount: '322'
+ht-degree: 4%
 
 ---
 
@@ -23,19 +23,19 @@ Om steget har en åtgärd som ska bearbetas läggs dessa fält till i händelsen
 
 ID för åtgärden som körs.
 
-Typ: string
+Typ: sträng
 
 ## actionName
 
 Åtgärdens namn. Om inget namn har angetts används stepName.
 
-Typ: string
+Typ: sträng
 
 ## actionType
 
 Typ av åtgärd.
 
-Typ: string
+Typ: sträng
 
 ## actionParametriszed
 
@@ -47,34 +47,34 @@ Typ: boolesk
 
 Den tid (i millisekunder) som krävs för att köra en aktuell åtgärd.
 
-Typ: long
+Typ: lång
 
 ## actionExecutionError
 
 Typ av fel som inträffar när åtgärden anropas.
 
-Typ: string
+Typ: sträng
 
 Värden:
 * http
 * capping
 * timeout
-* error
+* fel
 
 ## actionExecutionErrorCode
 
 Kod för körningsfel för åtgärd. Visa om felet har en kod, t.ex. en HTTP-kod.
 
-Typ: string
+Typ: sträng
 
 ## actionExecutionOriginError
 
 En timeout kan uppstå i två fall:
 
 * vid första försöket utförs en åtgärd. I det här fallet är körningen inte slutförd, så det finns inget underliggande fel
-* vid ett nytt försök: I det här fallet beskriver actionExecOrigError/actionExecOrigErrorCode det fel som uppstod vid försöket före det nya försöket.
+* vid ett nytt försök: i det här fallet beskriver actionExecOrigError/actionExecOrigErrorCode det fel som uppstod vid försöket före det nya försöket.
 
-Ett e-postmeddelande skickas till exempel och ett HTTP 500-fel returneras vid det första försöket. Ett nytt hämtningsförsök görs, men längden på två försök överskrider tidsgränsen. Sedan taggas körningen av åtgärden som timeout. Åtgärdsdelen ser ut så här:
+Ett e-postmeddelande skickas till exempel och ett HTTP 500-fel returneras vid det första försöket. Ett nytt hämtningsförsök görs, men längden på de två försöken överskrider tidsgränsen. Sedan taggas körningen av åtgärden som timeout. Åtgärdsdelen ser ut så här:
 
 ```
     ...
@@ -87,13 +87,13 @@ Ett e-postmeddelande skickas till exempel och ett HTTP 500-fel returneras vid de
     "actionExecOrigErrorCode": "500"
 ```
 
-Typ: string
+Typ: sträng
 
 ## actionExecutionOriginCode
 
 Felkod för actionExecOrigError.
 
-Typ: string
+Typ: sträng
 
 ## actionBusinessType
 
@@ -109,19 +109,19 @@ Värden:
 * Epsilon
 * ...
 
-Typ: string
+Typ: sträng
 
 ## deliveryJobID
 
 Detta beskriver leveransjobb-ID för batchresan.
 
-Typ: string
+Typ: sträng
 
 ## batchDeliveryID
 
 Detta beskriver leverans-ID för batchresan.
 
-Typ: string
+Typ: sträng
 
 ## fromSegmentTrigger
 
@@ -133,4 +133,4 @@ Typ: boolesk
 
 Antal begäranden om schemaläggningsmeddelanden som skickats till schemaläggningstjänsten under stegbearbetningen.
 
-Typ: long
+Typ: lång

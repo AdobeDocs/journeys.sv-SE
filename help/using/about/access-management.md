@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: a551efa5-c0d8-4138-96ca-fb407fad8c59
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 95%
+source-wordcount: '828'
+ht-degree: 94%
 
 ---
 
@@ -38,9 +38,9 @@ I Admin Console kan du tilldela användarna en av följande färdiga produktprof
    * Hantera händelser, datakällor och åtgärder
    * Hantera rapporter
 
-   >[!NOTE]
-   >
-   >**[!UICONTROL Administrators]** är den enda produktprofil som har åtkomst till att skapa, redigera och publicera transaktionsmeddelanden (eller meddelandemallar) i Adobe Campaign Standard. Den här produktprofilen behövs om du använder Adobe Campaign Standard för att skicka meddelanden i dina resor. Namnet bör inte ändras i Admin Console.
+  >[!NOTE]
+  >
+  >**[!UICONTROL Administrators]** är den enda produktprofil som har åtkomst till att skapa, redigera och publicera transaktionsmeddelanden (eller meddelandemallar) i Adobe Campaign Standard. Den här produktprofilen behövs om du använder Adobe Campaign Standard för att skicka meddelanden på dina resor. Det ska inte byta namn i Admin Console.
 
 * **[!UICONTROL Standard User]**: användare med grundläggande åtkomst, till exempel resehantering. Den här produktprofilen innehåller följande behörigheter:
    * Hantera resor

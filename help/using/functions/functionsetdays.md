@@ -8,14 +8,14 @@ level: Experienced
 exl-id: eee7bf61-9101-4959-aa93-27d0f221c517
 source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 9%
+source-wordcount: '76'
+ht-degree: 6%
 
 ---
 
 # setDays {#setDays}
 
-Anger endast dag för datum och tid. Om du till exempel vill vänta till en viss dag i månaden kan du tvinga fram dagen.
+Anger endast dag för datum och tid. Om du t.ex. vill vänta till en viss dag i månaden kan du tvinga fram dagen.
 
 ## Kategori
 

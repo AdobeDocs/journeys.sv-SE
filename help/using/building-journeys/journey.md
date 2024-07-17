@@ -1,6 +1,6 @@
 ---
 product: adobe campaign
-title: Om att bygga en resa
+title: Om resebyggnad
 description: Som affärsanvändare kan du lära dig att kombinera händelser, samordning och åtgärder för att skapa en resa.
 feature: Journeys
 role: User
@@ -8,18 +8,18 @@ level: Intermediate
 exl-id: 540b5142-9323-4cc1-9b5a-3fa20a5945bf
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 12%
+source-wordcount: '558'
+ht-degree: 8%
 
 ---
 
 # Skapa en resa {#concept_gq5_sqt_52b}
 
-Det här steget utförs av **företagsanvändare**. Här skapar du dina resor. Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
+Det här steget utförs av **affärsanvändaren**. Här skapar du dina resor. Kombinera de olika händelserna, samordningen och åtgärderna för att skapa flerstegsscenarier för olika kanaler.
 
 Med resegränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan. Du kan också dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa steg som är tillgängligt. Varje aktivitet har en särskild roll och plats i processen. Aktiviteterna är sekventierade. När en aktivitet är klar fortsätter flödet och bearbetar nästa aktivitet och så vidare.
 
-Endast ett namnutrymme tillåts per resa. När du släpper den första händelsen blir händelser med olika namnutrymmen nedtonade. Om den första händelsen inte har något namnutrymme tonas alla händelser med ett namnutrymme ut. Läs [den här sidan](../event/selecting-the-namespace.md). Dessutom är Adobe Experience Platform fältgrupper nedtonade om resan innehåller händelser utan namnutrymme. Och slutligen, om du använder flera händelser under samma resa, måste de använda samma namnutrymme.
+Endast ett namnutrymme tillåts per resa. När du släpper den första händelsen blir händelser med olika namnutrymmen nedtonade. Om den första händelsen inte har något namnutrymme tonas alla händelser med ett namnutrymme ut. Se [den här sidan](../event/selecting-the-namespace.md). Dessutom är Adobe Experience Platform fältgrupper nedtonade om resan innehåller händelser utan namnutrymme. Och slutligen, om du använder flera händelser under samma resa, måste de använda samma namnutrymme.
 
 När du påbörjar en ny resa döljs element som inte kan släppas på arbetsytan som det första steget. Detta gäller alla åtgärder, villkorsaktiviteten, väntetiden och reaktionen.
 
@@ -29,11 +29,11 @@ Här är de viktigaste stegen för att skapa och publicera en resa.
 
 1. Klicka på fliken **[!UICONTROL Home]** på den övre menyn.
 
-   Listan över resor visas. Se [den här sidan](../building-journeys/using-the-journey-designer.md) för mer information om gränssnittet.
+   Listan över resor visas. Mer information om gränssnittet finns på [den här sidan](../building-journeys/using-the-journey-designer.md).
 
    ![](../assets/journey30.png)
 
-1. Klicka **[!UICONTROL Create]** för att skapa en ny resa.
+1. Klicka på **[!UICONTROL Create]** för att skapa en ny resa.
 
    ![](../assets/journey31.png)
 
@@ -45,7 +45,7 @@ Här är de viktigaste stegen för att skapa och publicera en resa.
 
    ![](../assets/journey33.png)
 
-1. Dra och släpp dina andra aktiviteter och konfigurera dem. Se sidorna [Evenemangsaktiviteter](../building-journeys/event-activities.md), [Om orkestreringsaktiviteter](../building-journeys/about-orchestration-activities.md) och [Om funktionsmakron](../building-journeys/about-action-activities.md).
+1. Dra och släpp dina andra aktiviteter och konfigurera dem. Se sidorna [Händelseaktiviteter](../building-journeys/event-activities.md), [Om orkestreringsaktiviteter](../building-journeys/about-orchestration-activities.md) och [Om åtgärdsaktiviteter](../building-journeys/about-action-activities.md).
 
    ![](../assets/journey34.png)
 
@@ -64,11 +64,11 @@ Personen kan sedan återinträda i resan om återinträde tillåts. Läs [den h�
 
 En resa kan avslutas på grund av följande orsaker:
 
-* Resan stängs manuellt via **[!UICONTROL Close to new entrances]** -knappen.
+* Resan stängs manuellt med knappen **[!UICONTROL Close to new entrances]**.
 * Slutdatumet för resan har nåtts.
 
-När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till **Slutförd** status. Se det här [section](../building-journeys/changing-properties.md#entrance).
+När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se [avsnittet](../building-journeys/changing-properties.md#entrance).
 
-Om ni behöver stoppa alla personers framsteg på resan kan ni stoppa den. Om du stoppar resan kommer alla personer på resan att tidsgränsen för timeout.
+Om ni behöver stoppa alla enskilda personers framsteg på resan kan ni stoppa den. Om du stoppar resan kommer alla personer på resan att tidsgränsen för timeout.
 
-Om du vill veta hur du stänger eller stoppar en resa manuellt kan du läsa följande [section](../building-journeys/terminating-a-journey.md).
+Mer information om hur du stänger eller stoppar en resa manuellt finns i det här [avsnittet](../building-journeys/terminating-a-journey.md).

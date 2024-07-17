@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: b362589a-32b0-4dbd-8ceb-a371e1e048ac
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 76%
+source-wordcount: '219'
+ht-degree: 78%
 
 ---
 
@@ -21,4 +21,4 @@ Nyttolasten innehåller information som krävs för att API:er för strömningsi
 
 Efter att ha anlänt via API:er för strömningsinmatning flödar händelserna till en intern tjänst som kallas pipeline och sedan i Adobe Experience Platform. Om händelseschemat har tjänstflaggan realtidskundprofil aktiverad och ett datauppsättnings-ID som även har flaggan realtidskundprofil flödar det in i tjänsten realtidskundprofil.
 
-För systemgenererade händelser filtrerar pipeline händelser som har en nyttolast som innehåller [!DNL Journey Orchestration] eventID (se processen för att skapa händelser nedan) som tillhandahålls av [!DNL Journey Orchestration] och finns i händelsenyttolast. För regelbaserade händelser identifierar systemet händelsen med eventID-villkoret. [!DNL Journey Orchestration] läser av dessa händelser och motsvarande resa aktiveras.
+För systemgenererade händelser filtrerar pipelinen händelser som har en nyttolast som innehåller [!DNL Journey Orchestration] eventID:n (se processen för att skapa händelser nedan) som tillhandahålls av [!DNL Journey Orchestration] och ingår i händelsens nyttolast. För regelbaserade händelser identifierar systemet händelsen med eventID-villkoret. [!DNL Journey Orchestration] läser av dessa händelser och motsvarande resa aktiveras.

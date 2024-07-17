@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: 2371d2c9-3035-46ac-9c76-755fb453c24e
 source-git-commit: e1ee5a488e9eb6fd8d175a2ab8989c73289ea708
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 76%
+source-wordcount: '338'
+ht-degree: 75%
 
 ---
 
@@ -22,10 +22,10 @@ ht-degree: 76%
 
 Med datakällans konfiguration kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas i resorna, till exempel:
 
-* [villkorsdefinitioner](../building-journeys/condition-activity.md)
+* [villkorsdefinition](../building-journeys/condition-activity.md)
 * parameter- och personaliseringsdata i [åtgärder](../action/action.md)
-* [anpassade väntedefinitioner](../building-journeys/wait-activity.md#custom)
-* [definition av tidszoner](../building-journeys/timezone-management.md)
+* [egen väntedefinition](../building-journeys/wait-activity.md#custom)
+* [tidszonsdefinition](../building-journeys/timezone-management.md)
 
 Den här konfigurationen krävs inte om dina resor endast utnyttjar lokala data som kommer från en händelses nyttolast. Om din resa till exempel består av en händelse som följs av en e-postaktivitet, som bara använder data från händelsen, behöver du inte konfigurera någon datakälla.
 
@@ -44,9 +44,9 @@ Här följer de huvudsakliga konfigurationsstegen för datakällor:
 >
 >Datakällans konfiguration utförs alltid av en **teknisk användare**.
 
-1. I menyrutan väljer du **[!UICONTROL Admin]**. I **[!UICONTROL Data sources]** avsnitt, klicka **[!UICONTROL Manage]**.
+1. Välj **[!UICONTROL Admin]** i menyrutan. Klicka på **[!UICONTROL Manage]** i avsnittet **[!UICONTROL Data sources]**.
 
-   Listan med datakällor visas. Se [den här sidan](../about/user-interface.md) för mer information om gränssnittet.
+   Listan med datakällor visas. Mer information om gränssnittet finns på [den här sidan](../about/user-interface.md).
 
    ![](../assets/journey18.png)
 

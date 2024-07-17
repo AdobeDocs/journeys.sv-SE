@@ -8,8 +8,8 @@ level: Experienced
 exl-id: f30377c2-4d5e-4905-a972-8f4ccb272bc0
 source-git-commit: 8980df5cc238a7195f01a1631e418a8de677fbea
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 4%
+source-wordcount: '148'
+ht-degree: 2%
 
 ---
 
@@ -54,8 +54,8 @@ Eftersom målparametern är en RegExp, beroende på vilken sträng du vill ersä
 * sträng som ska utvärderas: `|OFFER_A|OFFER_B`
 * tillhandahålls av ett profilattribut `#{ExperiencePlatform.myFieldGroup.profile.myOffers}`
 * Sträng som ska ersättas: `|OFFER_A`
-* Sträng ersatt med: `''`
-* Du måste lägga till `\\` före `|` tecken.
+* Sträng ersatt av: `''`
+* Du måste lägga till `\\` före tecknet `|`.
 
 Uttrycket är:
 

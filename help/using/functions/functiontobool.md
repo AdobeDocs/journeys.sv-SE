@@ -1,15 +1,15 @@
 ---
 product: adobe campaign
 title: toBool
-description: Läs om funktionen toBool
+description: Läs mer om funktionen toBool
 feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 490144c2-1ecd-4772-ab15-e23b1b7d8f0c
 source-git-commit: 712f66b2715bac0af206755e59728c95499fa110
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 8%
+source-wordcount: '75'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 8%
 Konverterar ett argumentvärde till ett booleskt värde, beroende på dess typ.
 
 * Från sträng: försök att konvertera strängvärdet som booleskt, från &quot;true&quot; om strängvärdet är &quot;true&quot;, annars false
-* Från numeriska: true om det numeriska värdet inte är lika med 0, annars false
+* Från numeriskt: true om det numeriska värdet inte är lika med 0, annars false
 
 ## Kategori
 

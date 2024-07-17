@@ -33,7 +33,7 @@ else
    (<expression3>)
 ```
 
-`<expression1>` måste returnera en **boolesk**.
+`<expression1>` måste returnera **boolesk**.
 
 `<expression2>` och `<expression3>` måste ha samma typ eller kompatibla typer. De signaturer och returtyper som stöds är:
 
@@ -57,7 +57,7 @@ listString,listString : listString
 
 **Användning**
 
-Med den villkorliga instruktionen kan du optimera arbetsflödet för resan genom att minska antalet villkorsaktiviteter. I samma åtgärdsaktivitet kan du till exempel ange två alternativ för en fältdefinition genom att bara använda ett villkorsuttryck.
+Med den villkorliga instruktionen kan du optimera arbetsflödet för resan genom att minska antalet villkorsaktiviteter. I samma åtgärdsaktivitet kan du till exempel ange två alternativ för en fältdefinition med bara ett villkorsuttryck.
 
 Exempel för en åtgärdsaktivitet (för ett fält som förväntar en sträng som ett resultat av den villkorliga instruktionen):
 

@@ -8,7 +8,7 @@ level: Intermediate
 exl-id: 9b666c15-2215-4ca5-bc72-40109749dc15
 source-git-commit: 3856e323569054fac9e73f2a6af2b86518f62ab9
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1305'
 ht-degree: 93%
 
 ---
@@ -30,7 +30,7 @@ Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två p
 
 Här följer de viktigaste stegen för att skapa och konfigurera en ny extern datakälla:
 
-1. Klicka på i listan över datakällor **[!UICONTROL Create data source]** för att skapa en ny extern datakälla.
+1. Klicka på **[!UICONTROL Create data source]** i listan över datakällor för att skapa en ny extern datakälla.
 
    ![](../assets/journey25.png)
 

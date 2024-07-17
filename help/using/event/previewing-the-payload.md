@@ -1,7 +1,7 @@
 ---
 product: adobe campaign
 title: Förhandsgranska nyttolasten
-description: Lär dig hur du förhandsgranskar nyttolasten
+description: Lär dig förhandsgranska nyttolasten
 feature: Journeys
 role: User
 level: Intermediate
@@ -15,13 +15,13 @@ ht-degree: 7%
 
 # Förhandsgranska nyttolasten {#concept_jgf_4yk_4fb}
 
-Med nyttolastförhandsvisningen kan du validera nyttolastdefinitionen.
+Med nyttolastens förhandsgranskning kan du validera nyttolastdefinitionen.
 
 >[!NOTE]
 >
 >För systemgenererade händelser sparar du händelsen och öppnar den igen när du skapar en händelse innan du visar nyttolastförhandsvisningen. Det här steget behövs för att generera ett händelse-ID i nyttolasten.
 
-1. Klicka på **[!UICONTROL View Payload]** om du vill förhandsgranska den nyttolast som systemet förväntar sig.
+1. Klicka på ikonen **[!UICONTROL View Payload]** om du vill förhandsgranska den nyttolast som systemet förväntar sig.
 
    ![](../assets/journey13.png)
 
@@ -31,4 +31,4 @@ Med nyttolastförhandsvisningen kan du validera nyttolastdefinitionen.
 
 1. Kontrollera förhandsgranskningen för att validera nyttolastdefinitionen.
 
-1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Den här nyttolasten kan hjälpa dem att utforma konfigurationen av en händelse som [!DNL Journey Orchestration]. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey-orchestration.md).
+1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Den här nyttolasten kan hjälpa dem att utforma konfigurationen för en händelse som skickas till [!DNL Journey Orchestration]. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey-orchestration.md).

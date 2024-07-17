@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: c7e08542-fde8-4072-a697-42d35d6c58ba
 source-git-commit: 545352efdcda80cb9940010c4587a20f53326085
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 4%
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 Du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Standard Transactional Messaging-funktioner.
 
-[!DNL Journey Orchestration] levereras med en körklar åtgärd som möjliggör anslutning till Adobe Campaign Standard.
+[!DNL Journey Orchestration] levereras med en körklar åtgärd som tillåter anslutning till Adobe Campaign Standard.
 
 Campaign Standardens transaktionsmeddelande och tillhörande händelse måste publiceras för att kunna användas i Journey Orchestration. Om händelsen publiceras men meddelandet inte visas visas den inte i Journey Orchestration-gränssnittet. Om meddelandet publiceras men dess associerade händelse inte är det visas det i Journey Orchestration-gränssnittet, men det går inte att använda det.
 
@@ -29,11 +29,11 @@ Campaign Standardens transaktionsmeddelande och tillhörande händelse måste pu
 
 Så här konfigurerar du den:
 
-1. Från **[!UICONTROL Actions]** klickar du på den inbyggda **[!UICONTROL AdobeCampaignStandard]** åtgärd. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
+1. Klicka på den inbyggda **[!UICONTROL AdobeCampaignStandard]**-åtgärden i listan **[!UICONTROL Actions]**. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
 
    ![](../assets/actioncampaign.png)
 
-1. Kopiera din Adobe Campaign Standard-instans-URL och klistra in den i **[!UICONTROL URL]** fält.
+1. Kopiera din Adobe Campaign Standard-instans-URL och klistra in den i fältet **[!UICONTROL URL]**.
 
 1. Klicka på **[!UICONTROL Test the instance URL]** för att testa instansens giltighet.
 
@@ -47,8 +47,8 @@ Så här konfigurerar du den:
    >
    >Den ORG som är associerad med den här Adobe Campaign Standard-instansen är samma som Journey Orchestration ORG.
 
-När du utformar din resa kommer tre åtgärder att vara tillgängliga i **[!UICONTROL Action]** kategori: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]** (se [Använda Adobe Campaign-åtgärder](../building-journeys/using-adobe-campaign-actions.md)). **Reaktionshändelse** kan du också reagera på meddelandeklick, öppningar osv. (se [Reaktionshändelser](../building-journeys/reaction-events.md)).
+När du utformar din resa är tre åtgärder tillgängliga i kategorin **[!UICONTROL Action]**: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]** (se [Använda Adobe Campaign-åtgärder](../building-journeys/using-adobe-campaign-actions.md)). **Reaktionshändelsen** låter dig även reagera på meddelandeklickningar, öppningar osv. (se [Reaktionshändelser](../building-journeys/reaction-events.md)).
 
 ![](../assets/journey58.png)
 
-Om du använder ett tredjepartssystem för att skicka meddelanden måste du lägga till och konfigurera en anpassad åtgärd. Se [Om anpassad åtgärdskonfiguration](../action/about-custom-action-configuration.md).
+Om du använder ett tredjepartssystem för att skicka meddelanden måste du lägga till och konfigurera en anpassad åtgärd. Se [Om konfiguration för anpassad åtgärd](../action/about-custom-action-configuration.md).

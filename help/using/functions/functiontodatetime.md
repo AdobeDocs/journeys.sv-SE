@@ -8,8 +8,8 @@ level: Experienced
 exl-id: 0b8d1a82-a55a-4a4d-ad1b-35499d52b469
 source-git-commit: 2aa73498f44f22a70bb2268afca7d1a62e434542
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 7%
+source-wordcount: '100'
+ht-degree: 5%
 
 ---
 
@@ -36,7 +36,7 @@ Konvertering
 
 >[!NOTE]
 >
->Tidszons-ID måste vara en strängkonstant. Det kan inte vara en fältreferens eller ett uttryck. Mer information om datatyper finns i [den här sidan](../expression/data-types.md).
+>Tidszons-ID måste vara en strängkonstant. Det kan inte vara en fältreferens eller ett uttryck. Mer information om datatyper finns på [den här sidan](../expression/data-types.md).
 
 ## Underskrifter och returnerade typer
 
@@ -73,15 +73,15 @@ Return a datetime.
 
 `toDateTime ("2016-08-18T23:17:59.123Z")`
 
-Returnerar 2016-08-18T23:17:59,123Z
+Returnerar 2016-08-18T23:17:59.123Z
 
 `toDateTime(toDateTimeOnly("UTC", "2016-08-18T23:17:59.123"))`
 
-Returnerar 2016-08-18T23:17:59,123Z
+Returnerar 2016-08-18T23:17:59.123Z
 
 `toDateTime(1560762190189)`
 
-Returer 2019-06-17T09:03:10,189Z
+Returnerar 2019-06-17T09:03:10.189Z
 
 <!--`toDateTime ("2016-08-18T23:17:59.123", "UTC")`
 

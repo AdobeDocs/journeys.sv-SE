@@ -9,13 +9,13 @@ exl-id: 7846948c-6dc9-4d66-bf20-2fbcfa624b5d
 source-git-commit: 5225045f02fb1b2a8505756d9d7f6f60a32b3ed6
 workflow-type: tm+mt
 source-wordcount: '36'
-ht-degree: 16%
+ht-degree: 8%
 
 ---
 
 # isEmpty {#isEmpty}
 
-Returnerar true om strängen i parametern inte har något tecken.
+Returnerar true om strängen i parametern saknar tecken.
 
 ## Kategori
 

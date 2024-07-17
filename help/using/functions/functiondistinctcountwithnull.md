@@ -8,8 +8,8 @@ level: Experienced
 exl-id: b8380d30-160e-45c2-b187-34eb42845923
 source-git-commit: 9c33474a72542b6ad1d1ae0854622dfd7575f2d9
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 30%
+source-wordcount: '50'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ Räknar antalet olika värden inklusive null-värden.
 
 ## Kategori
 
-Aggregera
+Aggregering
 
 ## Funktionssyntax
 

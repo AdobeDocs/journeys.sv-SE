@@ -8,7 +8,7 @@ level: Beginner
 exl-id: ac5d2cec-0b48-4863-afe3-19ac5f61c9fd
 source-git-commit: 77fcc4ba02a855d4d584627625a08abb4af0da2f
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1010'
 ht-degree: 96%
 
 ---
@@ -20,12 +20,12 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 
 ## Juli 2022 {#july-2022}
 
-* I reseegenskaperna **Tidszon för profil** är nu inaktiverat som standard. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)
-* I **Vänta** aktivitet, **Fast datum** är inte längre tillgängligt. [Läs mer](../building-journeys/wait-activity.md)
+* Alternativet **Tidszon för profil** är nu inaktiverat som standard i reseegenskaperna. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)
+* Alternativet **Fast datum** är inte längre tillgängligt i aktiviteten **Vänta**. [Läs mer](../building-journeys/wait-activity.md)
 
 ## Juni 2022 {#june-2022}
 
-* Nya frågeexempel har lagts till i detta [page](../building-journeys/query-examples.md)
+* Nya frågeexempel har lagts till på [sidan](../building-journeys/query-examples.md)
 
 ## Mars 2022 {#march-2022}
 
@@ -130,13 +130,13 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 ## Januari 2020 {#january-2020}
 
 * Hämtningsbegränsningar har lagts till för [upplevelsehändelser](../datasource/adobe-experience-platform-data-source.md) och [segment](../functions/functioninsegment.md).
-   <!--* The [getBestSendTime documentation](../functions/functiongetbestsendtime.md) has been updated.-->
+  <!--* The [getBestSendTime documentation](../functions/functiongetbestsendtime.md) has been updated.-->
 
 ## December 2019 {#december-2019}
 
 * Alla skärmbilder har uppdaterats för att återspegla ändringar i gränssnitten.
 * Avsnittet Testläge har uppdaterats. [Läs mer](../building-journeys/testing-the-journey.md)
-   <!--* A warning has been added in the [email send time optimization](../building-journeys/wait-activity.md) and [predictive fatigue scores](../ai-services/leveraging-fatigue-scores.md) sections. These capabilities are only available to customers who use the [Adobe Experience Platform Data Connector](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/data-connector/aep-about-data-connector.html).-->
+  <!--* A warning has been added in the [email send time optimization](../building-journeys/wait-activity.md) and [predictive fatigue scores](../ai-services/leveraging-fatigue-scores.md) sections. These capabilities are only available to customers who use the [Adobe Experience Platform Data Connector](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/data-connector/aep-about-data-connector.html).-->
 * Stoppade resor kan nu raderas. Relaterade sidor i dokumentationen har uppdaterats.
 * Två färger visas nu när fel upptäcks i en resa. Röd för fel och orange för varningar. [Läs mer](../about/troubleshooting.md)
 * Avsnittet Avancerad uttrycksredigerare har uppdaterats. [Läs mer](../expression/expressionadvanced.md).

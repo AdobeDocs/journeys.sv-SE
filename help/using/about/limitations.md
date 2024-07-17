@@ -8,8 +8,8 @@ level: Beginner
 exl-id: fef039ae-c04d-4198-a082-4be27710255f
 source-git-commit: 861c6bd8ce65793b6009e220d88f105c75ea3008
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 2%
+source-wordcount: '564'
+ht-degree: 0%
 
 ---
 
@@ -20,23 +20,23 @@ Här är begränsningar för användning av Journey Orchestration.
 ## Allmänna skyddsräcken för resan {#journeys-guardrails-journeys}
 
 * Antalet aktiviteter under en resa är begränsat till 50. Antalet aktiviteter visas i den övre vänstra delen av arbetsytan.
-* Antalet **direktresor** i en organisation är begränsad till 100 per sandlåda. När den här gränsen har nåtts kan du inte längre publicera en ny resa.
+* Antalet **direktresor** i en organisation är begränsat till 100 per sandlåda. När den här gränsen har nåtts kan du inte längre publicera en ny resa.
 
 ## Allmänna åtgärdsbegränsningar
 
 * Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. 
-* Den inbyggda **Reaktion** gör att du kan reagera på åtgärder som är klara (se detta [page](../building-journeys/reaction-events.md)). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse. 
+* Den inbyggda **Reaction**-händelsen gör att du kan reagera på åtgärder som inte är i kartong (se den här [sidan](../building-journeys/reaction-events.md)). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse. 
 
 ## Begränsningar för reseversioner {#journey-versions-limitations}
 
-* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte påbörja en resa med en **Segmentkvalificering** -händelse.
-* En resa som börjar med en **Segmentkvalificering** aktivitet i v1 måste alltid börja med en **Segmentkvalificering** i andra versioner.
-* Det segment och namnutrymme som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
+* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte starta en resa med en **Segmentkvalificeringshändelse**.
+* En resa som börjar med en **segmentkvalificeringsaktivitet** i v1 måste alltid börja med en **segmentkvalificering** i ytterligare versioner.
+* Det segment och namnområde som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
 
 ## Segmentkvalificering {#segment-qualification}
 
-* The **Segmentkvalificering** -aktiviteten kan inte användas tillsammans med Adobe Campaign Standard Transactional Messaging på grund av dataflödesbegränsningar. Se [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html). 
+* Aktiviteten **Segmentkvalificering** kan inte användas tillsammans med Adobe Campaign Standard Transactional Messaging på grund av dataflödesbegränsningar. Se [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html). 
  
 ## Begränsningar för anpassade åtgärder
 

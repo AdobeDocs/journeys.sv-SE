@@ -9,7 +9,7 @@ level: Intermediate
 exl-id: 6f28e62d-7747-43f5-a360-1d6af14944b6
 source-git-commit: 861c6bd8ce65793b6009e220d88f105c75ea3008
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '554'
 ht-degree: 29%
 
 ---
@@ -58,7 +58,7 @@ Här är den grundläggande strukturen för en slutpunktskonfiguration:
 
 >[!IMPORTANT]
 >
->The **maxHttpConnections** parametern är valfri. Du kan begränsa antalet anslutningar som Journey Optimizer öppnar till det externa systemet.
+>Parametern **maxHttpConnections** är valfri. Du kan begränsa antalet anslutningar som Journey Optimizer öppnar till det externa systemet.
 >
 >Det högsta värdet som kan anges är 400. Om inget anges kan systemet öppna upp till flera tusen anslutningar beroende på systemets dynamiska skalning.
 
@@ -85,7 +85,7 @@ Här är den grundläggande strukturen för en slutpunktskonfiguration:
 
 ## Varningar och fel
 
-När en **canDeploy** metoden anropas, validerar processen konfigurationen och returnerar den valideringsstatus som identifieras av dess unika ID, antingen:
+När en **canDeploy** -metod anropas validerar processen konfigurationen och returnerar den verifieringsstatus som identifieras av dess unika ID, antingen:
 
 ```
 "ok" or "error"
@@ -93,24 +93,24 @@ När en **canDeploy** metoden anropas, validerar processen konfigurationen och r
 
 Möjliga fel är:
 
-* **ERR_ENDPOINTCONFIG_100**: capping config: URL saknas eller är ogiltig
-* **ERR_ENDPOINTCONFIG_101**: capping config: felaktig URL
-* **ERR_ENDPOINTCONFIG_102**: capping config: felaktig url: wildchar in url not allowed in host:port
+* **ERR_ENDPOINTCONFIG_100**: Konfiguration för begränsning: URL saknas eller är ogiltig
+* **ERR_ENDPOINTCONFIG_101**: capping-konfiguration: felaktig URL
+* **ERR_ENDPOINTCONFIG_102**: capping config: felaktig url: jokertecken i url tillåts inte i host:port
 * **ERR_ENDPOINTCONFIG_103**: capping config: HTTP-metoder saknas
-* **ERR_ENDPOINTCONFIG_104**: capping config: ingen anropsklassificering har definierats
-* **ERR_ENDPOINTCONFIG_107**: capping config: ogiltigt antal anrop (maxCallCount)
+* **ERR_ENDPOINTCONFIG_104**: konfiguration för begränsning: ingen anropsklassificering har definierats
+* **ERR_ENDPOINTCONFIG_107**: capping-konfig: ogiltigt max antal anrop (maxCallCount)
 * **ERR_ENDPOINTCONFIG_108**: capping config: ogiltigt antal anrop (periodInms)
-* **ERR_ENDPOINTCONFIG_111**: capping config: kan inte skapa slutpunktskonfiguration: ogiltig nyttolast
-* **ERR_ENDPOINTCONFIG_112**: capping config: kan inte skapa slutpunktskonfiguration: en JSON-nyttolast förväntas
-* **ERR_AUTHORING_ENDPOINTCONFIG_1**: ogiltigt tjänstnamn `<!--<given value>-->`: måste vara &#39;dataSource&#39; eller &#39;action&#39;
+* **ERR_ENDPOINTCONFIG_111**: det går inte att skapa slutpunktskonfigurationen: nyttolasten är ogiltig
+* **ERR_ENDPOINTCONFIG_112**: Det går inte att skapa slutpunktskonfigurationen: en JSON-nyttolast förväntas
+* **ERR_AUTHORING_ENDPOINTCONFIG_1**: ogiltigt tjänstnamn `<!--<given value>-->`: måste vara dataSource eller action
 
 Den potentiella varningen är:
 
-**ERR_ENDPOINTCONFIG_106**: capping config: max HTTP connections not defined: no limit as default
+**ERR_ENDPOINTCONFIG_106**: capping config: max HTTP connections not defined: no limitation as default
 
 ## Användningsfall
 
-I det här avsnittet hittar du de fem huvudsakliga användningsområdena som du kan använda för att hantera din appkonfiguration i [!DNL Journey Orchestration].
+I det här avsnittet hittar du de fem huvudsakliga användningsfall som du kan använda för att hantera din appkonfiguration i [!DNL Journey Orchestration].
 
 Det finns en Postman-samling som kan hjälpa dig med testning och konfiguration [här](https://raw.githubusercontent.com/AdobeDocs/JourneyAPI/master/postman-collections/Journey-Orchestration_Capping-API_postman-collection.json).
 
@@ -123,14 +123,14 @@ När du hämtat och laddat upp till Postman måste du lägga till tre variabler:
 
 I följande avsnitt hittar du listan över Rest API-anrop ordnade för att utföra fallstudien.
 
-Användningsfall n°1: **Skapa och distribuera en ny takkonfiguration**
+Användningsfall n°1: **Skapande och distribution av en ny takkonfiguration**
 
 1. list
 1. create
 1. candeploy
 1. deploy
 
-Use-Case n°2: **Uppdatera och distribuera en capping-konfiguration som inte har distribuerats än**
+Användningsfall n°2: **Uppdatera och distribuera en takkonfiguration som inte har distribuerats än**
 
 1. list
 1. get
@@ -144,13 +144,13 @@ Användningsfall nr 3: **Avdistribuera och ta bort en distribuerad capping-konfi
 1. undeploy
 1. delete
 
-Användningsfall nr 4: **Ta bort en distribuerad capping-konfiguration.**
+Användningsfall nr 4: **Ta bort en distribuerad takkonfiguration.**
 
 I endast ett API-anrop kan du avbryta driftsättning och radera konfigurationen med hjälp av parametern forceDelete.
 1. list
 1. radera med parametern forceDelete
 
-Use-Case n°5: **Uppdatera en takkonfiguration som redan distribuerats**
+Användningsfall nr 5: **Uppdatera en takkonfiguration som redan distribuerats**
 
 1. list
 1. get

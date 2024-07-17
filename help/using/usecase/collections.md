@@ -17,55 +17,55 @@ Du kan skicka en samling i anpassade åtgärdsparametrar som fylls i dynamiskt v
 
 * enkla samlingar: arrayer med enkla datatyper, till exempel med en listString:
 
-   ```
-   {
-    "deviceTypes": [
-        "android",
-        "ios"
-    ]
-   }
-   ```
+  ```
+  {
+   "deviceTypes": [
+       "android",
+       "ios"
+   ]
+  }
+  ```
 
 * objektsamlingar: en array med JSON-objekt, till exempel:
 
-   ```
-   {
-   "products":[
-      {
-         "id":"productA",
-         "name":"A",
-         "price":20.1
-      },
-      {
-         "id":"productB",
-         "name":"B",
-         "price":10.0
-      },
-      {
-         "id":"productC",
-         "name":"C",
-         "price":5.99
-      }
-    ]
-   }
-   ```
-
-## Begränsningar {#limitations}
-
-* Kapslade arrayer med objekt i en objektarray stöds för närvarande inte. Exempel:
-
-   ```
-   {
-   "products":[
+  ```
+  {
+  "products":[
      {
         "id":"productA",
         "name":"A",
-        "price":20,
-        "locations": [{"name": "Paris"}, {"name": "London"}]
+        "price":20.1
      },
-    ]
-   }
-   ```
+     {
+        "id":"productB",
+        "name":"B",
+        "price":10.0
+     },
+     {
+        "id":"productC",
+        "name":"C",
+        "price":5.99
+     }
+   ]
+  }
+  ```
+
+## Begränsningar {#limitations}
+
+* Kapslade arrayer med objekt i en objektarray stöds inte för närvarande. Exempel:
+
+  ```
+  {
+  "products":[
+    {
+       "id":"productA",
+       "name":"A",
+       "price":20,
+       "locations": [{"name": "Paris"}, {"name": "London"}]
+    },
+   ]
+  }
+  ```
 
 * Om du vill testa samlingar i testläge måste du använda kodvisningsläget. Kodvyn stöds för närvarande inte för affärshändelser. Du kan bara skicka en samling med ett enda element.
 
@@ -101,7 +101,7 @@ Du ser att&quot;products&quot; är en array med två objekt. Du måste ha minst 
 
 1. Skapa en anpassad åtgärd. Läs [den här sidan](../action/about-custom-action-configuration.md).
 
-1. I **[!UICONTROL Action parameters]** -avsnittet, klistra in JSON-exemplet. Den visade strukturen är statisk: när du klistrar in nyttolasten definieras alla fält som konstanter.
+1. Klistra in JSON-exemplet i avsnittet **[!UICONTROL Action parameters]**. Den visade strukturen är statisk: när du klistrar in nyttolasten definieras alla fält som konstanter.
 
    ![](../assets/uc-collection-1.png)
 
@@ -123,7 +123,7 @@ Du ser att&quot;products&quot; är en array med två objekt. Du måste ha minst 
 
 1. Skapa din resa och lägg till den anpassade åtgärd du skapade. Läs [den här sidan](../building-journeys/using-custom-actions.md).
 
-1. I **[!UICONTROL Action parameters]** definierar du arrayparametern (&quot;products&quot; in our example) med den avancerade uttrycksredigeraren.
+1. I avsnittet **[!UICONTROL Action parameters]** definierar du arrayparametern (&quot;products&quot; in our example) med den avancerade uttrycksredigeraren.
 
    ![](../assets/uc-collection-3.png)
 
@@ -131,7 +131,7 @@ Du ser att&quot;products&quot; är en array med två objekt. Du måste ha minst 
 
    ![](../assets/uc-collection-4.png)
 
-För arrayfältet kan du även använda den avancerade uttrycksredigeraren för att utföra datamanipulering. I följande exempel använder vi [filter](../functions/functionfilter.md) och [korsa](../functions/functionintersect.md) funktioner:
+För arrayfältet kan du även använda den avancerade uttrycksredigeraren för att utföra datamanipulering. I följande exempel använder vi funktionerna [filter](../functions/functionfilter.md) och [intersect](../functions/functionintersect.md):
 
 ![](../assets/uc-collection-5.png)
 

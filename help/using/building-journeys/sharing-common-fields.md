@@ -8,7 +8,7 @@ level: Intermediate
 exl-id: 5cf8e6b5-2162-4aa3-b071-96ede31948e6
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Vissa av dessa fält är bara tillgängliga i specifika bearbetningsmönster (å
 
 ## entré
 
-Anger om användaren har gått in på resan. Om det inte finns antar vi att värdet är falskt.
+Anger om användaren har gått in i resan. Om det inte finns antar vi att värdet är falskt.
 
 Typ: boolesk
 
@@ -47,31 +47,31 @@ Typ: boolesk
 
 Händelse-ID under bearbetning för stegbearbetning. Om händelsen är en extern händelse är värdet dess eventId. Om händelsen är en intern händelse är värdet det interna eventId (till exempel scheduleNotificationReceived, executionAction).
 
-Typ: string
+Typ: sträng
 
 ## nodeID
 
 Klientnod-ID (från arbetsytan).
 
-Typ: string
+Typ: sträng
 
 ## stepID
 
 Unikt ID för det steg som bearbetas just nu.
 
-Typ: string
+Typ: sträng
 
 ## stepName
 
 Namnet på det steg som bearbetas just nu.
 
-Typ: string
+Typ: sträng
 
 ## stepType
 
 Typ av steg.
 
-Typ: string
+Typ: sträng
 
 Möjliga värden:
 
@@ -84,76 +84,76 @@ Möjliga värden:
 
 Status för steget, som representerar status för steget, när bearbetningen har slutförts (och steghändelsen utlösts).
 
-Typ: string
+Typ: sträng
 
 Status kan vara:
 
-* avslutad: steget saknar övergång och bearbetningen har slutförts.
-* fel: Stegbearbetningen har orsakat ett fel.
+* avslutad: steget har ingen övergång och bearbetningen har slutförts.
+* fel: stegbearbetningen har orsakat ett fel.
 * övergångar: steget väntar på att en händelse ska övergå till ett annat steg.
-* med tak: Steget har misslyckats på ett fel med begränsning, vilket uppstod under en åtgärd eller anrikning.
-* tidsgräns: steget har misslyckats på ett timeout-fel som uppstod under en åtgärd eller en anrikning.
-* instanceTimedout: steget har stoppat bearbetningen eftersom instansen har nått sin timeout.
+* Mappat: steget har misslyckats på ett fel med begränsning, vilket uppstod under en åtgärd eller anrikning.
+* timeout: steget misslyckades på ett timeout-fel, vilket uppstod under en åtgärd eller en anrikning.
+* instanceTimedout: bearbetningen av steget har stoppats eftersom instansen har nått sin tidsgräns.
 
 ## travelID
 
 ID för resan.
 
-Typ: string
+Typ: sträng
 
 ## travelVersionID
 
 ID för reseversionen. Detta id representerar identitetsreferensen till resan, när det gäller travelStepEvent.
 
-Typ: string
+Typ: sträng
 
 ## travelVersionName
 
 Namn på reseversionen.
 
-Typ: string
+Typ: sträng
 
 ## travelVersion
 
 Version av reseversionen.
 
-Typ: string
+Typ: sträng
 
 ## instanceID
 
 Internt ID för reseinstansen.
 
-Typ: string
+Typ: sträng
 
 ## externalKey
 
 Extern nyckel som extraherats från händelsen för att bearbeta den.
 
-Typ: string
+Typ: sträng
 
 ## parentStepID
 
 Steg-ID för den överordnade för det aktuella bearbetade steget i instansen.
 
-Typ: string
+Typ: sträng
 
 ## parentStepName
 
 Stegnamn för det överordnade steget i det aktuella steget.
 
-Typ: string
+Typ: sträng
 
 ## parentTransitionID
 
 ID för övergången som har fört instansen till det bearbetade steget.
 
-Typ: string
+Typ: sträng
 
 ## parentTransitionName
 
 Namnet på övergången som har fört instansen till det bearbetade steget.
 
-Typ: string
+Typ: sträng
 
 ## inTest
 
@@ -165,21 +165,21 @@ Typ: boolesk
 
 Total tid i millisekunder från instansstegsinkomsten till behandlingens slut.
 
-Typ: long
+Typ: lång
 
 ## instanceType
 
 Anger instanstypen, om den är batch eller unitary.
 
-Typ: string
+Typ: sträng
 
-Värden: batch/unitary
+Värden: batch/enhet
 
 ## repeatIndex
 
 Index för upprepningen om resan är batch och återkommande (den första körningen har recidiIndex = 1).
 
-Typ: long
+Typ: lång
 
 ## isBatchToUnitary
 
@@ -191,16 +191,16 @@ Typ: boolesk
 
 Extern nyckel för batchhändelse.
 
-Typ: string
+Typ: sträng
 
 ## batchInstanceID
 
 detta är batchförekomstens ID.
 
-Typ: string
+Typ: sträng
 
 ## batchUnitaryBranchID
 
 om instansen har utlösts från en gruppinstans, ett enhetsförgrunds-ID.
 
-Typ: string
+Typ: sträng

@@ -8,8 +8,8 @@ level: Experienced
 exl-id: 46528642-18d5-4ca9-a344-de2c7f939d00
 source-git-commit: 9c33474a72542b6ad1d1ae0854622dfd7575f2d9
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 28%
+source-wordcount: '53'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ Räknar elementen i listan utan att ta hänsyn till null-värden.
 
 ## Kategori
 
-Aggregera
+Aggregering
 
 ## Funktionssyntax
 

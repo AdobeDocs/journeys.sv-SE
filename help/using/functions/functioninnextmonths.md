@@ -1,7 +1,7 @@
 ---
 product: adobe campaign
 title: inNextMonths
-description: Läs om funktionen i NextMonths
+description: Läs mer om funktionen i NextMonths
 feature: Journeys
 role: Data Engineer
 level: Experienced
@@ -9,7 +9,7 @@ exl-id: b5e8d514-a24d-42a2-b422-ec5d6617048a
 source-git-commit: 5225045f02fb1b2a8505756d9d7f6f60a32b3ed6
 workflow-type: tm+mt
 source-wordcount: '44'
-ht-degree: 15%
+ht-degree: 11%
 
 ---
 

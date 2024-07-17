@@ -9,7 +9,7 @@ exl-id: b7568080-b88c-415c-9d3f-cc1361664838
 source-git-commit: a9a129b1949d64c4a412d3ea4002b32e3563ea96
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 12%
+ht-degree: 6%
 
 ---
 
@@ -42,7 +42,7 @@ Den här fältgruppen används i transportschemat (i relation till travelStepEve
 
 ## profil
 
-Den här fältgruppen är specifik för travelStepEvent: den här händelsen är relaterad till resan och har inte identityMap, som beskriver profidentiteten, om någon.
+Den här fältgruppen är specifik för travelStepEvent: den här händelsen är relaterad till resan och har inte identityMap, som beskriver profilens identitet, om sådan finns.
 
 För travelStepEvent måste vi även lägga till fält som är relaterade till identiteten:
 
@@ -58,14 +58,14 @@ Den här mixinen innehåller alla fält som motsvarar ett profilexportjobb.
 | Fältnamn | Typ | Beskrivning |
 |---|---|------------|
 | ID | Sträng | Identifieraren för segmentexportjobbet som utlöses |
-| status | Sträng | Status för segmentexportjobb: köad, startad, avslutad |
+| status | Sträng | Status för segmentexportjobbet: köat, startat, avslutat |
 | exportCountTotal | Heltal | Det högsta möjliga värdet för segmentexportjobbet |
 | exportCountRealized | Heltal | Det faktiska antalet segment som exporterats genom jobbet |
 | exportCountFailed | Heltal | Antalet segment som misslyckades vid export via jobbet |
 | exportSegmentID | Sträng | Identifieraren för segmentet som exporteras |
-| eventType | Sträng | Händelsetypen som anger om det är en felhändelse för info-händelsen: Info, fel |
+| eventType | Sträng | Händelsetypen anger om det är en felhändelse för info-händelsen: Info, Error |
 | eventCode | Sträng | Felkoden som anger orsaken till motsvarande eventType |
 
 ## stepEvents
 
-Den här kategorin innehåller de ursprungliga fälten för steghändelser. Se detta [section](../building-journeys/sharing-legacy-fields.md).
+Den här kategorin innehåller de ursprungliga fälten för steghändelser. Se det här [avsnittet](../building-journeys/sharing-legacy-fields.md).

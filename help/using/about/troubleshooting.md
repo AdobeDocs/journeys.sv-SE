@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: c678ba01-c868-49f2-99f3-1abe0302779e
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 97%
+source-wordcount: '1030'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 I det här avsnittet lär du dig att felsöka resor innan de testas eller publiceras. Alla kontroller som anges nedan kan utföras medan resan är i testläge eller när den är live. Rekommendationen är att göra alla kontroller nedan i testläget och sedan gå vidare till publiceringen. Läs [den här sidan](../building-journeys/testing-the-journey.md).
 
-## Söker efter fel före tester{#section_h3q_kqk_fhb}
+## Söker efter fel före testning{#section_h3q_kqk_fhb}
 
 Kontrollera att alla aktiviteter är konfigurerade korrekt innan du testar och publicerar din resa. Du kan inte utföra tester eller publikationer om fel fortfarande upptäcks av systemet.
 
@@ -49,7 +49,7 @@ Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt 
 
 Händelser skickas inte direkt från källan till [!DNL Journey Orchestration]. [!DNL Journey Orchestration] förlitar sig faktiskt på API:er för strömningsinmatning i Adobe Experience Platform. Om det gäller händelserelaterade problem kan du därför hänvisa till [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html) för felsökning av API:er för direktuppspelning.
 
-## Kontrollera om någon kommer in i resan{#section_x4v_zzs_dgb}
+## Kontrollerar om någon kommer in på resan{#section_x4v_zzs_dgb}
 
 Rapportering från [!DNL Journey Orchestration] mäter människors inträde i en resa i realtid.
 
@@ -64,10 +64,10 @@ Här följer några saker som administratören bör kontrollera:
 * Har du följt nyttolastens struktur gällande API:er för strömningsinmatning med hjälp av förhandsgranskningen av nyttolastens struktur i händelsens konfigurationsfönster? Läs [den här sidan](../event/previewing-the-payload.md).
 * Har du använt rätt nyckel/värde-par i rubriken på händelsen?
 
-   ```
-   X-gw-ims-org-id - your ORGID
-   Content-type - application/json
-   ```
+  ```
+  X-gw-ims-org-id - your ORGID
+  Content-type - application/json
+  ```
 
 ## Kontrollera hur människor navigerar genom resan{#section_l5y_yzs_dgb}
 

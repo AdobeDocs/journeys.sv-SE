@@ -15,11 +15,11 @@ ht-degree: 6%
 
 # Konfigurera datakällan{#concept_ax3_bcy_w2b}
 
-I vårt fall vill vi använda personaliseringsdata för våra meddelanden. Vi måste också kontrollera att personen är en kvinna. Den här informationen lagras i kundprofildatabasen i realtid. The **teknisk användare** måste kontrollera att dessa fält är definierade i den inbyggda Adobe Experience Platform-datakällan.
+I vårt fall vill vi använda personaliseringsdata för våra meddelanden. Vi måste också kontrollera att personen är en kvinna. Den här informationen lagras i kundprofildatabasen i realtid. Den **tekniska användaren** måste kontrollera att dessa fält har definierats i den inbyggda Adobe Experience Platform-datakällan.
 
-Mer information om konfiguration av datakälla finns i [den här sidan](../datasource/about-data-sources.md).
+Mer information om konfiguration av datakälla finns på [den här sidan](../datasource/about-data-sources.md).
 
-1. I menyrutan väljer du **[!UICONTROL Admin]**. I **[!UICONTROL Data sources]** avsnitt, klicka **[!UICONTROL Manage]**.
+1. Välj **[!UICONTROL Admin]** i menyrutan. Klicka på **[!UICONTROL Manage]** i avsnittet **[!UICONTROL Data sources]**.
 1. Välj den inbyggda Adobe Experience Platform-datakällan.
 
    ![](../assets/journey23.png)

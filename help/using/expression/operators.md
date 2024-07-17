@@ -1,15 +1,15 @@
 ---
 product: adobe campaign
 title: Operatorer
-description: Lär dig mer om operatorer i avancerade uttryck
+description: Läs om operatorer i avancerade uttryck
 feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: fd86b6ab-76cf-4b35-9e87-f441e914f20b
 source-git-commit: a0b6ab595bc16a75aa5a56a858900418e2381ab9
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 7%
+source-wordcount: '459'
+ht-degree: 5%
 
 ---
 
@@ -34,19 +34,19 @@ Det finns två typer av operatorer: unära operatorer och binära operatorer. De
 
 ## Viktiga anteckningar{#important-notes}
 
-* Vid användning av en multiplikation (`*`) måste båda åtgärdsfälten ha samma typ, antingen heltal eller decimal. Exempel :
+* När du använder en multiplikation (`*`) måste båda åtgärdsfälten ha samma typ, antingen heltal eller decimal. Exempel:
    * följande exempel är korrekt: `3.0 * 4.0`
    * `3 * 4.0` leder till ett fel
 
 ## Logisk  {#logical}
 
-###  och 
+### och
 
 ```json
 <expression1> and <expression2>
 ```
 
-Båda &lt;expression1> och &lt;expression2> måste vara booleskt. Resultatet är booleskt.
+Både &lt;expression1> och &lt;expression2> måste vara booleska. Resultatet är booleskt.
 
 Exempel:
 
@@ -62,7 +62,7 @@ Exempel:
 <expression1> or <expression2>
 ```
 
-Båda &lt;expression1> och &lt;expression2> måste vara booleskt. Resultatet är booleskt.
+Både &lt;expression1> och &lt;expression2> måste vara booleska. Resultatet är booleskt.
 
 Exempel:
 
@@ -154,7 +154,7 @@ Exempel:
 <expression1> == <expression2>
 ```
 
-Båda &lt;expression1> och &lt;expression2> måste ha samma datatyp. Resultatet är booleskt.
+Både &lt;expression1> och &lt;expression2> måste ha samma datatyp. Resultatet är booleskt.
 
 Exempel:
 
@@ -174,7 +174,7 @@ Exempel:
 <expression1> != <expression2>
 ```
 
-Båda &lt;expression1> och &lt;expression2> måste ha samma datatyp. Resultatet är booleskt.
+Både &lt;expression1> och &lt;expression2> måste ha samma datatyp. Resultatet är booleskt.
 
 Exempel:
 

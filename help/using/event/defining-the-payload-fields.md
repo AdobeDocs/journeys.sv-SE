@@ -8,16 +8,16 @@ level: Intermediate
 exl-id: 9d385b64-46cd-489b-9c18-352fa2a2dbba
 source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 5%
+source-wordcount: '294'
+ht-degree: 4%
 
 ---
 
 # Definiera nyttolastfält {#concept_yrw_3qt_52b}
 
-Nyttolastdefinitionen gör att du kan välja vilken information systemet förväntar sig från händelsen under din resa och nyckeln för att identifiera vilken person som är associerad med händelsen. Nyttolasten baseras på Experience Cloud XDM-fältdefinitionen. Mer information om XDM finns i [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
+Nyttolastdefinitionen gör att du kan välja vilken information systemet förväntar sig från händelsen under din resa och nyckeln för att identifiera vilken person som är associerad med händelsen. Nyttolasten baseras på Experience Cloud XDM-fältdefinitionen. Mer information om XDM finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
 
-1. Välj ett XDM-schema i listan och klicka på **[!UICONTROL Payload]** fält eller på **[!UICONTROL Edit]** ikon.
+1. Välj ett XDM-schema i listan och klicka på fältet **[!UICONTROL Payload]** eller på ikonen **[!UICONTROL Edit]** .
 
    ![](../assets/journey8.png)
 
@@ -25,7 +25,7 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 
    >[!NOTE]
    >
-   >Kontrollera att du har lagt till&quot;orchestration&quot;-blandningen i XDM-schemat. Detta säkerställer att schemat innehåller all information som krävs för att arbeta med [!DNL Journey Orchestration].
+   >Kontrollera att du har lagt till&quot;orchestration&quot;-blandningen i XDM-schemat. Detta garanterar att schemat innehåller all nödvändig information som kan användas med [!DNL Journey Orchestration].
 
    ![](../assets/journey9.png)
 
@@ -35,12 +35,12 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 
    >[!NOTE]
    >
-   >För systemgenererade händelser är **[!UICONTROL eventID]** fältet läggs automatiskt till i listan över markerade fält så att [!DNL Journey Orchestration] kan identifiera händelsen. Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. Läs [den här sidan](../event/previewing-the-payload.md).
+   >För systemgenererade händelser läggs fältet **[!UICONTROL eventID]** automatiskt till i listan med markerade fält så att [!DNL Journey Orchestration] kan identifiera händelsen. Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. Läs [den här sidan](../event/previewing-the-payload.md).
 
-1. När du är klar med att markera de fält som behövs klickar du på **[!UICONTROL Save]** eller tryck **[!UICONTROL Enter]**.
+1. När du är klar med att markera de fält som behövs klickar du på **[!UICONTROL Save]** eller trycker på **[!UICONTROL Enter]**.
 
    ![](../assets/journey11.png)
 
-   Antalet markerade fält visas i **[!UICONTROL Payload]** fält.
+   Antalet markerade fält visas i fältet **[!UICONTROL Payload]**.
 
    ![](../assets/journey12.png)

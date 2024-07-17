@@ -15,7 +15,7 @@ ht-degree: 20%
 
 # identitetsfält för händelsen journeyStep {#sharing-identity-fields}
 
-Den här mixinen är specifik för travelStepEvent: den här händelsen är relaterad till resan och har inte identityMap, som beskriver profidentiteten, om någon.
+Den här mixinen är specifik för travelStepEvent: den här händelsen är relaterad till resan och har inte identityMap, som beskriver profidentiteten, om sådan finns.
 
 För travelStepEvent måste vi även lägga till fält som är relaterade till identiteten:
 
@@ -23,10 +23,10 @@ För travelStepEvent måste vi även lägga till fält som är relaterade till i
 
 Profilidentifierare
 
-Typ: string
+Typ: sträng
 
 ## profileNamespace
 
 Namnutrymme för profilidentifierare
 
-Typ: string
+Typ: sträng

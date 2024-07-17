@@ -15,11 +15,11 @@ ht-degree: 8%
 
 # Konfigurera händelsen{#concept_y44_hcy_w2b}
 
-I vårt scenario måste vi ta emot en händelse varje gång en person går nära en fyr som är placerad intill spat. The **teknisk användare** måste konfigurera händelsen som systemet ska lyssna på under vår resa.
+I vårt scenario måste vi ta emot en händelse varje gång en person går nära en fyr som är placerad intill spat. Den **tekniska användaren** måste konfigurera händelsen som systemet ska lyssna på under vår resa.
 
-Mer information om händelsekonfiguration finns i [den här sidan](../event/about-events.md).
+Mer information om händelsekonfiguration finns på [den här sidan](../event/about-events.md).
 
-1. Klicka på **[!UICONTROL Events]** och klicka **[!UICONTROL Add]** för att skapa en ny händelse.
+1. Klicka på fliken **[!UICONTROL Events]** på den översta menyn och klicka på **[!UICONTROL Add]** för att skapa en ny händelse.
 
    ![](../assets/journeyuc1_1.png)
 
@@ -27,7 +27,7 @@ Mer information om händelsekonfiguration finns i [den här sidan](../event/abou
 
    ![](../assets/journeyuc1_2.png)
 
-1. Vi väljer sedan schemat och definierar den nyttolast som förväntas för den här händelsen. Vi väljer de fält som behövs i den normaliserade XDM-modellen. Vi behöver Experience Cloud-ID:t för att kunna identifiera personen i kundprofildatabasen i realtid: _endUserIDs > experience > mcid > id_. Ett ID genereras automatiskt för den här händelsen. Detta ID lagras i **[!UICONTROL eventID]** fält (_upplevelse > kampanj > samordning > eventID_). Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. I det här fallet används det här ID:t för att identifiera var beacon finns. Varje gång en person går i närheten av spaltbeacon skickas en händelse som innehåller detta specifika händelse-ID. På så sätt kan systemet veta vilken signal som utlöste den skickade händelsen.
+1. Vi väljer sedan schemat och definierar den nyttolast som förväntas för den här händelsen. Vi väljer de fält som behövs i den normaliserade XDM-modellen. Vi behöver Experience Cloud-ID:t för att identifiera personen i kundprofildatabasen i realtid: _endUserID:n > upplevelse > mcid > id_. Ett ID genereras automatiskt för den här händelsen. Detta ID lagras i fältet **[!UICONTROL eventID]** (_upplevelse > kampanj > samordning > eventID_). Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. I det här fallet används det här ID:t för att identifiera var beacon finns. Varje gång en person går i närheten av spaltbeacon skickas en händelse som innehåller detta specifika händelse-ID. På så sätt kan systemet veta vilken signal som utlöste den skickade händelsen.
 
    ![](../assets/journeyuc1_3.png)
 
@@ -35,7 +35,7 @@ Mer information om händelsekonfiguration finns i [den här sidan](../event/abou
    >
    >Listan med fält varierar mellan olika scheman. Enligt schemadefinitionen kan vissa fält vara obligatoriska och förmarkerade.
 
-1. Vi måste välja en namnrymd. En namnrymd är förvald baserat på schemats egenskaper. Du kan behålla den som är förmarkerad. Mer information om namnutrymmen finns i [den här sidan](../event/selecting-the-namespace.md).
+1. Vi måste välja en namnrymd. En namnrymd är förvald baserat på schemats egenskaper. Du kan behålla den som är förmarkerad. Mer information om namnutrymmen finns på [den här sidan](../event/selecting-the-namespace.md).
 
    ![](../assets/journeyuc1_6.png)
 
@@ -45,8 +45,8 @@ Mer information om händelsekonfiguration finns i [den här sidan](../event/abou
 
 1. Klicka på **[!UICONTROL Save]**.
 
-1. Klicka på **[!UICONTROL View Payload]** -ikonen för att förhandsgranska nyttolasten som förväntas av systemet och dela den med den person som är ansvarig för händelsen som skickas. Den här nyttolasten måste konfigureras i bakåtgången av administrationskonsolen för Mobile Services.
+1. Klicka på ikonen **[!UICONTROL View Payload]** för att förhandsgranska den nyttolast som systemet förväntar sig och dela den med den person som ansvarar för händelsen som skickar. Den här nyttolasten måste konfigureras i bakåtgången av administrationskonsolen för Mobile Services.
 
    ![](../assets/journeyuc1_7.png)
 
-   Evenemanget är klart att användas under din resa. Nu måste du konfigurera mobilprogrammet så att det kan skicka den förväntade nyttolasten till API:ernas slutpunkt för direktuppspelningsinmatning. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey-orchestration.md).
+   Evenemanget är klart att användas under din resa. Nu måste du konfigurera mobilprogrammet så att det kan skicka den förväntade nyttolasten till API:erna för direktuppspelning. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey-orchestration.md).

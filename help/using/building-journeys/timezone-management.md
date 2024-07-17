@@ -8,14 +8,14 @@ level: Intermediate
 exl-id: c0e67849-caa0-4045-94ed-38e483054e1d
 source-git-commit: 77fcc4ba02a855d4d584627625a08abb4af0da2f
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '276'
 ht-degree: 2%
 
 ---
 
 # Hantering av tidszoner {#timezone_management}
 
-Du kan definiera en tidszon i dialogrutan [egenskaper](../building-journeys/changing-properties.md) av din resa.
+Du kan definiera en tidszon i [egenskaperna](../building-journeys/changing-properties.md) för din resa.
 
 Du öppnar Egenskaper genom att klicka på pennikonen i skärmens övre högra hörn.
 
@@ -29,19 +29,19 @@ Du kan välja en tidszon eller välja att använda den tidszon som är definiera
 
 >[!NOTE]
 >
->Tidszonen för profilen fungerar med **timeZone** fältet finns i **Inställningsinformation** fältgrupp.
+>Profilens tidszon fungerar med fältet **timeZone** som finns i fältgruppen **Inställningsinformation**.
 
 ## Definiera en fast tidszon {#fixed-timezone}
 
 Tidszonen kan också korrigeras. Rensa den fördefinierade tidszonen och välj en i listrutan. Om du använder en fast tidszon är den densamma för alla personer som deltar i resan.
 
-Gör så här: **[!UICONTROL Properties]** väljer du en tidszon.
+Om du vill göra det i **[!UICONTROL Properties]** väljer du en tidszon.
 
 ![](../assets/journey72.png)
 
 ## Använda profiler för att definiera resetidszonen {#timezone-from-profiles}
 
-Om resans inträde-händelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid i Adobe Experience Platform, kanske du vill använda den tidszon som har definierats på profilnivån. Gör så här: **Egenskaper**, kontrollera **Använd profilens tidszon i väntetider och villkor**. Det här alternativet är inte markerat som standard.
+Om resans inträde-händelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid i Adobe Experience Platform, kanske du vill använda den tidszon som har definierats på profilnivån. Om du vill göra det går du till **Egenskaper** och markerar **Använd profiltidszon i väntetider och villkor**. Det här alternativet är inte markerat som standard.
 
 Om en tidszon har definierats för en profil hämtas den och används av resan. Om så inte är fallet används tidszonen som definieras i tidszonsfältet.
 

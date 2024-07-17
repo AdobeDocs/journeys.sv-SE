@@ -1,7 +1,7 @@
 ---
 product: adobe campaign
 title: Avsluta aktivitet
-description: Läs mer om slutaktiviteten
+description: Lär dig mer om slutaktiviteten
 feature: Journeys
 role: User
 level: Intermediate
@@ -15,6 +15,6 @@ ht-degree: 11%
 
 # Avsluta aktivitet{#section_vqp_4ft_dgb}
 
-The **[!UICONTROL End]** kan du markera slutet på varje väg på resan. Det är inte obligatoriskt men rekommenderas för att synskärpan ska bli tydlig. Om resan har flera slutaktiviteter rekommenderar vi att du lägger till en etikett i varje ände för att göra rapporter enklare att läsa. Läs [den här sidan](../reporting/about-journey-reports.md).
+Med aktiviteten **[!UICONTROL End]** kan du markera slutet på varje väg på resan. Det är inte obligatoriskt men rekommenderas för att synskärpan ska bli tydlig. Om resan har flera slutaktiviteter rekommenderar vi att du lägger till en etikett i varje ände för att göra rapporter enklare att läsa. Läs [den här sidan](../reporting/about-journey-reports.md).
 
 ![](../assets/journey54.png)

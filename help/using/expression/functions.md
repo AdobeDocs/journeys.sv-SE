@@ -9,7 +9,7 @@ exl-id: b514d2e9-1444-46d5-a1ac-3591e62807c1
 source-git-commit: f0cb883a09d553bb47491b750fabde54c92f3225
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 75%
+ht-degree: 33%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 75%
 
 En funktion kan ha olika signaturer (en annan uppsättning ordnade parametrar). En funktionssignatur kan ha 0-N-uttryck som ordnade parametrar.
 
-`<function name>`(`<expression as param 1>`, `<expression as param 2>`, ... ,`<expression as param N>`)
+`<function name>`(`<expression as param 1>`, `<expression as param 2>`, ..., `<expression as param N>`)
 
 Varje funktion har en specifik returtyp.
 
@@ -25,18 +25,18 @@ Här är en lista över funktioner som stöds.
 
 ## Huvudfunktioner
 
-| Kategori |  -funktion |
+| Kategori | Funktion |
 |-------------|-----------------------|
 | Adobe Experience Platform | [inSegment](../functions/functioninsegment.md) |
-| Aggregera | [avg](../functions/functionavg.md) |
-| Aggregera | [count](../functions/functioncount.md) |
-| Aggregera | [countOnlyNull](../functions/functioncountonlynull.md) |
-| Aggregera | [countWithNull](../functions/functioncountwithnull.md) |
-| Aggregera | [distinctCount](../functions/functiondistinctcount.md) |
-| Aggregera | [distinctCountWithNull](../functions/functiondistinctcountwithnull.md) |
-| Aggregera | [max](../functions/functionmax.md) |
-| Aggregera | [min](../functions/functionmin.md) |
-| Aggregera | [sum](../functions/functionsum.md) |
+| Aggregering | [avg](../functions/functionavg.md) |
+| Aggregering | [count](../functions/functioncount.md) |
+| Aggregering | [countOnlyNull](../functions/functioncountonlynull.md) |
+| Aggregering | [countWithNull](../functions/functioncountwithnull.md) |
+| Aggregering | [distinctCount](../functions/functiondistinctcount.md) |
+| Aggregering | [distinctCountWithNull](../functions/functiondistinctcountwithnull.md) |
+| Aggregering | [max](../functions/functionmax.md) |
+| Aggregering | [min](../functions/functionmin.md) |
+| Aggregering | [sum](../functions/functionsum.md) |
 | Konvertering | [toBool](../functions/functiontobool.md) |
 | Konvertering | [toDateOnly](../functions/functiontodateonly.md) |
 | Konvertering | [toDateTime](../functions/functiontodatetime.md) |
@@ -64,7 +64,7 @@ Här är en lista över funktioner som stöds.
 | Lista | [filter](../functions/functionfilter.md) |
 | Lista | [getListItem](../functions/functiongetlistitem.md) |
 | Lista | [in](../functions/functionin.md) |
-| Lista | [korsa](../functions/functionintersect.md) |
+| Lista | [överlappa](../functions/functionintersect.md) |
 | Lista | [listSize](../functions/functionlistsize.md) |
 | Lista | [serializeList](../functions/functionserializelist.md) |
 | Lista | [sort](../functions/functionsort.md) |
@@ -80,7 +80,7 @@ Här är en lista över funktioner som stöds.
 | Sträng | [isEmpty](../functions/functionisempty.md) |
 | Sträng | [isNotEmpty](../functions/functionisnotempty.md) |
 | Sträng | [lastIndexOf](../functions/functionlastindexof.md) |
-| Sträng | [längd](../functions/functionlength.md) |
+| Sträng | [length](../functions/functionlength.md) |
 | Sträng | [lower](../functions/functionlower.md) |
 | Sträng | [matchRegExp](../functions/functionmatchregexp.md) |
 | Sträng | [notEqualIgnoreCase](../functions/functionnotequalignorecase.md) |

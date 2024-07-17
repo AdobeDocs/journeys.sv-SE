@@ -8,56 +8,56 @@ level: Intermediate
 exl-id: ffec0d42-8632-4806-97df-da2a2372ca53
 source-git-commit: 3a0fc5cd6b7bc4177ab50986b11b020a11a72c9b
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
 
-# Om ExperienceEvent-scheman för [!DNL Journey Orchestration] Händelser
+# Om ExperienceEvent-scheman för [!DNL Journey Orchestration]-händelser
 
-[!DNL Journey Orchestration] -händelser är XDM Experience Events som skickas till Adobe Experience Platform via Streaming Ingmit.
+[!DNL Journey Orchestration] händelser är XDM Experience Events som skickas till Adobe Experience Platform via Streaming Ingtake.
 
-Därför är en viktig förutsättning för att skapa händelser för [!DNL Journey Orchestration] är att du känner till Adobe Experience Platform Experience Data Model (eller XDM) och hur du skapar XDM Experience Event-scheman samt hur du direktuppspelar XDM-formaterade data till Adobe Experience Platform.
+En viktig förutsättning för att du ska kunna konfigurera händelser för [!DNL Journey Orchestration] är att du känner till Adobe Experience Platform Experience Data Model (eller XDM) och hur du skapar XDM Experience Event-scheman samt hur du direktuppspelar XDM-formaterade data till Adobe Experience Platform.
 
-## Schemakrav för [!DNL Journey Orchestration] Händelser
+## Schemakrav för [!DNL Journey Orchestration]-händelser
 
-Det första steget i att konfigurera en händelse för [!DNL Journey Orchestration] är att se till att du har ett definierat XDM-schema för att representera händelsen och en datauppsättning som skapas för att registrera instanser av händelsen på Adobe Experience Platform. Det är inte helt nödvändigt att ha en datauppsättning för dina händelser, men om du skickar händelserna till en viss datauppsättning kan du behålla användarens händelsehistorik för framtida referens och analyser, så det är alltid en bra idé. Om du inte redan har ett lämpligt schema och datamängd för händelsen kan båda dessa åtgärder utföras i Adobe Experience Platform webbgränssnitt.
+Det första steget i att konfigurera en händelse för [!DNL Journey Orchestration] är att se till att du har ett definierat XDM-schema som representerar händelsen och en datauppsättning som skapats för att registrera instanser av händelsen på Adobe Experience Platform. Det är inte helt nödvändigt att ha en datauppsättning för dina händelser, men om du skickar händelserna till en viss datauppsättning kan du behålla användarens händelsehistorik för framtida referens och analyser, så det är alltid en bra idé. Om du inte redan har ett lämpligt schema och datamängd för händelsen kan båda dessa åtgärder utföras i Adobe Experience Platform webbgränssnitt.
 
 ![](../assets/schema1.png)
 
-Alla XDM-scheman som ska användas för [!DNL Journey Orchestration] ska uppfylla följande krav:
+Alla XDM-scheman som används för [!DNL Journey Orchestration]-händelser ska uppfylla följande krav:
 
 * Schemat måste vara av klassen XDM ExperienceEvent.
 
-   ![](../assets/schema2.png)
+  ![](../assets/schema2.png)
 
-* För systemgenererade händelser måste schemat innehålla Orchestration-händelseID-mixin. [!DNL Journey Orchestration] använder det här fältet för att identifiera händelser som används under resor.
+* För systemgenererade händelser måste schemat innehålla Orchestration-händelseID-mixin. [!DNL Journey Orchestration] använder det här fältet för att identifiera händelser som används i resor.
 
-   ![](../assets/schema3.png)
+  ![](../assets/schema3.png)
 
 * Deklarera ett identitetsfält för att identifiera föremålet för händelsen. Om ingen identitet anges kan en identitetskarta användas. Detta rekommenderas inte.
 
-   ![](../assets/schema4.png)
+  ![](../assets/schema4.png)
 
 * Om du vill att dessa data ska vara tillgängliga för sökning senare i en resa markerar du schemat och datauppsättningen för profil.
 
-   ![](../assets/schema5.png)
+  ![](../assets/schema5.png)
 
-   ![](../assets/schema6.png)
+  ![](../assets/schema6.png)
 
 * Du kan inkludera datafält för att samla in andra kontextdata som du vill inkludera med händelsen, till exempel information om användaren, enheten som händelsen genererades från, plats eller andra meningsfulla omständigheter som rör händelsen.
 
-   ![](../assets/schema7.png)
+  ![](../assets/schema7.png)
 
-   ![](../assets/schema8.png)
+  ![](../assets/schema8.png)
 
 ## Utnyttja schemarelationer{#leverage_schema_relationships}
 
 Med Adobe Experience Platform kan du definiera relationer mellan scheman för att kunna använda en datauppsättning som en uppslagstabell för en annan.
 
-Låt oss säga att er varumärkesdatamodell har ett schema som fångar upp inköp. Du har också ett schema för produktkatalogen. Du kan hämta produkt-ID:t i inköpsschemat och använda en relation för att söka efter mer fullständig produktinformation från produktkatalogen. På så sätt kan du skapa ett segment för alla kunder som köpte en bärbar dator, till exempel, utan att behöva göra en explicit lista över alla bärbara ID:n eller hämta alla produktdetaljer i transaktionssystem.
+Låt oss säga att er varumärkesdatamodell har ett schema som fångar upp inköp. Du har också ett schema för produktkatalogen. Du kan hämta produkt-ID:t i inköpsschemat och använda en relation för att söka efter mer fullständig produktinformation från produktkatalogen. Detta gör att du kan skapa ett segment för alla kunder som köpte en bärbar dator, till exempel, utan att behöva göra en explicit lista över alla bärbara ID:n eller hämta alla produktdetaljer i transaktionssystem.
 
-Om du vill definiera en relation måste du ha ett dedikerat fält i källschemat, i det här fallet fältet för produkt-ID i inköpsschemat. Det här fältet måste referera till produkt-ID-fältet i målschemat. Käll- och måltabellerna måste vara aktiverade för profiler och målschemat måste ha det gemensamma fältet definierat som sin primära identitet.
+Om du vill definiera en relation måste du ha ett dedikerat fält i källschemat, i det här fallet produkt-ID-fältet i inköpsschemat. Det här fältet måste referera till produkt-ID-fältet i målschemat. Käll- och måltabellerna måste vara aktiverade för profiler och målschemat måste ha det gemensamma fältet definierat som sin primära identitet.
 
 Här är produktkatalogschemat aktiverat för profilen med produkt-ID definierat som primär identitet.
 
@@ -69,13 +69,13 @@ Här är inköpsschemat med relationen definierad i produkt-ID-fältet.
 
 >[!NOTE]
 >
->Läs mer om schemarelationer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html?lang=en).
+>Läs mer om schemarelationer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html?lang=en).
 
 I Journey Orchestration kan du sedan använda alla fält från de länkade tabellerna:
 
 * när en enhetshändelse konfigureras, [Läs mer](../event/experience-event-schema.md#unitary_event_configuration)
-* vid användning av villkor under en resa, [Läs mer](../event/experience-event-schema.md#journey_conditions_using_event_context)
-* personalisering av anpassade åtgärder, [Läs mer](../event/experience-event-schema.md#custom_action_personalization_with_journey_event_context)
+* [Läs mer](../event/experience-event-schema.md#journey_conditions_using_event_context) när villkor används i en resa
+* i anpassad åtgärdspersonalisering, [Läs mer](../event/experience-event-schema.md#custom_action_personalization_with_journey_event_context)
 
 ### Konfiguration av Unitary-händelse{#unitary_event_configuration}
 
@@ -91,7 +91,7 @@ De länkade fälten är inte tillgängliga:
 * i händelsenyckelformeln
 * händelse-id-villkor (regelbaserade händelser)
 
-Mer information om hur du konfigurerar en enhetshändelse finns i detta [page](../event/about-creating.md).
+Mer information om hur du konfigurerar en enhetshändelse finns på [sidan](../event/about-creating.md).
 
 ### Resevillkor med händelsetyp{#journey_conditions_using_event_context}
 
@@ -101,7 +101,7 @@ Lägg till ett villkor i en resa, redigera uttrycket och visa händelsnoden i ut
 
 ![](../assets/schema12.png)
 
-Mer information om hur du definierar resevillkor finns i detta [page](../building-journeys/condition-activity.md).
+Mer information om hur du definierar resevillkor finns på [sidan](../building-journeys/condition-activity.md).
 
 ### Åtgärdspersonalisering med reseventsammanhang{#custom_action_personalization_with_journey_event_context}
 
@@ -109,5 +109,5 @@ De länkade fälten är tillgängliga när åtgärdsparametrarna för en reseåt
 
 ![](../assets/schema13.png)
 
-Mer information om hur du använder anpassade åtgärder finns i [page](../building-journeys/using-custom-actions.md).
+Mer information om hur du använder anpassade åtgärder finns på [sidan](../building-journeys/using-custom-actions.md).
 

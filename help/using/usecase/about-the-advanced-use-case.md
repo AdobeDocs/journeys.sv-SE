@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: 43435aee-572d-4db2-88d5-6124ce074285
 source-git-commit: 579e5a0dbdc11369248c2683c399b090130a7262
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 4%
+source-wordcount: '411'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ## Syfte {#purpose}
 
-Låt oss ta ett exempel på ett hotellvarumärke som heter Marlton. På sina hotell har de placerat beacon-enheter nära alla strategiska områden: lobby, golv, restaurang, gym, pool osv.
+Låt oss ta ett exempel på ett hotellvarumärke som heter Marlton. På sina hotell har de placerat ut beacon-enheter nära alla strategiska områden: lobby, golv, restaurang, gymmet, pool osv.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Låt oss ta ett exempel på ett hotellvarumärke som heter Marlton. På sina hot
 
 I det här fallet kommer vi att se hur vi kan skicka personaliserade meddelanden i realtid till kunder när de är nära en viss beacon.
 
-Först och främst vill vi skicka ett meddelande så snart en person kommer in på ett Marlton-hotell. Vi vill bara skicka ett meddelande om personen inte har fått något meddelande från oss inom de senaste 24 timmarna.
+Först och främst vill vi skicka ett meddelande så snart en person kommer in på ett Marlton-hotell. Vi vill bara skicka ett meddelande om personen inte har fått något meddelande från oss inom det senaste dygnet.
 
 Sedan kontrollerar vi två villkor:
 
@@ -48,11 +48,11 @@ Vi måste konfigurera en anslutning till två datakällor (se [den här sidan](.
 
 ## Krav {#prerequisites}
 
-Vi har utformat tre mallar för transaktionsmeddelanden från Adobe Campaign Standard. Vi använder mallar för händelsetransaktioner. Se detta [page](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
+Vi har utformat tre mallar för transaktionsmeddelanden från Adobe Campaign Standard. Vi använder mallar för händelsetransaktioner. Se den här [sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
 
-Adobe Campaign Standard är konfigurerat att skicka e-post och push-meddelanden.
+Adobe Campaign Standard är konfigurerat för att skicka e-post och push-meddelanden.
 
-Experience Cloud ID används som nyckel för att identifiera kunden i hotellbokningssystemet.
+Experience Cloud-ID används som nyckel för att identifiera kunden i hotellbokningssystemet.
 
 Händelser skickas från kundens mobiltelefon när de upptäcks nära en fyr. Du måste utforma ett mobilprogram för att kunna skicka händelser från kundens mobiltelefon till Mobile SDK.
 

@@ -21,28 +21,28 @@ Den här blandningen används i reseschemat (i relation till travelStepEvent). D
 
 ID för huvudresan.
 
-Typ: string
+Typ: sträng
 
 ## travelVersionID
 
 ID för reseversionen. Detta ID representerar identiteten på en resa.
 
-Typ: string
+Typ: sträng
 
 ## name
 
 Namn på resan.
 
-Typ: string
+Typ: sträng
 
 ## description
 
 Beskrivning av resan.
 
-Typ: string
+Typ: sträng
 
 ## version
 
 Version, representerad som `major`.`minor`
 
-Typ: string
+Typ: sträng
