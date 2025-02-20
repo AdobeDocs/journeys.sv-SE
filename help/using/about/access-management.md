@@ -1,15 +1,15 @@
 ---
 product: adobe campaign
 title: Åtkomsthantering
-description: Läs mer om åtkomsthantering
+description: Läs mer om åtkomsthantering.
 feature: Journeys
 role: User
 level: Intermediate
 exl-id: a551efa5-c0d8-4138-96ca-fb407fad8c59
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: cf9bc6db0627eb0dba57e30652bba5ac8783cb55
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 94%
+ht-degree: 86%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 
 Med [!DNL Journey Orchestration] kan du tilldela en uppsättning behörigheter till dina användare för att definiera vilken del av gränssnittet de ska kunna komma åt.
 
-De kan hanteras av administratörer som har åtkomst till Admin Console. Se den här [dokumentationen](https://helpx.adobe.com/se/enterprise/managing/user-guide.html) för mer information om Admin Console.
+De kan hanteras av administratörer som har tillgång till Admin Console. Mer information om Admin Console finns i [Administratörshandboken för Enterprise och team](https://helpx.adobe.com/se/enterprise/managing/user-guide.html).
 
 För att få åtkomst till [!DNL Journey Orchestration] måste användaren vara:
 
@@ -71,7 +71,7 @@ Se [dokumentationen om Adobe Experience Platform](https://experienceleague.adobe
 
 Så här skapar du en produktprofil och tilldelar en uppsättning behörigheter och sandlådor:
 
-1. Välj **[!UICONTROL Journey Orchestration]** i Admin Console. Klicka på **[!UICONTROL New Profile]** på fliken **[!UICONTROL Product profile]**.
+1. I Admin Console väljer du **[!UICONTROL Journey Orchestration]**. Klicka på **[!UICONTROL New Profile]** på fliken **[!UICONTROL Product profile]**.
 
    ![](../assets/do-not-localize/user_management_5.png)
 
