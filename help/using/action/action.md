@@ -6,10 +6,10 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 34f7666b-1c91-4edd-b5d6-4c0513b9c4f3
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 4f6c5f9326b4d1cc4a1a02a036b51e4ad1ae68c4
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 84%
+source-wordcount: '282'
+ht-degree: 83%
 
 ---
 
@@ -42,4 +42,3 @@ Om du har Adobe Campaign v7 eller v8 blir en integrering tillgänglig på begär
 
 Om du använder ett tredjepartssystem för att skicka meddelanden såsom Epsilon, Facebook, Adobe.io, Firebase osv. måste du lägga till och konfigurera en anpassad åtgärd. Se [den här sidan](../action/about-custom-action-configuration.md).
 
-Titta på den här [videosjälvstudiekursen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/journey-orchestration/configure-actions.html) för att få mer information om hur du konfigurerar en åtgärd för [!DNL Journey Orchestration] och hur den används under en resa.

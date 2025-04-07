@@ -6,9 +6,9 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: 53e4d6af0e3d5fa2f3870802dc67c6200fec3ce8
+source-git-commit: 4f6c5f9326b4d1cc4a1a02a036b51e4ad1ae68c4
 workflow-type: tm+mt
-source-wordcount: '4462'
+source-wordcount: '4452'
 ht-degree: 35%
 
 ---
@@ -322,7 +322,7 @@ Funktionerna [getListItem](../functions/functiongetlistitem.md) och [split](../f
 <li>förenkla utformningen av mycket komplexa resor genom att dela upp dem i flera. </li>
 <li>bygga resor baserat på gemensamma och återanvändbara resemönster</li>
 </ul>
-<p>Mer information finns i videon <a href="../building-journeys/jump.md">Detaljerad dokumentation</a> och <a href="https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/building-a-journey/jumping-to-another-journey.html">självstudiekurs</a>.</p>
+<p>Mer information finns i den <a href="../building-journeys/jump.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -724,8 +724,3 @@ Bygg en orkestrering i realtid med hjälp av kontextuella data lagrade i händel
 Journey Orchestration möjliggör orkestrering i realtid som bygger på kontextuella data från händelser, information från Adobe Experience Platform eller data från API-tjänster från tredje part. I flöden med flera steg, som kallas för resor, fastställer programmet vilka som är bästa åtgärder för konsumenten utifrån hans/hennes profil och beteende. Detta omfattar både den optimala tidpunkten och typen av åtgärd. Sådana åtgärder kan vara att skicka ett push-meddelande till konsumenten via funktionen transaktionsmeddelanden i Adobe Campaign Standard (kräver Adobe Campaign Standard) eller ett meddelande från en tredje part. Dessa beslut fattas utifrån regler och Sensei-poäng.
 
 [Läs mer](../action/working-with-adobe-campaign.md) om Journey Orchestration
-
-Ytterligare resurser:
-
-* [Självstudiekurser](https://experienceleague.adobe.com/docs/platform-learn/tutorials/journey-orchestration/introduction.html)
-* [Community](https://www.adobe.com/go/journeyorchestrationcommunity)

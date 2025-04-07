@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: ac5d2cec-0b48-4863-afe3-19ac5f61c9fd
-source-git-commit: af224593ca69f79c3e4458f26f77b92197ad73a2
+source-git-commit: 4f6c5f9326b4d1cc4a1a02a036b51e4ad1ae68c4
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '992'
 ht-degree: 96%
 
 ---
@@ -83,7 +83,6 @@ Du kan även läsa [versionsinformationen](../release-notes/release-notes.md) om
 
 ## Juli 2020 {#july-2020}
 
-* En länk till en ny självstudievideo har lagts till som visar stegen hur du rapporterar till Adobe Experience Platform. [Läs mer](../building-journeys/sharing-overview.md)
 * Avsnittet Händelseaktiviteter har omorganiserats i dedikerade underavsnitt för varje typ av händelser. [Läs mer](../building-journeys/event-activities.md)
 * Bästa praxis har lagts till för att undvika överbelastning med segmentkvalificering. [Läs mer](../building-journeys/segment-qualification-events.md#speed-segment-qualification)
 * En anteckning har lagts till som förklarar hur en resa fortsätter efter ett fel i en åtgärd eller ett villkor. [Läs mer](../about/troubleshooting.md#section_h3q_kqk_fhb)

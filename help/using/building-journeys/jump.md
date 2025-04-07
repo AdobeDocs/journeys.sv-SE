@@ -6,9 +6,9 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 520376aa-2cb5-46d6-8f21-3e03544f5da1
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 4f6c5f9326b4d1cc4a1a02a036b51e4ad1ae68c4
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '777'
 ht-degree: 3%
 
 ---
@@ -23,10 +23,6 @@ ht-degree: 3%
 Lägg bara till en **[!UICONTROL Jump]**-aktivitet och välj en målresa i den ursprungliga resan. När personen går in i steget **[!UICONTROL Jump]** skickas en intern händelse till den första händelsen i målresan. Om åtgärden **[!UICONTROL Jump]** lyckas fortsätter personen att göra framsteg i resan. Beteendet liknar andra åtgärder.
 
 Under målresan kommer den första händelsen som utlöses internt av aktiviteten **[!UICONTROL Jump]** att få det enskilda flödet i resan.
-
->[!NOTE]
->
->Se även självstudievideon [här](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/building-a-journey/jumping-to-another-journey.html)
 
 ## Livscykel
 
