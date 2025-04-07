@@ -7,16 +7,23 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: b1964a3c-9ed4-4ec4-b399-567b1d6a120f
-source-git-commit: d9d41f2fbde16237257a95b3b396fcbe5261e390
+source-git-commit: 6a5226ea0f7b5a87f236eeac108737fc69d4f9c8
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 100%
+source-wordcount: '206'
+ht-degree: 78%
 
 ---
 
 # Användarhandbok för Journey Orchestration {#journeys-documentation}
 
 <!--![](using/assets/do-not-localize/bannerjourney.png) -->
+
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} om du vill ha Journey Optimizer-dokumentation.
+>
+>Denna dokumentation avser äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer.
+
 
 ## Komma igång
 

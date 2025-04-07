@@ -6,16 +6,22 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: b923f7e3-997b-483b-b6ac-eef62fc81a84
-source-git-commit: bb74c7dc1ebad0a707b830602a8d0b33e8443a5d
+source-git-commit: 6a5226ea0f7b5a87f236eeac108737fc69d4f9c8
 workflow-type: tm+mt
-source-wordcount: '4418'
-ht-degree: 36%
+source-wordcount: '4463'
+ht-degree: 35%
 
 ---
 
 # Versionsinformation {#release-notes}
 
-På den här sidan visas alla nya funktioner och förbättringar för Journey Orchestration. Mer information om funktionerna i Experience Platform finns i följande [versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html).
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} om du vill ha Journey Optimizer-dokumentation.
+>
+>Denna dokumentation avser äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer.
+
+På den här sidan visas alla nya funktioner och förbättringar för Journey Orchestration. Information om Experience Platform-funktioner finns i följande [versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html).
 
 >[!NOTE]
 >
@@ -149,7 +155,7 @@ När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad. 
 
 ### Förbättringar
 
-* Journey Orchestration-stegshändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). Fältet **profileID**, i det inbyggda händelseschemat för kundsteg, har nu definierats som ett identitetsfält. [Läs mer](../building-journeys/sharing-overview.md#integration-cja)
+* Journey Orchestration steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). Fältet **profileID**, i det inbyggda händelseschemat för kundsteg, har nu definierats som ett identitetsfält. [Läs mer](../building-journeys/sharing-overview.md#integration-cja)
 * Begränsningsregeln för Adobe Campaign Standard-åtgärder har ändrats till 4 000 anrop/5 minuter. [Läs mer](../action/working-with-adobe-campaign.md)
 
 ## Oktober 2021-versionen {#october-2021-release}
@@ -232,7 +238,7 @@ När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad. 
 <tr>
 <td>
 <p>Integrationen med Adobe Campaign Classic är nu GA. Det gör att du kan skicka e-post, push-meddelanden och SMS med hjälp av funktionerna för transaktionsmeddelanden i Adobe Campaign v7 eller v8.</p>
-<p>Anslutningen mellan Journey Orchestration och Campaign-instansen konfigureras av Adobe vid etableringstidpunkten.</p>
+<p>Anslutningen mellan Journey Orchestration- och Campaign-instanserna konfigureras av Adobe vid etableringstidpunkten.</p>
 <p>Mer information finns i den <a href="../action/acc-action.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -349,7 +355,7 @@ Funktionerna [getListItem](../functions/functiongetlistitem.md) och [split](../f
 <tbody>
 <tr>
 <td>
-<p>Det finns nu en ny metod för att enklare konfigurera händelser, utan att använda ett eventID: regelbaserade händelser utvärderar om händelsen ska utlösas enligt ett villkor. Du kan fortfarande använda den befintliga metoden, som nu kallas"systemgenererad". Den här funktionen, som har testats bland ett begränsat antal kunder genom programmet Alpha, är nu tillgänglig i Beta för alla kunder.
+<p>Det finns nu en ny metod för att enklare konfigurera händelser, utan att använda ett eventID: regelbaserade händelser utvärderar om händelsen ska utlösas enligt ett villkor. Du kan fortfarande använda den befintliga metoden, som nu kallas"systemgenererad". Den här funktionen, som har testats bland ett begränsat antal kunder genom Alpha-programmet, är nu tillgänglig i Beta för alla kunder.
 </p>
 </td>
 </tr>
@@ -360,7 +366,7 @@ Funktionerna [getListItem](../functions/functiongetlistitem.md) och [split](../f
 
 Begränsningar har lagts till när nya versioner av en resa skapas. Dessa begränsningar förhindrar alltför stora förändringar i kundresan för att bibehålla en viss enhetlighet mellan versionerna. [Läs mer](../about/limitations.md#journey-versions-limitations)
 
-Aktiviteten **Segmentkvalificering** kan inte längre användas i en resa som innehåller meddelandeaktiviteter för Campaign Standarder. Den här begränsningen skyddar integriteten för Adobe Campaign Standard-instanser. Användningen av Segmentkvalificering kan faktiskt leda till dagliga toppar av meddelanden som skulle överbelasta Campaign Standarden Transactional Messaging. [Läs mer](../about/limitations.md#segment-qualification)
+Aktiviteten **Segmentkvalificering** kan inte längre användas i en resa som innehåller Campaign Standard meddelandeaktiviteter. Den här begränsningen skyddar integriteten för Adobe Campaign Standard-instanser. Användningen av Segmentkvalificering kan faktiskt leda till dagliga toppar av meddelanden som skulle överbelasta Campaign Standard Transactional Messaging. [Läs mer](../about/limitations.md#segment-qualification)
 
 ## Oktober 2020-versionen {#october-release}
 
@@ -452,7 +458,7 @@ Nyttolasten för segments kvalificeringshändelser innehåller nu följande samm
 <ul>
 <li><p>Aktivitetens namn har ändrats till ”Läsa segment”. </p>
 </li>
-<li><p>Konfigurationen av resans schemaläggare har tagits bort från aktivitetens egenskaper. Den är nu tillgänglig direkt från resans egenskaper i ett dedikerat avsnitt som visas om aktiviteten Läsa segment har placerats på arbetsytan. </p>
+<li><p>Konfigurationen av transportschemaläggaren har tagits bort från aktivitetens egenskaper. Den är nu tillgänglig direkt från resans egenskaper i ett dedikerat avsnitt som visas om aktiviteten Läsa segment har placerats på arbetsytan. </p>
 </li>
 <li><p>Du kan nu testa resan med en enhetlig profil och följa förloppet i den med hjälp av det visuella flödet.</p>
 </li>
@@ -486,7 +492,7 @@ Nyttolasten för segments kvalificeringshändelser innehåller nu följande samm
 </tbody>
 </table>
 
-## Alpha - juli 2020 {#alpha-release---july-2020}
+## Alpha-version - juli 2020 {#alpha-release---july-2020}
 
 Programmets alfaversion har funktioner som för närvarande testas bland ett begränsat antal kunder. På så sätt kan vi förbättra vår produkt baserat på den feedback vi får. De här funktionerna är inte tillgängliga för alla kunder som använder Journey Orchestration.
 
@@ -561,7 +567,7 @@ Programmets alfaversion har funktioner som för närvarande testas bland ett beg
 <li><p>En ny aktivitet tillåter avläsning av ett segments ingångar/utgångar i Adobe Experience Platform för att få människor att komma in i eller gå framåt i en resa. <a href="../building-journeys/segment-qualification-events.md">Läs mer</a></p>
 <img src="../assets/rn-segment7.png"/>
 </li>
-<li><p>Adobe Experience Platform-segment kan nu skapas och redigeras utan att du behöver lämna Journey Orchestration-gränssnittet, tack vare en ny <strong>segmentflik</strong> . <a href="../segment/about-segments.md">Läs mer</a></p>
+<li><p>Adobe Experience Platform-segment kan nu skapas och redigeras utan att lämna Journey Orchestration-gränssnittet, tack vare den nya fliken <strong>Segment</strong> . <a href="../segment/about-segments.md">Läs mer</a></p>
 <img src="../assets/rn-segment1.png"/>
 </li>
 <li><p>I den enkla uttrycksredigeraren visas nu Adobe Experience Platform-segment direkt i navigeringsträdet för att göra det möjligt att enkelt konfigurera villkor som"tillhör den här personen segment A?". <a href="../segment/using-a-segment.md">Läs mer</a></p>
