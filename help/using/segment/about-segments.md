@@ -6,14 +6,23 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 94e1e3e3-9a46-41ca-bec1-f41287925372
-source-git-commit: e5c0db2e1f85ea72fd54f91e4a26cc287377fb0e
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # Om Adobe Experience Platform-segment {#about-segments}
+
+
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>
+>
+>_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
 
 Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html) för att skapa dina segment kan du utnyttja dem i [!DNL Journey Orchestration]. Tack vare en dedikerad eventaktivitet kan du få individer att komma in på eller gå framåt i en resa baserat på Adobe Experience Platform segmentingångar och utgångar. På så sätt kan du även skapa komplexa villkor i dina resor med den enkla eller avancerade uttrycksredigeraren.
 

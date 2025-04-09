@@ -6,14 +6,23 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 2f001e42-46dd-48aa-b3dd-23bfdf97e1c7
-source-git-commit: a7a49113a8b53e9c15123e788d50bb72310d949d
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 5%
+source-wordcount: '1474'
+ht-degree: 4%
 
 ---
 
 # Använda resedesignern {#concept_m1g_5qt_52b}
+
+
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>
+>
+>_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
 
 På hemmenyn för resan kan du visa **listan över resor**. Skapa en ny resa eller klicka på en befintlig för att öppna **resedesignerns gränssnitt**. Designern består av följande zoner: paletten, arbetsytan och aktivitetskonfigurationsrutan.
 

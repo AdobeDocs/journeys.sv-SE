@@ -1,35 +1,44 @@
 ---
 product: adobe campaign
 title: Datatyper
-description: Läs mer om datatyper i avancerade uttryck
+description: Lär dig mer om datatyper i avancerade uttryck
 feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 343f61b8-2315-4971-8b2b-6aa815bd9ced
-source-git-commit: 5225045f02fb1b2a8505756d9d7f6f60a32b3ed6
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 4%
+source-wordcount: '656'
+ht-degree: 3%
 
 ---
 
 # Datatyper {#concept_gp3_rj5_dgb}
 
+
+>[!CAUTION]
+>
+>**Letar du efter Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för dokumentation om Journey Optimizer.
+>
+>
+>_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
+
 Tekniskt sett innehåller en konstant alltid en datatyp. I det litterala uttrycket anger vi bara värdet. Datatypen kan härledas från värdet (t.ex. sträng, heltal, decimal). I särskilda fall, till exempel datum och tid, använder vi dedikerade funktioner för representationen.
 
 Avsnitten nedan innehåller information om de olika datatypsuttrycken och hur de återges.
 
-## string {#string}
+## sträng {#string}
 
 **Beskrivning**
 
-Vanlig teckensekvens. Den har ingen specifik storlek förutom den som kommer från miljön, till exempel mängden tillgängligt minne.
+Vanlig sekvens av tecken. Den har ingen specifik storlek förutom den implicita som kommer från miljön, till exempel mängden tillgängligt minne.
 
 JSON-format: String
 
 Serialiseringsformat: UTF-8
 
-**Litteral representation**
+**Bokstavlig representation**
 
 ```json
 "<value>"
@@ -55,9 +64,9 @@ Serialiseringsformat: UTF-8
 
 Heltalsvärde från -2^63 till 2^63-1.
 
-JSON-format: Number
+JSON-format: Tal
 
-**Litteral representation**
+**Bokstavlig representation**
 
 ```json
 <integer value>
@@ -83,7 +92,7 @@ JSON-format: Number
 
 Serialiseringsformat: använder . som decimalavgränsare.
 
-**Litteral representation**
+**Bokstavlig representation**
 
 ```json
 <integer value>.<integer value>
@@ -101,9 +110,9 @@ Serialiseringsformat: använder . som decimalavgränsare.
 
 Booleskt värde skrivet med gemener: true eller false
 
-JSON-format: Boolean
+JSON-format: Boolesk
 
-**Litteral representation**
+**Bokstavlig representation**
 
 ```json
 true
@@ -119,11 +128,11 @@ false
 true
 ```
 
-## dateOnly {#date-only}
+## dateOnly{#date-only}
 
 **Beskrivning**
 
-Representerar endast ett datum utan tidszon, vilket visas som en dag i månaden.
+Representerar endast ett datum utan tidszon, sett som ett år-månad-dag.
 
 Det är en beskrivning av datumet, som används för födelsedagar.
 
@@ -135,7 +144,7 @@ Den kan kapslas in i en toDateOnly-funktion.
 
 Det använder DateTimeFormatter ISO_LOCAL_DATE_TIME för att avserialisera och serialisera värdet. [Läs mer](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6)
 
-**Litteral representation**
+**Bokstavlig representation**
 
 ```json
 date("<dateOnly in ISO-8601 format>")  
@@ -147,25 +156,25 @@ date("<dateOnly in ISO-8601 format>")
 date("2021-02-19")
 ```
 
-## dateTimeOnly {#date-time-only}
+## dateTimeOnly{#date-time-only}
 
 **Beskrivning**
 
-Representerar en datumtid utan tidszon, som visas som en millisekund för år-månad-timme-minut-sekund-millisekund.
+Representerar ett datum och tid utan tidszon, som visas som år-månad-dag-timme-minut-sekund-sekund.
 
-JSON-format: String.
+JSON-format: Sträng.
 
-Den lagrar inte eller representerar en tidszon. I stället är det en beskrivning av datumet, som används för födelsedagar, kombinerat med lokal tid enligt en väggklocka.
+Den varken lagrar eller representerar en tidszon. Istället är det en beskrivning av datumet, som används för födelsedagar, i kombination med den lokala tiden som ses på en väggklocka.
 
-Det kan inte representera en instans på tidslinjen utan ytterligare information som en förskjutning eller tidszon.
+Den kan inte representera ett ögonblick på tidslinjen utan ytterligare information, t.ex. en förskjutning eller tidszon.
 
-Den kan kapslas in i en toDateTimeOnly-funktion.
+Den kan kapslas in i en toDateTimeOnly funktion.
 
-Serialiseringsformat: ISO-8601 utökat förskjutningsformat för datum och tid.
+Serialiseringsformat: ISO-8601 utökat förskjutningsformat för datum/tid.
 
-Det använder DateTimeFormatter ISO_LOCAL_DATE_TIME för att avserialisera och serialisera värdet. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME&quot;)
+Den använder DateTimeFormatter ISO_LOCAL_DATE_TIME för att deserialisera och serialisera värdet. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME&quot;)
 
-**Litteral representation**
+**Bokstavlig representation**
 
 ```json
 date("<dateTimeOnly in ISO-8601 format>")  
@@ -178,7 +187,7 @@ date("2021-02-19T00.00.000")
 date("2021-02-19T00.00")
 ```
 
-## dateTime {#date-time}
+## dateTime (på engelska) {#date-time}
 
 **Beskrivning**
 
@@ -192,7 +201,7 @@ Den kan kapslas in i en toDateTime-funktion.
 
 Serialiseringsformat: ISO-8601 utökat förskjutningsformat för datum och tid.
 
-Det använder DateTimeFormatter ISO_OFFSET_DATE_TIME för att avserialisera och serialisera värdet. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE_TIME)
+Den använder DateTimeFormatter ISO_OFFSET_DATE_TIME för att deserialisera och serialisera värdet. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE_TIME)
 
 Du kan också skicka ett heltal som skickar ett epokvärde. [Läs mer](https://www.epochconverter.com)
 
@@ -246,19 +255,19 @@ toDateTime(1560762190189)
 
 **Beskrivning**
 
-Den representerar en tidsbaserad tidsmängd, till exempel &quot;34,5 sekunder&quot;. Den modellerar en kvantitet eller tid i millisekunder.
+Det representerar en tidsbaserad tid, till exempel &quot;34,5 sekunder&quot;. Den modellerar en kvantitet eller tid i millisekunder.
 
-De tidsenheter som stöds är: millisekunder, sekunder, minuter, timmar och dagar där en dag motsvarar 24 timmar. År och månader stöds inte eftersom de inte är en fast tidsmängd.
+De temporala enheter som stöds är: millisekunder, sekunder, minuter, timmar, dagar där en dag är lika med 24 timmar. År och månader stöds inte eftersom de inte är en fast tidsperiod.
 
-JSON-format: String.
+JSON-format: Sträng.
 
-Den måste kapslas in i en toDuration-funktion.
+Den måste kapslas in i en toDuration funktion.
 
-Serialiseringsformat: Om du vill deserialisera ett tidszons-ID använder du Java-funktionen java.time.
+Serialiseringsformat: Om du vill deserialisera ett tidszons-ID används java-funktionen java.time.
 
-Duration.parse: De format som accepteras baseras på varaktighetsformatet PnDTnHnMn.nS enligt ISO-8601 med dagar som anses vara exakt 24 timmar. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html#parse-java.lang.CharSequence-)
+Duration.parse: de format som accepteras baseras på ISO-8601-varaktighetsformatet PnDTnHnMn.nS med dagar som anses vara exakt 24 timmar. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html#parse-java.lang.CharSequence-)
 
-**Litteral representation**
+**Bokstavlig representation**
 
 ```json
 toDuration("<duration in ISO-8601 format>")
@@ -318,7 +327,7 @@ Kommaavgränsad lista med uttryck som använder hakparenteser som avgränsare.
 
 Polymorfism stöds inte, och därför bör alla uttryck i listan ha samma typ.
 
-**Litteral representation**
+**Bokstavlig representation**
 
 ```json
 [<expression>, <expression>, ... ]

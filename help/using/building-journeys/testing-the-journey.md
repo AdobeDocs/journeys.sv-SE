@@ -6,14 +6,23 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: be413905-0631-4229-a954-80a92651206d
-source-git-commit: 052ecdeb0813dcc2c4c870e8ec6b12676fbf60f1
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1619'
 ht-degree: 2%
 
 ---
 
 # Testa resan{#testing_the_journey}
+
+
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home) för Journey Optimizer-dokumentation.
+>
+>
+>_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
 
 Innan du kan testa din resa måste du åtgärda eventuella fel. Se [det här avsnittet](../about/troubleshooting.md#section_h3q_kqk_fhb).
 
@@ -169,7 +178,7 @@ Mer information om hur du använder testläget finns på [den här sidan](../bui
 
 ## Visa loggarna {#viewing_logs}
 
-Med knappen **[!UICONTROL Show log]** kan du visa testresultaten. På den här sidan visas resans aktuella information i JSON-format. Med en knapp kan du kopiera hela noder. Du måste uppdatera sidan manuellt för att kunna uppdatera resans testresultat.
+Med knappen **[!UICONTROL Show log]** kan du visa testresultaten. På den här sidan visas resans aktuella information i JSON-format. Med en knapp kan du kopiera hela noder. Du måste uppdatera sidan manuellt för att uppdatera resans testresultat.
 
 ![](../assets/journeytest3.png)
 
@@ -181,7 +190,7 @@ Antalet personer (tekniskt sett kallas de förekomster) som för närvarande bef
 
 * _ID_: Personens interna ID på resan. Detta kan användas i felsökningssyfte.
 * _aktuellt steg_: steget där personen befinner sig på resan. Vi rekommenderar att du lägger till etiketter till dina aktiviteter för att lättare kunna identifiera dem.
-* _aktuellt steg_ > fas: status för den enskilda personens resa (som körs, slutförd, fel eller timeout). Mer information finns nedan.
+* _aktuellt steg_ > fas: status för personens resa (som körs, slutfördes, fel eller timeout). Mer information finns nedan.
 * _currentStep_ > _extraInfo_: beskrivning av felet och annan sammanhangsberoende information.
 * _currentStep_ > _fetchErrors_: information om att hämta datafel som inträffade under det här steget.
 * _externalKeys_: värdet för nyckelformeln som definierats i händelsen.

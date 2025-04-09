@@ -7,20 +7,30 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: e39218bd-fa6e-443f-9843-92b7a07070fa
-source-git-commit: a9a129b1949d64c4a412d3ea4002b32e3563ea96
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1084'
 ht-degree: 5%
 
 ---
 
 # Integrering med externa system {#external-systems}
 
-På den här sidan visas de olika säkerhetsutkast som Journey Orchestration tillhandahåller när ett externt system integreras, liksom de bästa sätten: hur man optimerar skyddet för det externa systemet med API:t för appning, hur man konfigurerar tidsgränsen för resan och hur återförsök fungerar.
 
-I Journey Orchestration kan du konfigurera anslutningar till externa system via anpassade datakällor och anpassade åtgärder. På så sätt kan du t.ex. berika dina resor med data från ett externt bokningssystem eller skicka meddelanden med ett tredjepartssystem som Epsilon eller Facebook.
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>
+>
+>_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
 
-När du integrerar ett externt system kan du stöta på flera problem, systemet kan vara långsamt, det kan sluta svara eller så kanske det inte kan hantera en stor volym. Journey Orchestration erbjuder flera skyddsräcken för att skydda systemet från överbelastning.
+
+
+På den här sidan visas de olika säkerhetsutkast som Journey Orchestration ger när ett externt system integreras, liksom de bästa sätten: hur man optimerar skyddet för det externa systemet med API:t för appning, hur man konfigurerar tidsgränsen för resan och hur försök fungerar igen.
+
+Med Journey Orchestration kan du konfigurera anslutningar till externa system via anpassade datakällor och anpassade åtgärder. På så sätt kan du till exempel berika dina resor med data från ett externt bokningssystem eller skicka meddelanden med ett tredjepartssystem som Epsilon eller Facebook.
+
+När du integrerar ett externt system kan du stöta på flera problem, systemet kan vara långsamt, det kan sluta svara eller så kanske det inte kan hantera en stor volym. Journey Orchestration erbjuder flera skyddsräcken för att skydda datorn mot överbelastning.
 
 Alla externa system har olika prestanda. Du måste anpassa konfigurationen efter dina användningsfall.
 
@@ -34,11 +44,11 @@ När Journey Orchestration gör ett anrop till ett externt API körs de tekniska
 
 Det inbyggda Capping API:t erbjuder ett tekniskt skyddsräcke som hjälper till att skydda ditt externa system.
 
-För externa datakällor är det maximala antalet anrop per sekund satt till 15. Om antalet anrop överstiger 15 per sekund ignoreras de återstående samtalen. Du kan öka den här gränsen för privata externa datakällor. Kontakta Adobe för att inkludera slutpunkten i tillåtelselista. Detta är inte möjligt för offentliga externa datakällor.
+För externa datakällor är det maximala antalet anrop per sekund satt till 15. Om antalet anrop överstiger 15 per sekund ignoreras de återstående samtalen. Du kan öka den här gränsen för privata externa datakällor. Kontakta Adobe om du vill inkludera slutpunkten i tillåtelselista. Detta är inte möjligt för offentliga externa datakällor.
 
 För anpassade åtgärder måste du utvärdera kapaciteten för det externa API:t. Om Journey Optimizer t.ex. skickar 1 000 samtal per sekund och systemet bara har stöd för 100 samtal per sekund, måste du definiera en spärrregel så att systemet inte blir mättat.
 
-Takregler definieras på sandlådenivå för en specifik slutpunkt (URL:en anropas). Vid körning verifierar Journey Orchestration om det finns en definierad begränsningsregel och tillämpar den definierade hastigheten under anropen till den slutpunkten. Om antalet anrop överstiger den definierade hastigheten, ignoreras de återstående samtalen och räknas som fel i rapporteringen.
+Takregler definieras på sandlådenivå för en specifik slutpunkt (URL:en anropas). Vid körning verifierar Journey Orchestration om det finns en definierad begränsningsregel och tillämpar den definierade hastigheten vid anrop till den slutpunkten. Om antalet anrop överstiger den definierade hastigheten, ignoreras de återstående samtalen och räknas som fel i rapporteringen.
 
 En begränsningsregel är specifik för en slutpunkt men global för alla resor i en sandlåda. Detta innebär att takplatser delas mellan alla resor i en sandlåda.
 
@@ -58,7 +68,7 @@ Under den angivna tidsgränsen försöker Journey Orchestration anropa det exter
 
 Varje nytt försök använder en kortplats. Om du har ett tak på 100 samtal per sekund och vart och ett av dina samtal kräver två försök, kommer hastigheten att sänkas till 30 samtal per sekund (varje samtal använder 3 platser: det första samtalet och två försök).
 
-Tidsgränsvärdet beror på användningsfallet. Om du snabbt vill skicka ditt meddelande, till exempel när klienten kommer in i butiken, vill du inte ange en lång tidsgräns. Ju längre tidsgränsen är, desto fler objekt placeras i kö. Detta kan påverka prestandan avsevärt. Om Journey Orchestration utför 1 000 anrop per sekund kan systemet snabbt överbelastas om 5 eller 15 sekunder data sparas.
+Tidsgränsvärdet beror på användningsfallet. Om du snabbt vill skicka ditt meddelande, till exempel när klienten kommer in i butiken, vill du inte ange en lång tidsgräns. Ju längre tidsgränsen är, desto fler objekt placeras i kö. Detta kan påverka prestandan avsevärt. Om Journey Orchestration utför 1 000 anrop per sekund, kan det vara bra att lagra 5 eller 15 sekunder med data.
 
 Låt oss ta ett exempel i 5 sekunder.
 

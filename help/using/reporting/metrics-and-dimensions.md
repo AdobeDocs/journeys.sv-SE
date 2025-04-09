@@ -6,14 +6,23 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: f6897011-0a5e-4094-a18e-ba2aa25f902c
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1080'
 ht-degree: 0%
 
 ---
 
 # Mätvärden och dimensioner {#concept_rfj_wpt_52b}
+
+
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>
+>
+>_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
 
 >[!NOTE]
 >
@@ -34,7 +43,7 @@ Tabellen nedan visar en lista över de dimensioner som används i reserapporter,
 | **Åtgärd** | Lista över alla åtgärder (**åtgärdsnamn - åtgärdsetikett**) som används i resor, t.ex. Push - Checka ut bekräftelse, Email - Rewards-återgivning. |
 | **Datakälla** | Lista över datakällor (**datakällans namn**) som används för att förbättra data under en resa, t.ex. Adobe Experience Platform, Reservation System. |
 | **[!UICONTROL Event]** | Lista över alla händelser (**händelsenamn - händelseetikett**) som används i resor, t.ex. Geometrixx event - Geometrixx-utcheckning. |
-| **Fältgrupp** | Lista över fältgrupper (**fältgruppnamn**) som används för att förbättra data i resor, t.ex. profilfältgrupp, reservationssystem för Geometrixx. |
+| **Fältgrupp** | Lista över fältgrupper (**fältgruppnamn**) som används för att förbättra data i resor, t.ex. profilfältgrupp, Geometrixx reservationssystem. |
 | **Resa** | Lista över varje resa (**resenamn**) i testläge och live, t.ex. kundvagnsöverlämning, Hotel-reservationsmeddelande. |
 | **Resversion** | Lista över alla publicerade versioner av en resa (**kundens namn + versionens nummer**), t.ex. kundvagnens överlämnande v1, Hotel-reservationsmeddelande v2. |
 | **Orchestration** | Lista över alla koordinationsaktiviteter (**Condition, End, Wait**) som definierats och används i resor. |

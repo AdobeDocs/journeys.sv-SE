@@ -1,19 +1,28 @@
 ---
 product: adobe campaign
 title: Om det avancerade användningsfallet
-description: Läs mer om resan - avancerad fallstudie
+description: Lean more on the journey advanced use-case
 feature: Journeys
 role: User
 level: Intermediate
 exl-id: 43435aee-572d-4db2-88d5-6124ce074285
-source-git-commit: 579e5a0dbdc11369248c2683c399b090130a7262
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '456'
 ht-degree: 2%
 
 ---
 
 # Om det avancerade användningsfallet{#concept_vzy_ncy_w2b}
+
+
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home) för Journey Optimizer-dokumentation.
+>
+>
+>_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
 
 ## Syfte {#purpose}
 
@@ -25,11 +34,11 @@ Låt oss ta ett exempel på ett hotellvarumärke som heter Marlton. På sina hot
 
 I det här fallet kommer vi att se hur vi kan skicka personaliserade meddelanden i realtid till kunder när de är nära en viss beacon.
 
-Först och främst vill vi skicka ett meddelande så snart en person kommer in på ett Marlton-hotell. Vi vill bara skicka ett meddelande om personen inte har fått något meddelande från oss inom det senaste dygnet.
+First of all, we want to send a message as soon as a person enters a Marlton hotel. We want to send a message only if the person has not received any communication from us within the last 24 hours.
 
-Sedan kontrollerar vi två villkor:
+We then check two conditions:
 
-* Om den här personen inte är en lojalitetsmedlem skickar vi ett e-postmeddelande till dem där de kan gå med i erbjudandet om lojalitetsmedlemskap.
+* If this person is not a loyalty member, we send them an email to join the loyalty membership offer.
 * Om den här personen redan är en lojalitetsmedlem kontrollerar vi om han har en rumsreservation:
    * Om han inte gör det skickar vi ett push-meddelande till dem med rumstariffer.
    * Om han gör det skickar vi ett välkomstmeddelande till dem. Och om han kommer in på restaurangen inom 6 timmar skickar vi ett push-meddelande med rabatt på en måltid till dem.
@@ -43,8 +52,8 @@ I det här fallet måste vi skapa två händelser (se [den här sidan](../usecas
 
 Vi måste konfigurera en anslutning till två datakällor (se [den här sidan](../usecase/configuring-the-data-sources.md)):
 
-* Den inbyggda Adobe Experience Platform-datakällan för att hämta information om våra två villkor (lojalitetsmedlemskap och senaste kontaktdatum) samt information om meddelandepersonalisering.
-* Hotellbokssystemet för att hämta information om bokningsstatus.
+* The build-in Adobe Experience Platform data source, to retrieve the information for our two conditions (loyalty membership and last contact date) as well as the message personalization information.
+* The hotel reservation system, to retrieve the reservation status information.
 
 ## Krav {#prerequisites}
 
@@ -52,7 +61,7 @@ Vi har utformat tre mallar för transaktionsmeddelanden från Adobe Campaign Sta
 
 Adobe Campaign Standard är konfigurerat för att skicka e-post och push-meddelanden.
 
-Experience Cloud-ID används som nyckel för att identifiera kunden i hotellbokningssystemet.
+Experience Cloud-id:t används som nyckel för att identifiera kunden i hotellbokningssystemet.
 
 Händelser skickas från kundens mobiltelefon när de upptäcks nära en fyr. Du måste utforma ett mobilprogram för att kunna skicka händelser från kundens mobiltelefon till Mobile SDK.
 

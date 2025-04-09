@@ -7,16 +7,25 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 76afe397-3e18-4e01-9b0b-c21705927ce2
-source-git-commit: 7b8c9d2bfe244b040a9064a7a240ea6f43cc8b41
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 96%
+source-wordcount: '791'
+ht-degree: 91%
 
 ---
 
 # Arbeta med API:t för begränsning
 
-API:t för begränsning hjälper dig att skapa, konfigurera och övervaka dina begränsningskonfigurationer för att begränsa antalet händelser som skickas per sekund.
+
+>[!CAUTION]
+>
+>**Letar du efter Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för dokumentation om Journey Optimizer.
+>
+>
+>_Den här dokumentationen refererar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
+
+Begränsnings-API:et hjälper dig att skapa, konfigurera och övervaka dina begränsningskonfigurationer för att begränsa antalet händelser som skickas per sekund.
 
 >[!IMPORTANT]
 >

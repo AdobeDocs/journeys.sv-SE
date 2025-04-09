@@ -6,14 +6,24 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: c678ba01-c868-49f2-99f3-1abe0302779e
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 95%
+source-wordcount: '1075'
+ht-degree: 81%
 
 ---
 
 # Felsökning{#concept_nlv_bcv_2fb}
+
+
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>
+>
+>_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
+
 
 I det här avsnittet lär du dig att felsöka resor innan de testas eller publiceras. Alla kontroller som anges nedan kan utföras medan resan är i testläge eller när den är live. Rekommendationen är att göra alla kontroller nedan i testläget och sedan gå vidare till publiceringen. Läs [den här sidan](../building-journeys/testing-the-journey.md).
 
@@ -47,7 +57,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skickas inte direkt från källan till [!DNL Journey Orchestration]. [!DNL Journey Orchestration] förlitar sig faktiskt på API:er för strömningsinmatning i Adobe Experience Platform. Om det gäller händelserelaterade problem kan du därför hänvisa till [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html) för felsökning av API:er för direktuppspelning.
+Händelser skickas inte direkt från källan till [!DNL Journey Orchestration]. [!DNL Journey Orchestration] förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför hänvisa till [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html) för felsökning av API:er för direktuppspelning.
 
 ## Kontrollerar om någon kommer in på resan{#section_x4v_zzs_dgb}
 
@@ -85,4 +95,4 @@ Om enskilda personer flödar rätt väg i resan, men inte får meddelanden som d
 * Transaktionsmeddelanden har tagit korrekt hänsyn till begäran om att skicka meddelandet. En företagsanvändare kan komma åt det transaktionsmeddelande som ska skickas och kontrollera om tidpunkten för den senaste körningen motsvarar tidpunkten för körningen i din resa. Denne kan även kontrollera de senaste API-anropen/-händelserna som har tagits emot av transaktionsmeddelanden.
 * Transaktionsmeddelanden har skickat meddelandet. I loggarna om skickade transaktionsmeddelanden kan du se status för varje körning. Du kan se om den är grön eller röd och vad som var problemet. En företagsanvändare kan komma åt den här skärmen och skicka loggarna till en administratör för ytterligare undersökningar.
 
-Om ett meddelande skickas via en anpassad åtgärd är det enda som kan kontrolleras i resan det faktum att anropet till den anpassade åtgärdens system leder till ett fel eller inte. Det kan hända att anropet till det externa system som är kopplat till den anpassade åtgärden inte leder till ett fel men inte heller leder till att ett meddelande skickas. I dessa fall bör undersökningar utföras på det externa systemet.
+Om ett meddelande skickas via en anpassad åtgärd är det enda som kan kontrolleras under resan att anropet till den anpassade åtgärdens system leder till ett fel eller inte. Om anropet till det externa system som är kopplat till den anpassade åtgärden inte leder till ett fel, men inte leder till att ett meddelande skickas, bör vissa undersökningar utföras på den externa datorns sida.

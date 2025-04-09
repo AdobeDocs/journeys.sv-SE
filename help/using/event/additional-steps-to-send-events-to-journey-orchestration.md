@@ -1,19 +1,29 @@
 ---
 product: adobe campaign
 title: Ytterligare steg för att skicka händelser till Journey Orchestration
-description: Läs mer om hur du skickar händelser till Journey Orchestration
+description: Läs mer om hur du skickar event till Journey Orchestration
 feature: Journeys
 role: User
 level: Intermediate
 exl-id: 11e337c6-5e05-4898-9953-b6b821af8fd1
-source-git-commit: 185c2296a51f58e2092787edcc35ee9e4242bec8
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '350'
 ht-degree: 2%
 
 ---
 
 # Ytterligare steg för att skicka händelser till [!DNL Journey Orchestration] {#concept_xrz_n1q_y2b}
+
+
+
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>
+>
+>_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
 
 >[!NOTE]
 >
@@ -26,7 +36,7 @@ Om du vill konfigurera händelser som ska skickas till **[!UICONTROL Streaming I
 
 Sedan måste du konfigurera det datasystem som överför händelser till API:er för direktuppspelning av inmatning med den nyttolast som du kopierade:
 
-1. Konfigurera ett POST-API-anrop till API:n för direktuppspelning (kallas för ett inlopp).
+1. Konfigurera ett POST API-anrop till API:n för direktuppspelning (kallas för inlopp).
 1. Använd nyttolasten som du kopierade från [!DNL Journey Orchestration] i brödtexten (&quot;dataavsnittet&quot;) för API-anropet till API:er för direktuppspelningsinmatning. Se nedan för ett exempel
 1. Bestäm var alla variabler som finns i nyttolasten ska hämtas. Exempel: Om händelsen ska förmedla adressen visas&quot;adress&quot; i den inklistrade nyttolasten:&quot;sträng&quot;. &quot;string&quot; ska ersättas med variabeln som automatiskt fyller i rätt värde, e-postadressen till den person som meddelandet ska skickas till. Observera att vi automatiskt fyller i många värden som förväntas underlätta ditt arbete i nyttolastförhandsvisningen i avsnittet **[!UICONTROL Header]**.
 1. Välj &quot;application/json&quot; som en texttyp.

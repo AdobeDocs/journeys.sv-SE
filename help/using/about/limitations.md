@@ -1,35 +1,45 @@
 ---
 product: adobe campaign
 title: Journey Orchestration begränsningar
-description: Läs mer om begränsningar i Journey Orchestration
+description: Läs mer om Journey Orchestration begränsningar
 feature: Journeys
 role: User
 level: Beginner
 exl-id: fef039ae-c04d-4198-a082-4be27710255f
-source-git-commit: 861c6bd8ce65793b6009e220d88f105c75ea3008
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
 
 # Begränsningar {#limitations}
 
+
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>
+>
+>_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
+
+
 Här är begränsningar för användning av Journey Orchestration.
 
-## Allmänna skyddsräcken för resan {#journeys-guardrails-journeys}
+## Allmänna vägräcken {#journeys-guardrails-journeys}
 
-* Antalet aktiviteter under en resa är begränsat till 50. Antalet aktiviteter visas i den övre vänstra delen av arbetsytan.
-* Antalet **direktresor** i en organisation är begränsat till 100 per sandlåda. När den här gränsen har nåtts kan du inte längre publicera en ny resa.
+* Antalet aktiviteter i en resa är begränsat till 50. Antalet aktiviteter visas i den övre vänstra delen av researbetsytan.
+* **Antalet liveresor** i en organisation är begränsat till 100 per sandbox. När den här gränsen har nåtts kan du inte längre publicera en ny resa.
 
-## Allmänna åtgärdsbegränsningar
+## Begränsningar för allmänna åtgärder
 
-* Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. 
-* Den inbyggda **Reaction**-händelsen gör att du kan reagera på åtgärder som inte är i kartong (se den här [sidan](../building-journeys/reaction-events.md)). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse. 
+* Tre återförsök utförs systematiskt i händelse av ett fel. Du kan inte justera antalet återförsök enligt det mottagna felmeddelandet. 
+* Med den inbyggda **reaktionshändelsen** kan du reagera på färdiga åtgärder (se den här [sidan](../building-journeys/reaction-events.md)). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse.
 
 ## Begränsningar för reseversioner {#journey-versions-limitations}
 
-* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte starta en resa med en **Segmentkvalificeringshändelse**.
+* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i framtida versioner. Du kan inte starta en resa med en **segmentkvalificeringshändelse** .
 * En resa som börjar med en **segmentkvalificeringsaktivitet** i v1 måste alltid börja med en **segmentkvalificering** i ytterligare versioner.
 * Det segment och namnområde som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
@@ -41,22 +51,22 @@ Här är begränsningar för användning av Journey Orchestration.
 ## Begränsningar för anpassade åtgärder
 
 * Den anpassade åtgärds-URL:en stöder inte dynamiska parametrar. 
-* Endast anropsmetoderna POST och PUT stöds. 
+* Det finns bara stöd för anropsmetoderna POST och PUT. 
 * Namnet på frågeparametern eller -rubriken får inte börja med &quot;.&quot; eller &quot;$&quot;. 
-* IP-adresser tillåts inte. 
-* Interna Adobe-adresser (.adobe.) tillåts inte.
+* IP-adresser är inte tillåtna. 
+* Interna Adobe-adresser (.adobe.) är inte tillåtna.
  
-## Adobe Campaign åtgärdsbegränsningar
+## Begränsningar för Adobe Campaign-åtgärder
 
 * Adobe Campaign Standard Transactional Messaging har en skala på högst 50 000 meddelanden per timme över alla kanaler för en viss instans. Se [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html). 
  
 ## Begränsningar för händelser
 
-* För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inifrån Journey Orchestration först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
+* För systemgenererade händelser måste strömmande data som används för att initiera en kundens färd konfigureras i Journey Orchestration först för att få ett unikt orkestrerings-ID.Det här orkestrerings-ID:t måste läggas till i den direktuppspelningsnyttolast som kommer till Adobe Experience Platform. Den här begränsningen gäller inte för regelbaserade händelser.
  
 ## Begränsningar för datakällor
 
-* Externa datakällor kan utnyttjas inom en kundresa för att söka externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
+* Externa datakällor kan utnyttjas i en kundresa för att söka efter externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
 
 ## Resor som börjar samtidigt som en profil skapas {#journeys-limitation-profile-creation}
 
@@ -68,4 +78,4 @@ Du kan välja mellan följande två lösningar:
 
 * Lägg till en vänteaktivitet efter den första händelsen för att ge Adobe Experience Platform den tid det behöver för att utföra inmatningen till profiltjänsten.
 
-* Konfigurera en resa som inte omedelbart utnyttjar profilen. Om resan till exempel är utformad för att bekräfta att ett konto har skapats, kan upplevelsehändelsen innehålla information som behövs för att skicka det första bekräftelsemeddelandet (förnamn, efternamn, e-postadress osv.).
+* Skapa en resa som inte omedelbart utnyttjar profilen. Om färden till exempel är utformad för att bekräfta att ett konto har skapats kan upplevelsehändelsen innehålla information som behövs för att skicka det första bekräftelsemeddelandet (förnamn, efternamn, e-postadress osv.).

@@ -5,14 +5,23 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 07d25f8e-0065-4410-9895-ffa15d6447bb
-source-git-commit: 052ecdeb0813dcc2c4c870e8ec6b12676fbf60f1
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
 
 # Exempel på frågor{#query-examples}
+
+
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>
+>
+>_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
 
 I det här avsnittet visas flera vanliga exempel för att fråga efter händelser i resesteg i datasjön.
 
@@ -112,7 +121,7 @@ select  _experience.customerJourneyManagement.pushChannelContext.platform, SUM (
 
 Datauppsättning för att importera steghändelser för användaren under resan.
 
-Det relaterade schemat är schemat för resesegmenthändelser för Journey Orchestration.
+Det relaterade schemat är schemat för resestegshändelser för Journey Orchestration.
 
 _Rapporterar användningsfall_
 

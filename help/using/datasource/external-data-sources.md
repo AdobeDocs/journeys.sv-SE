@@ -6,14 +6,23 @@ feature: Journeys
 role: User
 level: Intermediate
 exl-id: 9b666c15-2215-4ca5-bc72-40109749dc15
-source-git-commit: 3856e323569054fac9e73f2a6af2b86518f62ab9
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 93%
+source-wordcount: '1350'
+ht-degree: 87%
 
 ---
 
 # Externa datakällor {#concept_t2s_kqt_52b}
+
+
+>[!CAUTION]
+>
+>**Letar du efter Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för dokumentation om Journey Optimizer.
+>
+>
+>_Den här dokumentationen refererar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
 
 Med externa datakällor kan du definiera en anslutning till tredjepartssystem om du till exempel använder ett bokningssystem för hotell som kontrollerar om personen har registrerat ett rum. I motsats till den inbyggda datakällan i Adobe Experience Platform kan du skapa så många externa datakällor som behövs.
 
@@ -30,7 +39,7 @@ Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två p
 
 Här följer de viktigaste stegen för att skapa och konfigurera en ny extern datakälla:
 
-1. Klicka på **[!UICONTROL Create data source]** i listan över datakällor för att skapa en ny extern datakälla.
+1. I listan över datakällor klickar du för **[!UICONTROL Create data source]** att skapa en ny extern datakälla.
 
    ![](../assets/journey25.png)
 
@@ -75,8 +84,8 @@ För parameteruppsättningen &quot;long/lat&quot; skapar vi en fältgrupp med f�
 
 Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fältet **[!UICONTROL Dynamic Values]** och de läggs sedan till automatiskt i slutet av anropet. Om ett POST-anrop används måste du:
 
-* lista de parametrar som ska skickas vid anrop i fältet **[!UICONTROL Dynamic Values]** (i exemplet nedan: &quot;identifier&quot;).
-* även ange dem med exakt samma syntax i brödtexten i den skickade nyttolasten. För att göra detta måste du lägga till: &quot;param&quot; – &quot;namn på parametern&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
+* Lista de parametrar som ska skickas vid anrop i **[!UICONTROL Dynamic Values]** fältet (i exemplet nedan: &quot;Identifierare&quot;).
+* även ange dem med exakt samma syntax i brödtexten i den skickade nyttolasten. För att göra det måste du lägga till: &quot;param&quot;: &quot;name of your parameter&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
 
   ```
   {"id":{"param":"identifier"}}
@@ -186,4 +195,4 @@ Du kan ändra cachevaraktigheten på en token för en anpassad autentiseringsdat
 
 >[!NOTE]
 >
->Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med en ren cache. Cachevaraktigheten är som standard 1 timme. I den anpassade autentiseringsnyttolasten kan den anpassas genom att ange en annan kvarhållningstid.
+>Cachevaraktigheten hjälper till att undvika för många anrop till autentiseringsslutpunkterna. Kvarhållning av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med en ren cache. Cachens varaktighet är som standard 1 timme. I nyttolasten för anpassad autentisering kan den anpassas genom att ange en annan kvarhållningstid.

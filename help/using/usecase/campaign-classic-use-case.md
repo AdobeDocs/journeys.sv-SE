@@ -4,18 +4,27 @@ solution: Journey Orchestration
 title: Skicka ett meddelande med Campaign v7/v8
 description: Skicka ett meddelande med Campaign v7/v8
 exl-id: 717a927a-4357-4058-a626-1b69f4bb46bc
-source-git-commit: a9a129b1949d64c4a412d3ea4002b32e3563ea96
+source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '439'
 ht-degree: 5%
 
 ---
 
 # Skicka ett meddelande med Campaign v7/v8 {#campaign-classic-use-case}
 
+
+>[!CAUTION]
+>
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>
+>
+>_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
+
+
 I det här exemplet presenteras alla steg som krävs för att skicka e-post med hjälp av integreringen med Adobe Campaign Classic v7 och Adobe Campaign v8.
 
-Vi skapar först en transaktionell e-postmall i Campaign. I Journey Orchestration ska vi sedan skapa evenemanget, handlingen och utforma resan.
+Vi skapar först en transaktionell e-postmall i Campaign. I Journey Orchestration skapar vi sedan evenemanget, handlingen och designen av kundresan.
 
 Mer information om Campaign-integrationen finns på följande sidor:
 
@@ -38,11 +47,11 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
    ![](../assets/accintegration-uc-2.png)
 
-1. Designa din mall. I det här exemplet använder vi personalisering på profilens förnamn och ordernummer. Förnamnet finns i Adobe Experience Platform datakälla och ordernumret är ett fält från händelsen Journey Orchestration. Se till att du använder rätt fältnamn i Campaign.
+1. Designa din mall. I det här exemplet använder vi personalisering på profilens förnamn och ordernummer. Förnamnet finns i Adobe Experience Platform datakälla och ordernumret är ett fält från vår Journey Orchestration-händelse. Se till att du använder rätt fältnamn i Campaign.
 
    ![](../assets/accintegration-uc-3.png)
 
-1. Publish din transaktionsmall.
+1. Publicera din transaktionsmall.
 
    ![](../assets/accintegration-uc-4.png)
 
