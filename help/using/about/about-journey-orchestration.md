@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 430bac3a-06da-45a8-af90-1dcd1504d532
 source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '426'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 
 >[!CAUTION]
 >
->**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>**Letar du efter Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
 >
 >
 >_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
