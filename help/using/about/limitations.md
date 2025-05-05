@@ -48,6 +48,7 @@ Här är begränsningar för användning av Journey Orchestration.
 
 * Aktiviteten **Segmentkvalificering** kan inte användas tillsammans med Adobe Campaign Standard Transactional Messaging på grund av dataflödesbegränsningar. Se [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html). 
  
+
 ## Begränsningar för anpassade åtgärder
 
 * Den anpassade åtgärds-URL:en stöder inte dynamiska parametrar. 
@@ -56,14 +57,17 @@ Här är begränsningar för användning av Journey Orchestration.
 * IP-adresser är inte tillåtna. 
 * Interna Adobe-adresser (.adobe.) är inte tillåtna.
  
+
 ## Begränsningar för Adobe Campaign-åtgärder
 
 * Adobe Campaign Standard Transactional Messaging har en skala på högst 50 000 meddelanden per timme över alla kanaler för en viss instans. Se [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html). 
  
+
 ## Begränsningar för händelser
 
 * För systemgenererade händelser måste strömmande data som används för att initiera en kundens färd konfigureras i Journey Orchestration först för att få ett unikt orkestrerings-ID.Det här orkestrerings-ID:t måste läggas till i den direktuppspelningsnyttolast som kommer till Adobe Experience Platform. Den här begränsningen gäller inte för regelbaserade händelser.
  
+
 ## Begränsningar för datakällor
 
 * Externa datakällor kan utnyttjas i en kundresa för att söka efter externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.

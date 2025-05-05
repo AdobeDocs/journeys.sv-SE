@@ -30,7 +30,7 @@ Du kan antingen skapa ett segment med [Adobe Experience Platform Segmentation Se
 
    ![](../assets/segment1.png)
 
-1. Klicka **[!UICONTROL Add]** här om du vill skapa ett nytt segment. På skärmen för segmentdefinition kan du konfigurera alla fält som krävs för att definiera segmentet. Konfigurationen är densamma som i segmenteringstjänsten. Se användarhandboken](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html) för [Segment Builder.
+1. Klicka **[!UICONTROL Add]** här om du vill skapa ett nytt segment. På skärmen för segmentdefinition kan du konfigurera alla fält som krävs för att definiera segmentet. Konfigurationen är densamma som i segmenteringstjänsten. Se användarhandboken[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html) för Segment Builder.
 
    ![](../assets/segment2.png)
 
