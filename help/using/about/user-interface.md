@@ -18,7 +18,7 @@ ht-degree: 51%
 
 >[!CAUTION]
 >
->**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
 >
 >
 >_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
@@ -80,7 +80,7 @@ I de olika listorna kan du utföra grundläggande åtgärder för varje element.
 
 När du definierar [händelsers nyttolast](../event/defining-the-payload-fields.md), [fältgruppers nyttolast](../datasource/field-groups.md) och väljer fält i [uttrycksredigeraren](../expression/expressionadvanced.md) visas visningsnamnet förutom fältnamnet. Den här informationen hämtas från schemadefinitionen i upplevelsedatamodellen.
 
-Om beskrivningar som &quot;xdm:alternateDisplayInfo&quot; anges när du ställer in scheman, ersätts visningsnamnen med de användarvänliga namnen. Det är särskilt användbart när du arbetar med&quot;eVars&quot; och generiska fält. Du kan konfigurera egna namnbeskrivningar via ett API-anrop. Mer information finns i [utvecklarhandboken för schemaregister](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html).
+Om beskrivningar som &quot;xdm:alternateDisplayInfo&quot; anges när du ställer in scheman, ersätts visningsnamnen med de användarvänliga namnen. Det är särskilt användbart när du arbetar med&quot;eVars&quot; och generiska fält. Du kan konfigurera egna namnbeskrivningar via ett API-anrop. Mer information finns i [utvecklarhandboken för schemaregister](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=sv-SE).
 
 ![](../assets/xdm-from-descriptors.png)
 
@@ -98,7 +98,7 @@ Tillgänglighetsfunktionerna i Adobe Journey Optimizer tillhandahålls av Adobe 
 * Färgkontrast
 * Validering av obligatoriska fält
 
-[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target="_blank"} i Adobe Experience Platform-dokumentationen.
+[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html?lang=sv-SE){target="_blank"} i Adobe Experience Platform-dokumentationen.
 
 Du kan använda följande vanliga kortkommandon i Adobe Journey Optimizer:
 
@@ -110,7 +110,7 @@ Du kan använda följande vanliga kortkommandon i Adobe Journey Optimizer:
 | Markera eller rensa ett element som är i fokus | Enter eller mellanslagstangenten |
 | Avbryt en markering, komprimera en panel eller stänga en dialogruta | Esc |
 
-[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/custom.html){target="_blank"} i Adobe Experience Platform-dokumentationen.
+[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/custom.html?lang=sv-SE){target="_blank"} i Adobe Experience Platform-dokumentationen.
 
 Du kan använda dessa kortkommandon i vissa delar av Journey Optimizer:
 

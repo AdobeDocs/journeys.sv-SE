@@ -19,7 +19,7 @@ ht-degree: 91%
 
 >[!CAUTION]
 >
->**Letar du efter Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för dokumentation om Journey Optimizer.
+>**Letar du efter Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/ajo-home){target="_blank"} för dokumentation om Journey Optimizer.
 >
 >
 >_Den här dokumentationen refererar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._

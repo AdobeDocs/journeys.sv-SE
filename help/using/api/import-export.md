@@ -30,16 +30,16 @@ En Postman-samling är tillgänglig [här](https://raw.githubusercontent.com/Ado
 
 Vi rekommenderar att du följer de här stegen för att exportera och importera dina resor mellan olika miljöer:
 
-1. Skapa och parametera en resa i din startmiljö. [Mer information här](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/about-journey-building/journey.html)
-1. Kontrollera om reseversionen inte innehåller något fel. [Mer information här](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/testing-the-journey.html)
+1. Skapa och parametera en resa i din startmiljö. [Mer information här](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/about-journey-building/journey.html?lang=sv-SE)
+1. Kontrollera om reseversionen inte innehåller något fel. [Mer information här](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/testing-the-journey.html?lang=sv-SE)
 1. Anropa API:t **/list/travel** för att hämta UID-resan och UID:t för den senaste reseversionen. Om det behövs kan du ringa **/travel/`{uid}`/latest** för att hitta UID:t för din senaste reseversion.
 1. Anropa **export**-API:t med dina startmiljöparametrar (orgID och sandboxName).
 1. Öppna den returnerade nyttolasten och kontrollera följande objekt:
    * Om din exporterade resa innehåller **specifika autentiseringsuppgifter** måste du ersätta dessa autentiseringsuppgifter med de som motsvarar den nya miljön.
-   * Om din exporterade resa innehåller **händelser** som pekar på ett **XDM-schema** måste du uppdatera schema-ID-referensen manuellt med schema-ID:t för den nya miljön i xdmEntity-noden om ID:n är olika. Den här uppdateringen måste göras för varje händelse. [Mer information här](https://experienceleague.adobe.com/docs/journeys/using/events-journeys/experience-event-schema.html)
+   * Om din exporterade resa innehåller **händelser** som pekar på ett **XDM-schema** måste du uppdatera schema-ID-referensen manuellt med schema-ID:t för den nya miljön i xdmEntity-noden om ID:n är olika. Den här uppdateringen måste göras för varje händelse. [Mer information här](https://experienceleague.adobe.com/docs/journeys/using/events-journeys/experience-event-schema.html?lang=sv-SE)
    * Om din resa innehåller e-post, sms eller push-åtgärder kan du behöva uppdatera mallnamnet eller namnet på mobileApp om namnet i målmiljön skiljer sig från det i startmiljön.
 1. Anropa **Import**-API:t med målmiljöparametrarna (orgID och sandboxName). Observera att du kan anropa import-API:t så många gånger du vill. UUID och namnet på varje objekt som ingår i resan genereras varje gång du anropar import-API:t.
-1. När resan har importerats kan du publicera den i programmet Journey Orchestration. Mer information [här](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/publishing-the-journey.html)
+1. När resan har importerats kan du publicera den i programmet Journey Orchestration. Mer information [här](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/publishing-the-journey.html?lang=sv-SE)
 
 
 ## Behörighet
@@ -57,7 +57,7 @@ API-åtkomst för Journey Orchestration konfigureras genom stegen nedan. Varje s
 
 >[!CAUTION]
 >
->JWT-metoden för att generera åtkomsttoken har tagits bort. Alla nya integreringar måste skapas med autentiseringsmetoden [OAuth Server-till-server](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-oauth-server-to-server). Adobe rekommenderar också att du migrerar dina befintliga integreringar till OAuth-metoden.
+>JWT-metoden för att generera åtkomsttoken har tagits bort. Alla nya integreringar måste skapas med autentiseringsmetoden [OAuth Server-till-server](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=sv-SE#select-oauth-server-to-server). Adobe rekommenderar också att du migrerar dina befintliga integreringar till OAuth-metoden.
 >
 >Läs följande viktiga dokumentation:
 >[Migreringsguide för dina program från JWT till OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/),

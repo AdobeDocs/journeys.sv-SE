@@ -16,7 +16,7 @@ Det här användningsexemplet visar hur du kan utnyttja trötthetspoäng för at
 
 >[!NOTE]
 >
->Funktionen för prediktiv trötthet är bara tillgänglig för kunder som använder [Adobe Experience Platform Data Connector](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/data-connector/aep-about-data-connector.html).
+>Funktionen för prediktiv trötthet är bara tillgänglig för kunder som använder [Adobe Experience Platform Data Connector](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/data-connector/aep-about-data-connector.html?lang=sv-SE).
 
 ## Konfigurera händelsen {#section_ptb_ws1_ffb}
 

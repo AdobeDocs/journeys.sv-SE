@@ -18,13 +18,13 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
 >
 >
 >_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
 
 
-Kundens AI ingår i Intelligent Services. Det hjälper till att förutsäga vad en kund sannolikt kommer att göra. Se [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html).
+Kundens AI ingår i Intelligent Services. Det hjälper till att förutsäga vad en kund sannolikt kommer att göra. Se [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=sv-SE).
 
 Med kundens AI kan varumärken skapa maskininlärningsbaserade poäng som är tillgängliga som profilattribut i Adobe Experience Platform-profilerna (kundprofil i realtid).
 

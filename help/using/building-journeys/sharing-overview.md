@@ -18,7 +18,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
 >
 >
 >_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
@@ -66,8 +66,8 @@ Listorna med XDM-fält som skickas till Adobe Experience Platform finns här:
 
 ## Integrering med kundreseanalys{#integration-cja}
 
-Journey Orchestration steghändelser kan länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). Här är det allmänna arbetsflödet:
+Journey Orchestration steghändelser kan länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE). Här är det allmänna arbetsflödet:
 
 * Customer Journey Analytics infogar datauppsättningen&quot;Journey Step Event&quot;.
 * Fältet **profileID** i det associerade schemat för resesegmenthändelse för Journey Orchestration definieras som ett identitetsfält. I Customer Journey Analytics kan du sedan länka den här datauppsättningen till andra datauppsättningar som har samma värde som den personbaserade identifieraren.
-* Om du vill använda den här datauppsättningen i Customer Journey Analytics, för flerkanalsanalys, kan du läsa den här [dokumentationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html).
+* Om du vill använda den här datauppsättningen i Customer Journey Analytics, för flerkanalsanalys, kan du läsa den här [dokumentationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=sv-SE).

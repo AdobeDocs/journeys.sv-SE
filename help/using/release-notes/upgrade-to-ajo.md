@@ -23,7 +23,7 @@ Journey Orchestration är en tjänst som bygger på Adobe Experience Platform oc
 
 ## Varför ska jag flytta till Adobe Journey Optimizer?
 
-**Tillgång till ett smidigt gränssnitt** med funktioner i Experience Platform som ger snabb åtkomst till resor, datauppsättningar, profiler, varningar med mera. Du behöver inte längre växla fram och tillbaka mellan Adobe Experience Platform och Journey Orchestration för att få tillgång till scheman eller datauppsättningar. Allt är tillgängligt direkt från Adobe Journey Optimizer. Mer information finns på [sidan](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+**Tillgång till ett smidigt gränssnitt** med funktioner i Experience Platform som ger snabb åtkomst till resor, datauppsättningar, profiler, varningar med mera. Du behöver inte längre växla fram och tillbaka mellan Adobe Experience Platform och Journey Orchestration för att få tillgång till scheman eller datauppsättningar. Allt är tillgängligt direkt från Adobe Journey Optimizer. Mer information finns på [sidan](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=sv-SE).
 
 <table>
 <tr>
@@ -59,7 +59,7 @@ Utnyttja andra aktuella **Adobe Journey Optimizer-funktioner** och nya funktione
 
 1. Vänta på att vårt konstruktörsteam ska slutföra ändringen.
 
-1. Uppdatera dina behörigheter med Journey Optimizer produktprofiler. Se den här [sidan](https://experienceleague.adobe.com/docs/journey-optimizer/using/administration/ootb-product-profiles.html).
+1. Uppdatera dina behörigheter med Journey Optimizer produktprofiler. Se den här [sidan](https://experienceleague.adobe.com/docs/journey-optimizer/using/administration/ootb-product-profiles.html?lang=sv-SE).
 
 1. Nu har du tillgång till Adobe Journey Optimizer!
 
@@ -96,6 +96,6 @@ Genom att gå över till Adobe Journey Optimizer kan du fortfarande använda int
 
 På grund av hur Adobe Journey Optimizer rapporteringsstackar fungerar kommer rapporteringen dock inte att kombinera data om resor och Campaign Standard. Reseinformationen finns i Adobe Journey Optimizer rapporter och leveransinformation i Adobe Campaign Standard. En konfiguration av Experience Platform kan göras för att hämta tillbaka Adobe Campaign Standard-data till Adobe Experience Platform, så att den blir tillgänglig för Customer Journey Analytics ([läs mer](https://business.adobe.com/products/experience-platform/customer-journey-analytics.html)) eller andra rapportverktyg från tredje part, som Tableau eller PowerBI.
 
-Adobe Journey Optimizer rapporterar bäst om Adobe Journey Optimizer färdiga meddelandefunktioner används (finns i särskilda Adobe Journey Optimizer-erbjudanden). Mer information om hur meddelanden kan skapas på arbetsytan för resan finns på [sidan](https://experienceleague.adobe.com/docs/journey-optimizer/using/messages/messages-in-journeys.html).
+Adobe Journey Optimizer rapporterar bäst om Adobe Journey Optimizer färdiga meddelandefunktioner används (finns i särskilda Adobe Journey Optimizer-erbjudanden). Mer information om hur meddelanden kan skapas på arbetsytan för resan finns på [sidan](https://experienceleague.adobe.com/docs/journey-optimizer/using/messages/messages-in-journeys.html?lang=sv-SE).
 
 Kontakta ditt kontoteam om du vill ha mer information.

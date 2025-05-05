@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home) för Journey Optimizer-dokumentation.
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/ajo-home) för Journey Optimizer-dokumentation.
 >
 >
 >_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
@@ -79,7 +79,7 @@ Här är inköpsschemat med relationen definierad i produkt-ID-fältet.
 
 >[!NOTE]
 >
->Läs mer om schemarelationer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html?lang=en).
+>Läs mer om schemarelationer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html?lang=sv-SE).
 
 I Journey Orchestration kan du sedan använda alla fält från de länkade tabellerna:
 
