@@ -5,15 +5,16 @@ solution-image: assets/campaign-icon-24.png
 getting-started-title: Community
 getting-started-url: https://adobe.com/go/journeyorchestrationcommunity
 tutorials-title: Tutorials
-tutorials-url: https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html?lang=sv-SE
+tutorials-url: https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html
 git-repo: https://github.com/AdobeDocs/journeys.sv-SE
 index: true
 feature-set: Journey Orchestration
 solution: Journey Orchestration
 type: Documentation
 feature: Journeys
-source-git-commit: 019b25ace4da074ef7b36bc486a865e2178fb1e1
-workflow-type: tm+mt
+dummy: false
+source-git-commit: 014164624f0ea30577dbab214a3a9f8a4b271d14
+workflow-type: ht
 source-wordcount: '4'
 ht-degree: 100%
 
