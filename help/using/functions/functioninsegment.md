@@ -31,7 +31,7 @@ Segment kan ha tre statusar:
 * realiserad: företaget går in i segmentet.
 * avslutad: entiteten avslutar segmentet.
 
-Endast personer med segmentdeltagarstatus **Realiserad** och **Befintlig** betraktas som medlemmar i segmentet. Mer information om hur du utvärderar ett segment finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=en#interpret-segment-results).
+Endast personer med segmentdeltagarstatus **Realiserad** och **Befintlig** betraktas som medlemmar i segmentet. Mer information om hur du utvärderar ett segment finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results).
 
 `IF inSegment('segmentName') == true` betyder att du har ett segmentMembership med den angivna/befintliga statusen.
 
