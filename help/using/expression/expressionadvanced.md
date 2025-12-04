@@ -3,13 +3,13 @@ product: adobe campaign
 title: Om den avancerade uttrycksredigeraren
 description: Läs mer om hur du skapar avancerade uttryck
 feature: Journeys
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: f6f0004d-8a33-4671-9c16-e56edfe2a45e
-source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
+source-git-commit: d3de66b9b28efa2636f5c0fd5a0d7ccb6132dbdd
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 71%
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 71%
 
 >[!CAUTION]
 >
->**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>**Letar du efter Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
 >
 >
 >_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._

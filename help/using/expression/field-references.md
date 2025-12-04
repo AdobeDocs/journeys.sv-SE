@@ -3,13 +3,13 @@ product: adobe campaign
 title: Fältreferenser
 description: Läs mer om fältreferenser i avancerade uttryck
 feature: Journeys
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 2f317306-9afd-4e9a-88b8-fc66102e1046
-source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
+source-git-commit: d3de66b9b28efa2636f5c0fd5a0d7ccb6132dbdd
 workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 2%
+ht-degree: 10%
 
 ---
 
@@ -28,11 +28,11 @@ En fältreferens kan bifogas till en händelse eller en fältgrupp. Den enda men
 
 Om du använder specialtecken i ett fält måste du använda dubbla citattecken eller enkla citattecken. Här är de fall där citattecken behövs:
 
-* Fältet börjar med numeriska tecken
-* Fältet börjar med tecknet &quot;-&quot;
-* fältet innehåller något annat än: _a-z___, _A-Z___, _0-9___, _ , - __
+* fältet börjar med numeriska tecken
+* fältet börjar med tecknet &quot;-&quot;
+* fältet innehåller något annat än: _a_-_z_, _A_-_Z_, _0_-_9_, _, _-_
 
-Till exempel om ditt fält är _3h_: _#{OpenWeather.weatherData.rain.&#39;3h&#39;} > 0_
+Om fältet till exempel är _3h_: _#{OpenWeather.westData.rain.&#39;3h&#39;} > 0_
 
 ```json
 // event field
@@ -46,7 +46,7 @@ Till exempel om ditt fält är _3h_: _#{OpenWeather.weatherData.rain.&#39;3h&#39
 
 I uttrycket refereras händelsefält till&quot;@&quot; och datakällfält refereras till med &quot;#&quot;.
 
-En syntaxfärg används för att visuellt skilja händelsefält (grönt) från fältgrupper (blått).
+En syntaxfärg används för att visuellt skilja händelsefält (gröna) från fältgrupper (blå).
 
 ## Standardvärden för fältreferenser {#default-value}
 
@@ -63,7 +63,7 @@ Ett standardvärde kan associeras med ett fältnamn. Syntaxen är följande:
 
 >[!NOTE]
 >
->Fälttypen och standardvärdet måste vara desamma. Till exempel @{LobbyBeacon.endUserIDs._experience.emailid.id, defaultValue : 2} kommer att vara ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
+>Fälttypen och standardvärdet måste vara samma. Till exempel @{LobbyBeacon.endUserID:n._experience.emailid.id, defaultValue : 2} blir ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
 
 Exempel:
 
@@ -124,9 +124,9 @@ För att kunna hämta ett element i en karta använder vi inmatningsfunktionen m
 @{MyEvent.identityMap.entry('Email').first().id}
 ```
 
-I det här uttrycket får vi posten för nyckeln &quot;Email&quot; i fältet &quot;IdentityMap&quot; för en händelse. Posten &quot;E-post&quot; är en samling som vi tar &quot;id&quot; i det första elementet med hjälp av &quot;first()&quot;. Mer information finns på [den här sidan](../expression/collection-management-functions.md).
+I det här uttrycket hämtar vi posten för nyckeln Email i fältet IdentityMap för en händelse. E-postposten är en samling från vilken vi tar ID:t i det första elementet med first(). Mer information finns på [den här sidan](../expression/collection-management-functions.md).
 
-### `firstEntryKey` funktion
+### Funktionen `firstEntryKey`
 
 Om du vill hämta den första startnyckeln för en karta använder du funktionen `firstEntryKey`.
 
@@ -136,13 +136,13 @@ I det här exemplet visas hur du hämtar den första e-postadressen för prenume
 #{ExperiencePlatform.Subscriptions.profile.consents.marketing.email.subscriptions.entry('daily-email').subscribers.firstEntryKey()}
 ```
 
-I det här exemplet heter prenumerationslistan `daily-email`. E-postadresser definieras som nycklar i `subscribers` kartan, som är länkad till prenumerationslistkartan.
+I det här exemplet heter prenumerationslistan `daily-email`. E-postadresser definieras som nycklar i kartan `subscribers` som är länkad till prenumerationslistans karta.
 
-### `keys` funktion
+### Funktionen `keys`
 
-Om du vill hämta till alla nycklar på en karta använder du `keys` funktionen.
+Använd funktionen `keys` om du vill hämta alla nycklar för en karta.
 
-Det här exemplet visar hur du hämtar alla e-postadresser som är associerade med prenumeranterna i en viss lista för en viss profil:
+I det här exemplet visas hur du hämtar, för en viss profil, alla e-postadresser som är kopplade till prenumeranterna i en viss lista:
 
 ```json
 #{ExperiencePlatform.Subscriptions.profile.consents.marketing.email.subscriptions.entry('daily-mail').subscribers.keys()
@@ -150,7 +150,7 @@ Det här exemplet visar hur du hämtar alla e-postadresser som är associerade m
 
 ## Parametervärden för en datakälla (dynamiska värden för datakälla)
 
-Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas visas en ny flik till höger där du kan ange den här parametern. Läs [den här sidan](../expression/expressionadvanced.md).
+Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas, visas en ny flik till höger där du kan ange den här parametern. Läs [den här sidan](../expression/expressionadvanced.md).
 
 Om du vill ta med parametrarna för datakällan i huvuduttrycket kan du definiera deras värden med nyckelordet _params_ för mer komplexa användningsområden. En parameter kan vara vilket giltigt uttryck som helst, även från en annan datakälla som även innehåller en annan parameter.
 
@@ -164,7 +164,7 @@ Använd följande syntax:
 #{<datasource>.<field group>.fieldName, params: {<params-1-name>: <params-1-value>, <params-2-name>: <params-2-value>}}
 ```
 
-* **`<params-1-name>`**: exakt namn på den första parametern från datakällan.
+* **`<params-1-name>`**: det exakta namnet på den första parametern från datakällan.
 * **`<params-1-value>`**: värdet för den första parametern. Det kan vara vilket giltigt uttryck som helst.
 
 Exempel:

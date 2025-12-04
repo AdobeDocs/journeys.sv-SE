@@ -3,10 +3,10 @@ product: adobe campaign
 title: inSegment
 description: Läs mer om funktionen inSegment
 feature: Journeys
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 7f756ec5-d787-4024-aaf8-5b4f1d4ddece
-source-git-commit: e56e6f5dcb8a4680851858355ac18a70bd832b73
+source-git-commit: d3de66b9b28efa2636f5c0fd5a0d7ccb6132dbdd
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 4%
@@ -31,7 +31,7 @@ Segment kan ha tre statusar:
 * realiserad: företaget går in i segmentet.
 * avslutad: entiteten avslutar segmentet.
 
-Endast personer med segmentdeltagarstatus **Realiserad** och **Befintlig** betraktas som medlemmar i segmentet. Mer information om hur du utvärderar ett segment finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results).
+Endast personer med segmentdeltagarstatus **Realiserad** och **Befintlig** betraktas som medlemmar i segmentet. Mer information om hur du utvärderar ett segment finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=en#interpret-segment-results).
 
 `IF inSegment('segmentName') == true` betyder att du har ett segmentMembership med den angivna/befintliga statusen.
 

@@ -3,13 +3,13 @@ product: adobe campaign
 title: Resans egenskaper
 description: Lär dig mer om reseegenskaper
 feature: Journeys
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 798e4207-5bef-4002-9c1f-608bb6243e43
-source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
+source-git-commit: d3de66b9b28efa2636f5c0fd5a0d7ccb6132dbdd
 workflow-type: tm+mt
 source-wordcount: '631'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>**Letar du efter Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
 >
 >
 >_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
