@@ -1,15 +1,15 @@
 ---
 product: adobe campaign
 title: Användargränssnittet
-description: Läs mer om användargränssnittet
+description: Läs mer i användargränssnittet
 feature: Journeys
 role: User
 level: Intermediate
 exl-id: 0d0e74c7-6cb0-4068-a69a-3c01f8b3552d
-source-git-commit: 69471a36b113e04a7bb0953a90977ad4020299e4
+source-git-commit: 58514d6757f9705f5baa71cfbbe0bdfe65c8e16c
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 51%
+source-wordcount: '988'
+ht-degree: 0%
 
 ---
 
@@ -18,77 +18,77 @@ ht-degree: 51%
 
 >[!CAUTION]
 >
->**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
 >
 >
 >_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
 
 
-## Komma åt [!DNL Journey Orchestration]{#accessing_journey_orchestration}
+## Åtkomst till [!DNL Journey Orchestration]{#accessing_journey_orchestration}
 
 Om du vill komma åt gränssnittet för [!DNL Journey Orchestration] klickar du på ikonen **[!UICONTROL App Selector]** längst upp till höger och sedan på **[!UICONTROL Journey Orchestration]**.
 
 ![](../assets/journey1.png)
 
-Du kan även komma åt [!DNL Journey Orchestration] från webbplatsen för Experience Cloud i avsnittet **[!UICONTROL Quick access]**.
+Du kan även komma åt [!DNL Journey Orchestration] från Experience Cloud hemsida i avsnittet **[!UICONTROL Quick access]**.
 
 ![](../assets/journey1bis.png)
 
-## Lära känna gränssnittet{#section_jsq_zr1_ffb}
+## Identifiera gränssnittet{#section_jsq_zr1_ffb}
 
 >[!CONTEXTUALHELP]
 >id="jo_home"
->title="Om reselistan"
+>title="Om Reselista"
 >abstract="Med reselistan kan du visa alla dina resor på en gång, se deras status och utföra grundläggande åtgärder."
->additional-url="https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4" text="Se demovideon"
+>additional-url="https://images-tv.adobe.com/mpcv3/38af62cb-9390-4bc0-a576-d336849adb97_1574809570.1920x1080at3000_h264.mp4" text="Titta på filmen"
 
-Med de översta menyerna kan du navigera bland de olika funktionerna i [!DNL Journey Orchestration]: **[!UICONTROL Home]** (resorna), **[!UICONTROL Data Sources]**, **[!UICONTROL Events]**, **[!UICONTROL Actions]**.
+Med de översta menyerna kan du navigera genom de olika funktionerna i [!DNL Journey Orchestration]: **[!UICONTROL Home]**(resorna),**[!UICONTROL Data Sources]**, **[!UICONTROL Events]**, **[!UICONTROL Actions]**.
 
 ![](../assets/journey2.png)
 
-Klicka på ![](../assets/icon-context.png)-ikonen på skärmens övre högra hörn för att visa sammanhangsberoende hjälp. Den finns för alla listskärmar i [!DNL Journey Orchestration] (resor, händelser, åtgärder och datakällor). Hjälpen innehåller en kort beskrivning av den aktuella funktionen och du får tillgång till relaterade artiklar och videor.
+Klicka på ikonen ![](../assets/icon-context.png) i skärmens övre högra hörn för att visa sammanhangsberoende hjälp. Den är tillgänglig för de olika [!DNL Journey Orchestration] listskärmarna (resor, händelser, åtgärder och datakällor). På så sätt kan du visa en kort beskrivning av den aktuella funktionen och få tillgång till relaterade artiklar och videoklipp.
 
 ![](../assets/journey2bis.png)
 
 ## Söka och filtrera{#section_lgm_hpz_pgb}
 
-I listorna **[!UICONTROL Home]**, **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** kan du söka efter ett alternativ med hjälp av ett sökfält.
+I listorna **[!UICONTROL Home]**,**[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** kan du söka efter ett objekt med hjälp av ett sökfält.
 
-Du kommer åt **[!UICONTROL Filters]** genom att klicka på filterikonen högst upp till vänster i listan. Med filtermenyn kan du filtrera de element som visas enligt olika villkor. Du kan välja att endast visa element av en viss typ eller status, de som du har skapat eller de som har ändrats under de senaste 30 dagarna.
+Du kommer åt **[!UICONTROL Filters]** genom att klicka på filterikonen högst upp till vänster i listan. Med filtermenyn kan du filtrera de visade elementen enligt olika villkor. Du kan välja att endast visa element av en viss typ eller status, de element du har skapat eller de element som har ändrats under de senaste 30 dagarna.
 
-I listorna **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** kan du använda **[!UICONTROL Creation filters]** för att filtrera per datum för skapande och per användare. Du kan till exempel välja att bara visa händelser som du har skapat under de senaste 30 dagarna.
+I listorna **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]** använder du **[!UICONTROL Creation filters]** för att filtrera efter skapandedatum och användare. Du kan t.ex. välja att bara visa händelser som du har skapat de senaste 30 dagarna.
 
-I reselistan (under **[!UICONTROL Home]**) kan du utöver **[!UICONTROL Creation filters]** även filtrera de visade resorna efter status, typ och version (**[!UICONTROL Status and version filters]**). Typen kan vara: **[!UICONTROL Unitary event]** eller **[!UICONTROL Segment qualification]**. Du kan även välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). Med **[!UICONTROL Publication filters]** kan du välja ett publiceringsdatum eller en viss användare. Du kan till exempel välja att endast visa de senaste versionerna av resor i realtid som publicerades i går. Läs [den här sidan](../building-journeys/using-the-journey-designer.md).
+I reselistan (under **[!UICONTROL Home]**) kan du utöver **[!UICONTROL Creation filters]** även filtrera de visade resorna efter status, typ och version (**[!UICONTROL Status and version filters]**). Typen kan vara: **[!UICONTROL Unitary event]** eller **[!UICONTROL Segment qualification]**. Du kan också välja att endast visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). Med **[!UICONTROL Publication filters]** kan du välja ett publiceringsdatum eller en användare. Du kan till exempel välja att endast visa de senaste versionerna av direktresor som publicerades i går. Se [den här sidan](../building-journeys/using-the-journey-designer.md).
 
 >[!NOTE]
 >
->Observera att kolumner som visas kan personaliseras med hjälp av konfigurationsknappen längst upp till höger i listorna. Personalisering sparas per användare.
+>Observera att kolumner som visas kan anpassas med hjälp av konfigurationsknappen högst upp till höger i listorna. Personalization sparas för varje användare.
 
-Med kolumnerna **[!UICONTROL Last update]** och **[!UICONTROL Last update by]** kan du visa när den senaste uppdateringen av dina resor gjorts och vilken användare som använde den.
+Med kolumnerna **[!UICONTROL Last update]** och **[!UICONTROL Last update by]** kan du visa när den senaste uppdateringen av dina resor har gjorts och vilken användare som gjorde den.
 
 ![](../assets/journey74.png)
 
-I konfigurationsfönstren för händelser, datakällor och åtgärder visar fältet **[!UICONTROL Used in]** antalet resor som använder just den händelsen, fältgruppen eller åtgärden. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa en lista över motsvarande resor.
+I händelse-, datakälla- och åtgärdskonfigurationsrutor visar fältet **[!UICONTROL Used in]** antalet resor som använder just den händelsen, fältgruppen eller åtgärden. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa listan över motsvarande resor.
 
 ![](../assets/journey3bis.png)
 
-I de olika listorna kan du utföra grundläggande åtgärder för varje element. Du kan till exempel skapa dubbletter eller radera en post.
+I de olika listorna kan du utföra grundläggande åtgärder för varje element. Du kan till exempel duplicera eller ta bort ett objekt.
 
 ![](../assets/journey4.png)
 
 ## Bläddra bland Adobe Experience Platform-fält {#friendly-names-display}
 
-När du definierar [händelsers nyttolast](../event/defining-the-payload-fields.md), [fältgruppers nyttolast](../datasource/field-groups.md) och väljer fält i [uttrycksredigeraren](../expression/expressionadvanced.md) visas visningsnamnet förutom fältnamnet. Den här informationen hämtas från schemadefinitionen i upplevelsedatamodellen.
+När du definierar [händelsenyttolast](../event/defining-the-payload-fields.md), [fältgruppnyttolast](../datasource/field-groups.md) och väljer fält i [uttrycksredigeraren](../expression/expressionadvanced.md) visas visningsnamnet förutom fältnamnet. Den här informationen hämtas från schemadefinitionen i Experience Data Model.
 
-Om beskrivningar som &quot;xdm:alternateDisplayInfo&quot; anges när du ställer in scheman, ersätts visningsnamnen med de användarvänliga namnen. Det är särskilt användbart när du arbetar med&quot;eVars&quot; och generiska fält. Du kan konfigurera egna namnbeskrivningar via ett API-anrop. Mer information finns i [utvecklarhandboken för schemaregister](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=sv-SE).
+Om beskrivningar som &quot;xdm:alternateDisplayInfo&quot; anges när scheman konfigureras, kommer de användarvänliga namnen att ersätta visningsnamnen. Det är särskilt användbart när du arbetar med&quot;eVars&quot; och generiska fält.Du kan konfigurera egna namnbeskrivningar via ett API-anrop. Mer information finns i [Utvecklarhandboken för schemaregister](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html).
 
 ![](../assets/xdm-from-descriptors.png)
 
-Om användarvänliga namn finns visas fältet som `<friendly-name>(<name>)`. Om det inte finns något användarvänligt namn visas till exempel visningsnamnet som `<display-name>(<name>)`. Om inget av dem är definierade visas bara fältets tekniska namn `<name>`.
+Om det finns ett eget namn visas fältet som `<friendly-name>(<name>)`. Om det inte finns något eget namn visas visningsnamnet, till exempel `<display-name>(<name>)`. Om inget av dem definieras visas bara fältets tekniska namn `<name>`.
 
 >[!NOTE]
 >
->Användarvänliga namn hämtas inte när du väljer fält från en sammanslutning av scheman.
+>Eget namn hämtas inte när du väljer fält från en förening av scheman.
 
 ## Tillgänglighet{#accessibility}
 
@@ -98,7 +98,7 @@ Tillgänglighetsfunktionerna i Adobe Journey Optimizer tillhandahålls av Adobe 
 * Färgkontrast
 * Validering av obligatoriska fält
 
-[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html?lang=sv-SE){target="_blank"} i Adobe Experience Platform-dokumentationen.
+[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target="_blank"} i Adobe Experience Platform-dokumentationen.
 
 Du kan använda följande vanliga kortkommandon i Adobe Journey Optimizer:
 
@@ -110,7 +110,7 @@ Du kan använda följande vanliga kortkommandon i Adobe Journey Optimizer:
 | Markera eller rensa ett element som är i fokus | Enter eller mellanslagstangenten |
 | Avbryt en markering, komprimera en panel eller stänga en dialogruta | Esc |
 
-[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/custom.html?lang=sv-SE){target="_blank"} i Adobe Experience Platform-dokumentationen.
+[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/custom.html){target="_blank"} i Adobe Experience Platform-dokumentationen.
 
 Du kan använda dessa kortkommandon i vissa delar av Journey Optimizer:
 
@@ -185,7 +185,8 @@ Utlös en händelse i en segmentbaserad resa som alternativet **[!UICONTROL Sing
     <td>Visa testloggarna</td>
     <td>L</td>
   </tr>
-<!-- //Ajouter ce raccourci quand il marchera (actuellement, le raccourci Ctrl/Cmd+F du navigateur a priorité sur celui de AJO).//
+<!--
+//Ajouter ce raccourci quand il marchera (actuellement, le raccourci Ctrl/Cmd+F du navigateur a priorité sur celui de AJO).//
   <tr>
     <td>Page with a search bar</td>
     <td>Select the search bar</td>

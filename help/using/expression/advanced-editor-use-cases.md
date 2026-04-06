@@ -1,15 +1,15 @@
 ---
 product: adobe campaign
 title: Använda den avancerade uttrycksredigeraren
-description: Läs mer om hur du skapar avancerade uttryck
+description: Lär dig skapa avancerade uttryck
 feature: Journeys
 role: Developer
 level: Experienced
 exl-id: 724ae59e-d1b5-4de9-b140-d37064e22ac6
-source-git-commit: d3de66b9b28efa2636f5c0fd5a0d7ccb6132dbdd
+source-git-commit: 58514d6757f9705f5baa71cfbbe0bdfe65c8e16c
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 9%
+source-wordcount: '554'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 9%
 
 >[!CAUTION]
 >
->**Letar du efter Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
+>**Söker du Adobe Journey Optimizer**? Klicka [här](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home){target="_blank"} för Journey Optimizer-dokumentation.
 >
 >
 >_Den här dokumentationen hänvisar till äldre Journey Orchestration-material som har ersatts av Journey Optimizer. Kontakta ditt kontoteam om du har frågor om din åtkomst till Journey Orchestration eller Journey Optimizer._
@@ -45,9 +45,11 @@ Låt oss till exempel säga att ni vill rikta er mot kunder som har övergett en
 
 Först och främst målkunder som surfar i onlinebutiken men inte slutfört beställningen de senaste sju dagarna.
 
-<!--**This expression looks for a specified value in a string value:**
+<!--
+**This expression looks for a specified value in a string value:**
 
-`In ("addToCart", #{field reference from experience event})`-->
+`In ("addToCart", #{field reference from experience event})`
+-->
 
 **Det här uttrycket söker efter alla händelser för den här användaren som har angetts under de senaste 7 dagarna:**
 
@@ -154,4 +156,4 @@ substr(
 
 Förklaring: I det här exemplet används funktionerna `substr` och `lastIndexOf` för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för en mobilapp.
 
-Titta på [den här videon](https://experienceleague.adobe.com/docs/platform-learn/tutorials/journey-orchestration/create-a-journey.html?lang=sv-SE) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.
+Titta på [den här videon](https://experienceleague.adobe.com/docs/platform-learn/tutorials/journey-orchestration/create-a-journey.html) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.
